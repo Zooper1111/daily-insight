@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daily Insight</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Daily Insight">
+<meta name="theme-color" content="#0d0e14">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d0e14; --card:#161826; --card2:#1b1e30;
+  --ink:#eceef7; --ink-dim:#9ba0b8; --ink-faint:#6a6f88;
+  --gold:#e8b84b; --coral:#ff7a6e; --teal:#5fd4c4; --violet:#a48bfa;
+  --line:rgba(255,255,255,.08); --radius:20px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:'Inter',-apple-system,sans-serif;
+  line-height:1.65; font-size:16.5px;
+  padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
+}
+.wrap{max-width:640px;margin:0 auto;padding:0 20px 80px}
+header{padding:28px 0 6px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:'Fraunces',serif;font-weight:700;font-size:20px;letter-spacing:.2px}
+.brand span{color:var(--gold)}
+.datechip{font-size:12.5px;font-weight:600;color:var(--ink-dim);background:var(--card);border:1px solid var(--line);padding:6px 12px;border-radius:99px}
+.domain{display:inline-block;margin-top:22px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(232,184,75,.35);padding:5px 12px;border-radius:99px;background:rgba(232,184,75,.08)}
+.hook{font-family:'Fraunces',serif;font-size:31px;line-height:1.22;font-weight:600;margin:16px 0 8px;letter-spacing:-.01em}
+.hook::after{content:"";display:block;width:56px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--gold),var(--coral));margin-top:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;margin-top:22px;animation:rise .5s ease both}
+.card:nth-of-type(2){animation-delay:.06s}.card:nth-of-type(3){animation-delay:.12s}.card:nth-of-type(4){animation-delay:.18s}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.kicker{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+.kicker .emoji{font-size:17px}
+.k-insight{color:var(--teal)} .k-lab{color:var(--violet)} .k-masters{color:var(--coral)} .k-steal{color:var(--gold)}
+h2{font-family:'Fraunces',serif;font-size:23.5px;font-weight:600;line-height:1.25;margin-bottom:12px;letter-spacing:-.01em}
+.card p{color:var(--ink-dim);margin-bottom:13px}
+.card p strong{color:var(--ink);font-weight:600}
+.card p:last-child{margin-bottom:0}
+.visual{margin:18px 0 6px;background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:16px 12px;overflow-x:auto}
+.visual svg{display:block;width:100%;height:auto}
+.vcaption{font-size:12.5px;color:var(--ink-faint);text-align:center;margin-top:10px}
+.exercise{margin-top:16px;background:linear-gradient(135deg,rgba(164,139,250,.12),rgba(95,212,196,.08));border:1px solid rgba(164,139,250,.3);border-radius:14px;padding:16px 18px}
+.exercise .xlabel{font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--violet);margin-bottom:6px}
+.exercise p{color:var(--ink)}
+.video{position:relative;border-radius:14px;overflow:hidden;margin:16px 0 12px;background:#000;aspect-ratio:16/9;border:1px solid var(--line)}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.watchwin{display:flex;gap:8px;align-items:center;font-size:14px;font-weight:600;color:var(--coral);margin-bottom:12px}
+ul.observe{list-style:none;margin-top:4px}
+ul.observe li{position:relative;padding-left:24px;color:var(--ink-dim);margin-bottom:9px}
+ul.observe li::before{content:"\2192";position:absolute;left:2px;color:var(--coral);font-weight:700}
+.steal{background:linear-gradient(150deg,#20222f,#1a1622);border:1px solid rgba(232,184,75,.4)}
+.steal-line{font-family:'Fraunces',serif;font-size:21px;line-height:1.35;font-weight:600;color:var(--gold);margin-bottom:10px}
+.example{margin-top:14px;border-left:3px solid var(--gold);padding:4px 0 4px 16px}
+.example p{font-style:italic;color:var(--ink);margin-bottom:6px;font-size:15.5px}
+.archive{margin-top:40px}
+.archive h3{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:12px}
+.arch-item{display:flex;justify-content:space-between;align-items:center;width:100%;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:9px;color:var(--ink);font-family:'Inter',sans-serif;font-size:15px;cursor:pointer}
+.arch-item .d{color:var(--ink-faint);font-size:12.5px;font-weight:600}
+.arch-item.active{border-color:rgba(232,184,75,.5)}
+.foot{margin-top:44px;text-align:center;font-size:12.5px;color:var(--ink-faint)}
+.err{padding:60px 20px;text-align:center;color:var(--ink-dim)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">Daily<span>·</span>Insight</div>
+    <div class="datechip" id="datechip"></div>
+  </header>
+  <main id="app"><div class="err">Loading today’s edition…</div></main>
+  <section class="archive" id="archive"></section>
+  <div class="foot">Curated daily · learn one thing, steal one thing</div>
+</div>
+<script>
+const $=s=>document.querySelector(s);
+const esc=t=>{const d=document.createElement('div');d.textContent=t;return d.innerHTML};
+let DATA=null;
+
+function paras(list){return (list||[]).map(p=>`<p>${p}</p>`).join('')}
+
+function render(ed){
+  $('#datechip').textContent=ed.displayDate;
+  let html=`<div class="domain">${esc(ed.domain)}</div>
+  <h1 class="hook">${esc(ed.hook)}</h1>`;
+
+  html+=`<article class="card">
+    <div class="kicker k-insight"><span class="emoji">💡</span>Today’s Insight</div>
+    <h2>${esc(ed.insight.title)}</h2>
+    ${paras(ed.insight.paras)}
+    ${ed.insight.visualSvg?`<div class="visual">${ed.insight.visualSvg}</div>
+    ${ed.insight.visualCaption?`<div class="vcaption">${esc(ed.insight.visualCaption)}</div>`:''}`:''}
+    ${paras(ed.insight.after)}
+  </article>`;
+
+  html+=`<article class="card">
+    <div class="kicker k-lab"><span class="emoji">🧪</span>Communication Lab</div>
+    <h2>${esc(ed.lab.title)}</h2>
+    ${paras(ed.lab.paras)}
+    <div class="exercise"><div class="xlabel">Today’s Exercise · under 5 min</div><p>${ed.lab.exercise}</p></div>
+  </article>`;
+
+  if(ed.masters){
+    const start=ed.masters.start?`?start=${ed.masters.start}`:'';
+    html+=`<article class="card">
+      <div class="kicker k-masters"><span class="emoji">🎬</span>Watch the Masters</div>
+      <h2>${esc(ed.masters.name)}</h2>
+      <p><strong>${esc(ed.masters.talk)}</strong></p>
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/${ed.masters.videoId}${start}" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+      ${ed.masters.watchWindow?`<div class="watchwin">▶ ${esc(ed.masters.watchWindow)}</div>`:''}
+      ${paras(ed.masters.paras)}
+      <ul class="observe">${(ed.masters.observe||[]).map(o=>`<li>${o}</li>`).join('')}</ul>
+    </article>`;
+  }
+
+  html+=`<article class="card steal">
+    <div class="kicker k-steal"><span class="emoji">🎯</span>Steal One Thing</div>
+    <div class="steal-line">${esc(ed.steal.line)}</div>
+    ${paras(ed.steal.paras)}
+    ${ed.steal.example&&ed.steal.example.length?`<div class="example">${ed.steal.example.map(l=>`<p>“${esc(l)}”</p>`).join('')}</div>`:''}
+  </article>`;
+
+  $('#app').innerHTML=html;
+  window.scrollTo({top:0});
+}
+
+function renderArchive(activeDate){
+  const eds=DATA.editions;
+  if(eds.length<2){$('#archive').innerHTML='';return}
+  $('#archive').innerHTML=`<h3>Previous Editions</h3>`+eds.map((e,i)=>
+    `<button class="arch-item ${e.date===activeDate?'active':''}" data-i="${i}">
+      <span>${esc(e.insight.title)}</span><span class="d">${esc(e.displayDate)}</span>
+    </button>`).join('');
+  document.querySelectorAll('.arch-item').forEach(b=>b.onclick=()=>{
+    const ed=DATA.editions[+b.dataset.i];render(ed);renderArchive(ed.date);
+  });
+}
+
+fetch('editions.json?v='+Date.now()).then(r=>r.json()).then(d=>{
+  DATA=d;
+  if(!d.editions||!d.editions.length)throw 0;
+  render(d.editions[0]);renderArchive(d.editions[0].date);
+}).catch(()=>{$('#app').innerHTML='<div class="err">Couldn’t load today’s edition. Pull to refresh.</div>'});
+</script>
+</body>
+</html>

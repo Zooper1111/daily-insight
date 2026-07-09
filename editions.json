@@ -1,0 +1,56 @@
+{
+  "editions": [
+    {
+      "date": "2026-07-09",
+      "displayDate": "Thu · Jul 9",
+      "domain": "Decision-Making",
+      "hook": "The best thinkers don’t ask “what happens next?” They ask “and then what?”",
+      "insight": {
+        "title": "Second-Order Thinking",
+        "paras": [
+          "First-order thinking gets you the answer everyone else already has. It’s fast, obvious, and crowded. <strong>Second-order thinking asks what the consequence of the consequence is</strong> — and that’s where the edge lives.",
+          "Most bad decisions aren’t dumb at step one. They’re decisions where nobody traced the chain one link further."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg' font-family='Inter,-apple-system,sans-serif'><defs><marker id='ar' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#6a6f88'/></marker></defs><text x='30' y='34' fill='#5fd4c4' font-size='13' font-weight='700' letter-spacing='2'>THE CHOICE</text><text x='232' y='34' fill='#9ba0b8' font-size='13' font-weight='700' letter-spacing='2'>LOOKS LIKE</text><text x='420' y='34' fill='#ff7a6e' font-size='13' font-weight='700' letter-spacing='2'>BECOMES</text><g><rect x='22' y='58' width='170' height='60' rx='12' fill='#1b1e30' stroke='rgba(95,212,196,.5)'/><text x='107' y='84' fill='#eceef7' font-size='14' font-weight='600' text-anchor='middle'>Cut prices</text><text x='107' y='104' fill='#6a6f88' font-size='12' text-anchor='middle'>to win the market</text><line x1='196' y1='88' x2='222' y2='88' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar)'/><rect x='226' y='58' width='150' height='60' rx='12' fill='#1b1e30' stroke='rgba(255,255,255,.1)'/><text x='301' y='94' fill='#9ba0b8' font-size='13.5' text-anchor='middle'>More customers</text><line x1='380' y1='88' x2='406' y2='88' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar)'/><rect x='410' y='58' width='128' height='60' rx='12' fill='#241a22' stroke='rgba(255,122,110,.45)'/><text x='474' y='84' fill='#ff9d94' font-size='13' text-anchor='middle'>Rivals match.</text><text x='474' y='102' fill='#ff9d94' font-size='13' text-anchor='middle'>Margin gone.</text></g><g><rect x='22' y='138' width='170' height='60' rx='12' fill='#1b1e30' stroke='rgba(95,212,196,.5)'/><text x='107' y='164' fill='#eceef7' font-size='14' font-weight='600' text-anchor='middle'>Skip the hard</text><text x='107' y='182' fill='#eceef7' font-size='14' font-weight='600' text-anchor='middle'>conversation</text><line x1='196' y1='168' x2='222' y2='168' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar)'/><rect x='226' y='138' width='150' height='60' rx='12' fill='#1b1e30' stroke='rgba(255,255,255,.1)'/><text x='301' y='174' fill='#9ba0b8' font-size='13.5' text-anchor='middle'>Peace today</text><line x1='380' y1='168' x2='406' y2='168' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar)'/><rect x='410' y='138' width='128' height='60' rx='12' fill='#241a22' stroke='rgba(255,122,110,.45)'/><text x='474' y='164' fill='#ff9d94' font-size='13' text-anchor='middle'>Resentment</text><text x='474' y='182' fill='#ff9d94' font-size='13' text-anchor='middle'>compounds.</text></g><g><rect x='22' y='218' width='170' height='60' rx='12' fill='#1b1e30' stroke='rgba(95,212,196,.5)'/><text x='107' y='244' fill='#eceef7' font-size='14' font-weight='600' text-anchor='middle'>Say yes to</text><text x='107' y='262' fill='#eceef7' font-size='14' font-weight='600' text-anchor='middle'>every meeting</text><line x1='196' y1='248' x2='222' y2='248' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar)'/><rect x='226' y='218' width='150' height='60' rx='12' fill='#1b1e30' stroke='rgba(255,255,255,.1)'/><text x='301' y='254' fill='#9ba0b8' font-size='13.5' text-anchor='middle'>Look helpful</text><line x1='380' y1='248' x2='406' y2='248' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar)'/><rect x='410' y='218' width='128' height='60' rx='12' fill='#241a22' stroke='rgba(255,122,110,.45)'/><text x='474' y='244' fill='#ff9d94' font-size='13' text-anchor='middle'>No deep work</text><text x='474' y='262' fill='#ff9d94' font-size='13' text-anchor='middle'>ever again.</text></g><text x='280' y='308' fill='#6a6f88' font-size='12.5' text-anchor='middle' font-style='italic'>Trace every decision one more link down the chain.</text></svg>",
+        "visualCaption": "First-order wins are often second-order losses.",
+        "after": [
+          "The habit: before committing to anything meaningful, write one line answering <strong>“and then what happens, six months out?”</strong> If you can’t answer it, you haven’t finished thinking. Run Coordly’s next pricing or feature call through this chain before you ship it."
+        ]
+      },
+      "lab": {
+        "title": "The 2-Second Pause",
+        "paras": [
+          "Most of us rush to fill silence, which signals nervousness and buries our best points. Strategic silence does the opposite: it signals confidence, lets the point land, and makes the listener lean in.",
+          "It will feel uncomfortably long to you. It won’t to them."
+        ],
+        "exercise": "In one real conversation today — a call about Coordly, a client check-in, anything — deliver your most important sentence, then silently count <strong>“one-thousand-one, one-thousand-two”</strong> before saying another word. Notice who fills the silence, and what they reveal when they do."
+      },
+      "masters": {
+        "name": "Barbara Jordan",
+        "talk": "1976 Democratic National Convention Keynote",
+        "videoId": "sKfFJc37jjQ",
+        "start": 0,
+        "watchWindow": "Watch the first 3 minutes",
+        "paras": [
+          "Jordan speaks roughly 30% slower than a typical speaker — and it makes every sentence feel inevitable. Her authority comes almost entirely from tempo, not volume."
+        ],
+        "observe": [
+          "How long she waits after each applause line before continuing.",
+          "She never rushes into her next sentence — the pause <em>is</em> the emphasis.",
+          "Count her pauses in 3 minutes. Then compare to how often you pause."
+        ]
+      },
+      "steal": {
+        "line": "Let silence do the emphasis.",
+        "paras": [
+          "In your next conversation, deliver your key point — then stay silent for two full seconds. Don’t soften it, don’t restate it, don’t apologize for it."
+        ],
+        "example": [
+          "Coordly isn’t another task manager.",
+          "(two full seconds of silence)",
+          "It’s the coordination layer above the tools you already use."
+        ]
+      }
+    }
+  ]
+}
