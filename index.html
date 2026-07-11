@@ -68,9 +68,14 @@ ul.observe li::before{content:"\2192";position:absolute;left:2px;color:var(--cor
 .arch-item.active{border-color:rgba(232,184,75,.5)}
 .foot{margin-top:44px;text-align:center;font-size:12.5px;color:var(--ink-faint)}
 .err{padding:60px 20px;text-align:center;color:var(--ink-dim)}
+#ptr{position:fixed;top:calc(env(safe-area-inset-top) + 8px);left:50%;transform:translate(-50%,-70px);transition:transform .25s ease;z-index:50;background:var(--card2);border:1px solid rgba(232,184,75,.45);color:var(--gold);font-size:13px;font-weight:600;padding:9px 18px;border-radius:99px;display:flex;align-items:center;gap:8px;pointer-events:none;box-shadow:0 6px 24px rgba(0,0,0,.45)}
+#ptr.show{transform:translate(-50%,0)}
+#ptr .spin{display:inline-block;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 </style>
 </head>
 <body>
+<div id="ptr"><span class="arrow">↓</span><span id="ptrtext">Pull to refresh</span></div>
 <div class="wrap">
   <header>
     <div class="brand">Daily<span>·</span>Insight</div>
@@ -144,11 +149,50 @@ function renderArchive(activeDate){
   });
 }
 
-fetch('editions.json?v='+Date.now()).then(r=>r.json()).then(d=>{
-  DATA=d;
-  if(!d.editions||!d.editions.length)throw 0;
-  render(d.editions[0]);renderArchive(d.editions[0].date);
-}).catch(()=>{$('#app').innerHTML='<div class="err">Couldn’t load today’s edition. Pull to refresh.</div>'});
+function load(){
+  return fetch('editions.json?v='+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(d=>{
+    DATA=d;
+    if(!d.editions||!d.editions.length)throw 0;
+    render(d.editions[0]);renderArchive(d.editions[0].date);
+  }).catch(()=>{$('#app').innerHTML='<div class="err">Couldn’t load today’s edition. Pull down to refresh.</div>'});
+}
+load();
+
+// Auto-refresh when the app returns to the foreground with stale content
+document.addEventListener('visibilitychange',()=>{
+  if(document.visibilityState==='visible'&&DATA&&DATA.editions[0]){
+    const today=new Date().toISOString().slice(0,10);
+    if(DATA.editions[0].date!==today)load();
+  }
+});
+
+// Pull-to-refresh (for iOS home-screen mode, which has no native reload)
+(function(){
+  const ptr=$('#ptr'),txt=$('#ptrtext'),THRESHOLD=80;
+  let startY=0,dist=0,active=false;
+  document.addEventListener('touchstart',e=>{
+    if(window.scrollY<=0){startY=e.touches[0].clientY;active=true;dist=0}
+  },{passive:true});
+  document.addEventListener('touchmove',e=>{
+    if(!active)return;
+    dist=e.touches[0].clientY-startY;
+    if(dist>30&&window.scrollY<=0){
+      ptr.classList.add('show');
+      txt.textContent=dist>THRESHOLD?'Release to refresh':'Pull to refresh';
+    }else{
+      ptr.classList.remove('show');
+    }
+  },{passive:true});
+  document.addEventListener('touchend',()=>{
+    if(active&&dist>THRESHOLD&&window.scrollY<=0){
+      txt.innerHTML='<span class="spin">↻</span> Refreshing…';
+      load().then(()=>{setTimeout(()=>ptr.classList.remove('show'),500)});
+    }else{
+      ptr.classList.remove('show');
+    }
+    active=false;dist=0;
+  },{passive:true});
+})();
 </script>
 </body>
 </html>
