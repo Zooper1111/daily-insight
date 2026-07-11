@@ -1,6 +1,58 @@
 {
   "editions": [
     {
+      "date": "2026-07-11",
+      "displayDate": "Sat · Jul 11",
+      "domain": "Communication",
+      "hook": "People don’t act on what they understand. They act on what they can picture.",
+      "insight": {
+        "title": "Climb Down the Ladder of Abstraction",
+        "paras": [
+          "Every idea can be said at different altitudes. At the top: mission-statement fog — <em>“we improve productivity.”</em> At the bottom: something a listener can actually see — <em>“Sarah’s been blocked on the design review since Tuesday.”</em> <strong>The higher you speak, the less anyone feels.</strong>",
+          "Experts default to the top of the ladder because the concrete details are obvious <em>to them</em> — that’s the curse of knowledge. But your listener has none of your details. Abstraction asks them to do the imagining for you; most won’t. A single concrete rung does the work of a paragraph of explanation."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 340' xmlns='http://www.w3.org/2000/svg' font-family='Inter,-apple-system,sans-serif'><defs><marker id='ar2' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#6a6f88'/></marker></defs><text x='30' y='32' fill='#a48bfa' font-size='13' font-weight='700' letter-spacing='2'>ABSTRACT</text><text x='530' y='32' fill='#9ba0b8' font-size='12' text-anchor='end' font-style='italic'>what the listener feels</text><line x1='40' y1='50' x2='40' y2='288' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar2)'/><g><rect x='60' y='48' width='300' height='48' rx='10' fill='#1b1e30' stroke='rgba(164,139,250,.5)'/><text x='210' y='77' fill='#9ba0b8' font-size='13.5' text-anchor='middle'>“We improve productivity.”</text><text x='380' y='77' fill='#6a6f88' font-size='12.5' font-style='italic'>Sounds like everyone.</text></g><g><rect x='60' y='110' width='300' height='48' rx='10' fill='#1b1e30' stroke='rgba(255,255,255,.12)'/><text x='210' y='139' fill='#9ba0b8' font-size='13.5' text-anchor='middle'>“We help teams coordinate.”</text><text x='380' y='139' fill='#6a6f88' font-size='12.5' font-style='italic'>Nods, forgets.</text></g><g><rect x='60' y='172' width='300' height='48' rx='10' fill='#1b1e30' stroke='rgba(95,212,196,.5)'/><text x='210' y='201' fill='#5fd4c4' font-size='13.5' text-anchor='middle'>“It shows who’s blocked, today.”</text><text x='380' y='201' fill='#9ba0b8' font-size='12.5' font-style='italic'>Leans in.</text></g><g><rect x='60' y='234' width='300' height='58' rx='10' fill='#26221a' stroke='rgba(232,184,75,.55)'/><text x='210' y='258' fill='#e8b84b' font-size='13.5' text-anchor='middle'>“Sarah’s waiting on you —</text><text x='210' y='277' fill='#e8b84b' font-size='13.5' text-anchor='middle'>since Tuesday.”</text><text x='380' y='268' fill='#eceef7' font-size='12.5' font-style='italic'>Can see it. Acts.</text></g><text x='30' y='316' fill='#e8b84b' font-size='13' font-weight='700' letter-spacing='2'>CONCRETE</text><text x='300' y='316' fill='#6a6f88' font-size='12.5' font-style='italic'>Same idea. Four altitudes. One that moves people.</text></svg>",
+        "visualCaption": "Only the bottom rung is visible to your listener.",
+        "after": [
+          "The habit: take the key sentence of your next pitch, email, or update and force it <strong>down two rungs</strong> — name a person, a day, a number, a moment. If nothing in the sentence can be pictured, you haven’t reached the ground yet."
+        ]
+      },
+      "lab": {
+        "title": "The Down-Two-Rungs Drill",
+        "paras": [
+          "Abstraction is a habit, so concreteness has to become one too. This drill takes one sentence you already say all the time and walks it down the ladder until it lands.",
+          "The test: could a stranger sketch what you just said? If not, keep descending."
+        ],
+        "exercise": "Take one sentence you say often about your work — say, <em>“Coordly helps teams stay aligned.”</em> In under 5 minutes, rewrite it two rungs down: <strong>“Coordly tells you Sarah’s been blocked on the design review since Tuesday — before she has to chase you.”</strong> Do the same for StoryOS or your consulting intro. Then use the concrete version in your very next conversation and notice how the follow-up questions change."
+      },
+      "masters": {
+        "name": "Fred Rogers",
+        "talk": "1969 Senate Subcommittee Testimony",
+        "videoId": "fKy7ljRr0AA",
+        "start": 0,
+        "watchWindow": "Watch the full 6 minutes",
+        "paras": [
+          "With $20 million of public-broadcasting funding on the line and a visibly impatient Senator Pastore across the table, Rogers cites no ratings and no research. He describes one child, one feeling — and then recites the words of a song, line by line. In six minutes, a hostile hearing turns into “I think it’s wonderful. Looks like you just earned the twenty million dollars.”"
+        ],
+        "observe": [
+          "He never argues the budget — he makes Pastore picture one specific child in front of one television set.",
+          "The pivotal move: he recites the song lyrics in full instead of summarizing them. Concrete words beat any summary of them.",
+          "Track Pastore’s tone from opening to close, and find the exact sentence where it flips."
+        ]
+      },
+      "steal": {
+        "line": "Trade one abstraction for one picture.",
+        "paras": [
+          "Before you send your next pitch or update, find its most abstract sentence — usually the one you’re proudest of — and replace it with a single moment someone can see."
+        ],
+        "example": [
+          "Instead of: “DreamGuard improves sleep quality.”",
+          "Try: “DreamGuard catches the 2am wake-up you don’t even remember — and tells you what caused it.”",
+          "One sentence. One picture. That’s the whole trick."
+        ]
+      }
+    },
+    {
       "date": "2026-07-09",
       "displayDate": "Thu · Jul 9",
       "domain": "Decision-Making",
