@@ -26,6 +26,7 @@ EDITIONS_PATH = ROOT / "editions.json"
 CONTEXT_PATH = ROOT / "context.md"
 TODAY = dt.datetime.now(ZoneInfo("America/New_York")).date().isoformat()
 MODEL = os.getenv("OPENAI_MODEL", "gpt-5.5")
+SMOKE_TEST = os.getenv("SMOKE_TEST") == "1"
 
 
 REQUIRED_TOP_LEVEL = {
@@ -151,7 +152,23 @@ def generate_edition(prompt: str) -> dict[str, Any]:
     return parse_json_object(extract_text(response))
 
 
+def smoke_test() -> int:
+    client = OpenAI()
+    response = client.responses.create(
+        model=MODEL,
+        input="Reply with exactly: daily-insight-ok",
+    )
+    text = extract_text(response)
+    if text.strip() != "daily-insight-ok":
+        raise ValueError(f"Unexpected smoke test response: {text!r}")
+    print("OpenAI smoke test passed.")
+    return 0
+
+
 def main() -> int:
+    if SMOKE_TEST:
+        return smoke_test()
+
     data = load_json(EDITIONS_PATH)
     editions = data.get("editions", [])
     if editions and editions[0].get("date") == TODAY:
