@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "0 11 * * *"
   workflow_dispatch:
+    inputs:
+      smoke_test:
+        description: "Test the OpenAI key without publishing a new edition"
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   publish:
@@ -21,6 +27,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.5' }}
+          SMOKE_TEST: ${{ inputs.smoke_test && '1' || '0' }}
         run: python scripts/generate_edition.py
       - name: Commit and push
         run: |
