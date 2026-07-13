@@ -1,6 +1,58 @@
 {
   "editions": [
     {
+      "date": "2026-07-13",
+      "displayDate": "Mon · Jul 13",
+      "domain": "Storytelling",
+      "hook": "A story isn't a list of events. It's a chain of causes.",
+      "insight": {
+        "title": "The But/Therefore Test",
+        "paras": [
+          "The creators of South Park run every script through one brutal test: between any two beats, you should be able to say <strong>“but”</strong> or <strong>“therefore”</strong> — never <em>“and then.”</em> “And then” means the events merely follow each other. “But” and “therefore” mean they <em>cause</em> each other — and causation is the thing an audience can’t look away from.",
+          "This is why most status updates, pitches, and case studies feel dead on arrival. <em>“We built the MVP, and then we onboarded pilots, and then we shipped v2”</em> is a résumé, not a story. Nothing is at stake between the beats, so the listener has no reason to wonder what happens next. The moment you insert an obstacle (“but”) or a forced decision (“therefore”), the same facts acquire momentum."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 300' xmlns='http://www.w3.org/2000/svg' font-family='Inter,-apple-system,sans-serif'><defs><marker id='ar3' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#6a6f88'/></marker></defs><text x='30' y='34' fill='#9ba0b8' font-size='13' font-weight='700' letter-spacing='2'>AND THEN…</text><text x='530' y='34' fill='#6a6f88' font-size='12' text-anchor='end' font-style='italic'>a list of events</text><g><rect x='30' y='52' width='140' height='52' rx='10' fill='#1b1e30' stroke='rgba(255,255,255,.12)'/><text x='100' y='83' fill='#9ba0b8' font-size='13' text-anchor='middle'>We built it</text><text x='196' y='68' fill='#6a6f88' font-size='11' text-anchor='middle'>and then</text><line x1='174' y1='78' x2='218' y2='78' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar3)'/><rect x='222' y='52' width='140' height='52' rx='10' fill='#1b1e30' stroke='rgba(255,255,255,.12)'/><text x='292' y='83' fill='#9ba0b8' font-size='12.5' text-anchor='middle'>We added features</text><text x='388' y='68' fill='#6a6f88' font-size='11' text-anchor='middle'>and then</text><line x1='366' y1='78' x2='410' y2='78' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar3)'/><rect x='414' y='52' width='120' height='52' rx='10' fill='#1b1e30' stroke='rgba(255,255,255,.12)'/><text x='474' y='83' fill='#9ba0b8' font-size='13' text-anchor='middle'>We launched</text></g><text x='280' y='132' fill='#6a6f88' font-size='12.5' text-anchor='middle' font-style='italic'>Each beat is true. None of it pulls.</text><text x='30' y='176' fill='#e8b84b' font-size='13' font-weight='700' letter-spacing='2'>BUT / THEREFORE</text><text x='530' y='176' fill='#9ba0b8' font-size='12' text-anchor='end' font-style='italic'>a chain of causes</text><g><rect x='30' y='194' width='140' height='52' rx='10' fill='#1b1e30' stroke='rgba(95,212,196,.5)'/><text x='100' y='225' fill='#eceef7' font-size='13' text-anchor='middle'>We built it</text><text x='196' y='210' fill='#ff7a6e' font-size='11.5' font-weight='700' text-anchor='middle'>BUT</text><line x1='174' y1='220' x2='218' y2='220' stroke='#ff7a6e' stroke-width='2' marker-end='url(#ar3)'/><rect x='222' y='194' width='140' height='52' rx='10' fill='#241a22' stroke='rgba(255,122,110,.45)'/><text x='292' y='216' fill='#ff9d94' font-size='12.5' text-anchor='middle'>nobody opened</text><text x='292' y='234' fill='#ff9d94' font-size='12.5' text-anchor='middle'>the dashboard</text><text x='388' y='210' fill='#5fd4c4' font-size='10.5' font-weight='700' text-anchor='middle'>THEREFORE</text><line x1='366' y1='220' x2='410' y2='220' stroke='#5fd4c4' stroke-width='2' marker-end='url(#ar3)'/><rect x='414' y='194' width='120' height='52' rx='10' fill='#26221a' stroke='rgba(232,184,75,.55)'/><text x='474' y='216' fill='#e8b84b' font-size='12.5' text-anchor='middle'>we rebuilt it</text><text x='474' y='234' fill='#e8b84b' font-size='12.5' text-anchor='middle'>around alerts</text></g><text x='280' y='282' fill='#6a6f88' font-size='12.5' text-anchor='middle' font-style='italic'>Same facts. Now every beat causes the next.</text></svg>",
+        "visualCaption": "If “and then” fits between two beats, the story has stalled.",
+        "after": [
+          "The habit: before your next demo, update, or pitch, write your beats down the page and read the connectors out loud. <strong>Every “and then” is a stall</strong> — replace it with the obstacle you hit (“but”) or the decision it forced (“therefore”)."
+        ]
+      },
+      "lab": {
+        "title": "The Connector Audit",
+        "paras": [
+          "Your origin story — of Coordly, of your consulting practice, of any project — is the one story you’ll tell hundreds of times. It deserves a causal spine, not a timeline.",
+          "The test: after each beat, could the listener feel why the next one had to happen? If they could shrug, you’ve got a list."
+        ],
+        "exercise": "Take your 30-second Coordly origin story and write it as five beats, one per line. Now audit the connectors: every “and then” gets rewritten. Try: <strong>“We watched teams drown in status meetings — BUT the tools only tracked tasks, not people — THEREFORE we built Coordly to show who’s blocked, not just what’s late.”</strong> Under 5 minutes. Say the new version out loud once, and use it in your next intro."
+      },
+      "masters": {
+        "name": "Trey Parker & Matt Stone",
+        "talk": "Writing Advice @ NYU (MTVU’s “Stand In”)",
+        "videoId": "vGUNqq3jVLg",
+        "start": 0,
+        "watchWindow": "Watch the full 3 minutes",
+        "paras": [
+          "Two of the fastest storytellers alive explain their entire craft in under three minutes, at a whiteboard, to a room of film students. No theory, no jargon — just the one rule they run every South Park episode through, and the exact words they use to test a beat sheet."
+        ],
+        "observe": [
+          "How fast the rule lands — they state it, demonstrate it, and stop. No hedging, no windup.",
+          "Trey points at the space <em>between</em> the beats — the connective tissue is the lesson, not the beats themselves.",
+          "They show the failure case first (“and then… and then…”) so the fix feels inevitable when it arrives. Steal that ordering."
+        ]
+      },
+      "steal": {
+        "line": "Kill every “and then.”",
+        "paras": [
+          "Take the next thing you have to narrate — a demo flow, a project recap, an investor update — and refuse to let two beats sit next to each other without “but” or “therefore” between them."
+        ],
+        "example": [
+          "Flat: “DreamGuard tracks sleep, and then it finds patterns, and then it sends a report.”",
+          "Causal: “DreamGuard tracks your sleep — BUT raw data changes nothing — THEREFORE it turns your worst night into one fix to try tonight.”",
+          "Same features. Now it’s a story."
+        ]
+      }
+    },
+    {
       "date": "2026-07-11",
       "displayDate": "Sat · Jul 11",
       "domain": "Communication",
