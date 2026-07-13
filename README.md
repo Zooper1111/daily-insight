@@ -1,20 +1,41 @@
 # Daily Insight
 
-Standalone daily learning digest. NOT related to Coordly or any other project.
+Standalone daily learning digest. The website reads `editions.json`, newest first.
 
 ## How it works
-- `index.html` — the app shell (rarely changes)
-- `editions.json` — all editions, newest first. The daily scheduled Claude task prepends a new edition here each morning.
-- `icon.b64` — base64 of apple-touch-icon.png (deploy with encoding base64 as `apple-touch-icon.png`)
 
-## Publishing flow (performed by the scheduled task)
-1. Read `editions.json` and `index.html` from this repo (branch `main`)
-2. Generate a new edition object matching the schema of existing entries (see editions.json)
-3. Prepend it to `editions[]`, keep max 30 editions, commit back to this repo
-4. Deploy `index.html`, updated `editions.json`, and `apple-touch-icon.png` (decoded from icon.b64) to the Vercel project `daily-insight` with target `production`
+- `index.html` — the app shell.
+- `editions.json` — all editions, newest first.
+- `context.md` — public-safe memory for Matt, his projects, content preferences, and corrections.
+- `scripts/generate_edition.py` — OpenAI-powered daily generator.
+- `.github/workflows/daily-edition.yml` — GitHub Actions workflow that publishes automatically.
+
+## Automated publishing
+
+The GitHub Action runs every morning and can also be run manually from the Actions tab.
+
+Setup required:
+
+1. Create an OpenAI API key.
+2. In GitHub, add it as a repository Actions secret named `OPENAI_API_KEY`.
+3. Optional: set repository variable `OPENAI_MODEL` to change the model without editing code.
+
+The workflow:
+
+1. Checks out the repo.
+2. Installs the OpenAI Python SDK.
+3. Runs `scripts/generate_edition.py`.
+4. Commits `editions.json` only if a new edition was generated.
+
+The script skips if today's edition already exists, so a manual run will not double-publish.
 
 ## Edition schema notes
-- `insight.visualSvg`: inline SVG string, single-quoted attributes, viewBox ~560 wide, dark theme colors (bg #1b1e30, ink #eceef7, dim #9ba0b8, gold #e8b84b, coral #ff7a6e, teal #5fd4c4, violet #a48bfa)
-- `masters.videoId`: real YouTube video ID found via web search — never invented
-- `masters.start`: seconds offset for the embed when a specific moment is known
-- Paragraph arrays may contain simple inline HTML (<strong>, <em>)
+
+- `insight.visualSvg`: inline SVG string, single-quoted attributes, viewBox ~560 wide, dark theme colors (bg #1b1e30, ink #eceef7, dim #9ba0b8, gold #e8b84b, coral #ff7a6e, teal #5fd4c4, violet #a48bfa).
+- `masters.videoId`: real YouTube video ID found via web search — never invented.
+- `masters.start`: seconds offset for the embed when a specific moment is known.
+- Paragraph arrays may contain simple inline HTML (`<strong>`, `<em>`).
+
+## Content direction
+
+Daily Insight should teach public speaking, everyday conversation, small talk, better questions, provocative openings, storytelling, strategy, decision-making, AI, and product communication. Keep it personal, practical, and immediately usable.
