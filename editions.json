@@ -1,6 +1,56 @@
 {
   "editions": [
     {
+      "date": "2026-07-14",
+      "displayDate": "Tue · Jul 14",
+      "domain": "Conversation",
+      "hook": "Good conversation gets easier when you give the other person something obvious to grab.",
+      "insight": {
+        "title": "Leave a Handle",
+        "paras": [
+          "Most people answer questions like they are trying to finish a form: accurate, tidy, closed. But useful conversation is less like reporting and more like handing someone a door handle. You say one true thing, then add a small detail they can easily ask about.",
+          "The move is simple: <strong>answer + handle</strong>. If someone asks, “How’s your week?” don’t say, “Good, busy.” Say, “Good — I’m trying to make one project feel less chaotic this week.” Now they have somewhere to go."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='104' cy='82' r='44' fill='#a48bfa' opacity='0.16'/><circle cx='462' cy='238' r='58' fill='#5fd4c4' opacity='0.12'/><rect x='58' y='82' width='196' height='116' rx='22' fill='none' stroke='#9ba0b8' stroke-width='3'/><path d='M110 198 L88 232 L136 204' fill='none' stroke='#9ba0b8' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/><text x='86' y='124' fill='#eceef7' font-family='Inter, Arial, sans-serif' font-size='22' font-weight='700'>Good.</text><text x='86' y='158' fill='#9ba0b8' font-family='Inter, Arial, sans-serif' font-size='16'>Busy.</text><path d='M278 155 C302 132 316 132 338 155' fill='none' stroke='#e8b84b' stroke-width='4' stroke-linecap='round'/><path d='M328 142 L342 156 L328 170' fill='none' stroke='#e8b84b' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><rect x='334' y='78' width='176' height='128' rx='22' fill='none' stroke='#5fd4c4' stroke-width='3'/><path d='M410 206 L388 238 L438 212' fill='none' stroke='#5fd4c4' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/><text x='362' y='118' fill='#eceef7' font-family='Inter, Arial, sans-serif' font-size='20' font-weight='700'>Good —</text><text x='362' y='148' fill='#eceef7' font-family='Inter, Arial, sans-serif' font-size='18'>trying to make</text><text x='362' y='174' fill='#ff7a6e' font-family='Inter, Arial, sans-serif' font-size='18' font-weight='700'>one thing simpler.</text><rect x='186' y='254' width='188' height='28' rx='14' fill='#e8b84b' opacity='0.95'/><text x='218' y='274' fill='#1b1e30' font-family='Inter, Arial, sans-serif' font-size='14' font-weight='800'>ANSWER + HANDLE</text></svg>",
+        "visualCaption": "A closed answer ends the thread; a handled answer invites the next question.",
+        "after": [
+          "Try this in small talk, project updates, and client conversations. You are not performing. You are just making the next conversational move easier for the other person."
+        ]
+      },
+      "lab": {
+        "title": "The Answer + Handle Drill",
+        "paras": [
+          "This skill matters because warmth is often logistical. People are more curious when you make curiosity easy. A handle gives them a clear place to attach a follow-up without forcing them to invent one from scratch."
+        ],
+        "exercise": "For the next five minutes, rewrite three dead-end answers. Use this pattern: “Short answer — specific handle.” Try these exact words today: “Pretty good — I’m trying to make my mornings less reactive.” “Busy — but in a useful way, I’m cleaning up one messy project.” “Good — I had one conversation that changed how I’m thinking about the next quarter.”"
+      },
+      "masters": {
+        "name": "Celeste Headlee",
+        "talk": "10 ways to have a better conversation | TED",
+        "videoId": "R1vskiVDwl4",
+        "start": 213,
+        "watchWindow": "Watch roughly 3:33–5:20, especially her points on open-ended questions and letting the conversation go where it naturally wants to go.",
+        "paras": [
+          "Headlee is useful here because she treats conversation as a craft, not a personality trait. Her advice is not “be more charming.” It is more practical: ask cleaner questions, stop rehearsing, and actually follow what the other person gives you.",
+          "For Matt, the key lesson is restraint. A better conversationalist does not always add more brilliance. Often, he adds one good handle, listens for the response, then follows the live thread instead of dragging the person back to the prepared point."
+        ],
+        "observe": [
+          "How she names simple rules without making them feel simplistic.",
+          "How she uses short, plain sentences that are easy to remember later.",
+          "How she keeps returning attention to the other person instead of showcasing herself."
+        ]
+      },
+      "steal": {
+        "line": "Give people a handle, not a hallway.",
+        "paras": [
+          "A hallway is too broad: “Work’s been crazy.” A handle is specific enough to grab: “I’m trying to reduce the number of meetings that create more meetings.” Use one concrete noun, one tension, or one tiny experiment."
+        ],
+        "example": [
+          "“It’s going well — I’m testing a better way to explain complicated work without making people feel like they need a map.”"
+        ]
+      }
+    },
+    {
       "date": "2026-07-13",
       "displayDate": "Mon · Jul 13",
       "domain": "Storytelling",
