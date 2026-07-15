@@ -1,6 +1,56 @@
 {
   "editions": [
     {
+      "date": "2026-07-15",
+      "displayDate": "Wed · Jul 15",
+      "domain": "Leadership",
+      "hook": "Before you ask people to follow a plan, name the change they already feel.",
+      "insight": {
+        "title": "Start With the Shift",
+        "paras": [
+          "A weak leadership update starts with activity: <em>we shipped this, changed that, decided this</em>. A stronger one starts with the shift: <strong>what is different now, and why it matters</strong>.",
+          "People listen faster when you locate them in a before-and-after. Not drama. Orientation. “The old way worked when X was true. Now Y is true. So we need Z.” That tiny structure makes a plan feel less like a command and more like a shared response to reality."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><path d='M72 218 C150 218 166 106 248 106 C326 106 342 218 488 218' fill='none' stroke='#5fd4c4' stroke-width='8' stroke-linecap='round'/><line x1='82' y1='244' x2='478' y2='244' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='8 10'/><circle cx='148' cy='218' r='12' fill='#e8b84b'/><circle cx='280' cy='106' r='14' fill='#ff7a6e'/><circle cx='420' cy='218' r='12' fill='#a48bfa'/><text x='122' y='262' fill='#eceef7' font-size='18' font-family='Inter, Arial'>old truth</text><text x='236' y='84' fill='#eceef7' font-size='18' font-family='Inter, Arial'>shift</text><text x='382' y='262' fill='#eceef7' font-size='18' font-family='Inter, Arial'>new move</text><text x='86' y='48' fill='#eceef7' font-size='26' font-family='Inter, Arial' font-weight='700'>Name the shift before the plan.</text></svg>",
+        "visualCaption": "Leadership gets clearer when people can see the old truth, the shift, and the new move.",
+        "after": [
+          "Use this for team updates, client conversations, product explanations, or even a one-on-one where you need to reset direction. The goal is not to sound grand. The goal is to make the next action feel inevitable."
+        ]
+      },
+      "lab": {
+        "title": "The Old / Now / So Script",
+        "paras": [
+          "This skill matters because people resist naked instructions. They lean in when the instruction is attached to a change they can recognize."
+        ],
+        "exercise": "Take one thing you need to explain today and say it in three sentences: “The old assumption was ____. What changed is ____. So the next move is ____.” Example: “The old assumption was that coordination problems were mostly about missing tasks. What changed is that the handoffs are now the bottleneck. So the next move is to make ownership visible before we add more process.”"
+      },
+      "masters": {
+        "name": "Simon Sinek",
+        "talk": "How great leaders inspire action",
+        "videoId": "qp0HIF3SfI4",
+        "start": 260,
+        "watchWindow": "4:20–6:20, where he contrasts what/how/why and shows how order changes attention",
+        "paras": [
+          "Sinek fits today because his best move is not motivational volume; it is sequence. He shows that the same facts land differently when the listener first understands the belief or shift underneath them.",
+          "Watch less for the famous framework and more for the practical speaking move: he makes the audience feel the difference between a flat explanation and a charged one."
+        ],
+        "observe": [
+          "How he uses contrast before giving advice.",
+          "How simple the language is: short words, repeated structure, no decorative complexity.",
+          "How the idea becomes memorable because the order changes, not because the facts change."
+        ]
+      },
+      "steal": {
+        "line": "“The old way made sense—until the conditions changed.”",
+        "paras": [
+          "Practice this line before proposing a change. It keeps you from making other people feel stupid for believing yesterday’s logic. That warmth buys attention for the harder part: the new move."
+        ],
+        "example": [
+          "“The old way made sense—until the conditions changed. We used to need more updates; now we need cleaner handoffs. So I’d like us to change the meeting from status-sharing to decision-clearing.”"
+        ]
+      }
+    },
+    {
       "date": "2026-07-14",
       "displayDate": "Tue · Jul 14",
       "domain": "Conversation",
