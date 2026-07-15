@@ -38,4 +38,10 @@ The script skips if today's edition already exists, so a manual run will not dou
 
 ## Content direction
 
-Daily Insight should teach public speaking, everyday conversation, small talk, better questions, provocative openings, storytelling, strategy, decision-making, AI, and product communication. Keep it personal, practical, and immediately usable.
+Daily Insight should teach public speaking, everyday conversation, small talk, better questions, provocative openings, storytelling, strategy, decision-making, AI, product thinking, and useful theories or models. Keep it personal, practical, and immediately usable.
+
+Each edition should usually include:
+
+- One theory, model, framework, or mental model explained simply.
+- One public-safe connection to Matt's active workstreams.
+- One short applied story, scene, or example that shows how the idea could be used.
