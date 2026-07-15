@@ -98,14 +98,14 @@ Schema:
   "hook": "One sharp, specific line",
   "insight": {{
     "title": "Title",
-    "paras": ["2 short paragraphs, <strong>/<em> allowed"],
+    "paras": ["2 short paragraphs, <strong>/<em> allowed. Teach one theory, model, framework, or mental model here."],
     "visualSvg": "<svg viewBox='0 0 560 320'>...</svg>",
     "visualCaption": "One-line caption",
-    "after": ["One closing application paragraph"]
+    "after": ["One closing application paragraph that ties the idea to a public-safe Matt workstream example"]
   }},
   "lab": {{
     "title": "Skill title",
-    "paras": ["Why this skill matters"],
+    "paras": ["Why this skill matters, with a brief concrete scene or story when useful"],
     "exercise": "Concrete under-5-minute exercise with exact words to try"
   }},
   "masters": {{
@@ -120,20 +120,32 @@ Schema:
   "steal": {{
     "line": "One punchy sentence.",
     "paras": ["How to practice it today"],
-    "example": ["Example script line"]
+    "example": ["Example script line that could fit a planning session, product discussion, client conversation, demo, or strategy memo"]
   }}
 }}
 
 Content goals:
 - Rotate domains across Innovation, AI, Strategy, Leadership, Storytelling,
   Decision-Making, Communication, and Conversation.
+- Every edition must teach one real theory, model, framework, mental model, or
+  named concept from psychology, systems thinking, rhetoric, design,
+  management, decision science, innovation, AI, or product strategy. Make the
+  concept practical, not academic.
 - Include everyday speaking skills often: small talk, better questions,
   follow-ups, warmth, transitions, graceful exits, provocative openings, and
   making ideas interesting without sounding gimmicky.
 - Keep public-speaking craft in the mix, but do not make every edition about
   speeches or presentations.
-- Personalize to Coordly, StoryOS, DreamGuard, the strategy agent, quarterly
-  planning, or consulting only when natural. Never invent project capabilities.
+- Do not make every edition primarily about "how to talk." Some should be about
+  thinking better, seeing systems, making decisions, shaping products, using AI,
+  planning work, or framing strategy.
+- Most editions should include a public-safe example tied to Coordly, StoryOS,
+  DreamGuard, the strategy agent, quarterly planning, or consulting. Use simple
+  scenes such as a planning session, product decision, client explanation, demo,
+  workshop, or strategy memo. Never invent project capabilities or private
+  details.
+- Include a short applied story, scenario, or example. Show how the idea plays
+  out instead of only explaining what to say.
 - visualSvg must be original inline SVG using this palette: bg #1b1e30,
   ink #eceef7, dim #9ba0b8, gold #e8b84b, coral #ff7a6e, teal #5fd4c4,
   violet #a48bfa.
