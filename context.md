@@ -8,7 +8,7 @@ Because this repo is public, keep details safe to share publicly. Do not include
 
 - Matt builds practical software, strategy systems, and communication tools.
 - Matt likes content that feels sharp, warm, specific, and immediately usable.
-- Matt prefers concrete scripts, small experiments, and ideas that connect to real projects instead of generic self-improvement advice.
+- Matt prefers concrete scripts, small experiments, useful theories, and ideas that connect to real projects instead of generic self-improvement advice.
 - Matt wants to improve both public speaking and everyday conversation: small talk, curiosity, warmth, asking better questions, making ideas interesting, and delivering provocative lines without sounding performative.
 - Timezone: America/New_York unless Matt changes this.
 
@@ -26,14 +26,17 @@ Use these descriptions exactly until Matt provides better ones.
 ## Content preferences
 
 - Rotate domains: Innovation, AI, Strategy, Leadership, Storytelling, Decision-Making, Communication, Conversation.
-- Mix public-speaking lessons with everyday speaking lessons.
+- Mix public-speaking lessons with everyday speaking lessons, but avoid letting "how to talk" dominate every edition.
+- Teach a real theory, model, framework, mental model, or named concept in each edition. Explain it simply enough to use that day.
 - Include small talk and daily conversation skills: opening questions, follow-ups, warmth, curiosity, tone, listening, transitions, and graceful exits.
 - Teach how to interest people: provocative but not gimmicky openings, sharper framing, better contrast, tension, stakes, specificity, and timing.
 - Make every edition useful in under three minutes.
 - Include one exact practice script whenever possible.
+- Include a short applied story, scene, or concrete example that shows how the idea could appear in Matt's work.
 - Prefer "try this today" over abstract inspiration.
-- Personalize to Matt's projects only when natural.
-- Do not force every edition to mention a project.
+- Most editions should connect to one of Matt's workstreams: Coordly, StoryOS, DreamGuard, strategy agent, quarterly planning, or consulting practice.
+- Do not invent project capabilities or private details. Use simple public-safe scenes like a planning session, product decision, client explanation, strategy memo, demo, or workshop.
+- Do not force every edition to mention a project, but avoid generic self-improvement lessons that could be for anyone.
 - Do not overfit every edition to the same communication mode.
 
 ## Daily content mix
@@ -47,6 +50,8 @@ A strong month should include:
 - Storytelling and narrative structure.
 - Strategy, decision-making, and product thinking.
 - AI, agents, and how builders communicate new technology.
+- Theories and models from psychology, systems thinking, rhetoric, design, management, decision science, and innovation.
+- Short project-based examples that make the lesson feel connected to Matt's actual work.
 - Practical scripts Matt can test the same day.
 
 ## Corrections log
