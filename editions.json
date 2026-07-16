@@ -1,6 +1,55 @@
 {
   "editions": [
     {
+      "date": "2026-07-16",
+      "displayDate": "Thu · Jul 16",
+      "domain": "Strategy",
+      "hook": "A strategy is not a list of priorities; it is a bet with consequences.",
+      "insight": {
+        "title": "Make the Choice Visible",
+        "paras": [
+          "Roger Martin's <strong>Strategic Choice Cascade</strong> says strategy gets real only when you answer linked questions: what is our winning aspiration, where will we play, how will we win, what capabilities do we need, and what systems make it repeatable?",
+          "The useful move is not filling out all five boxes perfectly. It is exposing the <em>choice</em>. If two options could both be true, you have not chosen yet. Replace vague agreement with a sentence that names the arena, the edge, and the tradeoff."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><text x='48' y='46' fill='#eceef7' font-size='24' font-family='Arial'>The strategy cascade</text><text x='48' y='76' fill='#9ba0b8' font-size='14' font-family='Arial'>Each answer narrows the next decision.</text><g font-family='Arial' font-size='15'><rect x='58' y='105' width='150' height='42' rx='10' fill='#e8b84b'/><text x='82' y='132' fill='#1b1e30'>Aspiration</text><path d='M208 126 L250 126' stroke='#9ba0b8' stroke-width='3'/><polygon points='250,126 240,120 240,132' fill='#9ba0b8'/><rect x='252' y='105' width='150' height='42' rx='10' fill='#5fd4c4'/><text x='282' y='132' fill='#1b1e30'>Where to play</text><path d='M402 126 L444 126' stroke='#9ba0b8' stroke-width='3'/><polygon points='444,126 434,120 434,132' fill='#9ba0b8'/><rect x='446' y='105' width='70' height='42' rx='10' fill='#ff7a6e'/><text x='459' y='132' fill='#1b1e30'>How</text><rect x='155' y='198' width='120' height='42' rx='10' fill='#a48bfa'/><text x='176' y='225' fill='#1b1e30'>Capabilities</text><path d='M327 147 C320 176 281 188 241 198' stroke='#9ba0b8' stroke-width='3' fill='none'/><rect x='318' y='198' width='120' height='42' rx='10' fill='none' stroke='#e8b84b' stroke-width='2'/><text x='347' y='225' fill='#eceef7'>Systems</text><path d='M275 219 L318 219' stroke='#9ba0b8' stroke-width='3'/><polygon points='318,219 308,213 308,225' fill='#9ba0b8'/></g><text x='48' y='284' fill='#9ba0b8' font-size='13' font-family='Arial'>If the cascade does not rule something out, it is still a wishlist.</text></svg>",
+        "visualCaption": "Strategy sharpens as each choice rules out tempting alternatives.",
+        "after": [
+          "In a quarterly planning session, Matt could use this to keep a strategy agent discussion from becoming a pile of good ideas. The question is not, <em>What should the agent eventually do?</em> It is, <em>Where will this first version play, how will it create an edge, and what are we deliberately not building yet?</em>"
+        ]
+      },
+      "lab": {
+        "title": "The Choice Sentence",
+        "paras": [
+          "Most strategy conversations get fuzzy because people agree too early. A choice sentence slows the room down and turns preference into a testable bet. It is useful in product planning, client work, and even everyday conversation when someone says, <em>We need to get clearer.</em>"
+        ],
+        "exercise": "Take one active project and say this out loud: <strong>For now, we are choosing [specific audience or arena] over [tempting broader arena], because we believe [edge] matters more than [alternative edge]. If that is wrong, we should see [signal] within [timeframe].</strong>"
+      },
+      "masters": {
+        "name": "Roger Martin",
+        "talk": "Roger Martin - Playing to Win",
+        "videoId": "I_JnjK8sGNU",
+        "start": 35,
+        "watchWindow": "0:35–4:10",
+        "paras": [
+          "Martin is useful because he makes strategy feel less mystical. Watch how he keeps pulling strategy back to choices, especially where to play and how to win, instead of letting it drift into goals, values, or action items."
+        ],
+        "observe": [
+          "How he uses plain language instead of consultant fog.",
+          "How he treats strategy as a connected set of answers, not a document.",
+          "How he makes tradeoffs feel responsible rather than limiting."
+        ]
+      },
+      "steal": {
+        "line": "If this strategy does not disappoint someone, it probably has not chosen enough.",
+        "paras": [
+          "Use this when a planning conversation is becoming too agreeable. Say it warmly, then ask what the current plan would force you to postpone, ignore, or decline. The goal is not to be provocative for style points; it is to protect the team from fake alignment."
+        ],
+        "example": [
+          "In a Coordly product discussion: <strong>If we choose coordinators as the first arena, we are choosing their planning pain over every adjacent workflow for now. What would that make obviously in scope, and what would it make obviously later?</strong>"
+        ]
+      }
+    },
+    {
       "date": "2026-07-15",
       "displayDate": "Wed · Jul 15",
       "domain": "Leadership",
