@@ -1,6 +1,56 @@
 {
   "editions": [
     {
+      "date": "2026-07-17",
+      "displayDate": "Fri · Jul 17",
+      "domain": "AI",
+      "hook": "The best AI workflow is not smarter software; it is a better handoff.",
+      "insight": {
+        "title": "Design the Handoff",
+        "paras": [
+          "Garry Kasparov’s <strong>centaur model</strong> came from advanced chess: human plus machine can beat either alone, but only when the process is good. The winning edge is not just intelligence. It is knowing <em>who does what, when, and how the next move gets checked</em>.",
+          "Use this as a daily AI rule: give the machine the work it is good at—variation, recall, synthesis, first drafts—and keep the human work visible: taste, stakes, judgment, context, and final commitment. A weak handoff creates mush. A sharp handoff creates leverage."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='118' cy='104' r='46' fill='none' stroke='#5fd4c4' stroke-width='4'/><text x='118' y='99' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>Human</text><text x='118' y='123' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>judgment</text><circle cx='442' cy='104' r='46' fill='none' stroke='#a48bfa' stroke-width='4'/><text x='442' y='99' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>AI</text><text x='442' y='123' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>range</text><path d='M168 104 C230 64 330 64 392 104' fill='none' stroke='#e8b84b' stroke-width='4' stroke-linecap='round'/><path d='M392 104 l-16 -8 l5 17 z' fill='#e8b84b'/><path d='M392 126 C330 172 230 172 168 126' fill='none' stroke='#ff7a6e' stroke-width='4' stroke-linecap='round'/><path d='M168 126 l16 7 l-6 -16 z' fill='#ff7a6e'/><rect x='166' y='210' width='228' height='52' rx='14' fill='none' stroke='#eceef7' stroke-width='2'/><text x='280' y='232' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>Better Process</text><text x='280' y='253' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>prompt → critique → decide</text><line x1='280' y1='174' x2='280' y2='210' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='5 6'/><text x='280' y='36' text-anchor='middle' fill='#e8b84b' font-size='16' font-family='Inter, Arial'>Centaur work is a handoff, not a hand wave.</text></svg>",
+        "visualCaption": "Human judgment and AI range only compound when the process is explicit.",
+        "after": [
+          "For the strategy agent, this means the question is not “Can it think for me?” A better question is: “Where should it widen the options, where should Matt apply taste, and where does the final decision get made?”"
+        ]
+      },
+      "lab": {
+        "title": "The Three-Part Handoff",
+        "paras": [
+          "Most people talk to AI like they are tossing a task over a wall. Better builders narrate the handoff. They say what the machine should generate, what criteria matter, and what kind of human decision will follow."
+        ],
+        "exercise": "Take one live task today and use this exact script: “I want you to generate options, not decide. Give me five approaches, rank them by tradeoff, then tell me what you would need to know before choosing. I will make the final call.” Spend two minutes comparing whether the output is more useful than a normal prompt."
+      },
+      "masters": {
+        "name": "Garry Kasparov",
+        "talk": "Don't fear intelligent machines. Work with them",
+        "videoId": "NP8xt8o4_5Q",
+        "start": 500,
+        "watchWindow": "8:20–12:05",
+        "paras": [
+          "Kasparov is the right master because he does not frame AI as magic or doom. He frames it as a partnership problem: the best result comes from combining human strategy, machine calculation, and a superior process.",
+          "Listen for how he turns a famous loss into a practical operating model. The lesson is not “machines win.” The lesson is “the interface between person and machine becomes the new craft.”"
+        ],
+        "observe": [
+          "How he contrasts human intuition with machine calculation.",
+          "How he makes the phrase “better process” feel more important than raw intelligence.",
+          "How he uses chess as a simple scene for a much larger technology argument."
+        ]
+      },
+      "steal": {
+        "line": "Do not ask AI to replace your judgment; ask it to improve the quality of what your judgment sees.",
+        "paras": [
+          "Use this line when someone is either overhyping or dismissing AI. It is calm, precise, and hard to argue with because it gives both sides a job: the machine expands the field, the human owns the call."
+        ],
+        "example": [
+          "“For this planning session, I do not want the agent to pick the strategy. I want it to surface the options we are not seeing, pressure-test the assumptions, and make the tradeoffs plain enough that we can decide faster.”"
+        ]
+      }
+    },
+    {
       "date": "2026-07-16",
       "displayDate": "Thu · Jul 16",
       "domain": "Strategy",
