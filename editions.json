@@ -1,6 +1,58 @@
 {
   "editions": [
     {
+      "date": "2026-07-18",
+      "displayDate": "Sat · Jul 18",
+      "domain": "Innovation",
+      "hook": "Your real competitor is whatever people do when they give up on you.",
+      "insight": {
+        "title": "Find the Job Behind the Request",
+        "paras": [
+          "Jobs-to-Be-Done says people do not simply buy or use products; they <em>hire</em> them to make progress in a specific circumstance. The useful question is not, “What feature do they want?” It is, “What were they trying to get done when this became worth their attention?”",
+          "That shift changes innovation from preference-collecting to situation-reading. A request like “make the dashboard simpler” may really mean, “help me walk into a meeting without looking unprepared.” The job is bigger than the button, and often more interesting than the stated ask."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='28' fill='#1b1e30'/><text x='50' y='58' fill='#eceef7' font-size='24' font-family='Arial, sans-serif' font-weight='700'>Jobs-to-Be-Done</text><text x='50' y='88' fill='#9ba0b8' font-size='14' font-family='Arial, sans-serif'>Do not stop at the feature request.</text><rect x='48' y='122' width='130' height='72' rx='16' fill='none' stroke='#ff7a6e' stroke-width='3'/><text x='72' y='153' fill='#ff7a6e' font-size='16' font-family='Arial, sans-serif' font-weight='700'>Request</text><text x='70' y='176' fill='#eceef7' font-size='13' font-family='Arial, sans-serif'>“Simpler view”</text><path d='M190 158 C230 118, 274 118, 314 158' fill='none' stroke='#e8b84b' stroke-width='4' stroke-linecap='round'/><polygon points='314,158 298,151 302,169' fill='#e8b84b'/><rect x='328' y='102' width='184' height='112' rx='20' fill='none' stroke='#5fd4c4' stroke-width='3'/><text x='365' y='139' fill='#5fd4c4' font-size='16' font-family='Arial, sans-serif' font-weight='700'>Real Job</text><text x='354' y='166' fill='#eceef7' font-size='13' font-family='Arial, sans-serif'>“Help me explain</text><text x='356' y='186' fill='#eceef7' font-size='13' font-family='Arial, sans-serif'>status with confidence.”</text><circle cx='114' cy='244' r='20' fill='#a48bfa'/><circle cx='192' cy='244' r='20' fill='#a48bfa' opacity='.65'/><circle cx='270' cy='244' r='20' fill='#a48bfa' opacity='.35'/><text x='318' y='250' fill='#9ba0b8' font-size='14' font-family='Arial, sans-serif'>Alternatives reveal the job.</text></svg>",
+        "visualCaption": "A feature request is the surface; the job is the progress underneath.",
+        "after": [
+          "In a Coordly product discussion, this keeps Matt from debating “more columns vs. fewer columns” too early. The sharper move is to ask what moment the user is trying to survive: a planning meeting, a status update, a handoff, or a decision they need to defend."
+        ]
+      },
+      "lab": {
+        "title": "Ask for the Previous Workaround",
+        "paras": [
+          "The fastest way to uncover a job is to ask what someone did before your product, process, or idea showed up. Their workaround exposes the real competitor: a spreadsheet, a meeting, a private note, a Slack thread, waiting, guessing, or doing nothing.",
+          "In conversation, this also makes you warmer. Instead of interrogating someone about preferences, you become curious about the situation they were in."
+        ],
+        "exercise": "In one product, client, or planning conversation today, ask exactly: “Before you wanted this, what were you doing instead?” Then follow with: “What made that workaround finally annoying enough to change?” Write down the verb in their answer: explain, decide, remember, align, reassure, avoid, prepare. That verb is probably close to the job."
+      },
+      "masters": {
+        "name": "Clayton Christensen",
+        "talk": "Clay Christensen: The Jobs to be Done Theory",
+        "videoId": "Stc0beAxavY",
+        "start": 0,
+        "watchWindow": "0:00–4:47",
+        "paras": [
+          "Christensen fits today because he makes innovation feel less mystical. He shows that the breakthrough is often not a new technology; it is a better description of the customer’s circumstance.",
+          "Watch how he turns a plain object into a strategic lens. The lesson is not “milkshakes are interesting.” The lesson is: when you name the real job, the market, competition, and product criteria all change."
+        ],
+        "observe": [
+          "How he starts with a concrete business problem before introducing the theory.",
+          "How he treats competitors as alternatives for progress, not just similar products.",
+          "How the story gets clearer because the customer’s circumstance becomes more specific."
+        ]
+      },
+      "steal": {
+        "line": "Do not ask what they want yet; ask what they were trying to get done.",
+        "paras": [
+          "Use this line when a discussion is drifting into feature taste, vague strategy, or solution-first brainstorming. It slows the room down without killing momentum.",
+          "The tone matters: curious, not corrective. You are not saying the request is wrong. You are saying the request is a clue."
+        ],
+        "example": [
+          "“Before we decide whether Coordly needs another view, let’s name the job. In that moment, is the person trying to plan the work, explain the work, recover from confusion, or get someone else to make a decision?”"
+        ]
+      }
+    },
+    {
       "date": "2026-07-17",
       "displayDate": "Fri · Jul 17",
       "domain": "AI",
