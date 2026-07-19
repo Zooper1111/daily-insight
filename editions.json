@@ -1,6 +1,57 @@
 {
   "editions": [
     {
+      "date": "2026-07-19",
+      "displayDate": "Sun · Jul 19",
+      "domain": "Decision-Making",
+      "hook": "Before you trust the plan, compare it to the last three plans like it.",
+      "insight": {
+        "title": "Take the Outside View",
+        "paras": [
+          "The <strong>planning fallacy</strong>, named by Daniel Kahneman and Amos Tversky, is our habit of estimating work from the inside: our intention, our current enthusiasm, our clean imagined path. The inside view says, <em>this should only take a week</em>. Reality replies with dependencies, revisions, waiting, fatigue, and the part nobody named.",
+          "The antidote is the <strong>outside view</strong>: stop asking, “How long should this take?” and ask, “How long did similar things actually take?” One minute of comparison can save a week of fantasy. Use history before optimism."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><text x='54' y='54' fill='#eceef7' font-size='24' font-family='Arial, sans-serif' font-weight='700'>Inside View vs. Outside View</text><rect x='54' y='94' width='190' height='150' rx='18' fill='none' stroke='#ff7a6e' stroke-width='3'/><text x='86' y='134' fill='#ff7a6e' font-size='18' font-family='Arial, sans-serif' font-weight='700'>Inside View</text><path d='M96 170 C130 132, 176 132, 206 170' fill='none' stroke='#ff7a6e' stroke-width='4' stroke-linecap='round'/><circle cx='149' cy='170' r='8' fill='#ff7a6e'/><text x='84' y='215' fill='#9ba0b8' font-size='14' font-family='Arial, sans-serif'>“Best case path”</text><rect x='316' y='94' width='190' height='150' rx='18' fill='none' stroke='#5fd4c4' stroke-width='3'/><text x='346' y='134' fill='#5fd4c4' font-size='18' font-family='Arial, sans-serif' font-weight='700'>Outside View</text><line x1='354' y1='180' x2='468' y2='180' stroke='#5fd4c4' stroke-width='4' stroke-linecap='round'/><circle cx='370' cy='180' r='8' fill='#e8b84b'/><circle cx='410' cy='180' r='8' fill='#a48bfa'/><circle cx='452' cy='180' r='8' fill='#5fd4c4'/><text x='350' y='215' fill='#9ba0b8' font-size='14' font-family='Arial, sans-serif'>“Actual past cases”</text><path d='M258 168 L300 168' stroke='#e8b84b' stroke-width='4' stroke-linecap='round'/><path d='M292 158 L302 168 L292 178' fill='none' stroke='#e8b84b' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><text x='116' y='286' fill='#eceef7' font-size='16' font-family='Arial, sans-serif'>Replace confidence with comparison.</text></svg>",
+        "visualCaption": "The inside view imagines the project; the outside view checks the evidence.",
+        "after": [
+          "In a quarterly planning session, Matt could use this before committing to a Coordly milestone or strategy-agent experiment: not “Can we squeeze this in?” but “What did similar pushes actually require?” The tone stays practical, not pessimistic."
+        ]
+      },
+      "lab": {
+        "title": "The Three-Case Estimate",
+        "paras": [
+          "This skill matters because optimistic plans usually sound intelligent in the room. Nobody feels reckless; everyone just describes the clean version. The useful move is to make comparison feel normal, not like a challenge.",
+          "Picture a planning conversation where a feature, memo, demo, or workshop plan is drifting toward a casual deadline. The room needs a pause that protects the work without killing momentum."
+        ],
+        "exercise": "In the next plan you touch, take under five minutes and say: “Quick outside-view check: what are three similar things we’ve done, how long did they actually take, and what surprised us?” Write the three actual durations. Then choose the middle one as your starting estimate before debating details."
+      },
+      "masters": {
+        "name": "Daniel Kahneman",
+        "talk": "Thinking, Fast and Slow | Daniel Kahneman | Talks at Google",
+        "videoId": "CjVQJdIrDJ0",
+        "start": 160,
+        "watchWindow": "2:40–7:20, where Kahneman introduces fast intuition, slow thinking, and why confidence can outrun accuracy.",
+        "paras": [
+          "Kahneman fits today because his work gives Matt a clean language for a common builder problem: smart people can still make bad estimates when they reason from the story in their heads instead of the evidence in front of them.",
+          "Watch for the calmness of his delivery. He does not attack intuition; he shows where it is useful and where it needs a guardrail."
+        ],
+        "observe": [
+          "How he makes a complex cognitive model feel simple without dumbing it down.",
+          "How he separates confidence from correctness.",
+          "How he uses plain examples before abstract labels."
+        ]
+      },
+      "steal": {
+        "line": "Optimism is allowed; evidence gets the first vote.",
+        "paras": [
+          "Use this line when a plan is getting exciting but thin. It lets you keep energy in the room while asking for a reality check. The trick is tone: warm, curious, and slightly amused—not prosecutorial."
+        ],
+        "example": [
+          "“I like the ambition here. Optimism is allowed; evidence gets the first vote. What are the closest three examples we can compare this to before we pick the date?”"
+        ]
+      }
+    },
+    {
       "date": "2026-07-18",
       "displayDate": "Sat · Jul 18",
       "domain": "Innovation",
