@@ -1,6 +1,57 @@
 {
   "editions": [
     {
+      "date": "2026-07-21",
+      "displayDate": "Tue · Jul 21",
+      "domain": "Communication",
+      "hook": "Clarity is generosity under pressure.",
+      "insight": {
+        "title": "Pass the Four-Check Test",
+        "paras": [
+          "Paul Grice's <strong>Cooperative Principle</strong> says people listen as if you are trying to be useful. Underneath every explanation, they are silently checking four things: <em>Is this enough? Is it true? Is it relevant? Is it clear?</em> His maxims are academic, but the daily version is simple: do not make the listener do avoidable labor.",
+          "Before a planning session, demo, or client explanation, run your point through the four checks. <strong>Enough</strong>: one complete answer, not a swamp. <strong>True</strong>: confidence level included. <strong>Relevant</strong>: tied to the decision at hand. <strong>Clear</strong>: plain words, visible structure. The goal is not to sound smart. The goal is to make the next move obvious."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='280' cy='160' r='108' fill='none' stroke='#2b3048' stroke-width='24'/><path d='M280 52 A108 108 0 0 1 388 160' fill='none' stroke='#e8b84b' stroke-width='24' stroke-linecap='round'/><path d='M388 160 A108 108 0 0 1 280 268' fill='none' stroke='#5fd4c4' stroke-width='24' stroke-linecap='round'/><path d='M280 268 A108 108 0 0 1 172 160' fill='none' stroke='#ff7a6e' stroke-width='24' stroke-linecap='round'/><path d='M172 160 A108 108 0 0 1 280 52' fill='none' stroke='#a48bfa' stroke-width='24' stroke-linecap='round'/><text x='280' y='132' text-anchor='middle' fill='#eceef7' font-size='24' font-family='Inter, Arial, sans-serif' font-weight='700'>Four checks</text><text x='280' y='164' text-anchor='middle' fill='#9ba0b8' font-size='15' font-family='Inter, Arial, sans-serif'>enough · true · relevant · clear</text><text x='280' y='194' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial, sans-serif'>Make the next move obvious</text><text x='280' y='33' text-anchor='middle' fill='#e8b84b' font-size='14' font-family='Inter, Arial, sans-serif'>ENOUGH</text><text x='442' y='166' text-anchor='middle' fill='#5fd4c4' font-size='14' font-family='Inter, Arial, sans-serif'>TRUE</text><text x='280' y='300' text-anchor='middle' fill='#ff7a6e' font-size='14' font-family='Inter, Arial, sans-serif'>RELEVANT</text><text x='118' y='166' text-anchor='middle' fill='#a48bfa' font-size='14' font-family='Inter, Arial, sans-serif'>CLEAR</text></svg>",
+        "visualCaption": "Grice's maxims, translated into a builder's pre-flight checklist.",
+        "after": [
+          "In a strategy agent memo, Matt could use this before adding any cleverness: one sentence for the recommendation, one sentence for evidence, one sentence for uncertainty, and one sentence for the next action. The intelligence shows up as reduced friction."
+        ]
+      },
+      "lab": {
+        "title": "The Four-Sentence Explanation",
+        "paras": [
+          "When people get vague, they usually add more words. This exercise does the opposite. It gives the listener a clean container, which creates trust faster than polish.",
+          "Imagine someone asks, \"What are you trying to decide with this product direction?\" Instead of narrating the whole backstory, answer with a four-sentence spine."
+        ],
+        "exercise": "Take one real thing you need to explain today. Say it out loud in exactly this format: \"The short version is ___. The reason it matters is ___. The part I'm least sure about is ___. The next useful move is ___.\" Then cut any sentence that does not help the listener decide, respond, or ask a better follow-up."
+      },
+      "masters": {
+        "name": "Julian Treasure",
+        "talk": "How to speak so that people want to listen",
+        "videoId": "eIho2S0ZahI",
+        "start": 174,
+        "watchWindow": "2:54–4:35",
+        "paras": [
+          "Treasure is useful here because he treats speech as a service to the listener, not a performance by the speaker. In this section, watch how he names the habits that make people stop listening, then moves toward a constructive standard for being heard.",
+          "Pair his lesson with Grice: your credibility is not just whether you are right. It is whether your words feel honest, relevant, concise, and easy to receive."
+        ],
+        "observe": [
+          "How he uses lists to make abstract behavior instantly trackable.",
+          "How he contrasts speech that drains trust with speech that builds it.",
+          "How his pacing slows when he wants the audience to remember the frame."
+        ]
+      },
+      "steal": {
+        "line": "Do not make the listener assemble the point for you.",
+        "paras": [
+          "Use this as a private reminder before meetings, demos, notes, and casual explanations. If the other person has to infer the decision, the risk, or the ask, your message is still unfinished."
+        ],
+        "example": [
+          "\"Let me make this easy to react to: I recommend we choose the simpler version for now, because it teaches us faster. The risk is that it may feel less impressive in a demo. The next move is to test whether the simpler version still explains the value clearly.\""
+        ]
+      }
+    },
+    {
       "date": "2026-07-20",
       "displayDate": "Mon · Jul 20",
       "domain": "Leadership",
