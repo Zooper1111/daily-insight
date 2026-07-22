@@ -1,6 +1,55 @@
 {
   "editions": [
     {
+      "date": "2026-07-22",
+      "displayDate": "Wed · Jul 22",
+      "domain": "Storytelling",
+      "hook": "If there is no “but,” there is probably no story.",
+      "insight": {
+        "title": "Find the But",
+        "paras": [
+          "Randy Olson’s <strong>ABT Narrative Template</strong> is brutally simple: <em>And, But, Therefore</em>. The “and” gives context, the “but” creates tension, and the “therefore” makes action feel necessary. It is a tiny structure for turning information into momentum.",
+          "Most weak explanations are really AAA chains: and this, and this, and this. They sound complete but feel flat. Before explaining Coordly, StoryOS, DreamGuard, or a strategy idea, ask: <strong>What is the tension that makes this matter now?</strong> The answer belongs after “but.”"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><path d='M70 166 C130 92, 197 92, 257 166 S388 240, 490 132' fill='none' stroke='#5fd4c4' stroke-width='8' stroke-linecap='round'/><circle cx='112' cy='132' r='38' fill='#e8b84b'/><circle cx='280' cy='166' r='44' fill='#ff7a6e'/><circle cx='450' cy='144' r='38' fill='#a48bfa'/><text x='112' y='138' text-anchor='middle' font-family='Inter, Arial' font-size='20' font-weight='700' fill='#1b1e30'>AND</text><text x='280' y='173' text-anchor='middle' font-family='Inter, Arial' font-size='20' font-weight='700' fill='#1b1e30'>BUT</text><text x='450' y='151' text-anchor='middle' font-family='Inter, Arial' font-size='17' font-weight='700' fill='#1b1e30'>SO</text><text x='280' y='278' text-anchor='middle' font-family='Inter, Arial' font-size='18' fill='#eceef7'>Context becomes useful when tension creates direction.</text><line x1='70' y1='230' x2='490' y2='230' stroke='#9ba0b8' stroke-width='2' opacity='.35'/></svg>",
+        "visualCaption": "The “but” is the hinge that turns facts into movement.",
+        "after": [
+          "In a StoryOS memo, Matt could write: “Teams already know story matters, and they have plenty of examples, <strong>but</strong> they lack a repeatable way to diagnose why a message feels flat; <strong>therefore</strong> StoryOS should make narrative structure easier to see, practice, and reuse.” No invented feature list. Just a sharper spine."
+        ]
+      },
+      "lab": {
+        "title": "Turn an Explanation Into an ABT",
+        "paras": [
+          "This skill matters because people do not usually need more detail first. They need orientation, tension, and a reason to keep listening. In a planning session, the person who can name the “but” often becomes the person who clarifies the whole room."
+        ],
+        "exercise": "Take one thing you need to explain today and say it in exactly three beats: “We’re trying to ___, and we already have ___. But the thing making it hard is ___. Therefore, the next smart move is ___.” Say it once in writing, once out loud, and once in a warmer conversational version: “The short version is: we’ve got ___, but ___, so I think we should ___.”"
+      },
+      "masters": {
+        "name": "Nancy Duarte",
+        "talk": "Nancy Duarte uncovers common structure of greatest communicators",
+        "videoId": "1nYFpuc2Umk",
+        "start": 345,
+        "watchWindow": "5:45–8:20",
+        "paras": [
+          "Duarte fits today because her core lesson is that persuasive communication moves between “what is” and “what could be.” That is a cousin of ABT: establish reality, introduce tension, then pull people toward a better future."
+        ],
+        "observe": [
+          "How she makes structure visual instead of merely describing it.",
+          "How she contrasts the present state with a possible future state.",
+          "How the tension gives the audience a reason to care before the call to action."
+        ]
+      },
+      "steal": {
+        "line": "“The useful part is not the update — it is the tension inside the update.”",
+        "paras": [
+          "Practice this today when someone gives you a pile of facts. Listen warmly, then ask for the hinge. You are not being difficult; you are helping the conversation find its point."
+        ],
+        "example": [
+          "“Let me see if I have the story right: we want a cleaner planning rhythm, and the team is already capturing goals, but the handoff between goals and weekly action is fuzzy. Therefore the next decision is not ‘more notes’ — it’s what rhythm makes the work visible.”"
+        ]
+      }
+    },
+    {
       "date": "2026-07-21",
       "displayDate": "Tue · Jul 21",
       "domain": "Communication",
