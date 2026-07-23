@@ -1,6 +1,58 @@
 {
   "editions": [
     {
+      "date": "2026-07-23",
+      "displayDate": "Thu · Jul 23",
+      "domain": "Conversation",
+      "hook": "Before you answer the objection, name the pressure behind it.",
+      "insight": {
+        "title": "Label the Pressure",
+        "paras": [
+          "Today’s model is <strong>tactical empathy</strong>, especially the negotiation move Chris Voss calls <em>labeling</em>. Instead of arguing with what someone says, you name what they may be feeling or protecting: “It sounds like the risk is…” or “It seems like you’re worried that…”",
+          "A good label does three things: lowers defensiveness, proves you are tracking the other person, and moves the conversation from position to motive. The trick is to make it tentative, not theatrical. You are not diagnosing them. You are offering a draft of their concern and letting them correct it."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='24' fill='#1b1e30'/><circle cx='118' cy='112' r='42' fill='none' stroke='#5fd4c4' stroke-width='5'/><circle cx='442' cy='112' r='42' fill='none' stroke='#ff7a6e' stroke-width='5'/><path d='M160 112 C230 58 330 58 400 112' fill='none' stroke='#9ba0b8' stroke-width='4' stroke-dasharray='8 10'/><path d='M400 112 C330 178 230 178 160 112' fill='none' stroke='#e8b84b' stroke-width='5'/><rect x='170' y='206' width='220' height='54' rx='14' fill='#a48bfa' opacity='.18' stroke='#a48bfa' stroke-width='2'/><text x='280' y='76' text-anchor='middle' fill='#eceef7' font-family='Inter, Arial' font-size='24' font-weight='700'>Position → Pressure</text><text x='118' y='118' text-anchor='middle' fill='#eceef7' font-family='Inter, Arial' font-size='15' font-weight='700'>What they say</text><text x='442' y='118' text-anchor='middle' fill='#eceef7' font-family='Inter, Arial' font-size='15' font-weight='700'>What they fear</text><text x='280' y='238' text-anchor='middle' fill='#eceef7' font-family='Inter, Arial' font-size='17' font-weight='700'>“It sounds like…”</text><text x='280' y='286' text-anchor='middle' fill='#9ba0b8' font-family='Inter, Arial' font-size='13'>A label turns resistance into information.</text></svg>",
+        "visualCaption": "The label is the bridge from stated objection to real concern.",
+        "after": [
+          "In a quarterly planning conversation, if someone says, “This roadmap is too ambitious,” Matt does not need to defend the roadmap first. He can label the pressure: “It sounds like the concern is we’ll commit to too many visible promises and lose trust if execution slips.” Now the room is discussing the actual risk, not trading opinions."
+        ]
+      },
+      "lab": {
+        "title": "The Three-Beat Label",
+        "paras": [
+          "This skill matters because most tense conversations fail at the first turn. Someone raises an objection, and the builder reflex is to explain. But explanation can sound like dismissal when the other person wants proof that you understand the cost they see.",
+          "Use this in small talk too. If a friend says, “Work has been ridiculous,” try, “Sounds like there’s no clean stopping point right now.” That is warmer than “That sucks” and more useful than immediately giving advice."
+        ],
+        "exercise": "In your next conversation, practice this exact three-beat pattern: 1) Pause. 2) Say, “It sounds like the real concern is ___.” 3) Ask, “Am I reading that right?” Try it once in a work context and once in a casual context. Keep the label under twelve words."
+      },
+      "masters": {
+        "name": "Chris Voss",
+        "talk": "Never Split The Difference | Chris Voss | TEDxUniversityofNevada",
+        "videoId": "MjhDkNmtjy0",
+        "start": 161,
+        "watchWindow": "Watch 2:41–6:10 for tactical empathy in a concrete social scene.",
+        "paras": [
+          "Voss fits today because he treats conversation as pressure management, not clever phrasing. His best moves are short, calm, and oddly generous: he gives the other person language for what they are carrying.",
+          "Notice that the power is not in sounding like a negotiator. It is in slowing the moment down enough that the other person feels accurately seen."
+        ],
+        "observe": [
+          "How he makes the other person’s emotional state explicit without accusing them.",
+          "The calm, low-drama tone: the label lands because it is not performed.",
+          "How naming pressure creates movement before any solution is offered."
+        ]
+      },
+      "steal": {
+        "line": "Don’t rebut the sentence; label the pressure.",
+        "paras": [
+          "Practice this today by replacing your first answer with a first label. When you hear “too expensive,” “too complicated,” “not ready,” or “we tried that,” assume the sentence is the surface. Your job is to name the cost underneath it.",
+          "Keep the wording soft: “It sounds like…” “It seems like…” “My read is…” The softer the entry, the easier it is for the other person to correct you without feeling trapped."
+        ],
+        "example": [
+          "“It sounds like the concern is not the idea itself — it’s that we’d be adding another operating rhythm before the current one is trusted.”"
+        ]
+      }
+    },
+    {
       "date": "2026-07-22",
       "displayDate": "Wed · Jul 22",
       "domain": "Storytelling",
