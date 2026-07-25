@@ -1,6 +1,58 @@
 {
   "editions": [
     {
+      "date": "2026-07-25",
+      "displayDate": "Sat · Jul 25",
+      "domain": "Leadership",
+      "hook": "A new idea rarely needs a louder leader; it needs a safer first follower.",
+      "insight": {
+        "title": "Design for the First Follower",
+        "paras": [
+          "Derek Sivers’ <strong>first follower</strong> principle says a movement does not begin when one person acts. It begins when a second person makes the action easier for everyone else to copy. The leader creates the possibility; the first follower creates the permission.",
+          "Use this as a practical leadership model: when you introduce a new process, product idea, or strategy rhythm, do not only polish the pitch. Ask, <em>Who can safely join early, and what would make joining feel obvious?</em> Adoption is less about persuasion than lowering the social cost of being second."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='150' cy='170' r='28' fill='#ff7a6e'/><circle cx='245' cy='170' r='28' fill='#e8b84b'/><circle cx='340' cy='170' r='28' fill='#5fd4c4'/><circle cx='435' cy='170' r='28' fill='#a48bfa'/><path d='M178 170 C198 140 222 140 237 160' fill='none' stroke='#e8b84b' stroke-width='5' stroke-linecap='round'/><path d='M273 170 C293 140 317 140 332 160' fill='none' stroke='#5fd4c4' stroke-width='5' stroke-linecap='round'/><path d='M368 170 C388 140 412 140 427 160' fill='none' stroke='#a48bfa' stroke-width='5' stroke-linecap='round'/><text x='150' y='225' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>leader</text><text x='245' y='225' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>first</text><text x='340' y='225' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>second</text><text x='435' y='225' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>many</text><text x='280' y='70' text-anchor='middle' fill='#eceef7' font-size='28' font-family='Inter, Arial' font-weight='700'>Permission scales faster than persuasion</text><text x='280' y='270' text-anchor='middle' fill='#9ba0b8' font-size='16' font-family='Inter, Arial'>Make the next person easy to see, thank, and copy.</text></svg>",
+        "visualCaption": "The first follower turns a strange move into a shared signal.",
+        "after": [
+          "In a Coordly planning discussion, Matt could use this before proposing a new coordination habit: name the smallest version, invite one visible teammate to try it, then make their participation easy to copy rather than trying to convince the whole room at once."
+        ]
+      },
+      "lab": {
+        "title": "Make Joining Feel Safe",
+        "paras": [
+          "The skill is to stop launching ideas as declarations and start launching them as low-risk invitations. A declaration asks people to agree in public. An invitation gives one person a graceful way to try the behavior before the group judges it.",
+          "Picture a quarterly planning session where Matt wants a tighter weekly review rhythm. Instead of saying, “We all need to do this now,” he can recruit a first follower by making the trial small, specific, and socially safe."
+        ],
+        "exercise": "In under five minutes, rewrite one proposal with this script: “I do not need everyone to adopt this yet. I need one person to test it with me for one week. If it makes the work clearer, we will show the before-and-after next Friday. Who is willing to be the first test partner?”"
+      },
+      "masters": {
+        "name": "Derek Sivers",
+        "talk": "First Follower: Leadership Lessons from Dancing Guy",
+        "videoId": "fW8amMCVAJQ",
+        "start": 0,
+        "watchWindow": "0:00–3:10",
+        "paras": [
+          "Sivers is the right master today because he makes leadership less heroic and more observable. His point is not that leaders are irrelevant; it is that the first visible joiner changes the meaning of the act.",
+          "Watch how the lesson stays concrete. One dancing person looks odd. Two people create a pattern. Three people create evidence. That is a useful model for product adoption, internal process change, and any new habit Matt wants others to try."
+        ],
+        "observe": [
+          "How quickly the social meaning changes once the first follower joins.",
+          "How Sivers praises the follower instead of making the leader the whole story.",
+          "How the example is memorable because it is visual, funny, and immediately legible."
+        ]
+      },
+      "steal": {
+        "line": "Do not ask the room to believe; ask one person to help make the idea visible.",
+        "paras": [
+          "Practice this today by choosing one idea you would normally explain at length. Instead of adding more rationale, design the first tiny public action someone else could take. Then invite that person directly and warmly.",
+          "The key tone: confident but not needy. You are not begging for support. You are making participation simple enough that the first follower can say yes without risking status."
+        ],
+        "example": [
+          "“Before we debate the whole operating rhythm, I want to run one small test: I will draft the Friday review, and I need one person to annotate it with what felt useful, confusing, or missing. If that creates clarity, we can decide whether it deserves a larger rollout.”"
+        ]
+      }
+    },
+    {
       "date": "2026-07-24",
       "displayDate": "Fri · Jul 24",
       "domain": "Strategy",
