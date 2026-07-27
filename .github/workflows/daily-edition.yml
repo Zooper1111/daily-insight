@@ -27,6 +27,8 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.5' }}
+          EDITION_INTERVAL_DAYS: ${{ vars.EDITION_INTERVAL_DAYS || '2' }}
+          EDITION_ANCHOR_DATE: ${{ vars.EDITION_ANCHOR_DATE || '2026-07-27' }}
           SMOKE_TEST: ${{ inputs.smoke_test && '1' || '0' }}
         run: python scripts/generate_edition.py
       - name: Commit and push
