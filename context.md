@@ -10,6 +10,7 @@ Because this repo is public, keep details safe to share publicly. Do not include
 - Matt likes content that feels sharp, warm, specific, and immediately usable.
 - Matt prefers concrete scripts, small experiments, useful theories, and ideas that connect to real projects instead of generic self-improvement advice.
 - Matt wants to improve both public speaking and everyday conversation: small talk, curiosity, warmth, asking better questions, making ideas interesting, and delivering provocative lines without sounding performative.
+- Matt wants the digest every other day, not daily, with topics spread out so it does not feel like the same kind of advice every time.
 - Timezone: America/New_York unless Matt changes this.
 
 ## Projects and workstreams
@@ -27,8 +28,11 @@ Use these descriptions exactly until Matt provides better ones.
 
 - Rotate domains: Innovation, AI, Strategy, Leadership, Storytelling, Decision-Making, Communication, Conversation.
 - Mix public-speaking lessons with everyday speaking lessons, but avoid letting "how to talk" dominate every edition.
+- Spread the mix across small talk techniques, presentation craft, business frameworks, and algorithmic or rule-based ideas.
 - Teach a real theory, model, framework, mental model, or named concept in each edition. Explain it simply enough to use that day.
 - Include small talk and daily conversation skills: opening questions, follow-ups, warmth, curiosity, tone, listening, transitions, and graceful exits.
+- Include presentation craft regularly, especially how to present current work, frame a point, structure an explanation, and make an idea land.
+- Include non-speech lessons regularly: business frameworks, strategy models, decision rules, game theory, systems thinking, incentives, tradeoffs, product thinking, management philosophy, and philosophy in business.
 - Teach how to interest people: provocative but not gimmicky openings, sharper framing, better contrast, tension, stakes, specificity, and timing.
 - Make every edition useful in under three minutes.
 - Include one exact practice script whenever possible.
@@ -41,7 +45,7 @@ Use these descriptions exactly until Matt provides better ones.
 
 ## Daily content mix
 
-A strong month should include:
+A strong month should feel varied and should include:
 
 - Everyday conversation and small talk.
 - Clearer one-on-one explanations.
@@ -49,6 +53,9 @@ A strong month should include:
 - Public speaking and presentation craft.
 - Storytelling and narrative structure.
 - Strategy, decision-making, and product thinking.
+- Business frameworks and management ideas.
+- Algorithmic or rule-based concepts such as game theory, incentives, auctions, constraints, feedback loops, prioritization rules, and tradeoff models.
+- Philosophy in business: what a company values, how teams decide, how incentives shape behavior, and how leaders reason under uncertainty.
 - AI, agents, and how builders communicate new technology.
 - Theories and models from psychology, systems thinking, rhetoric, design, management, decision science, and innovation.
 - Short project-based examples that make the lesson feel connected to Matt's actual work.
