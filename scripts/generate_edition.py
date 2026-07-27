@@ -2,7 +2,7 @@
 
 The script is designed for GitHub Actions:
 - reads public context from context.md
-- skips if today's edition already exists
+- skips if today's edition already exists or today is an off day
 - asks OpenAI for one JSON edition object
 - validates the core schema before writing
 """
@@ -27,6 +27,8 @@ CONTEXT_PATH = ROOT / "context.md"
 TODAY = dt.datetime.now(ZoneInfo("America/New_York")).date().isoformat()
 MODEL = os.getenv("OPENAI_MODEL", "gpt-5.5")
 SMOKE_TEST = os.getenv("SMOKE_TEST") == "1"
+EDITION_INTERVAL_DAYS = int(os.getenv("EDITION_INTERVAL_DAYS", "2"))
+EDITION_ANCHOR_DATE = os.getenv("EDITION_ANCHOR_DATE", "2026-07-27")
 
 
 REQUIRED_TOP_LEVEL = {
@@ -79,6 +81,15 @@ def validate_edition(edition: dict[str, Any]) -> None:
             raise ValueError(f"{section} must be an object")
 
 
+def should_publish_today() -> bool:
+    if EDITION_INTERVAL_DAYS <= 1:
+        return True
+
+    today = dt.date.fromisoformat(TODAY)
+    anchor = dt.date.fromisoformat(EDITION_ANCHOR_DATE)
+    return (today - anchor).days % EDITION_INTERVAL_DAYS == 0
+
+
 def build_prompt(context: str, recent: list[dict[str, Any]]) -> str:
     return f"""
 Generate one new edition object for Matt's Daily Insight website, dated {TODAY}.
@@ -125,8 +136,14 @@ Schema:
 }}
 
 Content goals:
-- Rotate domains across Innovation, AI, Strategy, Leadership, Storytelling,
-  Decision-Making, Communication, and Conversation.
+- Use a deliberately spread-out mix. Across any eight editions, aim for:
+  1-2 small talk or everyday conversation lessons; 1-2 presentation or public
+  speaking lessons; 1-2 business frameworks, strategy, product, or management
+  lessons; 1-2 algorithmic, decision-science, philosophy-of-business, game
+  theory, systems, or rule-based models; and occasional AI or innovation
+  lessons when they are genuinely useful.
+- Rotate domains across Conversation, Communication, Storytelling, Strategy,
+  Decision-Making, Leadership, Innovation, AI, and Product Thinking.
 - Every edition must teach one real theory, model, framework, mental model, or
   named concept from psychology, systems thinking, rhetoric, design,
   management, decision science, innovation, AI, or product strategy. Make the
@@ -134,11 +151,13 @@ Content goals:
 - Include everyday speaking skills often: small talk, better questions,
   follow-ups, warmth, transitions, graceful exits, provocative openings, and
   making ideas interesting without sounding gimmicky.
-- Keep public-speaking craft in the mix, but do not make every edition about
-  speeches or presentations.
+- Keep public-speaking and presentation craft in the mix, including framing,
+  slide/setup structure, sharper delivery, and explaining current work clearly.
 - Do not make every edition primarily about "how to talk." Some should be about
   thinking better, seeing systems, making decisions, shaping products, using AI,
-  planning work, or framing strategy.
+  planning work, business philosophy, or framing strategy.
+- Include small talk sometimes, but do not bunch it together. Include business
+  and algorithmic/framework editions regularly so the sequence has range.
 - Most editions should include a public-safe example tied to Coordly, StoryOS,
   DreamGuard, the strategy agent, quarterly planning, or consulting. Use simple
   scenes such as a planning session, product decision, client explanation, demo,
@@ -180,6 +199,13 @@ def smoke_test() -> int:
 def main() -> int:
     if SMOKE_TEST:
         return smoke_test()
+
+    if not should_publish_today():
+        print(
+            f"Skipping {TODAY}: every {EDITION_INTERVAL_DAYS} days from "
+            f"{EDITION_ANCHOR_DATE}."
+        )
+        return 0
 
     data = load_json(EDITIONS_PATH)
     editions = data.get("editions", [])
