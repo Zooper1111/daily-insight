@@ -1,6 +1,57 @@
 {
   "editions": [
     {
+      "date": "2026-07-29",
+      "displayDate": "Wed · Jul 29",
+      "domain": "Product Thinking",
+      "hook": "Do not ask what to build until you can name the opportunity.",
+      "insight": {
+        "title": "Map the Bet Before the Build",
+        "paras": [
+          "Teresa Torres's <strong>Opportunity Solution Tree</strong> is a simple discipline for escaping feature-first thinking. Put one desired outcome at the top. Under it, list customer opportunities: needs, pains, confusions, desires. Under each opportunity, list possible solutions. Under each solution, list the smallest assumption test that would teach you whether the bet is worth making.",
+          "The power is not the diagram. It is the forcing function. A team has to separate <em>the problem worth solving</em> from <em>the idea they already like</em>. If the tree feels hard to fill in, that is useful signal: you may have a stack of solutions but not yet a clear map of why they matter."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='24' fill='#1b1e30'/><text x='280' y='42' text-anchor='middle' fill='#eceef7' font-family='Inter, Arial' font-size='22' font-weight='700'>Opportunity Solution Tree</text><rect x='210' y='66' width='140' height='44' rx='12' fill='#e8b84b'/><text x='280' y='94' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='15' font-weight='700'>Outcome</text><path d='M280 110 L145 148 M280 110 L280 148 M280 110 L415 148' stroke='#9ba0b8' stroke-width='3' fill='none'/><rect x='70' y='148' width='150' height='46' rx='12' fill='#5fd4c4'/><rect x='205' y='148' width='150' height='46' rx='12' fill='#5fd4c4'/><rect x='340' y='148' width='150' height='46' rx='12' fill='#5fd4c4'/><text x='145' y='176' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='14' font-weight='700'>Opportunity</text><text x='280' y='176' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='14' font-weight='700'>Opportunity</text><text x='415' y='176' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='14' font-weight='700'>Opportunity</text><path d='M145 194 L105 230 M145 194 L185 230 M280 194 L240 230 M280 194 L320 230 M415 194 L375 230 M415 194 L455 230' stroke='#9ba0b8' stroke-width='2.5' fill='none'/><rect x='62' y='230' width='86' height='34' rx='9' fill='#ff7a6e'/><rect x='162' y='230' width='86' height='34' rx='9' fill='#ff7a6e'/><rect x='197' y='230' width='86' height='34' rx='9' fill='#ff7a6e'/><rect x='297' y='230' width='86' height='34' rx='9' fill='#ff7a6e'/><rect x='332' y='230' width='86' height='34' rx='9' fill='#ff7a6e'/><rect x='432' y='230' width='86' height='34' rx='9' fill='#ff7a6e'/><text x='105' y='252' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='12' font-weight='700'>Solution</text><text x='205' y='252' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='12' font-weight='700'>Solution</text><text x='240' y='252' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='12' font-weight='700'>Solution</text><text x='340' y='252' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='12' font-weight='700'>Solution</text><text x='375' y='252' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='12' font-weight='700'>Solution</text><text x='475' y='252' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='12' font-weight='700'>Solution</text><text x='280' y='296' text-anchor='middle' fill='#a48bfa' font-family='Inter, Arial' font-size='14'>Outcome first. Opportunity before solution. Test before commitment.</text></svg>",
+        "visualCaption": "A good product conversation moves from outcome to opportunity to solution to test.",
+        "after": [
+          "In a Coordly planning session, this keeps the conversation from becoming a pile of feature requests. Matt can write the outcome at the top, ask which coordination pain is most real, then compare two or three small bets before deciding what deserves build time."
+        ]
+      },
+      "lab": {
+        "title": "The Opportunity Question",
+        "paras": [
+          "This skill matters because smart rooms drift toward solutions fast. Someone says, 'We should add a dashboard,' and suddenly the group is debating layout, permissions, and deadlines before anyone has named the job the dashboard is supposed to do.",
+          "The move is to slow the room without sounding like a blocker. Treat the idea as useful evidence, then pull it one level up: what opportunity does this idea reveal?"
+        ],
+        "exercise": "Take one idea on your list today and translate it up the tree. Use these exact words: 'I like this as a possible solution. Before we judge it, what customer frustration or team bottleneck is it trying to solve?' Then write three answers beginning with: 'People struggle when...' Pick the most specific one."
+      },
+      "masters": {
+        "name": "Teresa Torres",
+        "talk": "Build better products with continuous product discovery | Teresa Torres",
+        "videoId": "9RFaz9ZBXpk",
+        "start": 401,
+        "watchWindow": "6:41–14:18",
+        "paras": [
+          "Torres fits today because she teaches product teams to make discovery visible. Her Opportunity Solution Tree is not a brainstorming trick; it is an alignment tool that shows whether a team is anchored on outcomes, opportunities, or pet features.",
+          "Watch how she keeps returning to the distinction between opportunity space and solution space. That distinction is the whole lesson: most teams think they are discussing customer problems when they are really discussing their favorite answers."
+        ],
+        "observe": [
+          "How she defines the four layers: outcome, opportunities, solutions, assumption tests.",
+          "How she treats opportunities as customer needs or pain points, not disguised features.",
+          "How the Netflix example organizes opportunities around moments in the user's experience."
+        ]
+      },
+      "steal": {
+        "line": "A feature is not a strategy until it points to an opportunity.",
+        "paras": [
+          "Use this line when a meeting gets solution-heavy. Say it warmly, then draw a tiny four-level tree: outcome, opportunity, solution, test. The goal is not to kill momentum; it is to make the momentum more intelligent."
+        ],
+        "example": [
+          "'A feature is not a strategy until it points to an opportunity. For this Coordly idea, the opportunity might be: teams lose the thread between decisions and next actions. If that is the real pain, we should test whether people can recover the thread faster before we commit to the full build.'"
+        ]
+      }
+    },
+    {
       "date": "2026-07-27",
       "displayDate": "Mon · Jul 27",
       "domain": "AI",
