@@ -1,6 +1,57 @@
 {
   "editions": [
     {
+      "date": "2026-07-31",
+      "displayDate": "Fri · Jul 31",
+      "domain": "Decision-Making",
+      "hook": "Before you defend the plan, write its obituary.",
+      "insight": {
+        "title": "Run the Pre-Mortem",
+        "paras": [
+          "Gary Klein’s <strong>pre-mortem</strong> is a simple decision tool: imagine the project has failed, then ask, “What probably killed it?” The trick is called <em>prospective hindsight</em>. Instead of politely listing risks while everyone is still rooting for the plan, you give the team permission to speak from the future, where the failure is already real.",
+          "This works because people are often better at explaining a vivid outcome than predicting an abstract one. Don’t ask, “Any concerns?” Ask, “It is three months from now, this missed badly, and we are not surprised. What happened?” That sentence turns vague anxiety into usable evidence."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='24' fill='#1b1e30'/><text x='48' y='52' fill='#eceef7' font-size='22' font-family='Inter,Arial'>Pre-mortem path</text><line x1='92' y1='150' x2='468' y2='150' stroke='#9ba0b8' stroke-width='3' stroke-dasharray='8 8'/><circle cx='105' cy='150' r='34' fill='#5fd4c4'/><text x='82' y='157' fill='#1b1e30' font-size='16' font-weight='700' font-family='Inter,Arial'>PLAN</text><circle cx='280' cy='150' r='44' fill='#ff7a6e'/><text x='252' y='146' fill='#1b1e30' font-size='15' font-weight='700' font-family='Inter,Arial'>FAILED</text><text x='250' y='166' fill='#1b1e30' font-size='13' font-family='Inter,Arial'>FUTURE</text><circle cx='455' cy='150' r='34' fill='#e8b84b'/><text x='433' y='157' fill='#1b1e30' font-size='16' font-weight='700' font-family='Inter,Arial'>FIX</text><path d='M280 199 C258 230, 224 236, 190 224' stroke='#a48bfa' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M190 224 l18 -5 l-8 17' fill='none' stroke='#a48bfa' stroke-width='4' stroke-linecap='round'/><text x='178' y='262' fill='#eceef7' font-size='16' font-family='Inter,Arial'>Visit the failure first.</text><text x='178' y='286' fill='#9ba0b8' font-size='14' font-family='Inter,Arial'>Then return with sharper constraints.</text></svg>",
+        "visualCaption": "A pre-mortem borrows hindsight before the plan gets expensive.",
+        "after": [
+          "In a quarterly planning session, Matt could use this before committing to a Coordly or strategy agent milestone. Not to dampen momentum, but to improve it: name the likely failure modes, cut the fragile assumptions, and turn the remaining plan into something sturdier."
+        ]
+      },
+      "lab": {
+        "title": "The Failure Headline Drill",
+        "paras": [
+          "The skill is making dissent feel useful instead of disloyal. Most teams soften risk language because they do not want to sound negative. A pre-mortem gives everyone a role: not critic, not cynic, but investigator from the future.",
+          "Use it when a plan has enough shape to be tempting, but before people are emotionally locked in. The best moment is right after the confident explanation and right before the decision."
+        ],
+        "exercise": "Take one active plan and write this at the top of a page: “It is October 31, 2026. This failed for reasons we could have seen.” Set a timer for four minutes. List 10 causes. Then circle the two that are both likely and preventable. Exact words to try: “Before we make this official, let’s give the plan five minutes of honest pessimism. If this fails, what will we wish we had noticed today?”"
+      },
+      "masters": {
+        "name": "Gary Klein",
+        "talk": "Naturalistic Decision Making with Gary Klein, Laura Militello, and Julie Gore",
+        "videoId": "SR3rt9q0W8w",
+        "start": 0,
+        "watchWindow": "0:00-7:30",
+        "paras": [
+          "Klein is useful here because he studies how people make decisions in real conditions: uncertainty, time pressure, incomplete information, and messy human judgment. The pre-mortem fits that world. It does not pretend risk is a spreadsheet problem; it treats risk as something people can often sense before they can fully prove.",
+          "Watch for how Klein makes decision-making practical instead of theatrical. His best move is not sounding clever. It is giving people a structure that helps them notice what their experience already knows."
+        ],
+        "observe": [
+          "How he treats expertise as pattern recognition, not mere confidence.",
+          "How he makes uncertainty discussable without freezing action.",
+          "How the frame shifts from “predict the future” to “notice the conditions that would make failure plausible.”"
+        ]
+      },
+      "steal": {
+        "line": "“Let’s not ask whether this will work; let’s ask how it would fail if it didn’t.”",
+        "paras": [
+          "Practice this as a transition line. It is especially useful when a conversation is getting too enthusiastic too early. Say it warmly, then immediately time-box the critique so it feels safe and productive, not like an ambush."
+        ],
+        "example": [
+          "“I like the direction. Before we lock it, let’s not ask whether this will work; let’s ask how it would fail if it didn’t. My first guess: the user understands the value, but the first step feels too heavy.”"
+        ]
+      }
+    },
+    {
       "date": "2026-07-29",
       "displayDate": "Wed · Jul 29",
       "domain": "Product Thinking",
