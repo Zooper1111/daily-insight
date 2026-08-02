@@ -1,6 +1,58 @@
 {
   "editions": [
     {
+      "date": "2026-08-02",
+      "displayDate": "Sun · Aug 2",
+      "domain": "Communication",
+      "hook": "Candor arrives after you lower the social price of being wrong.",
+      "insight": {
+        "title": "Make It Safe to Be Useful",
+        "paras": [
+          "Amy Edmondson’s model of <strong>psychological safety</strong> is simple: people speak more honestly when they believe a question, mistake, or dissenting view will not make them look incompetent, difficult, or naive. It is not about being nice. It is about making useful truth cheaper to say.",
+          "Use her three-part move before a hard conversation: <em>frame the work as uncertain</em>, <em>admit your own fallibility</em>, then <em>ask for information you might be missing</em>. That sequence changes the room from performance mode to learning mode."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><text x='54' y='54' fill='#eceef7' font-size='24' font-family='Inter, Arial' font-weight='700'>Lower the cost of candor</text><line x1='92' y1='228' x2='468' y2='228' stroke='#9ba0b8' stroke-width='2'/><line x1='92' y1='228' x2='92' y2='92' stroke='#9ba0b8' stroke-width='2'/><text x='58' y='86' fill='#9ba0b8' font-size='13' font-family='Inter, Arial' transform='rotate(-90 58 86)'>Truth spoken</text><text x='220' y='270' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>Social safety</text><path d='M104 214 C164 208, 188 182, 226 164 S304 128, 362 122 S426 108, 460 78' fill='none' stroke='#5fd4c4' stroke-width='5' stroke-linecap='round'/><circle cx='142' cy='204' r='9' fill='#ff7a6e'/><circle cx='262' cy='148' r='9' fill='#e8b84b'/><circle cx='410' cy='105' r='9' fill='#a48bfa'/><rect x='112' y='238' width='86' height='32' rx='16' fill='#ff7a6e' opacity='0.18'/><text x='128' y='259' fill='#ff7a6e' font-size='12' font-family='Inter, Arial' font-weight='700'>perform</text><rect x='235' y='238' width='86' height='32' rx='16' fill='#e8b84b' opacity='0.18'/><text x='254' y='259' fill='#e8b84b' font-size='12' font-family='Inter, Arial' font-weight='700'>admit</text><rect x='370' y='238' width='86' height='32' rx='16' fill='#5fd4c4' opacity='0.18'/><text x='389' y='259' fill='#5fd4c4' font-size='12' font-family='Inter, Arial' font-weight='700'>learn</text><path d='M122 113 L204 113 L204 151 L122 151 Z' fill='none' stroke='#a48bfa' stroke-width='2'/><text x='137' y='137' fill='#eceef7' font-size='13' font-family='Inter, Arial'>What am I</text><text x='145' y='154' fill='#eceef7' font-size='13' font-family='Inter, Arial'>missing?</text></svg>",
+        "visualCaption": "The safer the room feels, the more reality enters the conversation.",
+        "after": [
+          "In a quarterly planning session, Matt could open the strategy agent discussion with: “This is still uncertain, and I may be over-weighting elegance over usefulness. What would make this fragile in real work?” That one sentence gives the room permission to improve the idea instead of merely react to it."
+        ]
+      },
+      "lab": {
+        "title": "Ask for the Objection Before the Approval",
+        "paras": [
+          "Most rooms are trained to reward polish. The danger is that people nod at the clean version of the plan while privately noticing the messy part. The skill is to invite the messy part early, before agreement becomes socially expensive.",
+          "Picture a product discussion where everyone likes the direction, but nobody wants to be the person who slows it down. A psychologically safe prompt turns resistance into contribution."
+        ],
+        "exercise": "In your next planning, demo, or client conversation, pause after explaining the idea and say exactly: “Before we decide this is good, I want the strongest objection. If this fails, where does it probably fail?” Then wait five full seconds. Do not soften the silence. Write down the first answer without defending."
+      },
+      "masters": {
+        "name": "Amy Edmondson",
+        "talk": "Building a psychologically safe workplace | TEDxHGSE",
+        "videoId": "LhoLuui9gX8",
+        "start": 0,
+        "watchWindow": "0:00–3:30",
+        "paras": [
+          "Edmondson is the right master for this lesson because she makes candor operational. She shows that better communication is not just a personal charisma problem; it is a room-design problem.",
+          "Watch how she treats speaking up as a performance variable, not a personality trait. The practical takeaway: if people are quiet, do not only ask whether they are brave. Ask whether the environment made truth worth the risk."
+        ],
+        "observe": [
+          "How she frames the problem as learning under uncertainty, not as morale or niceness.",
+          "How she uses plain language for a management idea without flattening the stakes.",
+          "How she makes leaders responsible for the conditions that produce silence or candor."
+        ]
+      },
+      "steal": {
+        "line": "Make the unsafe sentence safe to say.",
+        "paras": [
+          "Practice by naming the exact category of truth you want: risk, confusion, disagreement, missing information, or practical friction. A vague “any feedback?” gets politeness. A specific invitation gets signal.",
+          "The move is especially useful when Matt is presenting current work. Instead of defending the idea, define the uncertainty, admit the likely blind spot, and ask for the objection that would make the work stronger."
+        ],
+        "example": [
+          "“I’m confident in the direction, but not in the assumptions yet. The unsafe sentence I want someone to say is: ‘This sounds good, but it breaks when ____.’ Who can fill in that blank?”"
+        ]
+      }
+    },
+    {
       "date": "2026-07-31",
       "displayDate": "Fri · Jul 31",
       "domain": "Decision-Making",
