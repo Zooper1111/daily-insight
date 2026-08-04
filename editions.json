@@ -1,6 +1,55 @@
 {
   "editions": [
     {
+      "date": "2026-08-04",
+      "displayDate": "Tue · Aug 4",
+      "domain": "Storytelling",
+      "hook": "If the room feels flat, stop adding detail and create a gap.",
+      "insight": {
+        "title": "Make the Gap Do the Work",
+        "paras": [
+          "Nancy Duarte’s useful model is the <strong>presentation sparkline</strong>: move repeatedly between <em>what is</em> and <em>what could be</em>. The audience does not lean in because you have more information. They lean in because they can feel the distance between the current reality and a better one.",
+          "Use it as a simple rhythm: name the present constraint, show the possible future, return to the obstacle, then raise the promise again. That contrast creates motion. Without it, even smart ideas sound like status updates."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><line x1='70' y1='235' x2='490' y2='235' stroke='#9ba0b8' stroke-width='2' opacity='.45'/><line x1='70' y1='85' x2='490' y2='85' stroke='#9ba0b8' stroke-width='2' opacity='.25'/><path d='M80 220 C120 215 120 100 160 96 C200 94 196 216 238 218 C280 220 280 112 322 105 C365 98 363 215 405 218 C447 221 452 88 490 75' fill='none' stroke='#e8b84b' stroke-width='6' stroke-linecap='round'/><circle cx='80' cy='220' r='8' fill='#ff7a6e'/><circle cx='160' cy='96' r='8' fill='#5fd4c4'/><circle cx='238' cy='218' r='8' fill='#ff7a6e'/><circle cx='322' cy='105' r='8' fill='#5fd4c4'/><circle cx='405' cy='218' r='8' fill='#ff7a6e'/><circle cx='490' cy='75' r='8' fill='#a48bfa'/><text x='70' y='265' fill='#eceef7' font-size='18' font-family='Inter, Arial'>what is</text><text x='382' y='60' fill='#eceef7' font-size='18' font-family='Inter, Arial'>what could be</text><text x='205' y='154' fill='#9ba0b8' font-size='15' font-family='Inter, Arial'>contrast creates energy</text><path d='M252 160 L305 132' stroke='#5fd4c4' stroke-width='3' stroke-dasharray='6 7'/></svg>",
+        "visualCaption": "A good explanation rises and falls between reality and possibility.",
+        "after": [
+          "In a StoryOS planning session, Matt could avoid opening with features or philosophy. Start with the gap: “Right now, our ideas are scattered across conversations and notes. What if the system helped us turn raw thinking into repeatable narrative moves?” Now the project has tension before it has details."
+        ]
+      },
+      "lab": {
+        "title": "The Two-Beat Setup",
+        "paras": [
+          "This skill matters when a demo, client explanation, or strategy memo starts sounding too comprehensive. A useful opening does not prove everything; it creates appetite. One beat names the current drag. The second beat names the better state."
+        ],
+        "exercise": "Take one thing you need to explain today and write two sentences: “Right now, ___.” Then: “What would be better is ___.” Say them out loud once with a pause between them. Example: “Right now, quarterly planning turns into a list of intentions. What would be better is a rhythm that makes tradeoffs visible before the quarter starts.”"
+      },
+      "masters": {
+        "name": "Nancy Duarte",
+        "talk": "Nancy Duarte uncovers common structure of greatest communicators",
+        "videoId": "1nYFpuc2Umk",
+        "start": 340,
+        "watchWindow": "Watch 5:40–9:10 for the sparkline pattern: how she moves between the present state and the future possibility.",
+        "paras": [
+          "Duarte fits today because she turns storytelling from a vague art into a usable operating pattern. Her core move is not decoration; it is contrast. She shows that persuasion often comes from making the audience feel the gap, then inviting them across it."
+        ],
+        "observe": [
+          "How she labels the audience as the hero, not the speaker.",
+          "How the visual line makes structure feel memorable before she explains it fully.",
+          "How she uses repeated contrast instead of one long buildup."
+        ]
+      },
+      "steal": {
+        "line": "Don’t explain the whole thing yet; make them feel what’s missing.",
+        "paras": [
+          "Practice this before a meeting by cutting your opening in half. Remove background, credentials, and process. Lead with the contrast: the current friction versus the better future. Then let the details answer the tension you created."
+        ],
+        "example": [
+          "“Right now, our planning conversations produce good intentions but weak memory. The opportunity is to make the tradeoffs visible enough that the team can reuse them, challenge them, and act on them.”"
+        ]
+      }
+    },
+    {
       "date": "2026-08-02",
       "displayDate": "Sun · Aug 2",
       "domain": "Communication",
