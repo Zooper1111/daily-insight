@@ -43,7 +43,8 @@ REQUIRED_TOP_LEVEL = {
 }
 
 PROHIBITED_TEXT_PATTERNS = [
-    (re.compile(r"\bCoordly\b", re.IGNORECASE), "Use Daisy One, not Coordly."),
+    (re.compile(r"\bCoordly\b", re.IGNORECASE), "Use Daisy 1, not Coordly."),
+    (re.compile(r"\bDaisy One\b", re.IGNORECASE), "Use Daisy 1, not Daisy One."),
     (
         re.compile(r"\bMatt\s+(?:should|could|can|needs?|gets|has|is|wants|prefers|likes)\b"),
         'Address the reader as "you" instead of giving third-person advice about Matt.',
@@ -59,7 +60,8 @@ PROHIBITED_TEXT_PATTERNS = [
 ]
 
 TEXT_REPLACEMENTS = [
-    ("Coordly", "Daisy One"),
+    ("Coordly", "Daisy 1"),
+    ("Daisy One", "Daisy 1"),
     ("Matt could", "you can"),
     ("Matt can", "you can"),
     ("Matt should", "you should"),
@@ -237,12 +239,13 @@ Content goals:
   planning work, business philosophy, or framing strategy.
 - Include small talk sometimes, but do not bunch it together. Include business
   and algorithmic/framework editions regularly so the sequence has range.
-- Most editions should include a public-safe example tied to Daisy One, StoryOS,
+- Most editions should include a public-safe example tied to Daisy 1, StoryOS,
   DreamGuard, the strategy agent, quarterly planning, or consulting. Use simple
   scenes such as a planning session, product decision, client explanation, demo,
   workshop, or strategy memo. Never invent project capabilities or private
   details.
-- Refer to the project coordination app as Daisy One. Never call it Coordly.
+- Refer to the project coordination app as Daisy 1. Never call it Coordly or
+  Daisy One.
 - Address the reader directly as "you." Do not write "Matt should," "Matt
   could," "Matt can," "For Matt," or similar third-person coaching language in
   the generated edition. It is okay for the private context to mention Matt, but
