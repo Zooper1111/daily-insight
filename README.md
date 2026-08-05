@@ -44,7 +44,7 @@ Daily Insight should teach public speaking, everyday conversation, small talk, b
 Each edition should usually include:
 
 - One theory, model, framework, or mental model explained simply.
-- One public-safe connection to Matt's active workstreams.
+- One public-safe connection to Matt's active workstreams, using Daisy One as the project coordination app name.
 - One short applied story, scene, or example that shows how the idea could be used.
 
 The sequence should feel spread out rather than repetitive. A healthy run mixes small talk techniques, presentation craft, business frameworks, and algorithmic or decision-science ideas such as game theory, rules, systems, incentives, tradeoffs, and business philosophy.
