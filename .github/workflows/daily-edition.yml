@@ -2,7 +2,7 @@ name: Daily Edition
 
 on:
   schedule:
-    - cron: "0 11 * * *"
+    - cron: "45 10 * * *"
   workflow_dispatch:
     inputs:
       smoke_test:
