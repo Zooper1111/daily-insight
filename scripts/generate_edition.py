@@ -42,6 +42,22 @@ REQUIRED_TOP_LEVEL = {
     "steal",
 }
 
+PROHIBITED_TEXT_PATTERNS = [
+    (re.compile(r"\bCoordly\b", re.IGNORECASE), "Use Daisy One, not Coordly."),
+    (
+        re.compile(r"\bMatt\s+(?:should|could|can|needs?|gets|has|is|wants|prefers|likes)\b"),
+        'Address the reader as "you" instead of giving third-person advice about Matt.',
+    ),
+    (
+        re.compile(r"\b(?:For|When|If)\s+Matt\b"),
+        'Address the reader as "you" instead of giving third-person advice about Matt.',
+    ),
+    (
+        re.compile(r"\bMatt[’']s\s+(?:work|project|strategy|planning|practice|next)\b"),
+        'Address the reader as "you" instead of giving third-person advice about Matt.',
+    ),
+]
+
 
 def load_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -80,6 +96,26 @@ def validate_edition(edition: dict[str, Any]) -> None:
         if not isinstance(edition[section], dict):
             raise ValueError(f"{section} must be an object")
 
+    for path, text in iter_strings(edition):
+        if path == ("masters", "name"):
+            continue
+        for pattern, message in PROHIBITED_TEXT_PATTERNS:
+            if pattern.search(text):
+                raise ValueError(f"{message} Found in {'.'.join(path)}: {text[:120]!r}")
+
+
+def iter_strings(value: Any, path: tuple[str, ...] = ()) -> list[tuple[tuple[str, ...], str]]:
+    strings: list[tuple[tuple[str, ...], str]] = []
+    if isinstance(value, str):
+        strings.append((path, value))
+    elif isinstance(value, dict):
+        for key, item in value.items():
+            strings.extend(iter_strings(item, (*path, str(key))))
+    elif isinstance(value, list):
+        for index, item in enumerate(value):
+            strings.extend(iter_strings(item, (*path, str(index))))
+    return strings
+
 
 def should_publish_today() -> bool:
     if EDITION_INTERVAL_DAYS <= 1:
@@ -112,7 +148,7 @@ Schema:
     "paras": ["2 short paragraphs, <strong>/<em> allowed. Teach one theory, model, framework, or mental model here."],
     "visualSvg": "<svg viewBox='0 0 560 320'>...</svg>",
     "visualCaption": "One-line caption",
-    "after": ["One closing application paragraph that ties the idea to a public-safe Matt workstream example"]
+    "after": ["One closing application paragraph that ties the idea to a public-safe workstream example"]
   }},
   "lab": {{
     "title": "Skill title",
@@ -158,11 +194,16 @@ Content goals:
   planning work, business philosophy, or framing strategy.
 - Include small talk sometimes, but do not bunch it together. Include business
   and algorithmic/framework editions regularly so the sequence has range.
-- Most editions should include a public-safe example tied to Coordly, StoryOS,
+- Most editions should include a public-safe example tied to Daisy One, StoryOS,
   DreamGuard, the strategy agent, quarterly planning, or consulting. Use simple
   scenes such as a planning session, product decision, client explanation, demo,
   workshop, or strategy memo. Never invent project capabilities or private
   details.
+- Refer to the project coordination app as Daisy One. Never call it Coordly.
+- Address the reader directly as "you." Do not write "Matt should," "Matt
+  could," "Matt can," "For Matt," or similar third-person coaching language in
+  the generated edition. It is okay for the private context to mention Matt, but
+  the public edition should read like direct advice to the reader.
 - Include a short applied story, scenario, or example. Show how the idea plays
   out instead of only explaining what to say.
 - visualSvg must be original inline SVG using this palette: bg #1b1e30,
