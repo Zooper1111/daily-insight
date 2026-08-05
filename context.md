@@ -17,7 +17,7 @@ Because this repo is public, keep details safe to share publicly. Do not include
 
 Use these descriptions exactly until Matt provides better ones.
 
-- **Daisy One** — project coordination app.
+- **Daisy 1** — project coordination app.
 - **StoryOS** — Matt project focused on story, communication, and narrative systems. Description needs a sharper one-liner from Matt.
 - **DreamGuard** — Matt project. Description needs a precise one-liner from Matt. It is not a sleep-tracking product.
 - **Strategy agent** — Matt is exploring agentic systems for strategy, planning, and better thinking across projects.
@@ -38,7 +38,7 @@ Use these descriptions exactly until Matt provides better ones.
 - Include one exact practice script whenever possible.
 - Include a short applied story, scene, or concrete example that shows how the idea could appear in Matt's work.
 - Prefer "try this today" over abstract inspiration.
-- Most editions should connect to one of Matt's workstreams: Daisy One, StoryOS, DreamGuard, strategy agent, quarterly planning, or consulting practice.
+- Most editions should connect to one of Matt's workstreams: Daisy 1, StoryOS, DreamGuard, strategy agent, quarterly planning, or consulting practice.
 - When giving advice, speak directly to the reader as "you." Do not write "Matt should," "Matt could," or similar third-person coaching language in generated editions.
 - Do not invent project capabilities or private details. Use simple public-safe scenes like a planning session, product decision, client explanation, strategy memo, demo, or workshop.
 - Do not force every edition to mention a project, but avoid generic self-improvement lessons that could be for anyone.
@@ -65,4 +65,4 @@ A strong month should feel varied and should include:
 ## Corrections log
 
 - 2026-07-11: DreamGuard is not a sleep-tracking product.
-- 2026-08-05: Refer to the project coordination app as Daisy One, not Coordly. Generated advice should address the reader as "you," not describe what Matt should do in third person.
+- 2026-08-05: Refer to the project coordination app as Daisy 1, not Coordly or Daisy One. Generated advice should address the reader as "you," not describe what Matt should do in third person.
