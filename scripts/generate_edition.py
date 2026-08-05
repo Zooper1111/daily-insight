@@ -58,9 +58,52 @@ PROHIBITED_TEXT_PATTERNS = [
     ),
 ]
 
+TEXT_REPLACEMENTS = [
+    ("Coordly", "Daisy One"),
+    ("Matt could", "you can"),
+    ("Matt can", "you can"),
+    ("Matt should", "you should"),
+    ("For Matt’s", "For your"),
+    ("For Matt's", "For your"),
+    ("For Matt,", "For you,"),
+    ("when Matt is", "when you are"),
+    ("When Matt is", "When you are"),
+]
+
 
 def load_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def sanitize_existing_text(value: Any) -> tuple[Any, bool]:
+    if isinstance(value, str):
+        updated = value
+        for old, new in TEXT_REPLACEMENTS:
+            updated = updated.replace(old, new)
+        return updated, updated != value
+
+    if isinstance(value, list):
+        changed = False
+        items = []
+        for item in value:
+            updated, item_changed = sanitize_existing_text(item)
+            items.append(updated)
+            changed = changed or item_changed
+        return items, changed
+
+    if isinstance(value, dict):
+        changed = False
+        items = {}
+        for key, item in value.items():
+            if key == "name" and value.get("talk", "").startswith("Writing Advice @ NYU"):
+                items[key] = item
+                continue
+            updated, item_changed = sanitize_existing_text(item)
+            items[key] = updated
+            changed = changed or item_changed
+        return items, changed
+
+    return value, False
 
 
 def extract_text(response: Any) -> str:
@@ -241,16 +284,32 @@ def main() -> int:
     if SMOKE_TEST:
         return smoke_test()
 
+    data = load_json(EDITIONS_PATH)
+    data, sanitized = sanitize_existing_text(data)
+
     if not should_publish_today():
+        if sanitized:
+            EDITIONS_PATH.write_text(
+                json.dumps(data, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            print("Sanitized existing editions.")
+            return 0
         print(
             f"Skipping {TODAY}: every {EDITION_INTERVAL_DAYS} days from "
             f"{EDITION_ANCHOR_DATE}."
         )
         return 0
 
-    data = load_json(EDITIONS_PATH)
     editions = data.get("editions", [])
     if editions and editions[0].get("date") == TODAY:
+        if sanitized:
+            EDITIONS_PATH.write_text(
+                json.dumps(data, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            print("Sanitized existing editions.")
+            return 0
         print(f"Edition for {TODAY} already exists.")
         return 0
 
