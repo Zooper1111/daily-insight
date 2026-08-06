@@ -1,6 +1,58 @@
 {
   "editions": [
     {
+      "date": "2026-08-06",
+      "displayDate": "Thu · Aug 6",
+      "domain": "Innovation",
+      "hook": "The strongest wedge is often the part of the market experts dismiss.",
+      "insight": {
+        "title": "Start Where the Incumbent Won’t Bend",
+        "paras": [
+          "Clayton Christensen’s theory of <strong>disruptive innovation</strong> is often misused to mean “anything new and exciting.” The sharper version is more useful: disruption usually begins with an offering that looks too simple, too cheap, or too limited for the best customers of an established player. It serves people who are over-served, ignored, or priced out.",
+          "The move is not “build a worse product.” It is: <em>choose a job where simple is actually better</em>. Then improve from that wedge. For your work, this is a way to test whether an idea has a real entry point: Who would be relieved by the smallest useful version, even if power users shrug?"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><line x1='90' y1='250' x2='470' y2='250' stroke='#9ba0b8' stroke-width='2'/><line x1='90' y1='250' x2='90' y2='60' stroke='#9ba0b8' stroke-width='2'/><text x='92' y='42' fill='#eceef7' font-size='18' font-family='Arial'>performance customers think they need</text><text x='305' y='278' fill='#eceef7' font-size='18' font-family='Arial'>time</text><path d='M105 94 C205 84 320 78 455 74' fill='none' stroke='#a48bfa' stroke-width='5'/><text x='330' y='64' fill='#a48bfa' font-size='16' font-family='Arial'>incumbent improves upward</text><path d='M105 222 C205 204 315 158 455 104' fill='none' stroke='#5fd4c4' stroke-width='5'/><circle cx='132' cy='217' r='8' fill='#e8b84b'/><text x='118' y='244' fill='#e8b84b' font-size='15' font-family='Arial'>ignored wedge</text><rect x='118' y='145' width='144' height='42' rx='8' fill='none' stroke='#ff7a6e' stroke-width='2'/><text x='134' y='171' fill='#ff7a6e' font-size='15' font-family='Arial'>simple is enough</text><text x='105' y='294' fill='#9ba0b8' font-size='14' font-family='Arial'>Disruption starts below the prestige line, then climbs.</text></svg>",
+        "visualCaption": "The dismissed wedge becomes powerful when simple keeps getting better.",
+        "after": [
+          "In a Daisy 1 product decision or a strategy agent memo, do not begin by asking, “What would make this impressive?” Ask, “Where is the current alternative so bloated that relief beats sophistication?” That question points you toward a wedge instead of a wish list."
+        ]
+      },
+      "lab": {
+        "title": "Find the Relief Segment",
+        "paras": [
+          "This skill matters because builders often over-aim. You imagine the most demanding user, the most complete workflow, the most elegant future state. But the first useful market may be someone with a smaller, uglier, more frequent pain.",
+          "Picture a planning session where the room wants to add five advanced features. Instead of debating ambition, you pause the room and look for the person who would benefit from the lightest version today."
+        ],
+        "exercise": "Take one current idea and write three columns: “over-served,” “ignored,” and “priced out.” Then say this exact line in your next product or planning conversation: “Before we add power, who would be relieved if this only did the simple version well?” Spend five minutes naming three people, teams, or situations that fit."
+      },
+      "masters": {
+        "name": "Clayton Christensen",
+        "talk": "Clayton Christensen: Disruptive innovation",
+        "videoId": "rpkoCZ4vBSI",
+        "start": 0,
+        "watchWindow": "00:00–08:40 for the definition of disruption; 19:30–24:30 for why good companies miss low-end threats",
+        "paras": [
+          "Christensen fits today because he gives you a cleaner lens for innovation: not novelty, not hype, not technical difficulty, but the relationship between performance, business model, and overlooked demand.",
+          "Watch how he makes the theory usable by separating sustaining improvement from disruptive entry. That distinction is the practical move: if you cannot name the ignored wedge, you may not have a disruptive strategy. You may just have a better feature."
+        ],
+        "observe": [
+          "How he defines disruption by the market it enters, not by how futuristic the technology feels.",
+          "How he uses simple industry examples to make a strategic pattern visible.",
+          "How he avoids telling leaders what to do directly; he gives them a theory that helps them see their own situation."
+        ]
+      },
+      "steal": {
+        "line": "Do not chase the impressive customer until you understand the relieved customer.",
+        "paras": [
+          "Practice using this as a filter, not a slogan. When a discussion drifts toward sophistication, bring it back to relief: what burden gets lighter, what workaround disappears, what meeting becomes shorter, what decision becomes easier?",
+          "The best version lands calmly. You are not arguing against ambition. You are sequencing it: relief first, power later."
+        ],
+        "example": [
+          "“I like the bigger vision, but let’s find the relieved customer first. For Daisy 1, who has a coordination problem so annoying that a simple version would already feel like progress?”"
+        ]
+      }
+    },
+    {
       "date": "2026-08-04",
       "displayDate": "Tue · Aug 4",
       "domain": "Storytelling",
@@ -14,7 +66,7 @@
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><line x1='70' y1='235' x2='490' y2='235' stroke='#9ba0b8' stroke-width='2' opacity='.45'/><line x1='70' y1='85' x2='490' y2='85' stroke='#9ba0b8' stroke-width='2' opacity='.25'/><path d='M80 220 C120 215 120 100 160 96 C200 94 196 216 238 218 C280 220 280 112 322 105 C365 98 363 215 405 218 C447 221 452 88 490 75' fill='none' stroke='#e8b84b' stroke-width='6' stroke-linecap='round'/><circle cx='80' cy='220' r='8' fill='#ff7a6e'/><circle cx='160' cy='96' r='8' fill='#5fd4c4'/><circle cx='238' cy='218' r='8' fill='#ff7a6e'/><circle cx='322' cy='105' r='8' fill='#5fd4c4'/><circle cx='405' cy='218' r='8' fill='#ff7a6e'/><circle cx='490' cy='75' r='8' fill='#a48bfa'/><text x='70' y='265' fill='#eceef7' font-size='18' font-family='Inter, Arial'>what is</text><text x='382' y='60' fill='#eceef7' font-size='18' font-family='Inter, Arial'>what could be</text><text x='205' y='154' fill='#9ba0b8' font-size='15' font-family='Inter, Arial'>contrast creates energy</text><path d='M252 160 L305 132' stroke='#5fd4c4' stroke-width='3' stroke-dasharray='6 7'/></svg>",
         "visualCaption": "A good explanation rises and falls between reality and possibility.",
         "after": [
-          "In a StoryOS planning session, Matt could avoid opening with features or philosophy. Start with the gap: “Right now, our ideas are scattered across conversations and notes. What if the system helped us turn raw thinking into repeatable narrative moves?” Now the project has tension before it has details."
+          "In a StoryOS planning session, you can avoid opening with features or philosophy. Start with the gap: “Right now, our ideas are scattered across conversations and notes. What if the system helped us turn raw thinking into repeatable narrative moves?” Now the project has tension before it has details."
         ]
       },
       "lab": {
@@ -63,7 +115,7 @@
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><text x='54' y='54' fill='#eceef7' font-size='24' font-family='Inter, Arial' font-weight='700'>Lower the cost of candor</text><line x1='92' y1='228' x2='468' y2='228' stroke='#9ba0b8' stroke-width='2'/><line x1='92' y1='228' x2='92' y2='92' stroke='#9ba0b8' stroke-width='2'/><text x='58' y='86' fill='#9ba0b8' font-size='13' font-family='Inter, Arial' transform='rotate(-90 58 86)'>Truth spoken</text><text x='220' y='270' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>Social safety</text><path d='M104 214 C164 208, 188 182, 226 164 S304 128, 362 122 S426 108, 460 78' fill='none' stroke='#5fd4c4' stroke-width='5' stroke-linecap='round'/><circle cx='142' cy='204' r='9' fill='#ff7a6e'/><circle cx='262' cy='148' r='9' fill='#e8b84b'/><circle cx='410' cy='105' r='9' fill='#a48bfa'/><rect x='112' y='238' width='86' height='32' rx='16' fill='#ff7a6e' opacity='0.18'/><text x='128' y='259' fill='#ff7a6e' font-size='12' font-family='Inter, Arial' font-weight='700'>perform</text><rect x='235' y='238' width='86' height='32' rx='16' fill='#e8b84b' opacity='0.18'/><text x='254' y='259' fill='#e8b84b' font-size='12' font-family='Inter, Arial' font-weight='700'>admit</text><rect x='370' y='238' width='86' height='32' rx='16' fill='#5fd4c4' opacity='0.18'/><text x='389' y='259' fill='#5fd4c4' font-size='12' font-family='Inter, Arial' font-weight='700'>learn</text><path d='M122 113 L204 113 L204 151 L122 151 Z' fill='none' stroke='#a48bfa' stroke-width='2'/><text x='137' y='137' fill='#eceef7' font-size='13' font-family='Inter, Arial'>What am I</text><text x='145' y='154' fill='#eceef7' font-size='13' font-family='Inter, Arial'>missing?</text></svg>",
         "visualCaption": "The safer the room feels, the more reality enters the conversation.",
         "after": [
-          "In a quarterly planning session, Matt could open the strategy agent discussion with: “This is still uncertain, and I may be over-weighting elegance over usefulness. What would make this fragile in real work?” That one sentence gives the room permission to improve the idea instead of merely react to it."
+          "In a quarterly planning session, you can open the strategy agent discussion with: “This is still uncertain, and I may be over-weighting elegance over usefulness. What would make this fragile in real work?” That one sentence gives the room permission to improve the idea instead of merely react to it."
         ]
       },
       "lab": {
@@ -94,7 +146,7 @@
         "line": "Make the unsafe sentence safe to say.",
         "paras": [
           "Practice by naming the exact category of truth you want: risk, confusion, disagreement, missing information, or practical friction. A vague “any feedback?” gets politeness. A specific invitation gets signal.",
-          "The move is especially useful when Matt is presenting current work. Instead of defending the idea, define the uncertainty, admit the likely blind spot, and ask for the objection that would make the work stronger."
+          "The move is especially useful when you are presenting current work. Instead of defending the idea, define the uncertainty, admit the likely blind spot, and ask for the objection that would make the work stronger."
         ],
         "example": [
           "“I’m confident in the direction, but not in the assumptions yet. The unsafe sentence I want someone to say is: ‘This sounds good, but it breaks when ____.’ Who can fill in that blank?”"
@@ -115,7 +167,7 @@
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='24' fill='#1b1e30'/><text x='48' y='52' fill='#eceef7' font-size='22' font-family='Inter,Arial'>Pre-mortem path</text><line x1='92' y1='150' x2='468' y2='150' stroke='#9ba0b8' stroke-width='3' stroke-dasharray='8 8'/><circle cx='105' cy='150' r='34' fill='#5fd4c4'/><text x='82' y='157' fill='#1b1e30' font-size='16' font-weight='700' font-family='Inter,Arial'>PLAN</text><circle cx='280' cy='150' r='44' fill='#ff7a6e'/><text x='252' y='146' fill='#1b1e30' font-size='15' font-weight='700' font-family='Inter,Arial'>FAILED</text><text x='250' y='166' fill='#1b1e30' font-size='13' font-family='Inter,Arial'>FUTURE</text><circle cx='455' cy='150' r='34' fill='#e8b84b'/><text x='433' y='157' fill='#1b1e30' font-size='16' font-weight='700' font-family='Inter,Arial'>FIX</text><path d='M280 199 C258 230, 224 236, 190 224' stroke='#a48bfa' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M190 224 l18 -5 l-8 17' fill='none' stroke='#a48bfa' stroke-width='4' stroke-linecap='round'/><text x='178' y='262' fill='#eceef7' font-size='16' font-family='Inter,Arial'>Visit the failure first.</text><text x='178' y='286' fill='#9ba0b8' font-size='14' font-family='Inter,Arial'>Then return with sharper constraints.</text></svg>",
         "visualCaption": "A pre-mortem borrows hindsight before the plan gets expensive.",
         "after": [
-          "In a quarterly planning session, Matt could use this before committing to a Coordly or strategy agent milestone. Not to dampen momentum, but to improve it: name the likely failure modes, cut the fragile assumptions, and turn the remaining plan into something sturdier."
+          "In a quarterly planning session, you can use this before committing to a Daisy 1 or strategy agent milestone. Not to dampen momentum, but to improve it: name the likely failure modes, cut the fragile assumptions, and turn the remaining plan into something sturdier."
         ]
       },
       "lab": {
@@ -166,7 +218,7 @@
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='24' fill='#1b1e30'/><text x='280' y='42' text-anchor='middle' fill='#eceef7' font-family='Inter, Arial' font-size='22' font-weight='700'>Opportunity Solution Tree</text><rect x='210' y='66' width='140' height='44' rx='12' fill='#e8b84b'/><text x='280' y='94' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='15' font-weight='700'>Outcome</text><path d='M280 110 L145 148 M280 110 L280 148 M280 110 L415 148' stroke='#9ba0b8' stroke-width='3' fill='none'/><rect x='70' y='148' width='150' height='46' rx='12' fill='#5fd4c4'/><rect x='205' y='148' width='150' height='46' rx='12' fill='#5fd4c4'/><rect x='340' y='148' width='150' height='46' rx='12' fill='#5fd4c4'/><text x='145' y='176' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='14' font-weight='700'>Opportunity</text><text x='280' y='176' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='14' font-weight='700'>Opportunity</text><text x='415' y='176' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='14' font-weight='700'>Opportunity</text><path d='M145 194 L105 230 M145 194 L185 230 M280 194 L240 230 M280 194 L320 230 M415 194 L375 230 M415 194 L455 230' stroke='#9ba0b8' stroke-width='2.5' fill='none'/><rect x='62' y='230' width='86' height='34' rx='9' fill='#ff7a6e'/><rect x='162' y='230' width='86' height='34' rx='9' fill='#ff7a6e'/><rect x='197' y='230' width='86' height='34' rx='9' fill='#ff7a6e'/><rect x='297' y='230' width='86' height='34' rx='9' fill='#ff7a6e'/><rect x='332' y='230' width='86' height='34' rx='9' fill='#ff7a6e'/><rect x='432' y='230' width='86' height='34' rx='9' fill='#ff7a6e'/><text x='105' y='252' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='12' font-weight='700'>Solution</text><text x='205' y='252' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='12' font-weight='700'>Solution</text><text x='240' y='252' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='12' font-weight='700'>Solution</text><text x='340' y='252' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='12' font-weight='700'>Solution</text><text x='375' y='252' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='12' font-weight='700'>Solution</text><text x='475' y='252' text-anchor='middle' fill='#1b1e30' font-family='Inter, Arial' font-size='12' font-weight='700'>Solution</text><text x='280' y='296' text-anchor='middle' fill='#a48bfa' font-family='Inter, Arial' font-size='14'>Outcome first. Opportunity before solution. Test before commitment.</text></svg>",
         "visualCaption": "A good product conversation moves from outcome to opportunity to solution to test.",
         "after": [
-          "In a Coordly planning session, this keeps the conversation from becoming a pile of feature requests. Matt can write the outcome at the top, ask which coordination pain is most real, then compare two or three small bets before deciding what deserves build time."
+          "In a Daisy 1 planning session, this keeps the conversation from becoming a pile of feature requests. you can write the outcome at the top, ask which coordination pain is most real, then compare two or three small bets before deciding what deserves build time."
         ]
       },
       "lab": {
@@ -199,7 +251,7 @@
           "Use this line when a meeting gets solution-heavy. Say it warmly, then draw a tiny four-level tree: outcome, opportunity, solution, test. The goal is not to kill momentum; it is to make the momentum more intelligent."
         ],
         "example": [
-          "'A feature is not a strategy until it points to an opportunity. For this Coordly idea, the opportunity might be: teams lose the thread between decisions and next actions. If that is the real pain, we should test whether people can recover the thread faster before we commit to the full build.'"
+          "'A feature is not a strategy until it points to an opportunity. For this Daisy 1 idea, the opportunity might be: teams lose the thread between decisions and next actions. If that is the real pain, we should test whether people can recover the thread faster before we commit to the full build.'"
         ]
       }
     },
@@ -217,7 +269,7 @@
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='28' fill='#1b1e30'/><circle cx='128' cy='148' r='54' fill='none' stroke='#5fd4c4' stroke-width='5'/><circle cx='432' cy='148' r='54' fill='none' stroke='#a48bfa' stroke-width='5'/><rect x='222' y='93' width='116' height='110' rx='18' fill='none' stroke='#e8b84b' stroke-width='5'/><path d='M183 148 H222' stroke='#eceef7' stroke-width='4' stroke-linecap='round'/><path d='M338 148 H377' stroke='#eceef7' stroke-width='4' stroke-linecap='round'/><path d='M280 203 C280 238 238 246 208 230' fill='none' stroke='#ff7a6e' stroke-width='4' stroke-linecap='round'/><path d='M280 203 C280 238 322 246 352 230' fill='none' stroke='#ff7a6e' stroke-width='4' stroke-linecap='round'/><text x='128' y='154' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Human</text><text x='280' y='139' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Process</text><text x='280' y='166' text-anchor='middle' fill='#9ba0b8' font-size='14' font-family='Inter, Arial'>asks + checks</text><text x='432' y='154' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>AI</text><text x='280' y='277' text-anchor='middle' fill='#9ba0b8' font-size='17' font-family='Inter, Arial'>Better handoffs beat better prompts.</text></svg>",
         "visualCaption": "AI leverage lives in the handoffs between judgment, generation, and review.",
         "after": [
-          "For Matt’s strategy agent work, the useful question is not just “What can the agent do?” It is: “Where does Matt’s judgment enter the loop, where does the agent widen the option set, and what artifact proves the thinking improved?” A strategy memo, planning session, or product decision gets better when the handshake is designed before the tool is asked to perform."
+          "For your strategy agent work, the useful question is not just “What can the agent do?” It is: “Where does Matt’s judgment enter the loop, where does the agent widen the option set, and what artifact proves the thinking improved?” A strategy memo, planning session, or product decision gets better when the handshake is designed before the tool is asked to perform."
         ]
       },
       "lab": {
@@ -267,7 +319,7 @@
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='155' cy='160' r='78' fill='none' stroke='#9ba0b8' stroke-width='3'/><circle cx='405' cy='160' r='78' fill='none' stroke='#5fd4c4' stroke-width='5'/><rect x='107' y='125' width='96' height='70' rx='12' fill='#2a2e46' stroke='#9ba0b8' stroke-width='2'/><rect x='357' y='125' width='96' height='70' rx='12' fill='#2a2e46' stroke='#e8b84b' stroke-width='2'/><path d='M235 160 C270 116, 300 116, 335 160 C300 204, 270 204, 235 160Z' fill='none' stroke='#ff7a6e' stroke-width='4'/><text x='155' y='155' text-anchor='middle' font-family='Inter, Arial' font-size='17' fill='#eceef7'>thing</text><text x='155' y='177' text-anchor='middle' font-family='Inter, Arial' font-size='13' fill='#9ba0b8'>what it is</text><text x='405' y='153' text-anchor='middle' font-family='Inter, Arial' font-size='17' fill='#eceef7'>frame</text><text x='405' y='177' text-anchor='middle' font-family='Inter, Arial' font-size='13' fill='#9ba0b8'>why it matters</text><text x='280' y='59' text-anchor='middle' font-family='Inter, Arial' font-size='22' font-weight='700' fill='#eceef7'>Same object. Different meaning.</text><text x='280' y='272' text-anchor='middle' font-family='Inter, Arial' font-size='14' fill='#a48bfa'>Innovation often starts by changing the comparison.</text></svg>",
         "visualCaption": "A better frame changes the comparison before it changes the product.",
         "after": [
-          "In a Coordly planning discussion, don’t only ask, “What should this feature do?” Ask, “What frustrating moment should this help someone name?” That shift can turn a generic product decision into a clearer promise without inventing capabilities or overselling the work."
+          "In a Daisy 1 planning discussion, don’t only ask, “What should this feature do?” Ask, “What frustrating moment should this help someone name?” That shift can turn a generic product decision into a clearer promise without inventing capabilities or overselling the work."
         ]
       },
       "lab": {
@@ -316,7 +368,7 @@
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='150' cy='170' r='28' fill='#ff7a6e'/><circle cx='245' cy='170' r='28' fill='#e8b84b'/><circle cx='340' cy='170' r='28' fill='#5fd4c4'/><circle cx='435' cy='170' r='28' fill='#a48bfa'/><path d='M178 170 C198 140 222 140 237 160' fill='none' stroke='#e8b84b' stroke-width='5' stroke-linecap='round'/><path d='M273 170 C293 140 317 140 332 160' fill='none' stroke='#5fd4c4' stroke-width='5' stroke-linecap='round'/><path d='M368 170 C388 140 412 140 427 160' fill='none' stroke='#a48bfa' stroke-width='5' stroke-linecap='round'/><text x='150' y='225' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>leader</text><text x='245' y='225' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>first</text><text x='340' y='225' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>second</text><text x='435' y='225' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>many</text><text x='280' y='70' text-anchor='middle' fill='#eceef7' font-size='28' font-family='Inter, Arial' font-weight='700'>Permission scales faster than persuasion</text><text x='280' y='270' text-anchor='middle' fill='#9ba0b8' font-size='16' font-family='Inter, Arial'>Make the next person easy to see, thank, and copy.</text></svg>",
         "visualCaption": "The first follower turns a strange move into a shared signal.",
         "after": [
-          "In a Coordly planning discussion, Matt could use this before proposing a new coordination habit: name the smallest version, invite one visible teammate to try it, then make their participation easy to copy rather than trying to convince the whole room at once."
+          "In a Daisy 1 planning discussion, you can use this before proposing a new coordination habit: name the smallest version, invite one visible teammate to try it, then make their participation easy to copy rather than trying to convince the whole room at once."
         ]
       },
       "lab": {
@@ -368,7 +420,7 @@
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><line x1='280' y1='42' x2='280' y2='278' stroke='#9ba0b8' stroke-width='2' opacity='0.55'/><line x1='72' y1='160' x2='488' y2='160' stroke='#9ba0b8' stroke-width='2' opacity='0.55'/><rect x='88' y='58' width='160' height='76' rx='16' fill='none' stroke='#5fd4c4' stroke-width='3'/><text x='168' y='91' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Clear</text><text x='168' y='116' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>follow the rule</text><rect x='312' y='58' width='160' height='76' rx='16' fill='none' stroke='#e8b84b' stroke-width='3'/><text x='392' y='91' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Complicated</text><text x='392' y='116' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>ask expertise</text><rect x='88' y='186' width='160' height='76' rx='16' fill='none' stroke='#a48bfa' stroke-width='3'/><text x='168' y='219' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Complex</text><text x='168' y='244' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>probe first</text><rect x='312' y='186' width='160' height='76' rx='16' fill='none' stroke='#ff7a6e' stroke-width='3'/><text x='392' y='219' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Chaotic</text><text x='392' y='244' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>stabilize now</text><circle cx='280' cy='160' r='38' fill='#1b1e30' stroke='#eceef7' stroke-width='3'/><text x='280' y='156' text-anchor='middle' fill='#eceef7' font-size='15' font-family='Inter, Arial'>Disorder</text><text x='280' y='176' text-anchor='middle' fill='#9ba0b8' font-size='11' font-family='Inter, Arial'>name it</text></svg>",
         "visualCaption": "Different problem domains require different moves.",
         "after": [
-          "In quarterly planning, this can save a whole session. If Matt is deciding what to improve in Coordly, one question might be complicated: “Which workflow has the most friction?” That may need analysis. Another might be complex: “What framing makes coordination feel lighter?” That needs a small probe, a demo, or a conversation with real users."
+          "In quarterly planning, this can save a whole session. If Matt is deciding what to improve in Daisy 1, one question might be complicated: “Which workflow has the most friction?” That may need analysis. Another might be complex: “What framing makes coordination feel lighter?” That needs a small probe, a demo, or a conversation with real users."
         ]
       },
       "lab": {
@@ -467,12 +519,12 @@
         "title": "Find the But",
         "paras": [
           "Randy Olson’s <strong>ABT Narrative Template</strong> is brutally simple: <em>And, But, Therefore</em>. The “and” gives context, the “but” creates tension, and the “therefore” makes action feel necessary. It is a tiny structure for turning information into momentum.",
-          "Most weak explanations are really AAA chains: and this, and this, and this. They sound complete but feel flat. Before explaining Coordly, StoryOS, DreamGuard, or a strategy idea, ask: <strong>What is the tension that makes this matter now?</strong> The answer belongs after “but.”"
+          "Most weak explanations are really AAA chains: and this, and this, and this. They sound complete but feel flat. Before explaining Daisy 1, StoryOS, DreamGuard, or a strategy idea, ask: <strong>What is the tension that makes this matter now?</strong> The answer belongs after “but.”"
         ],
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><path d='M70 166 C130 92, 197 92, 257 166 S388 240, 490 132' fill='none' stroke='#5fd4c4' stroke-width='8' stroke-linecap='round'/><circle cx='112' cy='132' r='38' fill='#e8b84b'/><circle cx='280' cy='166' r='44' fill='#ff7a6e'/><circle cx='450' cy='144' r='38' fill='#a48bfa'/><text x='112' y='138' text-anchor='middle' font-family='Inter, Arial' font-size='20' font-weight='700' fill='#1b1e30'>AND</text><text x='280' y='173' text-anchor='middle' font-family='Inter, Arial' font-size='20' font-weight='700' fill='#1b1e30'>BUT</text><text x='450' y='151' text-anchor='middle' font-family='Inter, Arial' font-size='17' font-weight='700' fill='#1b1e30'>SO</text><text x='280' y='278' text-anchor='middle' font-family='Inter, Arial' font-size='18' fill='#eceef7'>Context becomes useful when tension creates direction.</text><line x1='70' y1='230' x2='490' y2='230' stroke='#9ba0b8' stroke-width='2' opacity='.35'/></svg>",
         "visualCaption": "The “but” is the hinge that turns facts into movement.",
         "after": [
-          "In a StoryOS memo, Matt could write: “Teams already know story matters, and they have plenty of examples, <strong>but</strong> they lack a repeatable way to diagnose why a message feels flat; <strong>therefore</strong> StoryOS should make narrative structure easier to see, practice, and reuse.” No invented feature list. Just a sharper spine."
+          "In a StoryOS memo, you can write: “Teams already know story matters, and they have plenty of examples, <strong>but</strong> they lack a repeatable way to diagnose why a message feels flat; <strong>therefore</strong> StoryOS should make narrative structure easier to see, practice, and reuse.” No invented feature list. Just a sharper spine."
         ]
       },
       "lab": {
@@ -521,7 +573,7 @@
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='280' cy='160' r='108' fill='none' stroke='#2b3048' stroke-width='24'/><path d='M280 52 A108 108 0 0 1 388 160' fill='none' stroke='#e8b84b' stroke-width='24' stroke-linecap='round'/><path d='M388 160 A108 108 0 0 1 280 268' fill='none' stroke='#5fd4c4' stroke-width='24' stroke-linecap='round'/><path d='M280 268 A108 108 0 0 1 172 160' fill='none' stroke='#ff7a6e' stroke-width='24' stroke-linecap='round'/><path d='M172 160 A108 108 0 0 1 280 52' fill='none' stroke='#a48bfa' stroke-width='24' stroke-linecap='round'/><text x='280' y='132' text-anchor='middle' fill='#eceef7' font-size='24' font-family='Inter, Arial, sans-serif' font-weight='700'>Four checks</text><text x='280' y='164' text-anchor='middle' fill='#9ba0b8' font-size='15' font-family='Inter, Arial, sans-serif'>enough · true · relevant · clear</text><text x='280' y='194' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial, sans-serif'>Make the next move obvious</text><text x='280' y='33' text-anchor='middle' fill='#e8b84b' font-size='14' font-family='Inter, Arial, sans-serif'>ENOUGH</text><text x='442' y='166' text-anchor='middle' fill='#5fd4c4' font-size='14' font-family='Inter, Arial, sans-serif'>TRUE</text><text x='280' y='300' text-anchor='middle' fill='#ff7a6e' font-size='14' font-family='Inter, Arial, sans-serif'>RELEVANT</text><text x='118' y='166' text-anchor='middle' fill='#a48bfa' font-size='14' font-family='Inter, Arial, sans-serif'>CLEAR</text></svg>",
         "visualCaption": "Grice's maxims, translated into a builder's pre-flight checklist.",
         "after": [
-          "In a strategy agent memo, Matt could use this before adding any cleverness: one sentence for the recommendation, one sentence for evidence, one sentence for uncertainty, and one sentence for the next action. The intelligence shows up as reduced friction."
+          "In a strategy agent memo, you can use this before adding any cleverness: one sentence for the recommendation, one sentence for evidence, one sentence for uncertainty, and one sentence for the next action. The intelligence shows up as reduced friction."
         ]
       },
       "lab": {
@@ -572,7 +624,7 @@
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='58' y='62' width='444' height='196' rx='22' fill='none' stroke='#9ba0b8' stroke-width='2'/><line x1='96' y1='210' x2='464' y2='210' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='7 8'/><circle cx='140' cy='210' r='13' fill='#ff7a6e'/><circle cx='230' cy='210' r='13' fill='#ff7a6e'/><circle cx='320' cy='210' r='13' fill='#ff7a6e'/><path d='M140 210 C170 154, 204 134, 230 210 S290 262, 320 210 S396 116, 432 154' fill='none' stroke='#5fd4c4' stroke-width='5' stroke-linecap='round'/><circle cx='432' cy='154' r='14' fill='#e8b84b'/><text x='80' y='105' fill='#eceef7' font-family='Inter, Arial' font-size='24' font-weight='700'>Make the guess visible</text><text x='80' y='139' fill='#9ba0b8' font-family='Inter, Arial' font-size='15'>certainty hides risk; candor turns it into learning</text><text x='116' y='242' fill='#ff7a6e' font-family='Inter, Arial' font-size='13'>question</text><text x='207' y='242' fill='#ff7a6e' font-family='Inter, Arial' font-size='13'>doubt</text><text x='296' y='242' fill='#ff7a6e' font-family='Inter, Arial' font-size='13'>risk</text><text x='402' y='134' fill='#e8b84b' font-family='Inter, Arial' font-size='13'>signal</text><path d='M430 170 L430 204 L455 204' fill='none' stroke='#a48bfa' stroke-width='3' stroke-linecap='round'/></svg>",
         "visualCaption": "The useful signal is often the doubt someone almost did not say.",
         "after": [
-          "In a quarterly planning session, this turns a status meeting into a learning loop. For Coordly or the strategy agent, Matt does not need everyone to sound confident. He needs the earliest possible version of: “Here is where our plan is still guessing.”"
+          "In a quarterly planning session, this turns a status meeting into a learning loop. For Daisy 1 or the strategy agent, Matt does not need everyone to sound confident. He needs the earliest possible version of: “Here is where our plan is still guessing.”"
         ]
       },
       "lab": {
@@ -606,7 +658,7 @@
           "For extra softness, add your own fallibility first: “I may be overconfident here.” That lowers the social cost for someone else to name the uncomfortable detail."
         ],
         "example": [
-          "“I may be overconfident here, so let me ask it plainly: what are we pretending is known about this Coordly decision that is actually still a guess?”"
+          "“I may be overconfident here, so let me ask it plainly: what are we pretending is known about this Daisy 1 decision that is actually still a guess?”"
         ]
       }
     },
@@ -624,7 +676,7 @@
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><text x='54' y='54' fill='#eceef7' font-size='24' font-family='Arial, sans-serif' font-weight='700'>Inside View vs. Outside View</text><rect x='54' y='94' width='190' height='150' rx='18' fill='none' stroke='#ff7a6e' stroke-width='3'/><text x='86' y='134' fill='#ff7a6e' font-size='18' font-family='Arial, sans-serif' font-weight='700'>Inside View</text><path d='M96 170 C130 132, 176 132, 206 170' fill='none' stroke='#ff7a6e' stroke-width='4' stroke-linecap='round'/><circle cx='149' cy='170' r='8' fill='#ff7a6e'/><text x='84' y='215' fill='#9ba0b8' font-size='14' font-family='Arial, sans-serif'>“Best case path”</text><rect x='316' y='94' width='190' height='150' rx='18' fill='none' stroke='#5fd4c4' stroke-width='3'/><text x='346' y='134' fill='#5fd4c4' font-size='18' font-family='Arial, sans-serif' font-weight='700'>Outside View</text><line x1='354' y1='180' x2='468' y2='180' stroke='#5fd4c4' stroke-width='4' stroke-linecap='round'/><circle cx='370' cy='180' r='8' fill='#e8b84b'/><circle cx='410' cy='180' r='8' fill='#a48bfa'/><circle cx='452' cy='180' r='8' fill='#5fd4c4'/><text x='350' y='215' fill='#9ba0b8' font-size='14' font-family='Arial, sans-serif'>“Actual past cases”</text><path d='M258 168 L300 168' stroke='#e8b84b' stroke-width='4' stroke-linecap='round'/><path d='M292 158 L302 168 L292 178' fill='none' stroke='#e8b84b' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><text x='116' y='286' fill='#eceef7' font-size='16' font-family='Arial, sans-serif'>Replace confidence with comparison.</text></svg>",
         "visualCaption": "The inside view imagines the project; the outside view checks the evidence.",
         "after": [
-          "In a quarterly planning session, Matt could use this before committing to a Coordly milestone or strategy-agent experiment: not “Can we squeeze this in?” but “What did similar pushes actually require?” The tone stays practical, not pessimistic."
+          "In a quarterly planning session, you can use this before committing to a Daisy 1 milestone or strategy-agent experiment: not “Can we squeeze this in?” but “What did similar pushes actually require?” The tone stays practical, not pessimistic."
         ]
       },
       "lab": {
@@ -675,7 +727,7 @@
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='28' fill='#1b1e30'/><text x='50' y='58' fill='#eceef7' font-size='24' font-family='Arial, sans-serif' font-weight='700'>Jobs-to-Be-Done</text><text x='50' y='88' fill='#9ba0b8' font-size='14' font-family='Arial, sans-serif'>Do not stop at the feature request.</text><rect x='48' y='122' width='130' height='72' rx='16' fill='none' stroke='#ff7a6e' stroke-width='3'/><text x='72' y='153' fill='#ff7a6e' font-size='16' font-family='Arial, sans-serif' font-weight='700'>Request</text><text x='70' y='176' fill='#eceef7' font-size='13' font-family='Arial, sans-serif'>“Simpler view”</text><path d='M190 158 C230 118, 274 118, 314 158' fill='none' stroke='#e8b84b' stroke-width='4' stroke-linecap='round'/><polygon points='314,158 298,151 302,169' fill='#e8b84b'/><rect x='328' y='102' width='184' height='112' rx='20' fill='none' stroke='#5fd4c4' stroke-width='3'/><text x='365' y='139' fill='#5fd4c4' font-size='16' font-family='Arial, sans-serif' font-weight='700'>Real Job</text><text x='354' y='166' fill='#eceef7' font-size='13' font-family='Arial, sans-serif'>“Help me explain</text><text x='356' y='186' fill='#eceef7' font-size='13' font-family='Arial, sans-serif'>status with confidence.”</text><circle cx='114' cy='244' r='20' fill='#a48bfa'/><circle cx='192' cy='244' r='20' fill='#a48bfa' opacity='.65'/><circle cx='270' cy='244' r='20' fill='#a48bfa' opacity='.35'/><text x='318' y='250' fill='#9ba0b8' font-size='14' font-family='Arial, sans-serif'>Alternatives reveal the job.</text></svg>",
         "visualCaption": "A feature request is the surface; the job is the progress underneath.",
         "after": [
-          "In a Coordly product discussion, this keeps Matt from debating “more columns vs. fewer columns” too early. The sharper move is to ask what moment the user is trying to survive: a planning meeting, a status update, a handoff, or a decision they need to defend."
+          "In a Daisy 1 product discussion, this keeps Matt from debating “more columns vs. fewer columns” too early. The sharper move is to ask what moment the user is trying to survive: a planning meeting, a status update, a handoff, or a decision they need to defend."
         ]
       },
       "lab": {
@@ -709,7 +761,7 @@
           "The tone matters: curious, not corrective. You are not saying the request is wrong. You are saying the request is a clue."
         ],
         "example": [
-          "“Before we decide whether Coordly needs another view, let’s name the job. In that moment, is the person trying to plan the work, explain the work, recover from confusion, or get someone else to make a decision?”"
+          "“Before we decide whether Daisy 1 needs another view, let’s name the job. In that moment, is the person trying to plan the work, explain the work, recover from confusion, or get someone else to make a decision?”"
         ]
       }
     },
@@ -777,7 +829,7 @@
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><text x='48' y='46' fill='#eceef7' font-size='24' font-family='Arial'>The strategy cascade</text><text x='48' y='76' fill='#9ba0b8' font-size='14' font-family='Arial'>Each answer narrows the next decision.</text><g font-family='Arial' font-size='15'><rect x='58' y='105' width='150' height='42' rx='10' fill='#e8b84b'/><text x='82' y='132' fill='#1b1e30'>Aspiration</text><path d='M208 126 L250 126' stroke='#9ba0b8' stroke-width='3'/><polygon points='250,126 240,120 240,132' fill='#9ba0b8'/><rect x='252' y='105' width='150' height='42' rx='10' fill='#5fd4c4'/><text x='282' y='132' fill='#1b1e30'>Where to play</text><path d='M402 126 L444 126' stroke='#9ba0b8' stroke-width='3'/><polygon points='444,126 434,120 434,132' fill='#9ba0b8'/><rect x='446' y='105' width='70' height='42' rx='10' fill='#ff7a6e'/><text x='459' y='132' fill='#1b1e30'>How</text><rect x='155' y='198' width='120' height='42' rx='10' fill='#a48bfa'/><text x='176' y='225' fill='#1b1e30'>Capabilities</text><path d='M327 147 C320 176 281 188 241 198' stroke='#9ba0b8' stroke-width='3' fill='none'/><rect x='318' y='198' width='120' height='42' rx='10' fill='none' stroke='#e8b84b' stroke-width='2'/><text x='347' y='225' fill='#eceef7'>Systems</text><path d='M275 219 L318 219' stroke='#9ba0b8' stroke-width='3'/><polygon points='318,219 308,213 308,225' fill='#9ba0b8'/></g><text x='48' y='284' fill='#9ba0b8' font-size='13' font-family='Arial'>If the cascade does not rule something out, it is still a wishlist.</text></svg>",
         "visualCaption": "Strategy sharpens as each choice rules out tempting alternatives.",
         "after": [
-          "In a quarterly planning session, Matt could use this to keep a strategy agent discussion from becoming a pile of good ideas. The question is not, <em>What should the agent eventually do?</em> It is, <em>Where will this first version play, how will it create an edge, and what are we deliberately not building yet?</em>"
+          "In a quarterly planning session, you can use this to keep a strategy agent discussion from becoming a pile of good ideas. The question is not, <em>What should the agent eventually do?</em> It is, <em>Where will this first version play, how will it create an edge, and what are we deliberately not building yet?</em>"
         ]
       },
       "lab": {
@@ -808,7 +860,7 @@
           "Use this when a planning conversation is becoming too agreeable. Say it warmly, then ask what the current plan would force you to postpone, ignore, or decline. The goal is not to be provocative for style points; it is to protect the team from fake alignment."
         ],
         "example": [
-          "In a Coordly product discussion: <strong>If we choose coordinators as the first arena, we are choosing their planning pain over every adjacent workflow for now. What would that make obviously in scope, and what would it make obviously later?</strong>"
+          "In a Daisy 1 product discussion: <strong>If we choose coordinators as the first arena, we are choosing their planning pain over every adjacent workflow for now. What would that make obviously in scope, and what would it make obviously later?</strong>"
         ]
       }
     },
@@ -894,7 +946,7 @@
         "watchWindow": "Watch roughly 3:33–5:20, especially her points on open-ended questions and letting the conversation go where it naturally wants to go.",
         "paras": [
           "Headlee is useful here because she treats conversation as a craft, not a personality trait. Her advice is not “be more charming.” It is more practical: ask cleaner questions, stop rehearsing, and actually follow what the other person gives you.",
-          "For Matt, the key lesson is restraint. A better conversationalist does not always add more brilliance. Often, he adds one good handle, listens for the response, then follows the live thread instead of dragging the person back to the prepared point."
+          "For you, the key lesson is restraint. A better conversationalist does not always add more brilliance. Often, he adds one good handle, listens for the response, then follows the live thread instead of dragging the person back to the prepared point."
         ],
         "observe": [
           "How she names simple rules without making them feel simplistic.",
@@ -932,10 +984,10 @@
       "lab": {
         "title": "The Connector Audit",
         "paras": [
-          "Your origin story — of Coordly, of your consulting practice, of any project — is the one story you’ll tell hundreds of times. It deserves a causal spine, not a timeline.",
+          "Your origin story — of Daisy 1, of your consulting practice, of any project — is the one story you’ll tell hundreds of times. It deserves a causal spine, not a timeline.",
           "The test: after each beat, could the listener feel why the next one had to happen? If they could shrug, you’ve got a list."
         ],
-        "exercise": "Take your 30-second Coordly origin story and write it as five beats, one per line. Now audit the connectors: every “and then” gets rewritten. Try: <strong>“We watched teams drown in status meetings — BUT the tools only tracked tasks, not people — THEREFORE we built Coordly to show who’s blocked, not just what’s late.”</strong> Under 5 minutes. Say the new version out loud once, and use it in your next intro."
+        "exercise": "Take your 30-second Daisy 1 origin story and write it as five beats, one per line. Now audit the connectors: every “and then” gets rewritten. Try: <strong>“We watched teams drown in status meetings — BUT the tools only tracked tasks, not people — THEREFORE we built Daisy 1 to show who’s blocked, not just what’s late.”</strong> Under 5 minutes. Say the new version out loud once, and use it in your next intro."
       },
       "masters": {
         "name": "Trey Parker & Matt Stone",
@@ -987,7 +1039,7 @@
           "Abstraction is a habit, so concreteness has to become one too. This drill takes one sentence you already say all the time and walks it down the ladder until it lands.",
           "The test: could a stranger sketch what you just said? If not, keep descending."
         ],
-        "exercise": "Take one sentence you say often about your work — say, <em>“Coordly helps teams stay aligned.”</em> In under 5 minutes, rewrite it two rungs down: <strong>“Coordly tells you Sarah’s been blocked on the design review since Tuesday — before she has to chase you.”</strong> Do the same for StoryOS or your consulting intro. Then use the concrete version in your very next conversation and notice how the follow-up questions change."
+        "exercise": "Take one sentence you say often about your work — say, <em>“Daisy 1 helps teams stay aligned.”</em> In under 5 minutes, rewrite it two rungs down: <strong>“Daisy 1 tells you Sarah’s been blocked on the design review since Tuesday — before she has to chase you.”</strong> Do the same for StoryOS or your consulting intro. Then use the concrete version in your very next conversation and notice how the follow-up questions change."
       },
       "masters": {
         "name": "Fred Rogers",
@@ -1030,7 +1082,7 @@
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg' font-family='Inter,-apple-system,sans-serif'><defs><marker id='ar' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#6a6f88'/></marker></defs><text x='30' y='34' fill='#5fd4c4' font-size='13' font-weight='700' letter-spacing='2'>THE CHOICE</text><text x='232' y='34' fill='#9ba0b8' font-size='13' font-weight='700' letter-spacing='2'>LOOKS LIKE</text><text x='420' y='34' fill='#ff7a6e' font-size='13' font-weight='700' letter-spacing='2'>BECOMES</text><g><rect x='22' y='58' width='170' height='60' rx='12' fill='#1b1e30' stroke='rgba(95,212,196,.5)'/><text x='107' y='84' fill='#eceef7' font-size='14' font-weight='600' text-anchor='middle'>Cut prices</text><text x='107' y='104' fill='#6a6f88' font-size='12' text-anchor='middle'>to win the market</text><line x1='196' y1='88' x2='222' y2='88' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar)'/><rect x='226' y='58' width='150' height='60' rx='12' fill='#1b1e30' stroke='rgba(255,255,255,.1)'/><text x='301' y='94' fill='#9ba0b8' font-size='13.5' text-anchor='middle'>More customers</text><line x1='380' y1='88' x2='406' y2='88' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar)'/><rect x='410' y='58' width='128' height='60' rx='12' fill='#241a22' stroke='rgba(255,122,110,.45)'/><text x='474' y='84' fill='#ff9d94' font-size='13' text-anchor='middle'>Rivals match.</text><text x='474' y='102' fill='#ff9d94' font-size='13' text-anchor='middle'>Margin gone.</text></g><g><rect x='22' y='138' width='170' height='60' rx='12' fill='#1b1e30' stroke='rgba(95,212,196,.5)'/><text x='107' y='164' fill='#eceef7' font-size='14' font-weight='600' text-anchor='middle'>Skip the hard</text><text x='107' y='182' fill='#eceef7' font-size='14' font-weight='600' text-anchor='middle'>conversation</text><line x1='196' y1='168' x2='222' y2='168' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar)'/><rect x='226' y='138' width='150' height='60' rx='12' fill='#1b1e30' stroke='rgba(255,255,255,.1)'/><text x='301' y='174' fill='#9ba0b8' font-size='13.5' text-anchor='middle'>Peace today</text><line x1='380' y1='168' x2='406' y2='168' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar)'/><rect x='410' y='138' width='128' height='60' rx='12' fill='#241a22' stroke='rgba(255,122,110,.45)'/><text x='474' y='164' fill='#ff9d94' font-size='13' text-anchor='middle'>Resentment</text><text x='474' y='182' fill='#ff9d94' font-size='13' text-anchor='middle'>compounds.</text></g><g><rect x='22' y='218' width='170' height='60' rx='12' fill='#1b1e30' stroke='rgba(95,212,196,.5)'/><text x='107' y='244' fill='#eceef7' font-size='14' font-weight='600' text-anchor='middle'>Say yes to</text><text x='107' y='262' fill='#eceef7' font-size='14' font-weight='600' text-anchor='middle'>every meeting</text><line x1='196' y1='248' x2='222' y2='248' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar)'/><rect x='226' y='218' width='150' height='60' rx='12' fill='#1b1e30' stroke='rgba(255,255,255,.1)'/><text x='301' y='254' fill='#9ba0b8' font-size='13.5' text-anchor='middle'>Look helpful</text><line x1='380' y1='248' x2='406' y2='248' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar)'/><rect x='410' y='218' width='128' height='60' rx='12' fill='#241a22' stroke='rgba(255,122,110,.45)'/><text x='474' y='244' fill='#ff9d94' font-size='13' text-anchor='middle'>No deep work</text><text x='474' y='262' fill='#ff9d94' font-size='13' text-anchor='middle'>ever again.</text></g><text x='280' y='308' fill='#6a6f88' font-size='12.5' text-anchor='middle' font-style='italic'>Trace every decision one more link down the chain.</text></svg>",
         "visualCaption": "First-order wins are often second-order losses.",
         "after": [
-          "The habit: before committing to anything meaningful, write one line answering <strong>“and then what happens, six months out?”</strong> If you can’t answer it, you haven’t finished thinking. Run Coordly’s next pricing or feature call through this chain before you ship it."
+          "The habit: before committing to anything meaningful, write one line answering <strong>“and then what happens, six months out?”</strong> If you can’t answer it, you haven’t finished thinking. Run Daisy 1’s next pricing or feature call through this chain before you ship it."
         ]
       },
       "lab": {
@@ -1039,7 +1091,7 @@
           "Most of us rush to fill silence, which signals nervousness and buries our best points. Strategic silence does the opposite: it signals confidence, lets the point land, and makes the listener lean in.",
           "It will feel uncomfortably long to you. It won’t to them."
         ],
-        "exercise": "In one real conversation today — a call about Coordly, a client check-in, anything — deliver your most important sentence, then silently count <strong>“one-thousand-one, one-thousand-two”</strong> before saying another word. Notice who fills the silence, and what they reveal when they do."
+        "exercise": "In one real conversation today — a call about Daisy 1, a client check-in, anything — deliver your most important sentence, then silently count <strong>“one-thousand-one, one-thousand-two”</strong> before saying another word. Notice who fills the silence, and what they reveal when they do."
       },
       "masters": {
         "name": "Barbara Jordan",
@@ -1062,7 +1114,7 @@
           "In your next conversation, deliver your key point — then stay silent for two full seconds. Don’t soften it, don’t restate it, don’t apologize for it."
         ],
         "example": [
-          "Coordly isn’t another task manager.",
+          "Daisy 1 isn’t another task manager.",
           "(two full seconds of silence)",
           "It’s the coordination layer above the tools you already use."
         ]
