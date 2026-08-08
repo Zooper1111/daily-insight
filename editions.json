@@ -1,6 +1,58 @@
 {
   "editions": [
     {
+      "date": "2026-08-08",
+      "displayDate": "Sat · Aug 8",
+      "domain": "Strategy",
+      "hook": "Stop treating every messy problem like it is merely complicated.",
+      "insight": {
+        "title": "Match the Move to the Mess",
+        "paras": [
+          "Dave Snowden’s <strong>Cynefin framework</strong> is a sensemaking tool for choosing the right kind of action. Some problems are <em>clear</em>: follow the rule. Some are <em>complicated</em>: bring in expertise. Some are <em>complex</em>: run probes and learn. Some are <em>chaotic</em>: act first to create stability.",
+          "The mistake is using one mode everywhere. A project plan works beautifully when cause and effect are knowable. It fails when the system is still revealing itself. In complex work, the sharper question is not “What is the answer?” It is: <strong>What small probe would teach us what kind of problem this is?</strong>"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><line x1='280' y1='50' x2='280' y2='270' stroke='#9ba0b8' stroke-width='2'/><line x1='80' y1='160' x2='480' y2='160' stroke='#9ba0b8' stroke-width='2'/><rect x='95' y='65' width='150' height='70' rx='14' fill='none' stroke='#5fd4c4' stroke-width='3'/><text x='170' y='98' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Complex</text><text x='170' y='122' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>probe → sense</text><rect x='315' y='65' width='150' height='70' rx='14' fill='none' stroke='#e8b84b' stroke-width='3'/><text x='390' y='98' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Complicated</text><text x='390' y='122' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>analyze → act</text><rect x='95' y='185' width='150' height='70' rx='14' fill='none' stroke='#ff7a6e' stroke-width='3'/><text x='170' y='218' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Chaotic</text><text x='170' y='242' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>act → stabilize</text><rect x='315' y='185' width='150' height='70' rx='14' fill='none' stroke='#a48bfa' stroke-width='3'/><text x='390' y='218' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Clear</text><text x='390' y='242' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>sense → respond</text><circle cx='280' cy='160' r='28' fill='#1b1e30' stroke='#eceef7' stroke-width='3'/><text x='280' y='166' text-anchor='middle' fill='#eceef7' font-size='14' font-family='Inter, Arial'>Which?</text></svg>",
+        "visualCaption": "Before you choose the move, name the kind of problem.",
+        "after": [
+          "In a quarterly planning session, use this before prioritizing. Daisy 1 may have clear work that needs execution, complicated work that needs expertise, and complex work that needs a small test. Separating those modes keeps the plan from pretending uncertainty is just a longer task list."
+        ]
+      },
+      "lab": {
+        "title": "The Problem-Type Pause",
+        "paras": [
+          "This skill matters because smart people often argue about solutions while silently assuming different kinds of problems. One person wants a roadmap. Another wants research. Another wants urgency. The conversation improves the moment you name the operating mode.",
+          "Picture a product discussion where a feature idea feels both promising and fuzzy. Instead of forcing a yes/no decision, you slow the room down and say, “I think we are treating this as complicated, but it may be complex.” That one sentence can turn debate into learning."
+        ],
+        "exercise": "Take one decision today and label it in under five minutes. Use these exact words: “Before we pick an answer, what kind of problem is this: clear, complicated, complex, or chaotic? If it is clear, let’s follow the rule. If it is complicated, let’s get the right expertise. If it is complex, let’s run one small probe. If it is chaotic, let’s stabilize first.”"
+      },
+      "masters": {
+        "name": "Dave Snowden",
+        "talk": "The Cynefin Framework",
+        "videoId": "N7oz366X0-8",
+        "start": 0,
+        "watchWindow": "0:00–4:20",
+        "paras": [
+          "Snowden fits today’s lesson because he gives you a practical way to stop over-planning uncertainty. His core move is not to make strategy sound smarter; it is to help you choose a response that matches the reality in front of you.",
+          "Watch how he distinguishes ordered situations from complex ones. The useful takeaway is conversational: you can make a meeting sharper by asking which domain you are in before everyone starts defending their preferred answer."
+        ],
+        "observe": [
+          "How he uses categories to reduce confusion without pretending the world is simple.",
+          "How the framework shifts the question from “Who is right?” to “What response fits this context?”",
+          "How complexity requires safe-to-fail probes rather than confident predictions."
+        ]
+      },
+      "steal": {
+        "line": "If we do not know the problem type, we are probably overconfident about the solution.",
+        "paras": [
+          "Use this line when a planning conversation is moving too quickly toward a tidy answer. Say it warmly, then offer a next move. The goal is not to sound skeptical; it is to protect the team from false precision.",
+          "A good version creates motion: classify the situation, choose the response, and make the next step small enough to learn from."
+        ],
+        "example": [
+          "“I think we may be calling this a roadmap question when it is really a learning question. For the strategy agent, let’s not debate the full direction yet. Let’s run one small probe, decide what signal would matter, and come back with evidence.”"
+        ]
+      }
+    },
+    {
       "date": "2026-08-06",
       "displayDate": "Thu · Aug 6",
       "domain": "Innovation",
