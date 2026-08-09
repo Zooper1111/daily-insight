@@ -25,7 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EDITIONS_PATH = ROOT / "editions.json"
 CONTEXT_PATH = ROOT / "context.md"
 TODAY = dt.datetime.now(ZoneInfo("America/New_York")).date().isoformat()
-MODEL = os.getenv("OPENAI_MODEL", "gpt-5.5")
+MODEL = os.getenv("OPENAI_MODEL", "gpt-5.1")
 SMOKE_TEST = os.getenv("SMOKE_TEST") == "1"
 EDITION_INTERVAL_DAYS = int(os.getenv("EDITION_INTERVAL_DAYS", "2"))
 EDITION_ANCHOR_DATE = os.getenv("EDITION_ANCHOR_DATE", "2026-07-27")
