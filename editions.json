@@ -1,6 +1,58 @@
 {
   "editions": [
     {
+      "date": "2026-08-10",
+      "displayDate": "Mon · Aug 10",
+      "domain": "Communication",
+      "hook": "Never lead with the meeting you’re in.",
+      "insight": {
+        "title": "Answer the Hidden Question First",
+        "paras": [
+          "In almost every important conversation, people are quietly asking the same hidden question: <em>“Why should I care about this right now?”</em> Call this the <strong>Hidden Question</strong>. If you answer it early and clearly, people lean in; if you ignore it, even great ideas feel like noise. The move: before you explain <em>what</em> you’re doing, give one sharp line about <em>what is at stake for them</em> in this moment.",
+          "A simple way to use this is the three-beat frame: <strong>Now → Stakes → Move</strong>. Start with one sentence about what’s true <em>now</em>, name the concrete <em>stakes</em> if nothing changes, then describe the <em>move</em> you’re proposing. You are not hyping; you are answering the thing their brain is already scanning for: “Is this worth my attention in the next five minutes?”"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='60' width='140' height='40' rx='6' fill='none' stroke='#eceef7' stroke-width='2'/><text x='130' y='86' text-anchor='middle' fill='#eceef7' font-size='12'>NOW</text><rect x='210' y='140' width='140' height='40' rx='6' fill='none' stroke='#e8b84b' stroke-width='2'/><text x='280' y='166' text-anchor='middle' fill='#e8b84b' font-size='12'>STAKES</text><rect x='360' y='220' width='140' height='40' rx='6' fill='none' stroke='#5fd4c4' stroke-width='2'/><text x='430' y='246' text-anchor='middle' fill='#5fd4c4' font-size='12'>MOVE</text><line x1='200' y1='80' x2='210' y2='160' stroke='#9ba0b8' stroke-width='2' marker-end='url(#arrow)'/><line x1='350' y1='160' x2='360' y2='240' stroke='#9ba0b8' stroke-width='2' marker-end='url(#arrow)'/><circle cx='280' cy='40' r='10' fill='none' stroke='#a48bfa' stroke-width='2'/><text x='280' y='44' text-anchor='middle' fill='#a48bfa' font-size='9'>?</text><defs><marker id='arrow' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0 0 L10 5 L0 10 z' fill='#9ba0b8'/></marker></defs><text x='280' y='300' text-anchor='middle' fill='#ff7a6e' font-size='11'>Answer the hidden \"Why now?\" before the details.</text></svg>",
+        "visualCaption": "Frame your point as Now → Stakes → Move so the hidden question gets answered first.",
+        "after": [
+          "Today, try this in a Daisy 1 planning review: instead of opening with, “We’ve got three tickets to go through,” start with, “Right now our coordination breaks down every Tuesday; if we don’t fix this, every launch week will feel like a scramble, so today I want to agree on one clear rule Daisy 1 will enforce for handoffs.” You’ve just answered the Hidden Question in one breath—and made the rest of the discussion feel necessary instead of optional."
+        ]
+      },
+      "lab": {
+        "title": "The 30‑Second Now → Stakes → Move Opener",
+        "paras": [
+          "Why this matters: people decide in the first 30 seconds whether to give you real attention or just polite bandwidth. When you walk into a quarterly planning check-in or a client sync and open with logistics, you force them to guess why it matters. When you open with Now → Stakes → Move, you do the mental sorting <em>for</em> them and everything you say afterwards rides on that clarity.",
+          "Picture this: you’re kicking off a strategy agent demo with a skeptical founder. If you start with, “We’ve added a few workflows since last time,” they mentally drift. If you start with, “Right now your strategy lives in slides and people’s heads; that’s why you keep re-deciding the same things—today I want to show you one way the agent can hold a decision so it doesn’t get re-opened every week,” you have them. Same product, different opener, completely different level of attention."
+        ],
+        "exercise": "Pick one real conversation today—a standup, check-in, or design review. Before it starts, write a single 30-second opener using this exact template:\n\n1) Now: \"Right now, [describe the current situation in one concrete line].\"\n2) Stakes: \"If we keep going like this, [name the cost or risk in plain language].\"\n3) Move: \"So in this conversation, I want us to [describe the specific decision or shift].\"\n\nExample you can lift:\n\"Right now, our Daisy 1 board tells us <em>what</em> is in motion but not <em>what is blocked on who</em>. If we keep going like this, we’ll keep discovering blockers 24 hours too late. So in this 10-minute review, I want us to agree on one simple rule for assigning owners that Daisy 1 will make impossible to ignore.\"\n\nWalk into your next conversation and read your line almost verbatim. Notice what happens to people’s posture and follow-up questions."
+      },
+      "masters": {
+        "name": "Julian Treasure",
+        "talk": "How to Speak So That People Want to Listen (TED)",
+        "videoId": "eIho2S0ZahI",
+        "start": 260,
+        "watchWindow": "Watch 4:20–6:30, where he introduces HAIL and models clear framing.",
+        "paras": [
+          "Julian Treasure is obsessed with why some speech cuts through and some vanishes. In this segment he introduces his HAIL model—Honesty, Authenticity, Integrity, Love—and shows how a few words of framing can completely change how an audience receives what you say. He is effectively answering the Hidden Question in real time: why listen to <em>this</em> person, <em>now</em>?",
+          "Notice how he doesn’t drown you in theory. He offers one simple structure, stands on it, and then <em>demonstrates</em> with his own voice and presence. That’s the same move you’re making with Now → Stakes → Move: a tiny, named pattern that quietly upgrades every opener you give."
+        ],
+        "observe": [
+          "How he quickly states the problem (people not listening) before unpacking any detail—answering “Why this talk?” in one clean beat.",
+          "The way his vocal tone shifts when he moves from problem to possibility; he literally marks the transition from Stakes to Move with energy.",
+          "How his examples are situational and concrete (“in the office,” “at home”) instead of abstract; steal this level of specificity for your own openers."
+        ]
+      },
+      "steal": {
+        "line": "Open every important conversation by answering, in one sentence, why this matters <em>right now</em>.",
+        "paras": [
+          "For the next 48 hours, treat every meeting intro, Loom recording, or client update as a rep. Before you speak, silently ask, “What is the Hidden Question in this room?” Then use one Now → Stakes → Move sentence to answer it out loud before you touch agenda, features, or charts. You’re not being dramatic; you’re aligning attention.",
+          "If you catch yourself starting with, “So, quick update…” pause, breathe, and replace it with a sharper line that names the moment and the cost of inaction. Over time this becomes muscle memory: your brain scans for stakes before it reaches for status."
+        ],
+        "example": [
+          "Strategy memo opener: \"Right now, our quarterly planning drifts because we never say what we’ll <em>stop</em> doing; if we keep dodging that, Daisy 1 will just become a prettier backlog, so this memo proposes one simple rule for what never makes it onto the board in the first place.\""
+        ]
+      }
+    },
+    {
       "date": "2026-08-08",
       "displayDate": "Sat · Aug 8",
       "domain": "Strategy",
