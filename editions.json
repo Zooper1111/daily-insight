@@ -1,6 +1,58 @@
 {
   "editions": [
     {
+      "date": "2026-08-12",
+      "displayDate": "Wed · Aug 12",
+      "domain": "Conversation",
+      "hook": "One sharp, specific line that makes the hidden worry say itself.",
+      "insight": {
+        "title": "Name the Worry Out Loud",
+        "paras": [
+          "<strong>Model: The Pre-Emptive Objection.</strong> In any real conversation, the other person is carrying a quiet, half-formed worry. If you wait for it to surface, you often get defensiveness. If you name it first, simply and non-dramatically, you lower the temperature and make it talkable. The move is: say the likely objection in your own words, with no spin, as if you were on their side voicing it for them.",
+          "You can treat this like a tiny script: <em>state their worry</em>, then <em>invite correction</em>. “You might be thinking ___ — is that close?” This comes from negotiation and decision-science work on surfacing objections early instead of dancing around them; by giving the doubt a clear label, you move it from vague emotion to something you can reason about together."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect x='0' y='0' width='560' height='320' fill='#1b1e30'/><rect x='60' y='60' width='440' height='200' rx='16' fill='#262947' stroke='#9ba0b8' stroke-width='2'/><circle cx='150' cy='140' r='46' fill='none' stroke='#eceef7' stroke-width='3'/><path d='M190 180 L215 205' stroke='#eceef7' stroke-width='3' stroke-linecap='round'/><path d='M120 130 Q150 105 180 130' stroke='#9ba0b8' stroke-width='3' fill='none'/><circle cx='138' cy='140' r='4' fill='#eceef7'/><circle cx='162' cy='140' r='4' fill='#eceef7'/><path d='M320 120 h150' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='6 6'/><rect x='305' y='145' width='190' height='70' rx='12' fill='#1b1e30' stroke='#e8b84b' stroke-width='2'/><path d='M295 150 L310 150 L305 140 Z' fill='#e8b84b'/><text x='315' y='172' fill='#eceef7' font-family='system-ui, sans-serif' font-size='14'>\"You might be worried</text><text x='315' y='192' fill='#eceef7' font-family='system-ui, sans-serif' font-size='14'>this will slow everything down?\"</text><circle cx='90' cy='255' r='6' fill='#ff7a6e'/><circle cx='110' cy='255' r='6' fill='#5fd4c4'/><circle cx='130' cy='255' r='6' fill='#a48bfa'/></svg>",
+        "visualCaption": "A vague cloud of doubt becomes a clear, shared line.",
+        "after": [
+          "In a Daisy 1 planning review, instead of charging into a roadmap change, you might open with: “You might be nervous this adds coordination overhead right when you’re trying to simplify — is that what’s in the back of your mind?” If you guessed slightly wrong, they will gladly correct you. Either way, the real concern is now on the table, and you can design the plan, the product, or the next decision around what they actually fear instead of around your assumptions."
+        ]
+      },
+      "lab": {
+        "title": "The Two-Step Objection Mirror",
+        "paras": [
+          "This skill matters most in moments that feel slightly tense but still polite: a client hesitating on a proposal, a collaborator going quiet on a change, a team looking sideways at a new StoryOS or strategy agent idea. If you don’t surface what they’re actually worried about, you end up polishing arguments that never quite land, because they’re aimed at the wrong fear.",
+          "Picture a short strategy check-in on quarterly planning. You’re walking through a new cadence, and you can feel people getting quieter on Zoom. Instead of filling the silence with more explanation, you pause and gently mirror the likely objection: “If I were you, I’d be wondering whether this just means more meetings — is that close?” Now you’re in a real conversation instead of a quiet standoff."
+        ],
+        "exercise": "Today, pick one live conversation where you’re asking someone to change something: a teammate, collaborator, or client. Before the call, write down one sentence: “If I were you, I’d probably be worried about ___.” Fill in the blank with your best guess. During the conversation, when you feel even a small hesitation, use this exact script: “Can I sanity-check something? If I were you, I’d probably be worried about ___ — is that actually in your head, or am I off?” Then stop talking. Let them correct or confirm, and respond only to what they say next. Total time: under five minutes, one real rep."
+      },
+      "masters": {
+        "name": "Daniel Pink",
+        "talk": "To Sell Is Human: The New ABCs of Moving Others",
+        "videoId": "nKrBitIQrgo",
+        "start": 540,
+        "watchWindow": "Watch 9:00–14:00",
+        "paras": [
+          "Daniel Pink’s work on the “new ABCs of selling” — attunement, buoyancy, and clarity — is really about high-quality conversation. In this segment, he shows how getting out of your own head and into the other person’s perspective changes the entire feel of a pitch or proposal. Naming unspoken concerns is one of the most direct ways to do that in everyday work.",
+          "As you watch, connect his idea of attunement with your own meetings: when you propose a DreamGuard experiment, a StoryOS framing, or a new operating rhythm, your job is less to push your idea and more to reveal and reframe the other person’s picture of the situation. The pre-emptive objection is a concrete move for doing exactly that."
+        ],
+        "observe": [
+          "Notice how often Pink frames things from the listener’s point of view — he describes what they might be thinking or feeling instead of just repeating his own thesis.",
+          "Watch his tone when he talks about resistance; it’s light, curious, and almost playful, which makes worries feel acceptable to voice rather than embarrassing.",
+          "Listen for how he turns potential objections into invitations for joint problem-solving, shifting from “let me convince you” to “let’s figure out what’s really going on here.”"
+        ]
+      },
+      "steal": {
+        "line": "“If I were you, I’d probably be worried about X — is that actually in your head, or am I misreading it?”",
+        "paras": [
+          "Use this line in one real conversation today where stakes are non-trivial but not catastrophic — a roadmap decision, a consulting check-in, or a demo of a new workflow. The power comes from saying it calmly, like you’re doing the other person a favor by giving their worry language, not like you’re defending yourself. Treat their answer as data, not a verdict; you’re just trying to get the real topic on the table faster.",
+          "Over time, this becomes a tiny habit: when you sense friction, you don’t add more slides or logic; you name the likely worry, invite correction, and let the conversation move toward the real constraint. That’s how you turn hesitant nods into honest collaboration."
+        ],
+        "example": [
+          "In a client strategy session: “Before we go further, if I were you, I’d probably be worried this strategy agent direction means losing the nuance of your current process — is that actually in your head, or am I misreading it?”"
+        ]
+      }
+    },
+    {
       "date": "2026-08-10",
       "displayDate": "Mon · Aug 10",
       "domain": "Communication",
