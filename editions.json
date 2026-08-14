@@ -1,6 +1,58 @@
 {
   "editions": [
     {
+      "date": "2026-08-14",
+      "displayDate": "Fri · Aug 14",
+      "domain": "Leadership",
+      "hook": "Lead with the smallest possible promise",
+      "insight": {
+        "title": "The Minimum Credible Promise",
+        "paras": [
+          "When you talk about your work, you’re always making a promise: \"If you give this attention, here’s what you’ll get.\" The problem is most promises are either too big (so they feel like hype) or too vague (so they don’t stick). The <em>Minimum Credible Promise</em> is the smallest, clearest outcome you can confidently deliver, stated in one sharp line. Small enough to feel honest, concrete enough to be testable, and meaningful enough that someone would care.",
+          "Leadership conversations get easier when people know exactly what you are promising and what you are <em>not</em> promising. Instead of selling a grand vision every time, you anchor the room on one specific shift: \"In 30 days, you’ll be able to see X,\" or \"By next quarter, this will no longer be your problem.\" Once that minimum credible promise is on the table, everyone can argue about something real: is this the right promise, and what would have to be true for it to come good?"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='220' width='440' height='12' rx='6' fill='#9ba0b8'/><rect x='60' y='220' width='140' height='12' rx='6' fill='#e8b84b'/><circle cx='200' cy='226' r='6' fill='#eceef7'/><rect x='80' y='80' width='220' height='90' rx='8' fill='none' stroke='#5fd4c4' stroke-width='2'/><line x1='90' y1='110' x2='290' y2='110' stroke='#5fd4c4' stroke-width='2'/><line x1='90' y1='130' x2='230' y2='130' stroke='#5fd4c4' stroke-width='2'/><rect x='330' y='110' width='150' height='40' rx='6' fill='#a48bfa'/><line x1='300' y1='125' x2='330' y2='130' stroke='#eceef7' stroke-width='2'/><text x='337' y='135' fill='#1b1e30' font-size='11' font-family='system-ui, sans-serif'>Minimum</text><text x='337' y='150' fill='#1b1e30' font-size='11' font-family='system-ui, sans-serif'>Credible Promise</text><rect x='60' y='250' width='80' height='6' rx='3' fill='#ff7a6e'/><rect x='160' y='250' width='60' height='6' rx='3' fill='#5fd4c4'/><rect x='240' y='250' width='40' height='6' rx='3' fill='#a48bfa'/></svg>",
+        "visualCaption": "Zoom in from a vague vision to one clear, testable promise.",
+        "after": [
+          "Today, pick one live thread—maybe how you describe Daisy 1 to a prospective collaborator, or how you frame the next quarterly planning workshop—and write a single-sentence minimum credible promise for it. Use that line as your north star in the next conversation: notice how much easier it is to decide what to include, what to cut, and which questions actually matter once the promise is explicit."
+        ]
+      },
+      "lab": {
+        "title": "Sharpen One Promise Before Your Next Meeting",
+        "paras": [
+          "Imagine you’re about to kick off a planning session for your strategy agent work. People are half-listening, waiting to see whether this is yet another AI toy or something that will change their week. If you open with generalities—\"This could really transform how we plan\"—you force them to guess what it means for them, and they drift.",
+          "If instead you walk in with one minimum credible promise, everyone’s attention locks on the same point. You are quietly leading by saying, \"Here’s the exact shift I’m on the hook for,\" and inviting them to help you stress-test and improve <em>that</em>, not the entire universe of possibilities."
+        ],
+        "exercise": "Before your next work conversation, do a 5-minute promise pass:\n\n1) Pick one upcoming interaction today: a check-in about Daisy 1, a quarterly planning conversation, or a client call.\n2) On paper, answer three prompts:\n   - \"In 30–90 days, what is the smallest outcome I’m truly confident I can deliver?\"\n   - \"Why would that be non-trivial for them?\"\n   - \"What am I explicitly <not> promising yet?\"\n3) Turn that into a one-line script. Use this template and fill in the brackets:\n   - \"The only thing I’m promising for the next [time window] is that you’ll be able to [specific, observable change].\"\n4) Say it verbatim in your conversation. For example: \"The only thing I’m promising for the next 4 weeks is that you’ll be able to see, in one place, what’s blocked across all Daisy 1 projects—nothing fancier yet.\" Notice how people’s questions change when the promise is that clear."
+      },
+      "masters": {
+        "name": "Andy Grove",
+        "talk": "Andy Grove on Strategic Inflection Points (Stanford Graduate School of Business)",
+        "videoId": "qf1m3fG1--0",
+        "start": 300,
+        "watchWindow": "Watch from 5:00 to 9:00.",
+        "paras": [
+          "Andy Grove was obsessed with making strategy concrete enough that people could act on it. In his work on strategic inflection points, he pushes leaders to name exactly what will be different on the other side of a big shift—not as a slogan, but as a specific change in customers, competitors, or operations.",
+          "That’s the same muscle as defining a minimum credible promise. Instead of promising, \"We’ll win the PC industry,\" he drilled down to concrete markers: what market share, what cost position, what customer behavior would signal the shift. Watching him forces you to ask: what would make your promise measurable and real, not just inspiring?"
+        ],
+        "observe": [
+          "How he keeps translating abstract threats (\"inflection point\") into specific, observable changes in numbers, behavior, or structure.",
+          "His habit of framing what he knows and what he doesn’t know yet—limiting the promise while keeping urgency high.",
+          "The way he uses simple, almost plain language instead of grandiose strategy speak, which makes his promises feel more trustworthy."
+        ]
+      },
+      "steal": {
+        "line": "The only thing I’m promising in this phase is one specific, testable win.",
+        "paras": [
+          "Use this line to reset expectations any time a conversation starts to balloon into endless possibilities. It signals seriousness—you’re not here to sell a fantasy—and it invites people to collaborate on making that one win real. Try it at the top of a roadmap review, a client scoping call, or a planning workshop: name the phase, name the win, and hold the rest for later phases.",
+          "The discipline is to resist adding three more promises once people show interest. Stay with one, deepen it, and agree on how you’ll know it happened. That’s how you quietly build a reputation for promises that come true."
+        ],
+        "example": [
+          "In a Daisy 1 roadmap discussion: \"The only thing I’m promising in this phase is one specific, testable win: by the end of September, every team lead will get a Monday morning summary showing what’s blocked and who’s on the hook to unblock it. That’s it—no fancy automation yet.\""
+        ]
+      }
+    },
+    {
       "date": "2026-08-12",
       "displayDate": "Wed · Aug 12",
       "domain": "Conversation",
