@@ -1,6 +1,58 @@
 {
   "editions": [
     {
+      "date": "2026-08-16",
+      "displayDate": "Sun · Aug 16",
+      "domain": "Decision-Making",
+      "hook": "One sharp, specific line can save you a month of confusion.",
+      "insight": {
+        "title": "The One-Bet Rule",
+        "paras": [
+          "When a choice feels fuzzy, force it through what poker players call a <em>single decisive bet</em>: \"If I had to stake the next 30 days on one clear move, what would I pick?\" It’s a way of turning a blurry cluster of options into one concrete commitment. In decision science this taps <strong>expected value thinking</strong>—you stop chasing perfect certainty and instead ask which option has the best payoff-to-cost ratio given what you know now.",
+          "The One-Bet Rule is simple: (1) Name the horizon (7 days, 30 days, one quarter). (2) State the bet in one sentence: \"I’m betting that focusing on X, even at the cost of Y, is the best move for the next N days.\" (3) List the minimum evidence you need by the end of that window to call the bet a win or a loss. You’re not guessing the future; you’re designing a reversible experiment with clear upside, acceptable downside, and a clock."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='180' cy='160' r='88' fill='none' stroke='#9ba0b8' stroke-width='3'/><circle cx='380' cy='160' r='88' fill='none' stroke='#9ba0b8' stroke-width='3'/><path d='M120 260 H440' stroke='#eceef7' stroke-width='2' stroke-linecap='round'/><rect x='260' y='120' width='40' height='80' rx='4' fill='#e8b84b'/><path d='M180 72 L180 248' stroke='#5fd4c4' stroke-width='2' stroke-dasharray='4 6'/><path d='M380 72 L380 248' stroke='#ff7a6e' stroke-width='2' stroke-dasharray='4 6'/><circle cx='180' cy='160' r='8' fill='#eceef7'/><circle cx='380' cy='160' r='8' fill='#eceef7'/><text x='180' y='290' fill='#9ba0b8' font-size='12' text-anchor='middle'>Options</text><text x='380' y='290' fill='#e8b84b' font-size='12' text-anchor='middle'>One bet</text><text x='280' y='115' fill='#a48bfa' font-size='11' text-anchor='middle'>30 days</text></svg>",
+        "visualCaption": "Many options, one deliberate bet for a fixed window.",
+        "after": [
+          "You can use the One-Bet Rule today on a public-safe project decision: for example, \"For the next 30 days, I’m betting on getting Daisy 1 into the hands of 10 real teams, even if it slows new features,\" then defining three signals you’ll check at the end (usage, feedback quality, clarity of roadmap). Instead of juggling priorities in your head, you make one explicit bet, write it down, and let that commitment quietly simplify a hundred smaller choices."
+        ]
+      },
+      "lab": {
+        "title": "Turn a Messy Priority List into One Bet",
+        "paras": [
+          "Imagine you’re in a quarterly planning check-in with your small product team. You have a wall (or screen) full of ideas: new views in Daisy 1, improvements to onboarding, a StoryOS narrative workshop you keep postponing, and a dozen “we should really…” tasks. Everyone agrees they’re important. Nobody agrees what to do first. The anxiety isn’t from lack of ideas; it’s from lack of a decisive bet.",
+          "This is where the One-Bet Rule shines. Instead of arguing which idea is objectively best, you ask: \"Which single bet gives us the highest expected learning or upside in the next 30 days, with risk we can afford?\" You’re not picking a forever-strategy; you’re picking a testable commitment with a timer."
+        ],
+        "exercise": "Under 5 minutes, write this in a notebook or notes app:\n\n1) List 3–5 active priorities in front of you right now.\n2) Set a horizon: 14 days or 30 days.\n3) Use this exact script and fill in the blanks:\n   \"For the next [14/30] days, I’m betting that focusing on [ONE CLEAR FOCUS], even at the cost of [TWO THINGS YOU’LL DE-PRIORITIZE], is the best move. I’ll call this bet a win if by [DATE] I see: [METRIC OR EVIDENCE 1], [METRIC OR EVIDENCE 2].\"\n4) Read it out loud once. If it feels vague, sharpen the focus or the evidence until a teammate would know exactly what you’re doing and what you’re temporarily ignoring."
+      },
+      "masters": {
+        "name": "Annie Duke",
+        "talk": "Thinking in Bets | Talks at Google",
+        "videoId": "3vNApYnkLtU",
+        "start": 540,
+        "watchWindow": "Watch minutes 9:00–16:00 where she explains decisions as bets and working with incomplete information.",
+        "paras": [
+          "Annie Duke’s work on \"thinking in bets\" is the backbone of the One-Bet Rule: treat every choice as a probabilistic bet under uncertainty instead of waiting for perfect information. In this segment she breaks down how to separate decision quality from outcome luck, and why you should define your criteria for a good bet upfront rather than rewriting the story afterward.",
+          "Watching her talk while you’re actively wrestling with product and project choices makes the idea concrete: you’re not trying to be right about the future, you’re trying to be rigorous about how you choose what to stake your time on next."
+        ],
+        "observe": [
+          "Notice how she keeps saying \"I don’t know\" while still making strong recommendations; she models that you can act decisively without pretending to have certainty.",
+          "Watch how she turns abstract probability into vivid examples from poker and business, so you immediately see what a \"bet\" looks like in real work.",
+          "Pay attention to her emphasis on pre-defining success and failure conditions for a bet; this is exactly what turns your 30-day One-Bet statement into a real experiment instead of a vague hope."
+        ]
+      },
+      "steal": {
+        "line": "“For the next 30 days, I’m making one explicit bet: we focus on X, even if it means we delay Y and Z.”",
+        "paras": [
+          "Use this line in your next planning conversation, even if it’s just with yourself. The power move is naming not only what you will do, but also what you are consciously willing to let slip for a short, defined window. That clarity calms the low-level guilt of all the things you’re not doing and gives your team (or your own brain) a simple rule to align around.",
+          "Today, try it in a workstream you care about: maybe a strategy agent experiment, where the bet is on gathering a small set of high-quality real-world use cases instead of building more capabilities. Say the line, write it where you’ll see it, and let that one bet quietly decide a dozen small choices for you this week."
+        ],
+        "example": [
+          "In a Daisy 1 roadmap sync you might say: \"For the next 30 days, I’m making one explicit bet: we focus on getting three real teams fully running on Daisy 1, even if it means we delay the analytics dashboard and the new notification rules. If we’re right, we’ll end the month with real usage stories and sharper requirements instead of more speculative features.\""
+        ]
+      }
+    },
+    {
       "date": "2026-08-14",
       "displayDate": "Fri · Aug 14",
       "domain": "Leadership",
