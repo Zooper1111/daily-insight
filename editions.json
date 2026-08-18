@@ -1,6 +1,58 @@
 {
   "editions": [
     {
+      "date": "2026-08-18",
+      "displayDate": "Tue · Aug 18",
+      "domain": "Product Thinking",
+      "hook": "When everything is possible, nothing feels important.",
+      "insight": {
+        "title": "The Guardrail Rule",
+        "paras": [
+          "<strong>The Guardrail Rule</strong>: before you decide what to do, decide what you will <em>not</em> do. In product work, strategy, even your week, you move faster when you put up firm \"no\" lines first. This is a practical version of Barry Schwartz’s \"paradox of choice\"—too many options create paralysis and regret. Guardrails shrink the search space so your brain can actually commit.",
+          "A useful guardrail has three traits: it is <em>visible</em> (you can point to it), <em>binary</em> (in or out), and <em>binding for a while</em> (you don’t revisit it every hour). Instead of staring at 27 possible features for your next Daisy 1 release, you might set guardrails like \"no new integrations this cycle\" or \"nothing that requires customer data we don’t already store.\" You instantly turn an overwhelming buffet into a short list you can reason about calmly."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='60' width='440' height='200' rx='20' fill='none' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='6 6'/><line x1='160' y1='80' x2='160' y2='280' stroke='#e8b84b' stroke-width='4'/><line x1='400' y1='80' x2='400' y2='280' stroke='#e8b84b' stroke-width='4'/><circle cx='110' cy='160' r='10' fill='#ff7a6e'/><circle cx='220' cy='140' r='10' fill='#5fd4c4'/><circle cx='310' cy='190' r='10' fill='#a48bfa'/><circle cx='450' cy='200' r='10' fill='#5fd4c4'/><text x='95' y='300' fill='#eceef7' font-size='12'>NO</text><text x='392' y='300' fill='#eceef7' font-size='12'>NO</text><text x='210' y='50' fill='#eceef7' font-size='14'>FOCUS ZONE</text></svg>",
+        "visualCaption": "Guardrails turn an infinite field of options into one clear lane.",
+        "after": [
+          "Today, pick one arena—your next Daisy 1 sprint, a StoryOS workshop outline, or a weekly planning block—and write three guardrails before you list options. For example: \"no more than one major decision per meeting,\" \"no slides that the strategy agent can’t help generate later,\" or \"no tasks that depend on people who aren’t in the room.\" You’ll feel the subtle relief of constraint: the conversation narrows, tradeoffs sharpen, and your choice finally has permission to be good enough instead of perfect."
+        ]
+      },
+      "lab": {
+        "title": "Set Three Guardrails Before You Brainstorm",
+        "paras": [
+          "You sit down to map the next month of work. Your doc is blank, your head is full, and you’re tempted to start a giant idea list. This is exactly when choice overload kicks in—you generate more options than you can meaningfully compare, and the next hour dissolves into rearranging bullets.",
+          "Instead, you pause for two minutes and write three clear \"we will not\" guardrails. You’ve just changed the game: now ideas either fit the lane or they don’t, and conversations get crisper because you can say \"that’s good, but it’s outside our guardrails for this cycle.\""
+        ],
+        "exercise": "In your next planning moment (Daisy 1 roadmap, DreamGuard experiment list, or consulting project outline), do this before any brainstorming:\n\n1) Open a fresh note and title it \"Guardrails for [X]\".\n2) Write this exact prompt: \"For the next 4 weeks, we <strong>refuse</strong> to…\" and finish three lines:\n   - \"We refuse to ship anything that…\"\n   - \"We refuse to spend time on work that…\"\n   - \"We refuse to add more than [N] items that…\" (pick N).\n3) Only then start listing ideas, but each idea must be checked against the guardrails. When someone (including you) proposes something exciting but off-lane, use this line: \"That’s good—does it fit inside our guardrails, or is it for the next cycle?\""
+      },
+      "masters": {
+        "name": "Barry Schwartz",
+        "talk": "The paradox of choice",
+        "videoId": "VO6XEQIsCoM",
+        "start": 120,
+        "watchWindow": "Watch minutes 2:00–7:00, where he explains how too many options create paralysis and dissatisfaction.",
+        "paras": [
+          "Barry Schwartz’s work on the paradox of choice is the intellectual backbone of the Guardrail Rule. He shows how adding options doesn’t just make decisions harder—it makes you less satisfied with the choices you finally make.",
+          "Watching this segment with a product or strategy lens makes the lesson concrete: more features, more possible priorities, and more \"maybe\" projects often make you feel worse about the work, not better. Guardrails are your antidote."
+        ],
+        "observe": [
+          "Notice how he uses everyday examples (like shopping) before jumping to larger life decisions. You can mirror this move by starting your own explanations of constraints with trivial examples before you apply them to your product roadmap.",
+          "Listen for his phrasing around \"paralysis\" and \"dissatisfaction.\" How might you borrow that language the next time you explain why you want fewer options on the table?",
+          "Watch how he contrasts the intuitive story (more choice = more freedom) with the data. In your own meetings, practice explicitly naming the intuitive story, then presenting the constraint-based counter-story as a relief, not a limitation."
+        ]
+      },
+      "steal": {
+        "line": "Before we add more options, let’s agree on the guardrails.",
+        "paras": [
+          "Use this line as a polite brake whenever a conversation starts exploding sideways—new features, new audiences, new metrics. It reframes constraint as a shared decision instead of you being the blocker. Say it once, then immediately propose two or three example guardrails to make it easy for others to join you.",
+          "Try it today in a planning or design discussion. When someone suggests yet another direction, respond with the line, then add: \"For this cycle, I’d propose: no new categories, no dependencies outside this team, and no work we can’t validate in two weeks. What would you add or change?\" Notice how the energy shifts from endless possibility to specific, workable focus."
+        ],
+        "example": [
+          "In a Daisy 1 roadmap review: \"We’ve got at least ten interesting ideas on the table. Before we add more options, let’s agree on the guardrails. For this sprint, I propose no new integrations, no net-new surfaces in the UI, and nothing that needs more than one extra person to maintain. Within that lane, which ideas still look best?\""
+        ]
+      }
+    },
+    {
       "date": "2026-08-16",
       "displayDate": "Sun · Aug 16",
       "domain": "Decision-Making",
