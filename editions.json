@@ -1,6 +1,58 @@
 {
   "editions": [
     {
+      "date": "2026-08-20",
+      "displayDate": "Thu · Aug 20",
+      "domain": "Conversation",
+      "hook": "One sharp, specific question can flip a tense room.",
+      "insight": {
+        "title": "Tactical Empathy in One Line",
+        "paras": [
+          "Today’s model is <strong>tactical empathy</strong> from Chris Voss: you don’t win a conversation by arguing your view harder; you win by proving you understand theirs so well they relax their grip on it. Tactical empathy is not agreement. It’s the deliberate, out-loud demonstration that you see the other person’s fears, pressures, and constraints.",
+          "The tiny move: <em>name their reality before you defend yours</em>. Instead of jumping into explanation, you say a sentence that sounds like you’re reading their internal monologue. Done well, this lowers defensiveness in negotiations, roadmap debates, and client check-ins without you giving up your position."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='170' cy='160' r='80' fill='none' stroke='#5fd4c4' stroke-width='4'/><circle cx='390' cy='160' r='80' fill='none' stroke='#a48bfa' stroke-width='4'/><path d='M210 130 Q280 100 350 130' fill='none' stroke='#eceef7' stroke-width='3' stroke-linecap='round'/><path d='M210 190 Q280 220 350 190' fill='none' stroke='#9ba0b8' stroke-width='2' stroke-linecap='round' stroke-dasharray='6 6'/><circle cx='280' cy='160' r='6' fill='#e8b84b'/><text x='150' y='270' fill='#eceef7' font-family='system-ui, sans-serif' font-size='14'>their view</text><text x='365' y='270' fill='#eceef7' font-family='system-ui, sans-serif' font-size='14'>your view</text><text x='250' y='295' fill='#ff7a6e' font-family='system-ui, sans-serif' font-size='13'>spoken bridge</text></svg>",
+        "visualCaption": "Two minds, one spoken bridge: name their view before you defend yours.",
+        "after": [
+          "When you present a Daisy 1 change, a StoryOS narrative, or a quarterly planning shift, try leading with one tactical-empathy line: “You’re probably worried this adds more overhead without freeing any time.” Then pause. You can still walk through the benefits and logic, but you’ll be speaking to someone who feels seen instead of cornered."
+        ]
+      },
+      "lab": {
+        "title": "The Internal Monologue Test",
+        "paras": [
+          "Why this matters: most resistance you feel in conversations is invisible. People rarely say, “I’m worried this makes me look bad,” or “I don’t trust this will stick.” Tactical empathy lets you surface that inner voice safely, so tension drops and information starts to flow.",
+          "Picture a quick strategy check-in on your strategy agent work. You suggest a new workflow, and a stakeholder crosses their arms and says, “I’m not sure this is the right time.” Instead of rebutting, you run the internal monologue test: what would they be thinking if they were completely honest? Your job is to say a short, clean version of that thought out loud."
+        ],
+        "exercise": "Under 5 minutes: pick one real person you’ll talk to today (teammate, collaborator, or client).\n1) Write one sentence that starts with “It probably feels like…” or “You’re likely worried that…” and completes their internal monologue about a change you want.\n2) In your next relevant conversation, use this exact script once, early:\n\n“Before I walk through anything, it probably feels like this might be one more thing on your plate without clear upside.”\n\nThen stay quiet for three full seconds. Let them correct, confirm, or deepen what you surfaced before you explain your idea."
+      },
+      "masters": {
+        "name": "Chris Voss",
+        "talk": "Chris Voss on Tactical Empathy and Negotiation",
+        "videoId": "QxnCteCFdu4",
+        "start": 60,
+        "watchWindow": "Watch for 3 minutes from 1:00 to 4:00.",
+        "paras": [
+          "Chris Voss treats every conversation as a negotiation over information, emotion, and outcomes. His idea of tactical empathy is perfect for your day-to-day product, planning, and consulting talks because it shows how to lower the other person’s guard without giving up your point of view.",
+          "In this segment, watch how he labels the other side’s feelings and concerns before pushing any agenda. That move is exactly what you can adapt into one clean line in your own project debates and client calls."
+        ],
+        "observe": [
+          "Notice how he uses phrases like “It seems like…” and “It sounds like…” instead of “You are…” to keep the tone soft but specific.",
+          "Watch his pacing: he often pauses after naming a concern, giving the other person space to agree, correct, or open up.",
+          "Listen for how he never rushes to logic; he earns the right to explain by first proving he understands the emotional and practical stakes on the other side."
+        ]
+      },
+      "steal": {
+        "line": "“Before I explain my view, let me try to say what I think this looks like from your side.”",
+        "paras": [
+          "Use this line once today in a real conversation where you expect friction: a planning review, a product decision, or a scope discussion. Follow it immediately with one short guess at their internal monologue, then stop talking. If you’re wrong, they’ll correct you and reveal what’s really in the way. If you’re right, you’ve just lowered the temperature enough to have an honest discussion.",
+          "Over time, you can make this automatic: any time you feel pushback, you briefly switch into “tactical empathy mode,” name their perspective in one line, and only then continue with your proposal."
+        ],
+        "example": [
+          "In a quarterly planning meeting about Daisy 1, you say: “Before I explain my view, let me try to say what I think this looks like from your side. It probably feels like we’re asking you to change how you coordinate projects when the current way, while messy, at least feels predictable.” Then you pause, let them respond, and only afterward walk through how Daisy 1 might actually remove two of their current coordination headaches."
+        ]
+      }
+    },
+    {
       "date": "2026-08-18",
       "displayDate": "Tue · Aug 18",
       "domain": "Product Thinking",
