@@ -1,6 +1,59 @@
 {
   "editions": [
     {
+      "date": "2026-08-26",
+      "displayDate": "Wed · Aug 26",
+      "domain": "Communication",
+      "hook": "One sharp, specific line",
+      "insight": {
+        "title": "The One-Context Rule",
+        "paras": [
+          "<strong>The One-Context Rule:</strong> when you explain an idea, lock it to one concrete situation before you add anything else. In cognitive load theory, your listener’s working memory is tiny; every extra context, metaphor, or scenario is another tab you’re asking them to keep open. If you start with “It’s like X and also like Y, and imagine Z…,” you’ve burned their attention budget before your real point arrives.",
+          "Instead, pick one scene and stay there until the idea lands. <em>“Picture you’re opening Daisy 1 Monday morning…”</em> or <em>“Imagine you’re walking into a quarterly planning review…”</em> Then walk through the idea step by step inside that same scene. Only after they can retell it in that context do you earn the right to generalize. One context first; everything else later."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='60' width='180' height='200' rx='10' fill='none' stroke='#e8b84b' stroke-width='3'/><circle cx='120' cy='120' r='26' fill='none' stroke='#eceef7' stroke-width='2'/><rect x='96' y='160' width='96' height='12' rx='3' fill='#eceef7'/><rect x='96' y='184' width='72' height='10' rx='3' fill='#9ba0b8'/><rect x='96' y='206' width='84' height='10' rx='3' fill='#5fd4c4'/><rect x='280' y='50' width='70' height='60' rx='8' fill='none' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='4 4'/><rect x='340' y='130' width='90' height='60' rx='8' fill='none' stroke='#ff7a6e' stroke-width='2' stroke-dasharray='4 4'/><rect x='300' y='220' width='80' height='50' rx='8' fill='none' stroke='#a48bfa' stroke-width='2' stroke-dasharray='4 4'/><line x1='240' y1='160' x2='280' y2='80' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='4 4'/><line x1='240' y1='176' x2='340' y2='160' stroke='#ff7a6e' stroke-width='2' stroke-dasharray='4 4'/><line x1='240' y1='192' x2='300' y2='236' stroke='#a48bfa' stroke-width='2' stroke-dasharray='4 4'/><text x='70' y='95' fill='#eceef7' font-size='10' font-family='system-ui, sans-serif'>ONE CONTEXT</text><text x='290' y='46' fill='#9ba0b8' font-size='9' font-family='system-ui, sans-serif'>extra tab</text><text x='352' y='126' fill='#ff7a6e' font-size='9' font-family='system-ui, sans-serif'>extra tab</text><text x='308' y='216' fill='#a48bfa' font-size='9' font-family='system-ui, sans-serif'>extra tab</text></svg>",
+        "visualCaption": "Hold one scene in focus; every extra example is another tab in their brain.",
+        "after": [
+          "Today, before your next explanation of Daisy 1, StoryOS, DreamGuard, or the strategy agent, decide on <em>one</em> scene—say, a Monday morning planning session—and force yourself to keep the whole explanation inside that moment. If someone asks, “Where else would this apply?”, treat that as a green light to add a second context. Until then, honor the One-Context Rule so your idea feels simple enough to grab and use immediately."
+        ]
+      },
+      "lab": {
+        "title": "Pin Your Idea to One Scene",
+        "paras": [
+          "Why this matters: when you pitch a tool like Daisy 1 or walk a client through a new planning move, people rarely get lost in your logic; they get lost in your shifting scenes. You start in a stand-up meeting, then jump to a dashboard, then to a quarterly review, then to email workflows. Each hop is a tiny cognitive tax, and eventually they just nod along instead of really seeing it.",
+          "Picture this: you’re on a call about quarterly planning, and someone asks, “So how would this actually change my week?” You answer, “Great question,” then walk them through <em>one</em> week-on-the-calendar example: what they’d do Monday, what they’d see Wednesday, what changes by Friday. No second example, no metaphors. Just one clear, lived-in scene. Suddenly they’re not evaluating an abstract system; they’re watching their own week run differently."
+        ],
+        "exercise": "Pick a real explanation you’ll give today—a quick Daisy 1 demo, a planning tweak, or a client update. Before the conversation, write one line: “This lives in the scene where…”. Fill it in with a specific moment, like “you open your laptop at 9am Monday” or “you’re in the Thursday check-in.” When you speak, open with: “Let’s keep this in one concrete situation so it’s easy to see. Imagine it’s [your scene]…” Then describe the idea using only that scene for two full minutes. If you catch yourself jumping to another context, say out loud, “Let’s stay with this one example for now,” and come back. You’re practicing the muscle of holding a single scene until the idea lands."
+      },
+      "masters": {
+        "name": "Amy Cuddy",
+        "talk": "Your Body Language May Shape Who You Are (TED Global 2012)",
+        "videoId": "Ks-_Mh1QhMc",
+        "start": 330,
+        "watchWindow": "Watch from 5:30 to 10:00, where she holds one vivid classroom and interview setting to explain presence.",
+        "paras": [
+          "Amy Cuddy is a master at taking an abstract concept—presence—and grounding it in a single, memorable context rather than bouncing between a dozen situations. In this segment she sticks with a specific high-pressure scenario and walks you through what presence looks and feels like there, instead of drowning you in comparisons.",
+          "As you watch, notice how the idea becomes easy to retell: you can describe her concept of presence simply by replaying that one scene. That’s the One-Context Rule in action; it’s why the talk spread so widely and why people can explain it at dinner years later."
+        ],
+        "observe": [
+          "How she introduces a concrete situation (like a stressful evaluation or interview) and stays inside that scene while unpacking the concept, instead of cycling through many different examples.",
+          "How her language keeps you anchored in that one moment: she uses time markers (“before you go in,” “when you’re sitting there”) and sensory details rather than abstract labels.",
+          "How, only after the core idea is clear in one setting, she gently widens the lens to show other applications—never too early, and always by echoing the original context."
+        ]
+      },
+      "steal": {
+        "line": "“Let’s keep this in one concrete situation so it’s easy to see.”",
+        "paras": [
+          "Use this line to rescue explanations that are starting to sprawl. When someone looks foggy—or you catch yourself piling on examples—drop this sentence, name a single scene, and rebuild the explanation inside it. You’ll feel like you’re oversimplifying; in reality, you’re finally making it simple enough for someone else to own.",
+          "Try it in a product or planning conversation today: once you’ve chosen your scene, make it the shared reference point. People remember moments, not models; if they can replay the scene, they can replay the idea."
+        ],
+        "example": [
+          "In a Daisy 1 planning review: “Let’s keep this in one concrete situation so it’s easy to see. Imagine it’s Monday at 9am, you open Daisy 1, and you’re deciding what to move into ‘Today.’ Here’s exactly how this new rhythm shows up on that one screen…”",
+          "In a quarterly planning session: “Let’s keep this in one concrete situation so it’s easy to see. Picture the last week of the quarter, you’re scanning what’s still open. In that moment, this rule changes what you do next and what you ignore. Let’s walk just that week.”"
+        ]
+      }
+    },
+    {
       "date": "2026-08-24",
       "displayDate": "Mon · Aug 24",
       "domain": "Decision-Making",
@@ -1481,58 +1534,6 @@
           "Flat: “DreamGuard tracks sleep, and then it finds patterns, and then it sends a report.”",
           "Causal: “DreamGuard tracks your sleep — BUT raw data changes nothing — THEREFORE it turns your worst night into one fix to try tonight.”",
           "Same features. Now it’s a story."
-        ]
-      }
-    },
-    {
-      "date": "2026-07-11",
-      "displayDate": "Sat · Jul 11",
-      "domain": "Communication",
-      "hook": "People don’t act on what they understand. They act on what they can picture.",
-      "insight": {
-        "title": "Climb Down the Ladder of Abstraction",
-        "paras": [
-          "Every idea can be said at different altitudes. At the top: mission-statement fog — <em>“we improve productivity.”</em> At the bottom: something a listener can actually see — <em>“Sarah’s been blocked on the design review since Tuesday.”</em> <strong>The higher you speak, the less anyone feels.</strong>",
-          "Experts default to the top of the ladder because the concrete details are obvious <em>to them</em> — that’s the curse of knowledge. But your listener has none of your details. Abstraction asks them to do the imagining for you; most won’t. A single concrete rung does the work of a paragraph of explanation."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 340' xmlns='http://www.w3.org/2000/svg' font-family='Inter,-apple-system,sans-serif'><defs><marker id='ar2' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#6a6f88'/></marker></defs><text x='30' y='32' fill='#a48bfa' font-size='13' font-weight='700' letter-spacing='2'>ABSTRACT</text><text x='530' y='32' fill='#9ba0b8' font-size='12' text-anchor='end' font-style='italic'>what the listener feels</text><line x1='40' y1='50' x2='40' y2='288' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar2)'/><g><rect x='60' y='48' width='300' height='48' rx='10' fill='#1b1e30' stroke='rgba(164,139,250,.5)'/><text x='210' y='77' fill='#9ba0b8' font-size='13.5' text-anchor='middle'>“We improve productivity.”</text><text x='380' y='77' fill='#6a6f88' font-size='12.5' font-style='italic'>Sounds like everyone.</text></g><g><rect x='60' y='110' width='300' height='48' rx='10' fill='#1b1e30' stroke='rgba(255,255,255,.12)'/><text x='210' y='139' fill='#9ba0b8' font-size='13.5' text-anchor='middle'>“We help teams coordinate.”</text><text x='380' y='139' fill='#6a6f88' font-size='12.5' font-style='italic'>Nods, forgets.</text></g><g><rect x='60' y='172' width='300' height='48' rx='10' fill='#1b1e30' stroke='rgba(95,212,196,.5)'/><text x='210' y='201' fill='#5fd4c4' font-size='13.5' text-anchor='middle'>“It shows who’s blocked, today.”</text><text x='380' y='201' fill='#9ba0b8' font-size='12.5' font-style='italic'>Leans in.</text></g><g><rect x='60' y='234' width='300' height='58' rx='10' fill='#26221a' stroke='rgba(232,184,75,.55)'/><text x='210' y='258' fill='#e8b84b' font-size='13.5' text-anchor='middle'>“Sarah’s waiting on you —</text><text x='210' y='277' fill='#e8b84b' font-size='13.5' text-anchor='middle'>since Tuesday.”</text><text x='380' y='268' fill='#eceef7' font-size='12.5' font-style='italic'>Can see it. Acts.</text></g><text x='30' y='316' fill='#e8b84b' font-size='13' font-weight='700' letter-spacing='2'>CONCRETE</text><text x='300' y='316' fill='#6a6f88' font-size='12.5' font-style='italic'>Same idea. Four altitudes. One that moves people.</text></svg>",
-        "visualCaption": "Only the bottom rung is visible to your listener.",
-        "after": [
-          "The habit: take the key sentence of your next pitch, email, or update and force it <strong>down two rungs</strong> — name a person, a day, a number, a moment. If nothing in the sentence can be pictured, you haven’t reached the ground yet."
-        ]
-      },
-      "lab": {
-        "title": "The Down-Two-Rungs Drill",
-        "paras": [
-          "Abstraction is a habit, so concreteness has to become one too. This drill takes one sentence you already say all the time and walks it down the ladder until it lands.",
-          "The test: could a stranger sketch what you just said? If not, keep descending."
-        ],
-        "exercise": "Take one sentence you say often about your work — say, <em>“Daisy 1 helps teams stay aligned.”</em> In under 5 minutes, rewrite it two rungs down: <strong>“Daisy 1 tells you Sarah’s been blocked on the design review since Tuesday — before she has to chase you.”</strong> Do the same for StoryOS or your consulting intro. Then use the concrete version in your very next conversation and notice how the follow-up questions change."
-      },
-      "masters": {
-        "name": "Fred Rogers",
-        "talk": "1969 Senate Subcommittee Testimony",
-        "videoId": "fKy7ljRr0AA",
-        "start": 0,
-        "watchWindow": "Watch the full 6 minutes",
-        "paras": [
-          "With $20 million of public-broadcasting funding on the line and a visibly impatient Senator Pastore across the table, Rogers cites no ratings and no research. He describes one child, one feeling — and then recites the words of a song, line by line. In six minutes, a hostile hearing turns into “I think it’s wonderful. Looks like you just earned the twenty million dollars.”"
-        ],
-        "observe": [
-          "He never argues the budget — he makes Pastore picture one specific child in front of one television set.",
-          "The pivotal move: he recites the song lyrics in full instead of summarizing them. Concrete words beat any summary of them.",
-          "Track Pastore’s tone from opening to close, and find the exact sentence where it flips."
-        ]
-      },
-      "steal": {
-        "line": "Trade one abstraction for one picture.",
-        "paras": [
-          "Before you send your next pitch or update, find its most abstract sentence — usually the one you’re proudest of — and replace it with a single moment someone can see."
-        ],
-        "example": [
-          "Instead of: “DreamGuard improves sleep quality.”",
-          "Try: “DreamGuard catches the 2am wake-up you don’t even remember — and tells you what caused it.”",
-          "One sentence. One picture. That’s the whole trick."
         ]
       }
     }
