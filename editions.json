@@ -1,6 +1,59 @@
 {
   "editions": [
     {
+      "date": "2026-08-28",
+      "displayDate": "Fri · Aug 28",
+      "domain": "Leadership",
+      "hook": "One question that makes risk-taking feel safe",
+      "insight": {
+        "title": "The Safety Question",
+        "paras": [
+          "Amy Edmondson’s research on <em>psychological safety</em> shows that teams learn and innovate faster when people believe they can take interpersonal risks—ask questions, surface bad news, admit uncertainty—without being punished or quietly downgraded. Psychological safety is not about being nice; it is about making it feel safe to be honest when the stakes are real.",
+          "A simple way to build this in your own projects is to use a repeatable <strong>Safety Question</strong>: a short, predictable prompt that signals, \"This is the moment to say the uncomfortable thing.\" When you ask the same question in the same part of a meeting, you train people that voicing doubt, risk, and confusion is part of the job, not a career risk."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='60' width='440' height='200' rx='16' fill='none' stroke='#eceef7' stroke-width='2'/><circle cx='140' cy='160' r='26' fill='none' stroke='#5fd4c4' stroke-width='3'/><path d='M140 144c7 0 12 4 12 10 0 5-3 8-7 10-3 1-4 3-4 7' fill='none' stroke='#5fd4c4' stroke-width='3' stroke-linecap='round'/><circle cx='140' cy='186' r='3' fill='#5fd4c4'/><line x1='190' y1='135' x2='430' y2='135' stroke='#9ba0b8' stroke-width='2' stroke-linecap='round'/><line x1='190' y1='160' x2='400' y2='160' stroke='#9ba0b8' stroke-width='2' stroke-linecap='round'/><line x1='190' y1='185' x2='360' y2='185' stroke='#9ba0b8' stroke-width='2' stroke-linecap='round'/><rect x='320' y='210' width='150' height='30' rx='6' fill='none' stroke='#e8b84b' stroke-width='2'/><text x='395' y='230' text-anchor='middle' fill='#e8b84b' font-family='system-ui, -apple-system, BlinkMacSystemFont, sans-serif' font-size='12'>\"What feels unsafe to say?\"</text><circle cx='70' cy='50' r='6' fill='#ff7a6e'/><circle cx='88' cy='50' r='6' fill='#5fd4c4'/><circle cx='106' cy='50' r='6' fill='#a48bfa'/></svg>",
+        "visualCaption": "A recurring question turns vague unease into explicit signal.",
+        "after": [
+          "On your next Daisy 1 or quarterly planning check-in, reserve two minutes at the end for the Safety Question: \"Before we wrap, what feels even a little bit unsafe to say about this plan or this week?\" Treat whatever surfaces as useful signal, not a problem to swat away, and you’ll slowly turn your project space into a place where people surface risks early instead of after they break."
+        ]
+      },
+      "lab": {
+        "title": "Running a Two-Minute Safety Check",
+        "paras": [
+          "Imagine you are closing a planning call for your strategy agent or Daisy 1 roadmap. The energy is \"we’re good here,\" but you can feel the slight pause in people’s voices—the place where worries usually stay hidden. Instead of asking, \"Any questions?\" (which most people hear as \"please say no\"), you run a tiny ritual that makes doubt explicitly welcome.",
+          "This matters because almost every real failure—missed deadline, bad launch, silent client—is preceded by someone quietly thinking, \"I’m not sure this will work\" and saying nothing. A two-minute safety check is how you turn those private thoughts into shared data while there’s still time to act."
+        ],
+        "exercise": "Today, in one real meeting, add this exact 2-step closer:\n\n1) Say: \"Before we end, I want a 90-second safety check. <strong>What feels even a little unsafe to say about this plan?</strong>\" Then wait a full 10 seconds in silence.\n2) When someone speaks, respond with: \"Thank you. That’s exactly the kind of risk I want us to surface early.\" Write down what they said. Do not defend the plan in the moment; only clarify and ask, \"What would make this feel 20% safer?\""
+      },
+      "masters": {
+        "name": "Amy Edmondson",
+        "talk": "Building a psychologically safe workplace | TEDxHGSE",
+        "videoId": "LhoLuui9gX8",
+        "start": 260,
+        "watchWindow": "Watch minutes 4:20–8:00, where she explains why speaking up is the fuel for learning and innovation.",
+        "paras": [
+          "Edmondson is the primary researcher behind psychological safety and shows how high-performing teams actually report more mistakes because it is safe to talk about them. That’s the same dynamic you want in planning and product conversations: more visible risk, earlier.",
+          "As you watch, connect her hospital and manufacturing examples to your own work: when someone on your team hesitates to question a date, a feature, or a client assumption, that’s the same psychological moment she’s describing."
+        ],
+        "observe": [
+          "Notice how she contrasts \"the absence of failure\" with true learning and performance, and steal that contrast language for your own framing.",
+          "Watch how she normalizes mistakes as information, not as evidence of incompetence—that’s exactly the stance you want when someone answers your Safety Question.",
+          "Listen for how often she uses words like \"voice\" and \"learning\" instead of \"compliance\" or \"control\"; it’s a vocabulary shift that subtly invites contribution rather than silence."
+        ]
+      },
+      "steal": {
+        "line": "“Before we end, what feels even a little unsafe to say about this plan?”",
+        "paras": [
+          "Use this line as a standing closer in one recurring meeting this week. Say it slowly, leave real silence, and treat whatever comes up as signal you’re grateful to have. Over a few repetitions, people will start to bring you sharper risks, better ideas, and the uncomfortable truths before they turn into surprises.",
+          "You can even pre-frame it at the start: \"At the end, I’m going to ask what feels unsafe to say about this plan. Be collecting those thoughts as we go.\" That tells everyone that naming tension is part of the job, not a breach of harmony."
+        ],
+        "example": [
+          "Daisy 1 planning call: \"Quick safety check before we jump—what feels even a little unsafe to say about this upcoming sprint? Dates, scope, dependencies, anything.\"",
+          "Client strategy session in your consulting practice: \"Last thing from me: what feels unsafe to say about this recommendation? Either politically inside your org or practically on the ground.\""
+        ]
+      }
+    },
+    {
       "date": "2026-08-26",
       "displayDate": "Wed · Aug 26",
       "domain": "Communication",
@@ -1482,58 +1535,6 @@
         ],
         "example": [
           "“It’s going well — I’m testing a better way to explain complicated work without making people feel like they need a map.”"
-        ]
-      }
-    },
-    {
-      "date": "2026-07-13",
-      "displayDate": "Mon · Jul 13",
-      "domain": "Storytelling",
-      "hook": "A story isn't a list of events. It's a chain of causes.",
-      "insight": {
-        "title": "The But/Therefore Test",
-        "paras": [
-          "The creators of South Park run every script through one brutal test: between any two beats, you should be able to say <strong>“but”</strong> or <strong>“therefore”</strong> — never <em>“and then.”</em> “And then” means the events merely follow each other. “But” and “therefore” mean they <em>cause</em> each other — and causation is the thing an audience can’t look away from.",
-          "This is why most status updates, pitches, and case studies feel dead on arrival. <em>“We built the MVP, and then we onboarded pilots, and then we shipped v2”</em> is a résumé, not a story. Nothing is at stake between the beats, so the listener has no reason to wonder what happens next. The moment you insert an obstacle (“but”) or a forced decision (“therefore”), the same facts acquire momentum."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 300' xmlns='http://www.w3.org/2000/svg' font-family='Inter,-apple-system,sans-serif'><defs><marker id='ar3' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#6a6f88'/></marker></defs><text x='30' y='34' fill='#9ba0b8' font-size='13' font-weight='700' letter-spacing='2'>AND THEN…</text><text x='530' y='34' fill='#6a6f88' font-size='12' text-anchor='end' font-style='italic'>a list of events</text><g><rect x='30' y='52' width='140' height='52' rx='10' fill='#1b1e30' stroke='rgba(255,255,255,.12)'/><text x='100' y='83' fill='#9ba0b8' font-size='13' text-anchor='middle'>We built it</text><text x='196' y='68' fill='#6a6f88' font-size='11' text-anchor='middle'>and then</text><line x1='174' y1='78' x2='218' y2='78' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar3)'/><rect x='222' y='52' width='140' height='52' rx='10' fill='#1b1e30' stroke='rgba(255,255,255,.12)'/><text x='292' y='83' fill='#9ba0b8' font-size='12.5' text-anchor='middle'>We added features</text><text x='388' y='68' fill='#6a6f88' font-size='11' text-anchor='middle'>and then</text><line x1='366' y1='78' x2='410' y2='78' stroke='#6a6f88' stroke-width='2' marker-end='url(#ar3)'/><rect x='414' y='52' width='120' height='52' rx='10' fill='#1b1e30' stroke='rgba(255,255,255,.12)'/><text x='474' y='83' fill='#9ba0b8' font-size='13' text-anchor='middle'>We launched</text></g><text x='280' y='132' fill='#6a6f88' font-size='12.5' text-anchor='middle' font-style='italic'>Each beat is true. None of it pulls.</text><text x='30' y='176' fill='#e8b84b' font-size='13' font-weight='700' letter-spacing='2'>BUT / THEREFORE</text><text x='530' y='176' fill='#9ba0b8' font-size='12' text-anchor='end' font-style='italic'>a chain of causes</text><g><rect x='30' y='194' width='140' height='52' rx='10' fill='#1b1e30' stroke='rgba(95,212,196,.5)'/><text x='100' y='225' fill='#eceef7' font-size='13' text-anchor='middle'>We built it</text><text x='196' y='210' fill='#ff7a6e' font-size='11.5' font-weight='700' text-anchor='middle'>BUT</text><line x1='174' y1='220' x2='218' y2='220' stroke='#ff7a6e' stroke-width='2' marker-end='url(#ar3)'/><rect x='222' y='194' width='140' height='52' rx='10' fill='#241a22' stroke='rgba(255,122,110,.45)'/><text x='292' y='216' fill='#ff9d94' font-size='12.5' text-anchor='middle'>nobody opened</text><text x='292' y='234' fill='#ff9d94' font-size='12.5' text-anchor='middle'>the dashboard</text><text x='388' y='210' fill='#5fd4c4' font-size='10.5' font-weight='700' text-anchor='middle'>THEREFORE</text><line x1='366' y1='220' x2='410' y2='220' stroke='#5fd4c4' stroke-width='2' marker-end='url(#ar3)'/><rect x='414' y='194' width='120' height='52' rx='10' fill='#26221a' stroke='rgba(232,184,75,.55)'/><text x='474' y='216' fill='#e8b84b' font-size='12.5' text-anchor='middle'>we rebuilt it</text><text x='474' y='234' fill='#e8b84b' font-size='12.5' text-anchor='middle'>around alerts</text></g><text x='280' y='282' fill='#6a6f88' font-size='12.5' text-anchor='middle' font-style='italic'>Same facts. Now every beat causes the next.</text></svg>",
-        "visualCaption": "If “and then” fits between two beats, the story has stalled.",
-        "after": [
-          "The habit: before your next demo, update, or pitch, write your beats down the page and read the connectors out loud. <strong>Every “and then” is a stall</strong> — replace it with the obstacle you hit (“but”) or the decision it forced (“therefore”)."
-        ]
-      },
-      "lab": {
-        "title": "The Connector Audit",
-        "paras": [
-          "Your origin story — of Daisy 1, of your consulting practice, of any project — is the one story you’ll tell hundreds of times. It deserves a causal spine, not a timeline.",
-          "The test: after each beat, could the listener feel why the next one had to happen? If they could shrug, you’ve got a list."
-        ],
-        "exercise": "Take your 30-second Daisy 1 origin story and write it as five beats, one per line. Now audit the connectors: every “and then” gets rewritten. Try: <strong>“We watched teams drown in status meetings — BUT the tools only tracked tasks, not people — THEREFORE we built Daisy 1 to show who’s blocked, not just what’s late.”</strong> Under 5 minutes. Say the new version out loud once, and use it in your next intro."
-      },
-      "masters": {
-        "name": "Trey Parker & Matt Stone",
-        "talk": "Writing Advice @ NYU (MTVU’s “Stand In”)",
-        "videoId": "vGUNqq3jVLg",
-        "start": 0,
-        "watchWindow": "Watch the full 3 minutes",
-        "paras": [
-          "Two of the fastest storytellers alive explain their entire craft in under three minutes, at a whiteboard, to a room of film students. No theory, no jargon — just the one rule they run every South Park episode through, and the exact words they use to test a beat sheet."
-        ],
-        "observe": [
-          "How fast the rule lands — they state it, demonstrate it, and stop. No hedging, no windup.",
-          "Trey points at the space <em>between</em> the beats — the connective tissue is the lesson, not the beats themselves.",
-          "They show the failure case first (“and then… and then…”) so the fix feels inevitable when it arrives. Steal that ordering."
-        ]
-      },
-      "steal": {
-        "line": "Kill every “and then.”",
-        "paras": [
-          "Take the next thing you have to narrate — a demo flow, a project recap, an investor update — and refuse to let two beats sit next to each other without “but” or “therefore” between them."
-        ],
-        "example": [
-          "Flat: “DreamGuard tracks sleep, and then it finds patterns, and then it sends a report.”",
-          "Causal: “DreamGuard tracks your sleep — BUT raw data changes nothing — THEREFORE it turns your worst night into one fix to try tonight.”",
-          "Same features. Now it’s a story."
         ]
       }
     }
