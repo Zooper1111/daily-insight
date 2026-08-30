@@ -1,6 +1,58 @@
 {
   "editions": [
     {
+      "date": "2026-08-30",
+      "displayDate": "Sun · Aug 30",
+      "domain": "Conversation",
+      "hook": "The 70/30 Curiosity Rule",
+      "insight": {
+        "title": "The 70/30 Curiosity Rule",
+        "paras": [
+          "Use this simple model in any important conversation: spend about 70% of your energy on <strong>curiosity</strong> (questions, follow-ups, reflections) and only 30% on <strong>broadcasting</strong> (explaining, pitching, updating). It is a practical version of motivational interviewing: you get farther by drawing out the other person’s thinking than by pushing your own. Curiosity lowers defensiveness, surfaces hidden constraints, and gives you real data instead of guesses.",
+          "You do not need a timer. You just need a bias. When a conversation matters—a Daisy 1 planning session, a StoryOS narrative workshop, a quarterly planning review—treat your own perspective as the default and the other person’s perspective as the missing data. Ask enough questions that you could write their internal memo for them. Only then use your 30% to propose, frame, or decide."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='180' cy='160' r='110' fill='none' stroke='#9ba0b8' stroke-width='4'/><path d='M100 160 A80 80 0 0 1 260 160' fill='none' stroke='#5fd4c4' stroke-width='14' stroke-linecap='round'/><path d='M260 160 A80 80 0 0 1 100 160' fill='none' stroke='#ff7a6e' stroke-width='14' stroke-linecap='round' stroke-dasharray='6 10'/><text x='140' y='135' fill='#eceef7' font-size='18' font-family='system-ui, sans-serif'>70%</text><text x='205' y='200' fill='#eceef7' font-size='18' font-family='system-ui, sans-serif'>30%</text><text x='320' y='145' fill='#5fd4c4' font-size='16' font-family='system-ui, sans-serif'>Curiosity</text><line x1='260' y1='145' x2='310' y2='145' stroke='#5fd4c4' stroke-width='2'/><text x='320' y='190' fill='#ff7a6e' font-size='16' font-family='system-ui, sans-serif'>Broadcast</text><line x1='260' y1='190' x2='310' y2='190' stroke='#ff7a6e' stroke-width='2' stroke-dasharray='4 4'/><circle cx='180' cy='80' r='6' fill='#e8b84b'/><circle cx='180' cy='240' r='4' fill='#a48bfa'/></svg>",
+        "visualCaption": "Treat your speaking time as a biased pie: 70% curiosity, 30% broadcast.",
+        "after": [
+          "On your next Daisy 1 planning discussion, silently run the 70/30 test. Before you explain a roadmap choice, ask, “What’s the most important thing this needs to make easier for you?” Then follow with at least one more curiosity move—“Say more about that” or “What would ‘this is working’ look like in three weeks?”—before you give your take. You will notice decisions get sharper because they are built on the other person’s real constraints, not your assumptions."
+        ]
+      },
+      "lab": {
+        "title": "The Three-Beat Curiosity Loop",
+        "paras": [
+          "This skill matters most in conversations where you feel pressure to convince: a strategy agent demo, a DreamGuard concept review, or a quarterly planning check-in where time is tight. Under pressure, you tend to front-load your reasons and barely touch their reality. The Three-Beat Curiosity Loop forces you to earn the right to explain.",
+          "Imagine you are walking a client through a new coordination flow in Daisy 1. Instead of launching into a mini-presentation, you open with a question, echo back what you heard, and only then ask a sharpening follow-up. By the time you share your view, they already feel heard and are mentally collaborating with you instead of evaluating you."
+        ],
+        "exercise": "In your next meaningful conversation today, run this exact 3-step script before you offer any opinion:\n\n1) Open:\n\"Before I share my thinking, can I ask: what’s top of mind for you about this right now?\"\n\n2) Reflect (use their words):\n\"So it sounds like the big thing is [their phrase], and you’re also watching [second concern]. Did I get that right?\"\n\n3) Sharpen:\n\"If we solved just one part of this in the next two weeks, which piece would move the needle most for you?\"\n\nOnly after those three beats, share your perspective in one short paragraph. The entire loop takes under five minutes and instantly shifts the conversation into a co-design mode instead of a pitch."
+      },
+      "masters": {
+        "name": "Chris Voss",
+        "talk": "Chris Voss at Google: Never Split the Difference",
+        "videoId": "1dx4z1_A2bs",
+        "start": 900,
+        "watchWindow": "Watch minutes 15:00–22:00",
+        "paras": [
+          "Chris Voss turns curiosity into a repeatable tool: tactical empathy. In this segment he shows how calibrated questions and mirrors pull out the other side’s constraints and emotions without making them defensive. It is the same 70/30 Curiosity Rule applied to high-stakes negotiation instead of product or planning conversations.",
+          "Notice how little he talks about himself. Almost everything he says is a question, a label, or a short reflection that extends the other person’s thinking. That is exactly the bias you want in your own important work conversations."
+        ],
+        "observe": [
+          "Count how often he uses phrases like \"It seems like…\" or \"It sounds like…\" to label emotions instead of arguing about facts.",
+          "Watch his pacing after he asks a question—he leaves space and lets silence pull out more detail instead of filling it with his opinion.",
+          "Notice how his follow-up questions get narrower and more specific, moving from vague concerns to concrete constraints you can actually solve."
+        ]
+      },
+      "steal": {
+        "line": "“Before I make a case for anything, I want to make sure I fully understand how this looks from your side.”",
+        "paras": [
+          "Use this line as a speed bump that stops you from jumping straight into your view. Any time you feel the urge to defend a roadmap decision, a StoryOS framing choice, or a planning tradeoff, drop this sentence first, then run a quick curiosity loop. The line itself signals respect and buys you permission to ask deeper questions.",
+          "Today, pick one upcoming conversation where you are tempted to persuade—maybe a short strategy memo review or a quick call about prioritizing features. Commit in advance that your first sentence will be this line, followed by at least two open questions before you state any recommendation."
+        ],
+        "example": [
+          "In a quarterly planning review: “Before I make a case for anything, I want to make sure I fully understand how this looks from your side. What’s the part of this quarter that feels riskiest to you right now?”"
+        ]
+      }
+    },
+    {
       "date": "2026-08-28",
       "displayDate": "Fri · Aug 28",
       "domain": "Leadership",
@@ -1485,56 +1537,6 @@
         ],
         "example": [
           "“The old way made sense—until the conditions changed. We used to need more updates; now we need cleaner handoffs. So I’d like us to change the meeting from status-sharing to decision-clearing.”"
-        ]
-      }
-    },
-    {
-      "date": "2026-07-14",
-      "displayDate": "Tue · Jul 14",
-      "domain": "Conversation",
-      "hook": "Good conversation gets easier when you give the other person something obvious to grab.",
-      "insight": {
-        "title": "Leave a Handle",
-        "paras": [
-          "Most people answer questions like they are trying to finish a form: accurate, tidy, closed. But useful conversation is less like reporting and more like handing someone a door handle. You say one true thing, then add a small detail they can easily ask about.",
-          "The move is simple: <strong>answer + handle</strong>. If someone asks, “How’s your week?” don’t say, “Good, busy.” Say, “Good — I’m trying to make one project feel less chaotic this week.” Now they have somewhere to go."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='104' cy='82' r='44' fill='#a48bfa' opacity='0.16'/><circle cx='462' cy='238' r='58' fill='#5fd4c4' opacity='0.12'/><rect x='58' y='82' width='196' height='116' rx='22' fill='none' stroke='#9ba0b8' stroke-width='3'/><path d='M110 198 L88 232 L136 204' fill='none' stroke='#9ba0b8' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/><text x='86' y='124' fill='#eceef7' font-family='Inter, Arial, sans-serif' font-size='22' font-weight='700'>Good.</text><text x='86' y='158' fill='#9ba0b8' font-family='Inter, Arial, sans-serif' font-size='16'>Busy.</text><path d='M278 155 C302 132 316 132 338 155' fill='none' stroke='#e8b84b' stroke-width='4' stroke-linecap='round'/><path d='M328 142 L342 156 L328 170' fill='none' stroke='#e8b84b' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><rect x='334' y='78' width='176' height='128' rx='22' fill='none' stroke='#5fd4c4' stroke-width='3'/><path d='M410 206 L388 238 L438 212' fill='none' stroke='#5fd4c4' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/><text x='362' y='118' fill='#eceef7' font-family='Inter, Arial, sans-serif' font-size='20' font-weight='700'>Good —</text><text x='362' y='148' fill='#eceef7' font-family='Inter, Arial, sans-serif' font-size='18'>trying to make</text><text x='362' y='174' fill='#ff7a6e' font-family='Inter, Arial, sans-serif' font-size='18' font-weight='700'>one thing simpler.</text><rect x='186' y='254' width='188' height='28' rx='14' fill='#e8b84b' opacity='0.95'/><text x='218' y='274' fill='#1b1e30' font-family='Inter, Arial, sans-serif' font-size='14' font-weight='800'>ANSWER + HANDLE</text></svg>",
-        "visualCaption": "A closed answer ends the thread; a handled answer invites the next question.",
-        "after": [
-          "Try this in small talk, project updates, and client conversations. You are not performing. You are just making the next conversational move easier for the other person."
-        ]
-      },
-      "lab": {
-        "title": "The Answer + Handle Drill",
-        "paras": [
-          "This skill matters because warmth is often logistical. People are more curious when you make curiosity easy. A handle gives them a clear place to attach a follow-up without forcing them to invent one from scratch."
-        ],
-        "exercise": "For the next five minutes, rewrite three dead-end answers. Use this pattern: “Short answer — specific handle.” Try these exact words today: “Pretty good — I’m trying to make my mornings less reactive.” “Busy — but in a useful way, I’m cleaning up one messy project.” “Good — I had one conversation that changed how I’m thinking about the next quarter.”"
-      },
-      "masters": {
-        "name": "Celeste Headlee",
-        "talk": "10 ways to have a better conversation | TED",
-        "videoId": "R1vskiVDwl4",
-        "start": 213,
-        "watchWindow": "Watch roughly 3:33–5:20, especially her points on open-ended questions and letting the conversation go where it naturally wants to go.",
-        "paras": [
-          "Headlee is useful here because she treats conversation as a craft, not a personality trait. Her advice is not “be more charming.” It is more practical: ask cleaner questions, stop rehearsing, and actually follow what the other person gives you.",
-          "For you, the key lesson is restraint. A better conversationalist does not always add more brilliance. Often, he adds one good handle, listens for the response, then follows the live thread instead of dragging the person back to the prepared point."
-        ],
-        "observe": [
-          "How she names simple rules without making them feel simplistic.",
-          "How she uses short, plain sentences that are easy to remember later.",
-          "How she keeps returning attention to the other person instead of showcasing herself."
-        ]
-      },
-      "steal": {
-        "line": "Give people a handle, not a hallway.",
-        "paras": [
-          "A hallway is too broad: “Work’s been crazy.” A handle is specific enough to grab: “I’m trying to reduce the number of meetings that create more meetings.” Use one concrete noun, one tension, or one tiny experiment."
-        ],
-        "example": [
-          "“It’s going well — I’m testing a better way to explain complicated work without making people feel like they need a map.”"
         ]
       }
     }
