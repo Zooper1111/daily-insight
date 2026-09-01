@@ -1,6 +1,58 @@
 {
   "editions": [
     {
+      "date": "2026-09-01",
+      "displayDate": "Tue · Sep 1",
+      "domain": "Strategy",
+      "hook": "Plan in loops, not lines.",
+      "insight": {
+        "title": "The 3-Loop Planning Model",
+        "paras": [
+          "Most strategy gets stuck because you treat a plan like a straight line: decide, schedule, execute. The <strong>3-Loop Planning Model</strong> turns it into a living system: a Decision Loop (what you choose), an Experiment Loop (what you test), and a Story Loop (how you explain it to yourself and others). You cycle all three, instead of polishing a perfect roadmap once a quarter.",
+          "In practice: every meaningful priority should have one decision you’ve actually made, one small experiment running this week, and one simple story about why it matters now. When any loop is missing, projects stall—people don’t know what’s decided, don’t know what to try, or don’t know how to talk about it."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='190' cy='150' r='70' fill='none' stroke='#5fd4c4' stroke-width='4'/><circle cx='280' cy='190' r='70' fill='none' stroke='#ff7a6e' stroke-width='4'/><circle cx='350' cy='130' r='70' fill='none' stroke='#e8b84b' stroke-width='4'/><text x='180' y='150' text-anchor='middle' fill='#eceef7' font-size='12'>Decision</text><text x='280' y='195' text-anchor='middle' fill='#eceef7' font-size='12'>Experiment</text><text x='350' y='130' text-anchor='middle' fill='#eceef7' font-size='12'>Story</text><text x='280' y='40' text-anchor='middle' fill='#9ba0b8' font-size='13'>Three loops that keep a plan alive</text></svg>",
+        "visualCaption": "Strategy as three overlapping loops: decision, experiment, story.",
+        "after": [
+          "Today, take one live workstream—say your next Daisy 1 release or a quarterly planning reset—and write down: the single decision you’ve committed to, the experiment you’ll run in the next 7 days to learn faster, and a 2–3 sentence story you can use to explain the move to a teammate or client. When you consciously spin all three loops, your plan stops feeling like a fragile promise and starts behaving like a system that can absorb surprise."
+        ]
+      },
+      "lab": {
+        "title": "5-Minute 3-Loop Scan",
+        "paras": [
+          "Why this matters: most project friction isn’t in the work, it’s in the fuzziness around the work. Someone thinks a decision is still open when you consider it closed. An experiment lives only in your head. The story changes every time you explain it, so nobody knows what game they’re in.",
+          "Picture a short check-in on your strategy agent work. You’re on a call, walking through priorities. One teammate is talking about “exploring options”; another is already assuming a specific feature will ship. Tension rises, not because you disagree on the goal, but because the loops are out of sync. A quick 3-loop scan makes the conversation concrete in under five minutes."
+        ],
+        "exercise": "Set a 5-minute timer. Pick one active initiative (a Daisy 1 milestone, a consulting engagement, or your next planning cycle).\n\n1) Decision Loop (90 seconds): Write one line: \"We have decided to ___ by ___.\" Fill it in with a clear choice and a time frame. If you can’t, your decision loop is open.\n2) Experiment Loop (90 seconds): Add one line: \"This week, we will test that by ___.\" Make it something you can start in under an hour.\n3) Story Loop (90 seconds): Draft a short script you could say aloud:\n   \"Here’s the decision we’ve made: ___. For the next week we’re testing it by ___. If it works, it means ___; if not, we’ll know ___ and adjust.\"\n4) Last 30 seconds: Send that script to one collaborator or drop it in a project doc. Don’t over-polish. The goal is to get all three loops spinning, not to write the perfect memo."
+      },
+      "masters": {
+        "name": "Andy Grove",
+        "talk": "Andy Grove interviewed on strategic inflection points",
+        "videoId": "Qe2E4T6QuH0",
+        "start": 60,
+        "watchWindow": "Watch minutes 1:00–6:00 for how he thinks about strategic inflection points and ongoing adjustment.",
+        "paras": [
+          "Andy Grove treated strategy as a series of <em>inflection-aware loops</em>, not a one-shot bet. In this interview, he explains how leaders must constantly update their view of reality, test assumptions, and then communicate clear direction so teams are not paralyzed by uncertainty.",
+          "You’ll hear him move repeatedly between decision (what we will do), experiment (what we’ll watch and test), and story (how we describe the shift to the organization). It’s a lived example of the 3-Loop Planning Model applied at company scale."
+        ],
+        "observe": [
+          "Notice how often he ties a decision to a specific signal: he’s always clear on what they were watching in the market to justify a move.",
+          "Watch how he talks about fear and risk without dramatizing it. The story is calm, concrete, and anchored in behavior, not slogans.",
+          "Listen for his language around revisiting assumptions. He treats updates as normal maintenance of the strategy, not as proof that the old plan was a failure."
+        ]
+      },
+      "steal": {
+        "line": "“Here’s our decision, here’s the one experiment we’ll run this week, and here’s the story we’re all playing inside.”",
+        "paras": [
+          "Use this line to snap any fuzzy discussion into the three loops. In a planning meeting, a roadmap review, or a client check-in, you can interrupt drift by naming all three pieces out loud. It instantly reveals whether you’re actually aligned or just nodding at the same buzzwords.",
+          "Today, aim to say some version of it once in a real conversation. The goal isn’t to sound polished; it’s to force clarity: a choice, a test, and a shared narrative."
+        ],
+        "example": [
+          "In a quarterly planning sync about Daisy 1, you might say: “Let me ground this. Here’s our decision: for Q4 we’re focusing Daisy 1 on making multi-project coordination painless for small teams, not adding more reporting. Here’s the one experiment we’ll run this week: we’ll prototype a simpler cross-project view with three existing teams and watch what they actually click. And here’s the story we’re all playing inside: Daisy 1 should feel like a calm control room, not an analytics dashboard. If anything we’re doing doesn’t fit that, we flag it.”"
+        ]
+      }
+    },
+    {
       "date": "2026-08-30",
       "displayDate": "Sun · Aug 30",
       "domain": "Conversation",
@@ -1487,56 +1539,6 @@
         ],
         "example": [
           "In a Daisy 1 product discussion: <strong>If we choose coordinators as the first arena, we are choosing their planning pain over every adjacent workflow for now. What would that make obviously in scope, and what would it make obviously later?</strong>"
-        ]
-      }
-    },
-    {
-      "date": "2026-07-15",
-      "displayDate": "Wed · Jul 15",
-      "domain": "Leadership",
-      "hook": "Before you ask people to follow a plan, name the change they already feel.",
-      "insight": {
-        "title": "Start With the Shift",
-        "paras": [
-          "A weak leadership update starts with activity: <em>we shipped this, changed that, decided this</em>. A stronger one starts with the shift: <strong>what is different now, and why it matters</strong>.",
-          "People listen faster when you locate them in a before-and-after. Not drama. Orientation. “The old way worked when X was true. Now Y is true. So we need Z.” That tiny structure makes a plan feel less like a command and more like a shared response to reality."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><path d='M72 218 C150 218 166 106 248 106 C326 106 342 218 488 218' fill='none' stroke='#5fd4c4' stroke-width='8' stroke-linecap='round'/><line x1='82' y1='244' x2='478' y2='244' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='8 10'/><circle cx='148' cy='218' r='12' fill='#e8b84b'/><circle cx='280' cy='106' r='14' fill='#ff7a6e'/><circle cx='420' cy='218' r='12' fill='#a48bfa'/><text x='122' y='262' fill='#eceef7' font-size='18' font-family='Inter, Arial'>old truth</text><text x='236' y='84' fill='#eceef7' font-size='18' font-family='Inter, Arial'>shift</text><text x='382' y='262' fill='#eceef7' font-size='18' font-family='Inter, Arial'>new move</text><text x='86' y='48' fill='#eceef7' font-size='26' font-family='Inter, Arial' font-weight='700'>Name the shift before the plan.</text></svg>",
-        "visualCaption": "Leadership gets clearer when people can see the old truth, the shift, and the new move.",
-        "after": [
-          "Use this for team updates, client conversations, product explanations, or even a one-on-one where you need to reset direction. The goal is not to sound grand. The goal is to make the next action feel inevitable."
-        ]
-      },
-      "lab": {
-        "title": "The Old / Now / So Script",
-        "paras": [
-          "This skill matters because people resist naked instructions. They lean in when the instruction is attached to a change they can recognize."
-        ],
-        "exercise": "Take one thing you need to explain today and say it in three sentences: “The old assumption was ____. What changed is ____. So the next move is ____.” Example: “The old assumption was that coordination problems were mostly about missing tasks. What changed is that the handoffs are now the bottleneck. So the next move is to make ownership visible before we add more process.”"
-      },
-      "masters": {
-        "name": "Simon Sinek",
-        "talk": "How great leaders inspire action",
-        "videoId": "qp0HIF3SfI4",
-        "start": 260,
-        "watchWindow": "4:20–6:20, where he contrasts what/how/why and shows how order changes attention",
-        "paras": [
-          "Sinek fits today because his best move is not motivational volume; it is sequence. He shows that the same facts land differently when the listener first understands the belief or shift underneath them.",
-          "Watch less for the famous framework and more for the practical speaking move: he makes the audience feel the difference between a flat explanation and a charged one."
-        ],
-        "observe": [
-          "How he uses contrast before giving advice.",
-          "How simple the language is: short words, repeated structure, no decorative complexity.",
-          "How the idea becomes memorable because the order changes, not because the facts change."
-        ]
-      },
-      "steal": {
-        "line": "“The old way made sense—until the conditions changed.”",
-        "paras": [
-          "Practice this line before proposing a change. It keeps you from making other people feel stupid for believing yesterday’s logic. That warmth buys attention for the harder part: the new move."
-        ],
-        "example": [
-          "“The old way made sense—until the conditions changed. We used to need more updates; now we need cleaner handoffs. So I’d like us to change the meeting from status-sharing to decision-clearing.”"
         ]
       }
     }
