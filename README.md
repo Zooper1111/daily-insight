@@ -47,7 +47,7 @@ Each edition should usually include:
 - One public-safe connection to Matt's active workstreams, using Daisy 1 as the project coordination app name.
 - One short applied story, scene, or example that shows how the idea could be used.
 
-Keep the entire edition concise: roughly 200–350 words of prose and no more than
+Keep the entire edition concise: roughly 150–250 words of prose and no more than
 a five-minute read. A video section is optional and should be uncommon; add it
 only when watching the idea demonstrated materially improves understanding.
 
