@@ -33,8 +33,9 @@ The script skips if today is an off day or today's edition already exists, so a 
 ## Edition schema notes
 
 - `insight.visualSvg`: inline SVG string, single-quoted attributes, viewBox ~560 wide, dark theme colors (bg #1b1e30, ink #eceef7, dim #9ba0b8, gold #e8b84b, coral #ff7a6e, teal #5fd4c4, violet #a48bfa).
-- `masters.videoId`: real YouTube video ID found via web search — never invented.
-- `masters.start`: seconds offset for the embed when a specific moment is known.
+- When a rare `masters` section is present, `masters.videoId` must be a real
+  YouTube video ID found via web search—never invented—and `masters.start` is
+  the seconds offset for the embed when a specific moment is known.
 - Paragraph arrays may contain simple inline HTML (`<strong>`, `<em>`).
 
 ## Content direction
