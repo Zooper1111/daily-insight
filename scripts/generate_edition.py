@@ -38,7 +38,6 @@ REQUIRED_TOP_LEVEL = {
     "hook",
     "insight",
     "lab",
-    "masters",
     "steal",
 }
 
@@ -135,11 +134,16 @@ def validate_edition(edition: dict[str, Any]) -> None:
         raise ValueError(f"Edition missing keys: {', '.join(missing)}")
     if edition["date"] != TODAY:
         raise ValueError(f"Edition date {edition['date']} does not match {TODAY}")
-    if not re.fullmatch(r"[A-Za-z0-9_-]{6,}", str(edition["masters"]["videoId"])):
-        raise ValueError("masters.videoId does not look like a YouTube ID")
-    for section in ("insight", "lab", "masters", "steal"):
+    for section in ("insight", "lab", "steal"):
         if not isinstance(edition[section], dict):
             raise ValueError(f"{section} must be an object")
+
+    masters = edition.get("masters")
+    if masters is not None:
+        if not isinstance(masters, dict):
+            raise ValueError("masters must be an object or null")
+        if not re.fullmatch(r"[A-Za-z0-9_-]{6,}", str(masters.get("videoId", ""))):
+            raise ValueError("masters.videoId does not look like a YouTube ID")
 
     for path, text in iter_strings(edition):
         if path == ("masters", "name"):
@@ -190,25 +194,17 @@ Schema:
   "hook": "One sharp, specific line",
   "insight": {{
     "title": "Title",
-    "paras": ["2 short paragraphs, <strong>/<em> allowed. Teach one theory, model, framework, or mental model here."],
+    "paras": ["One short paragraph, <strong>/<em> allowed. Teach one theory, model, framework, or mental model here."],
     "visualSvg": "<svg viewBox='0 0 560 320'>...</svg>",
     "visualCaption": "One-line caption",
-    "after": ["One closing application paragraph that ties the idea to a public-safe workstream example"]
+    "after": ["One closing application sentence tied to a public-safe workstream example"]
   }},
   "lab": {{
     "title": "Skill title",
-    "paras": ["Why this skill matters, with a brief concrete scene or story when useful"],
-    "exercise": "Concrete under-5-minute exercise with exact words to try"
+    "paras": ["One short sentence on why this skill matters"],
+    "exercise": "One compact under-5-minute exercise with exact words to try"
   }},
-  "masters": {{
-    "name": "Real person",
-    "talk": "Real talk/interview/speech",
-    "videoId": "Verified YouTube video ID",
-    "start": 0,
-    "watchWindow": "Specific portion to watch",
-    "paras": ["Why this master fits today's lesson"],
-    "observe": ["Three specific things to watch"]
-  }},
+  "masters": null,
   "steal": {{
     "line": "One punchy sentence.",
     "paras": ["How to practice it today"],
@@ -252,11 +248,22 @@ Content goals:
   the public edition should read like direct advice to the reader.
 - Include a short applied story, scenario, or example. Show how the idea plays
   out instead of only explaining what to say.
+- Keep the full edition to roughly 200-350 words of prose across insight, lab,
+  masters (when present), and steal. It must be easy to read and understand in
+  no more than five minutes. Do not repeat the same idea across sections.
+- Keep paragraphs short. Prefer one insight paragraph, one application sentence,
+  one compact exercise, and one reusable line with one brief example.
+- Set masters to null for most editions. Include a masters object only when
+  watching or hearing the person demonstrate the idea materially improves
+  understanding. A famous speaker alone is not a reason to add a video. When
+  present, use exactly these fields: name, talk, videoId, start, watchWindow,
+  paras (one short reason to watch), and observe (one specific thing to notice).
 - visualSvg must be original inline SVG using this palette: bg #1b1e30,
   ink #eceef7, dim #9ba0b8, gold #e8b84b, coral #ff7a6e, teal #5fd4c4,
   violet #a48bfa.
-- masters.videoId must be from a real YouTube video. Do not invent IDs.
-- Voice: sharp, warm coach. About a 3-minute read.
+- When masters is present, masters.videoId must be from a real YouTube video. Do
+  not invent IDs.
+- Voice: sharp, warm coach. Concise enough to grasp in one sitting.
 """
 
 
