@@ -329,7 +329,7 @@ def main() -> int:
             "date": e.get("date"),
             "domain": e.get("domain"),
             "insight": e.get("insight", {}).get("title"),
-            "master": e.get("masters", {}).get("name"),
+            "master": (e.get("masters") or {}).get("name"),
         }
         for e in editions[:8]
     ]
