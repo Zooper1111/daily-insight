@@ -248,7 +248,7 @@ Content goals:
   the public edition should read like direct advice to the reader.
 - Include a short applied story, scenario, or example. Show how the idea plays
   out instead of only explaining what to say.
-- Keep the full edition to roughly 200-350 words of prose across insight, lab,
+- Keep the full edition to roughly 150-250 words of prose across insight, lab,
   masters (when present), and steal. It must be easy to read and understand in
   no more than five minutes. Do not repeat the same idea across sections.
 - Keep paragraphs short. Prefer one insight paragraph, one application sentence,
