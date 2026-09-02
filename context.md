@@ -35,7 +35,7 @@ Use these descriptions exactly until Matt provides better ones.
 - Include non-speech lessons regularly: business frameworks, strategy models, decision rules, game theory, systems thinking, incentives, tradeoffs, product thinking, management philosophy, and philosophy in business.
 - Teach how to interest people: provocative but not gimmicky openings, sharper framing, better contrast, tension, stakes, specificity, and timing.
 - Make every complete edition easy to read and understand in no more than five
-  minutes. Aim for roughly 200–350 words across all prose fields, excluding the
+  minutes. Aim for roughly 150–250 words across all prose fields, excluding the
   inline SVG. Prefer one crisp explanation, one short exercise, and one reusable
   line over repeated examples or restating the same point.
 - Videos are optional and should be rare. Include one only when seeing or hearing
@@ -73,6 +73,6 @@ A strong month should feel varied and should include:
 - 2026-07-11: DreamGuard is not a sleep-tracking product.
 - 2026-08-05: Refer to the project coordination app as Daisy 1, not Coordly or Daisy One. Generated advice should address the reader as "you," not describe what Matt should do in third person.
 - 2026-09-01: Cut edition length substantially. Each complete insight should be
-  understandable within five minutes, with roughly 200–350 words of prose.
+  understandable within five minutes, with roughly 150–250 words of prose.
   Videos are optional and should appear only when the demonstration genuinely
   makes the lesson land.
