@@ -8,47 +8,28 @@
       "insight": {
         "title": "The 3-Loop Planning Model",
         "paras": [
-          "Most strategy gets stuck because you treat a plan like a straight line: decide, schedule, execute. The <strong>3-Loop Planning Model</strong> turns it into a living system: a Decision Loop (what you choose), an Experiment Loop (what you test), and a Story Loop (how you explain it to yourself and others). You cycle all three, instead of polishing a perfect roadmap once a quarter.",
-          "In practice: every meaningful priority should have one decision you’ve actually made, one small experiment running this week, and one simple story about why it matters now. When any loop is missing, projects stall—people don’t know what’s decided, don’t know what to try, or don’t know how to talk about it."
+          "A live plan needs three things: a <strong>decision</strong> you have made, an <strong>experiment</strong> that will teach you something, and a <strong>story</strong> that explains why the work matters. If one is missing, the plan drifts: people debate settled choices, wait instead of testing, or describe the goal differently."
+        ],
+        "after": [
+          "For one Daisy 1 or quarterly-planning priority, write the decision, this week’s test, and the reason in three lines."
         ],
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='190' cy='150' r='70' fill='none' stroke='#5fd4c4' stroke-width='4'/><circle cx='280' cy='190' r='70' fill='none' stroke='#ff7a6e' stroke-width='4'/><circle cx='350' cy='130' r='70' fill='none' stroke='#e8b84b' stroke-width='4'/><text x='180' y='150' text-anchor='middle' fill='#eceef7' font-size='12'>Decision</text><text x='280' y='195' text-anchor='middle' fill='#eceef7' font-size='12'>Experiment</text><text x='350' y='130' text-anchor='middle' fill='#eceef7' font-size='12'>Story</text><text x='280' y='40' text-anchor='middle' fill='#9ba0b8' font-size='13'>Three loops that keep a plan alive</text></svg>",
-        "visualCaption": "Strategy as three overlapping loops: decision, experiment, story.",
-        "after": [
-          "Today, take one live workstream—say your next Daisy 1 release or a quarterly planning reset—and write down: the single decision you’ve committed to, the experiment you’ll run in the next 7 days to learn faster, and a 2–3 sentence story you can use to explain the move to a teammate or client. When you consciously spin all three loops, your plan stops feeling like a fragile promise and starts behaving like a system that can absorb surprise."
-        ]
+        "visualCaption": "Strategy as three overlapping loops: decision, experiment, story."
       },
       "lab": {
-        "title": "5-Minute 3-Loop Scan",
+        "title": "Run a 3-Loop Scan",
         "paras": [
-          "Why this matters: most project friction isn’t in the work, it’s in the fuzziness around the work. Someone thinks a decision is still open when you consider it closed. An experiment lives only in your head. The story changes every time you explain it, so nobody knows what game they’re in.",
-          "Picture a short check-in on your strategy agent work. You’re on a call, walking through priorities. One teammate is talking about “exploring options”; another is already assuming a specific feature will ship. Tension rises, not because you disagree on the goal, but because the loops are out of sync. A quick 3-loop scan makes the conversation concrete in under five minutes."
+          "This exposes fuzzy plans before they become slow projects."
         ],
-        "exercise": "Set a 5-minute timer. Pick one active initiative (a Daisy 1 milestone, a consulting engagement, or your next planning cycle).\n\n1) Decision Loop (90 seconds): Write one line: \"We have decided to ___ by ___.\" Fill it in with a clear choice and a time frame. If you can’t, your decision loop is open.\n2) Experiment Loop (90 seconds): Add one line: \"This week, we will test that by ___.\" Make it something you can start in under an hour.\n3) Story Loop (90 seconds): Draft a short script you could say aloud:\n   \"Here’s the decision we’ve made: ___. For the next week we’re testing it by ___. If it works, it means ___; if not, we’ll know ___ and adjust.\"\n4) Last 30 seconds: Send that script to one collaborator or drop it in a project doc. Don’t over-polish. The goal is to get all three loops spinning, not to write the perfect memo."
-      },
-      "masters": {
-        "name": "Andy Grove",
-        "talk": "Andy Grove interviewed on strategic inflection points",
-        "videoId": "Qe2E4T6QuH0",
-        "start": 60,
-        "watchWindow": "Watch minutes 1:00–6:00 for how he thinks about strategic inflection points and ongoing adjustment.",
-        "paras": [
-          "Andy Grove treated strategy as a series of <em>inflection-aware loops</em>, not a one-shot bet. In this interview, he explains how leaders must constantly update their view of reality, test assumptions, and then communicate clear direction so teams are not paralyzed by uncertainty.",
-          "You’ll hear him move repeatedly between decision (what we will do), experiment (what we’ll watch and test), and story (how we describe the shift to the organization). It’s a lived example of the 3-Loop Planning Model applied at company scale."
-        ],
-        "observe": [
-          "Notice how often he ties a decision to a specific signal: he’s always clear on what they were watching in the market to justify a move.",
-          "Watch how he talks about fear and risk without dramatizing it. The story is calm, concrete, and anchored in behavior, not slogans.",
-          "Listen for his language around revisiting assumptions. He treats updates as normal maintenance of the strategy, not as proof that the old plan was a failure."
-        ]
+        "exercise": "Set a five-minute timer and finish: “We decided to ___.” “This week we will test it by ___.” “This matters now because ___.” If any line is hard to complete, that is the loop to fix first."
       },
       "steal": {
-        "line": "“Here’s our decision, here’s the one experiment we’ll run this week, and here’s the story we’re all playing inside.”",
+        "line": "Name the decision, the test, and the story.",
         "paras": [
-          "Use this line to snap any fuzzy discussion into the three loops. In a planning meeting, a roadmap review, or a client check-in, you can interrupt drift by naming all three pieces out loud. It instantly reveals whether you’re actually aligned or just nodding at the same buzzwords.",
-          "Today, aim to say some version of it once in a real conversation. The goal isn’t to sound polished; it’s to force clarity: a choice, a test, and a shared narrative."
+          "Use the line whenever a planning conversation starts to drift."
         ],
         "example": [
-          "In a quarterly planning sync about Daisy 1, you might say: “Let me ground this. Here’s our decision: for Q4 we’re focusing Daisy 1 on making multi-project coordination painless for small teams, not adding more reporting. Here’s the one experiment we’ll run this week: we’ll prototype a simpler cross-project view with three existing teams and watch what they actually click. And here’s the story we’re all playing inside: Daisy 1 should feel like a calm control room, not an analytics dashboard. If anything we’re doing doesn’t fit that, we flag it.”"
+          "For this priority, we chose ___. This week we’ll test ___. It matters because ___."
         ]
       }
     },
@@ -56,51 +37,32 @@
       "date": "2026-08-30",
       "displayDate": "Sun · Aug 30",
       "domain": "Conversation",
-      "hook": "The 70/30 Curiosity Rule",
+      "hook": "Ask before you broadcast.",
       "insight": {
         "title": "The 70/30 Curiosity Rule",
         "paras": [
-          "Use this simple model in any important conversation: spend about 70% of your energy on <strong>curiosity</strong> (questions, follow-ups, reflections) and only 30% on <strong>broadcasting</strong> (explaining, pitching, updating). It is a practical version of motivational interviewing: you get farther by drawing out the other person’s thinking than by pushing your own. Curiosity lowers defensiveness, surfaces hidden constraints, and gives you real data instead of guesses.",
-          "You do not need a timer. You just need a bias. When a conversation matters—a Daisy 1 planning session, a StoryOS narrative workshop, a quarterly planning review—treat your own perspective as the default and the other person’s perspective as the missing data. Ask enough questions that you could write their internal memo for them. Only then use your 30% to propose, frame, or decide."
+          "In an important conversation, put roughly 70% of your attention on <strong>curiosity</strong>—questions, reflections, and follow-ups—and 30% on explaining your view. The ratio is not a timer; it is a bias against pitching too early. Curiosity lowers defensiveness and reveals the constraints your recommendation must actually fit."
+        ],
+        "after": [
+          "Before explaining a Daisy 1 or planning choice, ask what the other person most needs the decision to make easier."
         ],
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='180' cy='160' r='110' fill='none' stroke='#9ba0b8' stroke-width='4'/><path d='M100 160 A80 80 0 0 1 260 160' fill='none' stroke='#5fd4c4' stroke-width='14' stroke-linecap='round'/><path d='M260 160 A80 80 0 0 1 100 160' fill='none' stroke='#ff7a6e' stroke-width='14' stroke-linecap='round' stroke-dasharray='6 10'/><text x='140' y='135' fill='#eceef7' font-size='18' font-family='system-ui, sans-serif'>70%</text><text x='205' y='200' fill='#eceef7' font-size='18' font-family='system-ui, sans-serif'>30%</text><text x='320' y='145' fill='#5fd4c4' font-size='16' font-family='system-ui, sans-serif'>Curiosity</text><line x1='260' y1='145' x2='310' y2='145' stroke='#5fd4c4' stroke-width='2'/><text x='320' y='190' fill='#ff7a6e' font-size='16' font-family='system-ui, sans-serif'>Broadcast</text><line x1='260' y1='190' x2='310' y2='190' stroke='#ff7a6e' stroke-width='2' stroke-dasharray='4 4'/><circle cx='180' cy='80' r='6' fill='#e8b84b'/><circle cx='180' cy='240' r='4' fill='#a48bfa'/></svg>",
-        "visualCaption": "Treat your speaking time as a biased pie: 70% curiosity, 30% broadcast.",
-        "after": [
-          "On your next Daisy 1 planning discussion, silently run the 70/30 test. Before you explain a roadmap choice, ask, “What’s the most important thing this needs to make easier for you?” Then follow with at least one more curiosity move—“Say more about that” or “What would ‘this is working’ look like in three weeks?”—before you give your take. You will notice decisions get sharper because they are built on the other person’s real constraints, not your assumptions."
-        ]
+        "visualCaption": "Treat your speaking time as a biased pie: 70% curiosity, 30% broadcast."
       },
       "lab": {
-        "title": "The Three-Beat Curiosity Loop",
+        "title": "Use the Three-Beat Loop",
         "paras": [
-          "This skill matters most in conversations where you feel pressure to convince: a strategy agent demo, a DreamGuard concept review, or a quarterly planning check-in where time is tight. Under pressure, you tend to front-load your reasons and barely touch their reality. The Three-Beat Curiosity Loop forces you to earn the right to explain.",
-          "Imagine you are walking a client through a new coordination flow in Daisy 1. Instead of launching into a mini-presentation, you open with a question, echo back what you heard, and only then ask a sharpening follow-up. By the time you share your view, they already feel heard and are mentally collaborating with you instead of evaluating you."
+          "One question rarely reaches the real concern; a short sequence often does."
         ],
-        "exercise": "In your next meaningful conversation today, run this exact 3-step script before you offer any opinion:\n\n1) Open:\n\"Before I share my thinking, can I ask: what’s top of mind for you about this right now?\"\n\n2) Reflect (use their words):\n\"So it sounds like the big thing is [their phrase], and you’re also watching [second concern]. Did I get that right?\"\n\n3) Sharpen:\n\"If we solved just one part of this in the next two weeks, which piece would move the needle most for you?\"\n\nOnly after those three beats, share your perspective in one short paragraph. The entire loop takes under five minutes and instantly shifts the conversation into a co-design mode instead of a pitch."
-      },
-      "masters": {
-        "name": "Chris Voss",
-        "talk": "Chris Voss at Google: Never Split the Difference",
-        "videoId": "1dx4z1_A2bs",
-        "start": 900,
-        "watchWindow": "Watch minutes 15:00–22:00",
-        "paras": [
-          "Chris Voss turns curiosity into a repeatable tool: tactical empathy. In this segment he shows how calibrated questions and mirrors pull out the other side’s constraints and emotions without making them defensive. It is the same 70/30 Curiosity Rule applied to high-stakes negotiation instead of product or planning conversations.",
-          "Notice how little he talks about himself. Almost everything he says is a question, a label, or a short reflection that extends the other person’s thinking. That is exactly the bias you want in your own important work conversations."
-        ],
-        "observe": [
-          "Count how often he uses phrases like \"It seems like…\" or \"It sounds like…\" to label emotions instead of arguing about facts.",
-          "Watch his pacing after he asks a question—he leaves space and lets silence pull out more detail instead of filling it with his opinion.",
-          "Notice how his follow-up questions get narrower and more specific, moving from vague concerns to concrete constraints you can actually solve."
-        ]
+        "exercise": "Try this before offering your opinion: “What’s top of mind for you?” Reflect their answer: “It sounds like the big issue is ___.” Then ask: “If we solved one part first, which would matter most?” Only then share your view."
       },
       "steal": {
-        "line": "“Before I make a case for anything, I want to make sure I fully understand how this looks from your side.”",
+        "line": "Before I make a case, I want to understand how this looks from your side.",
         "paras": [
-          "Use this line as a speed bump that stops you from jumping straight into your view. Any time you feel the urge to defend a roadmap decision, a StoryOS framing choice, or a planning tradeoff, drop this sentence first, then run a quick curiosity loop. The line itself signals respect and buys you permission to ask deeper questions.",
-          "Today, pick one upcoming conversation where you are tempted to persuade—maybe a short strategy memo review or a quick call about prioritizing features. Commit in advance that your first sentence will be this line, followed by at least two open questions before you state any recommendation."
+          "Say it when you feel the urge to persuade quickly."
         ],
         "example": [
-          "In a quarterly planning review: “Before I make a case for anything, I want to make sure I fully understand how this looks from your side. What’s the part of this quarter that feels riskiest to you right now?”"
+          "What feels riskiest about this plan from where you sit?"
         ]
       }
     },
@@ -108,52 +70,32 @@
       "date": "2026-08-28",
       "displayDate": "Fri · Aug 28",
       "domain": "Leadership",
-      "hook": "One question that makes risk-taking feel safe",
+      "hook": "Make honesty part of the meeting.",
       "insight": {
         "title": "The Safety Question",
         "paras": [
-          "Amy Edmondson’s research on <em>psychological safety</em> shows that teams learn and innovate faster when people believe they can take interpersonal risks—ask questions, surface bad news, admit uncertainty—without being punished or quietly downgraded. Psychological safety is not about being nice; it is about making it feel safe to be honest when the stakes are real.",
-          "A simple way to build this in your own projects is to use a repeatable <strong>Safety Question</strong>: a short, predictable prompt that signals, \"This is the moment to say the uncomfortable thing.\" When you ask the same question in the same part of a meeting, you train people that voicing doubt, risk, and confusion is part of the job, not a career risk."
+          "<strong>Psychological safety</strong> means people can ask questions, admit uncertainty, and surface bad news without being punished for it. It is not comfort or constant agreement. A repeatable closing question makes candor part of the work instead of something people must risk introducing on their own."
+        ],
+        "after": [
+          "End one Daisy 1 or planning check-in with: “What feels even a little unsafe to say about this plan?”"
         ],
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='60' width='440' height='200' rx='16' fill='none' stroke='#eceef7' stroke-width='2'/><circle cx='140' cy='160' r='26' fill='none' stroke='#5fd4c4' stroke-width='3'/><path d='M140 144c7 0 12 4 12 10 0 5-3 8-7 10-3 1-4 3-4 7' fill='none' stroke='#5fd4c4' stroke-width='3' stroke-linecap='round'/><circle cx='140' cy='186' r='3' fill='#5fd4c4'/><line x1='190' y1='135' x2='430' y2='135' stroke='#9ba0b8' stroke-width='2' stroke-linecap='round'/><line x1='190' y1='160' x2='400' y2='160' stroke='#9ba0b8' stroke-width='2' stroke-linecap='round'/><line x1='190' y1='185' x2='360' y2='185' stroke='#9ba0b8' stroke-width='2' stroke-linecap='round'/><rect x='320' y='210' width='150' height='30' rx='6' fill='none' stroke='#e8b84b' stroke-width='2'/><text x='395' y='230' text-anchor='middle' fill='#e8b84b' font-family='system-ui, -apple-system, BlinkMacSystemFont, sans-serif' font-size='12'>\"What feels unsafe to say?\"</text><circle cx='70' cy='50' r='6' fill='#ff7a6e'/><circle cx='88' cy='50' r='6' fill='#5fd4c4'/><circle cx='106' cy='50' r='6' fill='#a48bfa'/></svg>",
-        "visualCaption": "A recurring question turns vague unease into explicit signal.",
-        "after": [
-          "On your next Daisy 1 or quarterly planning check-in, reserve two minutes at the end for the Safety Question: \"Before we wrap, what feels even a little bit unsafe to say about this plan or this week?\" Treat whatever surfaces as useful signal, not a problem to swat away, and you’ll slowly turn your project space into a place where people surface risks early instead of after they break."
-        ]
+        "visualCaption": "A recurring question turns vague unease into explicit signal."
       },
       "lab": {
-        "title": "Running a Two-Minute Safety Check",
+        "title": "Run a 90-Second Safety Check",
         "paras": [
-          "Imagine you are closing a planning call for your strategy agent or Daisy 1 roadmap. The energy is \"we’re good here,\" but you can feel the slight pause in people’s voices—the place where worries usually stay hidden. Instead of asking, \"Any questions?\" (which most people hear as \"please say no\"), you run a tiny ritual that makes doubt explicitly welcome.",
-          "This matters because almost every real failure—missed deadline, bad launch, silent client—is preceded by someone quietly thinking, \"I’m not sure this will work\" and saying nothing. A two-minute safety check is how you turn those private thoughts into shared data while there’s still time to act."
+          "“Any questions?” usually invites silence; a specific risk question invites signal."
         ],
-        "exercise": "Today, in one real meeting, add this exact 2-step closer:\n\n1) Say: \"Before we end, I want a 90-second safety check. <strong>What feels even a little unsafe to say about this plan?</strong>\" Then wait a full 10 seconds in silence.\n2) When someone speaks, respond with: \"Thank you. That’s exactly the kind of risk I want us to surface early.\" Write down what they said. Do not defend the plan in the moment; only clarify and ask, \"What would make this feel 20% safer?\""
-      },
-      "masters": {
-        "name": "Amy Edmondson",
-        "talk": "Building a psychologically safe workplace | TEDxHGSE",
-        "videoId": "LhoLuui9gX8",
-        "start": 260,
-        "watchWindow": "Watch minutes 4:20–8:00, where she explains why speaking up is the fuel for learning and innovation.",
-        "paras": [
-          "Edmondson is the primary researcher behind psychological safety and shows how high-performing teams actually report more mistakes because it is safe to talk about them. That’s the same dynamic you want in planning and product conversations: more visible risk, earlier.",
-          "As you watch, connect her hospital and manufacturing examples to your own work: when someone on your team hesitates to question a date, a feature, or a client assumption, that’s the same psychological moment she’s describing."
-        ],
-        "observe": [
-          "Notice how she contrasts \"the absence of failure\" with true learning and performance, and steal that contrast language for your own framing.",
-          "Watch how she normalizes mistakes as information, not as evidence of incompetence—that’s exactly the stance you want when someone answers your Safety Question.",
-          "Listen for how often she uses words like \"voice\" and \"learning\" instead of \"compliance\" or \"control\"; it’s a vocabulary shift that subtly invites contribution rather than silence."
-        ]
+        "exercise": "Ask the Safety Question, then wait ten full seconds. When someone answers, say: “Thank you—that’s useful to surface early.” Do not defend the plan. Ask only: “What would make this feel 20% safer?”"
       },
       "steal": {
-        "line": "“Before we end, what feels even a little unsafe to say about this plan?”",
+        "line": "What feels even a little unsafe to say about this plan?",
         "paras": [
-          "Use this line as a standing closer in one recurring meeting this week. Say it slowly, leave real silence, and treat whatever comes up as signal you’re grateful to have. Over a few repetitions, people will start to bring you sharper risks, better ideas, and the uncomfortable truths before they turn into surprises.",
-          "You can even pre-frame it at the start: \"At the end, I’m going to ask what feels unsafe to say about this plan. Be collecting those thoughts as we go.\" That tells everyone that naming tension is part of the job, not a breach of harmony."
+          "Use it at the same point in a recurring meeting so candor becomes routine."
         ],
         "example": [
-          "Daisy 1 planning call: \"Quick safety check before we jump—what feels even a little unsafe to say about this upcoming sprint? Dates, scope, dependencies, anything.\"",
-          "Client strategy session in your consulting practice: \"Last thing from me: what feels unsafe to say about this recommendation? Either politically inside your org or practically on the ground.\""
+          "Before we wrap, what risk are we being too polite to name?"
         ]
       }
     },
@@ -161,52 +103,32 @@
       "date": "2026-08-26",
       "displayDate": "Wed · Aug 26",
       "domain": "Communication",
-      "hook": "One sharp, specific line",
+      "hook": "One scene beats five explanations.",
       "insight": {
         "title": "The One-Context Rule",
         "paras": [
-          "<strong>The One-Context Rule:</strong> when you explain an idea, lock it to one concrete situation before you add anything else. In cognitive load theory, your listener’s working memory is tiny; every extra context, metaphor, or scenario is another tab you’re asking them to keep open. If you start with “It’s like X and also like Y, and imagine Z…,” you’ve burned their attention budget before your real point arrives.",
-          "Instead, pick one scene and stay there until the idea lands. <em>“Picture you’re opening Daisy 1 Monday morning…”</em> or <em>“Imagine you’re walking into a quarterly planning review…”</em> Then walk through the idea step by step inside that same scene. Only after they can retell it in that context do you earn the right to generalize. One context first; everything else later."
+          "Working memory is limited. When an explanation jumps among several examples, metaphors, and situations, listeners spend their attention tracking the switches. The <strong>One-Context Rule</strong> says: choose one concrete scene and keep the entire explanation there until the idea lands."
+        ],
+        "after": [
+          "For your next project explanation, start with one moment: “Imagine you’re opening Daisy 1 on Monday morning…”"
         ],
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='60' width='180' height='200' rx='10' fill='none' stroke='#e8b84b' stroke-width='3'/><circle cx='120' cy='120' r='26' fill='none' stroke='#eceef7' stroke-width='2'/><rect x='96' y='160' width='96' height='12' rx='3' fill='#eceef7'/><rect x='96' y='184' width='72' height='10' rx='3' fill='#9ba0b8'/><rect x='96' y='206' width='84' height='10' rx='3' fill='#5fd4c4'/><rect x='280' y='50' width='70' height='60' rx='8' fill='none' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='4 4'/><rect x='340' y='130' width='90' height='60' rx='8' fill='none' stroke='#ff7a6e' stroke-width='2' stroke-dasharray='4 4'/><rect x='300' y='220' width='80' height='50' rx='8' fill='none' stroke='#a48bfa' stroke-width='2' stroke-dasharray='4 4'/><line x1='240' y1='160' x2='280' y2='80' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='4 4'/><line x1='240' y1='176' x2='340' y2='160' stroke='#ff7a6e' stroke-width='2' stroke-dasharray='4 4'/><line x1='240' y1='192' x2='300' y2='236' stroke='#a48bfa' stroke-width='2' stroke-dasharray='4 4'/><text x='70' y='95' fill='#eceef7' font-size='10' font-family='system-ui, sans-serif'>ONE CONTEXT</text><text x='290' y='46' fill='#9ba0b8' font-size='9' font-family='system-ui, sans-serif'>extra tab</text><text x='352' y='126' fill='#ff7a6e' font-size='9' font-family='system-ui, sans-serif'>extra tab</text><text x='308' y='216' fill='#a48bfa' font-size='9' font-family='system-ui, sans-serif'>extra tab</text></svg>",
-        "visualCaption": "Hold one scene in focus; every extra example is another tab in their brain.",
-        "after": [
-          "Today, before your next explanation of Daisy 1, StoryOS, DreamGuard, or the strategy agent, decide on <em>one</em> scene—say, a Monday morning planning session—and force yourself to keep the whole explanation inside that moment. If someone asks, “Where else would this apply?”, treat that as a green light to add a second context. Until then, honor the One-Context Rule so your idea feels simple enough to grab and use immediately."
-        ]
+        "visualCaption": "Hold one scene in focus; every extra example is another tab in their brain."
       },
       "lab": {
-        "title": "Pin Your Idea to One Scene",
+        "title": "Pin the Idea to One Scene",
         "paras": [
-          "Why this matters: when you pitch a tool like Daisy 1 or walk a client through a new planning move, people rarely get lost in your logic; they get lost in your shifting scenes. You start in a stand-up meeting, then jump to a dashboard, then to a quarterly review, then to email workflows. Each hop is a tiny cognitive tax, and eventually they just nod along instead of really seeing it.",
-          "Picture this: you’re on a call about quarterly planning, and someone asks, “So how would this actually change my week?” You answer, “Great question,” then walk them through <em>one</em> week-on-the-calendar example: what they’d do Monday, what they’d see Wednesday, what changes by Friday. No second example, no metaphors. Just one clear, lived-in scene. Suddenly they’re not evaluating an abstract system; they’re watching their own week run differently."
+          "A single lived-in example is easier to follow and retell."
         ],
-        "exercise": "Pick a real explanation you’ll give today—a quick Daisy 1 demo, a planning tweak, or a client update. Before the conversation, write one line: “This lives in the scene where…”. Fill it in with a specific moment, like “you open your laptop at 9am Monday” or “you’re in the Thursday check-in.” When you speak, open with: “Let’s keep this in one concrete situation so it’s easy to see. Imagine it’s [your scene]…” Then describe the idea using only that scene for two full minutes. If you catch yourself jumping to another context, say out loud, “Let’s stay with this one example for now,” and come back. You’re practicing the muscle of holding a single scene until the idea lands."
-      },
-      "masters": {
-        "name": "Amy Cuddy",
-        "talk": "Your Body Language May Shape Who You Are (TED Global 2012)",
-        "videoId": "Ks-_Mh1QhMc",
-        "start": 330,
-        "watchWindow": "Watch from 5:30 to 10:00, where she holds one vivid classroom and interview setting to explain presence.",
-        "paras": [
-          "Amy Cuddy is a master at taking an abstract concept—presence—and grounding it in a single, memorable context rather than bouncing between a dozen situations. In this segment she sticks with a specific high-pressure scenario and walks you through what presence looks and feels like there, instead of drowning you in comparisons.",
-          "As you watch, notice how the idea becomes easy to retell: you can describe her concept of presence simply by replaying that one scene. That’s the One-Context Rule in action; it’s why the talk spread so widely and why people can explain it at dinner years later."
-        ],
-        "observe": [
-          "How she introduces a concrete situation (like a stressful evaluation or interview) and stays inside that scene while unpacking the concept, instead of cycling through many different examples.",
-          "How her language keeps you anchored in that one moment: she uses time markers (“before you go in,” “when you’re sitting there”) and sensory details rather than abstract labels.",
-          "How, only after the core idea is clear in one setting, she gently widens the lens to show other applications—never too early, and always by echoing the original context."
-        ]
+        "exercise": "Write: “This lives in the scene where ___.” Open your explanation with that moment and stay there for two minutes. If you start adding another scenario, say: “Let’s stay with this example for now.”"
       },
       "steal": {
-        "line": "“Let’s keep this in one concrete situation so it’s easy to see.”",
+        "line": "Let’s keep this in one concrete situation so it’s easy to see.",
         "paras": [
-          "Use this line to rescue explanations that are starting to sprawl. When someone looks foggy—or you catch yourself piling on examples—drop this sentence, name a single scene, and rebuild the explanation inside it. You’ll feel like you’re oversimplifying; in reality, you’re finally making it simple enough for someone else to own.",
-          "Try it in a product or planning conversation today: once you’ve chosen your scene, make it the shared reference point. People remember moments, not models; if they can replay the scene, they can replay the idea."
+          "Use this when an explanation starts to sprawl."
         ],
         "example": [
-          "In a Daisy 1 planning review: “Let’s keep this in one concrete situation so it’s easy to see. Imagine it’s Monday at 9am, you open Daisy 1, and you’re deciding what to move into ‘Today.’ Here’s exactly how this new rhythm shows up on that one screen…”",
-          "In a quarterly planning session: “Let’s keep this in one concrete situation so it’s easy to see. Picture the last week of the quarter, you’re scanning what’s still open. In that moment, this rule changes what you do next and what you ignore. Let’s walk just that week.”"
+          "Imagine it’s the Thursday check-in. Here is what changes in that one moment."
         ]
       }
     },
@@ -214,51 +136,32 @@
       "date": "2026-08-24",
       "displayDate": "Mon · Aug 24",
       "domain": "Decision-Making",
-      "hook": "Plan in day-tight compartments",
+      "hook": "Give today one job.",
       "insight": {
         "title": "Day-Tight Compartment Planning",
         "paras": [
-          "Dale Carnegie’s idea of living in <em>day-tight compartments</em> is a simple decision model: seal off yesterday, fence off tomorrow, and commit fully to the narrow slice of decisions you can actually move today. Instead of carrying the whole quarter in your head, you decide once, \"What does winning <strong>today</strong> look like?\" and then treat everything else as background noise until that is done.",
-          "You can turn this into a planning framework: (1) Pick one high-leverage outcome for today, (2) choose at most three visible moves that advance it, and (3) consciously ignore every other \"good idea\" until those moves ship. The power isn’t in being perfectly organized; it’s in reducing the decision surface so your attention, questions, and conversations all line up behind a tiny number of concrete actions."
+          "Dale Carnegie’s <strong>day-tight compartments</strong> idea is a focus rule: stop carrying yesterday and the whole quarter in your head. Define one visible outcome for today, choose at most three moves that create it, and let other good ideas wait. The constraint reduces decisions and makes progress easier to see."
+        ],
+        "after": [
+          "Instead of debating an entire roadmap, ask: “What would visibly exist by 5 p.m. if today went well?”"
         ],
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='40' y='60' width='140' height='200' rx='8' fill='none' stroke='#9ba0b8' stroke-width='2'/><rect x='210' y='40' width='140' height='240' rx='8' fill='none' stroke='#e8b84b' stroke-width='3'/><rect x='380' y='60' width='140' height='200' rx='8' fill='none' stroke='#9ba0b8' stroke-width='2'/><text x='110' y='290' text-anchor='middle' fill='#9ba0b8' font-family='system-ui' font-size='12'>Yesterday</text><text x='280' y='290' text-anchor='middle' fill='#eceef7' font-family='system-ui' font-size='12'>Today</text><text x='450' y='290' text-anchor='middle' fill='#9ba0b8' font-family='system-ui' font-size='12'>Tomorrow</text><line x1='210' y1='110' x2='350' y2='110' stroke='#5fd4c4' stroke-width='2'/><circle cx='240' cy='110' r='5' fill='#5fd4c4'/><circle cx='280' cy='110' r='5' fill='#5fd4c4'/><circle cx='320' cy='110' r='5' fill='#5fd4c4'/><text x='280' y='30' text-anchor='middle' fill='#ff7a6e' font-family='system-ui' font-size='13'>3 moves only</text><path d='M280 140 C280 170 300 190 320 205' stroke='#a48bfa' stroke-width='2' fill='none' stroke-dasharray='4 3'/><circle cx='320' cy='205' r='4' fill='#a48bfa'/></svg>",
-        "visualCaption": "Seal off yesterday and tomorrow so today’s three moves are painfully obvious.",
-        "after": [
-          "In a quarterly planning session, you can run your Daisy 1 or strategy agent roadmap through this lens: instead of debating the whole quarter, ask, \"What does a great <em>Tuesday</em> look like for this project?\" Then block everything else out and only design the next 1–3 observable moves: a specific demo you can show, a decision memo you can send, or a user conversation you can have. Tomorrow’s plan can change; today’s tiny container stays sealed."
-        ]
+        "visualCaption": "Seal off yesterday and tomorrow so today’s three moves are painfully obvious."
       },
       "lab": {
-        "title": "The One-Day Roadmap",
+        "title": "Build a One-Day Roadmap",
         "paras": [
-          "Meetings and planners often live at the quarter or sprint level, but your actual leverage comes from what you decide in the next 6–8 hours. When everything is competing at the same priority level in your head, your conversations get vague: \"We should ship X soon,\" \"We need to clarify Y,\" \"At some point we’ll talk to users.\"",
-          "Picture a short planning huddle for Daisy 1 or your consulting practice. Instead of reviewing a long list, you say, \"Today has one job. By 4 p.m., we either have a concrete demo, or we don’t.\" That constraint sharpens everything: which questions you ask, which messages you send, which calls you take. You’ve carved out a day-tight compartment and made it the only game in town."
+          "A short horizon turns vague priorities into observable work."
         ],
-        "exercise": "Under five minutes, build your one-day roadmap:\n\n1) Write at the top of a page: \"If today were a success for my work, what single visible thing would exist by 5 p.m.?\" Answer in one line.\n\n2) Underneath, list at most three moves that make that outcome real. Label them 1, 2, 3.\n\n3) Circle the first move and write a quick script you’ll use to protect this compartment when interruptions show up:\n\n\"Today I’m heads-down on [outcome] until [time]. Can we talk about [their topic] after that, or tomorrow?\"\n\nKeep the page in front of you. Any time a new task appears, say out loud: \"Not today,\" unless it directly advances your one outcome."
-      },
-      "masters": {
-        "name": "Chris Anderson",
-        "talk": "TED's secret to great public speaking",
-        "videoId": "-FOCpMAww28",
-        "start": 220,
-        "watchWindow": "Watch 3:40–6:00",
-        "paras": [
-          "Chris Anderson explains that every strong talk is built around one idea made understandable in a limited time window. That’s a communication version of day-tight compartments: you choose a single concept, build a short path to it, and refuse to wander.",
-          "Notice how he keeps cutting away anything that doesn’t serve the core idea: no detours, no side projects, just one container with one job. It’s the same discipline you need in your daily planning: one idea, a few moves, full attention."
-        ],
-        "observe": [
-          "How he names the \"one major idea\" of a talk and returns to it, instead of stacking multiple big ideas.",
-          "The way his examples are all pointed at that idea, not at everything he knows about public speaking.",
-          "How the talk structure makes the next step obvious: here’s the idea, here’s why it matters, here’s how to apply it."
-        ]
+        "exercise": "Write one outcome that must exist by day’s end. List no more than three moves that produce it. Circle the first. Protect the block with: “I’m focused on ___ until ___. Can we take that other topic afterward?”"
       },
       "steal": {
-        "line": "“Today has one job; everything else can wait.”",
+        "line": "Today has one job; everything else can wait.",
         "paras": [
-          "Use this line to reset a meeting, a planning doc, or your own focus. Say it at the start of a work block, then name the one job and the 2–3 moves that advance it. The sentence gives you permission to ignore smart, interesting distractions that don’t serve today’s container.",
-          "Practice it in low-stakes settings: a quick sync about StoryOS, a consulting check-in, or a strategy agent review. Treat the line as a switch that closes all the other compartments for a few hours."
+          "Say it before a work block or a meeting with too many priorities."
         ],
         "example": [
-          "In a roadmap review: \"Today has one job; everything else can wait. By the end of this hour, we decide which three Daisy 1 workflows we’ll actually prototype this week. Let’s park everything that doesn’t change that decision.\""
+          "By the end of this hour, we will make one decision. Let’s park anything that does not change it."
         ]
       }
     },
@@ -266,51 +169,32 @@
       "date": "2026-08-22",
       "displayDate": "Sat · Aug 22",
       "domain": "Storytelling",
-      "hook": "One sharp contrast can carry the whole talk.",
+      "hook": "One contrast can carry the whole story.",
       "insight": {
         "title": "The Contrast Spine",
         "paras": [
-          "Today’s model is <strong>contrast framing</strong>: structuring an explanation around a clear \"from → to\" shift instead of a pile of points. You deliberately hold two worlds side by side—<em>what is</em> vs. <em>what could be</em>—so your listener can feel the gap and why it matters.",
-          "You can treat this as a simple spine: <em>Now → Problem with Now → Could Be → Path → First Step</em>. Every time you alternate between the current reality and the better one, you recharge attention. It works in pitches, product updates, even quick \"here’s why this tool matters\" moments."
+          "<strong>Contrast framing</strong> organizes an explanation around a visible shift instead of a list of points. Use this spine: <em>Now → Cost → Could Be → Path → First Step</em>. Moving between the current reality and a better one creates tension, clarity, and momentum without theatrical delivery."
+        ],
+        "after": [
+          "When explaining Daisy 1 or another project, show how one familiar moment works now and how you want that same moment to feel."
         ],
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><line x1='60' y1='260' x2='500' y2='60' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='4 6'/><circle cx='90' cy='230' r='6' fill='#eceef7'/><circle cx='210' cy='190' r='6' fill='#ff7a6e'/><circle cx='320' cy='150' r='6' fill='#eceef7'/><circle cx='430' cy='110' r='6' fill='#5fd4c4'/><text x='80' y='255' fill='#9ba0b8' font-size='10'>Now</text><text x='180' y='210' fill='#ff7a6e' font-size='10'>Pain</text><text x='300' y='170' fill='#eceef7' font-size='10'>Could Be</text><text x='410' y='130' fill='#5fd4c4' font-size='10'>Path</text><path d='M90 230 C140 210 160 210 210 190' stroke='#ff7a6e' stroke-width='3' fill='none'/><path d='M210 190 C260 170 280 170 320 150' stroke='#eceef7' stroke-width='3' fill='none'/><path d='M320 150 C370 130 390 130 430 110' stroke='#5fd4c4' stroke-width='3' fill='none'/><text x='60' y='40' fill='#e8b84b' font-size='14'>Contrast spine: from Now → Could Be</text></svg>",
-        "visualCaption": "A single sloping line with small turns: Now → Pain → Could Be → Path.",
-        "after": [
-          "When you walk someone through Daisy 1 or your strategy agent, don’t start with features. Start with the spine: walk them through a concrete \"Now\" scene (how work actually feels today), name the pain in that scene, paint the \"Could Be\" if your system works, then show the path and one realistic first step. The more specific the contrast, the less you need performance to make the idea land."
-        ]
+        "visualCaption": "A single sloping line with small turns: Now → Pain → Could Be → Path."
       },
       "lab": {
-        "title": "Build a 5-Line Contrast Pitch",
+        "title": "Write a 5-Line Contrast Pitch",
         "paras": [
-          "Picture a quick strategy check-in where someone asks, \"So what’s Daisy 1 really changing?\" If you answer with a list (tasks, timelines, integrations), their eyes glaze. If you answer with contrast, you give their brain a before/after picture it can keep replaying without you.",
-          "You’re not trying to be theatrical; you’re just choosing to organize the same facts around a visible shift in reality."
+          "People remember a before-and-after picture more easily than a feature list."
         ],
-        "exercise": "Take a current project (Daisy 1, StoryOS, DreamGuard, or your consulting work) and write exactly five lines using this template:\n1) \"Right now…\" (describe the current reality in one vivid sentence)\n2) \"The hidden cost is…\" (one concrete pain)\n3) \"It could look like this instead…\" (paint the better world)\n4) \"The shift is basically…\" (name the core change in one phrase)\n5) \"The first tiny step is…\" (one action they can take today)\n\nThen, in your next conversation about that project, read your five lines almost verbatim. Notice where the other person leans in or asks a follow-up."
-      },
-      "masters": {
-        "name": "Nancy Duarte",
-        "talk": "The secret structure of great talks (TEDxEast)",
-        "videoId": "1nYFpuc2Umk",
-        "start": 120,
-        "watchWindow": "Watch from 2:00 to 6:00, where she walks through the \"what is / what could be\" pattern.",
-        "paras": [
-          "Nancy Duarte shows how great talks swing between the current reality and an imagined future, instead of crawling through a linear outline. That contrast pattern is the same spine you can use in a 90-second product demo or a short strategy update.",
-          "As you watch, translate her big-stage examples into your small rooms: one teammate, one investor, one client, one tool you’re trying to make feel inevitable."
-        ],
-        "observe": [
-          "How clearly she labels \"what is\" vs. \"what could be,\" so you’re never confused about which world you’re in.",
-          "How the contrast gets tighter and faster toward the end, building energy without her raising her voice.",
-          "How her visuals are simple lines and shapes that reinforce the pattern, not decorate it—easy to steal for your own whiteboard or slide."
-        ]
+        "exercise": "Complete five short lines: “Right now…” “The hidden cost is…” “It could look like…” “The shift is…” “The first step is…” Read them aloud and cut any detail that does not strengthen the contrast."
       },
       "steal": {
-        "line": "“Right now it works like this; I want it to feel more like this.”",
+        "line": "Right now it works like this; I want it to feel like this.",
         "paras": [
-          "Use this sentence as your default pivot from status to possibility. Any time you’re tempted to dive into details—roadmap, architecture, meeting agendas—pause and drop this line first. Then give one concrete example of \"this\" and one of \"that.\"",
-          "Practice it in low-stakes chats: a weekly planning sync, a quick Daisy 1 walkthrough, or a client debrief. The more you default to contrast, the easier it becomes to make even small moves feel like part of a bigger shift."
+          "Use it before details so the listener knows what change the details serve."
         ],
         "example": [
-          "In a quarterly planning session: “Right now it works like this: every team keeps their own board and we spend Monday just reconciling them. I want it to feel more like this: one shared Daisy 1 view where Monday is about decisions, not detective work.”"
+          "Right now Monday is reconciliation. I want Monday to be decision time."
         ]
       }
     },
@@ -318,51 +202,45 @@
       "date": "2026-08-20",
       "displayDate": "Thu · Aug 20",
       "domain": "Conversation",
-      "hook": "One sharp, specific question can flip a tense room.",
+      "hook": "Name their reality before defending yours.",
       "insight": {
         "title": "Tactical Empathy in One Line",
         "paras": [
-          "Today’s model is <strong>tactical empathy</strong> from Chris Voss: you don’t win a conversation by arguing your view harder; you win by proving you understand theirs so well they relax their grip on it. Tactical empathy is not agreement. It’s the deliberate, out-loud demonstration that you see the other person’s fears, pressures, and constraints.",
-          "The tiny move: <em>name their reality before you defend yours</em>. Instead of jumping into explanation, you say a sentence that sounds like you’re reading their internal monologue. Done well, this lowers defensiveness in negotiations, roadmap debates, and client check-ins without you giving up your position."
+          "Chris Voss’s <strong>tactical empathy</strong> is the deliberate act of showing that you understand another person’s pressures without necessarily agreeing with them. Before explaining your position, name the concern you think they are carrying. If you are wrong, they will correct you; if you are right, defensiveness drops."
+        ],
+        "after": [
+          "Before presenting a project change, try: “It probably feels like this adds work before it removes any.” Then pause."
         ],
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='170' cy='160' r='80' fill='none' stroke='#5fd4c4' stroke-width='4'/><circle cx='390' cy='160' r='80' fill='none' stroke='#a48bfa' stroke-width='4'/><path d='M210 130 Q280 100 350 130' fill='none' stroke='#eceef7' stroke-width='3' stroke-linecap='round'/><path d='M210 190 Q280 220 350 190' fill='none' stroke='#9ba0b8' stroke-width='2' stroke-linecap='round' stroke-dasharray='6 6'/><circle cx='280' cy='160' r='6' fill='#e8b84b'/><text x='150' y='270' fill='#eceef7' font-family='system-ui, sans-serif' font-size='14'>their view</text><text x='365' y='270' fill='#eceef7' font-family='system-ui, sans-serif' font-size='14'>your view</text><text x='250' y='295' fill='#ff7a6e' font-family='system-ui, sans-serif' font-size='13'>spoken bridge</text></svg>",
-        "visualCaption": "Two minds, one spoken bridge: name their view before you defend yours.",
-        "after": [
-          "When you present a Daisy 1 change, a StoryOS narrative, or a quarterly planning shift, try leading with one tactical-empathy line: “You’re probably worried this adds more overhead without freeing any time.” Then pause. You can still walk through the benefits and logic, but you’ll be speaking to someone who feels seen instead of cornered."
-        ]
+        "visualCaption": "Two minds, one spoken bridge: name their view before you defend yours."
       },
       "lab": {
-        "title": "The Internal Monologue Test",
+        "title": "Try the Internal-Monologue Test",
         "paras": [
-          "Why this matters: most resistance you feel in conversations is invisible. People rarely say, “I’m worried this makes me look bad,” or “I don’t trust this will stick.” Tactical empathy lets you surface that inner voice safely, so tension drops and information starts to flow.",
-          "Picture a quick strategy check-in on your strategy agent work. You suggest a new workflow, and a stakeholder crosses their arms and says, “I’m not sure this is the right time.” Instead of rebutting, you run the internal monologue test: what would they be thinking if they were completely honest? Your job is to say a short, clean version of that thought out loud."
+          "Resistance becomes easier to discuss once its likely source is spoken aloud."
         ],
-        "exercise": "Under 5 minutes: pick one real person you’ll talk to today (teammate, collaborator, or client).\n1) Write one sentence that starts with “It probably feels like…” or “You’re likely worried that…” and completes their internal monologue about a change you want.\n2) In your next relevant conversation, use this exact script once, early:\n\n“Before I walk through anything, it probably feels like this might be one more thing on your plate without clear upside.”\n\nThen stay quiet for three full seconds. Let them correct, confirm, or deepen what you surfaced before you explain your idea."
+        "exercise": "Choose one conversation that may have friction. Write a sentence beginning, “You’re likely worried that…” Say it early, then stay quiet for three seconds. Let the other person confirm, correct, or deepen it before you explain your view."
       },
       "masters": {
         "name": "Chris Voss",
-        "talk": "Chris Voss on Tactical Empathy and Negotiation",
-        "videoId": "QxnCteCFdu4",
-        "start": 60,
-        "watchWindow": "Watch for 3 minutes from 1:00 to 4:00.",
+        "talk": "Never Split the Difference | Talks at Google",
+        "videoId": "1dx4z1_A2bs",
+        "start": 900,
+        "watchWindow": "Watch 15:00–17:30.",
         "paras": [
-          "Chris Voss treats every conversation as a negotiation over information, emotion, and outcomes. His idea of tactical empathy is perfect for your day-to-day product, planning, and consulting talks because it shows how to lower the other person’s guard without giving up your point of view.",
-          "In this segment, watch how he labels the other side’s feelings and concerns before pushing any agenda. That move is exactly what you can adapt into one clean line in your own project debates and client calls."
+          "This one is worth watching because the pause and tone are the technique: Voss sounds curious, not manipulative."
         ],
         "observe": [
-          "Notice how he uses phrases like “It seems like…” and “It sounds like…” instead of “You are…” to keep the tone soft but specific.",
-          "Watch his pacing: he often pauses after naming a concern, giving the other person space to agree, correct, or open up.",
-          "Listen for how he never rushes to logic; he earns the right to explain by first proving he understands the emotional and practical stakes on the other side."
+          "Notice how long he waits after naming the other person’s perspective."
         ]
       },
       "steal": {
-        "line": "“Before I explain my view, let me try to say what I think this looks like from your side.”",
+        "line": "Before I explain my view, let me try to say what this looks like from your side.",
         "paras": [
-          "Use this line once today in a real conversation where you expect friction: a planning review, a product decision, or a scope discussion. Follow it immediately with one short guess at their internal monologue, then stop talking. If you’re wrong, they’ll correct you and reveal what’s really in the way. If you’re right, you’ve just lowered the temperature enough to have an honest discussion.",
-          "Over time, you can make this automatic: any time you feel pushback, you briefly switch into “tactical empathy mode,” name their perspective in one line, and only then continue with your proposal."
+          "Use it when logic alone is making a tense conversation tighter."
         ],
         "example": [
-          "In a quarterly planning meeting about Daisy 1, you say: “Before I explain my view, let me try to say what I think this looks like from your side. It probably feels like we’re asking you to change how you coordinate projects when the current way, while messy, at least feels predictable.” Then you pause, let them respond, and only afterward walk through how Daisy 1 might actually remove two of their current coordination headaches."
+          "It may feel like we’re changing a familiar process before proving the new one will help."
         ]
       }
     },
@@ -370,51 +248,32 @@
       "date": "2026-08-18",
       "displayDate": "Tue · Aug 18",
       "domain": "Product Thinking",
-      "hook": "When everything is possible, nothing feels important.",
+      "hook": "Choose the lane before choosing the work.",
       "insight": {
         "title": "The Guardrail Rule",
         "paras": [
-          "<strong>The Guardrail Rule</strong>: before you decide what to do, decide what you will <em>not</em> do. In product work, strategy, even your week, you move faster when you put up firm \"no\" lines first. This is a practical version of Barry Schwartz’s \"paradox of choice\"—too many options create paralysis and regret. Guardrails shrink the search space so your brain can actually commit.",
-          "A useful guardrail has three traits: it is <em>visible</em> (you can point to it), <em>binary</em> (in or out), and <em>binding for a while</em> (you don’t revisit it every hour). Instead of staring at 27 possible features for your next Daisy 1 release, you might set guardrails like \"no new integrations this cycle\" or \"nothing that requires customer data we don’t already store.\" You instantly turn an overwhelming buffet into a short list you can reason about calmly."
+          "The <strong>Guardrail Rule</strong> says to decide what you will not do before choosing what you will do. Clear constraints reduce choice overload and make tradeoffs easier. A useful guardrail is visible, binary, and fixed for a defined period—such as “no new integrations this cycle.”"
+        ],
+        "after": [
+          "Before the next Daisy 1 sprint or planning block, write three temporary “no” lines and judge every idea against them."
         ],
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='60' width='440' height='200' rx='20' fill='none' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='6 6'/><line x1='160' y1='80' x2='160' y2='280' stroke='#e8b84b' stroke-width='4'/><line x1='400' y1='80' x2='400' y2='280' stroke='#e8b84b' stroke-width='4'/><circle cx='110' cy='160' r='10' fill='#ff7a6e'/><circle cx='220' cy='140' r='10' fill='#5fd4c4'/><circle cx='310' cy='190' r='10' fill='#a48bfa'/><circle cx='450' cy='200' r='10' fill='#5fd4c4'/><text x='95' y='300' fill='#eceef7' font-size='12'>NO</text><text x='392' y='300' fill='#eceef7' font-size='12'>NO</text><text x='210' y='50' fill='#eceef7' font-size='14'>FOCUS ZONE</text></svg>",
-        "visualCaption": "Guardrails turn an infinite field of options into one clear lane.",
-        "after": [
-          "Today, pick one arena—your next Daisy 1 sprint, a StoryOS workshop outline, or a weekly planning block—and write three guardrails before you list options. For example: \"no more than one major decision per meeting,\" \"no slides that the strategy agent can’t help generate later,\" or \"no tasks that depend on people who aren’t in the room.\" You’ll feel the subtle relief of constraint: the conversation narrows, tradeoffs sharpen, and your choice finally has permission to be good enough instead of perfect."
-        ]
+        "visualCaption": "Guardrails turn an infinite field of options into one clear lane."
       },
       "lab": {
-        "title": "Set Three Guardrails Before You Brainstorm",
+        "title": "Set Three Guardrails",
         "paras": [
-          "You sit down to map the next month of work. Your doc is blank, your head is full, and you’re tempted to start a giant idea list. This is exactly when choice overload kicks in—you generate more options than you can meaningfully compare, and the next hour dissolves into rearranging bullets.",
-          "Instead, you pause for two minutes and write three clear \"we will not\" guardrails. You’ve just changed the game: now ideas either fit the lane or they don’t, and conversations get crisper because you can say \"that’s good, but it’s outside our guardrails for this cycle.\""
+          "Constraints turn brainstorming from an infinite search into a useful comparison."
         ],
-        "exercise": "In your next planning moment (Daisy 1 roadmap, DreamGuard experiment list, or consulting project outline), do this before any brainstorming:\n\n1) Open a fresh note and title it \"Guardrails for [X]\".\n2) Write this exact prompt: \"For the next 4 weeks, we <strong>refuse</strong> to…\" and finish three lines:\n   - \"We refuse to ship anything that…\"\n   - \"We refuse to spend time on work that…\"\n   - \"We refuse to add more than [N] items that…\" (pick N).\n3) Only then start listing ideas, but each idea must be checked against the guardrails. When someone (including you) proposes something exciting but off-lane, use this line: \"That’s good—does it fit inside our guardrails, or is it for the next cycle?\""
-      },
-      "masters": {
-        "name": "Barry Schwartz",
-        "talk": "The paradox of choice",
-        "videoId": "VO6XEQIsCoM",
-        "start": 120,
-        "watchWindow": "Watch minutes 2:00–7:00, where he explains how too many options create paralysis and dissatisfaction.",
-        "paras": [
-          "Barry Schwartz’s work on the paradox of choice is the intellectual backbone of the Guardrail Rule. He shows how adding options doesn’t just make decisions harder—it makes you less satisfied with the choices you finally make.",
-          "Watching this segment with a product or strategy lens makes the lesson concrete: more features, more possible priorities, and more \"maybe\" projects often make you feel worse about the work, not better. Guardrails are your antidote."
-        ],
-        "observe": [
-          "Notice how he uses everyday examples (like shopping) before jumping to larger life decisions. You can mirror this move by starting your own explanations of constraints with trivial examples before you apply them to your product roadmap.",
-          "Listen for his phrasing around \"paralysis\" and \"dissatisfaction.\" How might you borrow that language the next time you explain why you want fewer options on the table?",
-          "Watch how he contrasts the intuitive story (more choice = more freedom) with the data. In your own meetings, practice explicitly naming the intuitive story, then presenting the constraint-based counter-story as a relief, not a limitation."
-        ]
+        "exercise": "Finish three sentences: “For the next four weeks, we will not ship anything that ___.” “We will not spend time on work that ___.” “We will not add more than ___.” Then test each proposed task against the list."
       },
       "steal": {
-        "line": "Before we add more options, let’s agree on the guardrails.",
+        "line": "Before we add options, let’s agree on the guardrails.",
         "paras": [
-          "Use this line as a polite brake whenever a conversation starts exploding sideways—new features, new audiences, new metrics. It reframes constraint as a shared decision instead of you being the blocker. Say it once, then immediately propose two or three example guardrails to make it easy for others to join you.",
-          "Try it today in a planning or design discussion. When someone suggests yet another direction, respond with the line, then add: \"For this cycle, I’d propose: no new categories, no dependencies outside this team, and no work we can’t validate in two weeks. What would you add or change?\" Notice how the energy shifts from endless possibility to specific, workable focus."
+          "Use it as a polite brake when a discussion expands sideways."
         ],
         "example": [
-          "In a Daisy 1 roadmap review: \"We’ve got at least ten interesting ideas on the table. Before we add more options, let’s agree on the guardrails. For this sprint, I propose no new integrations, no net-new surfaces in the UI, and nothing that needs more than one extra person to maintain. Within that lane, which ideas still look best?\""
+          "For this cycle: no new categories, no outside dependencies, and nothing we cannot test in two weeks."
         ]
       }
     },
@@ -422,51 +281,32 @@
       "date": "2026-08-16",
       "displayDate": "Sun · Aug 16",
       "domain": "Decision-Making",
-      "hook": "One sharp, specific line can save you a month of confusion.",
+      "hook": "Make one explicit bet.",
       "insight": {
         "title": "The One-Bet Rule",
         "paras": [
-          "When a choice feels fuzzy, force it through what poker players call a <em>single decisive bet</em>: \"If I had to stake the next 30 days on one clear move, what would I pick?\" It’s a way of turning a blurry cluster of options into one concrete commitment. In decision science this taps <strong>expected value thinking</strong>—you stop chasing perfect certainty and instead ask which option has the best payoff-to-cost ratio given what you know now.",
-          "The One-Bet Rule is simple: (1) Name the horizon (7 days, 30 days, one quarter). (2) State the bet in one sentence: \"I’m betting that focusing on X, even at the cost of Y, is the best move for the next N days.\" (3) List the minimum evidence you need by the end of that window to call the bet a win or a loss. You’re not guessing the future; you’re designing a reversible experiment with clear upside, acceptable downside, and a clock."
+          "When priorities compete, turn the choice into one time-boxed bet: <em>“For the next 30 days, I’m betting that X matters more than Y.”</em> This applies expected-value thinking without pretending you know the future. Name the upside, the cost, and the evidence that would tell you whether the bet worked."
+        ],
+        "after": [
+          "For one workstream, choose a 14- or 30-day focus and write down what you are deliberately delaying."
         ],
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='180' cy='160' r='88' fill='none' stroke='#9ba0b8' stroke-width='3'/><circle cx='380' cy='160' r='88' fill='none' stroke='#9ba0b8' stroke-width='3'/><path d='M120 260 H440' stroke='#eceef7' stroke-width='2' stroke-linecap='round'/><rect x='260' y='120' width='40' height='80' rx='4' fill='#e8b84b'/><path d='M180 72 L180 248' stroke='#5fd4c4' stroke-width='2' stroke-dasharray='4 6'/><path d='M380 72 L380 248' stroke='#ff7a6e' stroke-width='2' stroke-dasharray='4 6'/><circle cx='180' cy='160' r='8' fill='#eceef7'/><circle cx='380' cy='160' r='8' fill='#eceef7'/><text x='180' y='290' fill='#9ba0b8' font-size='12' text-anchor='middle'>Options</text><text x='380' y='290' fill='#e8b84b' font-size='12' text-anchor='middle'>One bet</text><text x='280' y='115' fill='#a48bfa' font-size='11' text-anchor='middle'>30 days</text></svg>",
-        "visualCaption": "Many options, one deliberate bet for a fixed window.",
-        "after": [
-          "You can use the One-Bet Rule today on a public-safe project decision: for example, \"For the next 30 days, I’m betting on getting Daisy 1 into the hands of 10 real teams, even if it slows new features,\" then defining three signals you’ll check at the end (usage, feedback quality, clarity of roadmap). Instead of juggling priorities in your head, you make one explicit bet, write it down, and let that commitment quietly simplify a hundred smaller choices."
-        ]
+        "visualCaption": "Many options, one deliberate bet for a fixed window."
       },
       "lab": {
-        "title": "Turn a Messy Priority List into One Bet",
+        "title": "Turn Priorities into One Bet",
         "paras": [
-          "Imagine you’re in a quarterly planning check-in with your small product team. You have a wall (or screen) full of ideas: new views in Daisy 1, improvements to onboarding, a StoryOS narrative workshop you keep postponing, and a dozen “we should really…” tasks. Everyone agrees they’re important. Nobody agrees what to do first. The anxiety isn’t from lack of ideas; it’s from lack of a decisive bet.",
-          "This is where the One-Bet Rule shines. Instead of arguing which idea is objectively best, you ask: \"Which single bet gives us the highest expected learning or upside in the next 30 days, with risk we can afford?\" You’re not picking a forever-strategy; you’re picking a testable commitment with a timer."
+          "A temporary commitment can simplify dozens of smaller decisions."
         ],
-        "exercise": "Under 5 minutes, write this in a notebook or notes app:\n\n1) List 3–5 active priorities in front of you right now.\n2) Set a horizon: 14 days or 30 days.\n3) Use this exact script and fill in the blanks:\n   \"For the next [14/30] days, I’m betting that focusing on [ONE CLEAR FOCUS], even at the cost of [TWO THINGS YOU’LL DE-PRIORITIZE], is the best move. I’ll call this bet a win if by [DATE] I see: [METRIC OR EVIDENCE 1], [METRIC OR EVIDENCE 2].\"\n4) Read it out loud once. If it feels vague, sharpen the focus or the evidence until a teammate would know exactly what you’re doing and what you’re temporarily ignoring."
-      },
-      "masters": {
-        "name": "Annie Duke",
-        "talk": "Thinking in Bets | Talks at Google",
-        "videoId": "3vNApYnkLtU",
-        "start": 540,
-        "watchWindow": "Watch minutes 9:00–16:00 where she explains decisions as bets and working with incomplete information.",
-        "paras": [
-          "Annie Duke’s work on \"thinking in bets\" is the backbone of the One-Bet Rule: treat every choice as a probabilistic bet under uncertainty instead of waiting for perfect information. In this segment she breaks down how to separate decision quality from outcome luck, and why you should define your criteria for a good bet upfront rather than rewriting the story afterward.",
-          "Watching her talk while you’re actively wrestling with product and project choices makes the idea concrete: you’re not trying to be right about the future, you’re trying to be rigorous about how you choose what to stake your time on next."
-        ],
-        "observe": [
-          "Notice how she keeps saying \"I don’t know\" while still making strong recommendations; she models that you can act decisively without pretending to have certainty.",
-          "Watch how she turns abstract probability into vivid examples from poker and business, so you immediately see what a \"bet\" looks like in real work.",
-          "Pay attention to her emphasis on pre-defining success and failure conditions for a bet; this is exactly what turns your 30-day One-Bet statement into a real experiment instead of a vague hope."
-        ]
+        "exercise": "List three active priorities. Pick a horizon. Complete: “For the next ___ days, I’m betting on ___, even at the cost of ___. I’ll call it a win if by ___ I see ___.” If a teammate cannot tell what you will ignore, sharpen it."
       },
       "steal": {
-        "line": "“For the next 30 days, I’m making one explicit bet: we focus on X, even if it means we delay Y and Z.”",
+        "line": "For the next 30 days, we’re making one bet: X, even if it delays Y.",
         "paras": [
-          "Use this line in your next planning conversation, even if it’s just with yourself. The power move is naming not only what you will do, but also what you are consciously willing to let slip for a short, defined window. That clarity calms the low-level guilt of all the things you’re not doing and gives your team (or your own brain) a simple rule to align around.",
-          "Today, try it in a workstream you care about: maybe a strategy agent experiment, where the bet is on gathering a small set of high-quality real-world use cases instead of building more capabilities. Say the line, write it where you’ll see it, and let that one bet quietly decide a dozen small choices for you this week."
+          "Say both the focus and the sacrifice; otherwise it is only another priority."
         ],
         "example": [
-          "In a Daisy 1 roadmap sync you might say: \"For the next 30 days, I’m making one explicit bet: we focus on getting three real teams fully running on Daisy 1, even if it means we delay the analytics dashboard and the new notification rules. If we’re right, we’ll end the month with real usage stories and sharper requirements instead of more speculative features.\""
+          "We’re betting on learning from real use, even if that delays another round of features."
         ]
       }
     },
@@ -474,51 +314,32 @@
       "date": "2026-08-14",
       "displayDate": "Fri · Aug 14",
       "domain": "Leadership",
-      "hook": "Lead with the smallest possible promise",
+      "hook": "Make one promise people can test.",
       "insight": {
         "title": "The Minimum Credible Promise",
         "paras": [
-          "When you talk about your work, you’re always making a promise: \"If you give this attention, here’s what you’ll get.\" The problem is most promises are either too big (so they feel like hype) or too vague (so they don’t stick). The <em>Minimum Credible Promise</em> is the smallest, clearest outcome you can confidently deliver, stated in one sharp line. Small enough to feel honest, concrete enough to be testable, and meaningful enough that someone would care.",
-          "Leadership conversations get easier when people know exactly what you are promising and what you are <em>not</em> promising. Instead of selling a grand vision every time, you anchor the room on one specific shift: \"In 30 days, you’ll be able to see X,\" or \"By next quarter, this will no longer be your problem.\" Once that minimum credible promise is on the table, everyone can argue about something real: is this the right promise, and what would have to be true for it to come good?"
+          "The <strong>Minimum Credible Promise</strong> is the smallest outcome you can confidently deliver that still matters. Big promises sound like hype; vague promises are impossible to judge. One clear, observable commitment gives a team something real to plan around and helps you cut anything that does not support it."
+        ],
+        "after": [
+          "For a live project or workshop, state what will be different in 30–90 days—and what you are not promising yet."
         ],
         "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='220' width='440' height='12' rx='6' fill='#9ba0b8'/><rect x='60' y='220' width='140' height='12' rx='6' fill='#e8b84b'/><circle cx='200' cy='226' r='6' fill='#eceef7'/><rect x='80' y='80' width='220' height='90' rx='8' fill='none' stroke='#5fd4c4' stroke-width='2'/><line x1='90' y1='110' x2='290' y2='110' stroke='#5fd4c4' stroke-width='2'/><line x1='90' y1='130' x2='230' y2='130' stroke='#5fd4c4' stroke-width='2'/><rect x='330' y='110' width='150' height='40' rx='6' fill='#a48bfa'/><line x1='300' y1='125' x2='330' y2='130' stroke='#eceef7' stroke-width='2'/><text x='337' y='135' fill='#1b1e30' font-size='11' font-family='system-ui, sans-serif'>Minimum</text><text x='337' y='150' fill='#1b1e30' font-size='11' font-family='system-ui, sans-serif'>Credible Promise</text><rect x='60' y='250' width='80' height='6' rx='3' fill='#ff7a6e'/><rect x='160' y='250' width='60' height='6' rx='3' fill='#5fd4c4'/><rect x='240' y='250' width='40' height='6' rx='3' fill='#a48bfa'/></svg>",
-        "visualCaption": "Zoom in from a vague vision to one clear, testable promise.",
-        "after": [
-          "Today, pick one live thread—maybe how you describe Daisy 1 to a prospective collaborator, or how you frame the next quarterly planning workshop—and write a single-sentence minimum credible promise for it. Use that line as your north star in the next conversation: notice how much easier it is to decide what to include, what to cut, and which questions actually matter once the promise is explicit."
-        ]
+        "visualCaption": "Zoom in from a vague vision to one clear, testable promise."
       },
       "lab": {
-        "title": "Sharpen One Promise Before Your Next Meeting",
+        "title": "Sharpen One Promise",
         "paras": [
-          "Imagine you’re about to kick off a planning session for your strategy agent work. People are half-listening, waiting to see whether this is yet another AI toy or something that will change their week. If you open with generalities—\"This could really transform how we plan\"—you force them to guess what it means for them, and they drift.",
-          "If instead you walk in with one minimum credible promise, everyone’s attention locks on the same point. You are quietly leading by saying, \"Here’s the exact shift I’m on the hook for,\" and inviting them to help you stress-test and improve <em>that</em>, not the entire universe of possibilities."
+          "A narrow promise focuses attention without shrinking ambition."
         ],
-        "exercise": "Before your next work conversation, do a 5-minute promise pass:\n\n1) Pick one upcoming interaction today: a check-in about Daisy 1, a quarterly planning conversation, or a client call.\n2) On paper, answer three prompts:\n   - \"In 30–90 days, what is the smallest outcome I’m truly confident I can deliver?\"\n   - \"Why would that be non-trivial for them?\"\n   - \"What am I explicitly <not> promising yet?\"\n3) Turn that into a one-line script. Use this template and fill in the brackets:\n   - \"The only thing I’m promising for the next [time window] is that you’ll be able to [specific, observable change].\"\n4) Say it verbatim in your conversation. For example: \"The only thing I’m promising for the next 4 weeks is that you’ll be able to see, in one place, what’s blocked across all Daisy 1 projects—nothing fancier yet.\" Notice how people’s questions change when the promise is that clear."
-      },
-      "masters": {
-        "name": "Andy Grove",
-        "talk": "Andy Grove on Strategic Inflection Points (Stanford Graduate School of Business)",
-        "videoId": "qf1m3fG1--0",
-        "start": 300,
-        "watchWindow": "Watch from 5:00 to 9:00.",
-        "paras": [
-          "Andy Grove was obsessed with making strategy concrete enough that people could act on it. In his work on strategic inflection points, he pushes leaders to name exactly what will be different on the other side of a big shift—not as a slogan, but as a specific change in customers, competitors, or operations.",
-          "That’s the same muscle as defining a minimum credible promise. Instead of promising, \"We’ll win the PC industry,\" he drilled down to concrete markers: what market share, what cost position, what customer behavior would signal the shift. Watching him forces you to ask: what would make your promise measurable and real, not just inspiring?"
-        ],
-        "observe": [
-          "How he keeps translating abstract threats (\"inflection point\") into specific, observable changes in numbers, behavior, or structure.",
-          "His habit of framing what he knows and what he doesn’t know yet—limiting the promise while keeping urgency high.",
-          "The way he uses simple, almost plain language instead of grandiose strategy speak, which makes his promises feel more trustworthy."
-        ]
+        "exercise": "Answer: “What is the smallest useful outcome I can confidently deliver?” and “What am I not promising yet?” Then say: “The only thing I’m promising in this phase is that you’ll be able to ___ by ___.”"
       },
       "steal": {
         "line": "The only thing I’m promising in this phase is one specific, testable win.",
         "paras": [
-          "Use this line to reset expectations any time a conversation starts to balloon into endless possibilities. It signals seriousness—you’re not here to sell a fantasy—and it invites people to collaborate on making that one win real. Try it at the top of a roadmap review, a client scoping call, or a planning workshop: name the phase, name the win, and hold the rest for later phases.",
-          "The discipline is to resist adding three more promises once people show interest. Stay with one, deepen it, and agree on how you’ll know it happened. That’s how you quietly build a reputation for promises that come true."
+          "Use it when a roadmap or client conversation starts expanding into every possibility."
         ],
         "example": [
-          "In a Daisy 1 roadmap discussion: \"The only thing I’m promising in this phase is one specific, testable win: by the end of September, every team lead will get a Monday morning summary showing what’s blocked and who’s on the hook to unblock it. That’s it—no fancy automation yet.\""
+          "By the end of this phase, you’ll be able to see the project’s main blockers in one place. Nothing fancier yet."
         ]
       }
     },
