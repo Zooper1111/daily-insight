@@ -1,6 +1,41 @@
 {
   "editions": [
     {
+      "date": "2026-09-05",
+      "displayDate": "Sat · Sep 5",
+      "domain": "Communication",
+      "hook": "Use the Friction Sentence to make any idea land faster.",
+      "insight": {
+        "title": "The Friction Sentence",
+        "paras": [
+          "When you introduce an idea, people first listen for <em>friction</em>: what problem it actually meets in their day. A simple tool: the <strong>Friction Sentence</strong> — one line that names the concrete snag your idea removes. Structure: “Right now, you’re dealing with X, which makes Y harder than it should be.” Then your solution has somewhere to land.",
+          "Picture a Daisy 1 demo: instead of “It’s a project coordination app,” you open with, “Right now, you’re chasing updates across DMs and docs, which makes every handoff slower than it should be.” Now when you show a feature, they feel the relief, not just see the UI."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='80' width='180' height='22' rx='4' fill='#9ba0b8'/><rect x='60' y='140' width='260' height='22' rx='4' fill='#ff7a6e'/><rect x='60' y='200' width='310' height='22' rx='4' fill='#5fd4c4'/><text x='70' y='96' fill='#eceef7' font-family='system-ui, sans-serif' font-size='12'>X: current snag</text><text x='70' y='156' fill='#1b1e30' font-family='system-ui, sans-serif' font-size='12'>Y: what that snag makes harder</text><text x='70' y='216' fill='#1b1e30' font-family='system-ui, sans-serif' font-size='12'>Then: your idea as relief</text><circle cx='40' cy='151' r='6' fill='#e8b84b'/><path d='M40 157 L40 190' stroke='#e8b84b' stroke-width='2' stroke-dasharray='4 4'/><polygon points='40,194 36,188 44,188' fill='#e8b84b'/></svg>",
+        "visualCaption": "Lead with the snag (X) and its cost (Y) before you offer the fix.",
+        "after": [
+          "Today, pick one explanation — Daisy 1, StoryOS, your strategy agent, or a client project — and rewrite your opener as a single Friction Sentence before you talk about features or plans."
+        ]
+      },
+      "lab": {
+        "title": "Friction in One Breath",
+        "paras": [
+          "This matters because most explanations die in feature land before anyone feels why they should care."
+        ],
+        "exercise": "Grab a current project. In one breath, say out loud: “Right now, you’re dealing with X, which makes Y harder than it should be.” Fill in X and Y in plain language. Repeat three times, tightening the words each time until it feels like something you could comfortably say at the start of a demo or planning conversation."
+      },
+      "masters": null,
+      "steal": {
+        "line": "“Right now, you’re dealing with X, which makes Y harder than it should be.”",
+        "paras": [
+          "Use this as the very first sentence in your next planning session, client call, or internal update. Swap X and Y to match their world, not your feature list."
+        ],
+        "example": [
+          "In a quarterly planning review: “Right now, you’re dealing with priorities that live in five different places, which makes every quarter-start slower and more chaotic than it should be — here’s how this new rhythm fixes that.”"
+        ]
+      }
+    },
+    {
       "date": "2026-09-03",
       "displayDate": "Thu · Sep 3",
       "domain": "Product Thinking",
@@ -1295,56 +1330,6 @@
         ],
         "example": [
           "“Before we decide whether Daisy 1 needs another view, let’s name the job. In that moment, is the person trying to plan the work, explain the work, recover from confusion, or get someone else to make a decision?”"
-        ]
-      }
-    },
-    {
-      "date": "2026-07-17",
-      "displayDate": "Fri · Jul 17",
-      "domain": "AI",
-      "hook": "The best AI workflow is not smarter software; it is a better handoff.",
-      "insight": {
-        "title": "Design the Handoff",
-        "paras": [
-          "Garry Kasparov’s <strong>centaur model</strong> came from advanced chess: human plus machine can beat either alone, but only when the process is good. The winning edge is not just intelligence. It is knowing <em>who does what, when, and how the next move gets checked</em>.",
-          "Use this as a daily AI rule: give the machine the work it is good at—variation, recall, synthesis, first drafts—and keep the human work visible: taste, stakes, judgment, context, and final commitment. A weak handoff creates mush. A sharp handoff creates leverage."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='118' cy='104' r='46' fill='none' stroke='#5fd4c4' stroke-width='4'/><text x='118' y='99' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>Human</text><text x='118' y='123' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>judgment</text><circle cx='442' cy='104' r='46' fill='none' stroke='#a48bfa' stroke-width='4'/><text x='442' y='99' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>AI</text><text x='442' y='123' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>range</text><path d='M168 104 C230 64 330 64 392 104' fill='none' stroke='#e8b84b' stroke-width='4' stroke-linecap='round'/><path d='M392 104 l-16 -8 l5 17 z' fill='#e8b84b'/><path d='M392 126 C330 172 230 172 168 126' fill='none' stroke='#ff7a6e' stroke-width='4' stroke-linecap='round'/><path d='M168 126 l16 7 l-6 -16 z' fill='#ff7a6e'/><rect x='166' y='210' width='228' height='52' rx='14' fill='none' stroke='#eceef7' stroke-width='2'/><text x='280' y='232' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>Better Process</text><text x='280' y='253' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>prompt → critique → decide</text><line x1='280' y1='174' x2='280' y2='210' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='5 6'/><text x='280' y='36' text-anchor='middle' fill='#e8b84b' font-size='16' font-family='Inter, Arial'>Centaur work is a handoff, not a hand wave.</text></svg>",
-        "visualCaption": "Human judgment and AI range only compound when the process is explicit.",
-        "after": [
-          "For the strategy agent, this means the question is not “Can it think for me?” A better question is: “Where should it widen the options, where should Matt apply taste, and where does the final decision get made?”"
-        ]
-      },
-      "lab": {
-        "title": "The Three-Part Handoff",
-        "paras": [
-          "Most people talk to AI like they are tossing a task over a wall. Better builders narrate the handoff. They say what the machine should generate, what criteria matter, and what kind of human decision will follow."
-        ],
-        "exercise": "Take one live task today and use this exact script: “I want you to generate options, not decide. Give me five approaches, rank them by tradeoff, then tell me what you would need to know before choosing. I will make the final call.” Spend two minutes comparing whether the output is more useful than a normal prompt."
-      },
-      "masters": {
-        "name": "Garry Kasparov",
-        "talk": "Don't fear intelligent machines. Work with them",
-        "videoId": "NP8xt8o4_5Q",
-        "start": 500,
-        "watchWindow": "8:20–12:05",
-        "paras": [
-          "Kasparov is the right master because he does not frame AI as magic or doom. He frames it as a partnership problem: the best result comes from combining human strategy, machine calculation, and a superior process.",
-          "Listen for how he turns a famous loss into a practical operating model. The lesson is not “machines win.” The lesson is “the interface between person and machine becomes the new craft.”"
-        ],
-        "observe": [
-          "How he contrasts human intuition with machine calculation.",
-          "How he makes the phrase “better process” feel more important than raw intelligence.",
-          "How he uses chess as a simple scene for a much larger technology argument."
-        ]
-      },
-      "steal": {
-        "line": "Do not ask AI to replace your judgment; ask it to improve the quality of what your judgment sees.",
-        "paras": [
-          "Use this line when someone is either overhyping or dismissing AI. It is calm, precise, and hard to argue with because it gives both sides a job: the machine expands the field, the human owns the call."
-        ],
-        "example": [
-          "“For this planning session, I do not want the agent to pick the strategy. I want it to surface the options we are not seeing, pressure-test the assumptions, and make the tradeoffs plain enough that we can decide faster.”"
         ]
       }
     }
