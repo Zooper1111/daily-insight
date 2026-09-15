@@ -1,6 +1,40 @@
 {
   "editions": [
     {
+      "date": "2026-09-15",
+      "displayDate": "Tue · Sep 15",
+      "domain": "Leadership",
+      "hook": "Lead by naming the tension, not the task.",
+      "insight": {
+        "title": "The Tension Sentence",
+        "paras": [
+          "When you lead work, people move faster when they feel the <em>tension</em>, not when they hear the task list. A \"tension sentence\" is a one-line frame that names the pull between two good things. Structure: <strong>\"We’re torn between A and B, and today we’re going to solve it by C.\"</strong> In a Daisy 1 roadmap review, that might be: \"We’re torn between shipping quickly for existing teams and keeping the codebase calm for the next six months, and today we’re going to choose one rule for when we say no.\" One clear tension aligns attention, gives permission to disagree, and makes every detail conversation feel connected to a real decision."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><line x1='80' y1='160' x2='480' y2='160' stroke='#9ba0b8' stroke-width='3' stroke-dasharray='4 6'/><circle cx='160' cy='160' r='34' fill='#eceef7'/><circle cx='400' cy='160' r='34' fill='#eceef7'/><text x='160' y='165' text-anchor='middle' font-size='11' fill='#1b1e30'>Speed</text><text x='400' y='165' text-anchor='middle' font-size='11' fill='#1b1e30'>Calm</text><polygon points='240,160 320,130 320,190' fill='#e8b84b' opacity='0.9'/><text x='280' y='158' text-anchor='middle' font-size='10' fill='#1b1e30'>Today:</text><text x='280' y='172' text-anchor='middle' font-size='10' fill='#1b1e30'>one rule</text></svg>",
+        "visualCaption": "Two good options, one golden decision wedge.",
+        "after": [
+          "Before your next strategy agent or quarterly planning session, write one tension sentence so everyone knows which pull you are actually there to resolve."
+        ]
+      },
+      "lab": {
+        "title": "Write Today’s Tension Sentence",
+        "paras": [
+          "This matters because if you don’t name the tension, the room will argue about details instead of the real decision."
+        ],
+        "exercise": "Open your current priority (e.g., next Daisy 1 release). In under five minutes, jot two good-but-competing pulls starting with \"We’re torn between…\". Then finish the sentence: \"…and today we’re going to solve it by…\" Say it out loud at the very start of your next check-in and watch how it sharpens the agenda."
+      },
+      "masters": null,
+      "steal": {
+        "line": "“We’re torn between these two good outcomes, and today we’re going to choose one rule to resolve it.”",
+        "paras": [
+          "Use this line to open a roadmap review, planning call, or client strategy session so people feel the real stakes in one breath."
+        ],
+        "example": [
+          "In a quarterly planning kickoff: “We’re torn between saying yes to more custom work and keeping our core product simple, and today we’re going to choose one rule for when we decline a project.”"
+        ]
+      }
+    },
+    {
       "date": "2026-09-13",
       "displayDate": "Sun · Sep 13",
       "domain": "Decision-Making",
@@ -1213,55 +1247,6 @@
         ],
         "example": [
           "“It sounds like the concern is not the idea itself — it’s that we’d be adding another operating rhythm before the current one is trusted.”"
-        ]
-      }
-    },
-    {
-      "date": "2026-07-22",
-      "displayDate": "Wed · Jul 22",
-      "domain": "Storytelling",
-      "hook": "If there is no “but,” there is probably no story.",
-      "insight": {
-        "title": "Find the But",
-        "paras": [
-          "Randy Olson’s <strong>ABT Narrative Template</strong> is brutally simple: <em>And, But, Therefore</em>. The “and” gives context, the “but” creates tension, and the “therefore” makes action feel necessary. It is a tiny structure for turning information into momentum.",
-          "Most weak explanations are really AAA chains: and this, and this, and this. They sound complete but feel flat. Before explaining Daisy 1, StoryOS, DreamGuard, or a strategy idea, ask: <strong>What is the tension that makes this matter now?</strong> The answer belongs after “but.”"
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><path d='M70 166 C130 92, 197 92, 257 166 S388 240, 490 132' fill='none' stroke='#5fd4c4' stroke-width='8' stroke-linecap='round'/><circle cx='112' cy='132' r='38' fill='#e8b84b'/><circle cx='280' cy='166' r='44' fill='#ff7a6e'/><circle cx='450' cy='144' r='38' fill='#a48bfa'/><text x='112' y='138' text-anchor='middle' font-family='Inter, Arial' font-size='20' font-weight='700' fill='#1b1e30'>AND</text><text x='280' y='173' text-anchor='middle' font-family='Inter, Arial' font-size='20' font-weight='700' fill='#1b1e30'>BUT</text><text x='450' y='151' text-anchor='middle' font-family='Inter, Arial' font-size='17' font-weight='700' fill='#1b1e30'>SO</text><text x='280' y='278' text-anchor='middle' font-family='Inter, Arial' font-size='18' fill='#eceef7'>Context becomes useful when tension creates direction.</text><line x1='70' y1='230' x2='490' y2='230' stroke='#9ba0b8' stroke-width='2' opacity='.35'/></svg>",
-        "visualCaption": "The “but” is the hinge that turns facts into movement.",
-        "after": [
-          "In a StoryOS memo, you can write: “Teams already know story matters, and they have plenty of examples, <strong>but</strong> they lack a repeatable way to diagnose why a message feels flat; <strong>therefore</strong> StoryOS should make narrative structure easier to see, practice, and reuse.” No invented feature list. Just a sharper spine."
-        ]
-      },
-      "lab": {
-        "title": "Turn an Explanation Into an ABT",
-        "paras": [
-          "This skill matters because people do not usually need more detail first. They need orientation, tension, and a reason to keep listening. In a planning session, the person who can name the “but” often becomes the person who clarifies the whole room."
-        ],
-        "exercise": "Take one thing you need to explain today and say it in exactly three beats: “We’re trying to ___, and we already have ___. But the thing making it hard is ___. Therefore, the next smart move is ___.” Say it once in writing, once out loud, and once in a warmer conversational version: “The short version is: we’ve got ___, but ___, so I think we should ___.”"
-      },
-      "masters": {
-        "name": "Nancy Duarte",
-        "talk": "Nancy Duarte uncovers common structure of greatest communicators",
-        "videoId": "1nYFpuc2Umk",
-        "start": 345,
-        "watchWindow": "5:45–8:20",
-        "paras": [
-          "Duarte fits today because her core lesson is that persuasive communication moves between “what is” and “what could be.” That is a cousin of ABT: establish reality, introduce tension, then pull people toward a better future."
-        ],
-        "observe": [
-          "How she makes structure visual instead of merely describing it.",
-          "How she contrasts the present state with a possible future state.",
-          "How the tension gives the audience a reason to care before the call to action."
-        ]
-      },
-      "steal": {
-        "line": "“The useful part is not the update — it is the tension inside the update.”",
-        "paras": [
-          "Practice this today when someone gives you a pile of facts. Listen warmly, then ask for the hinge. You are not being difficult; you are helping the conversation find its point."
-        ],
-        "example": [
-          "“Let me see if I have the story right: we want a cleaner planning rhythm, and the team is already capturing goals, but the handoff between goals and weekly action is fuzzy. Therefore the next decision is not ‘more notes’ — it’s what rhythm makes the work visible.”"
         ]
       }
     }
