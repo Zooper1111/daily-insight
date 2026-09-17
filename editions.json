@@ -1,6 +1,40 @@
 {
   "editions": [
     {
+      "date": "2026-09-17",
+      "displayDate": "Thu · Sep 17",
+      "domain": "Communication",
+      "hook": "One sharp, specific line",
+      "insight": {
+        "title": "The One-Line Spine",
+        "paras": [
+          "Use the <em>One-Line Spine</em> model: every explanation hangs on a single clear sentence that answers, “What are we <strong>really</strong> doing here?” Before you talk through details, write one line that names the change: who it’s for, what shifts, and why it matters now. That spine keeps you from wandering, lets people interrupt without derailing you, and makes complex work feel graspable instead of foggy."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><line x1='80' y1='160' x2='480' y2='160' stroke='#e8b84b' stroke-width='6' stroke-linecap='round'/><circle cx='160' cy='100' r='14' fill='#5fd4c4'/><circle cx='240' cy='220' r='14' fill='#a48bfa'/><circle cx='320' cy='110' r='14' fill='#ff7a6e'/><circle cx='400' cy='215' r='14' fill='#9ba0b8'/><line x1='160' y1='100' x2='160' y2='160' stroke='#eceef7' stroke-width='2'/><line x1='240' y1='220' x2='240' y2='160' stroke='#eceef7' stroke-width='2'/><line x1='320' y1='110' x2='320' y2='160' stroke='#eceef7' stroke-width='2'/><line x1='400' y1='215' x2='400' y2='160' stroke='#eceef7' stroke-width='2'/><text x='280' y='145' text-anchor='middle' fill='#eceef7' font-size='12' font-family='system-ui'>spine</text></svg>",
+        "visualCaption": "One clear spine; every detail hangs off it.",
+        "after": [
+          "In your next Daisy 1 or StoryOS update, start by drafting a single spine sentence, then share it first and let every other detail attach back to that line."
+        ]
+      },
+      "lab": {
+        "title": "Spine-First Check-In",
+        "paras": [
+          "This skill matters because people remember one sentence, not your whole explanation."
+        ],
+        "exercise": "Before your next planning chat, take 3 minutes and write: “For [who], we’re changing [this] so they can [win in this way] right now because [trigger].” Say it out loud first: “Quick spine, then details…” and only then walk through the plan."
+      },
+      "masters": null,
+      "steal": {
+        "line": "“Let me give you the one-line version, then we can zoom into details.”",
+        "paras": [
+          "Use this line to reset any meandering update: drop the spine, pause, then invite specific questions so people steer where they actually care."
+        ],
+        "example": [
+          "In a quarterly planning review: “Let me give you the one-line version, then we can zoom into details: we’re turning Daisy 1 into the default place teams answer ‘who’s doing what by when’ so standups become five-minute checkmarks instead of status meetings.”"
+        ]
+      }
+    },
+    {
       "date": "2026-09-15",
       "displayDate": "Tue · Sep 15",
       "domain": "Leadership",
@@ -1195,58 +1229,6 @@
         ],
         "example": [
           "“This is not a problem to solve once; it is a system to learn from. For the strategy agent, let’s not decide the whole architecture today. Let’s pick one planning use case, run a tiny test, and see what kind of feedback the system gives us.”"
-        ]
-      }
-    },
-    {
-      "date": "2026-07-23",
-      "displayDate": "Thu · Jul 23",
-      "domain": "Conversation",
-      "hook": "Before you answer the objection, name the pressure behind it.",
-      "insight": {
-        "title": "Label the Pressure",
-        "paras": [
-          "Today’s model is <strong>tactical empathy</strong>, especially the negotiation move Chris Voss calls <em>labeling</em>. Instead of arguing with what someone says, you name what they may be feeling or protecting: “It sounds like the risk is…” or “It seems like you’re worried that…”",
-          "A good label does three things: lowers defensiveness, proves you are tracking the other person, and moves the conversation from position to motive. The trick is to make it tentative, not theatrical. You are not diagnosing them. You are offering a draft of their concern and letting them correct it."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='24' fill='#1b1e30'/><circle cx='118' cy='112' r='42' fill='none' stroke='#5fd4c4' stroke-width='5'/><circle cx='442' cy='112' r='42' fill='none' stroke='#ff7a6e' stroke-width='5'/><path d='M160 112 C230 58 330 58 400 112' fill='none' stroke='#9ba0b8' stroke-width='4' stroke-dasharray='8 10'/><path d='M400 112 C330 178 230 178 160 112' fill='none' stroke='#e8b84b' stroke-width='5'/><rect x='170' y='206' width='220' height='54' rx='14' fill='#a48bfa' opacity='.18' stroke='#a48bfa' stroke-width='2'/><text x='280' y='76' text-anchor='middle' fill='#eceef7' font-family='Inter, Arial' font-size='24' font-weight='700'>Position → Pressure</text><text x='118' y='118' text-anchor='middle' fill='#eceef7' font-family='Inter, Arial' font-size='15' font-weight='700'>What they say</text><text x='442' y='118' text-anchor='middle' fill='#eceef7' font-family='Inter, Arial' font-size='15' font-weight='700'>What they fear</text><text x='280' y='238' text-anchor='middle' fill='#eceef7' font-family='Inter, Arial' font-size='17' font-weight='700'>“It sounds like…”</text><text x='280' y='286' text-anchor='middle' fill='#9ba0b8' font-family='Inter, Arial' font-size='13'>A label turns resistance into information.</text></svg>",
-        "visualCaption": "The label is the bridge from stated objection to real concern.",
-        "after": [
-          "In a quarterly planning conversation, if someone says, “This roadmap is too ambitious,” Matt does not need to defend the roadmap first. He can label the pressure: “It sounds like the concern is we’ll commit to too many visible promises and lose trust if execution slips.” Now the room is discussing the actual risk, not trading opinions."
-        ]
-      },
-      "lab": {
-        "title": "The Three-Beat Label",
-        "paras": [
-          "This skill matters because most tense conversations fail at the first turn. Someone raises an objection, and the builder reflex is to explain. But explanation can sound like dismissal when the other person wants proof that you understand the cost they see.",
-          "Use this in small talk too. If a friend says, “Work has been ridiculous,” try, “Sounds like there’s no clean stopping point right now.” That is warmer than “That sucks” and more useful than immediately giving advice."
-        ],
-        "exercise": "In your next conversation, practice this exact three-beat pattern: 1) Pause. 2) Say, “It sounds like the real concern is ___.” 3) Ask, “Am I reading that right?” Try it once in a work context and once in a casual context. Keep the label under twelve words."
-      },
-      "masters": {
-        "name": "Chris Voss",
-        "talk": "Never Split The Difference | Chris Voss | TEDxUniversityofNevada",
-        "videoId": "MjhDkNmtjy0",
-        "start": 161,
-        "watchWindow": "Watch 2:41–6:10 for tactical empathy in a concrete social scene.",
-        "paras": [
-          "Voss fits today because he treats conversation as pressure management, not clever phrasing. His best moves are short, calm, and oddly generous: he gives the other person language for what they are carrying.",
-          "Notice that the power is not in sounding like a negotiator. It is in slowing the moment down enough that the other person feels accurately seen."
-        ],
-        "observe": [
-          "How he makes the other person’s emotional state explicit without accusing them.",
-          "The calm, low-drama tone: the label lands because it is not performed.",
-          "How naming pressure creates movement before any solution is offered."
-        ]
-      },
-      "steal": {
-        "line": "Don’t rebut the sentence; label the pressure.",
-        "paras": [
-          "Practice this today by replacing your first answer with a first label. When you hear “too expensive,” “too complicated,” “not ready,” or “we tried that,” assume the sentence is the surface. Your job is to name the cost underneath it.",
-          "Keep the wording soft: “It sounds like…” “It seems like…” “My read is…” The softer the entry, the easier it is for the other person to correct you without feeling trapped."
-        ],
-        "example": [
-          "“It sounds like the concern is not the idea itself — it’s that we’d be adding another operating rhythm before the current one is trusted.”"
         ]
       }
     }
