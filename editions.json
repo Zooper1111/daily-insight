@@ -1,6 +1,41 @@
 {
   "editions": [
     {
+      "date": "2026-09-19",
+      "displayDate": "Sat · Sep 19",
+      "domain": "Strategy",
+      "hook": "Turn fuzzy goals into a crisp operating rule.",
+      "insight": {
+        "title": "The Two-Layer Roadmap",
+        "paras": [
+          "Use the <strong>Two-Layer Roadmap</strong> model: top layer is narrative, bottom layer is moves. Narrative answers, “What game are we playing this quarter?” Moves answer, “What are the next 3 irreversible decisions?” When you separate story from steps, strategy stops being a cluttered task list and becomes a simple lens: anything that doesn’t serve the narrative or one of those three moves is parked or cut.",
+          "Picture a Daisy 1 planning session: instead of a giant backlog, you write one sentence at the top of the doc for the narrative, then list three concrete bets underneath. The work feels smaller, but the direction feels bigger."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='40' y='40' width='480' height='70' rx='10' fill='none' stroke='#eceef7' stroke-width='2'/><text x='60' y='85' fill='#eceef7' font-family='system-ui, sans-serif' font-size='18'>Narrative: what game this quarter?</text><rect x='40' y='140' width='480' height='140' rx='10' fill='none' stroke='#9ba0b8' stroke-width='2'/><line x1='80' y1='160' x2='80' y2='260' stroke='#9ba0b8' stroke-width='1.5' stroke-dasharray='4 4'/><circle cx='140' cy='185' r='16' fill='#e8b84b'/><circle cx='260' cy='215' r='16' fill='#ff7a6e'/><circle cx='400' cy='245' r='16' fill='#5fd4c4'/><text x='125' y='189' fill='#1b1e30' font-family='system-ui, sans-serif' font-size='12'>1</text><text x='245' y='219' fill='#1b1e30' font-family='system-ui, sans-serif' font-size='12'>2</text><text x='385' y='249' fill='#1b1e30' font-family='system-ui, sans-serif' font-size='12'>3</text><text x='95' y='182' fill='#eceef7' font-family='system-ui, sans-serif' font-size='12'>Move 1</text><text x='215' y='212' fill='#eceef7' font-family='system-ui, sans-serif' font-size='12'>Move 2</text><text x='355' y='242' fill='#eceef7' font-family='system-ui, sans-serif' font-size='12'>Move 3</text></svg>",
+        "visualCaption": "One narrative on top, three concrete moves underneath.",
+        "after": [
+          "When you draft your next quarterly planning note, literally write one narrative sentence, then list three irreversible moves beneath it and ignore everything that doesn’t fit."
+        ]
+      },
+      "lab": {
+        "title": "Name the Game, Then the Moves",
+        "paras": [
+          "This matters because teams execute faster when they know both the story they are in and the few choices that really change the board."
+        ],
+        "exercise": "Open a current roadmap or planning doc. In 3 minutes, write at the top: “This quarter, we are playing the game of ______ so that ______.” Then, under a heading called “Three Moves,” list exactly three bullets starting with verbs: “Ship…,” “Stop…,” or “Double-down on….” Read it aloud once to see if every current task clearly serves one of those bullets."
+      },
+      "masters": null,
+      "steal": {
+        "line": "“Zooming out: the game this quarter is X, and the only three moves that matter are A, B, and C.”",
+        "paras": [
+          "Use this line to reframe any roadmap or client conversation where the work feels scattered. It signals that you are about to compress complexity into a simple game plus a few decisive moves, which makes it easier for people to say no to distractions."
+        ],
+        "example": [
+          "In a consulting strategy review you might say: “Zooming out: the game this quarter is shortening your sales cycle, and the only three moves that matter are clarifying your offer, tightening demo scripts, and killing low-intent channels.”"
+        ]
+      }
+    },
+    {
       "date": "2026-09-17",
       "displayDate": "Thu · Sep 17",
       "domain": "Communication",
@@ -1177,58 +1212,6 @@
         ],
         "example": [
           "“Before we debate the whole operating rhythm, I want to run one small test: I will draft the Friday review, and I need one person to annotate it with what felt useful, confusing, or missing. If that creates clarity, we can decide whether it deserves a larger rollout.”"
-        ]
-      }
-    },
-    {
-      "date": "2026-07-24",
-      "displayDate": "Fri · Jul 24",
-      "domain": "Strategy",
-      "hook": "Before you solve the problem, name what kind of problem it is.",
-      "insight": {
-        "title": "Diagnose the Domain",
-        "paras": [
-          "Dave Snowden’s <strong>Cynefin framework</strong> is a fast way to stop using the wrong kind of intelligence on the wrong kind of problem. Some problems are <em>clear</em>: follow the rule. Some are <em>complicated</em>: ask an expert. Some are <em>complex</em>: run probes and watch what emerges. Some are <em>chaotic</em>: act first to stabilize the room.",
-          "The trap is treating every project decision like a complicated puzzle: gather more information, make the perfect plan, then execute. But many strategy and product questions are complex. You do not discover the answer by thinking harder. You discover it by creating a small, safe test that gives reality a chance to talk back."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><line x1='280' y1='42' x2='280' y2='278' stroke='#9ba0b8' stroke-width='2' opacity='0.55'/><line x1='72' y1='160' x2='488' y2='160' stroke='#9ba0b8' stroke-width='2' opacity='0.55'/><rect x='88' y='58' width='160' height='76' rx='16' fill='none' stroke='#5fd4c4' stroke-width='3'/><text x='168' y='91' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Clear</text><text x='168' y='116' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>follow the rule</text><rect x='312' y='58' width='160' height='76' rx='16' fill='none' stroke='#e8b84b' stroke-width='3'/><text x='392' y='91' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Complicated</text><text x='392' y='116' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>ask expertise</text><rect x='88' y='186' width='160' height='76' rx='16' fill='none' stroke='#a48bfa' stroke-width='3'/><text x='168' y='219' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Complex</text><text x='168' y='244' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>probe first</text><rect x='312' y='186' width='160' height='76' rx='16' fill='none' stroke='#ff7a6e' stroke-width='3'/><text x='392' y='219' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Chaotic</text><text x='392' y='244' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>stabilize now</text><circle cx='280' cy='160' r='38' fill='#1b1e30' stroke='#eceef7' stroke-width='3'/><text x='280' y='156' text-anchor='middle' fill='#eceef7' font-size='15' font-family='Inter, Arial'>Disorder</text><text x='280' y='176' text-anchor='middle' fill='#9ba0b8' font-size='11' font-family='Inter, Arial'>name it</text></svg>",
-        "visualCaption": "Different problem domains require different moves.",
-        "after": [
-          "In quarterly planning, this can save a whole session. If Matt is deciding what to improve in Daisy 1, one question might be complicated: “Which workflow has the most friction?” That may need analysis. Another might be complex: “What framing makes coordination feel lighter?” That needs a small probe, a demo, or a conversation with real users."
-        ]
-      },
-      "lab": {
-        "title": "Say the Problem Type Out Loud",
-        "paras": [
-          "Good strategy conversations often go sideways because people silently disagree about the kind of problem they are solving. One person wants data. Another wants a decision. Another wants an experiment. Nobody is wrong yet; they are just operating in different domains.",
-          "The speaking skill is to slow the room down without sounding academic. Name the domain, then name the next move. This creates calm because people stop arguing about methods and start matching the method to the situation."
-        ],
-        "exercise": "Take one active decision today and say: “I think we may be treating this like a complicated problem, but it might actually be complex. Instead of debating the perfect answer, what is one small probe we could run by tomorrow?” Then write down the probe, the signal you expect, and what you will do if the signal surprises you."
-      },
-      "masters": {
-        "name": "Dave Snowden",
-        "talk": "The Cynefin Framework",
-        "videoId": "N7oz366X0-8",
-        "start": 45,
-        "watchWindow": "0:45–4:30",
-        "paras": [
-          "Snowden is useful here because he does not treat uncertainty as a personality flaw. He treats it as a feature of the system. His core move is practical: stop pretending every situation can be managed with best practice.",
-          "Watch for how he separates ordered contexts from complex ones. That distinction is gold for product strategy, consulting, planning, and AI work because it tells you when to analyze, when to ask experts, and when to test your way forward."
-        ],
-        "observe": [
-          "How he uses categories to change the action, not just label the situation.",
-          "How he makes complexity feel usable instead of mystical.",
-          "How the framework gives leaders permission to run safe experiments instead of demanding false certainty."
-        ]
-      },
-      "steal": {
-        "line": "This is not a problem to solve once; it is a system to learn from.",
-        "paras": [
-          "Use this line when a conversation is stuck in over-planning. It is provocative without being theatrical because it changes the assignment: from finding the perfect answer to designing the next learning loop.",
-          "Practice it with a warm tone. The line should not sound like a correction. It should sound like relief: we do not have to pretend certainty is available."
-        ],
-        "example": [
-          "“This is not a problem to solve once; it is a system to learn from. For the strategy agent, let’s not decide the whole architecture today. Let’s pick one planning use case, run a tiny test, and see what kind of feedback the system gives us.”"
         ]
       }
     }
