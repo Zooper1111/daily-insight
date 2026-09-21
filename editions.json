@@ -1,6 +1,41 @@
 {
   "editions": [
     {
+      "date": "2026-09-21",
+      "displayDate": "Mon · Sep 21",
+      "domain": "Product Thinking",
+      "hook": "One sharp filter for what to ship next",
+      "insight": {
+        "title": "The Single Critical Path",
+        "paras": [
+          "When a project feels tangled, switch from a feature list to a <em>Single Critical Path</em>: the shortest, specific sequence of steps a user must complete to get real value once. Everything on that path is \"now\" work; everything else is \"later.\" Mapping this forces tradeoffs, cleans up scope, and gives you a story you can explain in one breath.",
+          "Picture a Daisy 1 review: instead of debating dozens of ideas, you sketch one path on a whiteboard — \"create a project → add one task → assign an owner → see it on today’s list.\" You highlight only the blocks needed to make that path smooth. Now your team can argue about one line, not fifty islands."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><line x1='60' y1='260' x2='500' y2='60' stroke='#eceef7' stroke-width='4' stroke-linecap='round'/><circle cx='60' cy='260' r='10' fill='#gold' fill-opacity='0'><animate attributeName='fill' values='#e8b84b;#ff7a6e;#5fd4c4;#e8b84b' dur='6s' repeatCount='indefinite'/></circle><circle cx='500' cy='60' r='10' fill='#e8b84b'/><circle cx='180' cy='210' r='6' fill='#5fd4c4'/><circle cx='310' cy='160' r='6' fill='#a48bfa'/><circle cx='430' cy='110' r='6' fill='#ff7a6e'/><circle cx='150' cy='90' r='4' fill='#9ba0b8'/><circle cx='260' cy='280' r='4' fill='#9ba0b8'/><circle cx='360' cy='220' r='4' fill='#9ba0b8'/><circle cx='480' cy='200' r='4' fill='#9ba0b8'/></svg>",
+        "visualCaption": "Draw one clean line of value and let everything else wait.",
+        "after": [
+          "Today, take one active feature set — in Daisy 1, StoryOS, or a consulting engagement — and write the exact four-step path where a user first feels, \"that was worth it,\" then mark only those steps as critical for the next release."
+        ]
+      },
+      "lab": {
+        "title": "Map One Value Line",
+        "paras": [
+          "This matters because arguing about paths instead of pieces makes planning, demos, and explanations dramatically clearer."
+        ],
+        "exercise": "Open your current roadmap and set a 5-minute timer. Write a heading: \"First Proof of Value Path.\" Under it, force yourself to list exactly 3–5 steps that describe one user going from \"not using it\" to \"I’d miss this if it vanished.\" Use full sentences: \"They…\" Then, bold the verbs that feel absolutely non-negotiable. Everything else becomes optional for the next cut."
+      },
+      "masters": null,
+      "steal": {
+        "line": "“Let’s stop listing features and agree on one critical path a real user has to walk once for this to be worth anything.”",
+        "paras": [
+          "Use this line to pivot a meandering product or planning discussion into a focused map of value, then capture that path in writing so it becomes the reference for scope, design, and how you talk about the release."
+        ],
+        "example": [
+          "In a quarterly planning review: “Before we add more, can we sketch the single critical path for a new client — from ‘never heard of us’ to ‘got one concrete win from our strategy agent’ — and commit to just making that path undeniable this quarter?”"
+        ]
+      }
+    },
+    {
       "date": "2026-09-19",
       "displayDate": "Sat · Sep 19",
       "domain": "Strategy",
@@ -1160,58 +1195,6 @@
         ],
         "example": [
           "“If we frame this as another planning artifact, it will feel heavy. If we frame it as a drift detector for the quarter, people will understand why it matters.”"
-        ]
-      }
-    },
-    {
-      "date": "2026-07-25",
-      "displayDate": "Sat · Jul 25",
-      "domain": "Leadership",
-      "hook": "A new idea rarely needs a louder leader; it needs a safer first follower.",
-      "insight": {
-        "title": "Design for the First Follower",
-        "paras": [
-          "Derek Sivers’ <strong>first follower</strong> principle says a movement does not begin when one person acts. It begins when a second person makes the action easier for everyone else to copy. The leader creates the possibility; the first follower creates the permission.",
-          "Use this as a practical leadership model: when you introduce a new process, product idea, or strategy rhythm, do not only polish the pitch. Ask, <em>Who can safely join early, and what would make joining feel obvious?</em> Adoption is less about persuasion than lowering the social cost of being second."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='150' cy='170' r='28' fill='#ff7a6e'/><circle cx='245' cy='170' r='28' fill='#e8b84b'/><circle cx='340' cy='170' r='28' fill='#5fd4c4'/><circle cx='435' cy='170' r='28' fill='#a48bfa'/><path d='M178 170 C198 140 222 140 237 160' fill='none' stroke='#e8b84b' stroke-width='5' stroke-linecap='round'/><path d='M273 170 C293 140 317 140 332 160' fill='none' stroke='#5fd4c4' stroke-width='5' stroke-linecap='round'/><path d='M368 170 C388 140 412 140 427 160' fill='none' stroke='#a48bfa' stroke-width='5' stroke-linecap='round'/><text x='150' y='225' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>leader</text><text x='245' y='225' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>first</text><text x='340' y='225' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>second</text><text x='435' y='225' text-anchor='middle' fill='#eceef7' font-size='18' font-family='Inter, Arial'>many</text><text x='280' y='70' text-anchor='middle' fill='#eceef7' font-size='28' font-family='Inter, Arial' font-weight='700'>Permission scales faster than persuasion</text><text x='280' y='270' text-anchor='middle' fill='#9ba0b8' font-size='16' font-family='Inter, Arial'>Make the next person easy to see, thank, and copy.</text></svg>",
-        "visualCaption": "The first follower turns a strange move into a shared signal.",
-        "after": [
-          "In a Daisy 1 planning discussion, you can use this before proposing a new coordination habit: name the smallest version, invite one visible teammate to try it, then make their participation easy to copy rather than trying to convince the whole room at once."
-        ]
-      },
-      "lab": {
-        "title": "Make Joining Feel Safe",
-        "paras": [
-          "The skill is to stop launching ideas as declarations and start launching them as low-risk invitations. A declaration asks people to agree in public. An invitation gives one person a graceful way to try the behavior before the group judges it.",
-          "Picture a quarterly planning session where Matt wants a tighter weekly review rhythm. Instead of saying, “We all need to do this now,” he can recruit a first follower by making the trial small, specific, and socially safe."
-        ],
-        "exercise": "In under five minutes, rewrite one proposal with this script: “I do not need everyone to adopt this yet. I need one person to test it with me for one week. If it makes the work clearer, we will show the before-and-after next Friday. Who is willing to be the first test partner?”"
-      },
-      "masters": {
-        "name": "Derek Sivers",
-        "talk": "First Follower: Leadership Lessons from Dancing Guy",
-        "videoId": "fW8amMCVAJQ",
-        "start": 0,
-        "watchWindow": "0:00–3:10",
-        "paras": [
-          "Sivers is the right master today because he makes leadership less heroic and more observable. His point is not that leaders are irrelevant; it is that the first visible joiner changes the meaning of the act.",
-          "Watch how the lesson stays concrete. One dancing person looks odd. Two people create a pattern. Three people create evidence. That is a useful model for product adoption, internal process change, and any new habit Matt wants others to try."
-        ],
-        "observe": [
-          "How quickly the social meaning changes once the first follower joins.",
-          "How Sivers praises the follower instead of making the leader the whole story.",
-          "How the example is memorable because it is visual, funny, and immediately legible."
-        ]
-      },
-      "steal": {
-        "line": "Do not ask the room to believe; ask one person to help make the idea visible.",
-        "paras": [
-          "Practice this today by choosing one idea you would normally explain at length. Instead of adding more rationale, design the first tiny public action someone else could take. Then invite that person directly and warmly.",
-          "The key tone: confident but not needy. You are not begging for support. You are making participation simple enough that the first follower can say yes without risking status."
-        ],
-        "example": [
-          "“Before we debate the whole operating rhythm, I want to run one small test: I will draft the Friday review, and I need one person to annotate it with what felt useful, confusing, or missing. If that creates clarity, we can decide whether it deserves a larger rollout.”"
         ]
       }
     }
