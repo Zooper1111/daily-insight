@@ -1,6 +1,41 @@
 {
   "editions": [
     {
+      "date": "2026-09-23",
+      "displayDate": "Wed · Sep 23",
+      "domain": "Communication",
+      "hook": "Make your point with the Three-Step Frame",
+      "insight": {
+        "title": "The Three-Step Frame",
+        "paras": [
+          "Use the <em>Three-Step Frame</em> to make any idea land fast: 1) Context, 2) Change, 3) Consequence. One sentence each. Context: where we are. Change: what you propose. Consequence: why it matters now. It’s a tiny narrative arc that keeps people oriented without a long preamble or a slide dump.",
+          "Example in a Daisy 1 planning review: “Right now our coordination feels scattered across tools (context). I want to run the next two sprints entirely inside Daisy 1 (change) so we see one clear board for priorities and blockers every morning (consequence).” Everyone instantly knows the situation, the move, and the stakes."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='50' y='140' width='120' height='40' rx='4' fill='#eceef7'/><rect x='220' y='120' width='120' height='40' rx='4' fill='#5fd4c4'/><rect x='390' y='100' width='120' height='40' rx='4' fill='#e8b84b'/><text x='110' y='165' text-anchor='middle' font-size='12' fill='#1b1e30'>Context</text><text x='280' y='145' text-anchor='middle' font-size='12' fill='#1b1e30'>Change</text><text x='450' y='125' text-anchor='middle' font-size='12' fill='#1b1e30'>Consequence</text><line x1='170' y1='160' x2='220' y2='140' stroke='#9ba0b8' stroke-width='2' marker-end='url(#arrow)'/><line x1='340' y1='140' x2='390' y2='120' stroke='#9ba0b8' stroke-width='2' marker-end='url(#arrow)'/><defs><marker id='arrow' markerWidth='10' markerHeight='10' refX='6' refY='3' orient='auto'><path d='M0,0 L0,6 L6,3 z' fill='#9ba0b8'/></marker></defs></svg>",
+        "visualCaption": "Any clear point: Context → Change → Consequence.",
+        "after": [
+          "Today, pick one conversation about StoryOS, DreamGuard, or your strategy agent and deliver your main point in three short sentences: context, change, consequence."
+        ]
+      },
+      "lab": {
+        "title": "Five-Minute Framing Drill",
+        "paras": [
+          "This matters because people remember structured moves, not raw information."
+        ],
+        "exercise": "Open a current note or doc (Daisy 1 roadmap, quarterly planning outline, or a client memo). At the top, write three bullet labels: “Context –”, “Change –”, “Consequence –”. Under each, force yourself to write just one sentence. Then say them out loud once, exactly: “Right now…”, “So I want us to…”, “So that…”. Adjust words until it feels natural but stays three sentences."
+      },
+      "masters": null,
+      "steal": {
+        "line": "“Right now…, so I want us to…, so that…”",
+        "paras": [
+          "Use this stem once today when you need someone to quickly get on board with a move instead of debating details for 30 minutes."
+        ],
+        "example": [
+          "In a strategy agent demo: “Right now, our planning notes are scattered and hard to query, so I want us to run them through this agent, so that we can ask one place what’s blocked, what’s next, and what changed this week.”"
+        ]
+      }
+    },
+    {
       "date": "2026-09-21",
       "displayDate": "Mon · Sep 21",
       "domain": "Product Thinking",
@@ -1146,55 +1181,6 @@
         ],
         "example": [
           "“Before we ask the strategy agent for an answer, let’s design the handshake: it gives us options, I choose the promising one, then it tries to break my choice.”"
-        ]
-      }
-    },
-    {
-      "date": "2026-07-26",
-      "displayDate": "Sun · Jul 26",
-      "domain": "Innovation",
-      "hook": "Before you build the harder thing, test the better frame.",
-      "insight": {
-        "title": "Change the Frame, Not the Feature",
-        "paras": [
-          "Rory Sutherland’s useful provocation is that value is partly <strong>created by the frame</strong>, not only by the thing itself. This is the mental model of <em>reframing</em>: when people resist, ignore, or undervalue an idea, the problem may not be the idea. It may be the comparison they are using.",
-          "Try this distinction today: a feature changes what the product does; a frame changes what the person thinks they are choosing. “A planning tool” sounds like work. “A way to stop projects from quietly drifting” creates tension, stakes, and relief. Same neighborhood, sharper door."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='155' cy='160' r='78' fill='none' stroke='#9ba0b8' stroke-width='3'/><circle cx='405' cy='160' r='78' fill='none' stroke='#5fd4c4' stroke-width='5'/><rect x='107' y='125' width='96' height='70' rx='12' fill='#2a2e46' stroke='#9ba0b8' stroke-width='2'/><rect x='357' y='125' width='96' height='70' rx='12' fill='#2a2e46' stroke='#e8b84b' stroke-width='2'/><path d='M235 160 C270 116, 300 116, 335 160 C300 204, 270 204, 235 160Z' fill='none' stroke='#ff7a6e' stroke-width='4'/><text x='155' y='155' text-anchor='middle' font-family='Inter, Arial' font-size='17' fill='#eceef7'>thing</text><text x='155' y='177' text-anchor='middle' font-family='Inter, Arial' font-size='13' fill='#9ba0b8'>what it is</text><text x='405' y='153' text-anchor='middle' font-family='Inter, Arial' font-size='17' fill='#eceef7'>frame</text><text x='405' y='177' text-anchor='middle' font-family='Inter, Arial' font-size='13' fill='#9ba0b8'>why it matters</text><text x='280' y='59' text-anchor='middle' font-family='Inter, Arial' font-size='22' font-weight='700' fill='#eceef7'>Same object. Different meaning.</text><text x='280' y='272' text-anchor='middle' font-family='Inter, Arial' font-size='14' fill='#a48bfa'>Innovation often starts by changing the comparison.</text></svg>",
-        "visualCaption": "A better frame changes the comparison before it changes the product.",
-        "after": [
-          "In a Daisy 1 planning discussion, don’t only ask, “What should this feature do?” Ask, “What frustrating moment should this help someone name?” That shift can turn a generic product decision into a clearer promise without inventing capabilities or overselling the work."
-        ]
-      },
-      "lab": {
-        "title": "The Reframe Pass",
-        "paras": [
-          "This skill matters because people often reject the container before they understand the content. In a client explanation, product demo, or casual conversation, the first frame decides whether the listener hears “extra work,” “interesting option,” or “finally, someone sees the real issue.”"
-        ],
-        "exercise": "Take one idea you may explain today and write three frames for it in under five minutes: 1) boring category, 2) pain it prevents, 3) better future it enables. Use this exact script: “The simple way to say it is ____. But the more useful way to think about it is ____, because it helps us avoid ____.”"
-      },
-      "masters": {
-        "name": "Rory Sutherland",
-        "talk": "Perspective is everything | TEDxAthens",
-        "videoId": "iueVZJVEmEs",
-        "start": 260,
-        "watchWindow": "Watch roughly 4:20–8:45, where he shows how a changed frame can create real perceived value.",
-        "paras": [
-          "Sutherland fits today because he treats psychology as a design material. He does not argue that substance is irrelevant; he argues that meaning, comparison, and context are part of the substance people actually experience."
-        ],
-        "observe": [
-          "Notice how he uses surprising examples instead of abstract definitions.",
-          "Listen for the contrast between rational improvements and psychological improvements.",
-          "Watch how his humor lowers defensiveness before making a serious strategy point."
-        ]
-      },
-      "steal": {
-        "line": "The fastest improvement may be changing what people compare this to.",
-        "paras": [
-          "Practice this before you add more detail. When an idea feels flat, pause and ask, “Compared to what?” Then deliberately choose the comparison that makes the real stakes visible without hype."
-        ],
-        "example": [
-          "“If we frame this as another planning artifact, it will feel heavy. If we frame it as a drift detector for the quarter, people will understand why it matters.”"
         ]
       }
     }
