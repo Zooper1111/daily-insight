@@ -4,11 +4,10 @@ Standalone learning digest published every other day. The website reads `edition
 
 ## Reading experience
 
-- Each edition is presented as five or six full-screen cards: hook, idea, visual, practice, optional video, and a line to steal.
+- Each edition is presented as a sequence of full-screen cards: hook, optional interactive episode, idea, visual, practice, optional reference video, and a line to steal.
 - Scroll or swipe vertically to move continuously through cards and older editions.
 - Story-style progress bars show where you are inside the current edition.
-- Listen mode reads the cards aloud and advances automatically when the browser supports speech playback.
-- Selected editions can include an original captioned 9:16 micro-video that plays inside the story feed.
+- Selected editions can include an original 9:16 interactive episode with continuous vector motion, timed captions, a decision point, two outcomes, and optional sound effects.
 - The edition library jumps directly to any saved insight, and reusable lines can be copied with one tap.
 - Arrow keys, Page Up/Page Down, Space, J, and K provide desktop navigation.
 
@@ -68,25 +67,26 @@ steal short enough to stand alone as a full-screen closing card.
 
 The sequence should feel spread out rather than repetitive. A healthy run mixes small talk techniques, presentation craft, business frameworks, and algorithmic or decision-science ideas such as game theory, rules, systems, incentives, tradeoffs, and business philosophy.
 
-## Short video workflow
+## Interactive episode workflow
 
-Short videos are built from three or more original portrait scene images, one
-narration track, and a JSON timing spec. The renderer adds subtle camera motion,
-timed captions, a brand label, a progress line, and web-ready MP4 encoding.
+Interactive episodes are continuous motion pieces built directly into the web
+experience. Each episode uses one recurring character, one setting, one visual
+metaphor, and one concept. It should reach a decision point quickly, let the
+viewer choose, show the consequence, and end with a small action.
 
-The reusable renderer is `scripts/render_short_video.py`. A complete example is
-in `assets/videos/2026-09-29-micro-before-after.json`, with source scenes under
-`assets/video-scenes/2026-09-29/` and the finished MP4 beside the spec.
+The first pilot is the Micro Before/After episode in `index.html`. Its free,
+dependency-free stack is inline SVG, CSS animation, a small JavaScript state
+machine, timed captions, and optional synthesized sound effects. The web version
+can branch; a later export workflow will render the strongest path as a linear
+9:16 MP4 for social platforms.
 
-Render from the repository root:
+Do not use operating-system speech synthesis in published episodes. Narration
+stays off until a natural neural voice has been auditioned and approved. The
+preferred free first test is local Kokoro TTS. Run
+`scripts/generate_voice_auditions.py` to rebuild the three unpublished samples
+in `assets/voice-auditions/`; a paid voice service remains an
+optional upgrade rather than a dependency.
 
-```sh
-python scripts/render_short_video.py \
-  --spec assets/videos/2026-09-29-micro-before-after.json \
-  --audio /path/to/narration.aiff \
-  --ffmpeg /path/to/ffmpeg \
-  --output assets/videos/2026-09-29-micro-before-after.mp4
-```
-
-Keep videos selective rather than automatic. The format is most useful when an
-idea has a clear visual arc: friction, model, application.
+The earlier image-based MP4 renderer remains in `scripts/render_short_video.py`
+as an archive and export reference, but slideshow-style motion is not the target
+format going forward.
