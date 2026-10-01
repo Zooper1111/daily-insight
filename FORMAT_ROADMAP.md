@@ -120,6 +120,21 @@ Do not activate recurring paid generation yet. First connect Higgsfield, quote
 the credits for the pilot, and wait for explicit approval. Keep the free SVG
 path regardless of the result.
 
+## Cost guardrail
+
+- The default production system must have no recurring video-generation
+  subscription. Do not start a monthly video plan unless Matt explicitly changes
+  this preference.
+- Build standard examples with the existing SVG/CSS/JavaScript animation,
+  warm local Kokoro narration, captions, and a local browser-to-video export.
+- Use external generative video only as an optional enhancement for an edition
+  where it materially improves understanding.
+- For occasional generated clips, prefer a capped pay-as-you-go API over a
+  monthly subscription. Quote the estimated per-clip charge before generation
+  and keep credentials in repository secrets, never in this public repository.
+- Do not activate the Higgsfield trial or spend Higgsfield credits without a new,
+  explicit approval.
+
 ## References
 
 - Kevin Kelly, [1,000 True Fans](https://kk.org/thetechnium/1000-true-fans/)
