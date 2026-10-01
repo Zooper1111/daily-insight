@@ -8,6 +8,7 @@ Standalone learning digest published every other day. The website reads `edition
 - Scroll or swipe vertically to move continuously through cards and older editions.
 - Story-style progress bars show where you are inside the current edition.
 - Listen mode reads the cards aloud and advances automatically when the browser supports speech playback.
+- Selected editions can include an original captioned 9:16 micro-video that plays inside the story feed.
 - The edition library jumps directly to any saved insight, and reusable lines can be copied with one tap.
 - Arrow keys, Page Up/Page Down, Space, J, and K provide desktop navigation.
 
@@ -66,3 +67,26 @@ one or two short paragraphs, the exercise immediately scannable, and the line to
 steal short enough to stand alone as a full-screen closing card.
 
 The sequence should feel spread out rather than repetitive. A healthy run mixes small talk techniques, presentation craft, business frameworks, and algorithmic or decision-science ideas such as game theory, rules, systems, incentives, tradeoffs, and business philosophy.
+
+## Short video workflow
+
+Short videos are built from three or more original portrait scene images, one
+narration track, and a JSON timing spec. The renderer adds subtle camera motion,
+timed captions, a brand label, a progress line, and web-ready MP4 encoding.
+
+The reusable renderer is `scripts/render_short_video.py`. A complete example is
+in `assets/videos/2026-09-29-micro-before-after.json`, with source scenes under
+`assets/video-scenes/2026-09-29/` and the finished MP4 beside the spec.
+
+Render from the repository root:
+
+```sh
+python scripts/render_short_video.py \
+  --spec assets/videos/2026-09-29-micro-before-after.json \
+  --audio /path/to/narration.aiff \
+  --ffmpeg /path/to/ffmpeg \
+  --output assets/videos/2026-09-29-micro-before-after.mp4
+```
+
+Keep videos selective rather than automatic. The format is most useful when an
+idea has a clear visual arc: friction, model, application.

@@ -25,6 +25,12 @@
         "exercise": "Pick one thing you shipped this week. Out loud, fill in these exact blanks: “Before, _____. We changed _____. Now _____.” Keep it under 30 seconds. Then send a quick voice note or Loom using that line to explain the change to a collaborator."
       },
       "masters": null,
+      "shortVideo": {
+        "title": "The Micro Before/After in 33 seconds",
+        "src": "assets/videos/2026-09-29-micro-before-after.mp4",
+        "poster": "assets/video-scenes/2026-09-29/scene-01-overwhelm.png",
+        "duration": "0:33"
+      },
       "steal": {
         "line": "“Before, it worked like this. We changed one thing. Now it works like this.”",
         "paras": [

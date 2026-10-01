@@ -44,6 +44,10 @@ Use these descriptions exactly until Matt provides better ones.
 - Videos are optional and should be rare. Include one only when seeing or hearing
   the person demonstrate the idea materially improves the lesson; most editions
   should not have a video section.
+- Selected editions may also become original 9:16 micro-videos. Aim for 25–45
+  seconds, three to five visual scenes, concise narration, and large baked-in
+  captions. Use a simple arc: friction → model → application. Keep this format
+  selective so it remains a useful change of pace rather than filler.
 - Include one exact practice script whenever possible.
 - Include a short applied story, scene, or concrete example that shows how the idea could appear in Matt's work.
 - Prefer "try this today" over abstract inspiration.

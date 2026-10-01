@@ -1,0 +1,32 @@
+{
+  "title": "The Micro Before/After",
+  "duration": 33.0,
+  "narration": "Most work updates are accurate... and instantly forgettable. Here’s a tiny fix: the Micro Before and After. First, name how things worked before. Then, the one change you made. Finally, what’s true now. Before, teams were losing track of handoffs. We added one shared timeline. Now everyone sees blockers in one place. Three beats. No status dump. No long backstory. Just motion people can remember and repeat. Try it on your next update. Before. Change. After. That’s the whole story.",
+  "scenes": [
+    {
+      "path": "assets/video-scenes/2026-09-29/scene-01-overwhelm.png",
+      "duration": 10.5
+    },
+    {
+      "path": "assets/video-scenes/2026-09-29/scene-02-structure.png",
+      "duration": 11.0
+    },
+    {
+      "path": "assets/video-scenes/2026-09-29/scene-03-clarity.png",
+      "duration": 11.5
+    }
+  ],
+  "captions": [
+    {"start": 0.0, "end": 3.4, "text": "Most work updates are accurate..."},
+    {"start": 3.4, "end": 6.2, "text": "and instantly forgettable."},
+    {"start": 6.2, "end": 9.8, "text": "Here’s a tiny fix: the Micro Before/After."},
+    {"start": 9.8, "end": 12.8, "text": "First, name how things worked before."},
+    {"start": 12.8, "end": 15.5, "text": "Then, the one change you made."},
+    {"start": 15.5, "end": 18.0, "text": "Finally, what’s true now."},
+    {"start": 18.0, "end": 21.2, "text": "Before, teams were losing track of handoffs."},
+    {"start": 21.2, "end": 23.8, "text": "We added one shared timeline."},
+    {"start": 23.8, "end": 26.4, "text": "Now everyone sees blockers in one place."},
+    {"start": 26.4, "end": 29.6, "text": "Three beats. No status dump. No long backstory."},
+    {"start": 29.6, "end": 33.0, "text": "Before. Change. After."}
+  ]
+}
