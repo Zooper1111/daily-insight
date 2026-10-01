@@ -1,0 +1,127 @@
+# Daily Insight Format Catalog and Roadmap
+
+This is the public-safe product direction for the next version of Daily Insight.
+
+## What exists now
+
+- A vertical, swipeable card feed with direct links to editions and cards.
+- Hook, explanation, visual, practice, and reusable-line cards.
+- An in-browser 9:16 stick-figure animation pilot with timed captions, continuous
+  motion, a viewer choice, and two outcomes.
+- Warm, opt-in Kokoro narration synchronized with captions.
+- A no-cost visual fallback built with SVG, CSS, and JavaScript.
+- A path for exporting linear 9:16 videos for social platforms.
+
+## What stays
+
+- The swipeable cards and short reading time.
+- Warm narration, always-visible captions, and mobile-first 9:16 framing.
+- Concrete examples tied to public-safe work situations.
+- Lightweight in-browser animation as the free and reliable fallback.
+
+## What changes
+
+1. Every edition gets one short contextual video example.
+2. The video follows context → problem → model or move → visible result.
+3. The generic “See the Model” card is removed by default. A separate visual
+   card appears only for a chart, formula, algorithm, causal diagram, or mechanism
+   that genuinely adds understanding.
+4. Lessons move up a level: more research-backed frameworks, algorithms,
+   formulas, decision science, economics, strategy, systems, network effects,
+   creator economics, and game theory; fewer obvious communication reminders.
+5. Memorable claims carry an evidence label and source. The lesson distinguishes
+   empirical findings from formal models, theories, and useful heuristics.
+
+## Recommended edition sequence
+
+1. **Hook** — the surprising question, tension, or number.
+2. **Idea** — the advanced concept, explained simply with an evidence label.
+3. **Watch it happen** — one short contextual video that carries the applied
+   example from before to after.
+4. **Use it** — a calculation, decision, drill, or script to apply today.
+5. **Keep this line** — a concise closing phrase worth remembering or copying.
+
+## Video quality bar
+
+- Establish the people, goal, and friction before naming the model.
+- Use one setting, one visual metaphor, one concept, and one clear outcome.
+- Make the cause-and-effect visible; do not merely animate labels.
+- Keep the narration conversational and warm, with captions that work on mute.
+- A standard example can be a short linear clip. Add branching only when the
+  viewer's choice teaches something the linear version cannot.
+- Avoid disconnected image slides, decorative motion, and vague “before” and
+  “after” labels without a real situation.
+
+## Higgsfield integration plan
+
+Higgsfield can supply the generated motion layer while Daily Insight keeps the
+cards, choices, captions, narration controls, and lesson logic.
+
+### Step 1 — Free production system
+
+- Select and source the lesson.
+- Write the five-card edition and evidence label.
+- Storyboard the contextual example in four beats.
+- Produce captions and warm narration.
+- Render the example with the existing SVG/stick-figure system.
+
+This remains the fallback even after a paid generator is connected.
+
+### Step 2 — One controlled Higgsfield pilot
+
+- Connect the Higgsfield integration to the working ChatGPT account.
+- Use a faceless explainer style such as Stickman Cartoon, Hand Drawn, or
+  Editorial Motion Graphics.
+- Reuse one character and visual style so editions feel like a series.
+- Ask for the exact credit cost and wait for approval before each generation.
+- Generate one short vertical clip, compare it with the free SVG version, and
+  judge comprehension, visual continuity, voice fit, and cost.
+
+The website should continue to own interactivity. Higgsfield generates the
+visual clip; the site surrounds it with choices, captions, controls, and the
+rest of the lesson. Full automation should wait until the pilot establishes a
+repeatable quality and cost threshold.
+
+### Step 3 — Repeatable production
+
+- Save the approved style, character reference, prompt pattern, and shot timing.
+- Generate one clip per edition only after the script and source check pass.
+- Keep a free SVG version available when generation fails or is not worth the
+  credits.
+- Consider API automation only after manual generation is consistently useful.
+
+## First proposed pilot: 1,000 True Fans
+
+This is a better content test because it contains a useful model and a formula,
+not just a communication reminder.
+
+**Model:** A creator may be able to build a sustainable business from a smaller
+group of committed direct supporters rather than chasing a mass audience.
+
+**Formula:**
+
+`required true fans = target annual income ÷ annual gross profit per true fan`
+
+- At $100 annual gross profit per fan, a $100,000 target requires 1,000 fans.
+- At $20 annual gross profit per fan, the same target requires 5,000 fans.
+
+**Evidence label:** useful creator-economics model or heuristic, not a proven
+viral algorithm and not a guarantee that an audience will “explode.” Its value
+is the unit-economics calculation. The answer changes with price, margin,
+retention, direct reach, and the creator's income target.
+
+**Video arc:** A creator watches a huge follower counter barely move, replaces
+it with a small group of repeat supporters, changes the value per supporter,
+and sees the required audience size recalculate in real time.
+
+## Decision gate
+
+Do not activate recurring paid generation yet. First connect Higgsfield, quote
+the credits for the pilot, and wait for explicit approval. Keep the free SVG
+path regardless of the result.
+
+## References
+
+- Kevin Kelly, [1,000 True Fans](https://kk.org/thetechnium/1000-true-fans/)
+- Higgsfield, [MCP for ChatGPT and Claude](https://higgsfield.ai/mcp?tab=chatgpt)
+- Higgsfield, [MCP for Marketers](https://higgsfield.ai/blog/mcp-for-marketers)

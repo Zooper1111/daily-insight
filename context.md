@@ -29,7 +29,17 @@ Use these descriptions exactly until Matt provides better ones.
 - Rotate domains: Innovation, AI, Strategy, Leadership, Storytelling, Decision-Making, Communication, Conversation.
 - Mix public-speaking lessons with everyday speaking lessons, but avoid letting "how to talk" dominate every edition.
 - Spread the mix across small talk techniques, presentation craft, business frameworks, and algorithmic or rule-based ideas.
-- Teach a real theory, model, framework, mental model, or named concept in each edition. Explain it simply enough to use that day.
+- Teach a real theory, model, framework, algorithm, formula, or named concept in each edition. Explain it simply enough to use that day.
+- Favor intermediate and advanced ideas that give the reader a genuine new lens,
+  calculation, mechanism, or decision rule. Obvious reminders such as “keep
+  everyone informed” are not strong enough on their own.
+- Weight the mix toward research-backed frameworks, algorithms, formulas,
+  cognitive biases, decision science, economics, growth loops, network effects,
+  creator economics, game theory, and business strategy. Simple communication
+  lessons can still appear when they contain a non-obvious mechanism.
+- Label the status of memorable claims: empirical result, formal model, theory,
+  or heuristic. Give the source or provenance and the important caveat. Do not
+  turn an appealing audience number or viral threshold into a false guarantee.
 - Include small talk and daily conversation skills: opening questions, follow-ups, warmth, curiosity, tone, listening, transitions, and graceful exits.
 - Include presentation craft regularly, especially how to present current work, frame a point, structure an explanation, and make an idea land.
 - Include non-speech lessons regularly: business frameworks, strategy models, decision rules, game theory, systems thinking, incentives, tradeoffs, product thinking, management philosophy, and philosophy in business.
@@ -41,13 +51,22 @@ Use these descriptions exactly until Matt provides better ones.
 - Write for a full-screen, swipeable card sequence. Keep hooks compact; limit the
   core explanation to one or two short paragraphs; make the exercise scannable;
   and make the reusable line strong enough to stand alone on its own card.
-- Interactive episodes are optional and should be selective. When used, aim for
-  25–45 seconds, continuous motion, synchronized captions, and one meaningful
-  viewer decision that reveals a consequence. Use one recurring character, one
-  setting, one visual metaphor, and one concept so the episode feels coherent.
+- Include one short contextual video example in every edition. It should identify
+  who is involved, what they are trying to do, what specifically is going wrong,
+  the model or move being taught, and the visible result. Prefer a compact
+  context → problem → model → result arc over an abstract summary.
+- A fully branching interactive episode is a selective enhancement, not a
+  requirement for every edition. When used, aim for 25–45 seconds, continuous
+  motion, synchronized captions, and one meaningful viewer decision that reveals
+  a consequence. Use one recurring character, one setting, one visual metaphor,
+  and one concept so the episode feels coherent.
 - Prefer simple expressive vector or stick-figure animation over disconnected
   image slides. A good arc is friction → viewer choice → consequence → model →
   application. The web version may branch; social exports are linear 9:16 MP4s.
+- Do not include a generic “See the Model” card that merely repeats
+  before/change/after. The video should carry that explanation. A separate visual
+  card earns its place only when it contains a useful chart, formula, algorithm,
+  causal diagram, or mechanism that is easier to understand visually.
 - Ground every example before using internal work language: identify who is in
   the scene, what they are trying to do, and what specifically is going wrong.
   A first-time viewer should understand the situation before hearing labels such
@@ -93,3 +112,8 @@ A strong month should feel varied and should include:
   understandable within five minutes, with roughly 150–250 words of prose.
   Videos are optional and should appear only when the demonstration genuinely
   makes the lesson land.
+- 2026-10-01: Keep the swipeable card format and warm opt-in narration, but make
+  one short contextual video example standard for every edition. Remove the
+  default “See the Model” card unless it contains a genuinely explanatory chart,
+  formula, algorithm, causal diagram, or mechanism. Raise the lesson level toward
+  intermediate and advanced, evidence-aware ideas rather than obvious reminders.

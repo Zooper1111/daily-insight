@@ -4,10 +4,11 @@ Standalone learning digest published every other day. The website reads `edition
 
 ## Reading experience
 
-- Each edition is presented as a sequence of full-screen cards: hook, optional interactive episode, idea, visual, practice, optional reference video, and a line to steal.
+- Each edition is presented as a sequence of full-screen cards: hook, idea, short contextual video example, application, and a line to steal.
 - Scroll or swipe vertically to move continuously through cards and older editions.
 - Story-style progress bars show where you are inside the current edition.
-- Selected editions can include an original 9:16 interactive episode with continuous vector motion, timed captions, a decision point, two outcomes, and optional sound effects.
+- Every edition should include one short 9:16 example video that establishes the scene, shows the problem, demonstrates the idea, and makes the result visible. It may be a lightweight in-browser animation or a generated clip.
+- Selected editions can upgrade that example into an interactive episode with continuous vector motion, timed captions, a decision point, two outcomes, and optional sound effects.
 - The edition library jumps directly to any saved insight, and reusable lines can be copied with one tap.
 - Arrow keys, Page Up/Page Down, Space, J, and K provide desktop navigation.
 
@@ -53,26 +54,43 @@ Daily Insight should teach public speaking, everyday conversation, small talk, b
 
 Each edition should usually include:
 
-- One theory, model, framework, or mental model explained simply.
+- One substantial theory, model, framework, algorithm, formula, or mental model explained simply, with its evidence status made clear.
 - One public-safe connection to Matt's active workstreams, using Daisy 1 as the project coordination app name.
-- One short applied story, scene, or example that shows how the idea could be used.
+- One short contextual video example that shows who is involved, what is going wrong, the move being taught, and the visible result.
 
 Keep the entire edition concise: roughly 150–250 words of prose and no more than
-a five-minute read. A video section is optional and should be uncommon; add it
-only when watching the idea demonstrated materially improves understanding.
+a five-minute read. The example video is a standard part of the lesson because
+watching the idea in context should do more explanatory work than another block
+of prose.
 
 Write for the card experience: keep the hook compact, the core explanation to
 one or two short paragraphs, the exercise immediately scannable, and the line to
 steal short enough to stand alone as a full-screen closing card.
 
-The sequence should feel spread out rather than repetitive. A healthy run mixes small talk techniques, presentation craft, business frameworks, and algorithmic or decision-science ideas such as game theory, rules, systems, incentives, tradeoffs, and business philosophy.
+The sequence should feel spread out rather than repetitive. Weight the mix toward
+intermediate and advanced material: research-backed frameworks, algorithms,
+formulas, decision science, economics, growth loops, network effects, creator
+economics, game theory, systems, incentives, tradeoffs, and business philosophy.
+Simple communication reminders can appear occasionally, but only when they
+reveal a non-obvious mechanism or unusually useful application.
+
+Use a separate visual/model card only when it materially improves understanding,
+such as a chart, formula, algorithm, causal diagram, or mechanism. Do not include
+a “See the Model” card that merely restates the lesson as before/change/after;
+the contextual video example already performs that job.
+
+When presenting a research claim or memorable number, identify whether it is an
+empirical result, formal model, theory, or heuristic. Include the source or
+provenance and the important caveat. Never present a viral threshold or audience
+number as a guaranteed formula.
 
 ## Interactive episode workflow
 
-Interactive episodes are continuous motion pieces built directly into the web
-experience. Each episode uses one recurring character, one setting, one visual
-metaphor, and one concept. It should reach a decision point quickly, let the
-viewer choose, show the consequence, and end with a small action.
+Every lesson's short video example uses one recurring character, one setting,
+one visual metaphor, and one concept. Its minimum story is: context → before or
+problem → model or move → after or result. A more ambitious interactive episode
+can reach a decision point quickly, let the viewer choose, show the consequence,
+and end with a small action.
 
 Every example must establish the scene before introducing the model: who the
 people are, what they are trying to do, and what specifically is going wrong.

@@ -194,7 +194,7 @@ Schema:
   "hook": "One sharp, specific line",
   "insight": {{
     "title": "Title",
-    "paras": ["One short paragraph, <strong>/<em> allowed. Teach one theory, model, framework, or mental model here."],
+    "paras": ["One short paragraph, <strong>/<em> allowed. Teach one substantial theory, model, framework, algorithm, formula, or mental model here, with its evidence status or provenance."],
     "visualSvg": "<svg viewBox='0 0 560 320'>...</svg>",
     "visualCaption": "One-line caption",
     "after": ["One closing application sentence tied to a public-safe workstream example"]
@@ -221,10 +221,16 @@ Content goals:
   lessons when they are genuinely useful.
 - Rotate domains across Conversation, Communication, Storytelling, Strategy,
   Decision-Making, Leadership, Innovation, AI, and Product Thinking.
-- Every edition must teach one real theory, model, framework, mental model, or
-  named concept from psychology, systems thinking, rhetoric, design,
-  management, decision science, innovation, AI, or product strategy. Make the
-  concept practical, not academic.
+- Every edition must teach one substantial theory, model, framework, algorithm,
+  formula, or named concept from psychology, systems thinking, rhetoric,
+  design, management, decision science, economics, creator economics,
+  innovation, AI, or product strategy. Favor intermediate or advanced ideas
+  that provide a genuinely new lens, calculation, mechanism, or decision rule.
+  Obvious reminders are not strong enough on their own.
+- For a memorable claim or number, identify whether it is an empirical result,
+  formal model, theory, or heuristic. Include its source or provenance and its
+  important caveat. Never present an audience size or viral threshold as a
+  guaranteed formula.
 - Include everyday speaking skills often: small talk, better questions,
   follow-ups, warmth, transitions, graceful exits, provocative openings, and
   making ideas interesting without sounding gimmicky.
@@ -246,8 +252,10 @@ Content goals:
   could," "Matt can," "For Matt," or similar third-person coaching language in
   the generated edition. It is okay for the private context to mention Matt, but
   the public edition should read like direct advice to the reader.
-- Include a short applied story, scenario, or example. Show how the idea plays
-  out instead of only explaining what to say.
+- Include a short, video-ready applied story or scenario. Establish who is
+  involved, what they are trying to do, and what specifically is going wrong;
+  then show the model or move and the visible result. Put this compact contextual
+  arc in insight.after so it can become the edition's video example.
 - Keep the full edition to roughly 150-250 words of prose across insight, lab,
   masters (when present), and steal. It must be easy to read and understand in
   no more than five minutes. Do not repeat the same idea across sections.
@@ -262,8 +270,10 @@ Content goals:
   understanding. A famous speaker alone is not a reason to add a video. When
   present, use exactly these fields: name, talk, videoId, start, watchWindow,
   paras (one short reason to watch), and observe (one specific thing to notice).
-- visualSvg must be original inline SVG using this palette: bg #1b1e30,
-  ink #eceef7, dim #9ba0b8, gold #e8b84b, coral #ff7a6e, teal #5fd4c4,
+- visualSvg must do analytical work: show a useful chart, formula, algorithm,
+  causal diagram, or mechanism. Never make a generic before/change/after graphic
+  that merely repeats the prose. Use original inline SVG with this palette: bg
+  #1b1e30, ink #eceef7, dim #9ba0b8, gold #e8b84b, coral #ff7a6e, teal #5fd4c4,
   violet #a48bfa.
 - When masters is present, masters.videoId must be from a real YouTube video. Do
   not invent IDs.
