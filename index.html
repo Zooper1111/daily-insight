@@ -266,6 +266,7 @@ function buildEdition(ed,index){
           <audio preload="metadata" data-episode-voice-clip="right-2" src="assets/narration/2026-09-29/warm-right-2.wav"></audio>
           <audio preload="metadata" data-episode-voice-clip="right-3" src="assets/narration/2026-09-29/warm-right-3.wav"></audio>
           <audio preload="metadata" data-episode-voice-clip="right-4" src="assets/narration/2026-09-29/warm-right-4.wav"></audio>
+          <audio preload="metadata" data-episode-voice-clip="right-5" src="assets/narration/2026-09-29/warm-right-5.wav"></audio>
           <svg viewBox="0 0 430 600" role="img" aria-label="Two people trying to make sense of a cluttered work update">
             <path d="M0 505H430" class="sketch" opacity=".18"/>
             <path d="M18 505Q70 470 122 505T226 505T330 505T434 505" fill="none" stroke="#8db5a1" stroke-width="12" opacity=".45"/>
@@ -489,11 +490,12 @@ function chooseEpisodePath(episode,answer){
     episodeSchedule(episode,()=>{episode.querySelector('[data-episode-choice] p').textContent='Try a different move.';toggleEpisodePanel(episode.querySelector('[data-episode-choice]'),true);episode.dataset.running='choice'},6500);
     return;
   }
-  episode.dataset.running='right';setEpisode(episode,{stage:'right',caption:'Before: handoffs kept disappearing.',progress:58});playEpisodeVoice(episode,'right-1');
-  episodeSchedule(episode,()=>{setEpisode(episode,{caption:'Change: put every handoff on one shared timeline.',progress:70});playEpisodeVoice(episode,'right-2')},3200);
-  episodeSchedule(episode,()=>{setEpisode(episode,{caption:'After: blockers became visible.',progress:82});playEpisodeVoice(episode,'right-3')},7100);
-  episodeSchedule(episode,()=>{setEpisode(episode,{caption:'Three beats. One story people can repeat.',progress:100});playEpisodeVoice(episode,'right-4')},10100);
-  episodeSchedule(episode,()=>{toggleEpisodePanel(episode.querySelector('[data-episode-end]'),true);episode.dataset.running='done'},13700);
+  episode.dataset.running='right';setEpisode(episode,{stage:'right',caption:'Picture a product team passing work from design to engineering.',progress:52});playEpisodeVoice(episode,'right-1');
+  episodeSchedule(episode,()=>{setEpisode(episode,{caption:'Before: design finished a task, but engineering didn’t know it was ready.',progress:62});playEpisodeVoice(episode,'right-2')},4700);
+  episodeSchedule(episode,()=>{setEpisode(episode,{caption:'Change: the team put every handoff on one shared timeline.',progress:74});playEpisodeVoice(episode,'right-3')},9900);
+  episodeSchedule(episode,()=>{setEpisode(episode,{caption:'After: everyone could see what was ready, blocked, or waiting.',progress:87});playEpisodeVoice(episode,'right-4')},14300);
+  episodeSchedule(episode,()=>{setEpisode(episode,{caption:'Now the update has people, a problem, and a visible result.',progress:100});playEpisodeVoice(episode,'right-5')},18700);
+  episodeSchedule(episode,()=>{toggleEpisodePanel(episode.querySelector('[data-episode-end]'),true);episode.dataset.running='done'},23300);
 }
 
 $('#libraryBtn').addEventListener('click',()=>{$('#library').showModal();setTimeout(()=>$('#library .editionbtn.active')?.scrollIntoView({block:'center'}),0)});

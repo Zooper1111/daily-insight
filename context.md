@@ -48,6 +48,10 @@ Use these descriptions exactly until Matt provides better ones.
 - Prefer simple expressive vector or stick-figure animation over disconnected
   image slides. A good arc is friction → viewer choice → consequence → model →
   application. The web version may branch; social exports are linear 9:16 MP4s.
+- Ground every example before using internal work language: identify who is in
+  the scene, what they are trying to do, and what specifically is going wrong.
+  A first-time viewer should understand the situation before hearing labels such
+  as “handoff,” “blocker,” or “timeline.”
 - Do not publish narration made with operating-system speech synthesis or a
   noticeably robotic voice. Keep an episode caption-first until a natural neural
   voice has been auditioned and approved. The approved default is a warm,

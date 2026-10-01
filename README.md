@@ -74,6 +74,11 @@ experience. Each episode uses one recurring character, one setting, one visual
 metaphor, and one concept. It should reach a decision point quickly, let the
 viewer choose, show the consequence, and end with a small action.
 
+Every example must establish the scene before introducing the model: who the
+people are, what they are trying to do, and what specifically is going wrong.
+Labels such as “handoff,” “blocker,” or “timeline” should never appear without
+enough plain-language context for a first-time viewer to follow the situation.
+
 The first pilot is the Micro Before/After episode in `index.html`. Its free,
 dependency-free stack is inline SVG, CSS animation, a small JavaScript state
 machine, timed captions, and optional synthesized sound effects. The web version

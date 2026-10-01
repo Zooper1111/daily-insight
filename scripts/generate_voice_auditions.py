@@ -31,10 +31,11 @@ NARRATION = {
     "intro-choice": "You have ten seconds. What would make this land?",
     "wrong-1": "More detail adds weight, not motion.",
     "wrong-2": "Try the move that lets people see the change.",
-    "right-1": "Before: handoffs kept disappearing.",
-    "right-2": "Change: put every handoff on one shared timeline.",
-    "right-3": "After: blockers became visible.",
-    "right-4": "Three beats. One story people can repeat.",
+    "right-1": "Picture a product team passing work from design to engineering.",
+    "right-2": "Before: design finished a task, but engineering didn't know it was ready.",
+    "right-3": "Change: the team put every handoff on one shared timeline.",
+    "right-4": "After: everyone could see what was ready, blocked, or waiting.",
+    "right-5": "Now the update has people, a problem, and a visible result.",
 }
 
 
