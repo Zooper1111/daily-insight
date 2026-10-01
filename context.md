@@ -38,6 +38,9 @@ Use these descriptions exactly until Matt provides better ones.
   minutes. Aim for roughly 150–250 words across all prose fields, excluding the
   inline SVG. Prefer one crisp explanation, one short exercise, and one reusable
   line over repeated examples or restating the same point.
+- Write for a full-screen, swipeable card sequence. Keep hooks compact; limit the
+  core explanation to one or two short paragraphs; make the exercise scannable;
+  and make the reusable line strong enough to stand alone on its own card.
 - Videos are optional and should be rare. Include one only when seeing or hearing
   the person demonstrate the idea materially improves the lesson; most editions
   should not have a video section.

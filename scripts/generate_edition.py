@@ -251,6 +251,10 @@ Content goals:
 - Keep the full edition to roughly 150-250 words of prose across insight, lab,
   masters (when present), and steal. It must be easy to read and understand in
   no more than five minutes. Do not repeat the same idea across sections.
+- The website presents each section as a full-screen swipeable card. Keep the
+  hook to roughly 5-12 words. Keep insight.paras to one or two short paragraphs,
+  lab.paras to one brief sentence, lab.exercise to a compact set of directions,
+  and steal.line short enough to work as a large standalone headline.
 - Keep paragraphs short. Prefer one insight paragraph, one application sentence,
   one compact exercise, and one reusable line with one brief example.
 - Set masters to null for most editions. Include a masters object only when

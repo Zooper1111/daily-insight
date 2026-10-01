@@ -1,6 +1,15 @@
 # Daily Insight
 
-Standalone learning digest published every other day. The website reads `editions.json`, newest first.
+Standalone learning digest published every other day. The website reads `editions.json`, newest first, and turns every edition into a swipeable story.
+
+## Reading experience
+
+- Each edition is presented as five or six full-screen cards: hook, idea, visual, practice, optional video, and a line to steal.
+- Scroll or swipe vertically to move continuously through cards and older editions.
+- Story-style progress bars show where you are inside the current edition.
+- Listen mode reads the cards aloud and advances automatically when the browser supports speech playback.
+- The edition library jumps directly to any saved insight, and reusable lines can be copied with one tap.
+- Arrow keys, Page Up/Page Down, Space, J, and K provide desktop navigation.
 
 ## How it works
 
@@ -51,5 +60,9 @@ Each edition should usually include:
 Keep the entire edition concise: roughly 150–250 words of prose and no more than
 a five-minute read. A video section is optional and should be uncommon; add it
 only when watching the idea demonstrated materially improves understanding.
+
+Write for the card experience: keep the hook compact, the core explanation to
+one or two short paragraphs, the exercise immediately scannable, and the line to
+steal short enough to stand alone as a full-screen closing card.
 
 The sequence should feel spread out rather than repetitive. A healthy run mixes small talk techniques, presentation craft, business frameworks, and algorithmic or decision-science ideas such as game theory, rules, systems, incentives, tradeoffs, and business philosophy.
