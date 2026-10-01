@@ -80,12 +80,13 @@ machine, timed captions, and optional synthesized sound effects. The web version
 can branch; a later export workflow will render the strongest path as a linear
 9:16 MP4 for social platforms.
 
-Do not use operating-system speech synthesis in published episodes. Narration
-stays off until a natural neural voice has been auditioned and approved. The
-preferred free first test is local Kokoro TTS. Run
-`scripts/generate_voice_auditions.py` to rebuild the three unpublished samples
-in `assets/voice-auditions/`; a paid voice service remains an
-optional upgrade rather than a dependency.
+Do not use operating-system speech synthesis in published episodes. The approved
+default is the warm local Kokoro voice (`af_heart` at `0.98` speed). Narration is
+opt-in, restarts the episode so audio and captions remain synchronized, and
+never replaces the captions. Run `scripts/generate_voice_auditions.py` to
+rebuild both the auditions in `assets/voice-auditions/` and the approved episode
+clips in `assets/narration/2026-09-29/`. A paid voice service remains an optional
+upgrade rather than a dependency.
 
 The earlier image-based MP4 renderer remains in `scripts/render_short_video.py`
 as an archive and export reference, but slideshow-style motion is not the target

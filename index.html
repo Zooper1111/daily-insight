@@ -106,6 +106,7 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offse
 .episode-controls{position:absolute;right:13px;top:12px;z-index:12;display:flex;gap:7px}
 .episode-control{width:34px;height:34px;border:1px solid rgba(23,32,41,.16);border-radius:50%;background:rgba(255,250,240,.8);color:#172029;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(10px)}
 .episode-control svg{position:static;width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2}
+.episode-control.on{background:#5ed8c7;box-shadow:0 0 0 2px #172029}
 .episode-caption{position:absolute;z-index:9;left:7%;right:7%;bottom:5.5%;min-height:68px;display:grid;place-items:center;text-align:center;background:#fffaf0;border:2px solid #172029;border-radius:14px;padding:11px 14px;font-size:clamp(.88rem,3.8vw,1.04rem);font-weight:800;line-height:1.2;box-shadow:6px 6px 0 #172029}
 .episode-progress{position:absolute;z-index:12;left:5%;right:5%;top:5.4%;height:4px;background:rgba(23,32,41,.16);border-radius:99px;overflow:hidden}
 .episode-progress span{display:block;width:0;height:100%;background:#172029;transition:width .45s var(--ease)}
@@ -248,13 +249,23 @@ function buildEdition(ed,index){
           <div class="episode-progress" aria-hidden="true"><span></span></div>
           <div class="episode-brand">Daily·Insight</div>
           <div class="episode-controls">
-            <button class="episode-control" type="button" data-episode-sound aria-label="Turn sound effects on" title="Sound effects">
+            <button class="episode-control" type="button" data-episode-voice aria-label="Turn warm narration on" aria-pressed="false" title="Warm narration">
               <svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4Z"></path><path class="sound-wave" d="M17 9a4 4 0 0 1 0 6"></path></svg>
             </button>
             <button class="episode-control" type="button" data-episode-replay aria-label="Replay episode" title="Replay episode">
               <svg viewBox="0 0 24 24"><path d="M4 7v5h5"></path><path d="M6.5 17a8 8 0 1 0-.5-9.5L4 10"></path></svg>
             </button>
           </div>
+          <audio preload="metadata" data-episode-voice-clip="intro-1" src="assets/narration/2026-09-29/warm-intro-1.wav"></audio>
+          <audio preload="metadata" data-episode-voice-clip="intro-2" src="assets/narration/2026-09-29/warm-intro-2.wav"></audio>
+          <audio preload="metadata" data-episode-voice-clip="intro-3" src="assets/narration/2026-09-29/warm-intro-3.wav"></audio>
+          <audio preload="metadata" data-episode-voice-clip="intro-choice" src="assets/narration/2026-09-29/warm-intro-choice.wav"></audio>
+          <audio preload="metadata" data-episode-voice-clip="wrong-1" src="assets/narration/2026-09-29/warm-wrong-1.wav"></audio>
+          <audio preload="metadata" data-episode-voice-clip="wrong-2" src="assets/narration/2026-09-29/warm-wrong-2.wav"></audio>
+          <audio preload="metadata" data-episode-voice-clip="right-1" src="assets/narration/2026-09-29/warm-right-1.wav"></audio>
+          <audio preload="metadata" data-episode-voice-clip="right-2" src="assets/narration/2026-09-29/warm-right-2.wav"></audio>
+          <audio preload="metadata" data-episode-voice-clip="right-3" src="assets/narration/2026-09-29/warm-right-3.wav"></audio>
+          <audio preload="metadata" data-episode-voice-clip="right-4" src="assets/narration/2026-09-29/warm-right-4.wav"></audio>
           <svg viewBox="0 0 430 600" role="img" aria-label="Two people trying to make sense of a cluttered work update">
             <path d="M0 505H430" class="sketch" opacity=".18"/>
             <path d="M18 505Q70 470 122 505T226 505T330 505T434 505" fill="none" stroke="#8db5a1" stroke-width="12" opacity=".45"/>
@@ -290,7 +301,7 @@ function buildEdition(ed,index){
           </div>
           <div class="episode-caption" data-episode-caption aria-live="polite">Most work updates are accurate.</div>
         </div>
-        <div class="episode-status">Interactive · captions on · optional sound effects</div>
+        <div class="episode-status">Interactive · captions on · warm voice optional</div>
       </div>
     </div>`,ed.interactive.title));
   }
@@ -413,12 +424,13 @@ function bindEpisodes(){
     episode.querySelectorAll('[data-episode-replay]').forEach(button=>button.addEventListener('click',()=>startEpisode(episode,true)));
     episode.querySelectorAll('[data-episode-answer]').forEach(button=>button.addEventListener('click',()=>chooseEpisodePath(episode,button.dataset.episodeAnswer)));
     episode.querySelector('[data-episode-continue]')?.addEventListener('click',()=>move(1));
-    episode.querySelector('[data-episode-sound]')?.addEventListener('click',event=>{
-      episode.dataset.sound=episode.dataset.sound==='on'?'off':'on';
-      const on=episode.dataset.sound==='on';event.currentTarget.classList.toggle('on',on);
-      event.currentTarget.setAttribute('aria-label',on?'Turn sound effects off':'Turn sound effects on');
-      if(on)episodeTone(episode,520,.07,.12);
-      showToast(on?'Sound effects on':'Sound effects off');
+    episode.querySelector('[data-episode-voice]')?.addEventListener('click',event=>{
+      episode.dataset.voice=episode.dataset.voice==='on'?'off':'on';
+      const on=episode.dataset.voice==='on';event.currentTarget.classList.toggle('on',on);
+      event.currentTarget.setAttribute('aria-pressed',String(on));
+      event.currentTarget.setAttribute('aria-label',on?'Turn warm narration off':'Turn warm narration on');
+      if(on)startEpisode(episode,true);else stopEpisodeVoice(episode);
+      showToast(on?'Warm narration on':'Narration off');
     });
   });
 }
@@ -429,7 +441,16 @@ function episodeSchedule(episode,callback,delay){
 }
 
 function stopEpisode(episode){
-  (episodeTimers.get(episode)||[]).forEach(clearTimeout);episodeTimers.set(episode,[]);episode.dataset.running='off';
+  (episodeTimers.get(episode)||[]).forEach(clearTimeout);episodeTimers.set(episode,[]);stopEpisodeVoice(episode);episode.dataset.running='off';
+}
+
+function stopEpisodeVoice(episode){
+  episode.querySelectorAll('[data-episode-voice-clip]').forEach(audio=>{audio.pause();audio.currentTime=0});
+}
+
+function playEpisodeVoice(episode,key){
+  stopEpisodeVoice(episode);if(episode.dataset.voice!=='on')return;
+  episode.querySelector(`[data-episode-voice-clip="${key}"]`)?.play().catch(()=>{});
 }
 
 function setEpisode(episode,{stage,caption,progress}){
@@ -448,39 +469,31 @@ function startEpisode(episode,force=false){
   toggleEpisodePanel(episode.querySelector('[data-episode-choice]'),false);
   toggleEpisodePanel(episode.querySelector('[data-episode-end]'),false);
   setEpisode(episode,{stage:'intro',caption:'Most work updates are accurate.',progress:10});
-  episodeSchedule(episode,()=>{setEpisode(episode,{caption:'And instantly forgettable.',progress:23});episodeTone(episode,220,.05,.09)},1850);
-  episodeSchedule(episode,()=>{setEpisode(episode,{caption:'The facts are there. The movement isn’t.',progress:35})},3600);
+  playEpisodeVoice(episode,'intro-1');
+  episodeSchedule(episode,()=>{setEpisode(episode,{caption:'And instantly forgettable.',progress:23});playEpisodeVoice(episode,'intro-2')},2750);
+  episodeSchedule(episode,()=>{setEpisode(episode,{caption:'The facts are there. The movement isn’t.',progress:35});playEpisodeVoice(episode,'intro-3')},5400);
   episodeSchedule(episode,()=>{
     setEpisode(episode,{stage:'choice',caption:'You have ten seconds. What would make this land?',progress:43});
     episode.querySelector('[data-episode-choice] p').textContent='What would make this update land?';
     toggleEpisodePanel(episode.querySelector('[data-episode-choice]'),true);
-    episode.dataset.running='choice';episodeTone(episode,420,.08,.11);
-  },5350);
+    episode.dataset.running='choice';playEpisodeVoice(episode,'intro-choice');
+  },8500);
 }
 
 function chooseEpisodePath(episode,answer){
   if(episode.dataset.running!=='choice')return;
   stopEpisode(episode);toggleEpisodePanel(episode.querySelector('[data-episode-choice]'),false);
   if(answer==='detail'){
-    episode.dataset.running='wrong';setEpisode(episode,{stage:'wrong',caption:'More detail adds weight—not motion.',progress:60});episodeTone(episode,145,.13,.18);
-    episodeSchedule(episode,()=>{setEpisode(episode,{caption:'Try the move that lets people see the change.',progress:68});episode.querySelector('[data-episode-choice] p').textContent='Try a different move.';toggleEpisodePanel(episode.querySelector('[data-episode-choice]'),true);episode.dataset.running='choice'},2200);
+    episode.dataset.running='wrong';setEpisode(episode,{stage:'wrong',caption:'More detail adds weight—not motion.',progress:60});playEpisodeVoice(episode,'wrong-1');
+    episodeSchedule(episode,()=>{setEpisode(episode,{caption:'Try the move that lets people see the change.',progress:68});playEpisodeVoice(episode,'wrong-2')},3200);
+    episodeSchedule(episode,()=>{episode.querySelector('[data-episode-choice] p').textContent='Try a different move.';toggleEpisodePanel(episode.querySelector('[data-episode-choice]'),true);episode.dataset.running='choice'},6500);
     return;
   }
-  episode.dataset.running='right';setEpisode(episode,{stage:'right',caption:'Before: handoffs kept disappearing.',progress:58});episodeTone(episode,330,.06,.1);
-  episodeSchedule(episode,()=>{setEpisode(episode,{caption:'Change: put every handoff on one shared timeline.',progress:70});episodeTone(episode,440,.06,.1)},1500);
-  episodeSchedule(episode,()=>{setEpisode(episode,{caption:'After: blockers became visible.',progress:82});episodeTone(episode,550,.07,.12)},3100);
-  episodeSchedule(episode,()=>{setEpisode(episode,{caption:'Three beats. One story people can repeat.',progress:100});episodeTone(episode,660,.08,.15)},4700);
-  episodeSchedule(episode,()=>{toggleEpisodePanel(episode.querySelector('[data-episode-end]'),true);episode.dataset.running='done'},6100);
-}
-
-function episodeTone(episode,frequency,duration,volume){
-  if(episode.dataset.sound!=='on')return;
-  try{
-    const AudioCtx=window.AudioContext||window.webkitAudioContext;const ctx=new AudioCtx();
-    const osc=ctx.createOscillator(),gain=ctx.createGain();osc.type='sine';osc.frequency.value=frequency;
-    gain.gain.setValueAtTime(volume,ctx.currentTime);gain.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+duration);
-    osc.connect(gain).connect(ctx.destination);osc.start();osc.stop(ctx.currentTime+duration);osc.onended=()=>ctx.close();
-  }catch{}
+  episode.dataset.running='right';setEpisode(episode,{stage:'right',caption:'Before: handoffs kept disappearing.',progress:58});playEpisodeVoice(episode,'right-1');
+  episodeSchedule(episode,()=>{setEpisode(episode,{caption:'Change: put every handoff on one shared timeline.',progress:70});playEpisodeVoice(episode,'right-2')},3200);
+  episodeSchedule(episode,()=>{setEpisode(episode,{caption:'After: blockers became visible.',progress:82});playEpisodeVoice(episode,'right-3')},7100);
+  episodeSchedule(episode,()=>{setEpisode(episode,{caption:'Three beats. One story people can repeat.',progress:100});playEpisodeVoice(episode,'right-4')},10100);
+  episodeSchedule(episode,()=>{toggleEpisodePanel(episode.querySelector('[data-episode-end]'),true);episode.dataset.running='done'},13700);
 }
 
 $('#libraryBtn').addEventListener('click',()=>{$('#library').showModal();setTimeout(()=>$('#library .editionbtn.active')?.scrollIntoView({block:'center'}),0)});

@@ -50,7 +50,10 @@ Use these descriptions exactly until Matt provides better ones.
   application. The web version may branch; social exports are linear 9:16 MP4s.
 - Do not publish narration made with operating-system speech synthesis or a
   noticeably robotic voice. Keep an episode caption-first until a natural neural
-  voice has been auditioned and approved. Optional sound effects are welcome.
+  voice has been auditioned and approved. The approved default is a warm,
+  conversational American voice (currently local Kokoro `af_heart` at `0.98`
+  speed). Keep narration opt-in and synchronized with always-visible captions.
+  Optional sound effects are welcome.
 - Include one exact practice script whenever possible.
 - Include a short applied story, scene, or concrete example that shows how the idea could appear in Matt's work.
 - Prefer "try this today" over abstract inspiration.
