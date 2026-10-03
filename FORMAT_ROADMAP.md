@@ -160,10 +160,12 @@ and sees the required audience size recalculate in real time.
 
 ## Decision gate
 
-Matt authorized a $30 prepaid API balance for the two-week pilot. Auto top-up
-remains off. The automation may submit at most six ten-second sections per video
-under the $7.80 configured ceiling and may not submit a paid retry automatically.
-If the prepaid balance reaches zero, generation stops. Keep the free SVG path
+Matt authorized a $30 prepaid API balance, and the first six ten-second sections
+have been generated. Auto top-up remains off. Recurring paid generation is now
+paused until the assembled first video is reviewed and approved. Recovery and
+editing must reuse those existing six request IDs and may not submit another
+paid batch. If the pilot is approved later, automation may be enabled explicitly
+with the `VIDEO_PILOT_ENABLED` repository variable. Keep the free SVG path
 regardless of the result.
 
 ## Cost guardrail

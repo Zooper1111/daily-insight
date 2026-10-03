@@ -202,62 +202,18 @@ def media_duration(path: Path) -> float:
     return float(result.stdout.strip())
 
 
-def render_narration(blocks: list[dict[str, str]], work: Path) -> tuple[Path, Path]:
+def render_narration(script: str, work: Path) -> tuple[Path, Path]:
+    """Render one natural continuous read and derive simple phrase captions."""
     pipeline = KPipeline(lang_code="a")
-    voice_segments: list[Path] = []
-    caption_entries: list[str] = []
-    caption_number = 1
+    audio_chunks = [audio for _, _, audio in pipeline(script, voice="af_heart", speed=0.98)]
+    if not audio_chunks:
+        raise RuntimeError("Warm continuous narration produced no audio")
 
-    for index, block in enumerate(blocks, start=1):
-        audio_chunks = [
-            audio for _, _, audio in pipeline(block["narration"], voice="af_heart", speed=0.98)
-        ]
-        if not audio_chunks:
-            raise RuntimeError(f"Warm narration block {index} produced no audio")
-        raw = work / f"voice-{index:02d}-raw.wav"
-        sf.write(raw, np.concatenate(audio_chunks), 24000)
-        duration = media_duration(raw)
-        if duration > 9.75:
-            raise RuntimeError(
-                f"Narration block {index} is {duration:.2f}s; shorten its wording before spending again"
-            )
+    raw = work / "narration-raw.wav"
+    sf.write(raw, np.concatenate(audio_chunks), 24000)
+    duration = media_duration(raw)
+    print(f"Continuous warm narration duration: {duration:.2f}s")
 
-        padded = work / f"voice-{index:02d}.wav"
-        run(
-            [
-                "ffmpeg",
-                "-hide_banner",
-                "-loglevel",
-                "error",
-                "-i",
-                str(raw),
-                "-af",
-                "apad=pad_dur=10,atrim=0:10",
-                "-ac",
-                "1",
-                "-ar",
-                "24000",
-                "-y",
-                str(padded),
-            ]
-        )
-        voice_segments.append(padded)
-
-        words = block["narration"].split()
-        groups = [words[offset : offset + 5] for offset in range(0, len(words), 5)]
-        speech_window = min(duration, 9.5)
-        for group_index, group in enumerate(groups):
-            start = (index - 1) * 10 + speech_window * group_index / len(groups)
-            end = (index - 1) * 10 + speech_window * (group_index + 1) / len(groups)
-            caption_entries.append(
-                f"{caption_number}\n{srt_time(start)} --> {srt_time(end)}\n{' '.join(group)}\n"
-            )
-            caption_number += 1
-
-    audio_list = work / "audio.txt"
-    audio_list.write_text(
-        "".join(f"file '{path.as_posix()}'\n" for path in voice_segments), encoding="utf-8"
-    )
     narration = work / "narration.wav"
     run(
         [
@@ -265,18 +221,29 @@ def render_narration(blocks: list[dict[str, str]], work: Path) -> tuple[Path, Pa
             "-hide_banner",
             "-loglevel",
             "error",
-            "-f",
-            "concat",
-            "-safe",
-            "0",
             "-i",
-            str(audio_list),
-            "-c",
-            "copy",
+            str(raw),
+            "-af",
+            "apad=whole_dur=60",
+            "-ac",
+            "1",
+            "-ar",
+            "24000",
             "-y",
             str(narration),
         ]
     )
+
+    words = script.split()
+    groups = [words[offset : offset + 5] for offset in range(0, len(words), 5)]
+    caption_entries = []
+    for index, group in enumerate(groups, start=1):
+        start = duration * (index - 1) / len(groups)
+        end = duration * index / len(groups)
+        caption_entries.append(
+            f"{index}\n{srt_time(start)} --> {srt_time(end)}\n{' '.join(group)}\n"
+        )
+
     subtitles = work / "captions.srt"
     subtitles.write_text("\n".join(caption_entries), encoding="utf-8")
     return narration, subtitles
@@ -348,6 +315,7 @@ def assemble_video(
 
     destination.parent.mkdir(parents=True, exist_ok=True)
     subtitle_filter = (
+        "tpad=stop_mode=clone:stop_duration=8,"
         f"subtitles={subtitles.name}:force_style='FontName=Arial,FontSize=19,"
         "PrimaryColour=&H00FFFFFF,OutlineColour=&H00101010,BorderStyle=1,"
         "Outline=3,Shadow=0,Alignment=2,MarginV=118'"
@@ -376,8 +344,7 @@ def assemble_video(
             "160k",
             "-movflags",
             "+faststart",
-            "-t",
-            "60",
+            "-shortest",
             "-y",
             str(destination),
         ],
@@ -451,7 +418,10 @@ def main() -> int:
         generation["status"] = "visuals-completed"
         save_editions(data)
 
-        narration, subtitles = render_narration(blocks, work)
+        narration_script = edition["storyVideoPlan"].get("narration") or " ".join(
+            block["narration"] for block in blocks
+        )
+        narration, subtitles = render_narration(narration_script, work)
         output = ROOT / "assets" / "videos" / edition["date"] / "story.mp4"
         assemble_video(clips, narration, subtitles, output, work)
 

@@ -31,6 +31,7 @@ EDITION_INTERVAL_DAYS = int(os.getenv("EDITION_INTERVAL_DAYS", "2"))
 EDITION_ANCHOR_DATE = os.getenv("EDITION_ANCHOR_DATE", "2026-07-27")
 VIDEO_PILOT_START = dt.date.fromisoformat(os.getenv("VIDEO_PILOT_START", "2026-10-03"))
 VIDEO_PILOT_END = dt.date.fromisoformat(os.getenv("VIDEO_PILOT_END", "2026-10-17"))
+VIDEO_PILOT_ENABLED = os.getenv("VIDEO_PILOT_ENABLED", "0") == "1"
 
 
 REQUIRED_TOP_LEVEL = {
@@ -201,7 +202,7 @@ def should_publish_today() -> bool:
 
 def format_for_date(day: dt.date) -> str:
     """Alternate full video and static carousel editions during the pilot."""
-    if day < VIDEO_PILOT_START or day > VIDEO_PILOT_END:
+    if not VIDEO_PILOT_ENABLED or day < VIDEO_PILOT_START or day > VIDEO_PILOT_END:
         return "carousel"
     publication_number = (day - VIDEO_PILOT_START).days // EDITION_INTERVAL_DAYS
     return "video" if publication_number % 2 == 0 else "carousel"

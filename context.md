@@ -146,3 +146,8 @@ A strong month should feel varied and should include:
   retries, a $7.80 per-video provider ceiling, the approved warm local voice,
   and burned captions. Full videos must feel like one animated story rather than
   a carousel or a sequence of moving stills.
+- 2026-10-03: Pause recurring paid video generation until the first completed
+  60-second pilot has been reviewed and approved. Finish that pilot by reusing
+  its six already-paid motion clips with one natural continuous warm narration
+  track and simple captions. Do not enforce per-scene voice timing, and do not
+  submit another paid batch while assembling or revising the first pilot.

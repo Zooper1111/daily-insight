@@ -43,10 +43,11 @@ jobs:
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.1' }}
           EDITION_INTERVAL_DAYS: ${{ vars.EDITION_INTERVAL_DAYS || '2' }}
           EDITION_ANCHOR_DATE: ${{ vars.EDITION_ANCHOR_DATE || '2026-07-27' }}
+          VIDEO_PILOT_ENABLED: ${{ vars.VIDEO_PILOT_ENABLED || '0' }}
           SMOKE_TEST: ${{ inputs.smoke_test && '1' || '0' }}
         run: python scripts/generate_edition.py
       - name: Generate a full story video when this edition is a video edition
-        if: ${{ inputs.connection_test != true && inputs.resume_video != true && inputs.smoke_test != true }}
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.connection_test != true && inputs.resume_video != true && inputs.smoke_test != true }}
         env:
           HF_KEY: ${{ secrets.HF_KEY }}
           HF_MAX_RATE_USD_PER_SECOND: "0.13"

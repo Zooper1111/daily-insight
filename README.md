@@ -51,7 +51,9 @@ The workflow:
 
 The first pilot caps the provider portion at $7.80 per finished 60-second video
 and submits no automatic paid retries. A connection-test workflow verifies
-`HF_KEY` without submitting a generation.
+`HF_KEY` without submitting a generation. Recurring paid generation is paused by
+default; set the repository variable `VIDEO_PILOT_ENABLED` to `1` only after the
+first finished video is reviewed and approved.
 
 The script skips if today is an off day or today's edition already exists, so a manual run will not double-publish.
 
