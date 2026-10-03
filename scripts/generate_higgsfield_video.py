@@ -408,6 +408,11 @@ def main() -> int:
 
     generation = edition["storyVideoPlan"].setdefault("generation", {})
     existing_ids = generation.get("requestIds") or []
+    if "--resume-only" in sys.argv and len(existing_ids) != BLOCK_COUNT:
+        raise RuntimeError(
+            "Resume-only mode requires exactly six existing request IDs and will not "
+            "submit paid generation."
+        )
     if len(existing_ids) == BLOCK_COUNT:
         print("Reusing six previously submitted Higgsfield requests; no new paid generation.")
         requests_by_block = [
