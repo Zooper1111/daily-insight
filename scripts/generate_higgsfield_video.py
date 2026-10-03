@@ -50,6 +50,12 @@ def load_current_edition() -> tuple[dict[str, Any], dict[str, Any]]:
     return data, editions[0]
 
 
+def save_editions(data: dict[str, Any]) -> None:
+    EDITIONS_PATH.write_text(
+        json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+
+
 def validate_plan(edition: dict[str, Any]) -> list[dict[str, str]] | None:
     if edition.get("format") != "video":
         print("Newest edition is a static carousel; no paid video generation is due.")
@@ -400,9 +406,33 @@ def main() -> int:
         f"${projected_cost:.2f}; automatic paid retries are disabled."
     )
 
-    requests_by_block = [
-        submit_block(index, block["prompt"]) for index, block in enumerate(blocks, start=1)
-    ]
+    generation = edition["storyVideoPlan"].setdefault("generation", {})
+    existing_ids = generation.get("requestIds") or []
+    if len(existing_ids) == BLOCK_COUNT:
+        print("Reusing six previously submitted Higgsfield requests; no new paid generation.")
+        requests_by_block = [
+            {
+                "request_id": request_id,
+                "status_url": f"{API_BASE}/requests/{request_id}/status",
+                "cancel_url": f"{API_BASE}/requests/{request_id}/cancel",
+            }
+            for request_id in existing_ids
+        ]
+    else:
+        requests_by_block = [
+            submit_block(index, block["prompt"])
+            for index, block in enumerate(blocks, start=1)
+        ]
+        generation.update(
+            {
+                "provider": "Higgsfield API",
+                "maximumConfiguredCostUsd": round(projected_cost, 2),
+                "paidRetries": 0,
+                "requestIds": [request["request_id"] for request in requests_by_block],
+                "status": "submitted",
+            }
+        )
+        save_editions(data)
 
     with tempfile.TemporaryDirectory(prefix="daily-insight-higgsfield-") as temp_dir:
         work = Path(temp_dir)
@@ -412,6 +442,9 @@ def main() -> int:
             clip = work / f"block-{index:02d}.mp4"
             download(url, clip)
             clips.append(clip)
+
+        generation["status"] = "visuals-completed"
+        save_editions(data)
 
         narration, subtitles = render_narration(blocks, work)
         output = ROOT / "assets" / "videos" / edition["date"] / "story.mp4"
@@ -424,14 +457,15 @@ def main() -> int:
         "duration": "60 seconds",
         "captions": True,
     }
-    edition["storyVideoPlan"]["generation"] = {
-        "provider": "Higgsfield API",
-        "maximumConfiguredCostUsd": round(projected_cost, 2),
-        "paidRetries": 0,
-    }
-    EDITIONS_PATH.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    generation.update(
+        {
+            "provider": "Higgsfield API",
+            "maximumConfiguredCostUsd": round(projected_cost, 2),
+            "paidRetries": 0,
+            "status": "published",
+        }
     )
+    save_editions(data)
     print(f"Published {output.relative_to(ROOT)}")
     return 0
 

@@ -39,22 +39,36 @@
             "prompt": "Vertical 9:16 continuation in the identical warm gouache-risograph editorial storybook world and identical Maya character. Exactly five hard-cut shots, about two seconds each, all moving from frame one. Shot 1 MEDIUM: a small circle of diverse adult supporters enters Maya's studio carrying sketchbooks. Shot 2 CLOSE-UP: hands exchange workshop tickets and handmade prints. Shot 3 OVERHEAD: the same supporters return around a round table month after month as calendar pages flip. Shot 4 SIDE ANGLE: one supporter enthusiastically brings a friend into the circle. Shot 5 WIDE: the small circle glows brightly while the distant follower cloud fades. Characters gesture but never talk; no lip sync, no readable text, no logos."
           },
           {
-            "narration": "Kevin Kelly called this One Thousand True Fans: a useful creator-economics heuristic, not a magic threshold and never a promise of virality.",
+            "narration": "Kevin Kelly’s One Thousand True Fans is a useful heuristic, not magic, a fixed threshold, or any promise of virality.",
             "prompt": "Vertical 9:16 continuation in the identical warm gouache-risograph editorial storybook style. Exactly five hard-cut shots, about two seconds each, immediate motion. Shot 1 MACRO: one glowing supporter token pulses in Maya's hand. Shot 2 TOP-DOWN: many warm tokens ripple outward into an organized ring. Shot 3 WIDE: the ring resolves into a symbolic crowd of one thousand lights around Maya's studio. Shot 4 HIGH ANGLE: a glittering magic-wand shortcut appears, cracks, and dissolves to show this is not magic. Shot 5 MEDIUM: Maya calmly weighs the glowing supporter ring against a faded viral rocket symbol. Characters gesture but never talk; no lip sync, no readable text, no logos."
           },
           {
-            "narration": "The calculation is simple: divide target annual income by annual gross profit per supporter. One hundred thousand divided by one hundred equals one thousand.",
+            "narration": "Divide target annual income by annual gross profit per supporter. One hundred thousand divided by one hundred equals one thousand committed supporters.",
             "prompt": "Vertical 9:16 continuation in the identical warm editorial storybook animation. Exactly five hard-cut shots, about two seconds each, motion from frame one. Shot 1 OVERHEAD: Maya places a large gold income token above a hand-drawn division line. Shot 2 MACRO: a coral supporter-value token slides beneath the line. Shot 3 SIDE ANGLE: the tokens click into a simple mechanical calculator. Shot 4 CLOSE-UP: the machine releases ten neat bundles of one hundred glowing supporter lights. Shot 5 WIDE: one thousand lights form a stable warm bridge supporting Maya's studio. Characters gesture but never talk; no lip sync, no readable text or numerals, no logos."
           },
           {
-            "narration": "If profit is only twenty dollars each, that same income goal needs five thousand supporters. Price, margin, retention, and direct reach change the answer.",
+            "narration": "At only twenty dollars profit each, that same goal needs five thousand supporters. Price, margin, retention, and direct reach change everything.",
             "prompt": "Vertical 9:16 continuation in the identical warm gouache-risograph storybook world. Exactly five hard-cut shots, about two seconds each, immediate motion. Shot 1 CLOSE-UP: the coral value token visibly shrinks in Maya's palm. Shot 2 LOW ANGLE: the calculator gears spin much faster. Shot 3 WIDE: the supporter-light bridge stretches five times farther across the studio. Shot 4 TOP-DOWN: four tactile levers for value, margin, return visits, and direct connection slide to different positions. Shot 5 MEDIUM: Maya adjusts one lever and watches the required crowd expand and contract. Characters gesture but never talk; no lip sync, no readable text, no logos."
           },
           {
             "narration": "Use this on Daily Insight today: track returning learners, completed lessons, saves, replies, and referrals. Build for depth before chasing reach.",
             "prompt": "Vertical 9:16 finale in the identical warm editorial storybook animation and identical Maya character. Exactly five hard-cut shots, about two seconds each, moving immediately. Shot 1 CLOSE-UP: Maya swipes through a Daily Insight-like lesson on a generic phone with illustrated cards and no readable interface text. Shot 2 OVERHEAD: learner tokens return, finish a path, save a card, reply, and invite another token through clear pictograms. Shot 3 MEDIUM: those actions feed a warm circular flywheel around the phone. Shot 4 WIDE: the flywheel strengthens a small deep-rooted tree while a giant shallow follower cloud blows away. Shot 5 CLOSE-UP: Maya smiles, pockets the phone, and the rooted learning circle glows behind her. Characters gesture but never talk; no lip sync, no readable text, no logos."
           }
-        ]
+        ],
+        "generation": {
+          "provider": "Higgsfield API",
+          "maximumConfiguredCostUsd": 7.8,
+          "paidRetries": 0,
+          "requestIds": [
+            "93e65415-1f61-4204-9205-47cac7d4bbb5",
+            "c362c4e8-07cd-4520-a496-6ef9659980c2",
+            "87e2fa95-eaba-4e1b-b0fc-1fffa5236903",
+            "236a658c-0296-4f4d-a67b-1f85cda48122",
+            "55ac37ca-b531-456f-8600-6c1f0f0e690d",
+            "8c9d1fc7-73f0-46bf-9dc7-27d52f948dee"
+          ],
+          "status": "visuals-completed"
+        }
       },
       "steal": {
         "line": "Build for depth before you buy reach.",
