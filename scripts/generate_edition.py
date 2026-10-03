@@ -33,6 +33,7 @@ EDITION_ANCHOR_DATE = os.getenv("EDITION_ANCHOR_DATE", "2026-07-27")
 VIDEO_PILOT_START = dt.date.fromisoformat(os.getenv("VIDEO_PILOT_START", "2026-10-03"))
 VIDEO_PILOT_END = dt.date.fromisoformat(os.getenv("VIDEO_PILOT_END", "2026-10-17"))
 VIDEO_PILOT_ENABLED = os.getenv("VIDEO_PILOT_ENABLED", "0") == "1"
+VIDEO_STORY_MIN_SCORE = 4
 
 
 REQUIRED_TOP_LEVEL = {
@@ -400,6 +401,63 @@ def generate_edition(prompt: str) -> dict[str, Any]:
     return parse_json_object(extract_text(response))
 
 
+def review_video_story(edition: dict[str, Any]) -> tuple[bool, dict[str, Any]]:
+    """Fail closed unless a second model pass clears the paid-video story bar."""
+    client = OpenAI()
+    response = client.responses.create(
+        model=MODEL,
+        input=f"""
+Act as the final story editor for a paid 60-second animated lesson. Judge the
+candidate against the Cobra Effect standard. Return only raw JSON with exactly
+this shape:
+{{
+  "approved": true,
+  "scores": {{
+    "causalStory": 1,
+    "visibleReversal": 1,
+    "visualCausality": 1,
+    "endingPayoff": 1,
+    "spokenClarity": 1
+  }},
+  "problems": ["short, specific problem"],
+  "revisionBrief": "precise instructions for one rewrite"
+}}
+
+Approve only if every score is at least {VIDEO_STORY_MIN_SCORE} out of 5. The
+animation must reveal a changing situation, not merely decorate explanatory
+prose. A visible reversal should occur by the middle. The ending must resolve
+the opening problem. The narration must be understandable on one listen without
+pausing, and any math must be explained at roughly a third-grade listening
+level. Be demanding: protecting the paid generation budget matters more than
+publishing on schedule.
+
+Candidate edition:
+{json.dumps(edition, ensure_ascii=False, indent=2)}
+""",
+        reasoning={"effort": REASONING_EFFORT},
+    )
+    review = parse_json_object(extract_text(response))
+    score_names = {
+        "causalStory",
+        "visibleReversal",
+        "visualCausality",
+        "endingPayoff",
+        "spokenClarity",
+    }
+    scores = review.get("scores")
+    if not isinstance(scores, dict) or set(scores) != score_names:
+        raise ValueError("Video story review returned an invalid scorecard")
+    if any(
+        not isinstance(scores[name], int) or not 1 <= scores[name] <= 5
+        for name in score_names
+    ):
+        raise ValueError("Video story review scores must be integers from 1 to 5")
+    approved = bool(review.get("approved")) and all(
+        scores[name] >= VIDEO_STORY_MIN_SCORE for name in score_names
+    )
+    return approved, review
+
+
 def smoke_test() -> int:
     client = OpenAI()
     response = client.responses.create(
@@ -458,8 +516,39 @@ def main() -> int:
         for e in editions[:8]
     ]
 
-    edition = generate_edition(build_prompt(context, recent))
+    prompt = build_prompt(context, recent)
+    edition = generate_edition(prompt)
     validate_edition(edition)
+
+    if edition.get("format") == "video":
+        approved, review = review_video_story(edition)
+        if not approved:
+            revision_prompt = f"""
+{prompt}
+
+The first candidate below failed the paid-video story review. Rewrite the whole
+edition once, following the revision brief and fixing every listed problem.
+Return only the complete replacement edition as raw JSON.
+
+First candidate:
+{json.dumps(edition, ensure_ascii=False, indent=2)}
+
+Review:
+{json.dumps(review, ensure_ascii=False, indent=2)}
+"""
+            edition = generate_edition(revision_prompt)
+            validate_edition(edition)
+            approved, review = review_video_story(edition)
+        if not approved:
+            raise RuntimeError(
+                "Video story failed the Cobra-standard review after one rewrite; "
+                "no edition was published and no paid video request was made."
+            )
+        edition["storyVideoPlan"]["qualityGate"] = {
+            "approved": True,
+            "model": MODEL,
+            "scores": review["scores"],
+        }
 
     data["editions"] = [edition] + editions
     data["editions"] = data["editions"][:30]

@@ -31,6 +31,7 @@ SECONDS_PER_BLOCK = 10
 BLOCK_COUNT = 6
 MAX_RATE_USD_PER_SECOND = float(os.getenv("HF_MAX_RATE_USD_PER_SECOND", "0.13"))
 MAX_VIDEO_COST_USD = float(os.getenv("HF_MAX_VIDEO_COST_USD", "7.80"))
+PILOT_MAX_COST_USD = float(os.getenv("HF_PILOT_MAX_COST_USD", "30.00"))
 NARRATION_MIN_SECONDS = 56.5
 NARRATION_MAX_SECONDS = 59.5
 REFERENCE_URL = os.getenv(
@@ -44,11 +45,22 @@ def run(command: list[str], *, cwd: Path | None = None) -> None:
     subprocess.run(command, cwd=cwd, check=True)
 
 
-def load_current_edition() -> tuple[dict[str, Any], dict[str, Any]]:
+def load_current_edition(
+    *, resume_only: bool = False
+) -> tuple[dict[str, Any], dict[str, Any]]:
     data = json.loads(EDITIONS_PATH.read_text(encoding="utf-8"))
     editions = data.get("editions", [])
     if not editions:
         raise RuntimeError("editions.json contains no editions")
+    if resume_only:
+        for edition in editions:
+            generation = ((edition.get("storyVideoPlan") or {}).get("generation") or {})
+            if edition.get("format") == "video" and generation.get("requestIds"):
+                return data, edition
+    else:
+        for edition in editions:
+            if edition.get("format") == "video" and not edition.get("storyVideo"):
+                return data, edition
     return data, editions[0]
 
 
@@ -56,6 +68,18 @@ def save_editions(data: dict[str, Any]) -> None:
     EDITIONS_PATH.write_text(
         json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
+
+
+def prior_committed_video_cost(data: dict[str, Any], current_date: str) -> float:
+    """Count conservative provider ceilings for earlier submitted pilot videos."""
+    total = 0.0
+    for item in data.get("editions", []):
+        if item.get("date") == current_date:
+            continue
+        generation = ((item.get("storyVideoPlan") or {}).get("generation") or {})
+        if generation.get("requestIds"):
+            total += float(generation.get("maximumConfiguredCostUsd") or 0)
+    return total
 
 
 def validate_plan(
@@ -86,6 +110,14 @@ def validate_plan(
         raise ValueError(
             "storyVideoPlan.narration must contain 168-174 words so the natural "
             f"voice can fill a minute; got {len(narration_words)}"
+        )
+    quality_gate = (plan or {}).get("qualityGate")
+    if (
+        not allow_published_rebuild
+        and (not isinstance(quality_gate, dict) or quality_gate.get("approved") is not True)
+    ):
+        raise ValueError(
+            "Paid generation requires an approved Cobra-standard story quality gate"
         )
     return blocks
 
@@ -379,11 +411,15 @@ def main() -> int:
     if "--connection-test" in sys.argv:
         return connection_test()
 
-    data, edition = load_current_edition()
     resume_only = "--resume-only" in sys.argv
+    data, edition = load_current_edition(resume_only=resume_only)
     blocks = validate_plan(edition, allow_published_rebuild=resume_only)
     if blocks is None:
         return 0
+    generation = edition["storyVideoPlan"].setdefault("generation", {})
+    existing_ids = generation.get("requestIds") or []
+    if not isinstance(existing_ids, list) or len(existing_ids) > BLOCK_COUNT:
+        raise RuntimeError("Stored Higgsfield request IDs are invalid")
 
     projected_cost = BLOCK_COUNT * SECONDS_PER_BLOCK * MAX_RATE_USD_PER_SECOND
     if projected_cost > MAX_VIDEO_COST_USD + 1e-9:
@@ -391,21 +427,37 @@ def main() -> int:
             f"Projected provider cost ${projected_cost:.2f} exceeds the per-video cap "
             f"${MAX_VIDEO_COST_USD:.2f}"
         )
+    prior_cost = prior_committed_video_cost(data, str(edition.get("date", "")))
+    if (
+        not resume_only
+        and not existing_ids
+        and prior_cost + projected_cost > PILOT_MAX_COST_USD + 1e-9
+    ):
+        raise RuntimeError(
+            f"This video could raise the pilot's configured provider ceiling to "
+            f"${prior_cost + projected_cost:.2f}, above the ${PILOT_MAX_COST_USD:.2f} "
+            "pilot budget. No paid request was submitted."
+        )
     headers()  # fail before any paid request if the secret is missing
     print(
         f"Starting one 60-second video. Maximum configured provider cost: "
         f"${projected_cost:.2f}; automatic paid retries are disabled."
     )
 
-    generation = edition["storyVideoPlan"].setdefault("generation", {})
-    existing_ids = generation.get("requestIds") or []
     if resume_only and len(existing_ids) != BLOCK_COUNT:
         raise RuntimeError(
             "Resume-only mode requires exactly six existing request IDs and will not "
             "submit paid generation."
         )
-    if len(existing_ids) == BLOCK_COUNT:
-        print("Reusing six previously submitted Higgsfield requests; no new paid generation.")
+
+    with tempfile.TemporaryDirectory(prefix="daily-insight-higgsfield-") as temp_dir:
+        work = Path(temp_dir)
+        narration_script = edition["storyVideoPlan"].get("narration") or " ".join(
+            block["narration"] for block in blocks
+        )
+        # Verify the free local voice before ordering any missing paid blocks.
+        narration, subtitles = render_narration(narration_script, work)
+
         requests_by_block = [
             {
                 "request_id": request_id,
@@ -414,24 +466,29 @@ def main() -> int:
             }
             for request_id in existing_ids
         ]
-    else:
-        requests_by_block = [
-            submit_block(index, block["prompt"])
-            for index, block in enumerate(blocks, start=1)
-        ]
-        generation.update(
-            {
-                "provider": "Higgsfield API",
-                "maximumConfiguredCostUsd": round(projected_cost, 2),
-                "paidRetries": 0,
-                "requestIds": [request["request_id"] for request in requests_by_block],
-                "status": "submitted",
-            }
-        )
-        save_editions(data)
+        if len(existing_ids) == BLOCK_COUNT:
+            print(
+                "Reusing six previously submitted Higgsfield requests; "
+                "no new paid generation."
+            )
+        else:
+            for index in range(len(existing_ids), BLOCK_COUNT):
+                request = submit_block(index + 1, blocks[index]["prompt"])
+                requests_by_block.append(request)
+                existing_ids.append(request["request_id"])
+                generation.update(
+                    {
+                        "provider": "Higgsfield API",
+                        "maximumConfiguredCostUsd": round(projected_cost, 2),
+                        "paidRetries": 0,
+                        "requestIds": existing_ids,
+                        "status": "submitted",
+                    }
+                )
+                # Save each accepted paid request immediately so an interrupted
+                # run resumes with the next block instead of ordering duplicates.
+                save_editions(data)
 
-    with tempfile.TemporaryDirectory(prefix="daily-insight-higgsfield-") as temp_dir:
-        work = Path(temp_dir)
         clips: list[Path] = []
         for index, request in enumerate(requests_by_block, start=1):
             url = wait_for_block(index, request)
@@ -442,10 +499,6 @@ def main() -> int:
         generation["status"] = "visuals-completed"
         save_editions(data)
 
-        narration_script = edition["storyVideoPlan"].get("narration") or " ".join(
-            block["narration"] for block in blocks
-        )
-        narration, subtitles = render_narration(narration_script, work)
         output = ROOT / "assets" / "videos" / edition["date"] / "story.mp4"
         assemble_video(clips, narration, subtitles, output, work)
 

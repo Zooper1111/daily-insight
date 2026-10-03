@@ -89,6 +89,12 @@ Use these descriptions exactly until Matt provides better ones.
   off the opening problem. Do not accept polished animation carrying an
   explanation that would work just as well as prose. The pictures should reveal
   the mechanism, surprise, or consequence before the narrator labels it.
+- Before any paid animation request, have the strongest configured writing model
+  produce the complete 60-second narration and six-scene storyboard. Then use a
+  separate agent/editor pass to score causal story, visible reversal, visual
+  causality, ending payoff, and spoken clarity. A failed script gets one rewrite;
+  if it still fails, stop without spending. This is an agent review, not a manual
+  review step for Matt.
 - For story-led episodes, aim for roughly 45–75 seconds. Keep one provocative
   hook visible near the top, use synchronized phrase-level captions with no more
   than one highlighted keyword at a time, and let the warm narration do most of
@@ -182,3 +188,7 @@ A strong month should feel varied and should include:
   Effect standard. Keep the recurring paid-video switch off. Future videos need
   a sharper reversal, less explanatory narration, stronger visual causality,
   and an ending that resolves the opening scene.
+- 2026-10-03: For the two-week experiment, generate a detailed script and
+  storyboard first, then have a separate AI editor decide whether it meets the
+  Cobra standard. Matt does not want to review every script manually. Only an
+  agent-approved script may reach paid video generation.

@@ -51,17 +51,26 @@ The workflow:
 
 The default edition writer is `gpt-6-astra` with maximum reasoning effort. You
 can override it with the `OPENAI_MODEL` and `OPENAI_REASONING_EFFORT` repository
-variables. Video scripts are completed and checked for causal story fit before
-the paid animation step begins.
+variables. For a video edition, the writer first produces the complete narration
+and six-scene storyboard. A separate GPT-6 Astra editor scores causal story,
+visible reversal, visual causality, ending payoff, and spoken clarity. A failed
+script gets one rewrite; a second failure stops the run before paid generation.
+The free local narration is also rendered and duration-checked before the first
+paid Higgsfield request.
 
-The first pilot caps the provider portion at $7.80 per finished 60-second video
-and submits no automatic paid retries. A connection-test workflow verifies
-`HF_KEY` without submitting a generation. Recurring paid generation is paused by
-default; set the repository variable `VIDEO_PILOT_ENABLED` to `1` only after the
-first finished video is reviewed and approved.
+The first pilot caps the provider portion at $7.80 per finished 60-second video,
+caps the total configured provider exposure at $30, and submits no automatic
+paid retries. A connection-test workflow verifies `HF_KEY` without submitting a
+generation. Recurring paid generation is paused by default; set the repository
+variable `VIDEO_PILOT_ENABLED` to `1` to begin the protected two-week pilot.
+At the $7.80 ceiling, the $30 pilot budget covers the published first video plus
+two additional videos ($23.40 maximum total). A fourth video is blocked unless
+the pilot budget is deliberately raised; carousel editions continue normally.
 
 The manual `resume_video` recovery path may rebuild an already-published MP4
 from its six recorded request IDs. It never submits a new paid video request.
+Each newly accepted request ID is saved immediately so an interrupted run can
+continue without ordering the same earlier blocks again.
 
 The script skips if today is an off day or today's edition already exists, so a manual run will not double-publish.
 
@@ -133,7 +142,7 @@ an evidence caveat, and a practical connection to a current project.
 The revised first pilot established that the story-led form works, but it did
 not yet meet the Cobra Effect quality bar. A future paid video must contain a
 visible mid-story reversal, visual cause and effect, and an ending that resolves
-the opening scene. Recurring paid video generation remains paused.
+the opening scene. A separate AI editor now enforces that bar before spending.
 
 Math in a narrated video uses one plain-language worked example before showing
 any formula. Continuous scripts target 168–174 words; the renderer measures the
