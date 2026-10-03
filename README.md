@@ -74,6 +74,12 @@ economics, game theory, systems, incentives, tradeoffs, and business philosophy.
 Simple communication reminders can appear occasionally, but only when they
 reveal a non-obvious mechanism or unusually useful application.
 
+Use story-led reveals regularly. A strong sequence starts with a modern hook,
+enters a vivid historical or real-world case before naming the concept, reveals
+the model at the moment the pattern becomes clear, transfers it to two present-day
+situations, and ends with a diagnostic question or decision rule. Verify the
+anchor story; label a disputed anecdote as an anecdote rather than history.
+
 Use a separate visual/model card only when it materially improves understanding,
 such as a chart, formula, algorithm, causal diagram, or mechanism. Do not include
 a “See the Model” card that merely restates the lesson as before/change/after;
@@ -91,6 +97,12 @@ one visual metaphor, and one concept. Its minimum story is: context → before o
 problem → model or move → after or result. A more ambitious interactive episode
 can reach a decision point quickly, let the viewer choose, show the consequence,
 and end with a small action.
+
+Story-led episodes may instead use six to ten consistently styled illustrated
+scenes over roughly 45–75 seconds. Gentle camera movement, a persistent hook,
+warm narration, phrase-level captions, and one highlighted keyword can create a
+coherent video without expensive full-motion generation. The scenes must advance
+one causal story; they must not feel like a disconnected slideshow.
 
 Every example must establish the scene before introducing the model: who the
 people are, what they are trying to do, and what specifically is going wrong.

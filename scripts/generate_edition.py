@@ -197,7 +197,7 @@ Schema:
     "paras": ["One short paragraph, <strong>/<em> allowed. Teach one substantial theory, model, framework, algorithm, formula, or mental model here, with its evidence status or provenance."],
     "visualSvg": "<svg viewBox='0 0 560 320'>...</svg>",
     "visualCaption": "One-line caption",
-    "after": ["One closing application sentence tied to a public-safe workstream example"]
+    "after": ["Modern transfer example one", "Modern transfer example two ending with a practical diagnostic question"]
   }},
   "lab": {{
     "title": "Skill title",
@@ -231,6 +231,14 @@ Content goals:
   formal model, theory, or heuristic. Include its source or provenance and its
   important caveat. Never present an audience size or viral threshold as a
   guaranteed formula.
+- Regularly use a story-led reveal. Start with a sharp present-day hook, enter a
+  vivid historical or real-world case before naming the concept, reveal the named
+  model only after the pattern is visible, transfer it to two modern situations,
+  and end with a practical diagnostic question or decision rule. Use insight.paras
+  for the case and model reveal, then insight.after for the modern transfer.
+- Source-check the anchor case with web search. If a memorable historical story is
+  disputed, apocryphal, or merely illustrative, label it honestly in the prose or
+  choose a documented case. Never present an uncertain anecdote as established fact.
 - Include everyday speaking skills often: small talk, better questions,
   follow-ups, warmth, transitions, graceful exits, provocative openings, and
   making ideas interesting without sounding gimmicky.
@@ -256,6 +264,9 @@ Content goals:
   involved, what they are trying to do, and what specifically is going wrong;
   then show the model or move and the visible result. Put this compact contextual
   arc in insight.after so it can become the edition's video example.
+- Favor mechanisms with a reveal and consequence—perverse incentives, Goodhart's
+  Law, principal-agent problems, paradoxes, feedback loops, cognitive biases,
+  power laws, option value, and other ideas that become visible through a story.
 - Keep the full edition to roughly 150-250 words of prose across insight, lab,
   masters (when present), and steal. It must be easy to read and understand in
   no more than five minutes. Do not repeat the same idea across sections.

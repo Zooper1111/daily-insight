@@ -52,6 +52,37 @@ This is the public-safe product direction for the next version of Daily Insight.
 - Avoid disconnected image slides, decorative motion, and vague “before” and
   “after” labels without a real situation.
 
+## Story-led model lessons
+
+Use this as a recurring flagship format, inspired by short illustrated explainers
+that make a named concept memorable without requiring expensive full-motion video.
+Borrow the teaching architecture, not another creator's artwork, wording, brand,
+or promotional ending.
+
+1. **Modern hook** — connect the idea to a current frustration, behavior, or
+   decision in one provocative line.
+2. **Vivid case** — tell a specific historical or real-world story with stakes
+   and a causal turn.
+3. **Model reveal** — name the concept only after the viewer can feel the pattern.
+4. **Modern transfer** — show two different present-day places where the same
+   mechanism appears.
+5. **Diagnostic** — end with a question, test, or decision rule the viewer can use.
+
+The illustrated version uses six to ten vertical scenes in one coherent visual
+world, gentle pans or pushes, warm narration, a persistent top hook, and short
+burned-style captions with one highlighted keyword. Target 45–75 seconds. The
+website can reproduce this with generated still illustrations plus CSS motion;
+it does not require a monthly video-generation subscription.
+
+Accuracy is part of the format. Verify the anchor story and give its evidence
+status. For example, the cobra-bounty story is a powerful illustration of
+perverse incentives but its historical basis is disputed, so it must be labeled
+as an often-told anecdote rather than established colonial history.
+
+Strong future candidates include Goodhart's Law, Campbell's Law, Braess's
+Paradox, Jevons Paradox, the principal-agent problem, survivorship bias,
+Schelling points, power-law outcomes, option value, and the peak-end rule.
+
 ## Higgsfield integration plan
 
 Higgsfield can supply the generated motion layer while Daily Insight keeps the
@@ -140,3 +171,4 @@ path regardless of the result.
 - Kevin Kelly, [1,000 True Fans](https://kk.org/thetechnium/1000-true-fans/)
 - Higgsfield, [MCP for ChatGPT and Claude](https://higgsfield.ai/mcp?tab=chatgpt)
 - Higgsfield, [MCP for Marketers](https://higgsfield.ai/blog/mcp-for-marketers)
+- Storyfelted, [illustrated Cobra Effect explainer](https://www.instagram.com/p/DdGftGzMTjq/)

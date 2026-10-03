@@ -40,6 +40,14 @@ Use these descriptions exactly until Matt provides better ones.
 - Label the status of memorable claims: empirical result, formal model, theory,
   or heuristic. Give the source or provenance and the important caveat. Do not
   turn an appealing audience number or viral threshold into a false guarantee.
+- Use story-led model reveals regularly: begin with a sharp modern hook, tell a
+  vivid historical or real-world case before naming the concept, reveal the named
+  model when the pattern becomes clear, transfer it to two present-day examples,
+  and end with a diagnostic question or decision rule. The story should teach
+  the mechanism rather than merely decorate it.
+- Verify the anchor case. If the memorable story is disputed, apocryphal, or only
+  illustrative, say so plainly or replace it with a documented case. Never trade
+  factual status for a cleaner narrative.
 - Include small talk and daily conversation skills: opening questions, follow-ups, warmth, curiosity, tone, listening, transitions, and graceful exits.
 - Include presentation craft regularly, especially how to present current work, frame a point, structure an explanation, and make an idea land.
 - Include non-speech lessons regularly: business frameworks, strategy models, decision rules, game theory, systems thinking, incentives, tradeoffs, product thinking, management philosophy, and philosophy in business.
@@ -61,8 +69,15 @@ Use these descriptions exactly until Matt provides better ones.
   a consequence. Use one recurring character, one setting, one visual metaphor,
   and one concept so the episode feels coherent.
 - Prefer simple expressive vector or stick-figure animation over disconnected
-  image slides. A good arc is friction → viewer choice → consequence → model →
-  application. The web version may branch; social exports are linear 9:16 MP4s.
+  image slides. Coherent illustrated story sequences are also welcome: use six
+  to ten scenes in one consistent visual world, subtle camera movement, and a
+  causal narrative that advances with every shot. A good arc is friction →
+  consequence → model reveal → modern transfer → application. The web version
+  may branch; social exports are linear 9:16 MP4s.
+- For story-led episodes, aim for roughly 45–75 seconds. Keep one provocative
+  hook visible near the top, use synchronized phrase-level captions with no more
+  than one highlighted keyword at a time, and let the warm narration do most of
+  the explanatory work. Do not append an advertisement or generic inspiration.
 - Do not include a generic “See the Model” card that merely repeats
   before/change/after. The video should carry that explanation. A separate visual
   card earns its place only when it contains a useful chart, formula, algorithm,
@@ -117,3 +132,8 @@ A strong month should feel varied and should include:
   default “See the Model” card unless it contains a genuinely explanatory chart,
   formula, algorithm, causal diagram, or mechanism. Raise the lesson level toward
   intermediate and advanced, evidence-aware ideas rather than obvious reminders.
+- 2026-10-03: Add more story-led lessons built around a named, non-obvious model:
+  modern hook → vivid case → model reveal → two modern applications → practical
+  diagnostic. Consistent illustrated scenes with subtle motion are an approved
+  no-subscription video format. Verify historical stories and label disputed
+  anecdotes honestly.
