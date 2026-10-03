@@ -49,6 +49,11 @@ The workflow:
    60-second mobile video.
 5. Commits `editions.json` and any completed video asset.
 
+The default edition writer is `gpt-6-astra` with maximum reasoning effort. You
+can override it with the `OPENAI_MODEL` and `OPENAI_REASONING_EFFORT` repository
+variables. Video scripts are completed and checked for causal story fit before
+the paid animation step begins.
+
 The first pilot caps the provider portion at $7.80 per finished 60-second video
 and submits no automatic paid retries. A connection-test workflow verifies
 `HF_KEY` without submitting a generation. Recurring paid generation is paused by

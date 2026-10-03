@@ -77,6 +77,12 @@ Use these descriptions exactly until Matt provides better ones.
   world, rapid coverage changes, and a causal narrative that advances with every
   shot. A good arc is hook → friction → model reveal → mechanism/formula → caveat
   → project application. The deliverable is one linear 9:16 MP4.
+- Only animate an idea that passes a Cobra-Effect-style story-fit test: a person
+  wants something concrete, an action or rule changes behavior, a surprising
+  consequence follows, and the payoff makes the mechanism visible. Use the
+  strongest available writing model to draft the continuous narration before
+  any paid video request. If the idea is mainly a definition or calculation,
+  make it a designed carousel instead of forcing it into animation.
 - For story-led episodes, aim for roughly 45–75 seconds. Keep one provocative
   hook visible near the top, use synchronized phrase-level captions with no more
   than one highlighted keyword at a time, and let the warm narration do most of
@@ -162,3 +168,6 @@ A strong month should feel varied and should include:
   plain-language worked example at about a third-grade listening level. Reject
   a 60-second render when the spoken voice ends before 56.5 seconds; never hide
   missing ending narration with silence padding.
+- 2026-10-03: Future full videos must be written with the strongest configured
+  OpenAI model and pass a Cobra-Effect-style causal-story gate before any paid
+  generation. Abstract or calculation-led lessons belong in the carousel.

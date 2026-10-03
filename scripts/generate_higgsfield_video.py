@@ -80,6 +80,13 @@ def validate_plan(
             raise ValueError(
                 f"Video block {number} narration must be 17-24 words; got {len(words)}"
             )
+    narration = str((plan or {}).get("narration", ""))
+    narration_words = re.findall(r"\b[\w’'-]+\b", narration)
+    if not 155 <= len(narration_words) <= 165:
+        raise ValueError(
+            "storyVideoPlan.narration must contain 155-165 words so the natural "
+            f"voice can fill a minute; got {len(narration_words)}"
+        )
     return blocks
 
 

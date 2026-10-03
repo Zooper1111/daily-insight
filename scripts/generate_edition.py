@@ -25,7 +25,8 @@ ROOT = Path(__file__).resolve().parents[1]
 EDITIONS_PATH = ROOT / "editions.json"
 CONTEXT_PATH = ROOT / "context.md"
 TODAY = dt.datetime.now(ZoneInfo("America/New_York")).date().isoformat()
-MODEL = os.getenv("OPENAI_MODEL", "gpt-5.1")
+MODEL = os.getenv("OPENAI_MODEL", "gpt-6-astra")
+REASONING_EFFORT = os.getenv("OPENAI_REASONING_EFFORT", "max")
 SMOKE_TEST = os.getenv("SMOKE_TEST") == "1"
 EDITION_INTERVAL_DAYS = int(os.getenv("EDITION_INTERVAL_DAYS", "2"))
 EDITION_ANCHOR_DATE = os.getenv("EDITION_ANCHOR_DATE", "2026-07-27")
@@ -160,6 +161,13 @@ def validate_edition(edition: dict[str, Any]) -> None:
                 raise ValueError(
                     f"storyVideoPlan block {index} narration must be 17-24 words"
                 )
+        narration_words = re.findall(
+            r"\b[\w’'-]+\b", str((plan or {}).get("narration", ""))
+        )
+        if not 155 <= len(narration_words) <= 165:
+            raise ValueError(
+                "Video editions require one 155-165 word continuous narration"
+            )
     elif edition.get("storyVideoPlan") is not None:
         raise ValueError("Carousel editions must not contain storyVideoPlan")
 
@@ -215,6 +223,7 @@ def build_prompt(context: str, recent: list[dict[str, Any]]) -> str:
   "format": "video",
   "storyVideoPlan": {
     "style": "Warm editorial storybook animation with hand-painted gouache texture, bold cobalt, amber, coral and teal shapes, one recurring adult protagonist, no photorealism, no logos, no spoken characters",
+    "narration": "One complete 155-165 word continuous narration in plain spoken English",
     "blocks": [
       {
         "narration": "17-24 spoken words that naturally fit one ten-second scene",
@@ -232,6 +241,20 @@ describe exactly five hard-cut shots, about two seconds each, with motion from
 the first frame. Keep the same recurring adult protagonist and one coherent
 warm editorial storybook world. Characters only gesture and never speak; the
 external narrator carries the lesson. Do not ask the video model to draw text.
+
+Before choosing the topic, apply a strict story-fit gate inspired by the Cobra
+Effect: a protagonist wants something concrete, someone changes a rule or takes
+an action, behavior changes because of it, a surprising consequence appears,
+and the ending makes the mechanism visually obvious. Silently reject a candidate
+that lacks that causal turn and choose a stronger topic. Do not force an abstract
+definition or calculator lesson into animation. If math appears, first explain
+what the numbers mean, then use one worked example at roughly a third-grade
+listening level. Never change a second variable in the same 60-second story.
+
+Write storyVideoPlan.narration as one continuous 155-165 word read. It must tell
+the entire story in order and end with the project application. The six shorter
+block narration fields are timing summaries for the matching visuals; they do
+not replace the continuous narration.
 '''
     else:
         format_schema = '  "format": "carousel",'
@@ -364,6 +387,7 @@ def generate_edition(prompt: str) -> dict[str, Any]:
     response = client.responses.create(
         model=MODEL,
         input=prompt,
+        reasoning={"effort": REASONING_EFFORT},
         tools=[{"type": "web_search_preview"}],
     )
     return parse_json_object(extract_text(response))
@@ -374,6 +398,7 @@ def smoke_test() -> int:
     response = client.responses.create(
         model=MODEL,
         input="Reply with exactly: daily-insight-ok",
+        reasoning={"effort": "low"},
     )
     text = extract_text(response)
     if text.strip() != "daily-insight-ok":
