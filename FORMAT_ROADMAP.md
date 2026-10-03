@@ -83,10 +83,11 @@ Strong future candidates include Goodhart's Law, Campbell's Law, Braess's
 Paradox, Jevons Paradox, the principal-agent problem, survivorship bias,
 Schelling points, power-law outcomes, option value, and the peak-end rule.
 
-## Higgsfield integration plan
+## Pay-per-video integration plan
 
-Higgsfield can supply the generated motion layer while Daily Insight keeps the
-cards, choices, captions, narration controls, and lesson logic.
+A pay-per-generation provider can supply an occasional generated motion layer
+while Daily Insight keeps the cards, choices, captions, narration controls, and
+lesson logic. Do not require a monthly video subscription.
 
 ### Step 1 — Free production system
 
@@ -98,20 +99,25 @@ cards, choices, captions, narration controls, and lesson logic.
 
 This remains the fallback even after a paid generator is connected.
 
-### Step 2 — One controlled Higgsfield pilot
+### Step 2 — One controlled pay-per-video pilot
 
-- Connect the Higgsfield integration to the working ChatGPT account.
+- Use a pay-as-you-go provider account and keep its API key in repository
+  secrets, never in the public site or repository.
 - Use a faceless explainer style such as Stickman Cartoon, Hand Drawn, or
   Editorial Motion Graphics.
 - Reuse one character and visual style so editions feel like a series.
-- Ask for the exact credit cost and wait for approval before each generation.
-- Generate one short vertical clip, compare it with the free SVG version, and
-  judge comprehension, visual continuity, voice fit, and cost.
+- Begin with image-to-video so the approved illustration controls the character,
+  setting, and composition.
+- Quote the exact price and wait for approval before generation. The first test
+  is one 5–8 second clip with a target ceiling of $1 and no automatic retry.
+- Place the clip inside one complete lesson, compare it with the free SVG
+  version, and judge comprehension, visual continuity, voice fit, generation
+  time, and cost.
 
-The website should continue to own interactivity. Higgsfield generates the
-visual clip; the site surrounds it with choices, captions, controls, and the
-rest of the lesson. Full automation should wait until the pilot establishes a
-repeatable quality and cost threshold.
+The website should continue to own interactivity. The selected provider
+generates the visual clip; the site surrounds it with choices, captions,
+controls, and the rest of the lesson. Full automation should wait until the
+pilot establishes a repeatable quality and cost threshold.
 
 ### Step 3 — Repeatable production
 
@@ -147,9 +153,10 @@ and sees the required audience size recalculate in real time.
 
 ## Decision gate
 
-Do not activate recurring paid generation yet. First connect Higgsfield, quote
-the credits for the pilot, and wait for explicit approval. Keep the free SVG
-path regardless of the result.
+Do not activate recurring paid generation. First choose the pay-as-you-go model,
+quote the exact charge for the pilot, and wait for explicit approval. Do not
+enable automatic retries or automatic balance refills. Keep the free SVG path
+regardless of the result.
 
 ## Cost guardrail
 
@@ -163,8 +170,8 @@ path regardless of the result.
 - For occasional generated clips, prefer a capped pay-as-you-go API over a
   monthly subscription. Quote the estimated per-clip charge before generation
   and keep credentials in repository secrets, never in this public repository.
-- Do not activate the Higgsfield trial or spend Higgsfield credits without a new,
-  explicit approval.
+- Do not activate a provider trial, fund an account, or spend generation credits
+  without a new, explicit approval for the quoted pilot.
 
 ## References
 
