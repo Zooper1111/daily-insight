@@ -251,6 +251,13 @@ definition or calculator lesson into animation. If math appears, first explain
 what the numbers mean, then use one worked example at roughly a third-grade
 listening level. Never change a second variable in the same 60-second story.
 
+Treat the Cobra Effect as the creative quality bar, not just a checklist. Every
+ten-second block must change the situation. Reveal a visible reversal by roughly
+the middle, then make the final scene resolve the opening problem. If the same
+lesson would work equally well as narrated prose over unrelated attractive
+motion, reject it and choose a more cinematic mechanism. Let the viewer see the
+cause, surprise, or consequence before the narrator names it.
+
 Write storyVideoPlan.narration as one continuous 168-174 word read. It must tell
 the entire story in order and end with the project application. The six shorter
 block narration fields are timing summaries for the matching visuals; they do

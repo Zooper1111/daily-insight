@@ -83,6 +83,12 @@ Use these descriptions exactly until Matt provides better ones.
   strongest available writing model to draft the continuous narration before
   any paid video request. If the idea is mainly a definition or calculation,
   make it a designed carousel instead of forcing it into animation.
+- The Cobra Effect example is the creative quality bar, not merely a structural
+  reference. Every ten-second block must materially change the situation; the
+  story needs a visible reversal by roughly the middle, and the ending must pay
+  off the opening problem. Do not accept polished animation carrying an
+  explanation that would work just as well as prose. The pictures should reveal
+  the mechanism, surprise, or consequence before the narrator labels it.
 - For story-led episodes, aim for roughly 45–75 seconds. Keep one provocative
   hook visible near the top, use synchronized phrase-level captions with no more
   than one highlighted keyword at a time, and let the warm narration do most of
@@ -171,3 +177,8 @@ A strong month should feel varied and should include:
 - 2026-10-03: Future full videos must be written with the strongest configured
   OpenAI model and pass a Cobra-Effect-style causal-story gate before any paid
   generation. Abstract or calculation-led lessons belong in the carousel.
+- 2026-10-03: The revised 1,000 True Fans episode was substantially clearer and
+  confirmed that the story-led format works, but it still did not meet the Cobra
+  Effect standard. Keep the recurring paid-video switch off. Future videos need
+  a sharper reversal, less explanatory narration, stronger visual causality,
+  and an ending that resolves the opening scene.

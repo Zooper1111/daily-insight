@@ -130,6 +130,11 @@ The first video is the 1,000 True Fans lesson. Later videos may change topic but
 must retain a coherent visual world, one causal story, a named model or formula,
 an evidence caveat, and a practical connection to a current project.
 
+The revised first pilot established that the story-led form works, but it did
+not yet meet the Cobra Effect quality bar. A future paid video must contain a
+visible mid-story reversal, visual cause and effect, and an ending that resolves
+the opening scene. Recurring paid video generation remains paused.
+
 Math in a narrated video uses one plain-language worked example before showing
 any formula. Continuous scripts target 168–174 words; the renderer measures the
 spoken portion of the warm narration and refuses to publish a 60-second episode
