@@ -55,6 +55,9 @@ and submits no automatic paid retries. A connection-test workflow verifies
 default; set the repository variable `VIDEO_PILOT_ENABLED` to `1` only after the
 first finished video is reviewed and approved.
 
+The manual `resume_video` recovery path may rebuild an already-published MP4
+from its six recorded request IDs. It never submits a new paid video request.
+
 The script skips if today is an off day or today's edition already exists, so a manual run will not double-publish.
 
 ## Edition schema notes

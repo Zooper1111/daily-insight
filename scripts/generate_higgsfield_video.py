@@ -58,11 +58,13 @@ def save_editions(data: dict[str, Any]) -> None:
     )
 
 
-def validate_plan(edition: dict[str, Any]) -> list[dict[str, str]] | None:
+def validate_plan(
+    edition: dict[str, Any], *, allow_published_rebuild: bool = False
+) -> list[dict[str, str]] | None:
     if edition.get("format") != "video":
         print("Newest edition is a static carousel; no paid video generation is due.")
         return None
-    if edition.get("storyVideo"):
+    if edition.get("storyVideo") and not allow_published_rebuild:
         print("Newest edition already has its published story video.")
         return None
 
@@ -371,7 +373,8 @@ def main() -> int:
         return connection_test()
 
     data, edition = load_current_edition()
-    blocks = validate_plan(edition)
+    resume_only = "--resume-only" in sys.argv
+    blocks = validate_plan(edition, allow_published_rebuild=resume_only)
     if blocks is None:
         return 0
 
@@ -389,7 +392,7 @@ def main() -> int:
 
     generation = edition["storyVideoPlan"].setdefault("generation", {})
     existing_ids = generation.get("requestIds") or []
-    if "--resume-only" in sys.argv and len(existing_ids) != BLOCK_COUNT:
+    if resume_only and len(existing_ids) != BLOCK_COUNT:
         raise RuntimeError(
             "Resume-only mode requires exactly six existing request IDs and will not "
             "submit paid generation."
