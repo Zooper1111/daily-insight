@@ -1,6 +1,42 @@
 {
   "editions": [
     {
+      "date": "2026-10-03",
+      "displayDate": "Sat · Oct 03",
+      "domain": "Leadership",
+      "hook": "Use the Trust-Tax Curve on every request",
+      "insight": {
+        "title": "The Trust-Tax Curve",
+        "paras": [
+          "In fast teams, the real cost of a decision isn’t the meeting; it’s the <em>trust tax</em> you pay every time you ask people to double-check you. Behavioral economists call this a monitoring cost (formal model from principal–agent theory): whenever a \"principal\" can’t fully trust an \"agent,\" they add reviews, status pings, and approvals. That safety feels rational, but beyond a point it quietly slows everything down more than it protects you.",
+          "Think of a simple curve: on the left, zero oversight creates risk; as you add a bit of review the curve drops. But after a middle \"enough,\" every extra control bends the curve upward again — your real cost per decision rises. The leadership skill is naming where that middle is and <strong>cutting trust tax for the right people and work</strong>, instead of adding one more check by default."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><g transform='translate(60,260)'><line x1='0' y1='0' x2='430' y2='0' stroke='#9ba0b8' stroke-width='2'/><line x1='0' y1='0' x2='0' y2='-220' stroke='#9ba0b8' stroke-width='2'/><text x='430' y='20' fill='#9ba0b8' font-size='11' text-anchor='end'>Oversight / controls</text><text x='-10' y='-210' fill='#9ba0b8' font-size='11' text-anchor='start' transform='rotate(-90 -10,-210)'>Real cost per decision</text><path d='M0 -40 C140 -90 260 -80 430 -10' fill='none' stroke='#e8b84b' stroke-width='3'/><circle cx='190' cy='-95' r='5' fill='#ff7a6e'/><line x1='190' y1='0' x2='190' y2='-95' stroke='#555b7a' stroke-dasharray='4 4'/><text x='190' y='-110' fill='#eceef7' font-size='11' text-anchor='middle'>\"Enough\" oversight</text><text x='40' y='-35' fill='#5fd4c4' font-size='11'>High risk</text><text x='260' y='-115' fill='#ff7a6e' font-size='11'>Minimum cost</text><text x='340' y='-40' fill='#a48bfa' font-size='11'>Trust tax zone</text></g></svg>",
+        "visualCaption": "After a point, every extra control raises your real cost.",
+        "after": [
+          "In a Daisy 1 planning review, you notice you’re asking for a weekly slide deck, two written updates, and a live check-in for the same workstream. When you sketch the Trust-Tax Curve, it’s obvious half of that is in the \"trust tax zone\" — so you keep one written update and one tighter live review and drop the rest.",
+          "In your consulting practice, a client wants three approval gates for a small StoryOS experiment. You draw the curve on a whiteboard and say, \"Here’s where oversight actually helps, and here’s where it just slows learning.\" You propose one clear success metric and a single mid-experiment review instead. <strongDiagnostic>For any recurring decision, where have your controls already passed the minimum of the curve and turned into trust tax?</strongDiagnostic>"
+        ]
+      },
+      "lab": {
+        "title": "Map One Hidden Trust Tax",
+        "paras": [
+          "This matters because invisible monitoring costs accumulate until velocity quietly collapses."
+        ],
+        "exercise": "In the next 5 minutes, pick one recurring decision (like shipping a Daisy 1 feature, approving a memo, or kicking off a client project). List every control it goes through: docs, sign-offs, meetings, pings. Circle the last step that actually changes quality. Everything after that is trust tax. Say out loud to your team: \"If we stopped doing <X> and only did <Y>, would our risk really go up?\" Capture their answer."
+      },
+      "masters": null,
+      "steal": {
+        "line": "“Let’s stop paying trust tax on this.”",
+        "paras": [
+          "Use this line when a process debate drifts toward adding yet another review. It names the hidden cost without attacking anyone’s intent, then invites a sharper choice about where \"enough\" oversight really is."
+        ],
+        "example": [
+          "In a strategy agent check-in: \"We already have a weekly summary and a metrics snapshot. Before we add a status call, let’s ask: are we improving the work, or just paying more trust tax?\""
+        ]
+      }
+    },
+    {
       "date": "2026-10-01",
       "displayDate": "Thu · Oct 1",
       "domain": "Decision-Making",
@@ -1070,55 +1106,6 @@
         ],
         "example": [
           "“I like the bigger vision, but let’s find the relieved customer first. For Daisy 1, who has a coordination problem so annoying that a simple version would already feel like progress?”"
-        ]
-      }
-    },
-    {
-      "date": "2026-08-04",
-      "displayDate": "Tue · Aug 4",
-      "domain": "Storytelling",
-      "hook": "If the room feels flat, stop adding detail and create a gap.",
-      "insight": {
-        "title": "Make the Gap Do the Work",
-        "paras": [
-          "Nancy Duarte’s useful model is the <strong>presentation sparkline</strong>: move repeatedly between <em>what is</em> and <em>what could be</em>. The audience does not lean in because you have more information. They lean in because they can feel the distance between the current reality and a better one.",
-          "Use it as a simple rhythm: name the present constraint, show the possible future, return to the obstacle, then raise the promise again. That contrast creates motion. Without it, even smart ideas sound like status updates."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><line x1='70' y1='235' x2='490' y2='235' stroke='#9ba0b8' stroke-width='2' opacity='.45'/><line x1='70' y1='85' x2='490' y2='85' stroke='#9ba0b8' stroke-width='2' opacity='.25'/><path d='M80 220 C120 215 120 100 160 96 C200 94 196 216 238 218 C280 220 280 112 322 105 C365 98 363 215 405 218 C447 221 452 88 490 75' fill='none' stroke='#e8b84b' stroke-width='6' stroke-linecap='round'/><circle cx='80' cy='220' r='8' fill='#ff7a6e'/><circle cx='160' cy='96' r='8' fill='#5fd4c4'/><circle cx='238' cy='218' r='8' fill='#ff7a6e'/><circle cx='322' cy='105' r='8' fill='#5fd4c4'/><circle cx='405' cy='218' r='8' fill='#ff7a6e'/><circle cx='490' cy='75' r='8' fill='#a48bfa'/><text x='70' y='265' fill='#eceef7' font-size='18' font-family='Inter, Arial'>what is</text><text x='382' y='60' fill='#eceef7' font-size='18' font-family='Inter, Arial'>what could be</text><text x='205' y='154' fill='#9ba0b8' font-size='15' font-family='Inter, Arial'>contrast creates energy</text><path d='M252 160 L305 132' stroke='#5fd4c4' stroke-width='3' stroke-dasharray='6 7'/></svg>",
-        "visualCaption": "A good explanation rises and falls between reality and possibility.",
-        "after": [
-          "In a StoryOS planning session, you can avoid opening with features or philosophy. Start with the gap: “Right now, our ideas are scattered across conversations and notes. What if the system helped us turn raw thinking into repeatable narrative moves?” Now the project has tension before it has details."
-        ]
-      },
-      "lab": {
-        "title": "The Two-Beat Setup",
-        "paras": [
-          "This skill matters when a demo, client explanation, or strategy memo starts sounding too comprehensive. A useful opening does not prove everything; it creates appetite. One beat names the current drag. The second beat names the better state."
-        ],
-        "exercise": "Take one thing you need to explain today and write two sentences: “Right now, ___.” Then: “What would be better is ___.” Say them out loud once with a pause between them. Example: “Right now, quarterly planning turns into a list of intentions. What would be better is a rhythm that makes tradeoffs visible before the quarter starts.”"
-      },
-      "masters": {
-        "name": "Nancy Duarte",
-        "talk": "Nancy Duarte uncovers common structure of greatest communicators",
-        "videoId": "1nYFpuc2Umk",
-        "start": 340,
-        "watchWindow": "Watch 5:40–9:10 for the sparkline pattern: how she moves between the present state and the future possibility.",
-        "paras": [
-          "Duarte fits today because she turns storytelling from a vague art into a usable operating pattern. Her core move is not decoration; it is contrast. She shows that persuasion often comes from making the audience feel the gap, then inviting them across it."
-        ],
-        "observe": [
-          "How she labels the audience as the hero, not the speaker.",
-          "How the visual line makes structure feel memorable before she explains it fully.",
-          "How she uses repeated contrast instead of one long buildup."
-        ]
-      },
-      "steal": {
-        "line": "Don’t explain the whole thing yet; make them feel what’s missing.",
-        "paras": [
-          "Practice this before a meeting by cutting your opening in half. Remove background, credentials, and process. Lead with the contrast: the current friction versus the better future. Then let the details answer the tension you created."
-        ],
-        "example": [
-          "“Right now, our planning conversations produce good intentions but weak memory. The opportunity is to make the tradeoffs visible enough that the team can reuse them, challenge them, and act on them.”"
         ]
       }
     }
