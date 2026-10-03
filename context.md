@@ -192,3 +192,7 @@ A strong month should feel varied and should include:
   storyboard first, then have a separate AI editor decide whether it meets the
   Cobra standard. Matt does not want to review every script manually. Only an
   agent-approved script may reach paid video generation.
+- 2026-10-03: Activate the protected two-week pilot. Keep the $30 total provider
+  ceiling, $7.80 per-video ceiling, narration preflight, separate agent review,
+  and no automatic paid retries. Higgsfield website subscriptions do not fund
+  this GitHub/API automation; the API uses its separate prepaid dollar balance.

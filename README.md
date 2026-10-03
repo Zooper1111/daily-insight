@@ -63,9 +63,14 @@ caps the total configured provider exposure at $30, and submits no automatic
 paid retries. A connection-test workflow verifies `HF_KEY` without submitting a
 generation. Recurring paid generation is paused by default; set the repository
 variable `VIDEO_PILOT_ENABLED` to `1` to begin the protected two-week pilot.
+The protected pilot was activated on October 3, 2026.
 At the $7.80 ceiling, the $30 pilot budget covers the published first video plus
 two additional videos ($23.40 maximum total). A fourth video is blocked unless
 the pilot budget is deliberately raised; carousel editions continue normally.
+
+Higgsfield website subscriptions and the Higgsfield API are billed separately.
+The automated workflow uses the API's prepaid dollar balance; website plan
+credits or website-only Unlimited access do not fund these automated requests.
 
 The manual `resume_video` recovery path may rebuild an already-published MP4
 from its six recorded request IDs. It never submits a new paid video request.
