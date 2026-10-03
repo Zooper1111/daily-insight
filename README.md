@@ -122,6 +122,11 @@ The first video is the 1,000 True Fans lesson. Later videos may change topic but
 must retain a coherent visual world, one causal story, a named model or formula,
 an evidence caveat, and a practical connection to a current project.
 
+Math in a narrated video uses one plain-language worked example before showing
+any formula. The renderer measures the spoken portion of the warm narration and
+refuses to publish a 60-second episode when the voice ends before 56.5 seconds
+or runs past 59.5 seconds; audio padding cannot satisfy that check.
+
 ## Interactive episode workflow
 
 Every lesson's short video example uses one recurring character, one setting,

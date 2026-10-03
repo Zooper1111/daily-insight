@@ -81,6 +81,13 @@ Use these descriptions exactly until Matt provides better ones.
   hook visible near the top, use synchronized phrase-level captions with no more
   than one highlighted keyword at a time, and let the warm narration do most of
   the explanatory work. Do not append an advertisement or generic inspiration.
+- In a 60-second video, explain any math at roughly a third-grade listening
+  level: start with what the numbers mean, use one worked example, say the
+  arithmetic in plain words, and do not introduce a second changing variable.
+  The card may preserve the formal formula after the intuition is clear.
+- Measure the spoken narration itself before publishing. For a 60-second video,
+  the voice should normally end between 56.5 and 59.5 seconds. Padding an audio
+  stream to 60 seconds does not count; a long silent tail is a failed render.
 - Do not include a generic “See the Model” card that merely repeats
   before/change/after. The video should carry that explanation. A separate visual
   card earns its place only when it contains a useful chart, formula, algorithm,
@@ -151,3 +158,7 @@ A strong month should feel varied and should include:
   its six already-paid motion clips with one natural continuous warm narration
   track and simple captions. Do not enforce per-scene voice timing, and do not
   submit another paid batch while assembling or revising the first pilot.
+- 2026-10-03: Keep the approved animation, but simplify video math to one
+  plain-language worked example at about a third-grade listening level. Reject
+  a 60-second render when the spoken voice ends before 56.5 seconds; never hide
+  missing ending narration with silence padding.

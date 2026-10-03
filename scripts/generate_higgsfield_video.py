@@ -31,6 +31,8 @@ SECONDS_PER_BLOCK = 10
 BLOCK_COUNT = 6
 MAX_RATE_USD_PER_SECOND = float(os.getenv("HF_MAX_RATE_USD_PER_SECOND", "0.13"))
 MAX_VIDEO_COST_USD = float(os.getenv("HF_MAX_VIDEO_COST_USD", "7.80"))
+NARRATION_MIN_SECONDS = 56.5
+NARRATION_MAX_SECONDS = 59.5
 REFERENCE_URL = os.getenv(
     "HF_STORY_REFERENCE_URL",
     "https://raw.githubusercontent.com/Zooper1111/daily-insight/main/"
@@ -203,7 +205,12 @@ def media_duration(path: Path) -> float:
 
 
 def render_narration(script: str, work: Path) -> tuple[Path, Path]:
-    """Render one natural continuous read and derive simple phrase captions."""
+    """Render one natural continuous read and derive simple phrase captions.
+
+    A full-length audio stream is not enough: padding can make a short read look
+    like a 60-second track. Gate the spoken portion before adding any tail room so
+    a video cannot publish with a long silent ending again.
+    """
     pipeline = KPipeline(lang_code="a")
     audio_chunks = [audio for _, _, audio in pipeline(script, voice="af_heart", speed=0.98)]
     if not audio_chunks:
@@ -213,6 +220,13 @@ def render_narration(script: str, work: Path) -> tuple[Path, Path]:
     sf.write(raw, np.concatenate(audio_chunks), 24000)
     duration = media_duration(raw)
     print(f"Continuous warm narration duration: {duration:.2f}s")
+    if not NARRATION_MIN_SECONDS <= duration <= NARRATION_MAX_SECONDS:
+        raise RuntimeError(
+            "Spoken narration must finish between "
+            f"{NARRATION_MIN_SECONDS:.1f}s and {NARRATION_MAX_SECONDS:.1f}s; "
+            f"measured {duration:.2f}s. Rewrite the narration instead of padding "
+            "a long silent tail or speeding up the voice."
+        )
 
     narration = work / "narration.wav"
     run(
