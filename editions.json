@@ -68,7 +68,7 @@
             "55ac37ca-b531-456f-8600-6c1f0f0e690d",
             "8c9d1fc7-73f0-46bf-9dc7-27d52f948dee"
           ],
-          "status": "visuals-completed"
+          "status": "published"
         }
       },
       "steal": {
@@ -79,6 +79,13 @@
         "example": [
           "In a Daily Insight review: “Before we chase more reach, which signal proves the people already here are returning, finishing, saving, replying, or referring?”"
         ]
+      },
+      "storyVideo": {
+        "title": "You may need fewer fans than you think",
+        "src": "assets/videos/2026-10-03/story.mp4",
+        "poster": "assets/video-scenes/true-fans-pilot/scene-01-attention.png",
+        "duration": "60 seconds",
+        "captions": true
       }
     },
     {
