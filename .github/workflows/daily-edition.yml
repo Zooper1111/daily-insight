@@ -10,6 +10,11 @@ on:
         required: false
         default: false
         type: boolean
+      connection_test:
+        description: "Verify the Higgsfield key without spending generation funds"
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   publish:
@@ -22,8 +27,12 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install dependencies
-        run: pip install openai
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y espeak-ng ffmpeg
+          pip install openai requests numpy soundfile kokoro
       - name: Generate today's edition
+        if: ${{ inputs.connection_test != true }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.1' }}
@@ -31,10 +40,22 @@ jobs:
           EDITION_ANCHOR_DATE: ${{ vars.EDITION_ANCHOR_DATE || '2026-07-27' }}
           SMOKE_TEST: ${{ inputs.smoke_test && '1' || '0' }}
         run: python scripts/generate_edition.py
+      - name: Generate a full story video when this edition is a video edition
+        if: ${{ inputs.connection_test != true && inputs.smoke_test != true }}
+        env:
+          HF_KEY: ${{ secrets.HF_KEY }}
+          HF_MAX_RATE_USD_PER_SECOND: "0.13"
+          HF_MAX_VIDEO_COST_USD: "7.80"
+        run: python scripts/generate_higgsfield_video.py
+      - name: Verify Higgsfield connection without paid generation
+        if: ${{ inputs.connection_test == true }}
+        env:
+          HF_KEY: ${{ secrets.HF_KEY }}
+        run: python scripts/generate_higgsfield_video.py --connection-test
       - name: Commit and push
         run: |
           git config user.name "daily-insight-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add editions.json
+          git add editions.json assets/videos
           git diff --cached --quiet || git commit -m "Edition $(date -u +%F)"
           git push

@@ -29,6 +29,8 @@ MODEL = os.getenv("OPENAI_MODEL", "gpt-5.1")
 SMOKE_TEST = os.getenv("SMOKE_TEST") == "1"
 EDITION_INTERVAL_DAYS = int(os.getenv("EDITION_INTERVAL_DAYS", "2"))
 EDITION_ANCHOR_DATE = os.getenv("EDITION_ANCHOR_DATE", "2026-07-27")
+VIDEO_PILOT_START = dt.date.fromisoformat(os.getenv("VIDEO_PILOT_START", "2026-10-03"))
+VIDEO_PILOT_END = dt.date.fromisoformat(os.getenv("VIDEO_PILOT_END", "2026-10-17"))
 
 
 REQUIRED_TOP_LEVEL = {
@@ -138,6 +140,28 @@ def validate_edition(edition: dict[str, Any]) -> None:
         if not isinstance(edition[section], dict):
             raise ValueError(f"{section} must be an object")
 
+    edition_format = edition.get("format")
+    expected_format = format_for_date(dt.date.fromisoformat(TODAY))
+    if edition_format != expected_format:
+        raise ValueError(
+            f"Edition format must be {expected_format!r} for {TODAY}; got {edition_format!r}"
+        )
+    if edition_format == "video":
+        plan = edition.get("storyVideoPlan")
+        blocks = (plan or {}).get("blocks")
+        if not isinstance(blocks, list) or len(blocks) != 6:
+            raise ValueError("Video editions require exactly six storyVideoPlan blocks")
+        for index, block in enumerate(blocks, start=1):
+            if not isinstance(block, dict) or not block.get("prompt") or not block.get("narration"):
+                raise ValueError(f"storyVideoPlan block {index} needs prompt and narration")
+            words = re.findall(r"\b[\w’'-]+\b", block["narration"])
+            if not 17 <= len(words) <= 24:
+                raise ValueError(
+                    f"storyVideoPlan block {index} narration must be 17-24 words"
+                )
+    elif edition.get("storyVideoPlan") is not None:
+        raise ValueError("Carousel editions must not contain storyVideoPlan")
+
     masters = edition.get("masters")
     if masters is not None:
         if not isinstance(masters, dict):
@@ -175,7 +199,47 @@ def should_publish_today() -> bool:
     return (today - anchor).days % EDITION_INTERVAL_DAYS == 0
 
 
+def format_for_date(day: dt.date) -> str:
+    """Alternate full video and static carousel editions during the pilot."""
+    if day < VIDEO_PILOT_START or day > VIDEO_PILOT_END:
+        return "carousel"
+    publication_number = (day - VIDEO_PILOT_START).days // EDITION_INTERVAL_DAYS
+    return "video" if publication_number % 2 == 0 else "carousel"
+
+
 def build_prompt(context: str, recent: list[dict[str, Any]]) -> str:
+    edition_format = format_for_date(dt.date.fromisoformat(TODAY))
+    if edition_format == "video":
+        format_schema = '''
+  "format": "video",
+  "storyVideoPlan": {
+    "style": "Warm editorial storybook animation with hand-painted gouache texture, bold cobalt, amber, coral and teal shapes, one recurring adult protagonist, no photorealism, no logos, no spoken characters",
+    "blocks": [
+      {
+        "narration": "17-24 spoken words that naturally fit one ten-second scene",
+        "prompt": "One detailed ten-second vertical animation prompt containing exactly five hard-cut shots of about two seconds each. Vary shot size and angle, demand motion from frame one, preserve the recurring protagonist and editorial storybook style, and say characters gesture but never talk."
+      }
+    ]
+  },'''
+        format_direction = '''
+This is a FULL VIDEO edition in the two-week pilot. Add exactly six ordered
+storyVideoPlan blocks, producing sixty seconds total. The six blocks must form
+one causal story: provocative hook, concrete friction, named-model reveal,
+formula or mechanism, important caveat, and a final application to one public-
+safe active project. Each narration line is 17-24 words. Each visual prompt must
+describe exactly five hard-cut shots, about two seconds each, with motion from
+the first frame. Keep the same recurring adult protagonist and one coherent
+warm editorial storybook world. Characters only gesture and never speak; the
+external narrator carries the lesson. Do not ask the video model to draw text.
+'''
+    else:
+        format_schema = '  "format": "carousel",'
+        format_direction = '''
+This is a STATIC CAROUSEL edition in the two-week pilot. Do not include
+storyVideoPlan, narration, or animation instructions. Let the hook, analytical
+visual, application, exercise, and closing line carry the lesson as swipeable
+cards.
+'''
     return f"""
 Generate one new edition object for Matt's Daily Insight website, dated {TODAY}.
 Return only raw JSON. No markdown fences, no prose.
@@ -192,6 +256,7 @@ Schema:
   "displayDate": "Mon · Jul 13",
   "domain": "Conversation",
   "hook": "One sharp, specific line",
+{format_schema}
   "insight": {{
     "title": "Title",
     "paras": ["One short paragraph, <strong>/<em> allowed. Teach one substantial theory, model, framework, algorithm, formula, or mental model here, with its evidence status or provenance."],
@@ -213,6 +278,7 @@ Schema:
 }}
 
 Content goals:
+{format_direction}
 - Use a deliberately spread-out mix. Across any eight editions, aim for:
   1-2 small talk or everyday conversation lessons; 1-2 presentation or public
   speaking lessons; 1-2 business frameworks, strategy, product, or management

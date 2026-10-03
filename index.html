@@ -223,7 +223,8 @@ function story(ed,index,kind,body,label){
 
 function buildEdition(ed,index){
   const result=[];
-  const cardCount=4+(ed.insight.visualSvg?1:0)+(ed.masters?1:0)+(ed.shortVideo?1:0)+(ed.interactive?1:0);
+  const featureVideo=ed.storyVideo||ed.shortVideo;
+  const cardCount=4+(ed.insight.visualSvg?1:0)+(ed.masters?1:0)+(featureVideo?1:0)+(ed.interactive?1:0);
   result.push(story(ed,index,'hook',`<div class="storycard hookcard">
     <div class="eyebrow" style="justify-content:center">${esc(ed.domain)}</div>
     <div class="date">${esc(ed.displayDate)}</div>
@@ -232,12 +233,13 @@ function buildEdition(ed,index){
     <div class="editioncount">A ${cardCount}-card idea</div>
   </div><div class="swipehint"><span>Swipe for the idea</span>${icons.down}</div>`,ed.insight.title));
 
-  if(ed.shortVideo){
+  if(featureVideo){
+    const isFullStory=Boolean(ed.storyVideo);
     result.push(story(ed,index,'shortvideo',`<div class="storycard" style="--accent:var(--gold)">
-      <div class="eyebrow">Watch the short story</div>
-      <div class="shortvideo-frame"><video class="shortvideo" src="${esc(ed.shortVideo.src)}" poster="${esc(ed.shortVideo.poster||'')}" playsinline muted loop controls preload="metadata" aria-label="${esc(ed.shortVideo.title)}"></video></div>
-      <div class="shortvideo-meta"><span>${esc(ed.shortVideo.duration||'')}</span><span>Captions on · turn sound on for narration</span></div>
-    </div>`,ed.shortVideo.title));
+      <div class="eyebrow">${isFullStory?'Watch the full story':'Watch the short story'}</div>
+      <div class="shortvideo-frame"><video class="shortvideo" src="${esc(featureVideo.src)}" poster="${esc(featureVideo.poster||'')}" playsinline ${isFullStory?'':'muted loop'} controls preload="metadata" aria-label="${esc(featureVideo.title)}"></video></div>
+      <div class="shortvideo-meta"><span>${esc(featureVideo.duration||'')}</span><span>${isFullStory?'Warm narration · captions included':'Captions on · turn sound on for narration'}</span></div>
+    </div>`,featureVideo.title));
   }
 
   if(ed.interactive){

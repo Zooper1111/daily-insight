@@ -21,7 +21,8 @@ This is the public-safe product direction for the next version of Daily Insight.
 
 ## What changes
 
-1. Every edition gets one short contextual video example.
+1. During the two-week pilot, every other edition gets one complete 60-second
+   contextual story video; the editions between them are static carousels.
 2. The video follows context → problem → model or move → visible result.
 3. The generic “See the Model” card is removed by default. A separate visual
    card appears only for a chart, formula, algorithm, causal diagram, or mechanism
@@ -36,8 +37,8 @@ This is the public-safe product direction for the next version of Daily Insight.
 
 1. **Hook** — the surprising question, tension, or number.
 2. **Idea** — the advanced concept, explained simply with an evidence label.
-3. **Watch it happen** — one short contextual video that carries the applied
-   example from before to after.
+3. **Watch it happen** — on video editions, one complete animated story that
+   carries the lesson from hook through project application.
 4. **Use it** — a calculation, decision, drill, or script to apply today.
 5. **Keep this line** — a concise closing phrase worth remembering or copying.
 
@@ -99,20 +100,25 @@ lesson logic. Do not require a monthly video subscription.
 
 This remains the fallback even after a paid generator is connected.
 
-### Step 2 — One controlled pay-per-video pilot
+### Step 2 — Two-week controlled pay-per-video pilot
 
 - Use a pay-as-you-go provider account and keep its API key in repository
   secrets, never in the public site or repository.
 - Use a faceless explainer style such as Stickman Cartoon, Hand Drawn, or
   Editorial Motion Graphics.
 - Reuse one character and visual style so editions feel like a series.
-- Begin with image-to-video so the approved illustration controls the character,
-  setting, and composition.
-- Quote the exact price and wait for approval before generation. The first test
-  is one 5–8 second clip with a target ceiling of $1 and no automatic retry.
-- Place the clip inside one complete lesson, compare it with the free SVG
-  version, and judge comprehension, visual continuity, voice fit, generation
-  time, and cost.
+- Begin with reference-guided video so the approved illustration controls the
+  recurring character, palette, texture, and overall visual world.
+- Generate six ten-second motion blocks and assemble them into one 60-second
+  9:16 MP4 with warm local narration and burned captions.
+- Alternate full-video and static-carousel editions from October 3 through
+  October 17, 2026. This yields four possible video editions and four static
+  editions on the existing every-other-day publication cadence.
+- Cap the provider portion of each full video at $7.80. Submit no automatic paid
+  retry; a failed block stops the run for review instead of silently spending
+  again.
+- Judge comprehension, visual continuity, voice fit, motion quality, generation
+  time, phone playback, and actual cost after every completed video.
 
 The website should continue to own interactivity. The selected provider
 generates the visual clip; the site surrounds it with choices, captions,
@@ -122,7 +128,8 @@ pilot establishes a repeatable quality and cost threshold.
 ### Step 3 — Repeatable production
 
 - Save the approved style, character reference, prompt pattern, and shot timing.
-- Generate one clip per edition only after the script and source check pass.
+- Generate full videos only on the alternating video dates, after the script and
+  source check pass. Carousel dates must not call the paid video API.
 - Keep a free SVG version available when generation fails or is not worth the
   credits.
 - Consider API automation only after manual generation is consistently useful.
@@ -153,9 +160,10 @@ and sees the required audience size recalculate in real time.
 
 ## Decision gate
 
-Do not activate recurring paid generation. First choose the pay-as-you-go model,
-quote the exact charge for the pilot, and wait for explicit approval. Do not
-enable automatic retries or automatic balance refills. Keep the free SVG path
+Matt authorized a $30 prepaid API balance for the two-week pilot. Auto top-up
+remains off. The automation may submit at most six ten-second sections per video
+under the $7.80 configured ceiling and may not submit a paid retry automatically.
+If the prepaid balance reaches zero, generation stops. Keep the free SVG path
 regardless of the result.
 
 ## Cost guardrail
@@ -165,13 +173,14 @@ regardless of the result.
   this preference.
 - Build standard examples with the existing SVG/CSS/JavaScript animation,
   warm local Kokoro narration, captions, and a local browser-to-video export.
-- Use external generative video only as an optional enhancement for an edition
-  where it materially improves understanding.
+- Use external generative video on the alternating pilot editions only; the
+  editions between them remain static carousels.
 - For occasional generated clips, prefer a capped pay-as-you-go API over a
   monthly subscription. Quote the estimated per-clip charge before generation
   and keep credentials in repository secrets, never in this public repository.
-- Do not activate a provider trial, fund an account, or spend generation credits
-  without a new, explicit approval for the quoted pilot.
+- The funded pilot is approved through October 17, 2026, within the $30 prepaid
+  balance and the per-video ceiling above. Continuing paid generation after the
+  pilot requires a new decision.
 
 ## References
 

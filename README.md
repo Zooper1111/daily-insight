@@ -4,10 +4,15 @@ Standalone learning digest published every other day. The website reads `edition
 
 ## Reading experience
 
-- Each edition is presented as a sequence of full-screen cards: hook, idea, short contextual video example, application, and a line to steal.
+- Each edition is presented as a sequence of full-screen cards. During the
+  October 2026 pilot, editions alternate between a complete 60-second narrated
+  story video and a static carousel lesson.
 - Scroll or swipe vertically to move continuously through cards and older editions.
 - Story-style progress bars show where you are inside the current edition.
-- Every edition should include one short 9:16 example video that establishes the scene, shows the problem, demonstrates the idea, and makes the result visible. It may be a lightweight in-browser animation or a generated clip.
+- Full-video editions use one coherent 9:16 animated story: hook, concrete
+  friction, named-model reveal, mechanism or formula, caveat, and application.
+- Carousel editions use designed words, images, and analytical visuals without
+  requiring animation or narration.
 - Selected editions can upgrade that example into an interactive episode with continuous vector motion, timed captions, a decision point, two outcomes, and optional sound effects.
 - The edition library jumps directly to any saved insight, and reusable lines can be copied with one tap.
 - Arrow keys, Page Up/Page Down, Space, J, and K provide desktop navigation.
@@ -28,15 +33,25 @@ Setup required:
 
 1. Create an OpenAI API key.
 2. In GitHub, add it as a repository Actions secret named `OPENAI_API_KEY`.
-3. Optional: set repository variable `OPENAI_MODEL` to change the model without editing code.
-4. Optional: set `EDITION_INTERVAL_DAYS` or `EDITION_ANCHOR_DATE` to adjust cadence.
+3. For full-video editions, fund the pay-as-you-go Higgsfield API account and add
+   the complete copied credential as a repository Actions secret named `HF_KEY`.
+   Keep auto top-up off during the pilot.
+4. Optional: set repository variable `OPENAI_MODEL` to change the model without editing code.
+5. Optional: set `EDITION_INTERVAL_DAYS` or `EDITION_ANCHOR_DATE` to adjust cadence.
 
 The workflow:
 
 1. Checks out the repo.
 2. Installs the OpenAI Python SDK.
 3. Runs `scripts/generate_edition.py`.
-4. Commits `editions.json` only if a new edition was generated.
+4. On alternating pilot editions, generates six ten-second animated sections,
+   adds the approved warm local narration and captions, and assembles one
+   60-second mobile video.
+5. Commits `editions.json` and any completed video asset.
+
+The first pilot caps the provider portion at $7.80 per finished 60-second video
+and submits no automatic paid retries. A connection-test workflow verifies
+`HF_KEY` without submitting a generation.
 
 The script skips if today is an off day or today's edition already exists, so a manual run will not double-publish.
 
@@ -56,7 +71,9 @@ Each edition should usually include:
 
 - One substantial theory, model, framework, algorithm, formula, or mental model explained simply, with its evidence status made clear.
 - One public-safe connection to Matt's active workstreams, using Daisy 1 as the project coordination app name.
-- One short contextual video example that shows who is involved, what is going wrong, the move being taught, and the visible result.
+- On a video edition, one complete contextual story video that shows who is
+  involved, what is going wrong, the model or move, the caveat, and the visible
+  project application.
 
 Keep the entire edition concise: roughly 150–250 words of prose and no more than
 a five-minute read. The example video is a standard part of the lesson because
@@ -90,6 +107,19 @@ empirical result, formal model, theory, or heuristic. Include the source or
 provenance and the important caveat. Never present a viral threshold or audience
 number as a guaranteed formula.
 
+## Alternating video and carousel pilot
+
+From October 3 through October 17, 2026, scheduled editions alternate formats:
+
+- **Video edition:** one 60-second generated animated story with warm narration
+  and burned captions, shown immediately after the hook card.
+- **Carousel edition:** designed static cards with no animation or narration
+  requirement.
+
+The first video is the 1,000 True Fans lesson. Later videos may change topic but
+must retain a coherent visual world, one causal story, a named model or formula,
+an evidence caveat, and a practical connection to a current project.
+
 ## Interactive episode workflow
 
 Every lesson's short video example uses one recurring character, one setting,
@@ -98,11 +128,9 @@ problem → model or move → after or result. A more ambitious interactive epis
 can reach a decision point quickly, let the viewer choose, show the consequence,
 and end with a small action.
 
-Story-led episodes may instead use six to ten consistently styled illustrated
-scenes over roughly 45–75 seconds. Gentle camera movement, a persistent hook,
-warm narration, phrase-level captions, and one highlighted keyword can create a
-coherent video without expensive full-motion generation. The scenes must advance
-one causal story; they must not feel like a disconnected slideshow.
+The earlier free interactive episode remains a fallback and experiment. It is
+not the full-video format: full-video editions use generated motion across six
+ten-second story blocks and are delivered as one MP4.
 
 Every example must establish the scene before introducing the model: who the
 people are, what they are trying to do, and what specifically is going wrong.
@@ -125,4 +153,4 @@ upgrade rather than a dependency.
 
 The earlier image-based MP4 renderer remains in `scripts/render_short_video.py`
 as an archive and export reference, but slideshow-style motion is not the target
-format going forward.
+format going forward. The paid pipeline is `scripts/generate_higgsfield_video.py`.

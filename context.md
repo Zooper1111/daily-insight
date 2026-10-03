@@ -59,21 +59,24 @@ Use these descriptions exactly until Matt provides better ones.
 - Write for a full-screen, swipeable card sequence. Keep hooks compact; limit the
   core explanation to one or two short paragraphs; make the exercise scannable;
   and make the reusable line strong enough to stand alone on its own card.
-- Include one short contextual video example in every edition. It should identify
-  who is involved, what they are trying to do, what specifically is going wrong,
-  the model or move being taught, and the visible result. Prefer a compact
-  context → problem → model → result arc over an abstract summary.
+- During the October 2026 pilot, alternate formats on each every-other-day
+  publication: one complete 60-second narrated animated story, then one static
+  carousel edition, then repeat. A full-video edition should identify who is
+  involved, what they are trying to do, what specifically is going wrong, the
+  named model or move, its mechanism or formula, its caveat, and a visible
+  application to a current public-safe project.
+- Static carousel editions do not need animation or narration. Their words,
+  images, formula, chart, or causal diagram should do the teaching.
 - A fully branching interactive episode is a selective enhancement, not a
   requirement for every edition. When used, aim for 25–45 seconds, continuous
   motion, synchronized captions, and one meaningful viewer decision that reveals
   a consequence. Use one recurring character, one setting, one visual metaphor,
   and one concept so the episode feels coherent.
-- Prefer simple expressive vector or stick-figure animation over disconnected
-  image slides. Coherent illustrated story sequences are also welcome: use six
-  to ten scenes in one consistent visual world, subtle camera movement, and a
-  causal narrative that advances with every shot. A good arc is friction →
-  consequence → model reveal → modern transfer → application. The web version
-  may branch; social exports are linear 9:16 MP4s.
+- Prefer expressive editorial storybook animation over disconnected image
+  slides. Full videos use six ten-second motion blocks in one consistent visual
+  world, rapid coverage changes, and a causal narrative that advances with every
+  shot. A good arc is hook → friction → model reveal → mechanism/formula → caveat
+  → project application. The deliverable is one linear 9:16 MP4.
 - For story-led episodes, aim for roughly 45–75 seconds. Keep one provocative
   hook visible near the top, use synchronized phrase-level captions with no more
   than one highlighted keyword at a time, and let the warm narration do most of
@@ -137,3 +140,9 @@ A strong month should feel varied and should include:
   diagnostic. Consistent illustrated scenes with subtle motion are an approved
   no-subscription video format. Verify historical stories and label disputed
   anecdotes honestly.
+- 2026-10-03: Run a two-week alternating-format pilot beginning with a full
+  60-second 1,000 True Fans video, followed by a static carousel, then repeat.
+  Use the pay-as-you-go Higgsfield API with auto top-up off, no automatic paid
+  retries, a $7.80 per-video provider ceiling, the approved warm local voice,
+  and burned captions. Full videos must feel like one animated story rather than
+  a carousel or a sequence of moving stills.

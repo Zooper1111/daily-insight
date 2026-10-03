@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-03",
+  "displayDate": "Sat · Oct 03",
+  "domain": "Creator Economics",
+  "hook": "You may need fewer fans than you think",
+  "format": "video",
+  "insight": {
+    "title": "1,000 True Fans",
+    "paras": [
+      "Kevin Kelly’s <em>1,000 True Fans</em> is a creator-economics heuristic: a sustainable business may need a smaller group of committed direct supporters, not a gigantic passive audience. The useful part is not the number 1,000; it is the unit-economics calculation.",
+      "Use <strong>required supporters = target annual income ÷ annual gross profit per supporter</strong>. A $100,000 target at $100 gross profit each suggests 1,000 supporters. At only $20 each, it becomes 5,000. This is a planning model, not a viral guarantee; price, margin, retention, direct reach, and operating costs all change the answer."
+    ],
+    "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><text x='280' y='72' text-anchor='middle' fill='#eceef7' font-size='20' font-family='system-ui'>required supporters</text><line x1='150' y1='118' x2='410' y2='118' stroke='#e8b84b' stroke-width='4'/><text x='280' y='108' text-anchor='middle' fill='#5fd4c4' font-size='16' font-family='system-ui'>target annual income</text><text x='280' y='148' text-anchor='middle' fill='#ff7a6e' font-size='16' font-family='system-ui'>annual gross profit per supporter</text><g transform='translate(72 205)'><rect width='185' height='62' rx='14' fill='#262a42'/><text x='92' y='26' text-anchor='middle' fill='#9ba0b8' font-size='12' font-family='system-ui'>$100,000 ÷ $100</text><text x='92' y='49' text-anchor='middle' fill='#e8b84b' font-size='20' font-family='system-ui'>1,000</text></g><g transform='translate(303 205)'><rect width='185' height='62' rx='14' fill='#262a42'/><text x='92' y='26' text-anchor='middle' fill='#9ba0b8' font-size='12' font-family='system-ui'>$100,000 ÷ $20</text><text x='92' y='49' text-anchor='middle' fill='#a48bfa' font-size='20' font-family='system-ui'>5,000</text></g></svg>",
+    "visualCaption": "The audience target changes when value per supporter changes.",
+    "after": [
+      "For Daily Insight, stop treating raw reach as the primary score. Track returning learners, completed lessons, saves, direct replies, and referrals—the behaviors that reveal a committed learning audience.",
+      "For StoryOS or your consulting practice, choose an income target and estimate the annual gross profit from one genuinely engaged customer. Divide the first by the second. Then ask: are you building more reach, or increasing the value and retention of the people already leaning in?"
+    ]
+  },
+  "lab": {
+    "title": "Calculate Your Real Audience",
+    "paras": [
+      "A concrete denominator turns a fuzzy audience ambition into a business-model question."
+    ],
+    "exercise": "Pick one project and write three numbers: target annual income, annual gross profit per committed supporter, and the division result. Then test the result at half and double the profit per supporter. Say: “My audience target is not a follower count; it is this value-and-retention equation.”"
+  },
+  "masters": null,
+  "storyVideoPlan": {
+    "style": "Warm editorial storybook animation with hand-painted gouache and risograph texture, bold cobalt, amber, coral and teal shapes, one recurring adult protagonist named Maya, no photorealism, no logos, no spoken characters",
+    "blocks": [
+      {
+        "narration": "Maya has fifty thousand followers, yet her warm studio still struggles to pay its bills. The giant audience number is misleading.",
+        "prompt": "Vertical 9:16 warm editorial storybook animation matching the supplied Maya reference exactly: adult woman with short dark curly bob, teal sweater, ochre trousers, cobalt-amber-coral-teal gouache and risograph texture. Exactly five hard-cut shots, about two seconds each, with motion from frame one. Shot 1 WIDE: Maya works at a warm creative studio desk while a huge cloud of tiny follower dots swirls above her phone. Shot 2 HIGH ANGLE: unpaid bills slide across the desk as the follower cloud keeps growing. Shot 3 CLOSE-UP: the phone counter races upward while Maya's worried eyes reflect it. Shot 4 LOW ANGLE: the enormous counter shadow overwhelms the small studio. Shot 5 MEDIUM: Maya lowers the phone and looks toward a small glowing circle offscreen. Characters emote and gesture but never talk; no lip sync, no readable text, no logos."
+      },
+      {
+        "narration": "A much smaller circle returns each month, buys her workshops, and brings friends. Those repeat supporters carry more weight than casual scrollers.",
+        "prompt": "Vertical 9:16 continuation in the identical warm gouache-risograph editorial storybook world and identical Maya character. Exactly five hard-cut shots, about two seconds each, all moving from frame one. Shot 1 MEDIUM: a small circle of diverse adult supporters enters Maya's studio carrying sketchbooks. Shot 2 CLOSE-UP: hands exchange workshop tickets and handmade prints. Shot 3 OVERHEAD: the same supporters return around a round table month after month as calendar pages flip. Shot 4 SIDE ANGLE: one supporter enthusiastically brings a friend into the circle. Shot 5 WIDE: the small circle glows brightly while the distant follower cloud fades. Characters gesture but never talk; no lip sync, no readable text, no logos."
+      },
+      {
+        "narration": "Kevin Kelly called this One Thousand True Fans: a useful creator-economics heuristic, not a magic threshold and never a promise of virality.",
+        "prompt": "Vertical 9:16 continuation in the identical warm gouache-risograph editorial storybook style. Exactly five hard-cut shots, about two seconds each, immediate motion. Shot 1 MACRO: one glowing supporter token pulses in Maya's hand. Shot 2 TOP-DOWN: many warm tokens ripple outward into an organized ring. Shot 3 WIDE: the ring resolves into a symbolic crowd of one thousand lights around Maya's studio. Shot 4 HIGH ANGLE: a glittering magic-wand shortcut appears, cracks, and dissolves to show this is not magic. Shot 5 MEDIUM: Maya calmly weighs the glowing supporter ring against a faded viral rocket symbol. Characters gesture but never talk; no lip sync, no readable text, no logos."
+      },
+      {
+        "narration": "The calculation is simple: divide target annual income by annual gross profit per supporter. One hundred thousand divided by one hundred equals one thousand.",
+        "prompt": "Vertical 9:16 continuation in the identical warm editorial storybook animation. Exactly five hard-cut shots, about two seconds each, motion from frame one. Shot 1 OVERHEAD: Maya places a large gold income token above a hand-drawn division line. Shot 2 MACRO: a coral supporter-value token slides beneath the line. Shot 3 SIDE ANGLE: the tokens click into a simple mechanical calculator. Shot 4 CLOSE-UP: the machine releases ten neat bundles of one hundred glowing supporter lights. Shot 5 WIDE: one thousand lights form a stable warm bridge supporting Maya's studio. Characters gesture but never talk; no lip sync, no readable text or numerals, no logos."
+      },
+      {
+        "narration": "If profit is only twenty dollars each, that same income goal needs five thousand supporters. Price, margin, retention, and direct reach change the answer.",
+        "prompt": "Vertical 9:16 continuation in the identical warm gouache-risograph storybook world. Exactly five hard-cut shots, about two seconds each, immediate motion. Shot 1 CLOSE-UP: the coral value token visibly shrinks in Maya's palm. Shot 2 LOW ANGLE: the calculator gears spin much faster. Shot 3 WIDE: the supporter-light bridge stretches five times farther across the studio. Shot 4 TOP-DOWN: four tactile levers for value, margin, return visits, and direct connection slide to different positions. Shot 5 MEDIUM: Maya adjusts one lever and watches the required crowd expand and contract. Characters gesture but never talk; no lip sync, no readable text, no logos."
+      },
+      {
+        "narration": "Use this on Daily Insight today: track returning learners, completed lessons, saves, replies, and referrals. Build for depth before chasing reach.",
+        "prompt": "Vertical 9:16 finale in the identical warm editorial storybook animation and identical Maya character. Exactly five hard-cut shots, about two seconds each, moving immediately. Shot 1 CLOSE-UP: Maya swipes through a Daily Insight-like lesson on a generic phone with illustrated cards and no readable interface text. Shot 2 OVERHEAD: learner tokens return, finish a path, save a card, reply, and invite another token through clear pictograms. Shot 3 MEDIUM: those actions feed a warm circular flywheel around the phone. Shot 4 WIDE: the flywheel strengthens a small deep-rooted tree while a giant shallow follower cloud blows away. Shot 5 CLOSE-UP: Maya smiles, pockets the phone, and the rooted learning circle glows behind her. Characters gesture but never talk; no lip sync, no readable text, no logos."
+      }
+    ]
+  },
+  "steal": {
+    "line": "Build for depth before you buy reach.",
+    "paras": [
+      "Use this whenever a growth discussion jumps straight to follower counts. It redirects the conversation toward value per person and the behaviors that reveal durable demand."
+    ],
+    "example": [
+      "In a Daily Insight review: “Before we chase more reach, which signal proves the people already here are returning, finishing, saving, replying, or referring?”"
+    ]
+  }
+}
