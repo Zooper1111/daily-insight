@@ -29,7 +29,9 @@ API_BASE = "https://api.higgsfield.ai"
 MODEL_PATH = "minimax/h3/reference-to-video"
 SECONDS_PER_BLOCK = 10
 BLOCK_COUNT = 6
-MAX_RATE_USD_PER_SECOND = float(os.getenv("HF_MAX_RATE_USD_PER_SECOND", "0.13"))
+# MiniMax H3 is listed at $0.065/second by the Higgsfield API catalog as of
+# 2026-10-04. The workflow still keeps a separate $7.80 hard per-video ceiling.
+MAX_RATE_USD_PER_SECOND = float(os.getenv("HF_MAX_RATE_USD_PER_SECOND", "0.065"))
 MAX_VIDEO_COST_USD = float(os.getenv("HF_MAX_VIDEO_COST_USD", "7.80"))
 PILOT_MAX_COST_USD = float(os.getenv("HF_PILOT_MAX_COST_USD", "30.00"))
 NARRATION_MIN_SECONDS = 56.5

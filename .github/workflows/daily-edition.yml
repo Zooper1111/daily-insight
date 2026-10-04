@@ -51,7 +51,7 @@ jobs:
         if: ${{ vars.VIDEO_PILOT_ENABLED == '1' && inputs.connection_test != true && inputs.resume_video != true && inputs.smoke_test != true }}
         env:
           HF_KEY: ${{ secrets.HF_KEY }}
-          HF_MAX_RATE_USD_PER_SECOND: "0.13"
+          HF_MAX_RATE_USD_PER_SECOND: "0.065"
           HF_MAX_VIDEO_COST_USD: "7.80"
           HF_PILOT_MAX_COST_USD: "30.00"
         run: python scripts/generate_higgsfield_video.py
@@ -59,7 +59,7 @@ jobs:
         if: ${{ inputs.resume_video == true }}
         env:
           HF_KEY: ${{ secrets.HF_KEY }}
-          HF_MAX_RATE_USD_PER_SECOND: "0.13"
+          HF_MAX_RATE_USD_PER_SECOND: "0.065"
           HF_MAX_VIDEO_COST_USD: "7.80"
           HF_PILOT_MAX_COST_USD: "30.00"
         run: python scripts/generate_higgsfield_video.py --resume-only

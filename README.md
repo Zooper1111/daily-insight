@@ -58,19 +58,33 @@ script gets one rewrite; a second failure stops the run before paid generation.
 The free local narration is also rendered and duration-checked before the first
 paid Higgsfield request.
 
-The first pilot caps the provider portion at $7.80 per finished 60-second video,
-caps the total configured provider exposure at $30, and submits no automatic
-paid retries. A connection-test workflow verifies `HF_KEY` without submitting a
-generation. Recurring paid generation is paused by default; set the repository
-variable `VIDEO_PILOT_ENABLED` to `1` to begin the protected two-week pilot.
-The protected pilot was activated on October 3, 2026.
-At the $7.80 ceiling, the $30 pilot budget covers the published first video plus
-two additional videos ($23.40 maximum total). A fourth video is blocked unless
-the pilot budget is deliberately raised; carousel editions continue normally.
+The first pilot keeps a $7.80 hard provider ceiling per finished 60-second video,
+caps total configured provider exposure at $30, and submits no automatic paid
+retries. The H3 catalog rate verified on October 4, 2026 is $0.065 per second,
+so each new 60-second video projects to $3.90. Counting the published first
+video at its original conservative $7.80 ceiling, all three remaining video
+slots project to a $19.50 configured maximum for the full pilot. A connection-
+test workflow verifies `HF_KEY` without submitting a generation. Recurring paid
+generation is paused by default; set the repository variable
+`VIDEO_PILOT_ENABLED` to `1` to begin the protected two-week pilot. The protected
+pilot was activated on October 3, 2026.
 
 Higgsfield website subscriptions and the Higgsfield API are billed separately.
 The automated workflow uses the API's prepaid dollar balance; website plan
 credits or website-only Unlimited access do not fund these automated requests.
+
+Complete the October 3–17 experiment with the already-funded Higgsfield API;
+do not change providers mid-pilot or add more Higgsfield funds. After the pilot,
+the next production experiment is browser-assisted Google Flow using available
+Workspace or subscription credits. That workflow may require an active signed-
+in browser and is not considered dependable unattended automation until tested.
+
+Treat social media as a distribution layer, not the only archive. The preferred
+mobile experiment is a dedicated Instagram Creator account publishing each 9:16
+episode as a Reel, with Daily Insight retaining the full lesson and permanent
+video. YouTube Shorts is the preferred optional mirror because its official API
+supports automated video uploads. Do not create, connect, or publish to a social
+account without Matt's explicit authorization for that account.
 
 The manual `resume_video` recovery path may rebuild an already-published MP4
 from its six recorded request IDs. It never submits a new paid video request.

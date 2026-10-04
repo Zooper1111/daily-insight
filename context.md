@@ -201,3 +201,14 @@ A strong month should feel varied and should include:
   pilot unchanged while evaluating a lower-cost automated video engine. Preserve
   the Cobra Effect story bar, warm narration, captions, practical project tie-in,
   and separate agent approval before paid generation.
+- 2026-10-04: Finish the October 3–17 pilot with the already-funded Higgsfield
+  API and do not add more Higgsfield funds. The H3 catalog rate verified today is
+  $0.065 per second, so the remaining three 60-second video slots project to
+  $3.90 each; keep the existing $7.80 per-video hard ceiling, $30 total ceiling,
+  agent review, narration preflight, and no automatic paid retries.
+- 2026-10-04: After the Higgsfield pilot, test browser-assisted Google Flow using
+  available Workspace or subscription credits as the next all-video production
+  route. Explore a dedicated Instagram Creator account as the mobile Reel feed,
+  while keeping Daily Insight as the permanent lesson archive; YouTube Shorts is
+  the preferred optional mirror. Do not create or connect a social account until
+  Matt explicitly authorizes that specific account.
