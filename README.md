@@ -75,20 +75,18 @@ credits or website-only Unlimited access do not fund these automated requests.
 
 Complete the October 3–17 experiment with the already-funded Higgsfield API;
 do not change providers mid-pilot or add more Higgsfield funds. After the pilot,
-prioritize the cheapest private-use production route. Compare three no-subscription
-options before paying for another plan: available Workspace Google Flow credits,
-TikTok Symphony Basic's free weekly generation credits, and a zero-provider-cost
-procedural animation engine using reusable SVG characters, real continuous motion,
-the approved local narrator, captions, and the existing story review. The
-procedural option must be a full animated story rather than a moving carousel.
-Do not buy ads or another video subscription during this test.
+prioritize the cheapest private-use production route. Compare available Google
+Flow credits with a zero-provider-cost procedural animation engine using reusable
+SVG characters, real continuous motion, the approved local narrator, captions,
+and the existing story review. The procedural option must be a full animated
+story rather than a moving carousel. Do not buy ads or another video subscription
+during this test.
 
-Audience growth and distribution are not goals. Social creator suites may still
-be evaluated when they reduce the cost of generating Matt's personal lessons;
-posting an output is acceptable if the free tool requires it. Daily Insight and
-its free website remain the destination and permanent archive. Instagram Edits
-and CapCut are finishing tools unless their free generation allowances materially
-change. Do not create or connect an account without Matt's explicit authorization.
+Audience growth and distribution are not goals. Daily Insight and its free website
+remain the destination and permanent archive. Do not create or connect a new
+social-media account for video generation; specifically, TikTok Symphony is no
+longer part of the plan. Instagram Edits and CapCut are finishing tools unless
+their free generation allowances materially change.
 
 The manual `resume_video` recovery path may rebuild an already-published MP4
 from its six recorded request IDs. It never submits a new paid video request.
