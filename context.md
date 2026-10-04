@@ -196,3 +196,8 @@ A strong month should feel varied and should include:
   ceiling, $7.80 per-video ceiling, narration preflight, separate agent review,
   and no automatic paid retries. Higgsfield website subscriptions do not fund
   this GitHub/API automation; the API uses its separate prepaid dollar balance.
+- 2026-10-04: The desired end state is a full story-led video for every scheduled
+  edition, not a permanent video/carousel alternation. Keep the current protected
+  pilot unchanged while evaluating a lower-cost automated video engine. Preserve
+  the Cobra Effect story bar, warm narration, captions, practical project tie-in,
+  and separate agent approval before paid generation.
