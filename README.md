@@ -75,16 +75,20 @@ credits or website-only Unlimited access do not fund these automated requests.
 
 Complete the October 3–17 experiment with the already-funded Higgsfield API;
 do not change providers mid-pilot or add more Higgsfield funds. After the pilot,
-the next production experiment is browser-assisted Google Flow using available
-Workspace or subscription credits. That workflow may require an active signed-
-in browser and is not considered dependable unattended automation until tested.
+prioritize the cheapest private-use production route. Compare three no-subscription
+options before paying for another plan: available Workspace Google Flow credits,
+TikTok Symphony Basic's free weekly generation credits, and a zero-provider-cost
+procedural animation engine using reusable SVG characters, real continuous motion,
+the approved local narrator, captions, and the existing story review. The
+procedural option must be a full animated story rather than a moving carousel.
+Do not buy ads or another video subscription during this test.
 
-Treat social media as a distribution layer, not the only archive. The preferred
-mobile experiment is a dedicated Instagram Creator account publishing each 9:16
-episode as a Reel, with Daily Insight retaining the full lesson and permanent
-video. YouTube Shorts is the preferred optional mirror because its official API
-supports automated video uploads. Do not create, connect, or publish to a social
-account without Matt's explicit authorization for that account.
+Audience growth and distribution are not goals. Social creator suites may still
+be evaluated when they reduce the cost of generating Matt's personal lessons;
+posting an output is acceptable if the free tool requires it. Daily Insight and
+its free website remain the destination and permanent archive. Instagram Edits
+and CapCut are finishing tools unless their free generation allowances materially
+change. Do not create or connect an account without Matt's explicit authorization.
 
 The manual `resume_video` recovery path may rebuild an already-published MP4
 from its six recorded request IDs. It never submits a new paid video request.

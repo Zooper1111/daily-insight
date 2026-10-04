@@ -206,9 +206,14 @@ A strong month should feel varied and should include:
   $0.065 per second, so the remaining three 60-second video slots project to
   $3.90 each; keep the existing $7.80 per-video hard ceiling, $30 total ceiling,
   agent review, narration preflight, and no automatic paid retries.
-- 2026-10-04: After the Higgsfield pilot, test browser-assisted Google Flow using
-  available Workspace or subscription credits as the next all-video production
-  route. Explore a dedicated Instagram Creator account as the mobile Reel feed,
-  while keeping Daily Insight as the permanent lesson archive; YouTube Shorts is
-  the preferred optional mirror. Do not create or connect a social account until
-  Matt explicitly authorizes that specific account.
+- 2026-10-04: Audience growth and social distribution are not goals; Daily Insight
+  remains a personal learning tool and the free website is its destination. Social
+  creator suites may nevertheless be used if they subsidize lesson generation,
+  and posting is acceptable if required to use a free tool. After the Higgsfield
+  pilot, compare available Workspace Google Flow credits, TikTok Symphony Basic's
+  free weekly video credits, and a $0 procedural-animation system with reusable
+  SVG characters, real continuous motion, free local warm narration, captions,
+  and Cobra-standard script review. Do not buy ads or another subscription during
+  the comparison. Treat Instagram Edits and CapCut as finishing tools unless their
+  free generation allowances materially change, and do not create or connect an
+  account without Matt's explicit authorization.
