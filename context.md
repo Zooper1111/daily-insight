@@ -80,21 +80,22 @@ Use these descriptions exactly until Matt provides better ones.
 - Only animate an idea that passes a Cobra-Effect-style story-fit test: a person
   wants something concrete, an action or rule changes behavior, a surprising
   consequence follows, and the payoff makes the mechanism visible. Use the
-  strongest available writing model to draft the continuous narration before
-  any paid video request. If the idea is mainly a definition or calculation,
-  make it a designed carousel instead of forcing it into animation.
+  cost-controlled writer to draft the continuous narration before any paid
+  video request, then require the stronger independent editor to approve it. If
+  the idea is mainly a definition or calculation, make it a designed carousel
+  instead of forcing it into animation.
 - The Cobra Effect example is the creative quality bar, not merely a structural
   reference. Every ten-second block must materially change the situation; the
   story needs a visible reversal by roughly the middle, and the ending must pay
   off the opening problem. Do not accept polished animation carrying an
   explanation that would work just as well as prose. The pictures should reveal
   the mechanism, surprise, or consequence before the narrator labels it.
-- Before any paid animation request, have the strongest configured writing model
-  produce the complete 60-second narration and six-scene storyboard. Then use a
+- Before any paid animation request, have the cost-controlled writer produce the
+  complete 60-second narration and six-scene storyboard. Then use a stronger
   separate agent/editor pass to score causal story, visible reversal, visual
-  causality, ending payoff, and spoken clarity. A failed script gets one rewrite;
-  if it still fails, stop without spending. This is an agent review, not a manual
-  review step for Matt.
+  causality, ending payoff, and spoken clarity. A failed script gets one rewrite
+  by the stronger model; if it still fails, stop without spending. This is an
+  agent review, not a manual review step for Matt.
 - For story-led episodes, aim for roughly 45–75 seconds. Keep one provocative
   hook visible near the top, use synchronized phrase-level captions with no more
   than one highlighted keyword at a time, and let the warm narration do most of
@@ -215,3 +216,8 @@ A strong month should feel varied and should include:
   Cobra-standard script review. Do not buy ads or another subscription during the
   comparison. Treat Instagram Edits and CapCut as finishing tools unless their free
   generation allowances materially change.
+- 2026-10-06: Do not use maximum-reasoning Astra for routine edition writing; a
+  single 60-second lesson script cost about $5 and is not sustainable. Use Luna
+  at medium reasoning for the first draft, Sol at high reasoning for the strict
+  independent review and any one allowed rewrite, and hard output-token caps.
+  Keep the Cobra-standard gate intact and stop before Higgsfield when it fails.

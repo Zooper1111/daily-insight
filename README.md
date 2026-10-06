@@ -40,7 +40,8 @@ Setup required:
 3. For full-video editions, fund the pay-as-you-go Higgsfield API account and add
    the complete copied credential as a repository Actions secret named `HF_KEY`.
    Keep auto top-up off during the pilot.
-4. Optional: set repository variable `OPENAI_MODEL` to change the model without editing code.
+4. Optional: set `OPENAI_WRITER_MODEL` or `OPENAI_REVIEW_MODEL` repository
+   variables to change either model without editing code.
 5. Optional: set `EDITION_INTERVAL_DAYS` or `EDITION_ANCHOR_DATE` to adjust cadence.
 
 The workflow:
@@ -53,16 +54,17 @@ The workflow:
    60-second mobile video.
 5. Commits `editions.json` and any completed video asset.
 
-The default edition writer is `gpt-6-astra` with maximum reasoning effort. You
-can override it with the `OPENAI_MODEL` and `OPENAI_REASONING_EFFORT` repository
-variables. Long maximum-reasoning requests use a 30-minute client timeout and no
-automatic transport retry; `OPENAI_TIMEOUT_SECONDS` may override that window.
-For a video edition, the writer first produces the complete narration
-and six-scene storyboard. A separate GPT-6 Astra editor scores causal story,
-visible reversal, visual causality, ending payoff, and spoken clarity. A failed
-script gets one rewrite; a second failure stops the run before paid generation.
-The free local narration is also rendered and duration-checked before the first
-paid Higgsfield request.
+The cost-controlled default uses `gpt-6-luna` at medium reasoning for the first
+draft and `gpt-6.1-sol` at high reasoning for the independent paid-video review.
+The draft is capped at 20,000 output tokens and each review at 12,000 so a stuck
+or unusually long reasoning pass cannot repeat the previous open-ended cost.
+For a video edition, the first draft contains the complete narration and
+six-scene storyboard. The Sol editor scores causal story, visible reversal,
+visual causality, ending payoff, and spoken clarity. If the draft fails, Sol
+performs the one allowed rewrite and reviews it again; a second failure stops the
+run before paid generation. This preserves the Cobra-standard gate without
+using maximum-reasoning Astra on every edition. The free local narration is also
+rendered and duration-checked before the first paid Higgsfield request.
 
 The first pilot keeps a $7.80 hard provider ceiling per finished 60-second video,
 caps total configured provider exposure at $30, and submits no automatic paid

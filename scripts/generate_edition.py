@@ -32,8 +32,16 @@ try:
     dt.date.fromisoformat(TODAY)
 except ValueError as exc:
     raise ValueError("EDITION_DATE must use YYYY-MM-DD format") from exc
-MODEL = os.getenv("OPENAI_MODEL", "gpt-6-astra")
-REASONING_EFFORT = os.getenv("OPENAI_REASONING_EFFORT", "max")
+WRITER_MODEL = os.getenv("OPENAI_WRITER_MODEL", "gpt-6-luna")
+WRITER_REASONING_EFFORT = os.getenv("OPENAI_WRITER_REASONING_EFFORT", "medium")
+REVIEW_MODEL = os.getenv("OPENAI_REVIEW_MODEL", "gpt-6.1-sol")
+REVIEW_REASONING_EFFORT = os.getenv("OPENAI_REVIEW_REASONING_EFFORT", "high")
+WRITER_MAX_OUTPUT_TOKENS = int(
+    os.getenv("OPENAI_WRITER_MAX_OUTPUT_TOKENS", "20000")
+)
+REVIEW_MAX_OUTPUT_TOKENS = int(
+    os.getenv("OPENAI_REVIEW_MAX_OUTPUT_TOKENS", "12000")
+)
 SMOKE_TEST = os.getenv("SMOKE_TEST") == "1"
 EDITION_INTERVAL_DAYS = int(os.getenv("EDITION_INTERVAL_DAYS", "2"))
 EDITION_ANCHOR_DATE = os.getenv("EDITION_ANCHOR_DATE", "2026-07-27")
@@ -398,13 +406,20 @@ Content goals:
 """
 
 
-def generate_edition(prompt: str) -> dict[str, Any]:
+def generate_edition(
+    prompt: str,
+    *,
+    model: str = WRITER_MODEL,
+    reasoning_effort: str = WRITER_REASONING_EFFORT,
+) -> dict[str, Any]:
     client = OpenAI(timeout=OPENAI_TIMEOUT_SECONDS, max_retries=0)
+    print(f"Generating edition with {model} ({reasoning_effort} reasoning).")
     response = client.responses.create(
-        model=MODEL,
+        model=model,
         input=prompt,
-        reasoning={"effort": REASONING_EFFORT},
+        reasoning={"effort": reasoning_effort},
         tools=[{"type": "web_search_preview"}],
+        max_output_tokens=WRITER_MAX_OUTPUT_TOKENS,
     )
     return parse_json_object(extract_text(response))
 
@@ -412,8 +427,12 @@ def generate_edition(prompt: str) -> dict[str, Any]:
 def review_video_story(edition: dict[str, Any]) -> tuple[bool, dict[str, Any]]:
     """Fail closed unless a second model pass clears the paid-video story bar."""
     client = OpenAI(timeout=OPENAI_TIMEOUT_SECONDS, max_retries=0)
+    print(
+        f"Reviewing paid-video story with {REVIEW_MODEL} "
+        f"({REVIEW_REASONING_EFFORT} reasoning)."
+    )
     response = client.responses.create(
-        model=MODEL,
+        model=REVIEW_MODEL,
         input=f"""
 Act as the final story editor for a paid 60-second animated lesson. Judge the
 candidate against the Cobra Effect standard. Return only raw JSON with exactly
@@ -442,7 +461,8 @@ publishing on schedule.
 Candidate edition:
 {json.dumps(edition, ensure_ascii=False, indent=2)}
 """,
-        reasoning={"effort": REASONING_EFFORT},
+        reasoning={"effort": REVIEW_REASONING_EFFORT},
+        max_output_tokens=REVIEW_MAX_OUTPUT_TOKENS,
     )
     review = parse_json_object(extract_text(response))
     score_names = {
@@ -469,9 +489,10 @@ Candidate edition:
 def smoke_test() -> int:
     client = OpenAI(timeout=OPENAI_TIMEOUT_SECONDS, max_retries=0)
     response = client.responses.create(
-        model=MODEL,
+        model=WRITER_MODEL,
         input="Reply with exactly: daily-insight-ok",
         reasoning={"effort": "low"},
+        max_output_tokens=256,
     )
     text = extract_text(response)
     if text.strip() != "daily-insight-ok":
@@ -525,6 +546,7 @@ def main() -> int:
     ]
 
     prompt = build_prompt(context, recent)
+    writer_model = WRITER_MODEL
     edition = generate_edition(prompt)
     validate_edition(edition)
 
@@ -544,7 +566,12 @@ First candidate:
 Review:
 {json.dumps(review, ensure_ascii=False, indent=2)}
 """
-            edition = generate_edition(revision_prompt)
+            writer_model = REVIEW_MODEL
+            edition = generate_edition(
+                revision_prompt,
+                model=REVIEW_MODEL,
+                reasoning_effort=REVIEW_REASONING_EFFORT,
+            )
             validate_edition(edition)
             approved, review = review_video_story(edition)
         if not approved:
@@ -554,7 +581,8 @@ Review:
             )
         edition["storyVideoPlan"]["qualityGate"] = {
             "approved": True,
-            "model": MODEL,
+            "writerModel": writer_model,
+            "reviewModel": REVIEW_MODEL,
             "scores": review["scores"],
         }
 
