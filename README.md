@@ -55,7 +55,9 @@ The workflow:
 
 The default edition writer is `gpt-6-astra` with maximum reasoning effort. You
 can override it with the `OPENAI_MODEL` and `OPENAI_REASONING_EFFORT` repository
-variables. For a video edition, the writer first produces the complete narration
+variables. Long maximum-reasoning requests use a 30-minute client timeout and no
+automatic transport retry; `OPENAI_TIMEOUT_SECONDS` may override that window.
+For a video edition, the writer first produces the complete narration
 and six-scene storyboard. A separate GPT-6 Astra editor scores causal story,
 visible reversal, visual causality, ending payoff, and spoken clarity. A failed
 script gets one rewrite; a second failure stops the run before paid generation.

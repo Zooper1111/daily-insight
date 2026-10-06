@@ -41,6 +41,7 @@ VIDEO_PILOT_START = dt.date.fromisoformat(os.getenv("VIDEO_PILOT_START", "2026-1
 VIDEO_PILOT_END = dt.date.fromisoformat(os.getenv("VIDEO_PILOT_END", "2026-10-17"))
 VIDEO_PILOT_ENABLED = os.getenv("VIDEO_PILOT_ENABLED", "0") == "1"
 VIDEO_STORY_MIN_SCORE = 4
+OPENAI_TIMEOUT_SECONDS = float(os.getenv("OPENAI_TIMEOUT_SECONDS", "1800"))
 
 
 REQUIRED_TOP_LEVEL = {
@@ -398,7 +399,7 @@ Content goals:
 
 
 def generate_edition(prompt: str) -> dict[str, Any]:
-    client = OpenAI()
+    client = OpenAI(timeout=OPENAI_TIMEOUT_SECONDS, max_retries=0)
     response = client.responses.create(
         model=MODEL,
         input=prompt,
@@ -410,7 +411,7 @@ def generate_edition(prompt: str) -> dict[str, Any]:
 
 def review_video_story(edition: dict[str, Any]) -> tuple[bool, dict[str, Any]]:
     """Fail closed unless a second model pass clears the paid-video story bar."""
-    client = OpenAI()
+    client = OpenAI(timeout=OPENAI_TIMEOUT_SECONDS, max_retries=0)
     response = client.responses.create(
         model=MODEL,
         input=f"""
@@ -466,7 +467,7 @@ Candidate edition:
 
 
 def smoke_test() -> int:
-    client = OpenAI()
+    client = OpenAI(timeout=OPENAI_TIMEOUT_SECONDS, max_retries=0)
     response = client.responses.create(
         model=MODEL,
         input="Reply with exactly: daily-insight-ok",
