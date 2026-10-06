@@ -27,7 +27,11 @@ Standalone learning digest published every other day. The website reads `edition
 
 ## Automated publishing
 
-The GitHub Action checks every morning and can also be run manually from the Actions tab. The generator publishes every other day from the configured anchor date.
+The GitHub Action checks every morning and can also be run manually from the
+Actions tab. The generator publishes every other day from the configured anchor
+date. A manual run may supply `edition_date` in `YYYY-MM-DD` format to generate
+an upcoming scheduled edition early; the normal run for that date then detects
+the existing edition and skips it.
 
 Setup required:
 

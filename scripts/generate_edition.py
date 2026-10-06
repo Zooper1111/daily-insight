@@ -24,7 +24,14 @@ from openai import OpenAI
 ROOT = Path(__file__).resolve().parents[1]
 EDITIONS_PATH = ROOT / "editions.json"
 CONTEXT_PATH = ROOT / "context.md"
-TODAY = dt.datetime.now(ZoneInfo("America/New_York")).date().isoformat()
+EDITION_DATE_OVERRIDE = os.getenv("EDITION_DATE", "").strip()
+TODAY = EDITION_DATE_OVERRIDE or dt.datetime.now(
+    ZoneInfo("America/New_York")
+).date().isoformat()
+try:
+    dt.date.fromisoformat(TODAY)
+except ValueError as exc:
+    raise ValueError("EDITION_DATE must use YYYY-MM-DD format") from exc
 MODEL = os.getenv("OPENAI_MODEL", "gpt-6-astra")
 REASONING_EFFORT = os.getenv("OPENAI_REASONING_EFFORT", "max")
 SMOKE_TEST = os.getenv("SMOKE_TEST") == "1"
