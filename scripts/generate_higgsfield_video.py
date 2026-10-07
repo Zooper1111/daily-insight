@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import json
 import os
-import re
 import subprocess
 import sys
 import tempfile
@@ -101,18 +100,9 @@ def validate_plan(
     for number, block in enumerate(blocks, start=1):
         if not isinstance(block, dict) or not block.get("prompt") or not block.get("narration"):
             raise ValueError(f"Video block {number} needs prompt and narration")
-        words = re.findall(r"\b[\w’'-]+\b", block["narration"])
-        if not 17 <= len(words) <= 24:
-            raise ValueError(
-                f"Video block {number} narration must be 17-24 words; got {len(words)}"
-            )
     narration = str((plan or {}).get("narration", ""))
-    narration_words = re.findall(r"\b[\w’'-]+\b", narration)
-    if not 168 <= len(narration_words) <= 174:
-        raise ValueError(
-            "storyVideoPlan.narration must contain 168-174 words so the natural "
-            f"voice can fill a minute; got {len(narration_words)}"
-        )
+    if not narration.strip():
+        raise ValueError("storyVideoPlan.narration must contain one continuous read")
     quality_gate = (plan or {}).get("qualityGate")
     if (
         not allow_published_rebuild

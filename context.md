@@ -227,3 +227,7 @@ A strong month should feel varied and should include:
   errors. Luna still writes the complete first draft and Sol still judges the
   story. Only when that draft fails validation or review may Astra refine the
   existing story once, using the exact feedback and a hard output-token cap.
+- 2026-10-07: Do not reject or regenerate a good story over an exact narration
+  word count. Treat roughly 160–180 words as drafting guidance, then use the
+  free local voice render and its measured 56.5–59.5 second spoken duration as
+  the real preflight. This duration check remains before every paid video call.

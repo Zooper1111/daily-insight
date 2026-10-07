@@ -185,10 +185,11 @@ visible mid-story reversal, visual cause and effect, and an ending that resolves
 the opening scene. A separate AI editor now enforces that bar before spending.
 
 Math in a narrated video uses one plain-language worked example before showing
-any formula. Continuous scripts target 168–174 words; the renderer measures the
-spoken portion of the warm narration and refuses to publish a 60-second episode
-when the voice ends before 56.5 seconds or runs past 59.5 seconds. Audio padding
-cannot satisfy that check.
+any formula. Continuous scripts target roughly 160–180 words, but word count is
+only drafting guidance. Before any paid video request, the renderer measures the
+actual spoken warm narration and refuses to publish a 60-second episode when the
+voice ends before 56.5 seconds or runs past 59.5 seconds. Audio padding cannot
+satisfy that check.
 
 ## Interactive episode workflow
 

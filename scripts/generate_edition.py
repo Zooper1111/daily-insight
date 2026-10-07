@@ -178,18 +178,8 @@ def validate_edition(edition: dict[str, Any]) -> None:
         for index, block in enumerate(blocks, start=1):
             if not isinstance(block, dict) or not block.get("prompt") or not block.get("narration"):
                 raise ValueError(f"storyVideoPlan block {index} needs prompt and narration")
-            words = re.findall(r"\b[\w’'-]+\b", block["narration"])
-            if not 17 <= len(words) <= 24:
-                raise ValueError(
-                    f"storyVideoPlan block {index} narration must be 17-24 words"
-                )
-        narration_words = re.findall(
-            r"\b[\w’'-]+\b", str((plan or {}).get("narration", ""))
-        )
-        if not 168 <= len(narration_words) <= 174:
-            raise ValueError(
-                "Video editions require one 168-174 word continuous narration"
-            )
+        if not str((plan or {}).get("narration", "")).strip():
+            raise ValueError("Video editions require one continuous narration")
     elif edition.get("storyVideoPlan") is not None:
         raise ValueError("Carousel editions must not contain storyVideoPlan")
 
@@ -245,10 +235,10 @@ def build_prompt(context: str, recent: list[dict[str, Any]]) -> str:
   "format": "video",
   "storyVideoPlan": {
     "style": "Warm editorial storybook animation with hand-painted gouache texture, bold cobalt, amber, coral and teal shapes, one recurring adult protagonist, no photorealism, no logos, no spoken characters",
-    "narration": "One complete 168-174 word continuous narration in plain spoken English",
+    "narration": "One complete roughly 160-180 word continuous narration in plain spoken English",
     "blocks": [
       {
-        "narration": "17-24 spoken words that naturally fit one ten-second scene",
+        "narration": "One concise spoken summary for the matching ten-second scene",
         "prompt": "One detailed ten-second vertical animation prompt containing exactly five hard-cut shots of about two seconds each. Vary shot size and angle, demand motion from frame one, preserve the recurring protagonist and editorial storybook style, and say characters gesture but never talk."
       }
     ]
@@ -258,7 +248,7 @@ This is a FULL VIDEO edition in the two-week pilot. Add exactly six ordered
 storyVideoPlan blocks, producing sixty seconds total. The six blocks must form
 one causal story: provocative hook, concrete friction, named-model reveal,
 formula or mechanism, important caveat, and a final application to one public-
-safe active project. Each narration line is 17-24 words. Each visual prompt must
+safe active project. Each block narration is one concise line. Each visual prompt must
 describe exactly five hard-cut shots, about two seconds each, with motion from
 the first frame. Keep the same recurring adult protagonist and one coherent
 warm editorial storybook world. Characters only gesture and never speak; the
@@ -280,7 +270,7 @@ lesson would work equally well as narrated prose over unrelated attractive
 motion, reject it and choose a more cinematic mechanism. Let the viewer see the
 cause, surprise, or consequence before the narrator names it.
 
-Write storyVideoPlan.narration as one continuous 168-174 word read. It must tell
+Write storyVideoPlan.narration as one continuous roughly 160-180 word read. It must tell
 the entire story in order and end with the project application. The six shorter
 block narration fields are timing summaries for the matching visuals; they do
 not replace the continuous narration.
