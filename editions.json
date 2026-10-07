@@ -1,6 +1,86 @@
 {
   "editions": [
     {
+      "date": "2026-10-07",
+      "displayDate": "Wed · Oct 7",
+      "domain": "Leadership",
+      "hook": "A better score can make the work worse.",
+      "format": "video",
+      "storyVideoPlan": {
+        "style": "Warm editorial storybook animation with hand-painted gouache texture, bold cobalt, amber, coral and teal shapes. Recurring adult bank employee with short curly dark hair, teal jacket and mustard scarf; the same adult customer in a coral sweater; the same gray-haired manager in a cobalt vest. One fictional bank counter throughout. No photorealism, logos or spoken characters. Six continuous ten-second shots, with hard cuts only between blocks. Block narration fields are consecutive verbatim passages of the authoritative continuous narration, not an alternative script. Add the hook and always-visible phrase-level captions in post, highlighting at most one keyword at a time; never ask the animation model to generate lettering. Narration remains warm and opt-in. Before paid generation, render the continuous narration with the approved local voice and verify that speech ends between 56.5 and 59.5 seconds; do not pad missing speech with silence.",
+        "narration": "In this fictional bank, a customer wants one account to keep his wages safe. An employee opens exactly what he requests. Then her manager offers a bonus for each account. Wanting more pay, she opens extra accounts without asking the customer. Her account count climbs. But fees from those extra accounts drain his money. The score improves; his situation gets worse. That's Goodhart's law: reward the count, and people may chase it instead of helping. It's a warning, not proof every target fails. The manager now checks customer approval before rewarding any account. The employee closes the unwanted accounts and refunds their fees. With his money restored, the customer deposits his next wages into the account he wanted. The counter is smaller, but honest.",
+        "blocks": [
+          {
+            "narration": "In this fictional bank, a customer wants one account to keep his wages safe. An employee opens exactly what he requests.",
+            "prompt": "0–10 seconds. Vertical 9:16, one uninterrupted ten-second shot with motion from frame one. Warm editorial gouache storybook style, cobalt, amber, coral and teal. At a single wooden bank counter, the customer in a coral sweater slides a wage envelope forward and raises one finger. The recurring employee, an adult woman with short curly dark hair, teal jacket and mustard scarf, offers one teal bank passbook with a matching plain debit card. He points to that passbook and nods. She opens it and deposits his round gold coins into a transparent cutaway balance compartment beneath it. A small brass account counter gains one bead. Slowly push from a medium two-shot toward their hands, keeping the customer, passbook and money spatially connected. Establish an empty bank fee drawer and the gray-haired manager in a cobalt vest behind the counter. Characters gesture but never talk. No text, lettering, numbers, logos or readable screens."
+          },
+          {
+            "narration": "Then her manager offers a bonus for each account. Wanting more pay, she opens extra accounts without asking the customer.",
+            "prompt": "10–20 seconds. Hard cut to one uninterrupted ten-second over-the-shoulder shot in the same bank, with the same characters, clothing, props and gouache palette. Motion from frame one: the manager points to the open teal passbook and hands the employee a square amber bonus banknote from a separate bank-funded envelope. She looks from the reward to a stack of unused passbooks. While the customer turns to put away his wage envelope, she opens two coral passbooks beside his teal one, each bearing the same small pictorial customer portrait and a matching plain debit card. For each extra opening, the manager hands her another bonus banknote and she lifts another bead on the brass counter. Track sideways with her hands so the causal sequence remains visible: open account, receive bonus, repeat. The customer's round coins remain visually distinct from her square bonus notes. Characters gesture but never talk. No text, lettering, numbers, logos or readable screens."
+          },
+          {
+            "narration": "Her account count climbs. But fees from those extra accounts drain his money. The score improves; his situation gets worse.",
+            "prompt": "20–30 seconds. Hard cut to one uninterrupted ten-second close side-angle shot, motion from frame one, preserving the same bank counter and recurring characters. Begin with the employee lifting the last account-counter bead beside the three open passbooks. The camera tilts down to a storybook cutaway: each unwanted coral passbook activates its own small fee mechanism, visibly drawing round gold coins from the original teal account's balance compartment into the bank's fee drawer. Trace the entire journey without cuts or disappearing coins. By 25 seconds, the counter stands higher while the customer's balance is visibly lower. The customer notices, reaches toward his missing money and points from the coral passbooks to the fee drawer. The employee's pleased expression falls. Keep the tall counter and depleted balance in the same composition through 30 seconds. Characters gesture but never talk. No text, lettering, numbers, logos or readable screens."
+          },
+          {
+            "narration": "That's Goodhart's law: reward the count, and people may chase it instead of helping. It's a warning, not proof every target fails.",
+            "prompt": "30–40 seconds. Hard cut to one uninterrupted ten-second overhead-to-oblique camera move in the same gouache bank. Motion from frame one: the customer pulls the original teal passbook toward himself and pushes both unwanted coral passbooks away. Following his gesture, the manager traces the visible fee channels back to the depleted balance, then looks at the employee's bonus notes and elevated account counter. The manager stops the next bonus payment with an open hand and brings all three passbooks into the customer's reach for inspection. The employee sets down the unopened passbook she had been reaching for. Preserve the counter as a usable object rather than smashing or discarding it; the intervention stops the harmful behavior, not measurement itself. End with the customer poised to identify the account he actually requested. Characters gesture but never talk. No text, lettering, numbers, logos or readable screens."
+          },
+          {
+            "narration": "The manager now checks customer approval before rewarding any account. The employee closes the unwanted accounts and refunds their fees.",
+            "prompt": "40–50 seconds. Hard cut to one uninterrupted ten-second medium shot across the same counter, with continuous hand and camera motion from frame one. The manager presents the three passbooks to the customer before releasing any reward. The customer selects only the teal passbook, nods to it and firmly pushes away the coral pair. The manager places a single bonus note beside the approved account, withholds rewards for the others, then points to the unwanted books and the fee drawer. The employee closes both coral passbooks, visibly stopping their fee mechanisms, and returns all the coins they removed from the bank's fee drawer to the customer's original balance compartment. She lowers the extra beads, leaving one on the account counter. Track the refund continuously so restoration is visible rather than implied. Characters gesture but never talk. No text, lettering, numbers, logos or readable screens."
+          },
+          {
+            "narration": "With his money restored, the customer deposits his next wages into the account he wanted. The counter is smaller, but honest.",
+            "prompt": "50–60 seconds. Hard cut to one uninterrupted ten-second shot in the same fictional bank and warm editorial gouache world. Motion from frame one: sunlight moves across the familiar counter to suggest the customer's next visit. Start close on the restored balance beneath the sole open teal passbook; the two closed coral books remain set aside, their fee mechanisms inactive. Pull gently wider as the same customer slides a fresh wage envelope forward, points to his teal account and nods. The recurring employee checks his choice before adding the new coins to that account. His balance grows, but opening no new account earns no new bonus and adds no counter bead. End with customer and employee relaxed beside one useful account, intact savings and the smaller one-bead counter. Maintain subtle character motion through the ending; do not append another setting or project scene. Characters gesture but never talk. No text, lettering, numbers, logos or readable screens."
+          }
+        ],
+        "qualityGate": {
+          "approved": true,
+          "writerModel": "gpt-6-astra",
+          "reviewModel": "gpt-6.1-sol",
+          "usedRefiner": true,
+          "scores": {
+            "causalStory": 5,
+            "visibleReversal": 5,
+            "visualCausality": 4,
+            "endingPayoff": 5,
+            "spokenClarity": 4
+          }
+        }
+      },
+      "insight": {
+        "title": "When the Proxy Takes Over",
+        "paras": [
+          "The Consumer Financial Protection Bureau reported on September 8, 2016, that Wells Fargo’s sales incentives helped produce more than two million potentially unauthorized accounts, with fees for some customers. The film’s characters and repair are fictional. ([consumerfinance.gov](https://www.consumerfinance.gov/archive/newsroom/consumer-financial-protection-bureau-fines-wells-fargo-100-million-widespread-illegal-practice-secretly-opening-unauthorized-accounts/))",
+          "<strong>Goodhart’s law</strong> is a heuristic from Charles Goodhart’s 1975 monetary-policy work: rewarding a measure can weaken its link to the goal. Not every target fails. In this illustration, customer approval blocks one shortcut—not every possible abuse. ([rba.gov.au](https://www.rba.gov.au/publications/rdp/1983/8301/introduction.html?utm_source=openai))"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Account-count rewards encourage unwanted accounts that harm customers. Checking customer approval changes which openings earn rewards.'><rect width='560' height='320' rx='24' fill='#1b1e30'/><text x='28' y='38' fill='#eceef7' font-size='18' font-family='sans-serif' font-weight='700'>When a proxy becomes the prize</text><rect x='24' y='76' width='140' height='62' rx='12' fill='#1b1e30' stroke='#5fd4c4' stroke-width='2'/><text x='94' y='101' fill='#5fd4c4' font-size='13' font-family='sans-serif' text-anchor='middle'>REAL GOAL</text><text x='94' y='121' fill='#eceef7' font-size='12' font-family='sans-serif' text-anchor='middle'>useful accounts</text><path d='M164 107 H205' stroke='#9ba0b8' stroke-width='2'/><path d='m198 101 8 6-8 6' fill='none' stroke='#9ba0b8' stroke-width='2'/><rect x='207' y='76' width='140' height='62' rx='12' fill='#1b1e30' stroke='#e8b84b' stroke-width='2'/><text x='277' y='101' fill='#e8b84b' font-size='13' font-family='sans-serif' text-anchor='middle'>MEASURE</text><text x='277' y='121' fill='#eceef7' font-size='12' font-family='sans-serif' text-anchor='middle'>account count</text><path d='M347 107 H388' stroke='#9ba0b8' stroke-width='2'/><path d='m381 101 8 6-8 6' fill='none' stroke='#9ba0b8' stroke-width='2'/><rect x='390' y='76' width='146' height='62' rx='12' fill='#1b1e30' stroke='#ff7a6e' stroke-width='2'/><text x='463' y='101' fill='#ff7a6e' font-size='13' font-family='sans-serif' text-anchor='middle'>REWARD</text><text x='463' y='121' fill='#eceef7' font-size='12' font-family='sans-serif' text-anchor='middle'>bonus per opening</text><path d='M420 138 V165 H278 V180' fill='none' stroke='#ff7a6e' stroke-width='2'/><path d='m272 173 6 8 6-8' fill='none' stroke='#ff7a6e' stroke-width='2'/><rect x='205' y='181' width='147' height='59' rx='12' fill='#1b1e30' stroke='#ff7a6e' stroke-width='2'/><text x='278' y='205' fill='#ff7a6e' font-size='13' font-family='sans-serif' text-anchor='middle'>RESPONSE</text><text x='278' y='225' fill='#eceef7' font-size='12' font-family='sans-serif' text-anchor='middle'>open unwanted ones</text><path d='M205 210 H94 V139' fill='none' stroke='#a48bfa' stroke-width='2' stroke-dasharray='5 5'/><path d='m88 146 6-8 6 8' fill='none' stroke='#a48bfa' stroke-width='2'/><text x='27' y='259' fill='#a48bfa' font-size='11' font-family='sans-serif'>Fees harm the customer</text><rect x='370' y='181' width='166' height='59' rx='12' fill='#1b1e30' stroke='#5fd4c4' stroke-width='2'/><text x='453' y='205' fill='#5fd4c4' font-size='13' font-family='sans-serif' text-anchor='middle'>REWARD CONDITION</text><text x='453' y='225' fill='#eceef7' font-size='12' font-family='sans-serif' text-anchor='middle'>customer approval</text><path d='M453 181 V153 H510 V139' fill='none' stroke='#5fd4c4' stroke-width='2'/><path d='m504 146 6-8 6 8' fill='none' stroke='#5fd4c4' stroke-width='2'/><text x='28' y='290' fill='#9ba0b8' font-size='12' font-family='sans-serif'>Illustrative repair: check the customer's choice before paying a bonus.</text></svg>",
+        "visualCaption": "In the fictional bank, approval becomes a condition for earning a reward.",
+        "after": [
+          "Imagine a Daisy 1 planning session: your team wants a usable demo, but closes easy items while one required task stalls. You ask to test the demo before celebrating completions; attention shifts to the task that matters.",
+          "In quarterly planning, pair milestones with evidence of progress. Could your score rise while the intended result stays stuck?"
+        ]
+      },
+      "lab": {
+        "title": "Audit One Metric",
+        "paras": [
+          "Check what your score rewards before celebrating it."
+        ],
+        "exercise": "Take two minutes. Pick one score. Write: “We want ___. We measure ___. If people optimize only that, they might ___. We’ll also check ___.”"
+      },
+      "masters": null,
+      "steal": {
+        "line": "Reward the result; audit the route.",
+        "paras": [
+          "Treat the metric as a clue, not the mission."
+        ],
+        "example": [
+          "“We marked twelve items complete; did that move the outcome we care about?”"
+        ]
+      }
+    },
+    {
       "date": "2026-10-03",
       "displayDate": "Sat · Oct 03",
       "domain": "Creator Economics",
@@ -1106,58 +1186,6 @@
         ],
         "example": [
           "“I think we may be calling this a roadmap question when it is really a learning question. For the strategy agent, let’s not debate the full direction yet. Let’s run one small probe, decide what signal would matter, and come back with evidence.”"
-        ]
-      }
-    },
-    {
-      "date": "2026-08-06",
-      "displayDate": "Thu · Aug 6",
-      "domain": "Innovation",
-      "hook": "The strongest wedge is often the part of the market experts dismiss.",
-      "insight": {
-        "title": "Start Where the Incumbent Won’t Bend",
-        "paras": [
-          "Clayton Christensen’s theory of <strong>disruptive innovation</strong> is often misused to mean “anything new and exciting.” The sharper version is more useful: disruption usually begins with an offering that looks too simple, too cheap, or too limited for the best customers of an established player. It serves people who are over-served, ignored, or priced out.",
-          "The move is not “build a worse product.” It is: <em>choose a job where simple is actually better</em>. Then improve from that wedge. For your work, this is a way to test whether an idea has a real entry point: Who would be relieved by the smallest useful version, even if power users shrug?"
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><line x1='90' y1='250' x2='470' y2='250' stroke='#9ba0b8' stroke-width='2'/><line x1='90' y1='250' x2='90' y2='60' stroke='#9ba0b8' stroke-width='2'/><text x='92' y='42' fill='#eceef7' font-size='18' font-family='Arial'>performance customers think they need</text><text x='305' y='278' fill='#eceef7' font-size='18' font-family='Arial'>time</text><path d='M105 94 C205 84 320 78 455 74' fill='none' stroke='#a48bfa' stroke-width='5'/><text x='330' y='64' fill='#a48bfa' font-size='16' font-family='Arial'>incumbent improves upward</text><path d='M105 222 C205 204 315 158 455 104' fill='none' stroke='#5fd4c4' stroke-width='5'/><circle cx='132' cy='217' r='8' fill='#e8b84b'/><text x='118' y='244' fill='#e8b84b' font-size='15' font-family='Arial'>ignored wedge</text><rect x='118' y='145' width='144' height='42' rx='8' fill='none' stroke='#ff7a6e' stroke-width='2'/><text x='134' y='171' fill='#ff7a6e' font-size='15' font-family='Arial'>simple is enough</text><text x='105' y='294' fill='#9ba0b8' font-size='14' font-family='Arial'>Disruption starts below the prestige line, then climbs.</text></svg>",
-        "visualCaption": "The dismissed wedge becomes powerful when simple keeps getting better.",
-        "after": [
-          "In a Daisy 1 product decision or a strategy agent memo, do not begin by asking, “What would make this impressive?” Ask, “Where is the current alternative so bloated that relief beats sophistication?” That question points you toward a wedge instead of a wish list."
-        ]
-      },
-      "lab": {
-        "title": "Find the Relief Segment",
-        "paras": [
-          "This skill matters because builders often over-aim. You imagine the most demanding user, the most complete workflow, the most elegant future state. But the first useful market may be someone with a smaller, uglier, more frequent pain.",
-          "Picture a planning session where the room wants to add five advanced features. Instead of debating ambition, you pause the room and look for the person who would benefit from the lightest version today."
-        ],
-        "exercise": "Take one current idea and write three columns: “over-served,” “ignored,” and “priced out.” Then say this exact line in your next product or planning conversation: “Before we add power, who would be relieved if this only did the simple version well?” Spend five minutes naming three people, teams, or situations that fit."
-      },
-      "masters": {
-        "name": "Clayton Christensen",
-        "talk": "Clayton Christensen: Disruptive innovation",
-        "videoId": "rpkoCZ4vBSI",
-        "start": 0,
-        "watchWindow": "00:00–08:40 for the definition of disruption; 19:30–24:30 for why good companies miss low-end threats",
-        "paras": [
-          "Christensen fits today because he gives you a cleaner lens for innovation: not novelty, not hype, not technical difficulty, but the relationship between performance, business model, and overlooked demand.",
-          "Watch how he makes the theory usable by separating sustaining improvement from disruptive entry. That distinction is the practical move: if you cannot name the ignored wedge, you may not have a disruptive strategy. You may just have a better feature."
-        ],
-        "observe": [
-          "How he defines disruption by the market it enters, not by how futuristic the technology feels.",
-          "How he uses simple industry examples to make a strategic pattern visible.",
-          "How he avoids telling leaders what to do directly; he gives them a theory that helps them see their own situation."
-        ]
-      },
-      "steal": {
-        "line": "Do not chase the impressive customer until you understand the relieved customer.",
-        "paras": [
-          "Practice using this as a filter, not a slogan. When a discussion drifts toward sophistication, bring it back to relief: what burden gets lighter, what workaround disappears, what meeting becomes shorter, what decision becomes easier?",
-          "The best version lands calmly. You are not arguing against ambition. You are sequencing it: relief first, power later."
-        ],
-        "example": [
-          "“I like the bigger vision, but let’s find the relieved customer first. For Daisy 1, who has a coordination problem so annoying that a simple version would already feel like progress?”"
         ]
       }
     }
