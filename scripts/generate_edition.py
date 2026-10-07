@@ -36,11 +36,16 @@ WRITER_MODEL = os.getenv("OPENAI_WRITER_MODEL", "gpt-6-luna")
 WRITER_REASONING_EFFORT = os.getenv("OPENAI_WRITER_REASONING_EFFORT", "medium")
 REVIEW_MODEL = os.getenv("OPENAI_REVIEW_MODEL", "gpt-6.1-sol")
 REVIEW_REASONING_EFFORT = os.getenv("OPENAI_REVIEW_REASONING_EFFORT", "high")
+REFINER_MODEL = os.getenv("OPENAI_REFINER_MODEL", "gpt-6-astra")
+REFINER_REASONING_EFFORT = os.getenv("OPENAI_REFINER_REASONING_EFFORT", "high")
 WRITER_MAX_OUTPUT_TOKENS = int(
     os.getenv("OPENAI_WRITER_MAX_OUTPUT_TOKENS", "20000")
 )
 REVIEW_MAX_OUTPUT_TOKENS = int(
     os.getenv("OPENAI_REVIEW_MAX_OUTPUT_TOKENS", "12000")
+)
+REFINER_MAX_OUTPUT_TOKENS = int(
+    os.getenv("OPENAI_REFINER_MAX_OUTPUT_TOKENS", "24000")
 )
 SMOKE_TEST = os.getenv("SMOKE_TEST") == "1"
 EDITION_INTERVAL_DAYS = int(os.getenv("EDITION_INTERVAL_DAYS", "2"))
@@ -411,6 +416,7 @@ def generate_edition(
     *,
     model: str = WRITER_MODEL,
     reasoning_effort: str = WRITER_REASONING_EFFORT,
+    max_output_tokens: int = WRITER_MAX_OUTPUT_TOKENS,
 ) -> dict[str, Any]:
     client = OpenAI(timeout=OPENAI_TIMEOUT_SECONDS, max_retries=0)
     print(f"Generating edition with {model} ({reasoning_effort} reasoning).")
@@ -419,9 +425,39 @@ def generate_edition(
         input=prompt,
         reasoning={"effort": reasoning_effort},
         tools=[{"type": "web_search_preview"}],
-        max_output_tokens=WRITER_MAX_OUTPUT_TOKENS,
+        max_output_tokens=max_output_tokens,
     )
     return parse_json_object(extract_text(response))
+
+
+def refine_edition(
+    original_prompt: str,
+    candidate: dict[str, Any],
+    feedback: dict[str, Any] | str,
+) -> dict[str, Any]:
+    """Use Astra once to repair a complete cheap draft, never to start over."""
+    refinement_prompt = f"""
+You are refining an existing Daily Insight edition, not inventing a new lesson.
+Preserve its central story, named model, factual sources, characters, visual
+world, project application, and strongest lines. Make only the changes needed
+to fix the supplied feedback and satisfy the original requirements. Return only
+the complete corrected edition as raw JSON.
+
+Original requirements:
+{original_prompt}
+
+Existing draft:
+{json.dumps(candidate, ensure_ascii=False, indent=2)}
+
+Specific feedback to fix:
+{json.dumps(feedback, ensure_ascii=False, indent=2) if isinstance(feedback, dict) else feedback}
+"""
+    return generate_edition(
+        refinement_prompt,
+        model=REFINER_MODEL,
+        reasoning_effort=REFINER_REASONING_EFFORT,
+        max_output_tokens=REFINER_MAX_OUTPUT_TOKENS,
+    )
 
 
 def review_video_story(edition: dict[str, Any]) -> tuple[bool, dict[str, Any]]:
@@ -547,42 +583,36 @@ def main() -> int:
 
     prompt = build_prompt(context, recent)
     writer_model = WRITER_MODEL
+    used_refiner = False
     edition = generate_edition(prompt)
-    validate_edition(edition)
+    try:
+        validate_edition(edition)
+    except ValueError as exc:
+        print(f"Cheap draft failed local validation: {exc}")
+        edition = refine_edition(prompt, edition, f"Local validation: {exc}")
+        writer_model = REFINER_MODEL
+        used_refiner = True
+        validate_edition(edition)
 
     if edition.get("format") == "video":
         approved, review = review_video_story(edition)
-        if not approved:
-            revision_prompt = f"""
-{prompt}
-
-The first candidate below failed the paid-video story review. Rewrite the whole
-edition once, following the revision brief and fixing every listed problem.
-Return only the complete replacement edition as raw JSON.
-
-First candidate:
-{json.dumps(edition, ensure_ascii=False, indent=2)}
-
-Review:
-{json.dumps(review, ensure_ascii=False, indent=2)}
-"""
-            writer_model = REVIEW_MODEL
-            edition = generate_edition(
-                revision_prompt,
-                model=REVIEW_MODEL,
-                reasoning_effort=REVIEW_REASONING_EFFORT,
-            )
+        if not approved and not used_refiner:
+            edition = refine_edition(prompt, edition, review)
+            writer_model = REFINER_MODEL
+            used_refiner = True
             validate_edition(edition)
             approved, review = review_video_story(edition)
         if not approved:
             raise RuntimeError(
-                "Video story failed the Cobra-standard review after one rewrite; "
+                "Video story failed the Cobra-standard review after its one "
+                "Astra refinement; "
                 "no edition was published and no paid video request was made."
             )
         edition["storyVideoPlan"]["qualityGate"] = {
             "approved": True,
             "writerModel": writer_model,
             "reviewModel": REVIEW_MODEL,
+            "usedRefiner": used_refiner,
             "scores": review["scores"],
         }
 

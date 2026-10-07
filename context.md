@@ -82,6 +82,8 @@ Use these descriptions exactly until Matt provides better ones.
   consequence follows, and the payoff makes the mechanism visible. Use the
   cost-controlled writer to draft the continuous narration before any paid
   video request, then require the stronger independent editor to approve it. If
+  the draft fails validation or review, give Astra the existing story and exact
+  feedback for one bounded refinement rather than asking it to start over. If
   the idea is mainly a definition or calculation, make it a designed carousel
   instead of forcing it into animation.
 - The Cobra Effect example is the creative quality bar, not merely a structural
@@ -93,9 +95,9 @@ Use these descriptions exactly until Matt provides better ones.
 - Before any paid animation request, have the cost-controlled writer produce the
   complete 60-second narration and six-scene storyboard. Then use a stronger
   separate agent/editor pass to score causal story, visible reversal, visual
-  causality, ending payoff, and spoken clarity. A failed script gets one rewrite
-  by the stronger model; if it still fails, stop without spending. This is an
-  agent review, not a manual review step for Matt.
+  causality, ending payoff, and spoken clarity. A failed script gets one bounded
+  Astra refinement of the existing draft; if it still fails, stop without video
+  spending. This is an agent review, not a manual review step for Matt.
 - For story-led episodes, aim for roughly 45–75 seconds. Keep one provocative
   hook visible near the top, use synchronized phrase-level captions with no more
   than one highlighted keyword at a time, and let the warm narration do most of
@@ -221,3 +223,7 @@ A strong month should feel varied and should include:
   at medium reasoning for the first draft, Sol at high reasoning for the strict
   independent review and any one allowed rewrite, and hard output-token caps.
   Keep the Cobra-standard gate intact and stop before Higgsfield when it fails.
+- 2026-10-07: Treat local schema failures as review feedback instead of fatal
+  errors. Luna still writes the complete first draft and Sol still judges the
+  story. Only when that draft fails validation or review may Astra refine the
+  existing story once, using the exact feedback and a hard output-token cap.
