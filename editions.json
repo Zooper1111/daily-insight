@@ -65,33 +65,33 @@
         }
       },
       "insight": {
-        "title": "Biomimicry: translate the function",
+        "title": "Biomimicry: copy the mechanism, not the shape",
         "paras": [
-          "De Mestral examined burr hooks catching fabric loops, then pursued a reusable fastener. ([loc.gov](https://www.loc.gov/everyday-mysteries/categories/technology/item/who-came-up-with-the-idea-for-velcro/?utm_source=openai)) Early strips gripped poorly because their shapes were mismatched. ([lemelson.mit.edu](https://lemelson.mit.edu/resources/george-de-mestral)) Working with a weaver improved the connection; nylon improved durability. ([lemelson.mit.edu](https://lemelson.mit.edu/resources/george-de-mestral)) Uniform manufacture required further engineering. ([velcro.com](https://www.velcro.com/news-and-blog/2026/02/an-idea-that-stuck-how-george-de-mestral-invented-the-velcro-fastener/))",
-          "<strong>Biomimicry is a design approach</strong>, not a success guarantee: borrow a biological mechanism, then engineer it for human constraints. The Library of Congress identifies this invention as an example. ([loc.gov](https://www.loc.gov/everyday-mysteries/categories/technology/item/who-came-up-with-the-idea-for-velcro/?utm_source=openai))"
+          "<strong>The approach has three moves.</strong> First, name the function and constraints—not the feature. Second, ask how living systems perform that function and strip the answer down to a rule. Third, build a human version and test whether it fits your users and constraints.",
+          "Nature supplies a search direction, not proof that the resulting design will work. The Biomimicry Design Spiral expands this into define, biologize, discover, abstract, emulate, and evaluate."
         ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Hook-and-loop mechanism: distributed hooks resist a pull; peeling releases one edge progressively.'><rect width='560' height='320' rx='20' fill='#1b1e30'/><g font-family='sans-serif'><text x='28' y='38' fill='#eceef7' font-size='20' font-weight='700'>One connection, two ways to pull</text><text x='28' y='78' fill='#e8b84b' font-size='16'>PULL: many hooks share the load</text><path d='M90 108H460 M90 164H460' stroke='#9ba0b8' stroke-width='7'/><g fill='none' stroke-width='4'><path d='M150 110v32q0 15 14 8M220 110v32q0 15 14 8M290 110v32q0 15 14 8M360 110v32q0 15 14 8' stroke='#e8b84b'/><path d='M145 162q-8-32 10-32t10 32M215 162q-8-32 10-32t10 32M285 162q-8-32 10-32t10 32M355 162q-8-32 10-32t10 32' stroke='#5fd4c4'/><path d='M84 108H36m12-9-12 9 12 9M466 164h48m-12-9 12 9-12 9' stroke='#ff7a6e'/></g><text x='28' y='208' fill='#a48bfa' font-size='16'>PEEL: release advances from one edge</text><path d='M95 275H460' stroke='#5fd4c4' stroke-width='7'/><path d='M95 233Q185 217 250 269H460' fill='none' stroke='#e8b84b' stroke-width='7'/><path d='M145 238l-7 18q-3 12 8 10M202 246l-4 16q-2 12 9 10M290 269v10q0 10 10 5M360 269v10q0 10 10 5' fill='none' stroke='#e8b84b' stroke-width='3'/><path d='M255 251l-19-22m0 11v-11h11' fill='none' stroke='#ff7a6e' stroke-width='3'/><circle cx='255' cy='270' r='7' fill='#ff7a6e'/><text x='300' y='310' fill='#9ba0b8' font-size='13'>Illustrative cross-section; not to scale</text></g></svg>",
-        "visualCaption": "Hooks engage loops; pulling and peeling load the connection differently. ([velcro.com](https://www.velcro.com/hook-and-loop/))",
+        "visualSvg": "",
+        "visualCaption": "",
         "after": [
-          "Try a Daisy 1 planning experiment: you want tasks to retain their owners, but loose cards separate. Detachable paper pairs preserve ownership while letting you change it.",
-          "For quarterly planning, pair each goal with its next experiment using removable tabs. This is a functional analogy, not a proven software design. What must stay connected—and what must remain changeable?"
+          "A Daisy 1 example: suppose the function is “surface stalled work without notifying everyone.” Ask how living systems escalate local signals, abstract a rule such as “start local; widen only when unresolved,” then prototype that rule.",
+          "The biology has not validated the feature. It has helped you search beyond the obvious solution. User testing still decides whether the idea belongs in Daisy 1."
         ]
       },
       "lab": {
-        "title": "Specify hold and release",
+        "title": "Run a function search",
         "paras": [
-          "Test both sides of the design tension."
+          "Start with the job, not a favorite animal or plant."
         ],
-        "exercise": "In four minutes, make one detachable paper pair. Say: “This must stay together when we move it, but separate when we change the owner.” Try both actions before discussing a feature."
+        "exercise": "Write one Daisy 1 question: “How might we ___ under ___ constraint?” Rewrite it as “How does nature ___?” Find one strategy, state its rule without biology words, and sketch one small test."
       },
       "masters": null,
       "steal": {
-        "line": "Borrow the mechanism. Test the constraints.",
+        "line": "Copy the mechanism, not the organism.",
         "paras": [
-          "Use the physical experiment to make your next planning discussion specific."
+          "Biology gives you hypotheses. Testing decides whether they belong in the product."
         ],
         "example": [
-          "“Keep the task and owner connected. Now show me how we change the owner without losing the task.”"
+          "“What function are we solving, how does nature perform it, and which part can we test?”"
         ]
       },
       "storyVideo": {

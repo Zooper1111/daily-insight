@@ -233,3 +233,7 @@ format going forward. The paid pipeline is `scripts/generate_higgsfield_video.py
 Full-video editions rotate one coherent visual theme per story through a curated
 six-theme catalog. The selected theme is stored in `storyVideoPlan.theme`, and
 the renderer applies its global style direction to all six Higgsfield blocks.
+After a full story video, the site suppresses the separate SVG/model card. The
+remaining cards explain the mechanism, show an earned application, provide a
+clear practice, and leave one non-obvious decision rule; they must not recap the
+movie.

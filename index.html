@@ -224,7 +224,8 @@ function story(ed,index,kind,body,label){
 function buildEdition(ed,index){
   const result=[];
   const featureVideo=ed.storyVideo||ed.shortVideo;
-  const cardCount=4+(ed.insight.visualSvg?1:0)+(ed.masters?1:0)+(featureVideo?1:0)+(ed.interactive?1:0);
+  const showVisual=Boolean(ed.insight.visualSvg&&!ed.storyVideo);
+  const cardCount=4+(showVisual?1:0)+(ed.masters?1:0)+(featureVideo?1:0)+(ed.interactive?1:0);
   result.push(story(ed,index,'hook',`<div class="storycard hookcard">
     <div class="eyebrow" style="justify-content:center">${esc(ed.domain)}</div>
     <div class="date">${esc(ed.displayDate)}</div>
@@ -314,7 +315,7 @@ function buildEdition(ed,index){
     ${(ed.insight.after||[]).length?`<div class="after">${paragraphs(ed.insight.after)}</div>`:''}
   </div>`,`${ed.insight.title}: the idea`));
 
-  if(ed.insight.visualSvg){
+  if(showVisual){
     result.push(story(ed,index,'visual',`<div class="storycard" style="--accent:var(--violet)">
       <div class="eyebrow">See the model</div><div class="visualframe">${ed.insight.visualSvg}</div>
       ${ed.insight.visualCaption?`<div class="caption">${esc(ed.insight.visualCaption)}</div>`:''}

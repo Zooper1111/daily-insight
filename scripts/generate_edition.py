@@ -245,6 +245,8 @@ def validate_edition(edition: dict[str, Any]) -> None:
                 raise ValueError(f"storyVideoPlan block {index} needs prompt and narration")
         if not str((plan or {}).get("narration", "")).strip():
             raise ValueError("Video editions require one continuous narration")
+        if str(edition.get("insight", {}).get("visualSvg", "")).strip():
+            raise ValueError("Video editions must not add a redundant visual/model card")
     elif edition.get("storyVideoPlan") is not None:
         raise ValueError("Carousel editions must not contain storyVideoPlan")
 
@@ -352,12 +354,35 @@ external narrator carries the lesson. Do not ask the video model to draw text.
 Use this theme for every scene without substitution: {video_theme['label']}.
 Its exact global style direction is: {video_theme['prompt']}.
 
+The cards after the movie must extend the lesson rather than recap it:
+- insight is the “how it works” card. Do not retell the historical case. Explain
+  the approach as a compact sequence, its operating mechanism, its boundary,
+  and one genuinely useful application. A well-matched Daisy 1 application is
+  welcome here; an unearned project analogy is not.
+- Set insight.visualSvg and insight.visualCaption to empty strings. A video
+  edition has no separate “See the model” picture card.
+- lab must be a clear, concrete way to use the approach today, not an abstract
+  craft exercise or a prop that needs interpretation.
+- steal must sharpen the decision rule. Reject generic task-management advice
+  such as assigning owners, communicating, prioritizing, or keeping work
+  connected.
+
 Choose the subject yourself. Strongly prefer a documented historical origin,
 discovery, experiment, or business episode that naturally reveals why a named
 principle exists, the way the Cobra Effect story teaches its principle. The case
 must have specific people or institutions, a concrete goal, an action, a visible
 reversal, and a documented outcome. Do not invent a fictional wrapper around an
 abstract lesson merely to make it look cinematic.
+
+Build the subject shortlist from credible idea catalogs before choosing. Start
+with the official TED “Most Popular Talks of All Time” playlist for accessible
+ideas, the Thinkers50 Ranking and awards for influential management frameworks,
+NobelPrize.org’s economic-sciences prize list and popular-information pages for
+proven mechanisms, and Stanford GSB’s “Big Ideas” research collection. Popularity
+earns consideration, not approval: verify the underlying theory with an original
+or institutional source, then apply the Cobra story-fit gate. Reject a candidate
+when its only practical lesson is obvious, generic, or already standard in most
+task-management software.
 
 Apply a strict story-fit gate inspired by the Cobra Effect: a protagonist wants
 something concrete, someone changes a rule or takes an action, behavior changes
@@ -557,7 +582,9 @@ Return only raw JSON with exactly this shape:
     "visualCausality": 1,
     "endingPayoff": 1,
     "spokenClarity": 1,
-    "applicationFit": 1
+    "applicationFit": 1,
+    "lessonValue": 1,
+    "postVideoValue": 1
   }},
   "problems": ["short, specific problem"],
   "edition": {{}}
@@ -578,6 +605,12 @@ named project is attached without sharing the story's causal mechanism. Replace
 an unearned project tie-in with a concrete project-neutral diagnostic or decision
 rule. Make every reasonable correction in this one pass. Protecting the
 paid generation budget matters more than publishing on schedule.
+
+Score lessonValue below 4 if the subject produces only an obvious takeaway or
+something already standard in ordinary task-management software. Score
+postVideoValue below 4 if the cards after the movie repeat its story, include a
+separate SVG/model picture, require interpretation, or fail to explain how the
+approach works and how to use it. Correct those problems in the returned edition.
 
 Original edition requirements:
 {original_prompt}
@@ -601,6 +634,8 @@ Candidate edition:
         "endingPayoff",
         "spokenClarity",
         "applicationFit",
+        "lessonValue",
+        "postVideoValue",
     }
     scores = review.get("scores")
     if not isinstance(scores, dict) or set(scores) != score_names:

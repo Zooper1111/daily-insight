@@ -70,6 +70,13 @@ Use these descriptions exactly until Matt provides better ones.
   consecutive videos do not repeat the same aesthetic. Keep captions and causal
   clarity consistent; do not use random viral effects that distract from the
   lesson.
+- For video editions, the movie owns the historical story. The next card must
+  not repeat it; it should explain how the approach works, its mechanism and
+  boundary, and how to use it. This is the preferred place for a Daisy 1 example
+  when the transfer is genuine. Do not show a separate decorative picture/model
+  card after a full movie. The remaining practice and takeaway cards must add
+  new, immediately understandable value rather than repeat generic project-
+  management advice.
 - Static carousel editions do not need animation or narration. Their words,
   images, formula, chart, or causal diagram should do the teaching.
 - A fully branching interactive episode is a selective enhancement, not a
@@ -169,6 +176,13 @@ A strong month should feel varied and should include:
   ending did not land because the project connection was forced. Add
   application fit to the final story gate and use a project-neutral takeaway
   whenever no active project shares the same causal mechanism.
+- 2026-10-08: A full movie must not be followed by cards that retell it. Remove
+  the separate picture/model card from video editions. The next card explains
+  the approach, mechanism, boundary, and a real use; practice and takeaway cards
+  must be self-explanatory and non-obvious. Build subject shortlists from TED's
+  official most-popular playlist, Thinkers50, Nobel Prize popular-information
+  pages, and Stanford GSB Big Ideas, then verify the underlying theory and reject
+  weak subjects with generic task-management takeaways.
 - 2026-07-11: DreamGuard is not a sleep-tracking product.
 - 2026-08-05: Refer to the project coordination app as Daisy 1, not Coordly or Daisy One. Generated advice should address the reader as "you," not describe what Matt should do in third person.
 - 2026-09-01: Cut edition length substantially. Each complete insight should be
