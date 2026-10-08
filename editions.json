@@ -47,6 +47,21 @@
             "endingPayoff": 4,
             "spokenClarity": 5
           }
+        },
+        "generation": {
+          "provider": "Higgsfield API",
+          "maximumConfiguredCostUsd": 3.9,
+          "paidRetries": 0,
+          "audioMode": "locked narration reference",
+          "requestIds": [
+            "5af012dd-fe8f-4119-883a-7a5bb4bc4372",
+            "703d0c9c-7b3b-4d81-9ddf-c043918c44ab",
+            "79467131-db5b-4774-969f-de2e216299d1",
+            "4454a6dd-5080-425f-9df3-63db7fe82da6",
+            "a82534a7-cd09-4edb-9a11-94383cca7965",
+            "e23ce189-739d-44cd-b445-f26af9fd75a1"
+          ],
+          "status": "published"
         }
       },
       "insight": {
@@ -78,6 +93,13 @@
         "example": [
           "“Keep the task and owner connected. Now show me how we change the owner without losing the task.”"
         ]
+      },
+      "storyVideo": {
+        "title": "What if the snag became the fastener?",
+        "src": "assets/videos/2026-10-07/story.mp4",
+        "poster": "assets/video-scenes/true-fans-pilot/scene-01-attention.png",
+        "duration": "60 seconds",
+        "captions": true
       }
     },
     {
