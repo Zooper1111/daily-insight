@@ -153,14 +153,19 @@ def upload_audio_reference(index: int, path: Path) -> str:
     response.raise_for_status()
     payload = response.json()
     upload_url = payload.get("upload_url")
+    upload_headers = payload.get("upload_headers") or {}
     public_url = payload.get("public_url")
     if not upload_url or not public_url:
         raise RuntimeError(f"Audio reference {index} upload URL was incomplete")
+    if not isinstance(upload_headers, dict):
+        raise RuntimeError(f"Audio reference {index} upload headers were invalid")
     with path.open("rb") as audio_file:
         upload = requests.put(
             upload_url,
             data=audio_file,
-            headers={"Content-Type": "audio/wav"},
+            # Higgsfield signs every header in this mapping. Omitting even one
+            # (for example x-amz-tagging) makes S3 reject the upload with 403.
+            headers={str(key): str(value) for key, value in upload_headers.items()},
             timeout=180,
         )
     upload.raise_for_status()
