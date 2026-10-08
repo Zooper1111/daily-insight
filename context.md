@@ -181,8 +181,10 @@ A strong month should feel varied and should include:
   the approach, mechanism, boundary, and a real use; practice and takeaway cards
   must be self-explanatory and non-obvious. Build subject shortlists from TED's
   official most-popular playlist, Thinkers50, Nobel Prize popular-information
-  pages, and Stanford GSB Big Ideas, then verify the underlying theory and reject
-  weak subjects with generic task-management takeaways.
+  pages, Stanford GSB Big Ideas, and Big Think's Business, Decision Making,
+  Strategic Thinking, and expert-led Series collections. Then verify the
+  underlying theory and reject weak subjects with generic task-management
+  takeaways.
 - 2026-07-11: DreamGuard is not a sleep-tracking product.
 - 2026-08-05: Refer to the project coordination app as Daisy 1, not Coordly or Daisy One. Generated advice should address the reader as "you," not describe what Matt should do in third person.
 - 2026-09-01: Cut edition length substantially. Each complete insight should be

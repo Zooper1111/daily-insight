@@ -237,3 +237,10 @@ After a full story video, the site suppresses the separate SVG/model card. The
 remaining cards explain the mechanism, show an earned application, provide a
 clear practice, and leave one non-obvious decision rule; they must not recap the
 movie.
+
+Video subject discovery starts with established idea catalogs: TED's official
+most-popular playlist, Thinkers50, Nobel Prize popular-information pages,
+Stanford GSB Big Ideas, and Big Think's business, decision-making, strategic-
+thinking, and expert-led series. These sources generate candidates only; the
+underlying idea still requires primary or institutional verification and must
+pass the Cobra-standard story and lesson-value gates.

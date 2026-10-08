@@ -378,11 +378,12 @@ Build the subject shortlist from credible idea catalogs before choosing. Start
 with the official TED “Most Popular Talks of All Time” playlist for accessible
 ideas, the Thinkers50 Ranking and awards for influential management frameworks,
 NobelPrize.org’s economic-sciences prize list and popular-information pages for
-proven mechanisms, and Stanford GSB’s “Big Ideas” research collection. Popularity
-earns consideration, not approval: verify the underlying theory with an original
-or institutional source, then apply the Cobra story-fit gate. Reject a candidate
-when its only practical lesson is obvious, generic, or already standard in most
-task-management software.
+proven mechanisms, Stanford GSB’s “Big Ideas” research collection, and Big
+Think’s Business, Decision Making, Strategic Thinking, and expert-led Series
+collections. Popularity earns consideration, not approval: verify the underlying
+theory with an original or institutional source, then apply the Cobra story-fit
+gate. Reject a candidate when its only practical lesson is obvious, generic, or
+already standard in most task-management software.
 
 Apply a strict story-fit gate inspired by the Cobra Effect: a protagonist wants
 something concrete, someone changes a rule or takes an action, behavior changes
