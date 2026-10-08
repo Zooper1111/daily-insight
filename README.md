@@ -227,3 +227,6 @@ upgrade rather than a dependency.
 The earlier image-based MP4 renderer remains in `scripts/render_short_video.py`
 as an archive and export reference, but slideshow-style motion is not the target
 format going forward. The paid pipeline is `scripts/generate_higgsfield_video.py`.
+Full-video editions rotate one coherent visual theme per story through a curated
+six-theme catalog. The selected theme is stored in `storyVideoPlan.theme`, and
+the renderer applies its global style direction to all six Higgsfield blocks.

@@ -52,6 +52,69 @@ VIDEO_PILOT_ENABLED = os.getenv("VIDEO_PILOT_ENABLED", "0") == "1"
 VIDEO_STORY_MIN_SCORE = 4
 OPENAI_TIMEOUT_SECONDS = float(os.getenv("OPENAI_TIMEOUT_SECONDS", "1800"))
 
+VIDEO_THEMES = [
+    {
+        "id": "warm-gouache",
+        "label": "Warm Gouache Storybook",
+        "prompt": (
+            "Warm editorial storybook animation with hand-painted gouache texture, "
+            "bold cobalt, amber, coral and teal shapes, tactile paper grain, expressive "
+            "camera movement, one recurring adult protagonist, no photorealism, no "
+            "logos, and no generated text"
+        ),
+    },
+    {
+        "id": "monospace-blueprint",
+        "label": "Monospace Blueprint",
+        "prompt": (
+            "Cinematic technical-blueprint animation inspired by monospace callouts: "
+            "ink-black and electric-blue fields, cream diagrams, moving arrows, grids, "
+            "cutaway mechanisms, crisp editorial composition, one recurring adult "
+            "protagonist, no photorealism, no logos, and no generated text"
+        ),
+    },
+    {
+        "id": "pastel-shape-lab",
+        "label": "Pastel Shape Lab",
+        "prompt": (
+            "Playful 2D pastel shape choreography with peach, mint, lilac and navy, "
+            "simple geometric characters and objects, kinetic transformations that "
+            "make cause and effect visible, one recurring adult protagonist, no "
+            "photorealism, no logos, and no generated text"
+        ),
+    },
+    {
+        "id": "retro-crt-collage",
+        "label": "Retro CRT Collage",
+        "prompt": (
+            "1990s CRT mixed-media documentary collage with analog scan lines, torn "
+            "paper, archival-photo framing, saturated cyan and magenta accents, dynamic "
+            "push-ins and match cuts, one recurring adult protagonist, no logos, and no "
+            "generated text"
+        ),
+    },
+    {
+        "id": "pixel-block-diorama",
+        "label": "Pixel Block Diorama",
+        "prompt": (
+            "Stylized pixel-block miniature diorama with tactile toy-like environments, "
+            "isometric-to-close-up camera changes, visible systems assembling and "
+            "breaking apart, one recurring adult protagonist, no photorealism, no "
+            "logos, and no generated text"
+        ),
+    },
+    {
+        "id": "wheatpaste-editorial",
+        "label": "Wheatpaste Editorial",
+        "prompt": (
+            "Bold wheatpaste editorial animation with torn posters, rough ink, limited "
+            "red, black, cream and cobalt palette, energetic stop-motion transitions, "
+            "one recurring adult protagonist, no photorealism, no logos, and no "
+            "generated text"
+        ),
+    },
+]
+
 
 REQUIRED_TOP_LEVEL = {
     "date",
@@ -168,6 +231,12 @@ def validate_edition(edition: dict[str, Any]) -> None:
         )
     if edition_format == "video":
         plan = edition.get("storyVideoPlan")
+        theme = (plan or {}).get("theme")
+        valid_theme_ids = {item["id"] for item in VIDEO_THEMES}
+        if not isinstance(theme, dict) or theme.get("id") not in valid_theme_ids:
+            raise ValueError("Video editions require one approved rotating visual theme")
+        if not str((plan or {}).get("style", "")).strip():
+            raise ValueError("Video editions require a visual style prompt")
         blocks = (plan or {}).get("blocks")
         if not isinstance(blocks, list) or len(blocks) != 6:
             raise ValueError("Video editions require exactly six storyVideoPlan blocks")
@@ -224,22 +293,49 @@ def format_for_date(day: dt.date) -> str:
     return "video" if publication_number % 2 == 0 else "carousel"
 
 
-def build_prompt(context: str, recent: list[dict[str, Any]]) -> str:
+def select_video_theme(editions: list[dict[str, Any]]) -> dict[str, str]:
+    """Advance through the approved theme list without model improvisation."""
+    theme_ids = [item["id"] for item in VIDEO_THEMES]
+    for edition in editions:
+        plan = edition.get("storyVideoPlan") or {}
+        theme = plan.get("theme") or {}
+        theme_id = theme.get("id") if isinstance(theme, dict) else None
+        if theme_id in theme_ids:
+            return dict(VIDEO_THEMES[(theme_ids.index(theme_id) + 1) % len(VIDEO_THEMES)])
+        if "gouache" in str(plan.get("style", "")).lower():
+            return dict(VIDEO_THEMES[1])
+    return dict(VIDEO_THEMES[0])
+
+
+def apply_video_theme(edition: dict[str, Any], theme: dict[str, str]) -> None:
+    plan = edition.get("storyVideoPlan")
+    if not isinstance(plan, dict):
+        raise ValueError("Video edition is missing storyVideoPlan")
+    plan["theme"] = {"id": theme["id"], "label": theme["label"]}
+    plan["style"] = theme["prompt"]
+
+
+def build_prompt(
+    context: str, recent: list[dict[str, Any]], video_theme: dict[str, str] | None
+) -> str:
     edition_format = format_for_date(dt.date.fromisoformat(TODAY))
     if edition_format == "video":
-        format_schema = '''
+        if video_theme is None:
+            raise ValueError("Video editions require a selected theme")
+        format_schema = f'''
   "format": "video",
-  "storyVideoPlan": {
-    "style": "Warm editorial storybook animation with hand-painted gouache texture, bold cobalt, amber, coral and teal shapes, one recurring adult protagonist, no photorealism, no logos, no spoken characters",
+  "storyVideoPlan": {{
+    "theme": {{"id": "{video_theme['id']}", "label": "{video_theme['label']}"}},
+    "style": {json.dumps(video_theme['prompt'])},
     "narration": "The exact six block narration lines joined in order as one complete script",
     "blocks": [
-      {
+      {{
         "narration": "The exact 24-32 spoken words for this ten-second scene",
-        "prompt": "One detailed ten-second vertical animation prompt containing exactly five hard-cut shots of about two seconds each. Vary shot size and angle, demand motion from frame one, preserve the recurring protagonist and editorial storybook style, and say characters gesture but never talk."
-      }
+        "prompt": "One detailed ten-second vertical animation prompt containing exactly five hard-cut shots of about two seconds each. Vary shot size and angle, demand motion from frame one, preserve the recurring protagonist and selected global theme, and say characters gesture but never talk."
+      }}
     ]
-  },'''
-        format_direction = '''
+  }},'''
+        format_direction = f'''
 This is a FULL VIDEO edition in the two-week pilot. Add exactly six ordered
 storyVideoPlan blocks, producing sixty seconds total. The six blocks must form
 one causal story: provocative hook, concrete friction, named-model reveal,
@@ -248,8 +344,11 @@ safe active project. Each block narration is the exact voiceover for that scene,
 using 24-32 spoken words. Each visual prompt must
 describe exactly five hard-cut shots, about two seconds each, with motion from
 the first frame. Keep the same recurring adult protagonist and one coherent
-warm editorial storybook world. Characters only gesture and never speak; the
+visual world. Characters only gesture and never speak; the
 external narrator carries the lesson. Do not ask the video model to draw text.
+
+Use this theme for every scene without substitution: {video_theme['label']}.
+Its exact global style direction is: {video_theme['prompt']}.
 
 Choose the subject yourself. Strongly prefer a documented historical origin,
 discovery, experiment, or business episode that naturally reveals why a named
@@ -589,7 +688,9 @@ def main() -> int:
         for e in editions[:8]
     ]
 
-    prompt = build_prompt(context, recent)
+    expected_format = format_for_date(dt.date.fromisoformat(TODAY))
+    video_theme = select_video_theme(editions) if expected_format == "video" else None
+    prompt = build_prompt(context, recent, video_theme)
     edition = generate_edition(prompt)
     validation_problem = None
     try:
@@ -598,11 +699,13 @@ def main() -> int:
         validation_problem = str(exc)
         print(f"Cheap draft needs Sol correction: {validation_problem}")
 
-    expected_format = format_for_date(dt.date.fromisoformat(TODAY))
     if expected_format == "video":
         approved, edition, review = finalize_video_story(
             prompt, edition, validation_problem
         )
+        if video_theme is None:
+            raise RuntimeError("Video theme selection was lost")
+        apply_video_theme(edition, video_theme)
         synchronize_video_narration(edition)
         validate_edition(edition)
         if not approved:

@@ -173,12 +173,19 @@ def upload_audio_reference(index: int, path: Path) -> str:
     return str(public_url)
 
 
-def submit_block(index: int, prompt: str, audio_url: str) -> dict[str, str]:
+def submit_block(
+    index: int, prompt: str, audio_url: str, theme_prompt: str
+) -> dict[str, str]:
+    themed_prompt = (
+        "GLOBAL VISUAL THEME — apply consistently to the entire scene: "
+        f"{theme_prompt}. Characters gesture but never speak. "
+        f"SCENE DIRECTION: {prompt}"
+    )
     response = requests.post(
         f"{API_BASE}/{MODEL_PATH}",
         headers=headers(),
         json={
-            "prompt": prompt,
+            "prompt": themed_prompt,
             "duration": SECONDS_PER_BLOCK,
             "image_urls": [REFERENCE_URL],
             "audio_urls": [audio_url],
@@ -488,6 +495,9 @@ def main() -> int:
     if blocks is None:
         return 0
     generation = edition["storyVideoPlan"].setdefault("generation", {})
+    theme_prompt = str(edition["storyVideoPlan"].get("style", "")).strip()
+    if not theme_prompt:
+        raise RuntimeError("The approved story video is missing its visual theme")
     existing_ids = generation.get("requestIds") or []
     if not isinstance(existing_ids, list) or len(existing_ids) > BLOCK_COUNT:
         raise RuntimeError("Stored Higgsfield request IDs are invalid")
@@ -547,6 +557,7 @@ def main() -> int:
                     index + 1,
                     blocks[index]["prompt"],
                     audio_url,
+                    theme_prompt,
                 )
                 requests_by_block.append(request)
                 existing_ids.append(request["request_id"])
@@ -556,6 +567,7 @@ def main() -> int:
                         "maximumConfiguredCostUsd": round(projected_cost, 2),
                         "paidRetries": 0,
                         "audioMode": "locked narration reference",
+                        "theme": edition["storyVideoPlan"].get("theme"),
                         "requestIds": existing_ids,
                         "status": "submitted",
                     }

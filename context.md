@@ -65,6 +65,11 @@ Use these descriptions exactly until Matt provides better ones.
   involved, what they are trying to do, what specifically is going wrong, the
   named model or move, its mechanism or formula, its caveat, and a visible
   application to a current public-safe project.
+- Give each full-video story one coherent visual theme across all six scenes.
+  Rotate through a curated set of lesson-friendly Higgsfield-inspired looks so
+  consecutive videos do not repeat the same aesthetic. Keep captions and causal
+  clarity consistent; do not use random viral effects that distract from the
+  lesson.
 - Static carousel editions do not need animation or narration. Their words,
   images, formula, chart, or causal diagram should do the teaching.
 - A fully branching interactive episode is a selective enhancement, not a
