@@ -2,6 +2,10 @@
 
 Standalone learning digest published every other day. The website reads `editions.json`, newest first, and turns every edition into a swipeable story.
 
+Scheduled publishing is unattended: GitHub Actions generates, renders, commits,
+and publishes without a browser session or live Codex monitoring. Inspect a run
+only after a reported failure or when reviewing the finished edition.
+
 ## Reading experience
 
 - Each edition is presented as a sequence of full-screen cards. During the

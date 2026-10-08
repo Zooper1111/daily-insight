@@ -11,6 +11,10 @@ Because this repo is public, keep details safe to share publicly. Do not include
 - Matt prefers concrete scripts, small experiments, useful theories, and ideas that connect to real projects instead of generic self-improvement advice.
 - Matt wants to improve both public speaking and everyday conversation: small talk, curiosity, warmth, asking better questions, making ideas interesting, and delivering provocative lines without sounding performative.
 - Matt wants the digest every other day, not daily, with topics spread out so it does not feel like the same kind of advice every time.
+- Scheduled editions should run unattended in GitHub. Do not require Matt's
+  browser, a live Codex conversation, or repeated status polling. Matt reviews
+  the published result afterward; intervene only when GitHub reports a real
+  failure that needs repair.
 - Timezone: America/New_York unless Matt changes this.
 
 ## Projects and workstreams
