@@ -44,6 +44,10 @@ Setup required:
    variables to change the two model roles without editing code.
 5. Optional: set `EDITION_INTERVAL_DAYS` or `EDITION_ANCHOR_DATE` to adjust cadence.
 
+For a supervised test of an updated writing pipeline, the manual workflow's
+`force_regenerate` switch replaces the selected date's existing edition. It is
+off by default and does not affect scheduled editions.
+
 The workflow:
 
 1. Checks out the repo.

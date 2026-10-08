@@ -43,6 +43,7 @@ REVIEW_MAX_OUTPUT_TOKENS = int(
     os.getenv("OPENAI_REVIEW_MAX_OUTPUT_TOKENS", "20000")
 )
 SMOKE_TEST = os.getenv("SMOKE_TEST") == "1"
+FORCE_REGENERATE = os.getenv("FORCE_REGENERATE") == "1"
 EDITION_INTERVAL_DAYS = int(os.getenv("EDITION_INTERVAL_DAYS", "2"))
 EDITION_ANCHOR_DATE = os.getenv("EDITION_ANCHOR_DATE", "2026-07-27")
 VIDEO_PILOT_START = dt.date.fromisoformat(os.getenv("VIDEO_PILOT_START", "2026-10-03"))
@@ -562,7 +563,7 @@ def main() -> int:
         return 0
 
     editions = data.get("editions", [])
-    if editions and editions[0].get("date") == TODAY:
+    if editions and editions[0].get("date") == TODAY and not FORCE_REGENERATE:
         if sanitized:
             EDITIONS_PATH.write_text(
                 json.dumps(data, ensure_ascii=False, indent=2) + "\n",
@@ -572,6 +573,10 @@ def main() -> int:
             return 0
         print(f"Edition for {TODAY} already exists.")
         return 0
+
+    if FORCE_REGENERATE:
+        editions = [edition for edition in editions if edition.get("date") != TODAY]
+        print(f"Replacing any existing edition for {TODAY}.")
 
     context = CONTEXT_PATH.read_text(encoding="utf-8")
     recent = [

@@ -242,3 +242,6 @@ A strong month should feel varied and should include:
   and passed to Higgsfield H3 as scene audio references so H3 generates the movie
   around the narration; final assembly reuses that identical audio. Do not run
   again until the OpenAI API balance is intentionally restored.
+- 2026-10-07: For the first supervised test of this simplified pipeline, replace
+  the existing October 7 edition instead of animating its older fictional-bank
+  script. Keep this manual replacement switch off for normal scheduled runs.

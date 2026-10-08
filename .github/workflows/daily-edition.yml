@@ -20,6 +20,11 @@ on:
         required: false
         default: false
         type: boolean
+      force_regenerate:
+        description: "Replace an existing edition for the selected date"
+        required: false
+        default: false
+        type: boolean
       resume_video:
         description: "Resume assembly from six existing paid request IDs; never submit new video generation"
         required: false
@@ -55,6 +60,7 @@ jobs:
           EDITION_ANCHOR_DATE: ${{ vars.EDITION_ANCHOR_DATE || '2026-07-27' }}
           EDITION_DATE: ${{ inputs.edition_date || '' }}
           VIDEO_PILOT_ENABLED: ${{ vars.VIDEO_PILOT_ENABLED || '0' }}
+          FORCE_REGENERATE: ${{ inputs.force_regenerate && '1' || '0' }}
           SMOKE_TEST: ${{ inputs.smoke_test && '1' || '0' }}
         run: python scripts/generate_edition.py
       - name: Generate a full story video after the script passes review
