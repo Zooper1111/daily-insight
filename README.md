@@ -40,9 +40,8 @@ Setup required:
 3. For full-video editions, fund the pay-as-you-go Higgsfield API account and add
    the complete copied credential as a repository Actions secret named `HF_KEY`.
    Keep auto top-up off during the pilot.
-4. Optional: set `OPENAI_WRITER_MODEL`, `OPENAI_REVIEW_MODEL`, or
-   `OPENAI_REFINER_MODEL` repository variables to change the model roles without
-   editing code.
+4. Optional: set `OPENAI_WRITER_MODEL` or `OPENAI_REVIEW_MODEL` repository
+   variables to change the two model roles without editing code.
 5. Optional: set `EDITION_INTERVAL_DAYS` or `EDITION_ANCHOR_DATE` to adjust cadence.
 
 The workflow:
@@ -51,25 +50,24 @@ The workflow:
 2. Installs the OpenAI Python SDK.
 3. Runs `scripts/generate_edition.py`.
 4. On alternating pilot editions, generates six ten-second animated sections,
-   adds the approved warm local narration and captions, and assembles one
-   60-second mobile video.
+   gives Higgsfield each section's locked narration audio, adds captions, and
+   assembles one 60-second mobile video.
 5. Commits `editions.json` and any completed video asset.
 
-The cost-controlled default uses `gpt-6-luna` at medium reasoning for the first
-draft and `gpt-6.1-sol` at high reasoning for the independent paid-video review.
-If the complete cheap draft fails either local schema checks or the story review,
-`gpt-6-astra` receives that draft plus the exact feedback and may refine it once.
-It does not start from a blank page, and Astra is never called when Luna passes.
-The draft is capped at 20,000 output tokens, each review at 12,000, and the one
-Astra refinement at 24,000 so a stuck or unusually long reasoning pass cannot
-repeat the previous open-ended cost.
-For a video edition, the first draft contains the complete narration and
-six-scene storyboard. The Sol editor scores causal story, visible reversal,
-visual causality, ending payoff, and spoken clarity. After the one allowed Astra
-refinement, Sol reviews again; another failure stops the run before paid
-generation. This preserves the Cobra-standard gate without using Astra on every
-edition. The free local narration is also rendered and duration-checked before
-the first paid Higgsfield request.
+The cost-controlled default uses exactly two OpenAI calls for a video edition.
+`gpt-6-luna` at medium reasoning chooses a documented, naturally cinematic
+historical subject and drafts the complete narration and six-scene storyboard.
+`gpt-6.1-sol` at medium reasoning then performs the only editorial pass: it
+checks the Cobra-standard scorecard, corrects the draft itself, and returns the
+complete final edition. There is no Astra call, second review, or automatic
+rewrite loop. Both calls are capped at 20,000 output tokens.
+
+The six final scene narration lines are canonical. The workflow renders each
+line once with the approved warm voice, locks it to its ten-second scene, uploads
+it as H3's `audio_urls` reference, and asks Higgsfield to generate the animation
+around that exact narration. Final assembly uses the identical audio and burned
+captions, so the voice, scene timing, and finished movie cannot drift apart. All
+voice and schema preflights still happen before the first paid Higgsfield request.
 
 The first pilot keeps a $7.80 hard provider ceiling per finished 60-second video,
 caps total configured provider exposure at $30, and submits no automatic paid

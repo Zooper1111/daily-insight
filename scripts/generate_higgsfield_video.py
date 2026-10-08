@@ -1,8 +1,10 @@
 """Generate and publish one 60-second Daily Insight story video.
 
-The edition supplies six 10-second visual blocks plus six narration lines. The
-Higgsfield credential stays in the server-side ``HF_KEY`` environment variable.
-This pilot deliberately performs no automatic paid retries.
+The edition supplies six 10-second visual blocks plus six exact narration lines.
+Each line is rendered once, uploaded as the matching H3 audio reference, and
+also used in final assembly so motion and narration share one locked timeline.
+The Higgsfield credential stays in the server-side ``HF_KEY`` environment
+variable. This pilot deliberately performs no automatic paid retries.
 """
 
 from __future__ import annotations
@@ -33,8 +35,9 @@ BLOCK_COUNT = 6
 MAX_RATE_USD_PER_SECOND = float(os.getenv("HF_MAX_RATE_USD_PER_SECOND", "0.065"))
 MAX_VIDEO_COST_USD = float(os.getenv("HF_MAX_VIDEO_COST_USD", "7.80"))
 PILOT_MAX_COST_USD = float(os.getenv("HF_PILOT_MAX_COST_USD", "30.00"))
-NARRATION_MIN_SECONDS = 56.5
-NARRATION_MAX_SECONDS = 59.5
+BLOCK_SPOKEN_TARGET_SECONDS = 9.4
+BLOCK_MIN_TEMPO = 0.80
+BLOCK_MAX_TEMPO = 1.25
 REFERENCE_URL = os.getenv(
     "HF_STORY_REFERENCE_URL",
     "https://raw.githubusercontent.com/Zooper1111/daily-insight/main/"
@@ -140,7 +143,32 @@ def connection_test() -> int:
     return 0
 
 
-def submit_block(index: int, prompt: str) -> dict[str, str]:
+def upload_audio_reference(index: int, path: Path) -> str:
+    response = requests.post(
+        f"{API_BASE}/files/generate-upload-url",
+        headers=headers(),
+        json={"content_type": "audio/wav"},
+        timeout=60,
+    )
+    response.raise_for_status()
+    payload = response.json()
+    upload_url = payload.get("upload_url")
+    public_url = payload.get("public_url")
+    if not upload_url or not public_url:
+        raise RuntimeError(f"Audio reference {index} upload URL was incomplete")
+    with path.open("rb") as audio_file:
+        upload = requests.put(
+            upload_url,
+            data=audio_file,
+            headers={"Content-Type": "audio/wav"},
+            timeout=180,
+        )
+    upload.raise_for_status()
+    print(f"Uploaded narration reference {index}/{BLOCK_COUNT}.")
+    return str(public_url)
+
+
+def submit_block(index: int, prompt: str, audio_url: str) -> dict[str, str]:
     response = requests.post(
         f"{API_BASE}/{MODEL_PATH}",
         headers=headers(),
@@ -148,6 +176,7 @@ def submit_block(index: int, prompt: str) -> dict[str, str]:
             "prompt": prompt,
             "duration": SECONDS_PER_BLOCK,
             "image_urls": [REFERENCE_URL],
+            "audio_urls": [audio_url],
             "resolution": "2K",
             "aspect_ratio": "9:16",
             "aigc_watermark": False,
@@ -237,30 +266,78 @@ def media_duration(path: Path) -> float:
     return float(result.stdout.strip())
 
 
-def render_narration(script: str, work: Path) -> tuple[Path, Path]:
-    """Render one natural continuous read and derive simple phrase captions.
-
-    A full-length audio stream is not enough: padding can make a short read look
-    like a 60-second track. Gate the spoken portion before adding any tail room so
-    a video cannot publish with a long silent ending again.
-    """
+def render_narration(
+    blocks: list[dict[str, str]], work: Path
+) -> tuple[Path, Path, list[Path]]:
+    """Lock six voice lines to six scenes before any paid H3 request."""
     pipeline = KPipeline(lang_code="a")
-    audio_chunks = [audio for _, _, audio in pipeline(script, voice="af_heart", speed=0.98)]
-    if not audio_chunks:
-        raise RuntimeError("Warm continuous narration produced no audio")
+    audio_references: list[Path] = []
+    caption_entries: list[str] = []
+    caption_number = 1
 
-    raw = work / "narration-raw.wav"
-    sf.write(raw, np.concatenate(audio_chunks), 24000)
-    duration = media_duration(raw)
-    print(f"Continuous warm narration duration: {duration:.2f}s")
-    if not NARRATION_MIN_SECONDS <= duration <= NARRATION_MAX_SECONDS:
-        raise RuntimeError(
-            "Spoken narration must finish between "
-            f"{NARRATION_MIN_SECONDS:.1f}s and {NARRATION_MAX_SECONDS:.1f}s; "
-            f"measured {duration:.2f}s. Rewrite the narration instead of padding "
-            "a long silent tail or speeding up the voice."
+    for block_index, block in enumerate(blocks):
+        script = str(block["narration"]).strip()
+        audio_chunks = [
+            audio
+            for _, _, audio in pipeline(script, voice="af_heart", speed=0.98)
+        ]
+        if not audio_chunks:
+            raise RuntimeError(f"Warm narration block {block_index + 1} produced no audio")
+
+        raw = work / f"narration-{block_index + 1:02d}-raw.wav"
+        sf.write(raw, np.concatenate(audio_chunks), 24000)
+        raw_duration = media_duration(raw)
+        tempo = raw_duration / BLOCK_SPOKEN_TARGET_SECONDS
+        print(
+            f"Narration block {block_index + 1}: {raw_duration:.2f}s raw; "
+            f"tempo correction {tempo:.3f}."
         )
+        if not BLOCK_MIN_TEMPO <= tempo <= BLOCK_MAX_TEMPO:
+            raise RuntimeError(
+                f"Narration block {block_index + 1} would require an unnatural "
+                f"tempo correction ({tempo:.3f}); no paid request was submitted."
+            )
 
+        reference = work / f"narration-{block_index + 1:02d}.wav"
+        run(
+            [
+                "ffmpeg",
+                "-hide_banner",
+                "-loglevel",
+                "error",
+                "-i",
+                str(raw),
+                "-af",
+                f"atempo={tempo:.6f},apad=whole_dur={SECONDS_PER_BLOCK}",
+                "-t",
+                str(SECONDS_PER_BLOCK),
+                "-ac",
+                "1",
+                "-ar",
+                "24000",
+                "-y",
+                str(reference),
+            ]
+        )
+        audio_references.append(reference)
+
+        words = script.split()
+        groups = [words[offset : offset + 5] for offset in range(0, len(words), 5)]
+        block_start = block_index * SECONDS_PER_BLOCK
+        for group_index, group in enumerate(groups):
+            start = block_start + BLOCK_SPOKEN_TARGET_SECONDS * group_index / len(groups)
+            end = block_start + BLOCK_SPOKEN_TARGET_SECONDS * (group_index + 1) / len(groups)
+            caption_entries.append(
+                f"{caption_number}\n{srt_time(start)} --> {srt_time(end)}\n"
+                f"{' '.join(group)}\n"
+            )
+            caption_number += 1
+
+    concat_file = work / "narration.txt"
+    concat_file.write_text(
+        "".join(f"file '{path.as_posix()}'\n" for path in audio_references),
+        encoding="utf-8",
+    )
     narration = work / "narration.wav"
     run(
         [
@@ -268,32 +345,29 @@ def render_narration(script: str, work: Path) -> tuple[Path, Path]:
             "-hide_banner",
             "-loglevel",
             "error",
+            "-f",
+            "concat",
+            "-safe",
+            "0",
             "-i",
-            str(raw),
-            "-af",
-            "apad=whole_dur=60",
-            "-ac",
-            "1",
+            str(concat_file),
+            "-c:a",
+            "pcm_s16le",
             "-ar",
             "24000",
+            "-ac",
+            "1",
             "-y",
             str(narration),
         ]
     )
-
-    words = script.split()
-    groups = [words[offset : offset + 5] for offset in range(0, len(words), 5)]
-    caption_entries = []
-    for index, group in enumerate(groups, start=1):
-        start = duration * (index - 1) / len(groups)
-        end = duration * index / len(groups)
-        caption_entries.append(
-            f"{index}\n{srt_time(start)} --> {srt_time(end)}\n{' '.join(group)}\n"
-        )
+    duration = media_duration(narration)
+    if not 59.8 <= duration <= 60.2:
+        raise RuntimeError(f"Locked narration timeline must be 60s; measured {duration:.2f}s")
 
     subtitles = work / "captions.srt"
     subtitles.write_text("\n".join(caption_entries), encoding="utf-8")
-    return narration, subtitles
+    return narration, subtitles, audio_references
 
 
 def srt_time(seconds: float) -> str:
@@ -444,11 +518,9 @@ def main() -> int:
 
     with tempfile.TemporaryDirectory(prefix="daily-insight-higgsfield-") as temp_dir:
         work = Path(temp_dir)
-        narration_script = edition["storyVideoPlan"].get("narration") or " ".join(
-            block["narration"] for block in blocks
-        )
-        # Verify the free local voice before ordering any missing paid blocks.
-        narration, subtitles = render_narration(narration_script, work)
+        # Lock the exact scene voiceovers before ordering any paid blocks, then
+        # give those same audio files to H3 so motion and narration share timing.
+        narration, subtitles, audio_references = render_narration(blocks, work)
 
         requests_by_block = [
             {
@@ -465,7 +537,12 @@ def main() -> int:
             )
         else:
             for index in range(len(existing_ids), BLOCK_COUNT):
-                request = submit_block(index + 1, blocks[index]["prompt"])
+                audio_url = upload_audio_reference(index + 1, audio_references[index])
+                request = submit_block(
+                    index + 1,
+                    blocks[index]["prompt"],
+                    audio_url,
+                )
                 requests_by_block.append(request)
                 existing_ids.append(request["request_id"])
                 generation.update(
@@ -473,6 +550,7 @@ def main() -> int:
                         "provider": "Higgsfield API",
                         "maximumConfiguredCostUsd": round(projected_cost, 2),
                         "paidRetries": 0,
+                        "audioMode": "locked narration reference",
                         "requestIds": existing_ids,
                         "status": "submitted",
                     }

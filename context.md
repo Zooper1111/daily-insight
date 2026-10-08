@@ -81,23 +81,22 @@ Use these descriptions exactly until Matt provides better ones.
   wants something concrete, an action or rule changes behavior, a surprising
   consequence follows, and the payoff makes the mechanism visible. Use the
   cost-controlled writer to draft the continuous narration before any paid
-  video request, then require the stronger independent editor to approve it. If
-  the draft fails validation or review, give Astra the existing story and exact
-  feedback for one bounded refinement rather than asking it to start over. If
-  the idea is mainly a definition or calculation, make it a designed carousel
-  instead of forcing it into animation.
+  video request, then require Sol to make any needed corrections and return the
+  final approved edition in one editorial pass. Never call Astra or buy a second
+  review. If the idea is mainly a definition or calculation, make it a designed
+  carousel instead of forcing it into animation.
 - The Cobra Effect example is the creative quality bar, not merely a structural
   reference. Every ten-second block must materially change the situation; the
   story needs a visible reversal by roughly the middle, and the ending must pay
   off the opening problem. Do not accept polished animation carrying an
   explanation that would work just as well as prose. The pictures should reveal
   the mechanism, surprise, or consequence before the narrator labels it.
-- Before any paid animation request, have the cost-controlled writer produce the
-  complete 60-second narration and six-scene storyboard. Then use a stronger
-  separate agent/editor pass to score causal story, visible reversal, visual
-  causality, ending payoff, and spoken clarity. A failed script gets one bounded
-  Astra refinement of the existing draft; if it still fails, stop without video
-  spending. This is an agent review, not a manual review step for Matt.
+- Before any paid animation request, have Luna choose the subject and produce the
+  complete 60-second narration and six-scene storyboard. Then use one Sol
+  agent/editor pass to score causal story, visible reversal, visual causality,
+  ending payoff, and spoken clarity and return the corrected final edition. If
+  Sol cannot approve its own corrected result, stop without video spending. This
+  is an agent review, not a manual review step for Matt.
 - For story-led episodes, aim for roughly 45–75 seconds. Keep one provocative
   hook visible near the top, use synchronized phrase-level captions with no more
   than one highlighted keyword at a time, and let the warm narration do most of
@@ -109,6 +108,10 @@ Use these descriptions exactly until Matt provides better ones.
 - Measure the spoken narration itself before publishing. For a 60-second video,
   the voice should normally end between 56.5 and 59.5 seconds. Padding an audio
   stream to 60 seconds does not count; a long silent tail is a failed render.
+- Treat each scene's narration line as the exact voiceover for that ten-second
+  scene. Render and time those six lines before spending, send each audio file to
+  Higgsfield H3 as the matching `audio_urls` reference, and use the same locked
+  audio in final assembly so the generated motion and narration stay synchronized.
 - Do not include a generic “See the Model” card that merely repeats
   before/change/after. The video should carry that explanation. A separate visual
   card earns its place only when it contains a useful chart, formula, algorithm,
@@ -231,3 +234,11 @@ A strong month should feel varied and should include:
   word count. Treat roughly 160–180 words as drafting guidance, then use the
   free local voice render and its measured 56.5–59.5 second spoken duration as
   the real preflight. This duration check remains before every paid video call.
+- 2026-10-07: Simplify after repeated costly failures. Luna chooses a documented
+  historical origin/discovery story and writes the complete draft. Sol performs
+  one and only one editorial pass, corrects the draft itself, and returns the
+  final approved script/storyboard. Remove Astra, the second review, and all
+  automatic rewrite loops. The six exact narration segments are rendered once
+  and passed to Higgsfield H3 as scene audio references so H3 generates the movie
+  around the narration; final assembly reuses that identical audio. Do not run
+  again until the OpenAI API balance is intentionally restored.

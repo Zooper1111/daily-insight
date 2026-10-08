@@ -35,17 +35,12 @@ except ValueError as exc:
 WRITER_MODEL = os.getenv("OPENAI_WRITER_MODEL", "gpt-6-luna")
 WRITER_REASONING_EFFORT = os.getenv("OPENAI_WRITER_REASONING_EFFORT", "medium")
 REVIEW_MODEL = os.getenv("OPENAI_REVIEW_MODEL", "gpt-6.1-sol")
-REVIEW_REASONING_EFFORT = os.getenv("OPENAI_REVIEW_REASONING_EFFORT", "high")
-REFINER_MODEL = os.getenv("OPENAI_REFINER_MODEL", "gpt-6-astra")
-REFINER_REASONING_EFFORT = os.getenv("OPENAI_REFINER_REASONING_EFFORT", "high")
+REVIEW_REASONING_EFFORT = os.getenv("OPENAI_REVIEW_REASONING_EFFORT", "medium")
 WRITER_MAX_OUTPUT_TOKENS = int(
     os.getenv("OPENAI_WRITER_MAX_OUTPUT_TOKENS", "20000")
 )
 REVIEW_MAX_OUTPUT_TOKENS = int(
-    os.getenv("OPENAI_REVIEW_MAX_OUTPUT_TOKENS", "12000")
-)
-REFINER_MAX_OUTPUT_TOKENS = int(
-    os.getenv("OPENAI_REFINER_MAX_OUTPUT_TOKENS", "24000")
+    os.getenv("OPENAI_REVIEW_MAX_OUTPUT_TOKENS", "20000")
 )
 SMOKE_TEST = os.getenv("SMOKE_TEST") == "1"
 EDITION_INTERVAL_DAYS = int(os.getenv("EDITION_INTERVAL_DAYS", "2"))
@@ -235,10 +230,10 @@ def build_prompt(context: str, recent: list[dict[str, Any]]) -> str:
   "format": "video",
   "storyVideoPlan": {
     "style": "Warm editorial storybook animation with hand-painted gouache texture, bold cobalt, amber, coral and teal shapes, one recurring adult protagonist, no photorealism, no logos, no spoken characters",
-    "narration": "One complete roughly 160-180 word continuous narration in plain spoken English",
+    "narration": "The exact six block narration lines joined in order as one complete script",
     "blocks": [
       {
-        "narration": "One concise spoken summary for the matching ten-second scene",
+        "narration": "The exact 24-32 spoken words for this ten-second scene",
         "prompt": "One detailed ten-second vertical animation prompt containing exactly five hard-cut shots of about two seconds each. Vary shot size and angle, demand motion from frame one, preserve the recurring protagonist and editorial storybook style, and say characters gesture but never talk."
       }
     ]
@@ -248,18 +243,26 @@ This is a FULL VIDEO edition in the two-week pilot. Add exactly six ordered
 storyVideoPlan blocks, producing sixty seconds total. The six blocks must form
 one causal story: provocative hook, concrete friction, named-model reveal,
 formula or mechanism, important caveat, and a final application to one public-
-safe active project. Each block narration is one concise line. Each visual prompt must
+safe active project. Each block narration is the exact voiceover for that scene,
+using 24-32 spoken words. Each visual prompt must
 describe exactly five hard-cut shots, about two seconds each, with motion from
 the first frame. Keep the same recurring adult protagonist and one coherent
 warm editorial storybook world. Characters only gesture and never speak; the
 external narrator carries the lesson. Do not ask the video model to draw text.
 
-Before choosing the topic, apply a strict story-fit gate inspired by the Cobra
-Effect: a protagonist wants something concrete, someone changes a rule or takes
-an action, behavior changes because of it, a surprising consequence appears,
-and the ending makes the mechanism visually obvious. Silently reject a candidate
-that lacks that causal turn and choose a stronger topic. Do not force an abstract
-definition or calculator lesson into animation. If math appears, first explain
+Choose the subject yourself. Strongly prefer a documented historical origin,
+discovery, experiment, or business episode that naturally reveals why a named
+principle exists, the way the Cobra Effect story teaches its principle. The case
+must have specific people or institutions, a concrete goal, an action, a visible
+reversal, and a documented outcome. Do not invent a fictional wrapper around an
+abstract lesson merely to make it look cinematic.
+
+Apply a strict story-fit gate inspired by the Cobra Effect: a protagonist wants
+something concrete, someone changes a rule or takes an action, behavior changes
+because of it, a surprising consequence appears, and the ending makes the
+mechanism visually obvious. Silently reject a candidate that lacks that causal
+turn and choose a stronger topic. Do not force an abstract definition or
+calculator lesson into animation. If math appears, first explain
 what the numbers mean, then use one worked example at roughly a third-grade
 listening level. Never change a second variable in the same 60-second story.
 
@@ -270,10 +273,10 @@ lesson would work equally well as narrated prose over unrelated attractive
 motion, reject it and choose a more cinematic mechanism. Let the viewer see the
 cause, surprise, or consequence before the narrator names it.
 
-Write storyVideoPlan.narration as one continuous roughly 160-180 word read. It must tell
-the entire story in order and end with the project application. The six shorter
-block narration fields are timing summaries for the matching visuals; they do
-not replace the continuous narration.
+Write each block narration as the exact voiceover Higgsfield should hear for that
+scene. The six lines must form one continuous story and total roughly 160-180
+words. Copy those six lines, unchanged and in order, into
+storyVideoPlan.narration as one readable complete script.
 '''
     else:
         format_schema = '  "format": "carousel",'
@@ -415,54 +418,34 @@ def generate_edition(
         input=prompt,
         reasoning={"effort": reasoning_effort},
         tools=[{"type": "web_search_preview"}],
+        max_tool_calls=4,
         max_output_tokens=max_output_tokens,
     )
     return parse_json_object(extract_text(response))
 
 
-def refine_edition(
+def finalize_video_story(
     original_prompt: str,
     candidate: dict[str, Any],
-    feedback: dict[str, Any] | str,
-) -> dict[str, Any]:
-    """Use Astra once to repair a complete cheap draft, never to start over."""
-    refinement_prompt = f"""
-You are refining an existing Daily Insight edition, not inventing a new lesson.
-Preserve its central story, named model, factual sources, characters, visual
-world, project application, and strongest lines. Make only the changes needed
-to fix the supplied feedback and satisfy the original requirements. Return only
-the complete corrected edition as raw JSON.
-
-Original requirements:
-{original_prompt}
-
-Existing draft:
-{json.dumps(candidate, ensure_ascii=False, indent=2)}
-
-Specific feedback to fix:
-{json.dumps(feedback, ensure_ascii=False, indent=2) if isinstance(feedback, dict) else feedback}
-"""
-    return generate_edition(
-        refinement_prompt,
-        model=REFINER_MODEL,
-        reasoning_effort=REFINER_REASONING_EFFORT,
-        max_output_tokens=REFINER_MAX_OUTPUT_TOKENS,
-    )
-
-
-def review_video_story(edition: dict[str, Any]) -> tuple[bool, dict[str, Any]]:
-    """Fail closed unless a second model pass clears the paid-video story bar."""
+    validation_problem: str | None,
+) -> tuple[bool, dict[str, Any], dict[str, Any]]:
+    """Have Sol perform the only review and return the corrected final edition."""
     client = OpenAI(timeout=OPENAI_TIMEOUT_SECONDS, max_retries=0)
     print(
-        f"Reviewing paid-video story with {REVIEW_MODEL} "
+        f"Finalizing paid-video story with {REVIEW_MODEL} "
         f"({REVIEW_REASONING_EFFORT} reasoning)."
     )
     response = client.responses.create(
         model=REVIEW_MODEL,
         input=f"""
-Act as the final story editor for a paid 60-second animated lesson. Judge the
-candidate against the Cobra Effect standard. Return only raw JSON with exactly
-this shape:
+Act as the single final story editor for a paid 60-second animated lesson. This
+is the only editorial pass after the inexpensive draft. Correct the candidate
+yourself and return the complete final edition; do not return a revision brief
+that would require another model call. If its subject cannot become a naturally
+cinematic, documented origin/discovery story, replace the subject with one that
+can. Verify the anchor case with web search.
+
+Return only raw JSON with exactly this shape:
 {{
   "approved": true,
   "scores": {{
@@ -473,21 +456,34 @@ this shape:
     "spokenClarity": 1
   }},
   "problems": ["short, specific problem"],
-  "revisionBrief": "precise instructions for one rewrite"
+  "edition": {{}}
 }}
+
+The edition value above must not stay empty. Replace it with the full corrected
+edition object using the exact complete schema in the original requirements.
 
 Approve only if every score is at least {VIDEO_STORY_MIN_SCORE} out of 5. The
 animation must reveal a changing situation, not merely decorate explanatory
 prose. A visible reversal should occur by the middle. The ending must resolve
 the opening problem. The narration must be understandable on one listen without
 pausing, and any math must be explained at roughly a third-grade listening
-level. Be demanding: protecting the paid generation budget matters more than
-publishing on schedule.
+level. The six block narration lines are the exact voiceover for their scenes;
+together they must be one continuous story of roughly 160-180 words. Be
+demanding, but make every reasonable correction in this one pass. Protecting the
+paid generation budget matters more than publishing on schedule.
+
+Original edition requirements:
+{original_prompt}
+
+Local validation problem, if any:
+{validation_problem or "none"}
 
 Candidate edition:
-{json.dumps(edition, ensure_ascii=False, indent=2)}
+{json.dumps(candidate, ensure_ascii=False, indent=2)}
 """,
         reasoning={"effort": REVIEW_REASONING_EFFORT},
+        tools=[{"type": "web_search_preview"}],
+        max_tool_calls=4,
         max_output_tokens=REVIEW_MAX_OUTPUT_TOKENS,
     )
     review = parse_json_object(extract_text(response))
@@ -509,7 +505,24 @@ Candidate edition:
     approved = bool(review.get("approved")) and all(
         scores[name] >= VIDEO_STORY_MIN_SCORE for name in score_names
     )
-    return approved, review
+    final_edition = review.get("edition")
+    if not isinstance(final_edition, dict):
+        raise ValueError("Sol story editor did not return a complete edition")
+    return approved, final_edition, review
+
+
+def synchronize_video_narration(edition: dict[str, Any]) -> None:
+    """Make the six scene voiceovers the canonical complete narration."""
+    plan = edition.get("storyVideoPlan")
+    blocks = (plan or {}).get("blocks")
+    if isinstance(plan, dict) and isinstance(blocks, list):
+        lines = [
+            str(block.get("narration", "")).strip()
+            for block in blocks
+            if isinstance(block, dict)
+        ]
+        if len(lines) == 6 and all(lines):
+            plan["narration"] = " ".join(lines)
 
 
 def smoke_test() -> int:
@@ -572,39 +585,36 @@ def main() -> int:
     ]
 
     prompt = build_prompt(context, recent)
-    writer_model = WRITER_MODEL
-    used_refiner = False
     edition = generate_edition(prompt)
+    validation_problem = None
     try:
         validate_edition(edition)
     except ValueError as exc:
-        print(f"Cheap draft failed local validation: {exc}")
-        edition = refine_edition(prompt, edition, f"Local validation: {exc}")
-        writer_model = REFINER_MODEL
-        used_refiner = True
-        validate_edition(edition)
+        validation_problem = str(exc)
+        print(f"Cheap draft needs Sol correction: {validation_problem}")
 
-    if edition.get("format") == "video":
-        approved, review = review_video_story(edition)
-        if not approved and not used_refiner:
-            edition = refine_edition(prompt, edition, review)
-            writer_model = REFINER_MODEL
-            used_refiner = True
-            validate_edition(edition)
-            approved, review = review_video_story(edition)
+    expected_format = format_for_date(dt.date.fromisoformat(TODAY))
+    if expected_format == "video":
+        approved, edition, review = finalize_video_story(
+            prompt, edition, validation_problem
+        )
+        synchronize_video_narration(edition)
+        validate_edition(edition)
         if not approved:
             raise RuntimeError(
-                "Video story failed the Cobra-standard review after its one "
-                "Astra refinement; "
+                "Sol could not produce a Cobra-standard story in its single "
+                "editorial pass; "
                 "no edition was published and no paid video request was made."
             )
         edition["storyVideoPlan"]["qualityGate"] = {
             "approved": True,
-            "writerModel": writer_model,
-            "reviewModel": REVIEW_MODEL,
-            "usedRefiner": used_refiner,
+            "draftModel": WRITER_MODEL,
+            "editorModel": REVIEW_MODEL,
+            "editorPasses": 1,
             "scores": review["scores"],
         }
+    else:
+        validate_edition(edition)
 
     data["editions"] = [edition] + editions
     data["editions"] = data["editions"][:30]
