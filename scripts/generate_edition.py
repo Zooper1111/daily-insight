@@ -339,8 +339,10 @@ def build_prompt(
 This is a FULL VIDEO edition in the two-week pilot. Add exactly six ordered
 storyVideoPlan blocks, producing sixty seconds total. The six blocks must form
 one causal story: provocative hook, concrete friction, named-model reveal,
-formula or mechanism, important caveat, and a final application to one public-
-safe active project. Each block narration is the exact voiceover for that scene,
+formula or mechanism, important caveat, and an earned practical transfer. Use a
+public-safe active project only when it genuinely runs on the same causal
+mechanism as the historical story; otherwise end with a stronger project-neutral
+decision rule. Each block narration is the exact voiceover for that scene,
 using 24-32 spoken words. Each visual prompt must
 describe exactly five hard-cut shots, about two seconds each, with motion from
 the first frame. Keep the same recurring adult protagonist and one coherent
@@ -462,10 +464,11 @@ Content goals:
 - Include small talk sometimes, but do not bunch it together. Include business
   and algorithmic/framework editions regularly so the sequence has range.
 - Most editions should include a public-safe example tied to Daisy 1, StoryOS,
-  DreamGuard, the strategy agent, quarterly planning, or consulting. Use simple
-  scenes such as a planning session, product decision, client explanation, demo,
-  workshop, or strategy memo. Never invent project capabilities or private
-  details.
+  DreamGuard, the strategy agent, quarterly planning, or consulting only when
+  the example shares the lesson's actual mechanism. Use simple scenes such as a
+  planning session, product decision, client explanation, demo, workshop, or
+  strategy memo. Never invent project capabilities or private details, and never
+  bolt on a project name merely to personalize the ending.
 - Refer to the project coordination app as Daisy 1. Never call it Coordly or
   Daisy One.
 - Address the reader directly as "you." Do not write "Matt should," "Matt
@@ -553,7 +556,8 @@ Return only raw JSON with exactly this shape:
     "visibleReversal": 1,
     "visualCausality": 1,
     "endingPayoff": 1,
-    "spokenClarity": 1
+    "spokenClarity": 1,
+    "applicationFit": 1
   }},
   "problems": ["short, specific problem"],
   "edition": {{}}
@@ -569,7 +573,10 @@ the opening problem. The narration must be understandable on one listen without
 pausing, and any math must be explained at roughly a third-grade listening
 level. The six block narration lines are the exact voiceover for their scenes;
 together they must be one continuous story of roughly 160-180 words. Be
-demanding, but make every reasonable correction in this one pass. Protecting the
+equally demanding about the final transfer: score applicationFit below 4 if a
+named project is attached without sharing the story's causal mechanism. Replace
+an unearned project tie-in with a concrete project-neutral diagnostic or decision
+rule. Make every reasonable correction in this one pass. Protecting the
 paid generation budget matters more than publishing on schedule.
 
 Original edition requirements:
@@ -593,6 +600,7 @@ Candidate edition:
         "visualCausality",
         "endingPayoff",
         "spokenClarity",
+        "applicationFit",
     }
     scores = review.get("scores")
     if not isinstance(scores, dict) or set(scores) != score_names:

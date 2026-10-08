@@ -125,10 +125,13 @@ Daily Insight should teach public speaking, everyday conversation, small talk, b
 Each edition should usually include:
 
 - One substantial theory, model, framework, algorithm, formula, or mental model explained simply, with its evidence status made clear.
-- One public-safe connection to Matt's active workstreams, using Daisy 1 as the project coordination app name.
+- One public-safe connection to Matt's active workstreams only when it shares the
+  lesson's actual mechanism. Do not force Daisy 1 or another project into the
+  ending; prefer a useful project-neutral diagnostic when the analogy is weak.
 - On a video edition, one complete contextual story video that shows who is
-  involved, what is going wrong, the model or move, the caveat, and the visible
-  project application.
+  involved, what is going wrong, the model or move, the caveat, and either a
+  genuinely matched project application or a concrete project-neutral decision
+  rule.
 
 Keep the entire edition concise: roughly 150–250 words of prose and no more than
 a five-minute read. The example video is a standard part of the lesson because
