@@ -251,3 +251,8 @@ Stanford GSB Big Ideas, and Big Think's business, decision-making, strategic-
 thinking, and expert-led series. These sources generate candidates only; the
 underlying idea still requires primary or institutional verification and must
 pass the Cobra-standard story and lesson-value gates.
+
+Narration timing: draft each ten-second scene with 20–24 simple spoken words
+(roughly 120–144 words overall). Render all six voice lines before submitting
+paid video requests; keep the existing natural-tempo safeguard. Word counts
+are drafting targets, not a substitute for measured audio duration.

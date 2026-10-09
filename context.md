@@ -282,3 +282,8 @@ A strong month should feel varied and should include:
 - 2026-10-07: For the first supervised test of this simplified pipeline, replace
   the existing October 7 edition instead of animating its older fictional-bank
   script. Keep this manual replacement switch off for normal scheduled runs.
+
+Narration timing: draft each ten-second scene with 20–24 simple spoken words
+(roughly 120–144 words overall). Render all six voice lines before submitting
+paid video requests; keep the existing natural-tempo safeguard. Word counts
+are drafting targets, not a substitute for measured audio duration.

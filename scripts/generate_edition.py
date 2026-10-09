@@ -343,7 +343,7 @@ def build_prompt(
     "narration": "The exact six block narration lines joined in order as one complete script",
     "blocks": [
       {{
-        "narration": "The exact 24-32 spoken words for this ten-second scene",
+        "narration": "The exact 20-24 spoken words for this ten-second scene",
         "prompt": "One detailed ten-second vertical animation prompt containing exactly five hard-cut shots of about two seconds each. Vary shot size and angle, demand motion from frame one, preserve the recurring protagonist and selected global theme, and say characters gesture but never talk."
       }}
     ]
@@ -356,7 +356,9 @@ formula or mechanism, important caveat, and an earned practical transfer. Use a
 public-safe active project only when it genuinely runs on the same causal
 mechanism as the historical story; otherwise end with a stronger project-neutral
 decision rule. Each block narration is the exact voiceover for that scene,
-using 24-32 spoken words. Each visual prompt must
+using 20-24 spoken words, with short sentences and simple vocabulary. The warm
+voice must fit 9.4 seconds without exceeding the 1.25 tempo correction ceiling;
+word count is a drafting target, and rendered audio is the final timing check. Each visual prompt must
 describe exactly five hard-cut shots, about two seconds each, with motion from
 the first frame. Keep the same recurring adult protagonist and one coherent
 visual world. Characters only gesture and never speak; the
@@ -413,7 +415,7 @@ motion, reject it and choose a more cinematic mechanism. Let the viewer see the
 cause, surprise, or consequence before the narrator names it.
 
 Write each block narration as the exact voiceover Higgsfield should hear for that
-scene. The six lines must form one continuous story and total roughly 160-180
+scene. The six lines must form one continuous story and total roughly 120-144
 words. Copy those six lines, unchanged and in order, into
 storyVideoPlan.narration as one readable complete script.
 '''
@@ -611,7 +613,7 @@ prose. A visible reversal should occur by the middle. The ending must resolve
 the opening problem. The narration must be understandable on one listen without
 pausing, and any math must be explained at roughly a third-grade listening
 level. The six block narration lines are the exact voiceover for their scenes;
-together they must be one continuous story of roughly 160-180 words. Be
+together they must be one continuous story of roughly 120-144 words. Be
 equally demanding about the final transfer: score applicationFit below 4 if a
 named project is attached without sharing the story's causal mechanism. Replace
 an unearned project tie-in with a concrete project-neutral diagnostic or decision
