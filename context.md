@@ -69,6 +69,9 @@ Use these descriptions exactly until Matt provides better ones.
   involved, what they are trying to do, what specifically is going wrong, the
   named model or move, its mechanism or formula, its caveat, and a visible
   application to a current public-safe project.
+- Override the normal alternation on 2026-10-09 and publish a full video. It
+  still runs unattended, uses the existing cost ceiling, and allows no automatic
+  paid retries.
 - Give each full-video story one coherent visual theme across all six scenes.
   Rotate through a curated set of lesson-friendly Higgsfield-inspired looks so
   consecutive videos do not repeat the same aesthetic. Keep captions and causal

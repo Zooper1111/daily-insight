@@ -5,6 +5,9 @@ Standalone learning digest published every other day. The website reads `edition
 Scheduled publishing is unattended: GitHub Actions generates, renders, commits,
 and publishes without a browser session or live Codex monitoring. Inspect a run
 only after a reported failure or when reviewing the finished edition.
+`VIDEO_FORCE_DATES` accepts comma-separated `YYYY-MM-DD` dates that should be
+full-video editions despite the normal alternating format. The current pilot
+forces `2026-10-09` to video.
 
 ## Reading experience
 
