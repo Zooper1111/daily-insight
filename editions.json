@@ -55,6 +55,25 @@
             "postVideoValue": 5
           },
           "narrationTimingRevision": "Shortened all six voiceovers after the pre-payment timing check failed; retain the causal lesson, interpretation label, comparison group, caveat and diagnostic."
+        },
+        "generation": {
+          "provider": "Higgsfield API",
+          "maximumConfiguredCostUsd": 3.9,
+          "paidRetries": 0,
+          "audioMode": "locked narration reference",
+          "theme": {
+            "id": "monospace-blueprint",
+            "label": "Monospace Blueprint"
+          },
+          "requestIds": [
+            "d13e1c68-60e5-4315-992b-e5ca1fad751f",
+            "e2a1ed85-57de-45e0-b004-f56e0aeaccec",
+            "8fe64eed-a621-4241-a72a-807e03c822c8",
+            "bd90afbf-e8db-4ca9-b5be-12b65c31c2d4",
+            "cbf76573-a74a-4630-90c5-6182facb137c",
+            "1892e491-c947-44a2-afec-52ae50d03b22"
+          ],
+          "status": "published"
         }
       },
       "insight": {
@@ -86,6 +105,13 @@
         "example": [
           "“We can agree on extra scope separately; paying this fee does not automatically authorize more changes.”"
         ]
+      },
+      "storyVideo": {
+        "title": "Your penalty might be selling permission.",
+        "src": "assets/videos/2026-10-09/story.mp4",
+        "poster": "assets/video-scenes/true-fans-pilot/scene-01-attention.png",
+        "duration": "60 seconds",
+        "captions": true
       }
     },
     {
