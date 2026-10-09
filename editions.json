@@ -1,6 +1,93 @@
 {
   "editions": [
     {
+      "date": "2026-10-09",
+      "displayDate": "Fri · Oct 9",
+      "domain": "Decision-Making",
+      "hook": "Your penalty might be selling permission.",
+      "format": "video",
+      "storyVideoPlan": {
+        "theme": {
+          "id": "monospace-blueprint",
+          "label": "Monospace Blueprint"
+        },
+        "style": "Cinematic technical-blueprint animation inspired by monospace callouts: ink-black and electric-blue fields, cream diagrams, moving arrows, grids, cutaway mechanisms, crisp editorial composition, one recurring adult protagonist, no photorealism, no logos, and no generated text",
+        "narration": "Can charging for lateness make people later? In Haifa in 1998, parents collected children after daycare closed, leaving teachers waiting. Researchers tested a seemingly straightforward fix. Uri Gneezy and Aldo Rustichini introduced a small fine at six centers. Four others kept their rules unchanged. Parents paid when they arrived more than ten minutes late. Instead, late pickups increased at the centers charging fines. That reversal illustrates motivation crowding out: an added incentive can weaken the reason people already had to behave responsibly. The researchers suggested parents now understood extra care as something they could buy, rather than a favor. In that interpretation, the penalty purchased convenience while teachers kept waiting. Then researchers removed the fine. Late pickups stayed high for the final four weeks. Removing the price had not reset expectations. This experiment does not show that every penalty backfires. Before charging for unwanted behavior, test what people think the payment buys. If customers hear permission to continue, you may be selling the very problem you wanted to stop.",
+        "blocks": [
+          {
+            "narration": "Can charging for lateness make people later? In Haifa in 1998, parents collected children after daycare closed, leaving teachers waiting. Researchers tested a seemingly straightforward fix.",
+            "prompt": "Ten-second vertical Monospace Blueprint animation using the exact global style. Recurring protagonist throughout: a stylized adult researcher representing Uri Gneezy, with short dark hair, cream jacket, and electric-blue trousers; this is an editorial representation, not a claimed likeness. All characters gesture but never talk. Exactly five hard-cut shots, each about two seconds, with motion from frame one: Shot 1, tight low-angle view of a daycare teacher's foot tapping beside a child as an unnumbered clock hand passes a fixed closing-time marker; Shot 2, wide doorway view as a parent finally rushes in and the exhausted teacher hands over the child's bag; Shot 3, overhead as the researcher places a cream observation token on a grid for the late pickup; Shot 4, medium tracking view as another late parent enters and another token joins it; Shot 5, close-up as the researcher slides a coin beside the tokens and considers it. Keep the daycare doorway, clock, observation tokens, and coin as recurring objects. No generated text, numerals, logos, or speech. Closing-time marks and observation tokens are editorial symbols, not reproductions of records. Historical grounding: the original field-study report. ([rady.ucsd.edu](https://rady.ucsd.edu/_files/faculty-research/uri-gneezy/fine.pdf)) Production gate for the complete episode: before any paid motion request, render these six exact narration lines once using the approved warm Kokoro af_heart voice at 0.98 speed. Measure each segment against its ten-second slot and require the final spoken word between 56.5 and 59.5 seconds. If timing fails, stop before spending; do not pad silence, rewrite automatically, or request paid retries. Supply matching locked audio references to H3 and reuse identical audio in final assembly. Deliver one linear sixty-second 9:16 MP4 with opt-in narration and always-visible phrase-level captions added in post, never generated inside the footage."
+          },
+          {
+            "narration": "Uri Gneezy and Aldo Rustichini introduced a small fine at six centers. Four others kept their rules unchanged. Parents paid when they arrived more than ten minutes late.",
+            "prompt": "Ten-second vertical Monospace Blueprint animation, exact global style, same recurring cream-jacket researcher, daycare doorway, unnumbered clock, tokens, and coin. Characters gesture but never talk. Exactly five hard-cut shots of about two seconds each, moving from frame one: Shot 1, overhead as the researcher separates ten miniature daycare buildings into a cluster of six and a cluster of four; Shot 2, macro as a small coin symbol settles beside each building in the six-building cluster while the four-building cluster remains untouched; Shot 3, side close-up as the clock hand crosses a second unlabeled threshold beyond the closing marker and a late parent enters; Shot 4, medium as the researcher records that parent's late arrival with an observation token; Shot 5, overhead as the corresponding coin drops into a monthly billing tray at the office, not into the waiting teacher's hand. Show coin collection as a compressed billing illustration, not immediate payment at pickup. No generated text, numerals, logos, or talking. Historical grounding: six treatment centers, four controls, the late-arrival threshold, and monthly billing in the study. ([rady.ucsd.edu](https://rady.ucsd.edu/_files/faculty-research/uri-gneezy/fine.pdf))"
+          },
+          {
+            "narration": "Instead, late pickups increased at the centers charging fines. That reversal illustrates motivation crowding out: an added incentive can weaken the reason people already had to behave responsibly.",
+            "prompt": "Ten-second vertical Monospace Blueprint animation with the exact global style and same cream-jacket researcher. Characters gesture but never talk. Exactly five hard-cut shots, about two seconds each, with motion from frame one: Shot 1, wide view of the researcher watching the coin-marked daycare cluster as the clock hand passes closing; Shot 2, overhead as late-arrival observation tokens accumulate across successive grid columns, visibly exceeding their earlier baseline; Shot 3, matching overhead cut to the four uncharged buildings, where token levels remain broadly similar rather than perfectly identical; Shot 4, tight doorway shot as another late parent arrives while the teacher remains with several children; Shot 5, low-angle close-up as the researcher turns the coin over, surprised, with the enlarged token pile behind it. Make the backfire visible before captions name the concept. Tokens represent recorded late arrivals, not exact numerical data. No generated text, numerals, logos, or speech. Historical grounding: increased late pickups in the treatment group and no comparable control-group change. ([rady.ucsd.edu](https://rady.ucsd.edu/_files/faculty-research/uri-gneezy/fine.pdf))"
+          },
+          {
+            "narration": "The researchers suggested parents now understood extra care as something they could buy, rather than a favor. In that interpretation, the penalty purchased convenience while teachers kept waiting.",
+            "prompt": "Ten-second vertical Monospace Blueprint animation, exact global style and same recurring researcher. Characters gesture but never talk. Exactly five hard-cut shots of about two seconds each, moving immediately: Shot 1, medium view as the researcher lifts the coin into a translucent cream-edged conceptual cutaway above the daycare table; Shot 2, within that clearly illustrative cutaway, a parent hesitates before the closing-time boundary while the teacher waits on its other side; Shot 3, macro as a coin enters a schematic slot and the boundary becomes an open gate; Shot 4, side tracking view as the parent calmly continues another errand through that conceptual gate; Shot 5, hard cut back to the observed daycare, where the teacher still waits with a child and the researcher compares the coin with the late-arrival tokens. The gate is an explanatory hypothesis, not a literal daycare event or proof of parents' thoughts. No generated text, numerals, logos, or talking. Historical grounding: the authors' proposed change from an obligation or favor to a purchasable service. ([rady.ucsd.edu](https://rady.ucsd.edu/_files/faculty-research/uri-gneezy/fine.pdf))"
+          },
+          {
+            "narration": "Then researchers removed the fine. Late pickups stayed high for the final four weeks. Removing the price had not reset expectations. This experiment does not show that every penalty backfires.",
+            "prompt": "Ten-second vertical Monospace Blueprint animation, exact global style, same cream-jacket researcher and daycare objects. Characters gesture but never talk. Exactly five hard-cut shots, each about two seconds, with motion from frame one: Shot 1, overhead as the researcher removes the coin symbols from the six treatment buildings; Shot 2, close-up as the monthly billing tray slides away but another late-arrival observation token falls onto the grid; Shot 3, overhead tracking across four final weekly columns whose token piles remain visibly elevated; Shot 4, doorway medium shot as a late parent collects a child and the teacher finally reaches for a coat; Shot 5, close-up as the researcher places a small frame around this particular experiment's grid, leaving the surrounding blueprint field open to signal limited scope. Do not depict restored punctuality or a successful corrective intervention. No generated text, numerals, logos, or speech. Historical grounding: persistence during the four-week post-fine observation period and the authors' explicit warning against generalizing to every fine. ([rady.ucsd.edu](https://rady.ucsd.edu/_files/faculty-research/uri-gneezy/fine.pdf))"
+          },
+          {
+            "narration": "Before charging for unwanted behavior, test what people think the payment buys. If customers hear permission to continue, you may be selling the very problem you wanted to stop.",
+            "prompt": "Ten-second vertical Monospace Blueprint animation, exact global style and same cream-jacket researcher. Characters gesture but never talk. Exactly five hard-cut shots of about two seconds each, moving from frame one: Shot 1, overhead as the researcher turns the daycare observation table into a clearly hypothetical appointment-service design table, retaining the same clock-boundary and coin objects; Shot 2, medium as an adult designer proposes attaching a coin slot to an appointment's closing-time boundary; Shot 3, close-up as a customer places a coin into the prototype and confidently opens the gate beyond the appointment boundary; Shot 4, low-angle as the designer notices the implied permission and retracts the coin-slot proposal before launch; Shot 5, overhead as the researcher places the original daycare coin beside the rejected prototype, with both open-gate silhouettes aligned, resolving the opening puzzle visually: the proposed deterrent was being understood as a purchasable option. This is a hypothetical diagnostic, not a documented intervention or promised behavior change. No generated text, numerals, logos, or speech. Keep the final motion focused on the consequence of the customer's interpretation, not generic team celebration."
+          }
+        ],
+        "qualityGate": {
+          "approved": true,
+          "draftModel": "gpt-6-luna",
+          "editorModel": "gpt-6.1-sol",
+          "editorPasses": 1,
+          "scores": {
+            "causalStory": 5,
+            "visibleReversal": 5,
+            "visualCausality": 5,
+            "endingPayoff": 4,
+            "spokenClarity": 5,
+            "applicationFit": 5,
+            "lessonValue": 5,
+            "postVideoValue": 5
+          }
+        }
+      },
+      "insight": {
+        "title": "Test the meaning, not just the amount",
+        "paras": [
+          "<strong>Motivation crowding out</strong> is a theory: an external incentive can displace an existing reason to cooperate. Gneezy and Rustichini's <em>A Fine Is a Price</em> (2000) provides field evidence of a backfire; altered motives remain an interpretation, not a directly measured fact. ([rady.ucsd.edu](https://rady.ucsd.edu/_files/faculty-research/uri-gneezy/fine.pdf))",
+          "Before introducing a fee, state the behavior you want, then ask what paying would authorize. A fee can change the perceived agreement, not merely add a cost. The boundary matters: this is a risk to test, not proof that penalties never work. ([rady.ucsd.edu](https://rady.ucsd.edu/_files/faculty-research/uri-gneezy/fine.pdf))"
+        ],
+        "visualSvg": "",
+        "visualCaption": "",
+        "after": [
+          "Hypothetical product test: you run an appointment service and want fewer overruns. A customer reads your proposed overrun fee as an optional extension. Revise that interpretation before launch.",
+          "In a consulting proposal, test whether a revision fee means 'extra scope requires agreement' or 'unlimited changes are available for purchase.' Which behavior would your wording authorize?"
+        ]
+      },
+      "lab": {
+        "title": "Run a three-minute permission test",
+        "paras": [
+          "Find an unintended entitlement before you create it."
+        ],
+        "exercise": "Choose one proposed fee or penalty. Show its exact wording to a colleague without explaining your intent. Ask: “If you paid this, what would you think you were allowed to do?” Compare their answer with your intended boundary. Rewrite if those disagree."
+      },
+      "masters": null,
+      "steal": {
+        "line": "Price an option only if you want to offer it.",
+        "paras": [
+          "Separate compensation for a breach from permission to repeat it."
+        ],
+        "example": [
+          "“We can agree on extra scope separately; paying this fee does not automatically authorize more changes.”"
+        ]
+      }
+    },
+    {
       "date": "2026-10-07",
       "displayDate": "Wed · Oct 7",
       "domain": "Innovation",
@@ -1156,58 +1243,6 @@
         ],
         "example": [
           "Strategy memo opener: \"Right now, our quarterly planning drifts because we never say what we’ll <em>stop</em> doing; if we keep dodging that, Daisy 1 will just become a prettier backlog, so this memo proposes one simple rule for what never makes it onto the board in the first place.\""
-        ]
-      }
-    },
-    {
-      "date": "2026-08-08",
-      "displayDate": "Sat · Aug 8",
-      "domain": "Strategy",
-      "hook": "Stop treating every messy problem like it is merely complicated.",
-      "insight": {
-        "title": "Match the Move to the Mess",
-        "paras": [
-          "Dave Snowden’s <strong>Cynefin framework</strong> is a sensemaking tool for choosing the right kind of action. Some problems are <em>clear</em>: follow the rule. Some are <em>complicated</em>: bring in expertise. Some are <em>complex</em>: run probes and learn. Some are <em>chaotic</em>: act first to create stability.",
-          "The mistake is using one mode everywhere. A project plan works beautifully when cause and effect are knowable. It fails when the system is still revealing itself. In complex work, the sharper question is not “What is the answer?” It is: <strong>What small probe would teach us what kind of problem this is?</strong>"
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><line x1='280' y1='50' x2='280' y2='270' stroke='#9ba0b8' stroke-width='2'/><line x1='80' y1='160' x2='480' y2='160' stroke='#9ba0b8' stroke-width='2'/><rect x='95' y='65' width='150' height='70' rx='14' fill='none' stroke='#5fd4c4' stroke-width='3'/><text x='170' y='98' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Complex</text><text x='170' y='122' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>probe → sense</text><rect x='315' y='65' width='150' height='70' rx='14' fill='none' stroke='#e8b84b' stroke-width='3'/><text x='390' y='98' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Complicated</text><text x='390' y='122' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>analyze → act</text><rect x='95' y='185' width='150' height='70' rx='14' fill='none' stroke='#ff7a6e' stroke-width='3'/><text x='170' y='218' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Chaotic</text><text x='170' y='242' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>act → stabilize</text><rect x='315' y='185' width='150' height='70' rx='14' fill='none' stroke='#a48bfa' stroke-width='3'/><text x='390' y='218' text-anchor='middle' fill='#eceef7' font-size='20' font-family='Inter, Arial'>Clear</text><text x='390' y='242' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='Inter, Arial'>sense → respond</text><circle cx='280' cy='160' r='28' fill='#1b1e30' stroke='#eceef7' stroke-width='3'/><text x='280' y='166' text-anchor='middle' fill='#eceef7' font-size='14' font-family='Inter, Arial'>Which?</text></svg>",
-        "visualCaption": "Before you choose the move, name the kind of problem.",
-        "after": [
-          "In a quarterly planning session, use this before prioritizing. Daisy 1 may have clear work that needs execution, complicated work that needs expertise, and complex work that needs a small test. Separating those modes keeps the plan from pretending uncertainty is just a longer task list."
-        ]
-      },
-      "lab": {
-        "title": "The Problem-Type Pause",
-        "paras": [
-          "This skill matters because smart people often argue about solutions while silently assuming different kinds of problems. One person wants a roadmap. Another wants research. Another wants urgency. The conversation improves the moment you name the operating mode.",
-          "Picture a product discussion where a feature idea feels both promising and fuzzy. Instead of forcing a yes/no decision, you slow the room down and say, “I think we are treating this as complicated, but it may be complex.” That one sentence can turn debate into learning."
-        ],
-        "exercise": "Take one decision today and label it in under five minutes. Use these exact words: “Before we pick an answer, what kind of problem is this: clear, complicated, complex, or chaotic? If it is clear, let’s follow the rule. If it is complicated, let’s get the right expertise. If it is complex, let’s run one small probe. If it is chaotic, let’s stabilize first.”"
-      },
-      "masters": {
-        "name": "Dave Snowden",
-        "talk": "The Cynefin Framework",
-        "videoId": "N7oz366X0-8",
-        "start": 0,
-        "watchWindow": "0:00–4:20",
-        "paras": [
-          "Snowden fits today’s lesson because he gives you a practical way to stop over-planning uncertainty. His core move is not to make strategy sound smarter; it is to help you choose a response that matches the reality in front of you.",
-          "Watch how he distinguishes ordered situations from complex ones. The useful takeaway is conversational: you can make a meeting sharper by asking which domain you are in before everyone starts defending their preferred answer."
-        ],
-        "observe": [
-          "How he uses categories to reduce confusion without pretending the world is simple.",
-          "How the framework shifts the question from “Who is right?” to “What response fits this context?”",
-          "How complexity requires safe-to-fail probes rather than confident predictions."
-        ]
-      },
-      "steal": {
-        "line": "If we do not know the problem type, we are probably overconfident about the solution.",
-        "paras": [
-          "Use this line when a planning conversation is moving too quickly toward a tidy answer. Say it warmly, then offer a next move. The goal is not to sound skeptical; it is to protect the team from false precision.",
-          "A good version creates motion: classify the situation, choose the response, and make the next step small enough to learn from."
-        ],
-        "example": [
-          "“I think we may be calling this a roadmap question when it is really a learning question. For the strategy agent, let’s not debate the full direction yet. Let’s run one small probe, decide what signal would matter, and come back with evidence.”"
         ]
       }
     }
