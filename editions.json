@@ -1,6 +1,119 @@
 {
   "editions": [
     {
+      "date": "2026-10-11",
+      "displayDate": "Sun · Oct 11",
+      "domain": "Product Thinking",
+      "hook": "The machine became useful when it learned to stop.",
+      "format": "video",
+      "storyVideoPlan": {
+        "theme": {
+          "id": "pastel-shape-lab",
+          "label": "Pastel Shape Lab"
+        },
+        "style": "Playful 2D pastel shape choreography with peach, mint, lilac and navy, simple geometric characters and objects, kinetic transformations that make cause and effect visible, one recurring adult protagonist, no photorealism, no logos, and no generated text",
+        "narration": "Can stopping a machine make a workshop faster? Sakichi Toyoda wanted better cloth, but broken threads turned powered looms into waste machines. Each snapped thread left holes in growing cloth. Someone had to watch constantly, then race to stop the loom before damage spread. Toyoda added a device that stopped the loom when thread broke. Now the machine watched itself. That reversal became a principle called jidoka. The stopped loom needed attention; the others kept weaving. Workers could tend several machines instead of watching one. Stopping freed people to act. But stopping didn't mend the thread. Someone still had to repair it. The device contained the fault; people made safe weaving possible again. Clean cloth rolled out without constant watching. Before your software repeats a task, ask: what fault must make it stop and call you?",
+        "blocks": [
+          {
+            "narration": "Can stopping a machine make a workshop faster? Sakichi Toyoda wanted better cloth, but broken threads turned powered looms into waste machines.",
+            "prompt": "Ten-second vertical 9:16 animation using the exact global Pastel Shape Lab style. Recurring protagonist throughout: adult Japanese inventor Sakichi Toyoda, peach geometric face, short navy hair, navy work jacket, mint trousers. Establish a simplified historical weaving workshop; mechanical details are schematic, not a claimed engineering reconstruction. Characters gesture but never talk. Motion begins on frame one. Exactly five hard-cut shots, each approximately two seconds: 1) Extreme close-up: a mint loom shuttle moves rapidly through taut peach threads, producing an intact lilac strip. 2) Medium side view: Toyoda checks the smooth cloth and gestures for the powered loom to continue. 3) Macro: one peach thread snaps while the shuttle keeps moving. 4) Overhead: missing-thread gaps spread along the advancing cloth; use actual holes, not decorative discoloration. 5) Low wide shot: damaged cloth spills toward Toyoda's feet while intact cloth remains visibly shorter. No generated text, numbers, logos, subtitles, lip movement, or dialogue; captions are added separately."
+          },
+          {
+            "narration": "Each snapped thread left holes in growing cloth. Someone had to watch constantly, then race to stop the loom before damage spread.",
+            "prompt": "Ten-second vertical 9:16 animation in the exact same Pastel Shape Lab world, workshop, loom design, palette, and recurring adult Toyoda character. Characters gesture but never talk. Start with moving cloth on frame one. Exactly five hard-cut shots of approximately two seconds: 1) Tight tracking shot: the same damaged strip lengthens as the shuttle continues despite the broken thread. 2) Medium frontal view: Toyoda leans close, eyes following the thread path instead of doing other work. 3) Wide oblique view: he turns toward a neighboring loom; the first loom continues producing gaps behind him. 4) Close-up: he notices the damage and reaches urgently for the manual stop lever. 5) Overhead: his hand stops the mechanism, but a long defective strip already lies on the floor; the nearby loom still requires attention. Show the cost of constant watching through his movement, not alarm icons. No generated text, logos, dialogue, or lip movement."
+          },
+          {
+            "narration": "Toyoda added a device that stopped the loom when thread broke. Now the machine watched itself. That reversal became a principle called jidoka.",
+            "prompt": "Ten-second vertical 9:16 animation in the identical Pastel Shape Lab workshop with the same adult Toyoda and consistent geometric loom. Characters gesture but never talk. This is the decisive reversal, visible before the narration names the principle. Motion starts immediately. Exactly five hard-cut shots of approximately two seconds: 1) Close-up: Toyoda slides a simplified stop linkage into the moving loom's thread path; establish taut thread holding a small navy sensing arm in position. 2) Macro: the thread snaps, the arm drops, and the connected stop linkage engages; show one continuous causal action. 3) Side close-up: the shuttle stops and cloth advancement halts before a long damaged strip can form. 4) Medium: Toyoda, facing another task rather than watching the loom, turns toward the stopped machine. 5) Wide: the neighboring loom keeps weaving while only the faulty loom stands still; Toyoda approaches calmly. Do not show the device repairing anything. No generated text, labels, logos, dialogue, or lip movement."
+          },
+          {
+            "narration": "The stopped loom needed attention; the others kept weaving. Workers could tend several machines instead of watching one. Stopping freed people to act.",
+            "prompt": "Ten-second vertical 9:16 animation in the same Pastel Shape Lab workshop, retaining the same adult Toyoda, loom geometry, colors, and stop linkage. Characters gesture but never talk. Motion begins with neighboring shuttles moving on frame one. Exactly five hard-cut shots, approximately two seconds each: 1) Wide: one faulty loom is stopped while two intact looms continue producing smooth cloth. 2) Overhead tracking: Toyoda walks directly to the stopped loom instead of pacing between machines to inspect every thread. 3) Close-up: he checks its visibly broken thread while neighboring fabric continues advancing in the background. 4) Medium side shot: he collects a replacement thread spool and tools; the faulty loom remains safely still without his hand holding its lever. 5) High wide shot: smooth cloth accumulates from the working looms while Toyoda has both hands free for repair. Make the change from surveillance to intervention unmistakable; do not imply a measured productivity percentage. No generated text, logos, dialogue, or lip movement."
+          },
+          {
+            "narration": "But stopping didn't mend the thread. Someone still had to repair it. The device contained the fault; people made safe weaving possible again.",
+            "prompt": "Ten-second vertical 9:16 animation using the same Pastel Shape Lab workshop, adult Toyoda, loom, thread path, and stop linkage. Characters gesture but never talk. Begin with active neighboring looms so the frame is moving even while the faulty loom stays stopped. Exactly five hard-cut shots of approximately two seconds: 1) Macro: the two ends of the broken thread remain separated beside the engaged stop linkage; nothing magically reconnects. 2) Medium: Toyoda attempts to move on, notices the stopped loom still cannot weave, and returns to it. 3) Tight overhead: his hands replace and rethread the broken strand through the simplified path. 4) Close-up: he checks that the thread is taut and correctly seated before resetting the stop linkage. 5) Side view: after his deliberate restart, the shuttle moves and a short intact strip emerges. Portray this as a schematic operating demonstration, not an undocumented historical incident; do not invent a specific root cause. No generated text, logos, dialogue, or lip movement."
+          },
+          {
+            "narration": "Clean cloth rolled out without constant watching. Before your software repeats a task, ask: what fault must make it stop and call you?",
+            "prompt": "Ten-second vertical 9:16 animation in the same Pastel Shape Lab world with the same adult Toyoda; characters gesture but never talk. Finish the historical problem before showing a clearly symbolic modern transfer. Motion begins on frame one. Exactly five hard-cut shots of approximately two seconds: 1) Close-up matching the opening cloth shot: the repaired loom now advances smooth, intact lilac fabric. 2) Wide matching the opening workshop: several looms weave clean cloth while Toyoda walks freely between useful tasks rather than staring at one machine. 3) Overhead hard cut to an abstract tabletop demonstration, not a historical computer: Toyoda gestures beside a software-copying metaphor in which complete geometric cards move toward a copying wheel. 4) Macro: a card missing its mint circle reaches a detector; the same visual stop-linkage action blocks it before the wheel can multiply it, and a peach indicator moves to summon attention. 5) Medium: Toyoda corrects the incomplete card, deliberately releases the gate, and complete cards flow again; preserve the clean cloth in the background as the resolved opening problem. The cards represent repeated software work, not a claimed Toyoda invention or an existing project feature. No generated text, interface labels, logos, dialogue, or lip movement."
+          }
+        ],
+        "qualityGate": {
+          "approved": true,
+          "draftModel": "gpt-6-luna",
+          "editorModel": "gpt-6.1-sol",
+          "editorPasses": 1,
+          "scores": {
+            "causalStory": 4,
+            "visibleReversal": 5,
+            "visualCausality": 5,
+            "endingPayoff": 4,
+            "spokenClarity": 5,
+            "applicationFit": 4,
+            "lessonValue": 4,
+            "postVideoValue": 5
+          }
+        },
+        "generation": {
+          "provider": "Higgsfield API",
+          "maximumConfiguredCostUsd": 3.9,
+          "paidRetries": 0,
+          "audioMode": "locked narration reference",
+          "theme": {
+            "id": "pastel-shape-lab",
+            "label": "Pastel Shape Lab"
+          },
+          "requestIds": [
+            "43c5f139-4900-44d4-a881-c3d88cca5e0e",
+            "f04dadfd-bff6-4783-a5d1-c1d0a6db51a6",
+            "d0986e43-06f2-491e-b922-2e8d4def9f9a",
+            "d13f6f7a-f3b7-446b-bd95-7baf2e4f286b",
+            "d4e81d0c-427f-4d4e-82c8-8656ebdfae7f",
+            "a8056e76-7b85-4827-9ee4-f827110dfb0c"
+          ],
+          "status": "published"
+        }
+      },
+      "insight": {
+        "title": "Automate detection, not just repetition",
+        "paras": [
+          "<strong>Jidoka</strong> is a Toyota production principle, not a universal law. ([global.toyota](https://global.toyota/en/company/vision-and-philosophy/production-system/?region=japan)) Define an observable fault; make it stop the affected process before more defective output escapes. ([toyota-global.com](https://www.toyota-global.com/company/history_of_toyota/75years/text/taking_on_the_automotive_business/chapter1/section1/item4.html)) This separates automatic detection from constant human watching, freeing attention for intervention. ([toyota-global.com](https://www.toyota-global.com/company/history_of_toyota/75years/text/taking_on_the_automotive_business/chapter1/section1/item4.html)) A person still investigates, corrects the problem, and verifies the restart. ([global.toyota](https://global.toyota/en/company/vision-and-philosophy/production-system/?region=japan))",
+          "<strong>Boundary:</strong> a detector catches only the faults it recognizes; passing its check does not prove everything is correct. Treat your check as a narrow guardrail. Historical provenance: Toyota's archive reproduces the 1905 loom manual's stopping and multi-machine operating features. ([toyota-global.com](https://www.toyota-global.com/company/history_of_toyota/75years/text/taking_on_the_automotive_business/chapter1/section1/item4.html))"
+        ],
+        "visualSvg": "",
+        "visualCaption": "",
+        "after": [
+          "For your strategy agent exploration, try this design: a builder wants sourced summaries, but a draft cites a missing document. Block release, repair the source, then rerun the check—do not multiply the draft.",
+          "For a batch contact import, reject records missing a required address before sending invitations. What observable failure should halt only the affected work?"
+        ]
+      },
+      "lab": {
+        "title": "Test the stop before the scale",
+        "paras": [
+          "A warning is not containment if copying continues."
+        ],
+        "exercise": "In four minutes, choose one repeated software task. Write: “If ___ fails, stop ___ before ___; resume only after ___ passes.” Introduce one harmless test fault. Check whether downstream output actually stops. If it merely raises a warning, revise the gate before scaling."
+      },
+      "masters": null,
+      "steal": {
+        "line": "If it needs constant watching, it isn't ready to scale.",
+        "paras": [
+          "Ask for a demonstrated stop, not a promise that someone will notice."
+        ],
+        "example": [
+          "“Show me what happens when the required source is missing. Does release stop, and what proves we can restart?”"
+        ]
+      },
+      "storyVideo": {
+        "title": "The machine became useful when it learned to stop.",
+        "src": "assets/videos/2026-10-11/story.mp4",
+        "poster": "assets/video-scenes/true-fans-pilot/scene-01-attention.png",
+        "duration": "60 seconds",
+        "captions": true
+      }
+    },
+    {
       "date": "2026-10-09",
       "displayDate": "Fri · Oct 9",
       "domain": "Decision-Making",
@@ -1218,58 +1331,6 @@
         ],
         "example": [
           "In a client strategy session: “Before we go further, if I were you, I’d probably be worried this strategy agent direction means losing the nuance of your current process — is that actually in your head, or am I misreading it?”"
-        ]
-      }
-    },
-    {
-      "date": "2026-08-10",
-      "displayDate": "Mon · Aug 10",
-      "domain": "Communication",
-      "hook": "Never lead with the meeting you’re in.",
-      "insight": {
-        "title": "Answer the Hidden Question First",
-        "paras": [
-          "In almost every important conversation, people are quietly asking the same hidden question: <em>“Why should I care about this right now?”</em> Call this the <strong>Hidden Question</strong>. If you answer it early and clearly, people lean in; if you ignore it, even great ideas feel like noise. The move: before you explain <em>what</em> you’re doing, give one sharp line about <em>what is at stake for them</em> in this moment.",
-          "A simple way to use this is the three-beat frame: <strong>Now → Stakes → Move</strong>. Start with one sentence about what’s true <em>now</em>, name the concrete <em>stakes</em> if nothing changes, then describe the <em>move</em> you’re proposing. You are not hyping; you are answering the thing their brain is already scanning for: “Is this worth my attention in the next five minutes?”"
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='60' width='140' height='40' rx='6' fill='none' stroke='#eceef7' stroke-width='2'/><text x='130' y='86' text-anchor='middle' fill='#eceef7' font-size='12'>NOW</text><rect x='210' y='140' width='140' height='40' rx='6' fill='none' stroke='#e8b84b' stroke-width='2'/><text x='280' y='166' text-anchor='middle' fill='#e8b84b' font-size='12'>STAKES</text><rect x='360' y='220' width='140' height='40' rx='6' fill='none' stroke='#5fd4c4' stroke-width='2'/><text x='430' y='246' text-anchor='middle' fill='#5fd4c4' font-size='12'>MOVE</text><line x1='200' y1='80' x2='210' y2='160' stroke='#9ba0b8' stroke-width='2' marker-end='url(#arrow)'/><line x1='350' y1='160' x2='360' y2='240' stroke='#9ba0b8' stroke-width='2' marker-end='url(#arrow)'/><circle cx='280' cy='40' r='10' fill='none' stroke='#a48bfa' stroke-width='2'/><text x='280' y='44' text-anchor='middle' fill='#a48bfa' font-size='9'>?</text><defs><marker id='arrow' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0 0 L10 5 L0 10 z' fill='#9ba0b8'/></marker></defs><text x='280' y='300' text-anchor='middle' fill='#ff7a6e' font-size='11'>Answer the hidden \"Why now?\" before the details.</text></svg>",
-        "visualCaption": "Frame your point as Now → Stakes → Move so the hidden question gets answered first.",
-        "after": [
-          "Today, try this in a Daisy 1 planning review: instead of opening with, “We’ve got three tickets to go through,” start with, “Right now our coordination breaks down every Tuesday; if we don’t fix this, every launch week will feel like a scramble, so today I want to agree on one clear rule Daisy 1 will enforce for handoffs.” You’ve just answered the Hidden Question in one breath—and made the rest of the discussion feel necessary instead of optional."
-        ]
-      },
-      "lab": {
-        "title": "The 30‑Second Now → Stakes → Move Opener",
-        "paras": [
-          "Why this matters: people decide in the first 30 seconds whether to give you real attention or just polite bandwidth. When you walk into a quarterly planning check-in or a client sync and open with logistics, you force them to guess why it matters. When you open with Now → Stakes → Move, you do the mental sorting <em>for</em> them and everything you say afterwards rides on that clarity.",
-          "Picture this: you’re kicking off a strategy agent demo with a skeptical founder. If you start with, “We’ve added a few workflows since last time,” they mentally drift. If you start with, “Right now your strategy lives in slides and people’s heads; that’s why you keep re-deciding the same things—today I want to show you one way the agent can hold a decision so it doesn’t get re-opened every week,” you have them. Same product, different opener, completely different level of attention."
-        ],
-        "exercise": "Pick one real conversation today—a standup, check-in, or design review. Before it starts, write a single 30-second opener using this exact template:\n\n1) Now: \"Right now, [describe the current situation in one concrete line].\"\n2) Stakes: \"If we keep going like this, [name the cost or risk in plain language].\"\n3) Move: \"So in this conversation, I want us to [describe the specific decision or shift].\"\n\nExample you can lift:\n\"Right now, our Daisy 1 board tells us <em>what</em> is in motion but not <em>what is blocked on who</em>. If we keep going like this, we’ll keep discovering blockers 24 hours too late. So in this 10-minute review, I want us to agree on one simple rule for assigning owners that Daisy 1 will make impossible to ignore.\"\n\nWalk into your next conversation and read your line almost verbatim. Notice what happens to people’s posture and follow-up questions."
-      },
-      "masters": {
-        "name": "Julian Treasure",
-        "talk": "How to Speak So That People Want to Listen (TED)",
-        "videoId": "eIho2S0ZahI",
-        "start": 260,
-        "watchWindow": "Watch 4:20–6:30, where he introduces HAIL and models clear framing.",
-        "paras": [
-          "Julian Treasure is obsessed with why some speech cuts through and some vanishes. In this segment he introduces his HAIL model—Honesty, Authenticity, Integrity, Love—and shows how a few words of framing can completely change how an audience receives what you say. He is effectively answering the Hidden Question in real time: why listen to <em>this</em> person, <em>now</em>?",
-          "Notice how he doesn’t drown you in theory. He offers one simple structure, stands on it, and then <em>demonstrates</em> with his own voice and presence. That’s the same move you’re making with Now → Stakes → Move: a tiny, named pattern that quietly upgrades every opener you give."
-        ],
-        "observe": [
-          "How he quickly states the problem (people not listening) before unpacking any detail—answering “Why this talk?” in one clean beat.",
-          "The way his vocal tone shifts when he moves from problem to possibility; he literally marks the transition from Stakes to Move with energy.",
-          "How his examples are situational and concrete (“in the office,” “at home”) instead of abstract; steal this level of specificity for your own openers."
-        ]
-      },
-      "steal": {
-        "line": "Open every important conversation by answering, in one sentence, why this matters <em>right now</em>.",
-        "paras": [
-          "For the next 48 hours, treat every meeting intro, Loom recording, or client update as a rep. Before you speak, silently ask, “What is the Hidden Question in this room?” Then use one Now → Stakes → Move sentence to answer it out loud before you touch agenda, features, or charts. You’re not being dramatic; you’re aligning attention.",
-          "If you catch yourself starting with, “So, quick update…” pause, breathe, and replace it with a sharper line that names the moment and the cost of inaction. Over time this becomes muscle memory: your brain scans for stakes before it reaches for status."
-        ],
-        "example": [
-          "Strategy memo opener: \"Right now, our quarterly planning drifts because we never say what we’ll <em>stop</em> doing; if we keep dodging that, Daisy 1 will just become a prettier backlog, so this memo proposes one simple rule for what never makes it onto the board in the first place.\""
         ]
       }
     }
