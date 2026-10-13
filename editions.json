@@ -1,6 +1,42 @@
 {
   "editions": [
     {
+      "date": "2026-10-13",
+      "displayDate": "Tue · Oct 13",
+      "domain": "Conversation",
+      "hook": "Ask the question their answer earns.",
+      "format": "carousel",
+      "insight": {
+        "title": "The responsive follow-up loop",
+        "paras": [
+          "In a study of speed-dating conversations, researchers analyzed 110 participants across more than 2,000 dates. People who asked more follow-up questions were more likely to get a mutual yes to a second date. The pattern points to a simple mechanism: a question tied to someone’s answer signals that you heard it. Huang and colleagues’ 2017 studies in the <em>Journal of Personality and Social Psychology</em> found that asking questions—especially follow-ups—was linked to greater perceived responsiveness and liking. That’s an <strong>empirical result</strong>, not a guarantee: the speed-dating finding was observational, and the studies don’t mean you should pepper someone with questions."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='20' fill='#1b1e30'/><text x='28' y='38' fill='#eceef7' font-size='19' font-family='sans-serif' font-weight='700'>THE RESPONSIVE FOLLOW-UP LOOP</text><rect x='30' y='75' width='145' height='64' rx='12' fill='#292d45' stroke='#5fd4c4' stroke-width='2'/><text x='102' y='103' fill='#eceef7' text-anchor='middle' font-size='15' font-family='sans-serif'>They share</text><text x='102' y='123' fill='#eceef7' text-anchor='middle' font-size='15' font-family='sans-serif'>a detail</text><path d='M180 107h35' stroke='#e8b84b' stroke-width='3'/><path d='m210 100 9 7-9 7' fill='none' stroke='#e8b84b' stroke-width='3'/><rect x='225' y='75' width='145' height='64' rx='12' fill='#292d45' stroke='#e8b84b' stroke-width='2'/><text x='297' y='103' fill='#eceef7' text-anchor='middle' font-size='15' font-family='sans-serif'>You pick up</text><text x='297' y='123' fill='#eceef7' text-anchor='middle' font-size='15' font-family='sans-serif'>one thread</text><path d='M375 107h35' stroke='#e8b84b' stroke-width='3'/><path d='m405 100 9 7-9 7' fill='none' stroke='#e8b84b' stroke-width='3'/><rect x='420' y='75' width='115' height='64' rx='12' fill='#292d45' stroke='#a48bfa' stroke-width='2'/><text x='477' y='103' fill='#eceef7' text-anchor='middle' font-size='15' font-family='sans-serif'>Ask a</text><text x='477' y='123' fill='#eceef7' text-anchor='middle' font-size='15' font-family='sans-serif'>follow-up</text><path d='M477 145v45H100v-44' fill='none' stroke='#5fd4c4' stroke-width='2' stroke-dasharray='6 5'/><path d='m93 153 7-9 7 9' fill='none' stroke='#5fd4c4' stroke-width='2'/><rect x='147' y='205' width='266' height='46' rx='12' fill='#292d45'/><text x='280' y='234' fill='#eceef7' text-anchor='middle' font-size='15' font-family='sans-serif'>They feel heard; the conversation deepens</text><text x='280' y='286' fill='#9ba0b8' text-anchor='middle' font-size='13' font-family='sans-serif'>Evidence supports the link—not a magic question count.</text></svg>",
+        "visualCaption": "A follow-up turns a detail into evidence of attention; the research supports a link, not a guaranteed outcome.",
+        "after": [
+          "At a workshop, someone says they changed careers after a difficult first job. Instead of switching to your own story, ask, “What made you decide it was time to leave?” Their answer gives the next question its footing.",
+          "In a planning session, a teammate says a decision is stalled while they wait for input. Ask, “What’s the one thing you need clarified to move?” You’re not just collecting status—you’re following the obstacle they named. Are you responding to their actual answer, or queuing up your next question?"
+        ]
+      },
+      "lab": {
+        "title": "Follow one thread",
+        "paras": [
+          "A specific follow-up makes curiosity feel like attention rather than an interview."
+        ],
+        "exercise": "In your next conversation, listen for one concrete detail. Ask: “You mentioned [detail]—what happened next?” Then let the answer shape whether you ask anything else."
+      },
+      "masters": null,
+      "steal": {
+        "line": "Ask the question their answer earns.",
+        "paras": [
+          "Use their last detail as your starting point; don’t rush to perform cleverness."
+        ],
+        "example": [
+          "“You said the handoff felt harder than expected. Which part surprised you most?”"
+        ]
+      }
+    },
+    {
       "date": "2026-10-11",
       "displayDate": "Sun · Oct 11",
       "domain": "Product Thinking",
@@ -1279,58 +1315,6 @@
         ],
         "example": [
           "By the end of this phase, you’ll be able to see the project’s main blockers in one place. Nothing fancier yet."
-        ]
-      }
-    },
-    {
-      "date": "2026-08-12",
-      "displayDate": "Wed · Aug 12",
-      "domain": "Conversation",
-      "hook": "One sharp, specific line that makes the hidden worry say itself.",
-      "insight": {
-        "title": "Name the Worry Out Loud",
-        "paras": [
-          "<strong>Model: The Pre-Emptive Objection.</strong> In any real conversation, the other person is carrying a quiet, half-formed worry. If you wait for it to surface, you often get defensiveness. If you name it first, simply and non-dramatically, you lower the temperature and make it talkable. The move is: say the likely objection in your own words, with no spin, as if you were on their side voicing it for them.",
-          "You can treat this like a tiny script: <em>state their worry</em>, then <em>invite correction</em>. “You might be thinking ___ — is that close?” This comes from negotiation and decision-science work on surfacing objections early instead of dancing around them; by giving the doubt a clear label, you move it from vague emotion to something you can reason about together."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect x='0' y='0' width='560' height='320' fill='#1b1e30'/><rect x='60' y='60' width='440' height='200' rx='16' fill='#262947' stroke='#9ba0b8' stroke-width='2'/><circle cx='150' cy='140' r='46' fill='none' stroke='#eceef7' stroke-width='3'/><path d='M190 180 L215 205' stroke='#eceef7' stroke-width='3' stroke-linecap='round'/><path d='M120 130 Q150 105 180 130' stroke='#9ba0b8' stroke-width='3' fill='none'/><circle cx='138' cy='140' r='4' fill='#eceef7'/><circle cx='162' cy='140' r='4' fill='#eceef7'/><path d='M320 120 h150' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='6 6'/><rect x='305' y='145' width='190' height='70' rx='12' fill='#1b1e30' stroke='#e8b84b' stroke-width='2'/><path d='M295 150 L310 150 L305 140 Z' fill='#e8b84b'/><text x='315' y='172' fill='#eceef7' font-family='system-ui, sans-serif' font-size='14'>\"You might be worried</text><text x='315' y='192' fill='#eceef7' font-family='system-ui, sans-serif' font-size='14'>this will slow everything down?\"</text><circle cx='90' cy='255' r='6' fill='#ff7a6e'/><circle cx='110' cy='255' r='6' fill='#5fd4c4'/><circle cx='130' cy='255' r='6' fill='#a48bfa'/></svg>",
-        "visualCaption": "A vague cloud of doubt becomes a clear, shared line.",
-        "after": [
-          "In a Daisy 1 planning review, instead of charging into a roadmap change, you might open with: “You might be nervous this adds coordination overhead right when you’re trying to simplify — is that what’s in the back of your mind?” If you guessed slightly wrong, they will gladly correct you. Either way, the real concern is now on the table, and you can design the plan, the product, or the next decision around what they actually fear instead of around your assumptions."
-        ]
-      },
-      "lab": {
-        "title": "The Two-Step Objection Mirror",
-        "paras": [
-          "This skill matters most in moments that feel slightly tense but still polite: a client hesitating on a proposal, a collaborator going quiet on a change, a team looking sideways at a new StoryOS or strategy agent idea. If you don’t surface what they’re actually worried about, you end up polishing arguments that never quite land, because they’re aimed at the wrong fear.",
-          "Picture a short strategy check-in on quarterly planning. You’re walking through a new cadence, and you can feel people getting quieter on Zoom. Instead of filling the silence with more explanation, you pause and gently mirror the likely objection: “If I were you, I’d be wondering whether this just means more meetings — is that close?” Now you’re in a real conversation instead of a quiet standoff."
-        ],
-        "exercise": "Today, pick one live conversation where you’re asking someone to change something: a teammate, collaborator, or client. Before the call, write down one sentence: “If I were you, I’d probably be worried about ___.” Fill in the blank with your best guess. During the conversation, when you feel even a small hesitation, use this exact script: “Can I sanity-check something? If I were you, I’d probably be worried about ___ — is that actually in your head, or am I off?” Then stop talking. Let them correct or confirm, and respond only to what they say next. Total time: under five minutes, one real rep."
-      },
-      "masters": {
-        "name": "Daniel Pink",
-        "talk": "To Sell Is Human: The New ABCs of Moving Others",
-        "videoId": "nKrBitIQrgo",
-        "start": 540,
-        "watchWindow": "Watch 9:00–14:00",
-        "paras": [
-          "Daniel Pink’s work on the “new ABCs of selling” — attunement, buoyancy, and clarity — is really about high-quality conversation. In this segment, he shows how getting out of your own head and into the other person’s perspective changes the entire feel of a pitch or proposal. Naming unspoken concerns is one of the most direct ways to do that in everyday work.",
-          "As you watch, connect his idea of attunement with your own meetings: when you propose a DreamGuard experiment, a StoryOS framing, or a new operating rhythm, your job is less to push your idea and more to reveal and reframe the other person’s picture of the situation. The pre-emptive objection is a concrete move for doing exactly that."
-        ],
-        "observe": [
-          "Notice how often Pink frames things from the listener’s point of view — he describes what they might be thinking or feeling instead of just repeating his own thesis.",
-          "Watch his tone when he talks about resistance; it’s light, curious, and almost playful, which makes worries feel acceptable to voice rather than embarrassing.",
-          "Listen for how he turns potential objections into invitations for joint problem-solving, shifting from “let me convince you” to “let’s figure out what’s really going on here.”"
-        ]
-      },
-      "steal": {
-        "line": "“If I were you, I’d probably be worried about X — is that actually in your head, or am I misreading it?”",
-        "paras": [
-          "Use this line in one real conversation today where stakes are non-trivial but not catastrophic — a roadmap decision, a consulting check-in, or a demo of a new workflow. The power comes from saying it calmly, like you’re doing the other person a favor by giving their worry language, not like you’re defending yourself. Treat their answer as data, not a verdict; you’re just trying to get the real topic on the table faster.",
-          "Over time, this becomes a tiny habit: when you sense friction, you don’t add more slides or logic; you name the likely worry, invite correction, and let the conversation move toward the real constraint. That’s how you turn hesitant nods into honest collaboration."
-        ],
-        "example": [
-          "In a client strategy session: “Before we go further, if I were you, I’d probably be worried this strategy agent direction means losing the nuance of your current process — is that actually in your head, or am I misreading it?”"
         ]
       }
     }
