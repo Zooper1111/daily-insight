@@ -1,6 +1,112 @@
 {
   "editions": [
     {
+      "date": "2026-10-15",
+      "displayDate": "Thu · Oct 15",
+      "domain": "Strategy",
+      "hook": "Your cheapest wage can buy your most expensive workforce.",
+      "format": "video",
+      "storyVideoPlan": {
+        "theme": {
+          "id": "retro-crt-collage",
+          "label": "Retro CRT Collage"
+        },
+        "style": "1990s CRT mixed-media documentary collage with analog scan lines, torn paper, archival-photo framing, saturated cyan and magenta accents, dynamic push-ins and match cuts, one recurring adult protagonist, no logos, and no generated text",
+        "narration": "Can paying more make work cheaper? In 1913, Henry Ford wanted cars rolling out. Instead, workers kept walking away from his factory. The assembly line was relentless. New hires needed training, then many left too. Cheap daily pay kept bringing expensive rounds of replacements. In January 1914, Ford offered eligible workers five dollars daily. Applicants crowded the gates; departures fell. Economists call this an efficiency wage. Better pay can keep people longer. That means fewer new hires to train, so a bigger paycheck can buy cheaper, steadier production. But this was no clean test: hours changed too. Ford also inspected workers' homes to decide who qualified. Higher pay wasn't unconditional. The factory kept its crew, and cars kept moving. Before cutting pay, ask: will the saving survive the cost of replacing people?",
+        "blocks": [
+          {
+            "narration": "Can paying more make work cheaper? In 1913, Henry Ford wanted cars rolling out. Instead, workers kept walking away from his factory.",
+            "prompt": "Ten-second vertical 9:16 animation using the exact global Retro CRT Collage style. Illustrative historical reconstruction, not archival footage. Recurring protagonist throughout all six blocks: Henry Ford, a slim, clean-shaven adult with neatly combed dark hair, a gray three-piece suit, and a restrained expression. Supporting workers wear period work shirts and caps. Characters gesture but never talk. No logos, lettering, numerals, or generated text; captions are added separately. Exactly five hard-cut shots, each about two seconds: (0–2) Motion from frame one: track beside a moving automobile chassis as Ford strides toward an assembly station, expecting progress. (2–4) Low close-up: a worker sets his wrench down and pulls on his coat. (4–6) Wide side angle: the worker walks toward the exit while an unattended station remains behind him. (6–8) Overhead: other departing workers peel away from their benches, leaving conspicuous gaps. (8–10) Tight push-in: Ford turns from the exit toward the waiting chassis, his confident gesture stopping midway. Preserve cyan machinery, magenta disruption accents, torn-paper borders, archival-photo framing, and analog scan lines."
+          },
+          {
+            "narration": "The assembly line was relentless. New hires needed training, then many left too. Cheap daily pay kept bringing expensive rounds of replacements.",
+            "prompt": "Ten-second vertical 9:16 animation in the exact global Retro CRT Collage style, continuing the same factory and the identical Henry Ford protagonist. Illustrative reconstruction of turnover and replacement costs, not a record of particular employees. Characters gesture but never talk. No logos or generated text. Exactly five hard-cut shots, each about two seconds: (0–2) Motion from frame one: a foreman rapidly demonstrates a wrench movement to a newcomer as Ford watches from the aisle. (2–4) Extreme close-up: the newcomer hesitates, then copies the movement while a chassis advances. (4–6) Medium rear angle: that worker later takes his coat and exits; Ford notices another vacancy. (6–8) Overhead: another applicant takes the vacated place and the foreman repeats the same demonstration, visibly restarting the cycle. (8–10) Close-up: Ford pushes a small wage envelope aside, revealing successive piles of plain replacement paperwork and recruiting expenses represented by loose coins. The growing replacement pile, not abstract decoration, reveals the hidden cost. Keep analog scan lines, cyan machinery, magenta expense accents, torn paper, and archival framing."
+          },
+          {
+            "narration": "In January 1914, Ford offered eligible workers five dollars daily. Applicants crowded the gates; departures fell. Economists call this an efficiency wage.",
+            "prompt": "Ten-second vertical 9:16 animation in the exact global Retro CRT Collage style, with the identical Henry Ford and factory. Show the visible reversal before the narrator names the economic idea. The offer included conditional profit sharing; do not imply every employee qualified. Characters gesture but never talk. No logos, numerals, lettering, or generated text. Exactly five hard-cut shots, each about two seconds: (0–2) Motion from frame one: close-up of Ford sliding a noticeably fuller plain pay envelope across his desk to an eligible worker. (2–4) Low exterior wide shot: applicants stream toward the factory gate, reversing the earlier outward movement; avoid celebratory treatment of the crowd. (4–6) Medium interior shot: a previously departing supporting worker hangs his coat back on its peg and returns to his station. (6–8) Overhead: occupied workstations replace the earlier gaps through a hard match cut to the same composition. (8–10) Tight reaction: Ford watches the same crew continue working as the exit remains quiet. Compress elapsed time editorially rather than suggesting an instantaneous measured result. Preserve cyan and magenta accents, torn-paper archival framing, and CRT scan lines."
+          },
+          {
+            "narration": "Better pay can keep people longer. That means fewer new hires to train, so a bigger paycheck can buy cheaper, steadier production.",
+            "prompt": "Ten-second vertical 9:16 animation in the exact global Retro CRT Collage style, retaining the identical Henry Ford, workers, and factory. This sequence illustrates the retention mechanism, not a quantified claim about Ford's savings. Characters gesture but never talk. No logos or generated text. Exactly five hard-cut shots, each about two seconds: (0–2) Motion from frame one: close-up of an experienced worker smoothly tightening a fitting as Ford walks into the background. (2–4) Medium side angle: the same worker takes the next chassis without needing the foreman's demonstration. (4–6) Overhead desk view: a hand places the fuller wage envelope beside a much smaller pile of replacement paperwork; keep both piles visibly present. (6–8) Tracking shot: the foreman now checks completed work instead of repeatedly introducing newcomers. (8–10) Wide push-in: Ford follows a chassis through consecutive occupied stations, showing continuity rather than magical speed. Use a hard match cut between the repeated wrench movement and the next chassis; maintain analog scan lines, torn-paper edges, archival-photo framing, cyan flow, and restrained magenta cost accents."
+          },
+          {
+            "narration": "But this was no clean test: hours changed too. Ford also inspected workers' homes to decide who qualified. Higher pay wasn't unconditional.",
+            "prompt": "Ten-second vertical 9:16 animation in the exact global Retro CRT Collage style. Preserve the identical Henry Ford protagonist; supporting inspectors are distinct from him. Illustrative historical reconstruction. Characters gesture but never talk. No logos, readable forms, clock numerals, or generated text. Exactly five hard-cut shots, each about two seconds: (0–2) Motion from frame one: Ford turns a plain factory schedule sheet while workers begin leaving at the end of a shortened shift; show no numerical schedule. (2–4) Exterior medium shot: a separate company inspector approaches a worker's front door carrying a blank folder. (4–6) Interior close-up: the worker's family stiffens as the inspector surveys their home and makes marks that remain unreadable. (6–8) Overhead office shot: an inspector places a blank eligibility folder between a worker and the fuller pay envelope, making the condition a physical barrier. (8–10) Tight shot of Ford reviewing several overlapping policy sheets, with the factory and inspection folder sharing the frame: multiple changes prevent a wage-only conclusion. Use cooler cyan domestic shadows, restrained magenta intrusion accents, torn-paper framing, and CRT scan lines; do not portray surveillance as an endorsed practice."
+          },
+          {
+            "narration": "The factory kept its crew, and cars kept moving. Before cutting pay, ask: will the saving survive the cost of replacing people?",
+            "prompt": "Ten-second vertical 9:16 animation in the exact global Retro CRT Collage style, resolving the opening factory problem with the identical Henry Ford and recognizable supporting workers. Keep the historical setting; the narrator supplies the project-neutral decision rule. Characters gesture but never talk. No logos, lettering, numerals, or generated text. Exactly five hard-cut shots, each about two seconds: (0–2) Motion from frame one: repeat the opening tracking composition, but the formerly empty station is staffed and its worker completes the fitting. (2–4) Medium side shot: the same worker reaches for the next chassis while his coat remains hanging on its peg. (4–6) Overhead desk shot: Ford brings the fuller pay envelope and the reduced replacement-cost pile together, considering both rather than just the envelope. (6–8) Low tracking shot: a completed period automobile rolls toward the factory exit, replacing the opening image of departing workers. (8–10) Wide final push-in: Ford steps aside as the car passes; behind him the familiar crew remains at work. End on continuing production, not a generic inspirational pose. Preserve cyan machinery, restrained magenta accents, archival-photo framing, torn-paper edges, and analog scan lines."
+          }
+        ],
+        "qualityGate": {
+          "approved": true,
+          "draftModel": "gpt-6-luna",
+          "editorModel": "gpt-6.1-sol",
+          "editorPasses": 1,
+          "scores": {
+            "causalStory": 4,
+            "visibleReversal": 4,
+            "visualCausality": 5,
+            "endingPayoff": 4,
+            "spokenClarity": 5,
+            "applicationFit": 4,
+            "lessonValue": 4,
+            "postVideoValue": 5
+          }
+        },
+        "generation": {
+          "provider": "Higgsfield API",
+          "maximumConfiguredCostUsd": 3.9,
+          "paidRetries": 0,
+          "audioMode": "locked narration reference",
+          "theme": {
+            "id": "retro-crt-collage",
+            "label": "Retro CRT Collage"
+          },
+          "requestIds": [
+            "17099976-f31d-4295-b7de-67c5b46160d2",
+            "26179bc0-26b7-4c13-929f-950a1896b47b",
+            "1b13033c-0c9b-4517-9cc4-a0fbbcf03e80",
+            "f026ce06-81e5-4e7e-8d78-500489ff2772",
+            "df38c0e0-4f2b-489b-99aa-2188bf7e2247",
+            "6c308c40-6bc4-470a-8f55-0d9a6bfc87f3"
+          ],
+          "status": "submitted"
+        }
+      },
+      "insight": {
+        "title": "Price the workforce, not just the wage",
+        "paras": [
+          "Efficiency-wage theory treats pay as something that can change retention and effort—not merely purchase fixed output. Raff and Summers' Ford study supports that interpretation, not a universal guarantee. ([nber.org](https://www.nber.org/papers/w2101?utm_source=openai)) Compare the full raise budget with the replacement costs it could prevent. The retention mechanism matters when departures are costly and pay actually influences staying.",
+          "Historical grounding: The Henry Ford documents the assembly-line turnover problem, conditional five-dollar offer, applicant crowds, and improved retention. ([thehenryford.org](https://www.thehenryford.org/collections/explore/sets/detail/henry-ford-5-day?utm_source=openai)) Shorter hours and intrusive eligibility inspections accompanied the offer, so the episode cannot isolate pay's effect. The movie's staging is illustrative. ([thehenryford.org](https://www.thehenryford.org/collections/explore/articles/fords-five-dollar-day?trk=public_post_comment-text))"
+        ],
+        "visualSvg": "",
+        "visualCaption": "",
+        "after": [
+          "In quarterly planning, imagine your support team keeps losing trained people. A proposed $6,000 annual raise budget breaks even if it prevents two departures costing $3,000 each.",
+          "In a consulting workshop, help a client compare retention pay with repeated recruiting and uncovered shifts. First ask departing staff: is pay actually why you're leaving?"
+        ]
+      },
+      "lab": {
+        "title": "Find the break-even retention gain",
+        "paras": [
+          "Use ranges: hoped-for savings are not measured savings."
+        ],
+        "exercise": "Take four minutes. Estimate one departure's recruiting, training, and vacancy costs. Divide the full annual raise budget by that amount. Say: “We need to prevent this many departures to break even. What evidence makes that plausible?”"
+      },
+      "masters": null,
+      "steal": {
+        "line": "A smaller paycheck is not automatically a smaller cost.",
+        "paras": [
+          "Count only preventable costs; fix unsafe or punishing work separately."
+        ],
+        "example": [
+          "“Before approving this pay freeze, let's price the extra departures it might cause—not assume the payroll saving survives.”"
+        ]
+      }
+    },
+    {
       "date": "2026-10-13",
       "displayDate": "Tue · Oct 13",
       "domain": "Conversation",
@@ -1282,39 +1388,6 @@
         ],
         "example": [
           "We’re betting on learning from real use, even if that delays another round of features."
-        ]
-      }
-    },
-    {
-      "date": "2026-08-14",
-      "displayDate": "Fri · Aug 14",
-      "domain": "Leadership",
-      "hook": "Make one promise people can test.",
-      "insight": {
-        "title": "The Minimum Credible Promise",
-        "paras": [
-          "The <strong>Minimum Credible Promise</strong> is the smallest outcome you can confidently deliver that still matters. Big promises sound like hype; vague promises are impossible to judge. One clear, observable commitment gives a team something real to plan around and helps you cut anything that does not support it."
-        ],
-        "after": [
-          "For a live project or workshop, state what will be different in 30–90 days—and what you are not promising yet."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='220' width='440' height='12' rx='6' fill='#9ba0b8'/><rect x='60' y='220' width='140' height='12' rx='6' fill='#e8b84b'/><circle cx='200' cy='226' r='6' fill='#eceef7'/><rect x='80' y='80' width='220' height='90' rx='8' fill='none' stroke='#5fd4c4' stroke-width='2'/><line x1='90' y1='110' x2='290' y2='110' stroke='#5fd4c4' stroke-width='2'/><line x1='90' y1='130' x2='230' y2='130' stroke='#5fd4c4' stroke-width='2'/><rect x='330' y='110' width='150' height='40' rx='6' fill='#a48bfa'/><line x1='300' y1='125' x2='330' y2='130' stroke='#eceef7' stroke-width='2'/><text x='337' y='135' fill='#1b1e30' font-size='11' font-family='system-ui, sans-serif'>Minimum</text><text x='337' y='150' fill='#1b1e30' font-size='11' font-family='system-ui, sans-serif'>Credible Promise</text><rect x='60' y='250' width='80' height='6' rx='3' fill='#ff7a6e'/><rect x='160' y='250' width='60' height='6' rx='3' fill='#5fd4c4'/><rect x='240' y='250' width='40' height='6' rx='3' fill='#a48bfa'/></svg>",
-        "visualCaption": "Zoom in from a vague vision to one clear, testable promise."
-      },
-      "lab": {
-        "title": "Sharpen One Promise",
-        "paras": [
-          "A narrow promise focuses attention without shrinking ambition."
-        ],
-        "exercise": "Answer: “What is the smallest useful outcome I can confidently deliver?” and “What am I not promising yet?” Then say: “The only thing I’m promising in this phase is that you’ll be able to ___ by ___.”"
-      },
-      "steal": {
-        "line": "The only thing I’m promising in this phase is one specific, testable win.",
-        "paras": [
-          "Use it when a roadmap or client conversation starts expanding into every possibility."
-        ],
-        "example": [
-          "By the end of this phase, you’ll be able to see the project’s main blockers in one place. Nothing fancier yet."
         ]
       }
     }
