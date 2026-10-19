@@ -9,6 +9,7 @@ variable. This pilot deliberately performs no automatic paid retries.
 
 from __future__ import annotations
 
+import datetime as dt
 import json
 import os
 import subprocess
@@ -17,6 +18,7 @@ import tempfile
 import time
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo
 
 import numpy as np
 import requests
@@ -62,10 +64,17 @@ def load_current_edition(
             if edition.get("format") == "video" and generation.get("requestIds"):
                 return data, edition
     else:
+        # Scheduled runs must never sweep the archive for unfinished paid work.
+        target_date = os.getenv("EDITION_DATE", "").strip() or dt.datetime.now(
+            ZoneInfo("America/New_York")
+        ).date().isoformat()
+        dt.date.fromisoformat(target_date)
         for edition in editions:
-            if edition.get("format") == "video" and not edition.get("storyVideo"):
+            if edition.get("date") == target_date:
                 return data, edition
-    return data, editions[0]
+        print(f"No edition for {target_date}; no video generation is due.")
+        return data, {}
+    raise RuntimeError("No video edition has recorded request IDs to resume")
 
 
 def save_editions(data: dict[str, Any]) -> None:
