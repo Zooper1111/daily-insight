@@ -110,6 +110,11 @@ social-media account for video generation; specifically, TikTok Symphony is no
 longer part of the plan. Instagram Edits and CapCut are finishing tools unless
 their free generation allowances materially change.
 
+Scheduled video generation only processes the current New York date (or the
+explicit manual `edition_date`); it never searches older unfinished videos.
+A failed archived video requires deliberate manual recovery rather than causing
+repeated daily workflow failures. No automatic paid retry is submitted.
+
 The manual `resume_video` recovery path may rebuild an already-published MP4
 from its six recorded request IDs. It never submits a new paid video request.
 Each newly accepted request ID is saved immediately so an interrupted run can
