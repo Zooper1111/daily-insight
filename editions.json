@@ -1,6 +1,43 @@
 {
   "editions": [
     {
+      "date": "2026-10-19",
+      "displayDate": "Mon · Oct 19",
+      "domain": "Decision-Making",
+      "hook": "Past effort is not a forecast.",
+      "format": "carousel",
+      "insight": {
+        "title": "The sunk-cost reset",
+        "paras": [
+          "In Britain’s 1969 cabinet debate, Concorde faced cancellation amid cost and sales doubts. The project survived, but the history is more complicated than “they’d spent too much”: leaders also weighed industrial and European aviation goals. The <em>sunk-cost effect</em> is an empirically studied bias: letting unrecoverable past investment sway what you do next (Arkes &amp; Blumer, 1985). Don’t mistake a famous label for a complete account of a real decision. ([academic.oup.com](https://academic.oup.com/ehr/article/138/594-595/1363/7499305?utm_source=openai))",
+          "Reset the choice: compare the <strong>expected value from here</strong> with the remaining cost and the best alternative. Past spending belongs in the history column, not the forecast—unless it changes future options, obligations, or learning."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='22' fill='#1b1e30'/><text x='28' y='42' fill='#eceef7' font-size='21' font-family='sans-serif' font-weight='700'>A forward-only decision</text><rect x='28' y='72' width='180' height='76' rx='12' fill='#34364a'/><text x='46' y='103' fill='#9ba0b8' font-size='15' font-family='sans-serif'>PAST SPEND</text><text x='46' y='128' fill='#9ba0b8' font-size='17' font-family='sans-serif'>Already gone →</text><path d='M220 110h40' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='5 6'/><text x='273' y='116' fill='#e8b84b' font-size='15' font-family='sans-serif'>EXCLUDE</text><rect x='28' y='178' width='232' height='92' rx='12' fill='#19413f'/><text x='46' y='209' fill='#5fd4c4' font-size='15' font-family='sans-serif'>EXPECTED FUTURE VALUE</text><text x='46' y='240' fill='#eceef7' font-size='18' font-family='sans-serif'>Benefits from now</text><text x='278' y='232' fill='#eceef7' font-size='24' font-family='sans-serif'>vs.</text><rect x='338' y='178' width='194' height='92' rx='12' fill='#492d38'/><text x='354' y='209' fill='#ff7a6e' font-size='15' font-family='sans-serif'>FUTURE PRICE</text><text x='354' y='238' fill='#eceef7' font-size='16' font-family='sans-serif'>Remaining cost</text><text x='354' y='259' fill='#eceef7' font-size='16' font-family='sans-serif'>+ best alternative</text><text x='28' y='300' fill='#9ba0b8' font-size='14' font-family='sans-serif'>Continue only when the forward-looking case wins.</text></svg>",
+        "visualCaption": "Ignore what is unrecoverable; compare what comes next.",
+        "after": [
+          "A product team has spent weeks shaping a feature, but new feedback weakens the case. Before adding more work, compare its likely benefit from today with the remaining effort and the next-best use of that time.",
+          "In a strategy review, ask: “If we were choosing today, with what we know now, would we fund this next step?” If yes, name the future benefit; if no, stop or run a smaller test."
+        ]
+      },
+      "lab": {
+        "title": "Run the today test",
+        "paras": [
+          "A written reset separates evidence about the future from discomfort about changing course."
+        ],
+        "exercise": "Take one open decision. Write down past investment, expected future benefit, remaining cost, and best alternative. Cover the past-investment line; make the call from the other three."
+      },
+      "masters": null,
+      "steal": {
+        "line": "Decide from here, not from how far you’ve come.",
+        "paras": [
+          "Use this when a meeting starts treating effort already spent as proof that more effort is worthwhile."
+        ],
+        "example": [
+          "“Let’s set aside what we’ve already invested. What would make the next step worth doing now?”"
+        ]
+      }
+    },
+    {
       "date": "2026-10-17",
       "displayDate": "Sat · Oct 17",
       "domain": "Communication",
@@ -1358,39 +1395,6 @@
         ],
         "example": [
           "It may feel like we’re changing a familiar process before proving the new one will help."
-        ]
-      }
-    },
-    {
-      "date": "2026-08-18",
-      "displayDate": "Tue · Aug 18",
-      "domain": "Product Thinking",
-      "hook": "Choose the lane before choosing the work.",
-      "insight": {
-        "title": "The Guardrail Rule",
-        "paras": [
-          "The <strong>Guardrail Rule</strong> says to decide what you will not do before choosing what you will do. Clear constraints reduce choice overload and make tradeoffs easier. A useful guardrail is visible, binary, and fixed for a defined period—such as “no new integrations this cycle.”"
-        ],
-        "after": [
-          "Before the next Daisy 1 sprint or planning block, write three temporary “no” lines and judge every idea against them."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='60' width='440' height='200' rx='20' fill='none' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='6 6'/><line x1='160' y1='80' x2='160' y2='280' stroke='#e8b84b' stroke-width='4'/><line x1='400' y1='80' x2='400' y2='280' stroke='#e8b84b' stroke-width='4'/><circle cx='110' cy='160' r='10' fill='#ff7a6e'/><circle cx='220' cy='140' r='10' fill='#5fd4c4'/><circle cx='310' cy='190' r='10' fill='#a48bfa'/><circle cx='450' cy='200' r='10' fill='#5fd4c4'/><text x='95' y='300' fill='#eceef7' font-size='12'>NO</text><text x='392' y='300' fill='#eceef7' font-size='12'>NO</text><text x='210' y='50' fill='#eceef7' font-size='14'>FOCUS ZONE</text></svg>",
-        "visualCaption": "Guardrails turn an infinite field of options into one clear lane."
-      },
-      "lab": {
-        "title": "Set Three Guardrails",
-        "paras": [
-          "Constraints turn brainstorming from an infinite search into a useful comparison."
-        ],
-        "exercise": "Finish three sentences: “For the next four weeks, we will not ship anything that ___.” “We will not spend time on work that ___.” “We will not add more than ___.” Then test each proposed task against the list."
-      },
-      "steal": {
-        "line": "Before we add options, let’s agree on the guardrails.",
-        "paras": [
-          "Use it as a polite brake when a discussion expands sideways."
-        ],
-        "example": [
-          "For this cycle: no new categories, no outside dependencies, and nothing we cannot test in two weeks."
         ]
       }
     }
