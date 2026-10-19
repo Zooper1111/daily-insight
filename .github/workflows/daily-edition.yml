@@ -68,6 +68,7 @@ jobs:
         if: ${{ vars.VIDEO_PILOT_ENABLED == '1' && inputs.connection_test != true && inputs.resume_video != true && inputs.smoke_test != true }}
         env:
           HF_KEY: ${{ secrets.HF_KEY }}
+          EDITION_DATE: ${{ inputs.edition_date || '' }}
           HF_MAX_RATE_USD_PER_SECOND: "0.065"
           HF_MAX_VIDEO_COST_USD: "7.80"
           HF_PILOT_MAX_COST_USD: "30.00"
@@ -76,6 +77,7 @@ jobs:
         if: ${{ inputs.resume_video == true }}
         env:
           HF_KEY: ${{ secrets.HF_KEY }}
+          EDITION_DATE: ${{ inputs.edition_date || '' }}
           HF_MAX_RATE_USD_PER_SECOND: "0.065"
           HF_MAX_VIDEO_COST_USD: "7.80"
           HF_PILOT_MAX_COST_USD: "30.00"
