@@ -1,6 +1,42 @@
 {
   "editions": [
     {
+      "date": "2026-10-21",
+      "displayDate": "Wed · Oct 21",
+      "domain": "Leadership",
+      "hook": "When the score becomes the job",
+      "format": "carousel",
+      "insight": {
+        "title": "Campbell’s law: the metric starts to bend",
+        "paras": [
+          "In Atlanta, a state investigation found cheating on 2009 standardized tests in 44 of 56 examined schools. The governor’s summary said pressure to meet targets was a primary factor; students with inflated scores missed needed remedial help. Social scientist Donald Campbell described the mechanism in 1976: the more a quantitative measure drives decisions, the more pressure can distort both the measure and the work it represents. This is a social-science principle, not a universal law proving one cause in every case; Campbell’s original warning is not a guaranteed prediction. ([dlg.usg.edu](https://dlg.usg.edu/record/dlg_ggpd_i-ga-bg600-b-pp1-bp7-b2011-s7-h5-belec-p-btext))"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='24' fill='#1b1e30'/><text x='28' y='38' fill='#eceef7' font-size='19' font-family='sans-serif' font-weight='700'>How a proxy loses its signal</text><rect x='28' y='75' width='145' height='70' rx='12' fill='#30344d'/><text x='100' y='105' fill='#e8b84b' font-size='15' text-anchor='middle' font-family='sans-serif'>REAL GOAL</text><text x='100' y='127' fill='#eceef7' font-size='13' text-anchor='middle' font-family='sans-serif'>student learning</text><path d='M176 110H220' stroke='#9ba0b8' stroke-width='3'/><path d='M212 102l10 8-10 8' fill='none' stroke='#9ba0b8' stroke-width='3'/><rect x='225' y='75' width='145' height='70' rx='12' fill='#30344d'/><text x='297' y='105' fill='#5fd4c4' font-size='15' text-anchor='middle' font-family='sans-serif'>PROXY</text><text x='297' y='127' fill='#eceef7' font-size='13' text-anchor='middle' font-family='sans-serif'>test score</text><path d='M373 110H417' stroke='#9ba0b8' stroke-width='3'/><path d='M409 102l10 8-10 8' fill='none' stroke='#9ba0b8' stroke-width='3'/><rect x='422' y='75' width='110' height='70' rx='12' fill='#49333f'/><text x='477' y='105' fill='#ff7a6e' font-size='14' text-anchor='middle' font-family='sans-serif'>TARGET</text><text x='477' y='127' fill='#eceef7' font-size='13' text-anchor='middle' font-family='sans-serif'>high stakes</text><path d='M477 151V196H300' stroke='#ff7a6e' stroke-width='2.5' fill='none'/><path d='M308 188l-10 8 10 8' fill='none' stroke='#ff7a6e' stroke-width='2.5'/><rect x='91' y='203' width='311' height='66' rx='12' fill='#30344d'/><text x='246' y='230' fill='#ff7a6e' font-size='15' text-anchor='middle' font-family='sans-serif' font-weight='700'>PRESSURE TO OPTIMIZE THE SCORE</text><text x='246' y='252' fill='#eceef7' font-size='13' text-anchor='middle' font-family='sans-serif'>score rises; learning may not</text></svg>",
+        "visualCaption": "A proxy is useful until rewards make people optimize the proxy itself.",
+        "after": [
+          "In a quarterly planning session, a team marks every small task complete to improve its completion rate, while the important outcome remains stuck. Pair the count with a short evidence check: what changed for the user?",
+          "When a product team celebrates demo sign-ups, it can mistake curiosity for lasting value. Ask: if this number improved while the real outcome stayed flat, what behavior would explain the gap?"
+        ]
+      },
+      "lab": {
+        "title": "Stress-test a metric",
+        "paras": [
+          "A measure is safer when it informs judgment rather than standing in for the whole goal."
+        ],
+        "exercise": "Pick one number used to judge progress. Write: “If someone optimized only this, how could they make it rise without improving the real outcome?” Add one independent check."
+      },
+      "masters": null,
+      "steal": {
+        "line": "Pair every target with a reality check.",
+        "paras": [
+          "Use the target to spot a signal, then verify the underlying result before rewarding or changing course."
+        ],
+        "example": [
+          "“The completion rate is up. What evidence shows the customer-facing outcome improved too?”"
+        ]
+      }
+    },
+    {
       "date": "2026-10-19",
       "displayDate": "Mon · Oct 19",
       "domain": "Decision-Making",
@@ -1349,52 +1385,6 @@
         ],
         "example": [
           "Right now Monday is reconciliation. I want Monday to be decision time."
-        ]
-      }
-    },
-    {
-      "date": "2026-08-20",
-      "displayDate": "Thu · Aug 20",
-      "domain": "Conversation",
-      "hook": "Name their reality before defending yours.",
-      "insight": {
-        "title": "Tactical Empathy in One Line",
-        "paras": [
-          "Chris Voss’s <strong>tactical empathy</strong> is the deliberate act of showing that you understand another person’s pressures without necessarily agreeing with them. Before explaining your position, name the concern you think they are carrying. If you are wrong, they will correct you; if you are right, defensiveness drops."
-        ],
-        "after": [
-          "Before presenting a project change, try: “It probably feels like this adds work before it removes any.” Then pause."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='170' cy='160' r='80' fill='none' stroke='#5fd4c4' stroke-width='4'/><circle cx='390' cy='160' r='80' fill='none' stroke='#a48bfa' stroke-width='4'/><path d='M210 130 Q280 100 350 130' fill='none' stroke='#eceef7' stroke-width='3' stroke-linecap='round'/><path d='M210 190 Q280 220 350 190' fill='none' stroke='#9ba0b8' stroke-width='2' stroke-linecap='round' stroke-dasharray='6 6'/><circle cx='280' cy='160' r='6' fill='#e8b84b'/><text x='150' y='270' fill='#eceef7' font-family='system-ui, sans-serif' font-size='14'>their view</text><text x='365' y='270' fill='#eceef7' font-family='system-ui, sans-serif' font-size='14'>your view</text><text x='250' y='295' fill='#ff7a6e' font-family='system-ui, sans-serif' font-size='13'>spoken bridge</text></svg>",
-        "visualCaption": "Two minds, one spoken bridge: name their view before you defend yours."
-      },
-      "lab": {
-        "title": "Try the Internal-Monologue Test",
-        "paras": [
-          "Resistance becomes easier to discuss once its likely source is spoken aloud."
-        ],
-        "exercise": "Choose one conversation that may have friction. Write a sentence beginning, “You’re likely worried that…” Say it early, then stay quiet for three seconds. Let the other person confirm, correct, or deepen it before you explain your view."
-      },
-      "masters": {
-        "name": "Chris Voss",
-        "talk": "Never Split the Difference | Talks at Google",
-        "videoId": "1dx4z1_A2bs",
-        "start": 900,
-        "watchWindow": "Watch 15:00–17:30.",
-        "paras": [
-          "This one is worth watching because the pause and tone are the technique: Voss sounds curious, not manipulative."
-        ],
-        "observe": [
-          "Notice how long he waits after naming the other person’s perspective."
-        ]
-      },
-      "steal": {
-        "line": "Before I explain my view, let me try to say what this looks like from your side.",
-        "paras": [
-          "Use it when logic alone is making a tense conversation tighter."
-        ],
-        "example": [
-          "It may feel like we’re changing a familiar process before proving the new one will help."
         ]
       }
     }
