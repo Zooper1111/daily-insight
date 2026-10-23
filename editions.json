@@ -1,6 +1,43 @@
 {
   "editions": [
     {
+      "date": "2026-10-23",
+      "displayDate": "Fri · Oct 23",
+      "domain": "Product Thinking",
+      "hook": "Your queue is a forecast hiding in plain sight.",
+      "format": "carousel",
+      "insight": {
+        "title": "Little’s Law: work waiting is time",
+        "paras": [
+          "A planning session has 12 items underway, but the team finishes 4 each week. The work feels busy; the queue says each item takes about 3 weeks to get through. In 1961, operations researcher John Little proved the formal relationship behind this: average work in a stable system equals throughput × average time in the system. Rearranged: time = work in progress ÷ throughput. ([pubsonline.informs.org](https://pubsonline.informs.org/doi/abs/10.1287/opre.9.3.383?utm_source=openai))",
+          "For Daisy 1, imagine the planning group narrows active work from 12 items to 8 while still finishing 4 weekly: the average becomes 2 weeks. That is a useful estimate, not a promise—Little’s Law relates long-run averages; it doesn’t guarantee that cutting work-in-progress will preserve throughput. Check that your system is stable and define what counts as “in progress.”"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='22' fill='#1b1e30'/><text x='32' y='54' fill='#eceef7' font-size='23' font-family='sans-serif' font-weight='700'>Little’s Law · long-run averages</text><text x='40' y='125' fill='#5fd4c4' font-size='30' font-family='sans-serif' font-weight='700'>WIP</text><text x='125' y='125' fill='#eceef7' font-size='28' font-family='sans-serif'>÷</text><text x='164' y='125' fill='#e8b84b' font-size='25' font-family='sans-serif' font-weight='700'>throughput</text><text x='317' y='125' fill='#eceef7' font-size='28' font-family='sans-serif'>=</text><text x='362' y='125' fill='#ff7a6e' font-size='26' font-family='sans-serif' font-weight='700'>time</text><line x1='40' y1='158' x2='520' y2='158' stroke='#454963' stroke-width='2'/><text x='40' y='202' fill='#9ba0b8' font-size='17' font-family='sans-serif'>12 items ÷ 4 per week</text><text x='348' y='202' fill='#eceef7' font-size='19' font-family='sans-serif' font-weight='700'>= 3 weeks</text><text x='40' y='246' fill='#9ba0b8' font-size='17' font-family='sans-serif'>8 items ÷ 4 per week</text><text x='348' y='246' fill='#eceef7' font-size='19' font-family='sans-serif' font-weight='700'>= 2 weeks</text><text x='40' y='287' fill='#9ba0b8' font-size='14' font-family='sans-serif'>Only if throughput holds and the system is stable.</text></svg>",
+        "visualCaption": "At the same completion rate, fewer active items mean a shorter average flow time.",
+        "after": [
+          "In a Daisy 1 planning session, the group has 12 items in motion and wants to shorten delivery time. They pause new starts, finish existing items, and compare weekly completions; the useful signal is whether the queue shrinks without completions falling.",
+          "A client team sees requests piling up despite steady completions. Before asking people to work faster, calculate work-in-progress ÷ weekly throughput. Is the delay coming from too much work entering the system?"
+        ]
+      },
+      "lab": {
+        "title": "Read the queue",
+        "paras": [
+          "This turns vague urgency into a measurable flow question."
+        ],
+        "exercise": "Take under five minutes: estimate active items and weekly completions, then divide. Say: “We have about __ items in progress and finish __ per week, so the average flow time is about __ weeks.”"
+      },
+      "masters": null,
+      "steal": {
+        "line": "Don’t start faster than you finish.",
+        "paras": [
+          "Use this as a prompt to inspect the queue—not as a blanket rule to stop all new work."
+        ],
+        "example": [
+          "“Before we add another priority, what will we finish or pause?”"
+        ]
+      }
+    },
+    {
       "date": "2026-10-21",
       "displayDate": "Wed · Oct 21",
       "domain": "Leadership",
@@ -1352,39 +1389,6 @@
         ],
         "example": [
           "By the end of this hour, we will make one decision. Let’s park anything that does not change it."
-        ]
-      }
-    },
-    {
-      "date": "2026-08-22",
-      "displayDate": "Sat · Aug 22",
-      "domain": "Storytelling",
-      "hook": "One contrast can carry the whole story.",
-      "insight": {
-        "title": "The Contrast Spine",
-        "paras": [
-          "<strong>Contrast framing</strong> organizes an explanation around a visible shift instead of a list of points. Use this spine: <em>Now → Cost → Could Be → Path → First Step</em>. Moving between the current reality and a better one creates tension, clarity, and momentum without theatrical delivery."
-        ],
-        "after": [
-          "When explaining Daisy 1 or another project, show how one familiar moment works now and how you want that same moment to feel."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><line x1='60' y1='260' x2='500' y2='60' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='4 6'/><circle cx='90' cy='230' r='6' fill='#eceef7'/><circle cx='210' cy='190' r='6' fill='#ff7a6e'/><circle cx='320' cy='150' r='6' fill='#eceef7'/><circle cx='430' cy='110' r='6' fill='#5fd4c4'/><text x='80' y='255' fill='#9ba0b8' font-size='10'>Now</text><text x='180' y='210' fill='#ff7a6e' font-size='10'>Pain</text><text x='300' y='170' fill='#eceef7' font-size='10'>Could Be</text><text x='410' y='130' fill='#5fd4c4' font-size='10'>Path</text><path d='M90 230 C140 210 160 210 210 190' stroke='#ff7a6e' stroke-width='3' fill='none'/><path d='M210 190 C260 170 280 170 320 150' stroke='#eceef7' stroke-width='3' fill='none'/><path d='M320 150 C370 130 390 130 430 110' stroke='#5fd4c4' stroke-width='3' fill='none'/><text x='60' y='40' fill='#e8b84b' font-size='14'>Contrast spine: from Now → Could Be</text></svg>",
-        "visualCaption": "A single sloping line with small turns: Now → Pain → Could Be → Path."
-      },
-      "lab": {
-        "title": "Write a 5-Line Contrast Pitch",
-        "paras": [
-          "People remember a before-and-after picture more easily than a feature list."
-        ],
-        "exercise": "Complete five short lines: “Right now…” “The hidden cost is…” “It could look like…” “The shift is…” “The first step is…” Read them aloud and cut any detail that does not strengthen the contrast."
-      },
-      "steal": {
-        "line": "Right now it works like this; I want it to feel like this.",
-        "paras": [
-          "Use it before details so the listener knows what change the details serve."
-        ],
-        "example": [
-          "Right now Monday is reconciliation. I want Monday to be decision time."
         ]
       }
     }
