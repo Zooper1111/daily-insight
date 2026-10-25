@@ -1,6 +1,42 @@
 {
   "editions": [
     {
+      "date": "2026-10-25",
+      "displayDate": "Sun · Oct 25",
+      "domain": "Strategy",
+      "hook": "A good feature can still weaken your strategy.",
+      "format": "carousel",
+      "insight": {
+        "title": "Make the choices reinforce one another",
+        "paras": [
+          "In Michael Porter’s documented 1996 Southwest case, rapid gate turnarounds worked alongside choices such as no meals, assigned seats, or baggage transfers. Each supported frequent, low-cost flights. Porter called this <em>activity-system fit</em>: advantage comes from mutually reinforcing choices, not isolated best practices. It’s a strategy framework, not proof that any bundle wins. His case describes Southwest at that time; fit must be re-tested as customers and economics change. ([hbr.org](https://hbr.org/1996/11/what-is-strategy?ab=HP-hero-for-you-2&utm_source=openai))"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='22' fill='#1b1e30'/><text x='280' y='38' fill='#eceef7' font-size='19' text-anchor='middle' font-family='sans-serif' font-weight='700'>STRATEGY AS A FITTING SYSTEM</text><rect x='185' y='75' width='190' height='54' rx='12' fill='#a48bfa'/><text x='280' y='108' fill='#1b1e30' font-size='17' text-anchor='middle' font-family='sans-serif' font-weight='700'>Chosen promise</text><path d='M218 130 L150 183 M342 130 L410 183 M170 218 C205 280 355 280 390 218' fill='none' stroke='#5fd4c4' stroke-width='4'/><polygon points='144,182 158,185 149,196' fill='#5fd4c4'/><polygon points='416,182 402,185 411,196' fill='#5fd4c4'/><polygon points='280,275 272,263 288,263' fill='#5fd4c4'/><rect x='55' y='185' width='190' height='54' rx='12' fill='#2d3447'/><text x='150' y='208' fill='#eceef7' font-size='15' text-anchor='middle' font-family='sans-serif'>Activity A</text><text x='150' y='227' fill='#9ba0b8' font-size='12' text-anchor='middle' font-family='sans-serif'>supports the promise</text><rect x='315' y='185' width='190' height='54' rx='12' fill='#2d3447'/><text x='410' y='208' fill='#eceef7' font-size='15' text-anchor='middle' font-family='sans-serif'>Activity B</text><text x='410' y='227' fill='#9ba0b8' font-size='12' text-anchor='middle' font-family='sans-serif'>makes A more valuable</text><text x='280' y='303' fill='#e8b84b' font-size='13' text-anchor='middle' font-family='sans-serif'>A lone feature may add cost without strengthening the system</text></svg>",
+        "visualCaption": "Strategy gets stronger when each activity supports the others.",
+        "after": [
+          "In a Daisy 1 planning session, a team wants fewer stalled projects. More status fields alone create extra updates; pairing one clear signal with an owner and next action makes the information useful.",
+          "In a strategy memo, a leader considering a new service asks what existing choices it strengthens—and what trade-off it requires. Does the addition reinforce the promise, or merely add complexity?"
+        ]
+      },
+      "lab": {
+        "title": "Run a fit check",
+        "paras": [
+          "A quick system check can expose attractive additions that quietly undermine your chosen position."
+        ],
+        "exercise": "Pick one proposed change. Write its intended benefit, the two activities it strengthens, and one trade-off it requires. If you can’t name those connections, pause before adding it."
+      },
+      "masters": null,
+      "steal": {
+        "line": "Does this make the whole system stronger?",
+        "paras": [
+          "Use the question before approving a feature, process, or new commitment. Look for reinforcement—not just local improvement."
+        ],
+        "example": [
+          "“This could help on its own. Which other choice does it reinforce, and what are we willing to give up for it?”"
+        ]
+      }
+    },
+    {
       "date": "2026-10-23",
       "displayDate": "Fri · Oct 23",
       "domain": "Product Thinking",
@@ -1356,39 +1392,6 @@
         ],
         "example": [
           "Imagine it’s the Thursday check-in. Here is what changes in that one moment."
-        ]
-      }
-    },
-    {
-      "date": "2026-08-24",
-      "displayDate": "Mon · Aug 24",
-      "domain": "Decision-Making",
-      "hook": "Give today one job.",
-      "insight": {
-        "title": "Day-Tight Compartment Planning",
-        "paras": [
-          "Dale Carnegie’s <strong>day-tight compartments</strong> idea is a focus rule: stop carrying yesterday and the whole quarter in your head. Define one visible outcome for today, choose at most three moves that create it, and let other good ideas wait. The constraint reduces decisions and makes progress easier to see."
-        ],
-        "after": [
-          "Instead of debating an entire roadmap, ask: “What would visibly exist by 5 p.m. if today went well?”"
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='40' y='60' width='140' height='200' rx='8' fill='none' stroke='#9ba0b8' stroke-width='2'/><rect x='210' y='40' width='140' height='240' rx='8' fill='none' stroke='#e8b84b' stroke-width='3'/><rect x='380' y='60' width='140' height='200' rx='8' fill='none' stroke='#9ba0b8' stroke-width='2'/><text x='110' y='290' text-anchor='middle' fill='#9ba0b8' font-family='system-ui' font-size='12'>Yesterday</text><text x='280' y='290' text-anchor='middle' fill='#eceef7' font-family='system-ui' font-size='12'>Today</text><text x='450' y='290' text-anchor='middle' fill='#9ba0b8' font-family='system-ui' font-size='12'>Tomorrow</text><line x1='210' y1='110' x2='350' y2='110' stroke='#5fd4c4' stroke-width='2'/><circle cx='240' cy='110' r='5' fill='#5fd4c4'/><circle cx='280' cy='110' r='5' fill='#5fd4c4'/><circle cx='320' cy='110' r='5' fill='#5fd4c4'/><text x='280' y='30' text-anchor='middle' fill='#ff7a6e' font-family='system-ui' font-size='13'>3 moves only</text><path d='M280 140 C280 170 300 190 320 205' stroke='#a48bfa' stroke-width='2' fill='none' stroke-dasharray='4 3'/><circle cx='320' cy='205' r='4' fill='#a48bfa'/></svg>",
-        "visualCaption": "Seal off yesterday and tomorrow so today’s three moves are painfully obvious."
-      },
-      "lab": {
-        "title": "Build a One-Day Roadmap",
-        "paras": [
-          "A short horizon turns vague priorities into observable work."
-        ],
-        "exercise": "Write one outcome that must exist by day’s end. List no more than three moves that produce it. Circle the first. Protect the block with: “I’m focused on ___ until ___. Can we take that other topic afterward?”"
-      },
-      "steal": {
-        "line": "Today has one job; everything else can wait.",
-        "paras": [
-          "Say it before a work block or a meeting with too many priorities."
-        ],
-        "example": [
-          "By the end of this hour, we will make one decision. Let’s park anything that does not change it."
         ]
       }
     }
