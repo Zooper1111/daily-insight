@@ -1,6 +1,42 @@
 {
   "editions": [
     {
+      "date": "2026-10-27",
+      "displayDate": "Tue · Oct 27",
+      "domain": "Conversation",
+      "hook": "A small, sincere favor can change the tone.",
+      "format": "carousel",
+      "insight": {
+        "title": "The Ben Franklin effect",
+        "paras": [
+          "Benjamin Franklin recalled asking a rival legislator to lend him a rare book. The man did; their next conversation was friendlier, Franklin wrote. This is Franklin’s own retrospective account, not independent proof. ([gutenberg.org](https://www.gutenberg.org/files/148/148-h/148-h.htm?trk=article-ssr-frontend-pulse_little-text-block&utm_source=openai)) In a 1969 experiment, Jecker and Landy found that some participants who did a favor for a researcher later rated him more favorably. Their proposed explanation: we may adjust how we feel to fit an action we chose. It’s an empirical result, not a dependable social trick—the original study doesn’t guarantee the effect in everyday relationships. ([journals.sagepub.com](https://journals.sagepub.com/doi/abs/10.1177/001872676902200407?utm_source=openai))"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='24' fill='#1b1e30'/><text x='36' y='44' fill='#eceef7' font-size='20' font-family='sans-serif' font-weight='700'>A possible path—not a promise</text><rect x='34' y='94' width='138' height='82' rx='14' fill='#30334a'/><text x='103' y='127' fill='#e8b84b' text-anchor='middle' font-size='16' font-family='sans-serif'>Genuine,</text><text x='103' y='150' fill='#eceef7' text-anchor='middle' font-size='16' font-family='sans-serif'>small ask</text><path d='M176 135h35' stroke='#9ba0b8' stroke-width='3'/><path d='m204 127 9 8-9 8' fill='none' stroke='#9ba0b8' stroke-width='3'/><rect x='220' y='94' width='145' height='82' rx='14' fill='#30334a'/><text x='292' y='127' fill='#5fd4c4' text-anchor='middle' font-size='16' font-family='sans-serif'>They choose</text><text x='292' y='150' fill='#eceef7' text-anchor='middle' font-size='16' font-family='sans-serif'>to help</text><path d='M369 135h35' stroke='#9ba0b8' stroke-width='3'/><path d='m397 127 9 8-9 8' fill='none' stroke='#9ba0b8' stroke-width='3'/><rect x='414' y='94' width='112' height='82' rx='14' fill='#30334a'/><text x='470' y='127' fill='#a48bfa' text-anchor='middle' font-size='16' font-family='sans-serif'>Warmer</text><text x='470' y='150' fill='#eceef7' text-anchor='middle' font-size='16' font-family='sans-serif'>next exchange?</text><path d='M292 184v44h178' fill='none' stroke='#ff7a6e' stroke-width='2' stroke-dasharray='6 6'/><text x='292' y='256' fill='#ff7a6e' text-anchor='middle' font-size='14' font-family='sans-serif'>Pressure or a fake ask can break the trust.</text><text x='292' y='286' fill='#9ba0b8' text-anchor='middle' font-size='13' font-family='sans-serif'>Offer an easy no; accept it warmly.</text></svg>",
+        "visualCaption": "A real choice may invite warmth; pressure undermines it.",
+        "after": [
+          "In a Daisy 1 planning discussion, two collaborators disagree about which priority to tackle first. Instead of pushing your answer, ask, “Could you help me see what I’m missing?” Their explanation gives you a reason to understand each other—not a guarantee you’ll agree.",
+          "At work, ask someone for a brief, specific perspective only when you genuinely value it. What small question would make room for their judgment without making them feel obliged?"
+        ]
+      },
+      "lab": {
+        "title": "Ask for a real perspective",
+        "paras": [
+          "A bounded question lets someone help by choice, while giving you useful information."
+        ],
+        "exercise": "Think of one live disagreement. Ask, “What’s one factor you think I’m underweighting?” Listen without rebutting for two minutes; thank them, and make clear there’s no pressure to solve it."
+      },
+      "masters": null,
+      "steal": {
+        "line": "Invite insight; don’t manufacture obligation.",
+        "paras": [
+          "Use the question when you’re open to being changed by the answer. If they decline, keep the conversation easy."
+        ],
+        "example": [
+          "“You’ve thought about this more than I have—would you be willing to give me one quick read? No worries if not.”"
+        ]
+      }
+    },
+    {
       "date": "2026-10-25",
       "displayDate": "Sun · Oct 25",
       "domain": "Strategy",
@@ -1359,39 +1395,6 @@
         ],
         "example": [
           "Before we wrap, what risk are we being too polite to name?"
-        ]
-      }
-    },
-    {
-      "date": "2026-08-26",
-      "displayDate": "Wed · Aug 26",
-      "domain": "Communication",
-      "hook": "One scene beats five explanations.",
-      "insight": {
-        "title": "The One-Context Rule",
-        "paras": [
-          "Working memory is limited. When an explanation jumps among several examples, metaphors, and situations, listeners spend their attention tracking the switches. The <strong>One-Context Rule</strong> says: choose one concrete scene and keep the entire explanation there until the idea lands."
-        ],
-        "after": [
-          "For your next project explanation, start with one moment: “Imagine you’re opening Daisy 1 on Monday morning…”"
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='60' width='180' height='200' rx='10' fill='none' stroke='#e8b84b' stroke-width='3'/><circle cx='120' cy='120' r='26' fill='none' stroke='#eceef7' stroke-width='2'/><rect x='96' y='160' width='96' height='12' rx='3' fill='#eceef7'/><rect x='96' y='184' width='72' height='10' rx='3' fill='#9ba0b8'/><rect x='96' y='206' width='84' height='10' rx='3' fill='#5fd4c4'/><rect x='280' y='50' width='70' height='60' rx='8' fill='none' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='4 4'/><rect x='340' y='130' width='90' height='60' rx='8' fill='none' stroke='#ff7a6e' stroke-width='2' stroke-dasharray='4 4'/><rect x='300' y='220' width='80' height='50' rx='8' fill='none' stroke='#a48bfa' stroke-width='2' stroke-dasharray='4 4'/><line x1='240' y1='160' x2='280' y2='80' stroke='#9ba0b8' stroke-width='2' stroke-dasharray='4 4'/><line x1='240' y1='176' x2='340' y2='160' stroke='#ff7a6e' stroke-width='2' stroke-dasharray='4 4'/><line x1='240' y1='192' x2='300' y2='236' stroke='#a48bfa' stroke-width='2' stroke-dasharray='4 4'/><text x='70' y='95' fill='#eceef7' font-size='10' font-family='system-ui, sans-serif'>ONE CONTEXT</text><text x='290' y='46' fill='#9ba0b8' font-size='9' font-family='system-ui, sans-serif'>extra tab</text><text x='352' y='126' fill='#ff7a6e' font-size='9' font-family='system-ui, sans-serif'>extra tab</text><text x='308' y='216' fill='#a48bfa' font-size='9' font-family='system-ui, sans-serif'>extra tab</text></svg>",
-        "visualCaption": "Hold one scene in focus; every extra example is another tab in their brain."
-      },
-      "lab": {
-        "title": "Pin the Idea to One Scene",
-        "paras": [
-          "A single lived-in example is easier to follow and retell."
-        ],
-        "exercise": "Write: “This lives in the scene where ___.” Open your explanation with that moment and stay there for two minutes. If you start adding another scenario, say: “Let’s stay with this example for now.”"
-      },
-      "steal": {
-        "line": "Let’s keep this in one concrete situation so it’s easy to see.",
-        "paras": [
-          "Use this when an explanation starts to sprawl."
-        ],
-        "example": [
-          "Imagine it’s the Thursday check-in. Here is what changes in that one moment."
         ]
       }
     }
