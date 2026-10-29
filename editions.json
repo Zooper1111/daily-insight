@@ -1,6 +1,42 @@
 {
   "editions": [
     {
+      "date": "2026-10-29",
+      "displayDate": "Thu · Oct 29",
+      "domain": "Innovation",
+      "hook": "A good system knows when to stop.",
+      "format": "carousel",
+      "insight": {
+        "title": "Jidoka: stop defects at the source",
+        "paras": [
+          "A loom can keep weaving after a thread breaks, turning one small fault into yards of flawed cloth. Sakichi Toyoda designed stop mechanisms to halt the loom when a thread broke. Toyota later named the broader production principle <em>jidoka</em>: detect an abnormality, stop, fix its cause, then resume. This is a management principle, not a guarantee that every automated stop improves quality; the signal and response must be well designed. Toyota’s historical account traces the idea to Toyoda’s loom inventions. ([toyota-global.com](https://www.toyota-global.com/company/history_of_toyota/75years/text/taking_on_the_automotive_business/chapter1/section1/item4.html?utm_source=openai))"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='24' fill='#1b1e30'/><text x='28' y='42' fill='#eceef7' font-size='21' font-family='sans-serif' font-weight='700'>JIDOKA · contain the fault</text><text x='28' y='70' fill='#9ba0b8' font-size='14' font-family='sans-serif'>A short feedback loop prevents defect propagation</text><rect x='28' y='116' width='112' height='70' rx='12' fill='#292d43'/><text x='84' y='145' text-anchor='middle' fill='#eceef7' font-size='14' font-family='sans-serif'>Abnormality</text><text x='84' y='166' text-anchor='middle' fill='#ff7a6e' font-size='13' font-family='sans-serif'>thread breaks</text><path d='M145 151h25' stroke='#9ba0b8' stroke-width='2'/><path d='m166 145 7 6-7 6' fill='none' stroke='#9ba0b8' stroke-width='2'/><rect x='178' y='116' width='100' height='70' rx='12' fill='#3a2b3d'/><text x='228' y='145' text-anchor='middle' fill='#eceef7' font-size='14' font-family='sans-serif'>Stop</text><text x='228' y='166' text-anchor='middle' fill='#ff7a6e' font-size='13' font-family='sans-serif'>contain spread</text><path d='M283 151h25' stroke='#9ba0b8' stroke-width='2'/><path d='m304 145 7 6-7 6' fill='none' stroke='#9ba0b8' stroke-width='2'/><rect x='316' y='116' width='100' height='70' rx='12' fill='#20383a'/><text x='366' y='145' text-anchor='middle' fill='#eceef7' font-size='14' font-family='sans-serif'>Fix cause</text><text x='366' y='166' text-anchor='middle' fill='#5fd4c4' font-size='13' font-family='sans-serif'>not just symptom</text><path d='M421 151h25' stroke='#9ba0b8' stroke-width='2'/><path d='m442 145 7 6-7 6' fill='none' stroke='#9ba0b8' stroke-width='2'/><rect x='454' y='116' width='78' height='70' rx='12' fill='#292d43'/><text x='493' y='145' text-anchor='middle' fill='#eceef7' font-size='14' font-family='sans-serif'>Resume</text><text x='493' y='166' text-anchor='middle' fill='#5fd4c4' font-size='13' font-family='sans-serif'>with check</text><path d='M493 194v46H84v-46' fill='none' stroke='#a48bfa' stroke-width='2' stroke-dasharray='5 5'/><text x='288' y='263' text-anchor='middle' fill='#a48bfa' font-size='14' font-family='sans-serif'>feedback: learn why it failed</text></svg>",
+        "visualCaption": "Detect → stop → fix the cause → resume; the loop matters as much as the alarm.",
+        "after": [
+          "A product team is about to ship a confusing setup step. Instead of letting every user hit it, they pause rollout, inspect where people get stuck, and revise the step before expanding.",
+          "In a Daisy 1 planning discussion, you notice a task keeps returning unfinished. Ask what condition is producing the repeat; what signal would justify stopping the process before the same defect spreads?"
+        ]
+      },
+      "lab": {
+        "title": "Design a useful stop signal",
+        "paras": [
+          "A warning helps only when someone can recognize it, act on it, and learn from what happened."
+        ],
+        "exercise": "Pick one recurring snag in a project or meeting. In under five minutes, write: “We pause when ___; the owner checks ___; we resume when ___.” Make the trigger observable, not vague."
+      },
+      "masters": null,
+      "steal": {
+        "line": "Stop the spread; fix the cause.",
+        "paras": [
+          "Use this when a small defect is about to multiply into rework, confusion, or a bad decision."
+        ],
+        "example": [
+          "“Before we add more tasks, let’s find out why this one keeps coming back.”"
+        ]
+      }
+    },
+    {
       "date": "2026-10-27",
       "displayDate": "Tue · Oct 27",
       "domain": "Conversation",
@@ -1362,39 +1398,6 @@
         ],
         "example": [
           "What feels riskiest about this plan from where you sit?"
-        ]
-      }
-    },
-    {
-      "date": "2026-08-28",
-      "displayDate": "Fri · Aug 28",
-      "domain": "Leadership",
-      "hook": "Make honesty part of the meeting.",
-      "insight": {
-        "title": "The Safety Question",
-        "paras": [
-          "<strong>Psychological safety</strong> means people can ask questions, admit uncertainty, and surface bad news without being punished for it. It is not comfort or constant agreement. A repeatable closing question makes candor part of the work instead of something people must risk introducing on their own."
-        ],
-        "after": [
-          "End one Daisy 1 or planning check-in with: “What feels even a little unsafe to say about this plan?”"
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='60' width='440' height='200' rx='16' fill='none' stroke='#eceef7' stroke-width='2'/><circle cx='140' cy='160' r='26' fill='none' stroke='#5fd4c4' stroke-width='3'/><path d='M140 144c7 0 12 4 12 10 0 5-3 8-7 10-3 1-4 3-4 7' fill='none' stroke='#5fd4c4' stroke-width='3' stroke-linecap='round'/><circle cx='140' cy='186' r='3' fill='#5fd4c4'/><line x1='190' y1='135' x2='430' y2='135' stroke='#9ba0b8' stroke-width='2' stroke-linecap='round'/><line x1='190' y1='160' x2='400' y2='160' stroke='#9ba0b8' stroke-width='2' stroke-linecap='round'/><line x1='190' y1='185' x2='360' y2='185' stroke='#9ba0b8' stroke-width='2' stroke-linecap='round'/><rect x='320' y='210' width='150' height='30' rx='6' fill='none' stroke='#e8b84b' stroke-width='2'/><text x='395' y='230' text-anchor='middle' fill='#e8b84b' font-family='system-ui, -apple-system, BlinkMacSystemFont, sans-serif' font-size='12'>\"What feels unsafe to say?\"</text><circle cx='70' cy='50' r='6' fill='#ff7a6e'/><circle cx='88' cy='50' r='6' fill='#5fd4c4'/><circle cx='106' cy='50' r='6' fill='#a48bfa'/></svg>",
-        "visualCaption": "A recurring question turns vague unease into explicit signal."
-      },
-      "lab": {
-        "title": "Run a 90-Second Safety Check",
-        "paras": [
-          "“Any questions?” usually invites silence; a specific risk question invites signal."
-        ],
-        "exercise": "Ask the Safety Question, then wait ten full seconds. When someone answers, say: “Thank you—that’s useful to surface early.” Do not defend the plan. Ask only: “What would make this feel 20% safer?”"
-      },
-      "steal": {
-        "line": "What feels even a little unsafe to say about this plan?",
-        "paras": [
-          "Use it at the same point in a recurring meeting so candor becomes routine."
-        ],
-        "example": [
-          "Before we wrap, what risk are we being too polite to name?"
         ]
       }
     }
