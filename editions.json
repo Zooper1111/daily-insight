@@ -1,6 +1,43 @@
 {
   "editions": [
     {
+      "date": "2026-10-31",
+      "displayDate": "Sat · Oct 31",
+      "domain": "Communication",
+      "hook": "The last minute can rewrite the whole meeting.",
+      "format": "carousel",
+      "insight": {
+        "title": "The peak-end rule",
+        "paras": [
+          "In a randomized 2003 trial, 682 colonoscopy patients were assigned either standard care or a version that added up to three minutes of less painful time at the end. The longer procedure was remembered as less unpleasant. Redelmeier, Katz, and Kahneman’s result helped demonstrate the <strong>peak-end rule</strong>: memory of an experience is shaped disproportionately by its most intense moment and its ending—not simply its total duration.",
+          "As a rough <em>psychological heuristic</em>, think: remembered impression ≈ peak + ending. This is not a precise formula or a license to prolong discomfort; the study concerns retrospective pain ratings in a specific medical setting."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='18' fill='#1b1e30'/><text x='28' y='34' fill='#eceef7' font-size='18' font-family='sans-serif' font-weight='700'>A gentler ending, a different memory</text><path d='M70 245H510M70 245V66' stroke='#9ba0b8' stroke-width='2'/><text x='28' y='78' fill='#9ba0b8' font-size='13' font-family='sans-serif'>more pain</text><text x='440' y='275' fill='#9ba0b8' font-size='13' font-family='sans-serif'>time →</text><path d='M80 218 C145 202 165 105 235 99 S325 140 382 164 S448 190 500 199' fill='none' stroke='#ff7a6e' stroke-width='4'/><path d='M80 218 C145 202 165 105 235 99 S325 140 382 164 S430 187 452 204 S480 219 500 223' fill='none' stroke='#5fd4c4' stroke-width='4'/><circle cx='235' cy='99' r='5' fill='#e8b84b'/><text x='246' y='92' fill='#e8b84b' font-size='13' font-family='sans-serif'>peak</text><text x='385' y='153' fill='#ff7a6e' font-size='13' font-family='sans-serif'>abrupt end</text><text x='390' y='240' fill='#5fd4c4' font-size='13' font-family='sans-serif'>less painful end</text><text x='82' y='296' fill='#9ba0b8' font-size='12' font-family='sans-serif'>Conceptual trajectories—not trial measurements</text></svg>",
+        "visualCaption": "Memory weights the high point and the ending more than the full timeline.",
+        "after": [
+          "A facilitator is wrapping a tense planning meeting: the team has chosen priorities, but people leave remembering the unresolved disagreement. She closes by naming the decision, what remains open, and the next check-in. The ending gives the meeting a clear landing without pretending the disagreement vanished.",
+          "In a demo or client explanation, end with the useful takeaway rather than a rushed final detail. Ask: what moment will people remember most—and what honest ending can help them make sense of it?"
+        ]
+      },
+      "lab": {
+        "title": "Design the landing",
+        "paras": [
+          "A clear close helps people leave with the point, not just the friction."
+        ],
+        "exercise": "Before your next meeting or explanation, write a 20-second close: “We decided ___. The open question is ___. Next, ___ will ___ by ___.” Say it aloud once."
+      },
+      "masters": null,
+      "steal": {
+        "line": "Give the ending a job.",
+        "paras": [
+          "Use your final sentence to resolve the opening question, name the decision, or make the next step unmistakable. Don’t use it to conceal a real problem."
+        ],
+        "example": [
+          "“We haven’t settled the timing, but we have chosen the direction; we’ll compare the two options on Friday.”"
+        ]
+      }
+    },
+    {
       "date": "2026-10-29",
       "displayDate": "Thu · Oct 29",
       "domain": "Innovation",
@@ -1365,39 +1402,6 @@
         ],
         "example": [
           "For this priority, we chose ___. This week we’ll test ___. It matters because ___."
-        ]
-      }
-    },
-    {
-      "date": "2026-08-30",
-      "displayDate": "Sun · Aug 30",
-      "domain": "Conversation",
-      "hook": "Ask before you broadcast.",
-      "insight": {
-        "title": "The 70/30 Curiosity Rule",
-        "paras": [
-          "In an important conversation, put roughly 70% of your attention on <strong>curiosity</strong>—questions, reflections, and follow-ups—and 30% on explaining your view. The ratio is not a timer; it is a bias against pitching too early. Curiosity lowers defensiveness and reveals the constraints your recommendation must actually fit."
-        ],
-        "after": [
-          "Before explaining a Daisy 1 or planning choice, ask what the other person most needs the decision to make easier."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='180' cy='160' r='110' fill='none' stroke='#9ba0b8' stroke-width='4'/><path d='M100 160 A80 80 0 0 1 260 160' fill='none' stroke='#5fd4c4' stroke-width='14' stroke-linecap='round'/><path d='M260 160 A80 80 0 0 1 100 160' fill='none' stroke='#ff7a6e' stroke-width='14' stroke-linecap='round' stroke-dasharray='6 10'/><text x='140' y='135' fill='#eceef7' font-size='18' font-family='system-ui, sans-serif'>70%</text><text x='205' y='200' fill='#eceef7' font-size='18' font-family='system-ui, sans-serif'>30%</text><text x='320' y='145' fill='#5fd4c4' font-size='16' font-family='system-ui, sans-serif'>Curiosity</text><line x1='260' y1='145' x2='310' y2='145' stroke='#5fd4c4' stroke-width='2'/><text x='320' y='190' fill='#ff7a6e' font-size='16' font-family='system-ui, sans-serif'>Broadcast</text><line x1='260' y1='190' x2='310' y2='190' stroke='#ff7a6e' stroke-width='2' stroke-dasharray='4 4'/><circle cx='180' cy='80' r='6' fill='#e8b84b'/><circle cx='180' cy='240' r='4' fill='#a48bfa'/></svg>",
-        "visualCaption": "Treat your speaking time as a biased pie: 70% curiosity, 30% broadcast."
-      },
-      "lab": {
-        "title": "Use the Three-Beat Loop",
-        "paras": [
-          "One question rarely reaches the real concern; a short sequence often does."
-        ],
-        "exercise": "Try this before offering your opinion: “What’s top of mind for you?” Reflect their answer: “It sounds like the big issue is ___.” Then ask: “If we solved one part first, which would matter most?” Only then share your view."
-      },
-      "steal": {
-        "line": "Before I make a case, I want to understand how this looks from your side.",
-        "paras": [
-          "Say it when you feel the urge to persuade quickly."
-        ],
-        "example": [
-          "What feels riskiest about this plan from where you sit?"
         ]
       }
     }
