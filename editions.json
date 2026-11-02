@@ -1,6 +1,42 @@
 {
   "editions": [
     {
+      "date": "2026-11-02",
+      "displayDate": "Mon · Nov 2",
+      "domain": "Decision-Making",
+      "hook": "Don’t buy certainty before you need it.",
+      "format": "carousel",
+      "insight": {
+        "title": "Real options: pay to learn before you commit",
+        "paras": [
+          "In 2006, Amazon Web Services launched S3 for storage; a few months later came EC2 for computing. The launches are documented; claiming Amazon consciously followed this theory would go beyond the evidence. The useful lens is <strong>real options</strong>, a formal model developed in investment economics: when a big investment is hard to undo and uncertainty may clear, a smaller step can preserve your option to expand later. The value is the information you gain before committing—not a guarantee the bet will work. Waiting can cost you if delay means lost customers or a rival gets ahead. ([aws.amazon.com](https://aws.amazon.com/about-aws/our-origins/?utm_source=openai))"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='20' fill='#1b1e30'/><text x='28' y='42' fill='#eceef7' font-size='20' font-family='sans-serif' font-weight='700'>Two ways to spend under uncertainty</text><text x='30' y='92' fill='#9ba0b8' font-size='14' font-family='sans-serif'>ALL-IN</text><rect x='30' y='108' width='128' height='54' rx='10' fill='#ff7a6e'/><text x='94' y='141' text-anchor='middle' fill='#1b1e30' font-size='15' font-family='sans-serif' font-weight='700'>Commit now</text><path d='M162 135 H220' stroke='#eceef7' stroke-width='3'/><path d='M220 135 l-10 -7 v14 z' fill='#eceef7'/><rect x='230' y='108' width='142' height='54' rx='10' fill='#48343c'/><text x='301' y='141' text-anchor='middle' fill='#eceef7' font-size='14' font-family='sans-serif'>Uncertainty remains</text><text x='30' y='208' fill='#9ba0b8' font-size='14' font-family='sans-serif'>STAGED</text><rect x='30' y='224' width='128' height='54' rx='10' fill='#5fd4c4'/><text x='94' y='257' text-anchor='middle' fill='#1b1e30' font-size='14' font-family='sans-serif' font-weight='700'>Small test</text><path d='M162 251 H204' stroke='#eceef7' stroke-width='3'/><path d='M204 251 l-10 -7 v14 z' fill='#eceef7'/><rect x='214' y='224' width='128' height='54' rx='10' fill='#34354b'/><text x='278' y='257' text-anchor='middle' fill='#eceef7' font-size='14' font-family='sans-serif'>Learn</text><path d='M344 251 H382' stroke='#eceef7' stroke-width='3'/><path d='M382 251 l-10 -7 v14 z' fill='#eceef7'/><rect x='392' y='208' width='140' height='36' rx='9' fill='#5fd4c4'/><text x='462' y='232' text-anchor='middle' fill='#1b1e30' font-size='13' font-family='sans-serif' font-weight='700'>Expand if it works</text><rect x='392' y='256' width='140' height='36' rx='9' fill='#a48bfa'/><text x='462' y='280' text-anchor='middle' fill='#1b1e30' font-size='13' font-family='sans-serif' font-weight='700'>Stop if it doesn’t</text><path d='M342 251 H368 V226 H386 M368 251 V274 H386' fill='none' stroke='#eceef7' stroke-width='2'/></svg>",
+        "visualCaption": "A small test buys information and keeps both next moves open.",
+        "after": [
+          "In a product review, a team wants to rebuild onboarding but doesn’t know which step confuses new users. A small prototype tests that uncertainty before anyone commits to the full redesign.",
+          "In quarterly planning, treat an uncertain initiative as a staged investment: define what evidence earns the next tranche. What can you test cheaply before making the hard-to-reverse commitment?"
+        ]
+      },
+      "lab": {
+        "title": "Find the reversible first step",
+        "paras": [
+          "This turns uncertainty into a question you can test instead of a debate you can’t settle."
+        ],
+        "exercise": "In under five minutes, name one costly commitment you’re considering. Write the smallest test that could change your mind, what evidence you’ll look for, and when you’ll decide."
+      },
+      "masters": null,
+      "steal": {
+        "line": "Buy information before you buy the whole bet.",
+        "paras": [
+          "Use this when a decision is expensive to reverse and a small test can reveal something meaningful."
+        ],
+        "example": [
+          "“Before we commit to the full build, what’s the smallest test that would tell us whether this is worth expanding?”"
+        ]
+      }
+    },
+    {
       "date": "2026-10-31",
       "displayDate": "Sat · Oct 31",
       "domain": "Communication",
@@ -1369,39 +1405,6 @@
         ],
         "example": [
           "In a planning session: “This new Daisy 1 view is protecting you from surprise deadlines so you can see, in one place, what actually needs your attention today.”"
-        ]
-      }
-    },
-    {
-      "date": "2026-09-01",
-      "displayDate": "Tue · Sep 1",
-      "domain": "Strategy",
-      "hook": "Plan in loops, not lines.",
-      "insight": {
-        "title": "The 3-Loop Planning Model",
-        "paras": [
-          "A live plan needs three things: a <strong>decision</strong> you have made, an <strong>experiment</strong> that will teach you something, and a <strong>story</strong> that explains why the work matters. If one is missing, the plan drifts: people debate settled choices, wait instead of testing, or describe the goal differently."
-        ],
-        "after": [
-          "For one Daisy 1 or quarterly-planning priority, write the decision, this week’s test, and the reason in three lines."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='190' cy='150' r='70' fill='none' stroke='#5fd4c4' stroke-width='4'/><circle cx='280' cy='190' r='70' fill='none' stroke='#ff7a6e' stroke-width='4'/><circle cx='350' cy='130' r='70' fill='none' stroke='#e8b84b' stroke-width='4'/><text x='180' y='150' text-anchor='middle' fill='#eceef7' font-size='12'>Decision</text><text x='280' y='195' text-anchor='middle' fill='#eceef7' font-size='12'>Experiment</text><text x='350' y='130' text-anchor='middle' fill='#eceef7' font-size='12'>Story</text><text x='280' y='40' text-anchor='middle' fill='#9ba0b8' font-size='13'>Three loops that keep a plan alive</text></svg>",
-        "visualCaption": "Strategy as three overlapping loops: decision, experiment, story."
-      },
-      "lab": {
-        "title": "Run a 3-Loop Scan",
-        "paras": [
-          "This exposes fuzzy plans before they become slow projects."
-        ],
-        "exercise": "Set a five-minute timer and finish: “We decided to ___.” “This week we will test it by ___.” “This matters now because ___.” If any line is hard to complete, that is the loop to fix first."
-      },
-      "steal": {
-        "line": "Name the decision, the test, and the story.",
-        "paras": [
-          "Use the line whenever a planning conversation starts to drift."
-        ],
-        "example": [
-          "For this priority, we chose ___. This week we’ll test ___. It matters because ___."
         ]
       }
     }
