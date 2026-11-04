@@ -1,6 +1,42 @@
 {
   "editions": [
     {
+      "date": "2026-11-04",
+      "displayDate": "Wed · Nov 4",
+      "domain": "Leadership",
+      "hook": "Silence can manufacture the agreement it seems to prove.",
+      "format": "carousel",
+      "insight": {
+        "title": "Pluralistic ignorance: when silence looks like consensus",
+        "paras": [
+          "In a 1968 experiment, students filled out questionnaires as smoke seeped into a room. Three-quarters of those alone reported it; with two calm, unresponsive confederates, only one in ten did. Researchers John Darley and Bibb Latané used the result to illustrate <strong>pluralistic ignorance</strong>: when a situation is unclear, people read others’ calm as evidence that nothing is wrong, then hide their own doubts—making the room look even more settled. This is an empirical finding from a small laboratory study, not a rule that groups always freeze. ([greatergood.berkeley.edu](https://greatergood.berkeley.edu/images/uploads/Latane-BystanderApathy.pdf))"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='20' fill='#1b1e30'/><text x='280' y='34' text-anchor='middle' fill='#eceef7' font-family='sans-serif' font-size='18' font-weight='700'>THE SILENCE LOOP</text><g font-family='sans-serif' font-size='14' text-anchor='middle'><rect x='190' y='58' width='180' height='48' rx='12' fill='#35314a' stroke='#a48bfa'/><text x='280' y='87' fill='#eceef7'>Ambiguous signal</text><rect x='366' y='132' width='166' height='48' rx='12' fill='#243b40' stroke='#5fd4c4'/><text x='449' y='161' fill='#eceef7'>Read others’ calm</text><rect x='190' y='222' width='180' height='48' rx='12' fill='#493336' stroke='#ff7a6e'/><text x='280' y='251' fill='#eceef7'>Stay silent</text><rect x='28' y='132' width='166' height='48' rx='12' fill='#443d2a' stroke='#e8b84b'/><text x='111' y='153' fill='#eceef7'><tspan x='111'>Silence looks</tspan><tspan x='111' dy='17'>like consensus</tspan></text></g><g fill='none' stroke='#9ba0b8' stroke-width='3'><path d='M370 91 C416 96 440 107 449 128'/><path d='M429 182 C399 212 369 228 360 236'/><path d='M190 246 C148 233 119 206 112 182'/><path d='M112 130 C122 91 154 73 186 69'/></g><g fill='#9ba0b8'><path d='M445 126l-7-10 13 2z'/><path d='M364 232l-12-2 8 10z'/><path d='M108 185l-2-13 10 7z'/><path d='M183 64l12 3-9 8z'/></g><text x='280' y='300' text-anchor='middle' fill='#9ba0b8' font-family='sans-serif' font-size='13'>Each quiet reaction becomes evidence for the next.</text></svg>",
+        "visualCaption": "Uncertainty invites imitation; imitation makes the group seem certain.",
+        "after": [
+          "In a planning workshop, a facilitator asks whether a draft timeline feels realistic. Nobody speaks; each person assumes the others see no issue, so the group leaves a real concern unspoken. Ask everyone to write one doubt before discussion.",
+          "In a product review, a quiet room can mean agreement—or uncertainty about the metric. Before you decide, ask: “What are we treating as settled that we haven’t actually checked?”"
+        ]
+      },
+      "lab": {
+        "title": "Surface the private reaction",
+        "paras": [
+          "Independent answers arrive before the room’s mood can become evidence."
+        ],
+        "exercise": "In your next discussion, give everyone one silent minute to write their biggest concern. Then ask each person to share it, starting with: “What feels least certain to you?”"
+      },
+      "masters": null,
+      "steal": {
+        "line": "Quiet is not the same as agreement.",
+        "paras": [
+          "Use this line when a group is about to treat a pause as a decision."
+        ],
+        "example": [
+          "“Before we call this agreement, let’s hear one concern from each person.”"
+        ]
+      }
+    },
+    {
       "date": "2026-11-02",
       "displayDate": "Mon · Nov 2",
       "domain": "Decision-Making",
@@ -1371,40 +1407,6 @@
         ],
         "example": [
           "In a quarterly planning review: “Right now, you’re dealing with priorities that live in five different places, which makes every quarter-start slower and more chaotic than it should be — here’s how this new rhythm fixes that.”"
-        ]
-      }
-    },
-    {
-      "date": "2026-09-03",
-      "displayDate": "Thu · Sep 3",
-      "domain": "Product Thinking",
-      "hook": "Use the Two-Question Tension Test before you ship anything important",
-      "insight": {
-        "title": "The Two-Question Tension Test",
-        "paras": [
-          "Before you ship a feature, memo, or deck, run the <strong>Two-Question Tension Test</strong>: (1) What problem are we protecting people from? (2) What possibility are we pulling them toward? Good product and strategy work sits in that tension: a clear pain avoided plus a vivid upside gained. If you can’t answer both in one or two sharp sentences, you’re about to ship something blurry, no matter how many details you’ve polished."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><line x1='80' y1='160' x2='240' y2='80' stroke='#ff7a6e' stroke-width='4'/><line x1='80' y1='160' x2='240' y2='240' stroke='#5fd4c4' stroke-width='4'/><circle cx='80' cy='160' r='10' fill='#eceef7'/><circle cx='240' cy='80' r='10' fill='#ff7a6e'/><circle cx='240' cy='240' r='10' fill='#5fd4c4'/><text x='50' y='290' fill='#9ba0b8' font-size='12'>problem</text><text x='210' y='60' fill='#eceef7' font-size='12'>protect</text><text x='210' y='260' fill='#eceef7' font-size='12'>pull</text></svg>",
-        "visualCaption": "Every strong decision names both the problem you protect from and the possibility you pull toward.",
-        "after": [
-          "When you describe a new Daisy 1 workflow or a strategy agent experiment, answer both questions out loud before you talk details so people feel the stakes immediately."
-        ]
-      },
-      "lab": {
-        "title": "State the Tension in One Breath",
-        "paras": [
-          "This matters because people commit faster when they feel both the risk of staying put and the pull of a better path."
-        ],
-        "exercise": "Take one active decision (a Daisy 1 tweak, a StoryOS outline, or a quarterly planning move). In under five minutes, write one spoken sentence that answers both questions: “We’re protecting you from X so you can get Y.” Say it out loud, then tighten it until you can deliver it in one calm breath."
-      },
-      "masters": null,
-      "steal": {
-        "line": "“We’re protecting you from chaos so you can see exactly what matters today.”",
-        "paras": [
-          "Use this pattern whenever you introduce a change: name the chaos, friction, or risk you’re removing, then the specific clarity, speed, or confidence you’re giving. The more concrete the X and Y, the more people lean in."
-        ],
-        "example": [
-          "In a planning session: “This new Daisy 1 view is protecting you from surprise deadlines so you can see, in one place, what actually needs your attention today.”"
         ]
       }
     }
