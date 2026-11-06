@@ -1,6 +1,42 @@
 {
   "editions": [
     {
+      "date": "2026-11-06",
+      "displayDate": "Fri · Nov 6",
+      "domain": "Conversation",
+      "hook": "A question can change the answer.",
+      "format": "carousel",
+      "insight": {
+        "title": "The question–behavior effect",
+        "paras": [
+          "In a small 1984 study, Ohio State researchers called students before an election and asked whether they expected to vote. Those asked to predict were more likely to vote than a no-prediction group; researchers checked official voter rolls. Greenwald and colleagues published the result in 1987. It illustrates the <strong>question–behavior effect</strong>: asking about an intended action can make that action more likely. This is an empirical finding, not a guaranteed lever. A 2016 meta-analysis found varied effects; they tended to be stronger when the behavior was easy and socially desirable, and the precise mechanism remains unsettled. ([uploads-ssl.webflow.com](https://uploads-ssl.webflow.com/59faaf5b01b9500001e95457/5bc3cc325a68ee385d1b6b5e_Greenwald%20et%20al%2C%201987.pdf))"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='20' fill='#1b1e30'/><text x='32' y='42' fill='#eceef7' font-family='Arial' font-size='18' font-weight='700'>A prediction question can tilt action</text><rect x='32' y='82' width='142' height='72' rx='12' fill='#292d43' stroke='#a48bfa' stroke-width='2'/><text x='103' y='112' fill='#eceef7' text-anchor='middle' font-family='Arial' font-size='14'>“Do you expect</text><text x='103' y='133' fill='#eceef7' text-anchor='middle' font-family='Arial' font-size='14'>to do it?”</text><path d='M184 118h48' stroke='#e8b84b' stroke-width='3'/><path d='m225 110 10 8-10 8' fill='none' stroke='#e8b84b' stroke-width='3'/><rect x='244' y='82' width='138' height='72' rx='12' fill='#292d43' stroke='#5fd4c4' stroke-width='2'/><text x='313' y='112' fill='#eceef7' text-anchor='middle' font-family='Arial' font-size='14'>Action becomes</text><text x='313' y='133' fill='#eceef7' text-anchor='middle' font-family='Arial' font-size='14'>more salient</text><path d='M392 118h48' stroke='#e8b84b' stroke-width='3'/><path d='m433 110 10 8-10 8' fill='none' stroke='#e8b84b' stroke-width='3'/><rect x='452' y='82' width='76' height='72' rx='12' fill='#292d43' stroke='#ff7a6e' stroke-width='2'/><text x='490' y='112' fill='#eceef7' text-anchor='middle' font-family='Arial' font-size='13'>More</text><text x='490' y='133' fill='#eceef7' text-anchor='middle' font-family='Arial' font-size='13'>follow-through</text><text x='32' y='205' fill='#5fd4c4' font-family='Arial' font-size='14' font-weight='700'>Effect tends to be stronger when:</text><text x='32' y='237' fill='#eceef7' font-family='Arial' font-size='14'>the action is easy</text><text x='270' y='237' fill='#eceef7' font-family='Arial' font-size='14'>and the person favors it</text><text x='32' y='281' fill='#9ba0b8' font-family='Arial' font-size='12'>Research supports a tendency—not a promise or a substitute for removing barriers.</text></svg>",
+        "visualCaption": "A prediction question may nudge an easy, welcome action into focus.",
+        "after": [
+          "In a Daisy 1 planning session, teammates agree a proposed workflow sounds useful, but no one knows who will actually try it. Ask, “Do you expect to use this next week?” Then ask what might get in the way. The answer makes both intention and friction visible.",
+          "Before a client conversation ends, ask, “What’s the first step you expect to take?” If the step feels too hard or the answer is hesitant, clarify the obstacle instead of treating a polite yes as a commitment. What action is easy enough to name—and genuinely wanted?"
+        ]
+      },
+      "lab": {
+        "title": "Ask for a forecast, not a promise",
+        "paras": [
+          "A concrete prediction can surface likely action and the friction that may derail it."
+        ],
+        "exercise": "In one conversation today, ask: “What do you expect to do first, and what could get in the way?” Listen without correcting the answer."
+      },
+      "masters": null,
+      "steal": {
+        "line": "Make the next action imaginable.",
+        "paras": [
+          "Keep the question specific, low-pressure, and tied to something the person already wants to do. A question can surface motivation; it cannot manufacture it."
+        ],
+        "example": [
+          "“By Friday, what’s one small step you expect to have taken?”"
+        ]
+      }
+    },
+    {
       "date": "2026-11-04",
       "displayDate": "Wed · Nov 4",
       "domain": "Leadership",
@@ -1372,41 +1408,6 @@
         ],
         "example": [
           "In a quarterly planning review with a client: “Before we go deeper on the strategy agent, let’s make it concrete: what single decision this quarter do you want it to help you make better than your current process?”"
-        ]
-      }
-    },
-    {
-      "date": "2026-09-05",
-      "displayDate": "Sat · Sep 5",
-      "domain": "Communication",
-      "hook": "Use the Friction Sentence to make any idea land faster.",
-      "insight": {
-        "title": "The Friction Sentence",
-        "paras": [
-          "When you introduce an idea, people first listen for <em>friction</em>: what problem it actually meets in their day. A simple tool: the <strong>Friction Sentence</strong> — one line that names the concrete snag your idea removes. Structure: “Right now, you’re dealing with X, which makes Y harder than it should be.” Then your solution has somewhere to land.",
-          "Picture a Daisy 1 demo: instead of “It’s a project coordination app,” you open with, “Right now, you’re chasing updates across DMs and docs, which makes every handoff slower than it should be.” Now when you show a feature, they feel the relief, not just see the UI."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='80' width='180' height='22' rx='4' fill='#9ba0b8'/><rect x='60' y='140' width='260' height='22' rx='4' fill='#ff7a6e'/><rect x='60' y='200' width='310' height='22' rx='4' fill='#5fd4c4'/><text x='70' y='96' fill='#eceef7' font-family='system-ui, sans-serif' font-size='12'>X: current snag</text><text x='70' y='156' fill='#1b1e30' font-family='system-ui, sans-serif' font-size='12'>Y: what that snag makes harder</text><text x='70' y='216' fill='#1b1e30' font-family='system-ui, sans-serif' font-size='12'>Then: your idea as relief</text><circle cx='40' cy='151' r='6' fill='#e8b84b'/><path d='M40 157 L40 190' stroke='#e8b84b' stroke-width='2' stroke-dasharray='4 4'/><polygon points='40,194 36,188 44,188' fill='#e8b84b'/></svg>",
-        "visualCaption": "Lead with the snag (X) and its cost (Y) before you offer the fix.",
-        "after": [
-          "Today, pick one explanation — Daisy 1, StoryOS, your strategy agent, or a client project — and rewrite your opener as a single Friction Sentence before you talk about features or plans."
-        ]
-      },
-      "lab": {
-        "title": "Friction in One Breath",
-        "paras": [
-          "This matters because most explanations die in feature land before anyone feels why they should care."
-        ],
-        "exercise": "Grab a current project. In one breath, say out loud: “Right now, you’re dealing with X, which makes Y harder than it should be.” Fill in X and Y in plain language. Repeat three times, tightening the words each time until it feels like something you could comfortably say at the start of a demo or planning conversation."
-      },
-      "masters": null,
-      "steal": {
-        "line": "“Right now, you’re dealing with X, which makes Y harder than it should be.”",
-        "paras": [
-          "Use this as the very first sentence in your next planning session, client call, or internal update. Swap X and Y to match their world, not your feature list."
-        ],
-        "example": [
-          "In a quarterly planning review: “Right now, you’re dealing with priorities that live in five different places, which makes every quarter-start slower and more chaotic than it should be — here’s how this new rhythm fixes that.”"
         ]
       }
     }
