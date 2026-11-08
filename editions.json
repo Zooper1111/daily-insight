@@ -1,6 +1,42 @@
 {
   "editions": [
     {
+      "date": "2026-11-08",
+      "displayDate": "Sun · Nov 8",
+      "domain": "Product Thinking",
+      "hook": "When the score rises, check what changed.",
+      "format": "carousel",
+      "insight": {
+        "title": "Campbell’s law: the metric can become the target",
+        "paras": [
+          "Atlanta schools were under pressure to hit rising test-score targets. Georgia’s 2011 investigation documented answer-sheet tampering amid pressure and retaliation. In 1976, social scientist Donald Campbell described the broader danger: the more a measure guides decisions, the more pressure can distort both the measure and the work it represents. This is a social-science principle, not a guarantee that every target gets gamed. Metrics can still help; the risk rises when one number carries high stakes without independent checks. ([ajc.com](https://www.ajc.com/news/local/investigation-into-aps-cheating-finds-unethical-behavior-across-every-level/bX4bEZDWbeOH33cDkod1FL/?utm_source=openai))"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='20' fill='#1b1e30'/><text x='28' y='38' fill='#eceef7' font-size='18' font-family='Arial' font-weight='bold'>How a useful measure loses its signal</text><g font-family='Arial' text-anchor='middle'><rect x='28' y='90' width='112' height='66' rx='12' fill='#293049'/><text x='84' y='119' fill='#e8b84b' font-size='14'>Metric</text><text x='84' y='140' fill='#eceef7' font-size='12'>gets rewarded</text><rect x='164' y='90' width='112' height='66' rx='12' fill='#293049'/><text x='220' y='119' fill='#ff7a6e' font-size='14'>Pressure</text><text x='220' y='140' fill='#eceef7' font-size='12'>to hit the score</text><rect x='300' y='90' width='112' height='66' rx='12' fill='#293049'/><text x='356' y='119' fill='#a48bfa' font-size='14'>Gaming</text><text x='356' y='140' fill='#eceef7' font-size='12'>or narrow focus</text><rect x='436' y='90' width='96' height='66' rx='12' fill='#293049'/><text x='484' y='119' fill='#5fd4c4' font-size='14'>Signal</text><text x='484' y='140' fill='#eceef7' font-size='12'>gets weaker</text><g stroke='#9ba0b8' stroke-width='2' fill='none'><path d='M140 123h20m-6-6 6 6-6 6'/><path d='M276 123h20m-6-6 6 6-6 6'/><path d='M412 123h20m-6-6 6 6-6 6'/></g><path d='M485 170v60H84v-60' stroke='#9ba0b8' stroke-width='2' fill='none' stroke-dasharray='5 5'/><path d='M78 176l6-8 6 8' stroke='#9ba0b8' stroke-width='2' fill='none'/><text x='280' y='256' fill='#9ba0b8' font-size='13'>If the score sets the stakes, test what the score misses.</text></g></svg>",
+        "visualCaption": "A high-stakes metric can trigger behavior that makes it less trustworthy.",
+        "after": [
+          "A product team wants to show steady progress, so it tracks tasks closed. One engineer splits a large piece of work into tiny tasks; the count jumps, but the product has not improved. Pair output counts with a check on the outcome they are meant to represent.",
+          "In a planning review, a team celebrates projects marked “on time.” Ask whether dates were moved to protect the score. What independent evidence would reveal the difference?"
+        ]
+      },
+      "lab": {
+        "title": "Find the missing countermeasure",
+        "paras": [
+          "A second measure can reveal when your headline number improves while the real result does not."
+        ],
+        "exercise": "Pick one metric you use. In three minutes, write: “We track ___; it could be gamed by ___; we’ll check ___ as a countermeasure.”"
+      },
+      "masters": null,
+      "steal": {
+        "line": "Never let one number tell the whole story.",
+        "paras": [
+          "Use this when a team is about to reward a metric or make a decision from it."
+        ],
+        "example": [
+          "“Before we celebrate the task count, what evidence would show that customers are actually better served?”"
+        ]
+      }
+    },
+    {
       "date": "2026-11-06",
       "displayDate": "Fri · Nov 6",
       "domain": "Conversation",
@@ -1373,41 +1409,6 @@
         ],
         "example": [
           "In a quarterly planning review: “We’re shifting more focus to the strategy agent.” → “Got it. What about that focus shift feels like the real change for you compared with last quarter?”"
-        ]
-      }
-    },
-    {
-      "date": "2026-09-07",
-      "displayDate": "Mon · Sep 07",
-      "domain": "AI",
-      "hook": "Turn messy AI ideas into one crisp \"decision question.\"",
-      "insight": {
-        "title": "The Decision Question Filter",
-        "paras": [
-          "When you talk about AI, people drown in possibilities. Use the Decision Question Filter: always translate the idea into one concrete question a human still has to answer. The model explores; the question decides. A good decision question names the chooser, the tradeoff, and the moment: \"Given X, should we do A or B now?\" This keeps AI from becoming vague magic and turns it into a sharp tool inside your existing judgment.",
-          "Picture a strategy agent you’re building. Instead of saying, \"It helps with planning,\" you say, \"It proposes options, but the real question it helps you answer is: ‘Given our capacity this quarter, which three projects do we deliberately under-resource?’\" Now your listener can feel both the power and the limits of the system."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='150' cy='160' r='80' fill='none' stroke='#9ba0b8' stroke-width='2'/><circle cx='230' cy='130' r='70' fill='none' stroke='#5fd4c4' stroke-width='2'/><circle cx='230' cy='200' r='70' fill='none' stroke='#ff7a6e' stroke-width='2'/><rect x='320' y='120' width='190' height='80' rx='8' fill='none' stroke='#e8b84b' stroke-width='3'/><path d='M260 160 H312' stroke='#eceef7' stroke-width='2' stroke-linecap='round'/><text x='335' y='165' fill='#eceef7' font-size='14' font-family='system-ui'>Decision</text><text x='335' y='185' fill='#eceef7' font-size='14' font-family='system-ui'>question</text></svg>",
-        "visualCaption": "Many AI possibilities, one sharp decision question.",
-        "after": [
-          "In your next strategy-agent demo, anchor every feature to one explicit decision question a real person would use it to answer this week."
-        ]
-      },
-      "lab": {
-        "title": "Sharpen One AI Pitch",
-        "paras": [
-          "This turns fuzzy AI talk into something a busy skeptic can say yes to."
-        ],
-        "exercise": "Pick one AI-related idea (strategy agent, Daisy 1 automation, or a client workflow). Set a 5-minute timer. Write three versions of a decision question it helps answer, each in this format: \"For [specific role], facing [real constraint], the question is: ‘Given [inputs], should we do [option A] or [option B] now?’\" Say them out loud and keep the one that feels slightly uncomfortable but specific."
-      },
-      "masters": null,
-      "steal": {
-        "line": "“Let’s make this concrete: what single decision does this AI actually help you make?”",
-        "paras": [
-          "Use this whenever a conversation about AI, automation, or agents starts to float away into abstractions. It pulls everyone back to a real choice with stakes."
-        ],
-        "example": [
-          "In a quarterly planning review with a client: “Before we go deeper on the strategy agent, let’s make it concrete: what single decision this quarter do you want it to help you make better than your current process?”"
         ]
       }
     }
