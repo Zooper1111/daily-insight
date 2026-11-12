@@ -1,6 +1,42 @@
 {
   "editions": [
     {
+      "date": "2026-11-12",
+      "displayDate": "Thu · Nov 12",
+      "domain": "Strategy",
+      "hook": "Starting more work can make everything finish later.",
+      "format": "carousel",
+      "insight": {
+        "title": "Little’s Law: open work creates waiting",
+        "paras": [
+          "A product team has 12 improvements underway but finishes only three a week; each one lingers. In 1961, operations researcher John D. C. Little proved the queueing theorem <em>L = λW</em>: average work in the system equals the completion rate multiplied by average time in the system. Here, 12 = 3 per week × 4 weeks. This is a formal result, not a productivity hack. With stable flow and consistent definitions, six open items at the same rate implies about two weeks’ average time. It doesn’t promise more output: a growing backlog or starved capacity changes the picture. ([pubsonline.informs.org](https://pubsonline.informs.org/doi/epdf/10.1287/opre.9.3.383?utm_source=openai))"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='24' fill='#1b1e30'/><text x='280' y='52' fill='#eceef7' font-size='25' font-family='sans-serif' font-weight='700' text-anchor='middle'>Little’s Law · L = λ × W</text><rect x='36' y='100' width='148' height='132' rx='16' fill='#292d43'/><text x='110' y='146' fill='#e8b84b' font-size='34' font-family='sans-serif' font-weight='700' text-anchor='middle'>12</text><text x='110' y='178' fill='#eceef7' font-size='15' font-family='sans-serif' text-anchor='middle'>items in progress</text><text x='110' y='202' fill='#9ba0b8' font-size='13' font-family='sans-serif' text-anchor='middle'>average work (L)</text><text x='206' y='171' fill='#9ba0b8' font-size='28' font-family='sans-serif' text-anchor='middle'>=</text><rect x='230' y='100' width='132' height='132' rx='16' fill='#292d43'/><text x='296' y='146' fill='#5fd4c4' font-size='30' font-family='sans-serif' font-weight='700' text-anchor='middle'>3 / wk</text><text x='296' y='178' fill='#eceef7' font-size='15' font-family='sans-serif' text-anchor='middle'>completed</text><text x='296' y='202' fill='#9ba0b8' font-size='13' font-family='sans-serif' text-anchor='middle'>flow rate (λ)</text><text x='384' y='171' fill='#9ba0b8' font-size='28' font-family='sans-serif' text-anchor='middle'>×</text><rect x='406' y='100' width='118' height='132' rx='16' fill='#292d43'/><text x='465' y='146' fill='#ff7a6e' font-size='34' font-family='sans-serif' font-weight='700' text-anchor='middle'>4 wk</text><text x='465' y='178' fill='#eceef7' font-size='15' font-family='sans-serif' text-anchor='middle'>average time</text><text x='465' y='202' fill='#9ba0b8' font-size='13' font-family='sans-serif' text-anchor='middle'>in system (W)</text><text x='280' y='277' fill='#9ba0b8' font-size='14' font-family='sans-serif' text-anchor='middle'>At steady flow, less open work means less average waiting.</text></svg>",
+        "visualCaption": "At three completions a week, 12 open items correspond to about four weeks in the system.",
+        "after": [
+          "In a planning session, a product team keeps starting requests; three finish weekly while 12 remain active. They limit new starts, finish six, then check whether the completion rate holds and average waiting falls.",
+          "For a strategy memo, compare decisions in progress with decisions closed per month. Is delay coming from too much open work—or from a slow approval bottleneck?"
+        ]
+      },
+      "lab": {
+        "title": "Find the waiting hidden in your workload",
+        "paras": [
+          "A quick estimate can reveal whether the problem is too much work in progress or too little capacity."
+        ],
+        "exercise": "Pick one kind of work. Count how many items are open and how many finish in a typical week; divide open items by weekly completions. Then ask: “What can we finish before starting the next one?”"
+      },
+      "masters": null,
+      "steal": {
+        "line": "The fastest way to finish more may be to start less.",
+        "paras": [
+          "Use this as a testable constraint, not a promise: reduce open work and see whether completions stay steady while waiting drops."
+        ],
+        "example": [
+          "“We have 12 requests open and finish three a week. Let’s close six before we add another.”"
+        ]
+      }
+    },
+    {
       "date": "2026-11-10",
       "displayDate": "Tue · Nov 10",
       "domain": "Communication",
@@ -1377,40 +1413,6 @@
         ],
         "example": [
           "In a strategy agent planning session: “We’re circling. Before we pick a direction, can we agree what constraint we’re really solving for this quarter: speed to ship or reliability for existing users?”"
-        ]
-      }
-    },
-    {
-      "date": "2026-09-11",
-      "displayDate": "Fri · Sep 11",
-      "domain": "Storytelling",
-      "hook": "Turn every update into a Before/After story",
-      "insight": {
-        "title": "The Before/After Anchor",
-        "paras": [
-          "The Before/After Anchor is a tiny storytelling frame: always name one concrete \"before\" state and one concrete \"after\" state. It works because your listener’s brain tracks change, not detail. Instead of explaining everything Daisy 1 does, you say: \"Before: everyone was updating three different docs. After: one shared board tells you who’s blocked in 10 seconds.\" You’re not adding drama; you’re giving their memory two clear hooks so your point sticks and is easy to repeat."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='80' width='160' height='160' rx='16' fill='none' stroke='#9ba0b8' stroke-width='3'/><rect x='340' y='80' width='160' height='160' rx='16' fill='none' stroke='#eceef7' stroke-width='3'/><text x='140' y='70' text-anchor='middle' fill='#9ba0b8' font-family='system-ui' font-size='16'>BEFORE</text><text x='420' y='70' text-anchor='middle' fill='#eceef7' font-family='system-ui' font-size='16'>AFTER</text><circle cx='110' cy='140' r='6' fill='#ff7a6e'/><circle cx='150' cy='170' r='6' fill='#9ba0b8'/><circle cx='190' cy='200' r='6' fill='#9ba0b8'/><line x1='220' y1='160' x2='320' y2='160' stroke='#e8b84b' stroke-width='3' marker-end='url(#arrow)'/><circle cx='380' cy='140' r='7' fill='#5fd4c4'/><circle cx='420' cy='170' r='7' fill='#a48bfa'/><circle cx='460' cy='200' r='7' fill='#e8b84b'/><defs><marker id='arrow' viewBox='0 0 10 10' refX='10' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0 0 L10 5 L0 10 z' fill='#e8b84b'/></marker></defs></svg>",
-        "visualCaption": "Always give your listener two clear snapshots: before and after.",
-        "after": [
-          "In your next StoryOS or consulting update, compress the whole thing into one Before/After sentence first, then add detail only if they ask."
-        ]
-      },
-      "lab": {
-        "title": "Snap Your Update in Two",
-        "paras": [
-          "This matters because a crisp Before/After lets people retell your idea accurately when you’re not in the room."
-        ],
-        "exercise": "Under five minutes: pick a current project (Daisy 1, DreamGuard, or a client engagement). On a notepad, write one line starting with \"Before:\" and one with \"After:\"—no more than 12 words each. Then say them out loud to a teammate or into a voice note: \"Before: …\" (pause) \"After: …\" Notice where you want to add fluff; cut it and keep only the change."
-      },
-      "masters": null,
-      "steal": {
-        "line": "Lead every update with one sharp Before/After sentence.",
-        "paras": [
-          "Today, before any meeting ramble, force yourself to say the Before/After line first. If they’re interested, then walk them through how you’ll get from one to the other."
-        ],
-        "example": [
-          "Strategy memo opener: \"Before: every team plans quarterly in isolation. After: one shared Daisy 1 board shows tradeoffs across teams in a single view.\""
         ]
       }
     }
