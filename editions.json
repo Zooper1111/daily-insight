@@ -1,6 +1,43 @@
 {
   "editions": [
     {
+      "date": "2026-11-14",
+      "displayDate": "Sat · Nov 14",
+      "domain": "Conversation",
+      "hook": "A small ask can change the relationship.",
+      "format": "carousel",
+      "insight": {
+        "title": "The Benjamin Franklin effect",
+        "paras": [
+          "In his autobiography, Benjamin Franklin recalled that a rival in Pennsylvania’s assembly had argued against him. Franklin asked to borrow the man’s rare book. The next time they met, Franklin wrote, the man spoke to him “with great civility”; they later became friends. This is Franklin’s autobiographical recollection, not independent proof.",
+          "The <em>Benjamin Franklin effect</em> is the idea that doing someone a favor can sometimes increase your warmth toward them: you may make sense of your helpful action by seeing the other person more positively. A 1969 experiment by Jecker and Landy found increased liking after participants did a favor, but that does not make the effect a reliable social trick. Treat it as a theory with limited evidence, not a guarantee."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='22' fill='#1b1e30'/><text x='28' y='38' fill='#eceef7' font-family='sans-serif' font-size='19' font-weight='700'>A favor can change your interpretation</text><rect x='28' y='78' width='142' height='64' rx='12' fill='#282d45' stroke='#5fd4c4' stroke-width='2'/><text x='99' y='105' text-anchor='middle' fill='#eceef7' font-family='sans-serif' font-size='14'>Small, voluntary</text><text x='99' y='125' text-anchor='middle' fill='#eceef7' font-family='sans-serif' font-size='14'>favor</text><path d='M174 110 H214' stroke='#e8b84b' stroke-width='3'/><path d='M208 103 L218 110 L208 117' fill='none' stroke='#e8b84b' stroke-width='3'/><rect x='222' y='78' width='142' height='64' rx='12' fill='#282d45' stroke='#a48bfa' stroke-width='2'/><text x='293' y='105' text-anchor='middle' fill='#eceef7' font-family='sans-serif' font-size='14'>“I chose to</text><text x='293' y='125' text-anchor='middle' fill='#eceef7' font-family='sans-serif' font-size='14'>help them”</text><path d='M368 110 H408' stroke='#e8b84b' stroke-width='3'/><path d='M402 103 L412 110 L402 117' fill='none' stroke='#e8b84b' stroke-width='3'/><rect x='416' y='78' width='116' height='64' rx='12' fill='#282d45' stroke='#5fd4c4' stroke-width='2'/><text x='474' y='105' text-anchor='middle' fill='#eceef7' font-family='sans-serif' font-size='14'>Possible</text><text x='474' y='125' text-anchor='middle' fill='#eceef7' font-size='14' font-family='sans-serif'>warmth</text><path d='M293 148 V195 H402' fill='none' stroke='#ff7a6e' stroke-width='2' stroke-dasharray='6 5'/><rect x='258' y='204' width='274' height='58' rx='12' fill='#302635' stroke='#ff7a6e' stroke-width='2'/><text x='395' y='229' text-anchor='middle' fill='#eceef7' font-family='sans-serif' font-size='14'>Costly or repeated asks</text><text x='395' y='248' text-anchor='middle' fill='#ff7a6e' font-family='sans-serif' font-size='13'>can create burden, not closeness</text><text x='28' y='293' fill='#9ba0b8' font-family='sans-serif' font-size='12'>A plausible interpretation—not a guaranteed causal recipe.</text></svg>",
+        "visualCaption": "A small voluntary favor may invite warmth; pressure or repetition can reverse the effect.",
+        "after": [
+          "In a planning session, you and a colleague are stuck on how to explain a decision. Instead of pushing your answer, ask: “Could you tell me which sentence feels least clear?” Their specific help gives you a shared problem to solve—not a debt to collect.",
+          "At a demo, invite one precise observation rather than broad approval. If the ask feels easy to decline and genuinely useful, try it; if it feels like a tactic or a burden, don’t. Is your request creating collaboration—or obligation?"
+        ]
+      },
+      "lab": {
+        "title": "Make one useful, low-pressure ask",
+        "paras": [
+          "A bounded request makes it easier for someone to help freely, without turning the exchange into a test of loyalty."
+        ],
+        "exercise": "In under five minutes, pick one person whose judgment you value. Ask for one specific, optional piece of help: “Would you be open to telling me which part of this explanation is hardest to follow?” Accept a no warmly; thank them and use their answer."
+      },
+      "masters": null,
+      "steal": {
+        "line": "Invite contribution; never manufacture a debt.",
+        "paras": [
+          "Keep the request small, sincere, and easy to refuse. The relationship—not compliance—is the point."
+        ],
+        "example": [
+          "“Could you spare two minutes to flag the one assumption in this plan you’d check first? No pressure if today’s packed.”"
+        ]
+      }
+    },
+    {
       "date": "2026-11-12",
       "displayDate": "Thu · Nov 12",
       "domain": "Strategy",
@@ -1378,41 +1415,6 @@
         ],
         "example": [
           "In a quarterly planning kickoff: “We’re torn between saying yes to more custom work and keeping our core product simple, and today we’re going to choose one rule for when we decline a project.”"
-        ]
-      }
-    },
-    {
-      "date": "2026-09-13",
-      "displayDate": "Sun · Sep 13",
-      "domain": "Decision-Making",
-      "hook": "Name the villain in your roadmap",
-      "insight": {
-        "title": "The Constraint First Rule",
-        "paras": [
-          "Before you plan, name the one constraint that actually runs the show: time, attention, cash, risk, or trust. The <em>Constraint First Rule</em> says: never choose a strategy, feature, or story before you agree which constraint you are optimizing around. Once you name it, every option gets scored against that one thing. This turns fuzzy debates into crisp tradeoffs instead of politics.",
-          "Picture a quarterly planning session for Daisy 1. You pause the feature debate and say: “For this quarter, what’s the real constraint: engineering hours or user trust?” When the team agrees on “engineering hours,” half the flashy ideas fall away without a fight. You aren’t being negative; you’re protecting focus."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><circle cx='110' cy='160' r='70' fill='none' stroke='#9ba0b8' stroke-width='3'/><circle cx='280' cy='160' r='70' fill='none' stroke='#9ba0b8' stroke-width='3'/><circle cx='450' cy='160' r='70' fill='none' stroke='#9ba0b8' stroke-width='3'/><rect x='255' y='135' width='50' height='50' fill='#e8b84b' opacity='0.9'/><text x='110' y='163' fill='#eceef7' font-family='system-ui, sans-serif' font-size='12' text-anchor='middle'>Idea A</text><text x='280' y='163' fill='#eceef7' font-family='system-ui, sans-serif' font-size='12' text-anchor='middle'>Idea B</text><text x='450' y='163' fill='#eceef7' font-family='system-ui, sans-serif' font-size='12' text-anchor='middle'>Idea C</text><text x='280' y='38' fill='#5fd4c4' font-family='system-ui, sans-serif' font-size='13' text-anchor='middle'>Named constraint</text><line x1='280' y1='48' x2='280' y2='90' stroke='#5fd4c4' stroke-width='2' stroke-dasharray='4 3'/></svg>",
-        "visualCaption": "Once the constraint is named, the center changes.",
-        "after": [
-          "In your next quarterly planning review, start by asking which single constraint you’re solving for, write it at the top of the doc, and only then decide which projects move forward."
-        ]
-      },
-      "lab": {
-        "title": "Constraint Spotting in 5 Minutes",
-        "paras": [
-          "This matters because most messy debates are secretly about different constraints."
-        ],
-        "exercise": "Today, open one live decision: a roadmap doc, AI agent experiment, or consulting proposal. Ask aloud or in writing: “What’s the real constraint here?” Offer a menu: time, attention, cash, risk, or trust. Get explicit agreement, then rewrite one sentence at the top: “We are optimizing for ___ this cycle.” Notice which options suddenly become obviously good or bad."
-      },
-      "masters": null,
-      "steal": {
-        "line": "“Before we pick, can we agree what constraint we’re really solving for?”",
-        "paras": [
-          "Use this line anytime a meeting drifts into circular debate. It pulls people out of preferences and back into shared reality, without sounding combative."
-        ],
-        "example": [
-          "In a strategy agent planning session: “We’re circling. Before we pick a direction, can we agree what constraint we’re really solving for this quarter: speed to ship or reliability for existing users?”"
         ]
       }
     }
