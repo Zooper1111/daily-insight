@@ -1,6 +1,42 @@
 {
   "editions": [
     {
+      "date": "2026-11-16",
+      "displayDate": "Mon · Nov 16",
+      "domain": "Innovation",
+      "hook": "A tiny stop can prevent a giant rework.",
+      "format": "carousel",
+      "insight": {
+        "title": "Jidoka: make the problem stop the process",
+        "paras": [
+          "In 1897, Sakichi Toyoda’s power loom could stop itself when a thread broke. Without that stop, it could keep weaving faulty cloth. Toyota’s official history identifies this as the origin of <strong>jidoka</strong>: build in a way to detect an abnormality, stop the work, and fix the cause before defects spread. This is a production-system principle, not a guarantee that stopping always saves time. ([toyota-global.com](https://www.toyota-global.com/company/history_of_toyota/75years/text/taking_on_the_automotive_business/chapter1/section1/item4.html?trk=public_post_comment-text&utm_source=openai))"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='20' fill='#1b1e30'/><text x='28' y='42' fill='#eceef7' font-size='20' font-family='sans-serif' font-weight='700'>When a signal appears, two paths open</text><rect x='28' y='78' width='150' height='72' rx='12' fill='#292d43' stroke='#9ba0b8'/><text x='103' y='108' fill='#eceef7' text-anchor='middle' font-size='15' font-family='sans-serif'>Abnormality</text><text x='103' y='130' fill='#9ba0b8' text-anchor='middle' font-size='13' font-family='sans-serif'>thread breaks</text><path d='M178 114H230' stroke='#9ba0b8' stroke-width='3'/><path d='M220 106l10 8-10 8' fill='none' stroke='#9ba0b8' stroke-width='3'/><rect x='230' y='68' width='290' height='94' rx='12' fill='#203a3c' stroke='#5fd4c4' stroke-width='2'/><text x='375' y='99' fill='#5fd4c4' text-anchor='middle' font-size='16' font-family='sans-serif' font-weight='700'>STOP → FIX CAUSE</text><text x='375' y='126' fill='#eceef7' text-anchor='middle' font-size='14' font-family='sans-serif'>contain the defect; resume</text><text x='28' y='204' fill='#9ba0b8' font-size='13' font-family='sans-serif'>OR: ignore the signal</text><path d='M178 132C205 180 215 222 245 230' fill='none' stroke='#ff7a6e' stroke-width='3'/><path d='M237 223l10 7-11 4' fill='none' stroke='#ff7a6e' stroke-width='3'/><rect x='250' y='202' width='270' height='62' rx='12' fill='#402c39' stroke='#ff7a6e'/><text x='385' y='228' fill='#ff7a6e' text-anchor='middle' font-size='15' font-family='sans-serif' font-weight='700'>KEEP RUNNING</text><text x='385' y='248' fill='#eceef7' text-anchor='middle' font-size='13' font-family='sans-serif'>one fault becomes a batch</text><text x='28' y='292' fill='#e8b84b' font-size='14' font-family='sans-serif'>Useful stop = visible signal + authority + a fix path</text></svg>",
+        "visualCaption": "A warning only helps when it can halt the work and trigger a fix.",
+        "after": [
+          "In a Daisy 1 planning session, the team spots that several tasks depend on one unanswered decision. Instead of letting the plan roll forward, pause the affected work, name the decision, and resume once its owner resolves it.",
+          "For an AI-assisted draft, flag a claim that lacks a source before it reaches a presentation. Ask: what early signal would let you contain this mistake before it multiplies?"
+        ]
+      },
+      "lab": {
+        "title": "Design one useful stop",
+        "paras": [
+          "A stop works best when the warning is specific and someone knows how to respond."
+        ],
+        "exercise": "Pick one recurring mistake. Write: “Pause when ___; check ___; resume when ___.” Keep the trigger narrow enough that ordinary variation does not halt everything."
+      },
+      "masters": null,
+      "steal": {
+        "line": "Stop the spread, not just the symptom.",
+        "paras": [
+          "Today, turn one recurring late-stage surprise into an earlier, visible check—with a clear next step."
+        ],
+        "example": [
+          "“Let’s pause this decision until we verify the assumption that could invalidate the whole plan.”"
+        ]
+      }
+    },
+    {
       "date": "2026-11-14",
       "displayDate": "Sat · Nov 14",
       "domain": "Conversation",
@@ -1381,40 +1417,6 @@
         ],
         "example": [
           "In a quarterly planning review: “Let me give you the one-line version, then we can zoom into details: we’re turning Daisy 1 into the default place teams answer ‘who’s doing what by when’ so standups become five-minute checkmarks instead of status meetings.”"
-        ]
-      }
-    },
-    {
-      "date": "2026-09-15",
-      "displayDate": "Tue · Sep 15",
-      "domain": "Leadership",
-      "hook": "Lead by naming the tension, not the task.",
-      "insight": {
-        "title": "The Tension Sentence",
-        "paras": [
-          "When you lead work, people move faster when they feel the <em>tension</em>, not when they hear the task list. A \"tension sentence\" is a one-line frame that names the pull between two good things. Structure: <strong>\"We’re torn between A and B, and today we’re going to solve it by C.\"</strong> In a Daisy 1 roadmap review, that might be: \"We’re torn between shipping quickly for existing teams and keeping the codebase calm for the next six months, and today we’re going to choose one rule for when we say no.\" One clear tension aligns attention, gives permission to disagree, and makes every detail conversation feel connected to a real decision."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><line x1='80' y1='160' x2='480' y2='160' stroke='#9ba0b8' stroke-width='3' stroke-dasharray='4 6'/><circle cx='160' cy='160' r='34' fill='#eceef7'/><circle cx='400' cy='160' r='34' fill='#eceef7'/><text x='160' y='165' text-anchor='middle' font-size='11' fill='#1b1e30'>Speed</text><text x='400' y='165' text-anchor='middle' font-size='11' fill='#1b1e30'>Calm</text><polygon points='240,160 320,130 320,190' fill='#e8b84b' opacity='0.9'/><text x='280' y='158' text-anchor='middle' font-size='10' fill='#1b1e30'>Today:</text><text x='280' y='172' text-anchor='middle' font-size='10' fill='#1b1e30'>one rule</text></svg>",
-        "visualCaption": "Two good options, one golden decision wedge.",
-        "after": [
-          "Before your next strategy agent or quarterly planning session, write one tension sentence so everyone knows which pull you are actually there to resolve."
-        ]
-      },
-      "lab": {
-        "title": "Write Today’s Tension Sentence",
-        "paras": [
-          "This matters because if you don’t name the tension, the room will argue about details instead of the real decision."
-        ],
-        "exercise": "Open your current priority (e.g., next Daisy 1 release). In under five minutes, jot two good-but-competing pulls starting with \"We’re torn between…\". Then finish the sentence: \"…and today we’re going to solve it by…\" Say it out loud at the very start of your next check-in and watch how it sharpens the agenda."
-      },
-      "masters": null,
-      "steal": {
-        "line": "“We’re torn between these two good outcomes, and today we’re going to choose one rule to resolve it.”",
-        "paras": [
-          "Use this line to open a roadmap review, planning call, or client strategy session so people feel the real stakes in one breath."
-        ],
-        "example": [
-          "In a quarterly planning kickoff: “We’re torn between saying yes to more custom work and keeping our core product simple, and today we’re going to choose one rule for when we decline a project.”"
         ]
       }
     }
