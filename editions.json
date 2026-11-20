@@ -1,6 +1,43 @@
 {
   "editions": [
     {
+      "date": "2026-11-20",
+      "displayDate": "Fri · Nov 20",
+      "domain": "Decision-Making",
+      "hook": "The money spent cannot vote.",
+      "format": "carousel",
+      "insight": {
+        "title": "The reset test",
+        "paras": [
+          "In the 1960s, Britain and France continued developing Concorde despite poor commercial prospects. The project is often cited as a sunk-cost failure—but that label simplifies a decision also shaped by political and industrial goals. The <strong>sunk-cost rule</strong> is a formal economic principle: ignore costs you cannot recover; judge the choice by what comes next. Behavioral research documents how prior investment can pull people toward continuing (Arkes & Blumer, 1985).",
+          "Use this test: continue only when the expected future benefit, minus remaining costs, beats your best alternative. Caveat: count any recoverable value and real future consequences; only irrecoverable past spending is excluded."
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='22' fill='#1b1e30'/><text x='30' y='48' fill='#9ba0b8' font-family='sans-serif' font-size='18' font-weight='700'>THE RESET TEST</text><rect x='30' y='72' width='500' height='64' rx='12' fill='#292d43'/><text x='52' y='111' fill='#eceef7' font-family='sans-serif' font-size='21'>Past spending</text><text x='270' y='111' fill='#ff7a6e' font-family='sans-serif' font-size='21' font-weight='700'>EXCLUDE</text><path d='M270 98 L364 119 M364 98 L270 119' stroke='#ff7a6e' stroke-width='3'/><text x='30' y='178' fill='#9ba0b8' font-family='sans-serif' font-size='16'>DECIDE FROM TODAY FORWARD</text><text x='30' y='218' fill='#5fd4c4' font-family='sans-serif' font-size='21' font-weight='700'>Expected future benefit</text><text x='30' y='250' fill='#eceef7' font-family='sans-serif' font-size='20'>− remaining cost</text><text x='30' y='282' fill='#e8b84b' font-family='sans-serif' font-size='20'>must beat your best alternative</text></svg>",
+        "visualCaption": "Past costs are sunk; compare future value with your next-best option.",
+        "after": [
+          "A team shaping a Daisy 1 product decision has spent weeks on a feature, but early feedback suggests people find it confusing. Compare its likely benefit from here with the remaining work and the best alternative; simplify or stop if it loses.",
+          "In quarterly planning, ask: “If we had not started this, would we choose it today over the next-best use of the team’s time?”"
+        ]
+      },
+      "lab": {
+        "title": "Run a clean restart",
+        "paras": [
+          "A fresh comparison separates a sound commitment from a defense of past effort."
+        ],
+        "exercise": "Pick one ongoing project. Write down only its remaining costs, likely future benefits, and best alternative. Decide as if you inherited it today."
+      },
+      "masters": null,
+      "steal": {
+        "line": "Judge the next dollar, not the last one.",
+        "paras": [
+          "Use this line when a discussion starts treating past effort as proof that continuing is wise."
+        ],
+        "example": [
+          "“Let’s set aside what we’ve already spent. From today forward, is this still our best option?”"
+        ]
+      }
+    },
+    {
       "date": "2026-11-18",
       "displayDate": "Wed · Nov 18",
       "domain": "Strategy",
@@ -1384,41 +1421,6 @@
         ],
         "example": [
           "In a quarterly planning review: “Before we add more, can we sketch the single critical path for a new client — from ‘never heard of us’ to ‘got one concrete win from our strategy agent’ — and commit to just making that path undeniable this quarter?”"
-        ]
-      }
-    },
-    {
-      "date": "2026-09-19",
-      "displayDate": "Sat · Sep 19",
-      "domain": "Strategy",
-      "hook": "Turn fuzzy goals into a crisp operating rule.",
-      "insight": {
-        "title": "The Two-Layer Roadmap",
-        "paras": [
-          "Use the <strong>Two-Layer Roadmap</strong> model: top layer is narrative, bottom layer is moves. Narrative answers, “What game are we playing this quarter?” Moves answer, “What are the next 3 irreversible decisions?” When you separate story from steps, strategy stops being a cluttered task list and becomes a simple lens: anything that doesn’t serve the narrative or one of those three moves is parked or cut.",
-          "Picture a Daisy 1 planning session: instead of a giant backlog, you write one sentence at the top of the doc for the narrative, then list three concrete bets underneath. The work feels smaller, but the direction feels bigger."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='40' y='40' width='480' height='70' rx='10' fill='none' stroke='#eceef7' stroke-width='2'/><text x='60' y='85' fill='#eceef7' font-family='system-ui, sans-serif' font-size='18'>Narrative: what game this quarter?</text><rect x='40' y='140' width='480' height='140' rx='10' fill='none' stroke='#9ba0b8' stroke-width='2'/><line x1='80' y1='160' x2='80' y2='260' stroke='#9ba0b8' stroke-width='1.5' stroke-dasharray='4 4'/><circle cx='140' cy='185' r='16' fill='#e8b84b'/><circle cx='260' cy='215' r='16' fill='#ff7a6e'/><circle cx='400' cy='245' r='16' fill='#5fd4c4'/><text x='125' y='189' fill='#1b1e30' font-family='system-ui, sans-serif' font-size='12'>1</text><text x='245' y='219' fill='#1b1e30' font-family='system-ui, sans-serif' font-size='12'>2</text><text x='385' y='249' fill='#1b1e30' font-family='system-ui, sans-serif' font-size='12'>3</text><text x='95' y='182' fill='#eceef7' font-family='system-ui, sans-serif' font-size='12'>Move 1</text><text x='215' y='212' fill='#eceef7' font-family='system-ui, sans-serif' font-size='12'>Move 2</text><text x='355' y='242' fill='#eceef7' font-family='system-ui, sans-serif' font-size='12'>Move 3</text></svg>",
-        "visualCaption": "One narrative on top, three concrete moves underneath.",
-        "after": [
-          "When you draft your next quarterly planning note, literally write one narrative sentence, then list three irreversible moves beneath it and ignore everything that doesn’t fit."
-        ]
-      },
-      "lab": {
-        "title": "Name the Game, Then the Moves",
-        "paras": [
-          "This matters because teams execute faster when they know both the story they are in and the few choices that really change the board."
-        ],
-        "exercise": "Open a current roadmap or planning doc. In 3 minutes, write at the top: “This quarter, we are playing the game of ______ so that ______.” Then, under a heading called “Three Moves,” list exactly three bullets starting with verbs: “Ship…,” “Stop…,” or “Double-down on….” Read it aloud once to see if every current task clearly serves one of those bullets."
-      },
-      "masters": null,
-      "steal": {
-        "line": "“Zooming out: the game this quarter is X, and the only three moves that matter are A, B, and C.”",
-        "paras": [
-          "Use this line to reframe any roadmap or client conversation where the work feels scattered. It signals that you are about to compress complexity into a simple game plus a few decisive moves, which makes it easier for people to say no to distractions."
-        ],
-        "example": [
-          "In a consulting strategy review you might say: “Zooming out: the game this quarter is shortening your sales cycle, and the only three moves that matter are clarifying your offer, tightening demo scripts, and killing low-intent channels.”"
         ]
       }
     }
