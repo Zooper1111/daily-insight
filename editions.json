@@ -1,6 +1,42 @@
 {
   "editions": [
     {
+      "date": "2026-11-22",
+      "displayDate": "Sun · Nov 22",
+      "domain": "Communication",
+      "hook": "Your audience shouldn't play diagram detective.",
+      "format": "carousel",
+      "insight": {
+        "title": "The split-attention effect",
+        "paras": [
+          "In a 1991 study, apprentice electricians learned from instructions pairing text with wiring diagrams. When related details sat apart, learners had to keep searching between them; when the information was integrated, the group performed better over the three-month study. Chandler and Sweller named this the <em>split-attention effect</em>: mental effort spent matching separated sources is effort not spent understanding. This is an empirical result from specific training materials—not a rule that every slide needs more labels. Integration helps most when the parts depend on each other; redundant or independently clear information may not benefit. ([mrbartonmaths.com](https://mrbartonmaths.com/resourcesnew/8.%20Research/Explicit%20Instruction/Cognitive%20Load%20Theory%20and%20the%20Format%20of%20Instruction.pdf))"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='20' fill='#1b1e30'/><text x='28' y='38' fill='#eceef7' font-size='17' font-family='sans-serif' font-weight='700'>WHERE DOES ATTENTION GO?</text><text x='32' y='78' fill='#9ba0b8' font-size='13' font-family='sans-serif'>SPLIT SOURCES</text><rect x='30' y='92' width='210' height='70' rx='10' fill='#292d43'/><path d='M65 137h48v-22h40v22h48' fill='none' stroke='#ff7a6e' stroke-width='4'/><text x='30' y='184' fill='#9ba0b8' font-size='12' font-family='sans-serif'>Diagram</text><rect x='30' y='198' width='210' height='48' rx='9' fill='#292d43'/><text x='44' y='228' fill='#eceef7' font-size='13' font-family='sans-serif'>Find the matching detail →</text><path d='M250 168h48' stroke='#e8b84b' stroke-width='3'/><path d='m290 160 9 8-9 8' fill='none' stroke='#e8b84b' stroke-width='3'/><text x='314' y='142' fill='#e8b84b' font-size='13' font-family='sans-serif'>SEARCH + MATCH</text><text x='314' y='162' fill='#9ba0b8' font-size='12' font-family='sans-serif'>uses attention</text><text x='32' y='280' fill='#9ba0b8' font-size='13' font-family='sans-serif'>INTEGRATED</text><rect x='160' y='258' width='360' height='42' rx='9' fill='#263a40'/><path d='M183 284h44v-16h36v16h37' fill='none' stroke='#5fd4c4' stroke-width='3'/><text x='316' y='285' fill='#eceef7' font-size='13' font-family='sans-serif'>Label beside the relevant part</text><text x='32' y='305' fill='#5fd4c4' font-size='11' font-family='sans-serif'>LESS SEARCHING → MORE ROOM TO UNDERSTAND</text></svg>",
+        "visualCaption": "When two sources must be mentally matched, put their related details together.",
+        "after": [
+          "In a Daisy 1 planning discussion, you show a dependency diagram while its explanation sits on another slide. People keep asking which label refers to which step. Put each explanation beside its diagram element, then ask whether the sequence is clear.",
+          "In a strategy memo, place evidence beside the claim it supports. If readers must hunt across pages to connect them, bring the two together."
+        ]
+      },
+      "lab": {
+        "title": "Run the eye-tracking test",
+        "paras": [
+          "If your audience must search for which note explains which visual, simplify the layout before you simplify the idea."
+        ],
+        "exercise": "Take one slide or page. Circle every detail that refers to another detail. Move each pair together. Ask someone to explain the point in one sentence; notice where they pause."
+      },
+      "masters": null,
+      "steal": {
+        "line": "Put the explanation where the question appears.",
+        "paras": [
+          "Use this when you present a process, chart, demo, or recommendation: connect the evidence to the claim at the moment your audience needs it."
+        ],
+        "example": [
+          "“This arrow marks the step where the decision gets delayed; that’s why I’m proposing we clarify the owner here.”"
+        ]
+      }
+    },
+    {
       "date": "2026-11-20",
       "displayDate": "Fri · Nov 20",
       "domain": "Decision-Making",
@@ -1386,41 +1422,6 @@
         ],
         "example": [
           "In a strategy agent demo: “Right now, our planning notes are scattered and hard to query, so I want us to run them through this agent, so that we can ask one place what’s blocked, what’s next, and what changed this week.”"
-        ]
-      }
-    },
-    {
-      "date": "2026-09-21",
-      "displayDate": "Mon · Sep 21",
-      "domain": "Product Thinking",
-      "hook": "One sharp filter for what to ship next",
-      "insight": {
-        "title": "The Single Critical Path",
-        "paras": [
-          "When a project feels tangled, switch from a feature list to a <em>Single Critical Path</em>: the shortest, specific sequence of steps a user must complete to get real value once. Everything on that path is \"now\" work; everything else is \"later.\" Mapping this forces tradeoffs, cleans up scope, and gives you a story you can explain in one breath.",
-          "Picture a Daisy 1 review: instead of debating dozens of ideas, you sketch one path on a whiteboard — \"create a project → add one task → assign an owner → see it on today’s list.\" You highlight only the blocks needed to make that path smooth. Now your team can argue about one line, not fifty islands."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><line x1='60' y1='260' x2='500' y2='60' stroke='#eceef7' stroke-width='4' stroke-linecap='round'/><circle cx='60' cy='260' r='10' fill='#gold' fill-opacity='0'><animate attributeName='fill' values='#e8b84b;#ff7a6e;#5fd4c4;#e8b84b' dur='6s' repeatCount='indefinite'/></circle><circle cx='500' cy='60' r='10' fill='#e8b84b'/><circle cx='180' cy='210' r='6' fill='#5fd4c4'/><circle cx='310' cy='160' r='6' fill='#a48bfa'/><circle cx='430' cy='110' r='6' fill='#ff7a6e'/><circle cx='150' cy='90' r='4' fill='#9ba0b8'/><circle cx='260' cy='280' r='4' fill='#9ba0b8'/><circle cx='360' cy='220' r='4' fill='#9ba0b8'/><circle cx='480' cy='200' r='4' fill='#9ba0b8'/></svg>",
-        "visualCaption": "Draw one clean line of value and let everything else wait.",
-        "after": [
-          "Today, take one active feature set — in Daisy 1, StoryOS, or a consulting engagement — and write the exact four-step path where a user first feels, \"that was worth it,\" then mark only those steps as critical for the next release."
-        ]
-      },
-      "lab": {
-        "title": "Map One Value Line",
-        "paras": [
-          "This matters because arguing about paths instead of pieces makes planning, demos, and explanations dramatically clearer."
-        ],
-        "exercise": "Open your current roadmap and set a 5-minute timer. Write a heading: \"First Proof of Value Path.\" Under it, force yourself to list exactly 3–5 steps that describe one user going from \"not using it\" to \"I’d miss this if it vanished.\" Use full sentences: \"They…\" Then, bold the verbs that feel absolutely non-negotiable. Everything else becomes optional for the next cut."
-      },
-      "masters": null,
-      "steal": {
-        "line": "“Let’s stop listing features and agree on one critical path a real user has to walk once for this to be worth anything.”",
-        "paras": [
-          "Use this line to pivot a meandering product or planning discussion into a focused map of value, then capture that path in writing so it becomes the reference for scope, design, and how you talk about the release."
-        ],
-        "example": [
-          "In a quarterly planning review: “Before we add more, can we sketch the single critical path for a new client — from ‘never heard of us’ to ‘got one concrete win from our strategy agent’ — and commit to just making that path undeniable this quarter?”"
         ]
       }
     }
