@@ -1,6 +1,43 @@
 {
   "editions": [
     {
+      "date": "2026-11-24",
+      "displayDate": "Tue · Nov 24",
+      "domain": "Innovation",
+      "hook": "The breakthrough was hiding in the mismatch.",
+      "format": "carousel",
+      "insight": {
+        "title": "Recombinant innovation",
+        "paras": [
+          "In 1968, 3M scientist Spencer Silver developed an adhesive that stuck lightly but peeled away cleanly. It had no obvious use. Years later, colleague Art Fry recalled Silver’s seminar while looking for a bookmark that wouldn’t fall out of his church hymnal. Their combination became the Post-it Note. (Documented history: 3M and MoMA.) ([post-it.com](https://www.post-it.com/3M/en_US/post-it/contact-us/about-us/?utm_source=openai))",
+          "That’s recombinant innovation: make something new by joining existing knowledge or tools to a problem they weren’t designed for. It’s a theory, not a success guarantee. Lee Fleming’s 2001 patent-data study found unfamiliar combinations bring more variability: more failures, but also more breakthroughs. ([pubsonline.informs.org](https://pubsonline.informs.org/doi/10.1287/mnsc.47.1.117.10671?utm_source=openai))"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='24' fill='#1b1e30'/><text x='32' y='44' fill='#eceef7' font-family='sans-serif' font-size='20' font-weight='700'>A useful mismatch can create a new use</text><rect x='34' y='82' width='145' height='62' rx='12' fill='#252a40' stroke='#5fd4c4' stroke-width='2'/><text x='106' y='108' text-anchor='middle' fill='#eceef7' font-family='sans-serif' font-size='14'>Existing tool</text><text x='106' y='129' text-anchor='middle' fill='#5fd4c4' font-family='sans-serif' font-size='13'>repositionable glue</text><rect x='34' y='174' width='145' height='62' rx='12' fill='#252a40' stroke='#a48bfa' stroke-width='2'/><text x='106' y='200' text-anchor='middle' fill='#eceef7' font-family='sans-serif' font-size='14'>Unmet need</text><text x='106' y='221' text-anchor='middle' fill='#a48bfa' font-family='sans-serif' font-size='13'>bookmark stays put</text><path d='M190 113 C230 113 228 150 263 150 M190 205 C230 205 228 170 263 170' fill='none' stroke='#e8b84b' stroke-width='3'/><circle cx='280' cy='160' r='28' fill='#e8b84b'/><text x='280' y='167' text-anchor='middle' fill='#1b1e30' font-family='sans-serif' font-size='22' font-weight='700'>×</text><path d='M310 160 H350' stroke='#e8b84b' stroke-width='3'/><path d='M350 154 L362 160 L350 166' fill='none' stroke='#e8b84b' stroke-width='3'/><rect x='366' y='117' width='158' height='86' rx='12' fill='#252a40' stroke='#ff7a6e' stroke-width='2'/><text x='445' y='146' text-anchor='middle' fill='#eceef7' font-family='sans-serif' font-size='14'>New use</text><text x='445' y='168' text-anchor='middle' fill='#ff7a6e' font-family='sans-serif' font-size='13'>test the fit cheaply</text><text x='280' y='267' text-anchor='middle' fill='#9ba0b8' font-family='sans-serif' font-size='14'>Combination creates a hypothesis—not proof.</text><text x='280' y='290' text-anchor='middle' fill='#9ba0b8' font-family='sans-serif' font-size='13'>Keep it only if a real need responds.</text></svg>",
+        "visualCaption": "Pair a capability with a real friction, then test whether the fit holds.",
+        "after": [
+          "In a planning workshop, a facilitator sees a team lose useful ideas between discussion and the written plan. Instead of adding another meeting, they try adapting a familiar tool from another part of their workflow; if the team can capture decisions more clearly, the combination earns a second test.",
+          "When shaping an experiment for a strategy agent, pair one established planning routine with one question the routine doesn’t answer well. What real friction would tell you the combination is useful?"
+        ]
+      },
+      "lab": {
+        "title": "Run a five-minute recombination test",
+        "paras": [
+          "A concrete user frustration keeps novelty from becoming a solution in search of a problem."
+        ],
+        "exercise": "Write down one recurring frustration and two tools or routines you already know. Combine them on paper, then ask: “What would someone do differently if this worked?” If you can’t name a visible behavior, revise the pairing."
+      },
+      "masters": null,
+      "steal": {
+        "line": "Pair what you have with what’s still frustrating.",
+        "paras": [
+          "Try one small combination before you build a whole new system."
+        ],
+        "example": [
+          "“We already have a way to capture decisions. Could we adapt it to show which one still needs a test?”"
+        ]
+      }
+    },
+    {
       "date": "2026-11-22",
       "displayDate": "Sun · Nov 22",
       "domain": "Communication",
@@ -1387,41 +1424,6 @@
         ],
         "example": [
           "In a strategy agent review, you might say: “So if I’m hearing you right, the real constraint is onboarding time for new users — if that’s true, we should have the agent focus on the first 10 minutes of their workflow.”"
-        ]
-      }
-    },
-    {
-      "date": "2026-09-23",
-      "displayDate": "Wed · Sep 23",
-      "domain": "Communication",
-      "hook": "Make your point with the Three-Step Frame",
-      "insight": {
-        "title": "The Three-Step Frame",
-        "paras": [
-          "Use the <em>Three-Step Frame</em> to make any idea land fast: 1) Context, 2) Change, 3) Consequence. One sentence each. Context: where we are. Change: what you propose. Consequence: why it matters now. It’s a tiny narrative arc that keeps people oriented without a long preamble or a slide dump.",
-          "Example in a Daisy 1 planning review: “Right now our coordination feels scattered across tools (context). I want to run the next two sprints entirely inside Daisy 1 (change) so we see one clear board for priorities and blockers every morning (consequence).” Everyone instantly knows the situation, the move, and the stakes."
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='50' y='140' width='120' height='40' rx='4' fill='#eceef7'/><rect x='220' y='120' width='120' height='40' rx='4' fill='#5fd4c4'/><rect x='390' y='100' width='120' height='40' rx='4' fill='#e8b84b'/><text x='110' y='165' text-anchor='middle' font-size='12' fill='#1b1e30'>Context</text><text x='280' y='145' text-anchor='middle' font-size='12' fill='#1b1e30'>Change</text><text x='450' y='125' text-anchor='middle' font-size='12' fill='#1b1e30'>Consequence</text><line x1='170' y1='160' x2='220' y2='140' stroke='#9ba0b8' stroke-width='2' marker-end='url(#arrow)'/><line x1='340' y1='140' x2='390' y2='120' stroke='#9ba0b8' stroke-width='2' marker-end='url(#arrow)'/><defs><marker id='arrow' markerWidth='10' markerHeight='10' refX='6' refY='3' orient='auto'><path d='M0,0 L0,6 L6,3 z' fill='#9ba0b8'/></marker></defs></svg>",
-        "visualCaption": "Any clear point: Context → Change → Consequence.",
-        "after": [
-          "Today, pick one conversation about StoryOS, DreamGuard, or your strategy agent and deliver your main point in three short sentences: context, change, consequence."
-        ]
-      },
-      "lab": {
-        "title": "Five-Minute Framing Drill",
-        "paras": [
-          "This matters because people remember structured moves, not raw information."
-        ],
-        "exercise": "Open a current note or doc (Daisy 1 roadmap, quarterly planning outline, or a client memo). At the top, write three bullet labels: “Context –”, “Change –”, “Consequence –”. Under each, force yourself to write just one sentence. Then say them out loud once, exactly: “Right now…”, “So I want us to…”, “So that…”. Adjust words until it feels natural but stays three sentences."
-      },
-      "masters": null,
-      "steal": {
-        "line": "“Right now…, so I want us to…, so that…”",
-        "paras": [
-          "Use this stem once today when you need someone to quickly get on board with a move instead of debating details for 30 minutes."
-        ],
-        "example": [
-          "In a strategy agent demo: “Right now, our planning notes are scattered and hard to query, so I want us to run them through this agent, so that we can ask one place what’s blocked, what’s next, and what changed this week.”"
         ]
       }
     }
