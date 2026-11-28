@@ -1,6 +1,43 @@
 {
   "editions": [
     {
+      "date": "2026-11-28",
+      "displayDate": "Sat · Nov 28",
+      "domain": "Conversation",
+      "hook": "A nod is not proof you understood.",
+      "format": "carousel",
+      "insight": {
+        "title": "Ground the message, not just the words",
+        "paras": [
+          "On March 27, 1977, in fog at Tenerife, radio calls overlapped as a KLM jet began taking off while a Pan Am jet was still on the runway. The official investigation described a chain of contributing factors—not one misunderstood phrase alone. ([fss.aero](https://www.fss.aero/accident-reports/dvdfiles/ES/1977-03-27-A-ES.pdf?utm_source=openai))",
+          "Herbert Clark and Susan Brennan’s 1991 theory of <em>grounding</em> explains the everyday mechanism: people build enough shared understanding for the task by offering evidence they heard and understood each other. A quick acknowledgment can be enough for casual chat; consequential decisions need stronger evidence. ([cs.cmu.edu](https://www.cs.cmu.edu/~illah/CLASSDOCS/Clark91.pdf?utm_source=openai))"
+        ],
+        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' rx='20' fill='#1b1e30'/><text x='28' y='42' fill='#eceef7' font-size='20' font-family='sans-serif' font-weight='700'>GROUNDING: EVIDENCE OF UPTAKE</text><rect x='34' y='84' width='135' height='62' rx='12' fill='#34364a'/><text x='101' y='110' text-anchor='middle' fill='#eceef7' font-size='15' font-family='sans-serif'>Speaker</text><text x='101' y='132' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='sans-serif'>states intent</text><path d='M174 115 H250' stroke='#e8b84b' stroke-width='3'/><path d='M242 107 L252 115 L242 123' fill='none' stroke='#e8b84b' stroke-width='3'/><rect x='257' y='84' width='135' height='62' rx='12' fill='#34364a'/><text x='324' y='110' text-anchor='middle' fill='#eceef7' font-size='15' font-family='sans-serif'>Listener</text><text x='324' y='132' text-anchor='middle' fill='#9ba0b8' font-size='13' font-family='sans-serif'>interprets</text><path d='M397 115 H472' stroke='#5fd4c4' stroke-width='3'/><path d='M464 107 L474 115 L464 123' fill='none' stroke='#5fd4c4' stroke-width='3'/><rect x='413' y='166' width='113' height='52' rx='12' fill='#263f42'/><text x='469' y='188' text-anchor='middle' fill='#5fd4c4' font-size='13' font-family='sans-serif'>paraphrase</text><text x='469' y='206' text-anchor='middle' fill='#5fd4c4' font-size='13' font-family='sans-serif'>or action</text><path d='M415 192 C350 248 195 248 113 158' fill='none' stroke='#5fd4c4' stroke-width='2.5' stroke-dasharray='6 5'/><path d='M118 166 L111 155 L124 157' fill='none' stroke='#5fd4c4' stroke-width='2.5'/><rect x='34' y='230' width='492' height='48' rx='10' fill='#392d35'/><text x='280' y='260' text-anchor='middle' fill='#ff7a6e' font-size='15' font-family='sans-serif'>No clear evidence? Repair before acting.</text></svg>",
+        "visualCaption": "A message is grounded when the listener gives usable evidence of what they understood.",
+        "after": [
+          "In a Daisy 1 planning session, one person says, “Let’s keep Friday’s version small,” but the builder is unsure whether testing is included. They ask, “Small means fewer features, but still tested—is that right?” The scope becomes explicit before work proceeds.",
+          "At coffee, a colleague says a project is “stuck.” Instead of guessing, you ask, “Is the hard part getting approval, or deciding what to build?” Which misunderstanding would change what you do next?"
+        ]
+      },
+      "lab": {
+        "title": "Check the consequential part",
+        "paras": [
+          "Grounding prevents a confident nod from hiding two different interpretations."
+        ],
+        "exercise": "In your next important conversation, name the decision in one sentence. Ask, “What will you do next, based on that?” If their answer differs, clarify the boundary."
+      },
+      "masters": null,
+      "steal": {
+        "line": "Ask for evidence of understanding.",
+        "paras": [
+          "Use a paraphrase or next step when a misunderstanding would be costly; save formal playback for moments that genuinely need it."
+        ],
+        "example": [
+          "“Just to check: we’re choosing the demo’s main point today, not finalizing every detail—is that right?”"
+        ]
+      }
+    },
+    {
       "date": "2026-11-26",
       "displayDate": "Thu · Nov 26",
       "domain": "Leadership",
@@ -1391,40 +1428,6 @@
         ],
         "example": [
           "In a quarterly planning review: “Before, each team kept its own spreadsheet. We changed to a single Daisy 1 board. Now everyone sees priorities and dependencies in one place.”"
-        ]
-      }
-    },
-    {
-      "date": "2026-09-27",
-      "displayDate": "Sun · Sep 27",
-      "domain": "Strategy",
-      "hook": "Make one ruthless cut to move everything faster.",
-      "insight": {
-        "title": "The Ruthless Subtraction",
-        "paras": [
-          "The Ruthless Subtraction is a planning move: before you add anything to a roadmap, decide <em>one thing you will remove</em>. Addition feels productive; subtraction creates speed. The rule is simple: for every new initiative, feature, or promise, you must kill or pause something of equal or greater weight. That constraint forces real tradeoffs instead of fantasy plans where everything fits. You stop asking, “Can we also do this?” and start asking, “What will we <strong>stop</strong> so this can win?”"
-        ],
-        "visualSvg": "<svg viewBox='0 0 560 320' xmlns='http://www.w3.org/2000/svg'><rect width='560' height='320' fill='#1b1e30'/><rect x='60' y='80' width='160' height='32' rx='6' fill='#eceef7'/><rect x='60' y='132' width='160' height='32' rx='6' fill='#9ba0b8'/><rect x='60' y='184' width='160' height='32' rx='6' fill='#9ba0b8'/><rect x='340' y='108' width='160' height='32' rx='6' fill='#eceef7'/><rect x='340' y='160' width='160' height='32' rx='6' fill='#5fd4c4'/><line x1='240' y1='96' x2='320' y2='124' stroke='#e8b84b' stroke-width='3'/><line x1='240' y1='148' x2='320' y2='148' stroke='#e8b84b' stroke-width='3' stroke-dasharray='4 6'/><line x1='240' y1='200' x2='320' y2='172' stroke='#e8b84b' stroke-width='3'/><circle cx='240' cy='148' r='10' fill='none' stroke='#ff7a6e' stroke-width='3'/><line x1='234' y1='142' x2='246' y2='154' stroke='#ff7a6e' stroke-width='3'/><line x1='246' y1='142' x2='234' y2='154' stroke='#ff7a6e' stroke-width='3'/><text x='68' y='101' fill='#1b1e30' font-size='12' font-family='system-ui'>Now</text><text x='348' y='128' fill='#1b1e30' font-size='12' font-family='system-ui'>After cut</text></svg>",
-        "visualCaption": "Every new priority earns its place by killing or pausing another.",
-        "after": [
-          "In your next quarterly planning pass for Daisy 1, write the new pillar you want, then write the one project you will stop or shelve to fund it with time, attention, and engineering."
-        ]
-      },
-      "lab": {
-        "title": "The One-In, One-Out Agenda",
-        "paras": [
-          "This matters because without deliberate subtraction, every plan quietly assumes infinite time and attention."
-        ],
-        "exercise": "Open your current roadmap or task list. Pick <strong>one</strong> new thing you are excited to add this week. Then, in writing, complete this sentence: “To make room for this, we will stop or pause ______ until at least [date].” Share that exact line in your next planning conversation and do not move on until everyone agrees what actually stops."
-      },
-      "masters": null,
-      "steal": {
-        "line": "“If this is in, what comes out?”",
-        "paras": [
-          "Use this line any time someone proposes a new initiative, feature, or meeting. Say it calmly, then stay quiet for a beat. The silence forces a real choice instead of vague enthusiasm. Over a week, you will train your team—and yourself—to think in tradeoffs instead of wishlists."
-        ],
-        "example": [
-          "In a Daisy 1 roadmap review: “I like this notifications idea. If this is in, what comes out between now and December so the team actually has the cycles to ship it?”"
         ]
       }
     }
